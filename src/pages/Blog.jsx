@@ -15,7 +15,7 @@ export function Blog() {
     },
     {
       id: 2,
-      title: 'Budget Travel Tips for 2024',
+      title: 'Budget Travel Tips for 2025',
       excerpt: 'Learn how to travel the world without breaking the bank with these expert tips. Save money on flights, accommodation, and activities.',
       image: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800&auto=format&fit=crop',
       date: 'Dec 12, 2024',
@@ -58,9 +58,207 @@ export function Blog() {
       category: 'Destinations',
       readTime: '9 min read',
     },
+    {
+      id: 7,
+      title: 'Complete Guide to Backpacking Through South America',
+      excerpt: 'From Patagonia to the Amazon, discover how to plan an epic South American backpacking adventure on any budget.',
+      image: 'https://images.unsplash.com/photo-1531572753322-ad063cecc140?w=800&auto=format&fit=crop',
+      date: 'Nov 28, 2024',
+      category: 'Destinations',
+      readTime: '12 min read',
+    },
+    {
+      id: 8,
+      title: 'Street Food Guide: Bangkok Edition',
+      excerpt: 'Navigate Bangkok\'s incredible street food scene like a local. The best dishes, where to find them, and what to pay.',
+      image: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&auto=format&fit=crop',
+      date: 'Nov 25, 2024',
+      category: 'Food',
+      readTime: '8 min read',
+    },
+    {
+      id: 9,
+      title: 'How to Find Cheap Flights: Insider Secrets',
+      excerpt: 'Learn the tricks travel agents use to find the cheapest flights. Timing, tools, and strategies that actually work.',
+      image: 'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800&auto=format&fit=crop',
+      date: 'Nov 22, 2024',
+      category: 'Tips',
+      readTime: '7 min read',
+    },
+    {
+      id: 10,
+      title: 'Digital Nomad Guide: Best Cities for Remote Work',
+      excerpt: 'Top destinations for digital nomads with great wifi, affordable living, and vibrant communities. Complete with cost breakdowns.',
+      image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&auto=format&fit=crop',
+      date: 'Nov 20, 2024',
+      category: 'Planning',
+      readTime: '11 min read',
+    },
+    {
+      id: 11,
+      title: 'African Safari: First-Timer\'s Complete Guide',
+      excerpt: 'Everything you need to know for your first African safari. Best parks, when to go, what to pack, and how to choose a tour.',
+      image: 'https://images.unsplash.com/photo-1516426122078-c23e76319801?w=800&auto=format&fit=crop',
+      date: 'Nov 18, 2024',
+      category: 'Destinations',
+      readTime: '10 min read',
+    },
+    {
+      id: 12,
+      title: 'Travel Photography Tips for Beginners',
+      excerpt: 'Capture stunning travel photos with just your smartphone. Composition, lighting, and editing tips from professional photographers.',
+      image: 'https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=800&auto=format&fit=crop',
+      date: 'Nov 15, 2024',
+      category: 'Tips',
+      readTime: '6 min read',
+    },
+    {
+      id: 13,
+      title: 'Island Hopping in Greece: 2-Week Itinerary',
+      excerpt: 'The perfect Greek island hopping route. Santorini, Mykonos, Crete, and hidden gems with ferry schedules and hotel recommendations.',
+      image: 'https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?w=800&auto=format&fit=crop',
+      date: 'Nov 12, 2024',
+      category: 'Destinations',
+      readTime: '9 min read',
+    },
+    {
+      id: 14,
+      title: 'Travel Insurance: What You Really Need',
+      excerpt: 'Cut through the confusion about travel insurance. What\'s essential, what\'s optional, and how to choose the right policy.',
+      image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&auto=format&fit=crop',
+      date: 'Nov 10, 2024',
+      category: 'Planning',
+      readTime: '8 min read',
+    },
+    {
+      id: 15,
+      title: 'Best Hostels in Europe for Solo Travelers',
+      excerpt: 'Top-rated hostels across Europe that are perfect for meeting other travelers. Clean, safe, and social.',
+      image: 'https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=800&auto=format&fit=crop',
+      date: 'Nov 8, 2024',
+      category: 'Tips',
+      readTime: '7 min read',
+    },
+    {
+      id: 16,
+      title: 'Japanese Food Culture: Beyond Sushi',
+      excerpt: 'Explore Japan\'s incredible food culture. From ramen to kaiseki, discover dishes you must try and dining etiquette.',
+      image: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800&auto=format&fit=crop',
+      date: 'Nov 5, 2024',
+      category: 'Food',
+      readTime: '10 min read',
+    },
+    {
+      id: 17,
+      title: 'Hiking the Inca Trail: Complete Preparation Guide',
+      excerpt: 'Everything you need to prepare for hiking the Inca Trail to Machu Picchu. Training, permits, packing, and what to expect.',
+      image: 'https://images.unsplash.com/photo-1587595431973-160d0d94add1?w=800&auto=format&fit=crop',
+      date: 'Nov 2, 2024',
+      category: 'Adventure',
+      readTime: '12 min read',
+    },
+    {
+      id: 18,
+      title: 'Working Holiday Visa Guide',
+      excerpt: 'How to get a working holiday visa and travel while earning money. Countries, requirements, and job opportunities.',
+      image: 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800&auto=format&fit=crop',
+      date: 'Oct 30, 2024',
+      category: 'Planning',
+      readTime: '9 min read',
+    },
+    {
+      id: 19,
+      title: 'New Zealand Road Trip: Ultimate 3-Week Route',
+      excerpt: 'The perfect New Zealand road trip itinerary covering both islands. Stunning drives, must-see spots, and camping tips.',
+      image: 'https://images.unsplash.com/photo-1507699622108-4be3abd695ad?w=800&auto=format&fit=crop',
+      date: 'Oct 28, 2024',
+      category: 'Destinations',
+      readTime: '11 min read',
+    },
+    {
+      id: 20,
+      title: 'Sustainable Travel: How to Travel Responsibly',
+      excerpt: 'Reduce your environmental impact while traveling. Practical tips for eco-friendly accommodation, transport, and activities.',
+      image: 'https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=800&auto=format&fit=crop',
+      date: 'Oct 25, 2024',
+      category: 'Tips',
+      readTime: '8 min read',
+    },
+    {
+      id: 21,
+      title: 'Scuba Diving for Beginners: Getting Certified',
+      excerpt: 'Your guide to getting scuba certified. Best places to learn, what it costs, and amazing dive sites for beginners.',
+      image: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&auto=format&fit=crop',
+      date: 'Oct 22, 2024',
+      category: 'Adventure',
+      readTime: '7 min read',
+    },
+    {
+      id: 22,
+      title: 'Morocco Travel Guide: Marrakech to the Sahara',
+      excerpt: 'Experience the magic of Morocco. From bustling souks to desert camps, plan your perfect Moroccan adventure.',
+      image: 'https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?w=800&auto=format&fit=crop',
+      date: 'Oct 20, 2024',
+      category: 'Destinations',
+      readTime: '10 min read',
+    },
+    {
+      id: 23,
+      title: 'Travel Apps You Actually Need in 2025',
+      excerpt: 'The essential travel apps that will make your trip easier. Navigation, translation, budgeting, and booking tools.',
+      image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&auto=format&fit=crop',
+      date: 'Oct 18, 2024',
+      category: 'Tips',
+      readTime: '6 min read',
+    },
+    {
+      id: 24,
+      title: 'Italian Cuisine by Region: A Food Lover\'s Guide',
+      excerpt: 'Discover Italy\'s diverse regional cuisines. What to eat in each region and the best local restaurants.',
+      image: 'https://images.unsplash.com/photo-1498579150354-977475b7ea0b?w=800&auto=format&fit=crop',
+      date: 'Oct 15, 2024',
+      category: 'Food',
+      readTime: '11 min read',
+    },
+    {
+      id: 25,
+      title: 'Northern Lights: Best Places and Times to See Them',
+      excerpt: 'Chase the aurora borealis with our guide to the best locations, optimal timing, and photography tips.',
+      image: 'https://images.unsplash.com/photo-1579033461380-adb47c3eb938?w=800&auto=format&fit=crop',
+      date: 'Oct 12, 2024',
+      category: 'Destinations',
+      readTime: '8 min read',
+    },
+    {
+      id: 26,
+      title: 'Overcoming Language Barriers While Traveling',
+      excerpt: 'Practical strategies for communicating in countries where you don\'t speak the language. Apps, phrases, and cultural tips.',
+      image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&auto=format&fit=crop',
+      date: 'Oct 10, 2024',
+      category: 'Tips',
+      readTime: '7 min read',
+    },
+    {
+      id: 27,
+      title: 'Camping in National Parks: USA Edition',
+      excerpt: 'The ultimate guide to camping in America\'s most beautiful national parks. Permits, best campsites, and what to bring.',
+      image: 'https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=800&auto=format&fit=crop',
+      date: 'Oct 8, 2024',
+      category: 'Adventure',
+      readTime: '10 min read',
+    },
+    {
+      id: 28,
+      title: 'Cultural Etiquette: Avoiding Faux Pas Abroad',
+      excerpt: 'Navigate cultural differences with confidence. Essential etiquette tips for popular travel destinations around the world.',
+      image: 'https://images.unsplash.com/photo-1488085061387-422e29b40080?w=800&auto=format&fit=crop',
+      date: 'Oct 5, 2024',
+      category: 'Planning',
+      readTime: '9 min read',
+    },
   ];
 
-  const categories = ['All', 'Destinations', 'Tips', 'Planning', 'Safety', 'Food'];
+  const categories = ['All', 'Destinations', 'Tips', 'Planning', 'Safety', 'Food', 'Adventure'];
 
   return (
     <div className="min-h-screen bg-gray-50 pt-16">
@@ -100,8 +298,8 @@ export function Blog() {
             {blogPosts.map((post) => (
               <article key={post.id} className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
                 <div className="relative h-56">
-                  <img 
-                    src={post.image} 
+                  <img
+                    src={post.image}
                     alt={post.title}
                     className="w-full h-full object-cover"
                   />
@@ -121,8 +319,8 @@ export function Blog() {
                     <Link to={`/blog/${post.id}`}>{post.title}</Link>
                   </h3>
                   <p className="text-gray-600 mb-4 line-clamp-3">{post.excerpt}</p>
-                  <Link 
-                    to={`/blog/${post.id}`} 
+                  <Link
+                    to={`/blog/${post.id}`}
                     className="text-primary-600 font-semibold hover:text-primary-700 inline-flex items-center group"
                   >
                     Read More

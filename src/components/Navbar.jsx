@@ -11,6 +11,8 @@ export function Navbar() {
     { name: 'Destinations', path: '/destinations' },
     { name: 'Hotels', path: '/hotels' },
     { name: 'Flights', path: '/flights' },
+    { name: 'About', path: '/about' },
+    { name: 'Contact', path: '/contact' },
   ];
 
   return (
