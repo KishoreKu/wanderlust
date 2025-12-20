@@ -1,8 +1,13 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Calendar, ArrowRight, Search } from 'lucide-react';
 import { Button } from '../components/Button';
 
 export function Blog() {
+  const [selectedCategory, setSelectedCategory] = useState('All');
+  const [searchQuery, setSearchQuery] = useState('');
+  const [visiblePosts, setVisiblePosts] = useState(9);
+
   const blogPosts = [
     {
       id: 1,
@@ -233,7 +238,7 @@ export function Blog() {
       id: 26,
       title: 'Overcoming Language Barriers While Traveling',
       excerpt: 'Practical strategies for communicating in countries where you don\'t speak the language. Apps, phrases, and cultural tips.',
-      image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&auto=format&fit=crop',
+      image: 'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=800&auto=format&fit=crop',
       date: 'Oct 10, 2024',
       category: 'Tips',
       readTime: '7 min read',
@@ -260,6 +265,37 @@ export function Blog() {
 
   const categories = ['All', 'Destinations', 'Tips', 'Planning', 'Safety', 'Food', 'Adventure'];
 
+  // Filter posts based on category and search query
+  const filteredPosts = blogPosts.filter(post => {
+    const matchesCategory = selectedCategory === 'All' || post.category === selectedCategory;
+    const matchesSearch = searchQuery === '' ||
+      post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      post.excerpt.toLowerCase().includes(searchQuery.toLowerCase());
+    return matchesCategory && matchesSearch;
+  });
+
+  // Get posts to display based on visible count
+  const displayedPosts = filteredPosts.slice(0, visiblePosts);
+  const hasMorePosts = visiblePosts < filteredPosts.length;
+
+  // Handler for load more
+  const handleLoadMore = () => {
+    setVisiblePosts(prev => prev + 9);
+  };
+
+  // Handler for search
+  const handleSearchChange = (e) => {
+    setSearchQuery(e.target.value);
+    setVisiblePosts(9); // Reset visible posts when searching
+  };
+
+  // Handler for category change
+  const handleCategoryChange = (category) => {
+    setSelectedCategory(category);
+    setVisiblePosts(9); // Reset visible posts when changing category
+  };
+
+
   return (
     <div className="min-h-screen bg-gray-50 pt-16">
       <section className="bg-gradient-to-r from-primary-600 to-primary-800 text-white py-20">
@@ -273,6 +309,8 @@ export function Blog() {
               <input
                 type="text"
                 placeholder="Search articles..."
+                value={searchQuery}
+                onChange={handleSearchChange}
                 className="w-full px-6 py-4 rounded-full text-gray-900 focus:outline-none focus:ring-2 focus:ring-primary-300"
               />
               <Search className="absolute right-6 top-1/2 transform -translate-y-1/2 h-6 w-6 text-gray-400" />
@@ -287,7 +325,11 @@ export function Blog() {
             {categories.map((category) => (
               <button
                 key={category}
-                className="px-6 py-2 rounded-full bg-white text-gray-700 hover:bg-primary-600 hover:text-white transition-colors font-medium shadow-sm"
+                onClick={() => handleCategoryChange(category)}
+                className={`px-6 py-2 rounded-full font-medium shadow-sm transition-colors ${selectedCategory === category
+                  ? 'bg-primary-600 text-white'
+                  : 'bg-white text-gray-700 hover:bg-primary-600 hover:text-white'
+                  }`}
               >
                 {category}
               </button>
@@ -295,7 +337,7 @@ export function Blog() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {blogPosts.map((post) => (
+            {displayedPosts.map((post) => (
               <article key={post.id} className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
                 <div className="relative h-56">
                   <img
@@ -331,9 +373,17 @@ export function Blog() {
             ))}
           </div>
 
-          <div className="text-center mt-12">
-            <Button size="lg">Load More Articles</Button>
-          </div>
+          {displayedPosts.length === 0 && (
+            <div className="text-center py-12">
+              <p className="text-gray-500 text-lg">No articles found matching your search.</p>
+            </div>
+          )}
+
+          {hasMorePosts && (
+            <div className="text-center mt-12">
+              <Button size="lg" onClick={handleLoadMore}>Load More Articles</Button>
+            </div>
+          )}
         </div>
       </section>
 
