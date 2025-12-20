@@ -6,6 +6,9 @@
 
 [build.environment]
   NODE_VERSION = "20"  # Use Node.js 20 LTS (required for Vite 7)
+  # Disable mise to prevent Python version errors
+  MISE_INSTALL_PATH = ""
+  NPM_FLAGS = "--legacy-peer-deps"
 
 [build.processing]
   skip_processing = false
