@@ -1,6 +1,8 @@
 [build]
   command = "npm run build"
   publish = "dist"
+  # Specify build image to avoid Ubuntu 14.04 deprecation
+  image = "focal"  # Ubuntu 20.04 LTS
 
 [build.environment]
   NODE_VERSION = "18"  # Use Node.js 18 LTS
