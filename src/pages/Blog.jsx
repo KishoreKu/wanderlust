@@ -7,6 +7,8 @@ export function Blog() {
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [searchQuery, setSearchQuery] = useState('');
   const [visiblePosts, setVisiblePosts] = useState(9);
+  const [email, setEmail] = useState('');
+  const [subscribeStatus, setSubscribeStatus] = useState(''); // 'success', 'error', or ''
 
   const blogPosts = [
     {
@@ -295,6 +297,34 @@ export function Blog() {
     setVisiblePosts(9); // Reset visible posts when changing category
   };
 
+  // Handler for newsletter subscription
+  const handleSubscribe = (e) => {
+    e.preventDefault();
+
+    // Basic email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!email) {
+      setSubscribeStatus('error');
+      return;
+    }
+
+    if (!emailRegex.test(email)) {
+      setSubscribeStatus('error');
+      return;
+    }
+
+    // Simulate successful subscription (in production, this would call an API)
+    setSubscribeStatus('success');
+    setEmail('');
+
+    // Reset status after 5 seconds
+    setTimeout(() => {
+      setSubscribeStatus('');
+    }, 5000);
+  };
+
+
 
   return (
     <div className="min-h-screen bg-gray-50 pt-16">
@@ -393,14 +423,28 @@ export function Blog() {
           <p className="text-gray-600 mb-8">
             Get the latest travel tips, destination guides, and exclusive deals delivered to your inbox
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-            <input
-              type="email"
-              placeholder="Enter your email"
-              className="flex-1 px-6 py-3 rounded-lg border-2 border-gray-300 focus:outline-none focus:border-primary-600"
-            />
-            <Button>Subscribe</Button>
-          </div>
+          <form onSubmit={handleSubscribe} className="max-w-md mx-auto">
+            <div className="flex flex-col sm:flex-row gap-4">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                className="flex-1 px-6 py-3 rounded-lg border-2 border-gray-300 focus:outline-none focus:border-primary-600"
+              />
+              <Button type="submit">Subscribe</Button>
+            </div>
+            {subscribeStatus === 'success' && (
+              <p className="mt-4 text-green-600 font-medium">
+                🎉 Thanks for subscribing! Check your email for confirmation.
+              </p>
+            )}
+            {subscribeStatus === 'error' && (
+              <p className="mt-4 text-red-600 font-medium">
+                ⚠️ Please enter a valid email address.
+              </p>
+            )}
+          </form>
         </div>
       </section>
     </div>
