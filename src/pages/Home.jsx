@@ -59,7 +59,7 @@ export function Home() {
       id: 1,
       name: 'Sarah Johnson',
       location: 'New York, USA',
-      text: 'TravelHub helped me find amazing deals on my dream vacation to Bali. The blog posts were incredibly helpful!',
+      text: 'Wanderlust Chronicles helped me find amazing deals on my dream vacation to Bali. The blog posts were incredibly helpful!',
       rating: 5,
     },
     {
@@ -82,14 +82,14 @@ export function Home() {
     <div className="min-h-screen">
       <section className="relative h-screen flex items-center justify-center bg-gradient-to-br from-primary-600 to-primary-800 text-white">
         <div className="absolute inset-0 bg-black opacity-40"></div>
-        <div 
+        <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage: 'url(https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1600&auto=format&fit=crop)',
             mixBlendMode: 'overlay',
           }}
         ></div>
-        
+
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 text-balance">
             Explore the World with Confidence
@@ -147,13 +147,13 @@ export function Home() {
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Featured Destinations</h2>
             <p className="text-xl text-gray-600">Discover the most popular travel destinations</p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {featuredDestinations.map((destination) => (
               <div key={destination.id} className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
                 <div className="relative h-64">
-                  <img 
-                    src={destination.image} 
+                  <img
+                    src={destination.image}
                     alt={destination.name}
                     className="w-full h-full object-cover"
                   />
@@ -183,13 +183,13 @@ export function Home() {
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Latest from Our Blog</h2>
             <p className="text-xl text-gray-600">Travel tips, guides, and inspiration</p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {recentPosts.map((post) => (
               <article key={post.id} className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
                 <div className="relative h-48">
-                  <img 
-                    src={post.image} 
+                  <img
+                    src={post.image}
                     alt={post.title}
                     className="w-full h-full object-cover"
                   />
@@ -214,7 +214,7 @@ export function Home() {
               </article>
             ))}
           </div>
-          
+
           <div className="text-center mt-12">
             <Link to="/blog">
               <Button size="lg">View All Posts</Button>
@@ -229,7 +229,7 @@ export function Home() {
             <h2 className="text-4xl font-bold mb-4">What Our Travelers Say</h2>
             <p className="text-xl text-primary-100">Real experiences from real travelers</p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {testimonials.map((testimonial) => (
               <div key={testimonial.id} className="bg-white text-gray-900 rounded-xl p-6 shadow-xl">

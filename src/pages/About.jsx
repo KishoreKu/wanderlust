@@ -36,7 +36,7 @@ export function About() {
         <div className="min-h-screen bg-gray-50 pt-16">
             <section className="bg-gradient-to-r from-primary-600 to-primary-800 text-white py-20">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <h1 className="text-5xl font-bold mb-4">About TravelHub</h1>
+                    <h1 className="text-5xl font-bold mb-4">About Wanderlust Chronicles</h1>
                     <p className="text-xl text-primary-100 max-w-3xl mx-auto">
                         Your trusted companion for discovering the world's most amazing destinations
                     </p>
@@ -63,7 +63,7 @@ export function About() {
                             <h2 className="text-4xl font-bold text-gray-900 mb-6">Our Story</h2>
                             <div className="space-y-4 text-gray-700 leading-relaxed">
                                 <p>
-                                    TravelHub was born from a simple idea: everyone deserves to experience the joy of travel.
+                                    Wanderlust Chronicles was born from a simple idea: everyone deserves to experience the joy of travel.
                                     Founded in 2016 by a group of passionate travelers, we started as a small blog sharing our
                                     adventures and tips with friends and family.
                                 </p>

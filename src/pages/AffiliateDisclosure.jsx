@@ -36,7 +36,7 @@ export function AffiliateDisclosure() {
                                 <h3 className="text-lg font-semibold text-blue-900 mb-2">FTC Disclosure Requirement</h3>
                                 <p className="text-blue-800">
                                     In accordance with the Federal Trade Commission's (FTC) guidelines, we are required to disclose
-                                    that TravelHub participates in affiliate marketing programs and may earn commissions from
+                                    that Wanderlust Chronicles participates in affiliate marketing programs and may earn commissions from
                                     qualifying purchases made through links on this website.
                                 </p>
                             </div>
@@ -189,7 +189,7 @@ export function AffiliateDisclosure() {
                                     please don't hesitate to contact us:
                                 </p>
                                 <ul className="list-none ml-0 space-y-2 text-gray-700 mt-4">
-                                    <li>Email: contact@travelhub.com</li>
+                                    <li>Email: info@westley-group.com</li>
                                     <li>Contact Form: <a href="/contact" className="text-primary-600 hover:underline">Visit our Contact Page</a></li>
                                 </ul>
                             </div>

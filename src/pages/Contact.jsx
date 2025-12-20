@@ -28,7 +28,7 @@ export function Contact() {
         {
             icon: Mail,
             title: 'Email Us',
-            content: 'contact@travelhub.com',
+            content: 'info@westley-group.com',
             description: 'We typically respond within 24-48 hours',
         },
         {
@@ -48,7 +48,7 @@ export function Contact() {
     const faqs = [
         {
             question: 'How do I submit a guest post?',
-            answer: 'We love featuring guest writers! Please email us at contact@travelhub.com with your article pitch, including the topic, outline, and a brief bio. We\'ll review and get back to you within a week.',
+            answer: 'We love featuring guest writers! Please email us at info@westley-group.com with your article pitch, including the topic, outline, and a brief bio. We\'ll review and get back to you within a week.',
         },
         {
             question: 'Can you help plan my trip?',
