@@ -254,7 +254,7 @@ export function Destinations() {
       name: 'Bora Bora, French Polynesia',
       country: 'French Polynesia',
       region: 'Oceania',
-      image: 'https://images.unsplash.com/photo-1589197331516-7c8c2f1e5b3f?w=800&auto=format&fit=crop',
+      image: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&auto=format&fit=crop',
       description: 'Ultimate tropical paradise with turquoise lagoons and luxury overwater bungalows',
       bestTime: 'May - Oct',
       highlights: ['Lagoons', 'Diving', 'Luxury', 'Romance'],
@@ -310,8 +310,8 @@ export function Destinations() {
                 key={region}
                 onClick={() => setSelectedRegion(region)}
                 className={`px-6 py-2 rounded-full font-medium shadow-sm transition-colors ${selectedRegion === region
-                    ? 'bg-primary-600 text-white'
-                    : 'bg-white text-gray-700 hover:bg-primary-600 hover:text-white'
+                  ? 'bg-primary-600 text-white'
+                  : 'bg-white text-gray-700 hover:bg-primary-600 hover:text-white'
                   }`}
               >
                 {region}
