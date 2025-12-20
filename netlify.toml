@@ -5,7 +5,7 @@
   image = "focal"  # Ubuntu 20.04 LTS
 
 [build.environment]
-  NODE_VERSION = "18"  # Use Node.js 18 LTS
+  NODE_VERSION = "20"  # Use Node.js 20 LTS (required for Vite 7)
 
 [build.processing]
   skip_processing = false
