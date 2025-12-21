@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://westley-group.com/sitemap.xml
