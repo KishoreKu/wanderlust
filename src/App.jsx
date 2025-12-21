@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
+import { GoogleAnalytics } from './components/GoogleAnalytics';
 import { Home } from './pages/Home';
 import { Blog } from './pages/Blog';
 import { BlogPost } from './pages/BlogPost';
@@ -16,6 +17,7 @@ import { AffiliateDisclosure } from './pages/AffiliateDisclosure';
 function App() {
   return (
     <Router>
+      <GoogleAnalytics />
       <div className="flex flex-col min-h-screen">
         <Navbar />
         <main className="flex-grow">
