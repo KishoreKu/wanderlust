@@ -9,17 +9,36 @@ export function Contact() {
         subject: '',
         message: '',
     });
+    const [submitStatus, setSubmitStatus] = useState('');
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        // Create mailto link with form data
-        const subject = encodeURIComponent(formData.subject);
-        const body = encodeURIComponent(
-            `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
-        );
-        window.location.href = `mailto:info@westley-group.com?subject=${subject}&body=${body}`;
-        // Clear form
-        setFormData({ name: '', email: '', subject: '', message: '' });
+        setSubmitStatus('sending');
+
+        try {
+            const response = await fetch('https://formspree.io/f/xnnqkgqo', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    name: formData.name,
+                    email: formData.email,
+                    subject: formData.subject,
+                    message: formData.message,
+                }),
+            });
+
+            if (response.ok) {
+                setSubmitStatus('success');
+                setFormData({ name: '', email: '', subject: '', message: '' });
+                setTimeout(() => setSubmitStatus(''), 5000);
+            } else {
+                setSubmitStatus('error');
+            }
+        } catch (error) {
+            setSubmitStatus('error');
+        }
     };
 
     const handleChange = (e) => {
@@ -220,7 +239,7 @@ export function Contact() {
                         <a href="https://www.instagram.com/westleygroup/" target="_blank" rel="noopener noreferrer">
                             <Button variant="outline">Instagram</Button>
                         </a>
-                        <a href="https://www.pinterest.com/kishorealaj/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.pinterest.com/westleywanderlust/" target="_blank" rel="noopener noreferrer">
                             <Button variant="outline">Pinterest</Button>
                         </a>
                     </div>
