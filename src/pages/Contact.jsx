@@ -16,13 +16,12 @@ export function Contact() {
         setSubmitStatus('sending');
 
         try {
-            const response = await fetch('https://api.web3forms.com/submit', {
+            const response = await fetch('https://formspree.io/f/mojakkyd', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({
-                    access_key: '8c7e6d5f-4b3a-2c1d-9e8f-7a6b5c4d3e2f',
                     name: formData.name,
                     email: formData.email,
                     subject: formData.subject,
@@ -30,9 +29,7 @@ export function Contact() {
                 }),
             });
 
-            const data = await response.json();
-
-            if (data.success) {
+            if (response.ok) {
                 setSubmitStatus('success');
                 setFormData({ name: '', email: '', subject: '', message: '' });
                 setTimeout(() => setSubmitStatus(''), 5000);
