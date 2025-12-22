@@ -12,8 +12,13 @@ export function Contact() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // TODO: Implement actual form submission
-        alert('Thank you for your message! We\'ll get back to you soon.');
+        // Create mailto link with form data
+        const subject = encodeURIComponent(formData.subject);
+        const body = encodeURIComponent(
+            `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
+        );
+        window.location.href = `mailto:info@westley-group.com?subject=${subject}&body=${body}`;
+        // Clear form
         setFormData({ name: '', email: '', subject: '', message: '' });
     };
 
@@ -41,7 +46,8 @@ export function Contact() {
             icon: MessageSquare,
             title: 'Social Media',
             content: 'Follow us on social',
-            description: 'Quick responses on Twitter and Instagram',
+            description: 'Instagram, Pinterest & Facebook',
+            link: '#connect',
         },
     ];
 
@@ -189,7 +195,7 @@ export function Contact() {
                 </div>
             </section>
 
-            <section className="py-16 bg-white">
+            <section id="connect" className="py-16 bg-white">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <h2 className="text-3xl font-bold text-gray-900 mb-4">Other Ways to Connect</h2>
                     <p className="text-gray-600 mb-8">
