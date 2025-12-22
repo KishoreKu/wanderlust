@@ -14,6 +14,7 @@ import { PrivacyPolicy } from './pages/PrivacyPolicy';
 import { TermsOfService } from './pages/TermsOfService';
 import { AffiliateDisclosure } from './pages/AffiliateDisclosure';
 import { AirHelp } from './pages/AirHelp';
+import { Klook } from './pages/Klook';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
             <Route path="/hotels" element={<Hotels />} />
             <Route path="/flights" element={<Flights />} />
             <Route path="/airhelp" element={<AirHelp />} />
+            <Route path="/klook" element={<Klook />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
