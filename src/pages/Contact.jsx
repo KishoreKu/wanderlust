@@ -86,7 +86,13 @@ export function Contact() {
                                         <Icon className="h-8 w-8 text-primary-600" />
                                     </div>
                                     <h3 className="text-xl font-semibold mb-2">{info.title}</h3>
-                                    <p className="text-primary-600 font-medium mb-2">{info.content}</p>
+                                    {info.title === 'Email Us' ? (
+                                        <a href="mailto:info@westley-group.com" className="text-primary-600 font-medium mb-2 hover:underline block">
+                                            {info.content}
+                                        </a>
+                                    ) : (
+                                        <p className="text-primary-600 font-medium mb-2">{info.content}</p>
+                                    )}
                                     <p className="text-gray-600 text-sm">{info.description}</p>
                                 </div>
                             );
@@ -190,15 +196,16 @@ export function Contact() {
                         Join our community on social media for daily travel inspiration, tips, and exclusive content
                     </p>
                     <div className="flex flex-wrap gap-4 justify-center">
-                        <Button variant="outline">Facebook</Button>
-                        <Button variant="outline">Twitter</Button>
-                        <Button variant="outline">Instagram</Button>
-                        <Button variant="outline">YouTube</Button>
-                        <Button variant="outline">Pinterest</Button>
+                        <a href="https://www.facebook.com/profile.php?id=61554767398991" target="_blank" rel="noopener noreferrer">
+                            <Button variant="outline">Facebook</Button>
+                        </a>
+                        <a href="https://www.instagram.com/westleygroup/" target="_blank" rel="noopener noreferrer">
+                            <Button variant="outline">Instagram</Button>
+                        </a>
+                        <a href="https://www.pinterest.com/kishorealaj/" target="_blank" rel="noopener noreferrer">
+                            <Button variant="outline">Pinterest</Button>
+                        </a>
                     </div>
-                    <p className="text-sm text-gray-500 mt-6">
-                        Note: Add your social media links in the footer once your accounts are set up
-                    </p>
                 </div>
             </section>
         </div>
