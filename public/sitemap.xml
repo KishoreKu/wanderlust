@@ -55,6 +55,12 @@
     <priority>0.4</priority>
   </url>
   <url>
+    <loc>https://westley-group.com/airhelp</loc>
+    <lastmod>2024-12-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://westley-group.com/affiliate-disclosure</loc>
     <lastmod>2024-12-21</lastmod>
     <changefreq>yearly</changefreq>
