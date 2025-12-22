@@ -13,6 +13,7 @@ import { Contact } from './pages/Contact';
 import { PrivacyPolicy } from './pages/PrivacyPolicy';
 import { TermsOfService } from './pages/TermsOfService';
 import { AffiliateDisclosure } from './pages/AffiliateDisclosure';
+import { AirHelp } from './pages/AirHelp';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
             <Route path="/destinations" element={<Destinations />} />
             <Route path="/hotels" element={<Hotels />} />
             <Route path="/flights" element={<Flights />} />
+            <Route path="/airhelp" element={<AirHelp />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
