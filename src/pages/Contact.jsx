@@ -204,10 +204,24 @@ export function Contact() {
                                     />
                                 </div>
 
-                                <Button type="submit" size="lg" className="w-full">
+                                <Button type="submit" size="lg" className="w-full" disabled={submitStatus === 'sending'}>
                                     <Send className="mr-2 h-5 w-5" />
-                                    Send Message
+                                    {submitStatus === 'sending' ? 'Sending...' : 'Send Message'}
                                 </Button>
+
+                                {submitStatus === 'success' && (
+                                    <div className="mt-4 p-4 bg-green-50 border border-green-200 rounded-lg">
+                                        <p className="text-green-800 font-medium">✅ Message sent successfully!</p>
+                                        <p className="text-green-600 text-sm mt-1">We'll get back to you within 24-48 hours.</p>
+                                    </div>
+                                )}
+
+                                {submitStatus === 'error' && (
+                                    <div className="mt-4 p-4 bg-red-50 border border-red-200 rounded-lg">
+                                        <p className="text-red-800 font-medium">❌ Failed to send message</p>
+                                        <p className="text-red-600 text-sm mt-1">Please try again or email us directly at info@westley-group.com</p>
+                                    </div>
+                                )}
                             </form>
                         </div>
 
