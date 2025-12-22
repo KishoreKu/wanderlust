@@ -86,8 +86,10 @@ export function Contact() {
                     <div className="grid md:grid-cols-3 gap-8 mb-16">
                         {contactInfo.map((info, index) => {
                             const Icon = info.icon;
-                            return (
-                                <div key={index} className="bg-white rounded-xl p-6 shadow-lg text-center">
+                            const isClickable = info.link;
+
+                            const cardContent = (
+                                <div className={`bg-white rounded-xl p-6 shadow-lg text-center ${isClickable ? 'hover:shadow-xl transition-shadow' : ''}`}>
                                     <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
                                         <Icon className="h-8 w-8 text-primary-600" />
                                     </div>
@@ -100,6 +102,16 @@ export function Contact() {
                                         <p className="text-primary-600 font-medium mb-2">{info.content}</p>
                                     )}
                                     <p className="text-gray-600 text-sm">{info.description}</p>
+                                </div>
+                            );
+
+                            return isClickable ? (
+                                <a key={index} href={info.link} className="block">
+                                    {cardContent}
+                                </a>
+                            ) : (
+                                <div key={index}>
+                                    {cardContent}
                                 </div>
                             );
                         })}
