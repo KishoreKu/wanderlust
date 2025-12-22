@@ -9,7 +9,7 @@ export function Footer() {
           <div className="md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
               <Plane className="h-8 w-8 text-primary-400" />
-              <span className="text-2xl font-bold text-white">Wanderlust Chronicles</span>
+              <span className="text-2xl font-bold text-white">Gubbu</span>
             </div>
             <p className="text-sm mb-4">
               Your ultimate destination for travel inspiration, tips, and the best deals on hotels and flights.
@@ -63,7 +63,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm">
-          <p>&copy; {new Date().getFullYear()} Wanderlust Chronicles. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Gubbu. All rights reserved.</p>
           <p className="text-xs text-gray-500 mt-2">
             Made with ❤️ for travelers around the world
           </p>

@@ -20,7 +20,7 @@ export function PrivacyPolicy() {
                     <div className="bg-white rounded-xl shadow-lg p-8 md:p-12">
                         <div className="prose prose-lg max-w-none">
                             <p className="text-lg text-gray-700 mb-8">
-                                At Wanderlust Chronicles, we take your privacy seriously. This Privacy Policy explains how we collect,
+                                At Gubbu, we take your privacy seriously. This Privacy Policy explains how we collect,
                                 use, disclose, and safeguard your information when you visit our website.
                             </p>
 

@@ -36,7 +36,7 @@ export function AffiliateDisclosure() {
                                 <h3 className="text-lg font-semibold text-blue-900 mb-2">FTC Disclosure Requirement</h3>
                                 <p className="text-blue-800">
                                     In accordance with the Federal Trade Commission's (FTC) guidelines, we are required to disclose
-                                    that Wanderlust Chronicles participates in affiliate marketing programs and may earn commissions from
+                                    that Gubbu participates in affiliate marketing programs and may earn commissions from
                                     qualifying purchases made through links on this website.
                                 </p>
                             </div>

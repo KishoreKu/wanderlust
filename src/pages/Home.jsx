@@ -59,7 +59,7 @@ export function Home() {
       id: 1,
       name: 'Sarah Johnson',
       location: 'New York, USA',
-      text: 'Wanderlust Chronicles helped me find amazing deals on my dream vacation to Bali. The blog posts were incredibly helpful!',
+      text: 'Gubbu helped me find amazing deals on my dream vacation to Bali. The blog posts were incredibly helpful!',
       rating: 5,
     },
     {

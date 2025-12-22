@@ -20,14 +20,14 @@ export function TermsOfService() {
                     <div className="bg-white rounded-xl shadow-lg p-8 md:p-12">
                         <div className="prose prose-lg max-w-none">
                             <p className="text-lg text-gray-700 mb-8">
-                                Welcome to Wanderlust Chronicles. By accessing or using our website, you agree to be bound by these Terms of Service.
+                                Welcome to Gubbu. By accessing or using our website, you agree to be bound by these Terms of Service.
                                 Please read them carefully before using our services.
                             </p>
 
                             <div className="mb-10">
                                 <h2 className="text-2xl font-bold text-gray-900 mb-4">1. Acceptance of Terms</h2>
                                 <p className="text-gray-700">
-                                    By accessing and using Wanderlust Chronicles ("the Website"), you accept and agree to be bound by the terms and
+                                    By accessing and using Gubbu ("the Website"), you accept and agree to be bound by the terms and
                                     provisions of this agreement. If you do not agree to these terms, please do not use this Website.
                                 </p>
                             </div>
@@ -68,7 +68,7 @@ export function TermsOfService() {
                                 </div>
                                 <div className="ml-9 text-gray-700 space-y-4">
                                     <p>
-                                        The Website and its original content, features, and functionality are owned by Wanderlust Chronicles and are
+                                        The Website and its original content, features, and functionality are owned by Gubbu and are
                                         protected by international copyright, trademark, patent, trade secret, and other intellectual property laws.
                                     </p>
 
@@ -76,7 +76,7 @@ export function TermsOfService() {
                                         <h3 className="text-xl font-semibold text-gray-900 mb-2">3.1 Content Ownership</h3>
                                         <p>
                                             All text, graphics, logos, images, audio clips, digital downloads, data compilations, and software
-                                            on this Website are the property of Wanderlust Chronicles or its content suppliers.
+                                            on this Website are the property of Gubbu or its content suppliers.
                                         </p>
                                     </div>
 
@@ -116,7 +116,7 @@ export function TermsOfService() {
                                     <div>
                                         <h3 className="text-xl font-semibold text-gray-900 mb-2">5.1 No Endorsement</h3>
                                         <p>
-                                            The inclusion of any link does not imply endorsement by Wanderlust Chronicles. We have no control over the
+                                            The inclusion of any link does not imply endorsement by Gubbu. We have no control over the
                                             content, privacy policies, or practices of third-party sites.
                                         </p>
                                     </div>
@@ -191,7 +191,7 @@ export function TermsOfService() {
                             <div className="mb-10">
                                 <h2 className="text-2xl font-bold text-gray-900 mb-4">8. Indemnification</h2>
                                 <p className="text-gray-700">
-                                    You agree to indemnify, defend, and hold harmless Wanderlust Chronicles and its officers, directors, employees,
+                                    You agree to indemnify, defend, and hold harmless Gubbu and its officers, directors, employees,
                                     and agents from any claims, liabilities, damages, losses, and expenses arising from your use of the
                                     Website or violation of these Terms.
                                 </p>
@@ -210,7 +210,7 @@ export function TermsOfService() {
                                 <h2 className="text-2xl font-bold text-gray-900 mb-4">10. Governing Law</h2>
                                 <p className="text-gray-700">
                                     These Terms shall be governed by and construed in accordance with the laws of the jurisdiction in
-                                    which Wanderlust Chronicles operates, without regard to its conflict of law provisions.
+                                    which Gubbu operates, without regard to its conflict of law provisions.
                                 </p>
                             </div>
 

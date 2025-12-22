@@ -1,6 +1,6 @@
-# TravelHub - Travel Blog & Affiliate Marketing Website
+# Gubbu
 
-A stunning, modern travel blog website built with React, featuring destination guides, travel tips, and integrated affiliate marketing for hotel and flight bookings.
+Your ultimate travel companion - discover amazing destinations, find the best deals, and plan your perfect adventure.
 
 ## 🌟 Features
 

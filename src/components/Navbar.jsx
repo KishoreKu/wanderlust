@@ -21,7 +21,7 @@ export function Navbar() {
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="flex items-center space-x-2">
             <Plane className="h-8 w-8 text-primary-600" />
-            <span className="text-2xl font-bold text-gray-900">Wanderlust Chronicles</span>
+            <span className="text-2xl font-bold text-gray-900">Gubbu</span>
           </Link>
 
           <div className="hidden md:flex items-center space-x-8">
