@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Plane, Facebook, Instagram } from 'lucide-react';
+import { NewsletterSignup } from './NewsletterSignup';
 
 export function Footer() {
   return (
@@ -11,9 +12,15 @@ export function Footer() {
               <Plane className="h-8 w-8 text-primary-400" />
               <span className="text-2xl font-bold text-white">Gubbu</span>
             </div>
-            <p className="text-sm mb-4">
+            <p className="text-sm mb-6">
               Your ultimate destination for travel inspiration, tips, and the best deals on hotels and flights.
             </p>
+
+            {/* Compact Newsletter Signup */}
+            <div className="mb-4">
+              <NewsletterSignup variant="compact" />
+            </div>
+
             <p className="text-xs text-gray-400">
               We may earn commissions from qualifying purchases made through affiliate links at no extra cost to you.
             </p>

@@ -58,8 +58,8 @@ export function NewsletterSignup({ variant = 'default' }) {
     if (variant === 'compact') {
         return (
             <div className="w-full">
-                <h3 className="text-lg font-semibold mb-3">Subscribe to Our Newsletter</h3>
-                <p className="text-sm text-gray-600 mb-4">
+                <h3 className="text-lg font-semibold mb-3 text-white">Subscribe to Our Newsletter</h3>
+                <p className="text-sm text-gray-400 mb-4">
                     Get travel tips and deals delivered to your inbox
                 </p>
                 <form onSubmit={handleSubscribe} className="space-y-3">
@@ -69,18 +69,18 @@ export function NewsletterSignup({ variant = 'default' }) {
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         disabled={subscribeStatus === 'loading'}
-                        className="w-full px-4 py-2 rounded-lg border-2 border-gray-300 focus:outline-none focus:border-primary-600 disabled:opacity-50 text-sm"
+                        className="w-full px-4 py-2 rounded-lg border-2 border-gray-600 bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:border-primary-500 disabled:opacity-50 text-sm"
                     />
                     <Button type="submit" disabled={subscribeStatus === 'loading'} className="w-full">
                         {subscribeStatus === 'loading' ? 'Subscribing...' : 'Subscribe'}
                     </Button>
                     {subscribeStatus === 'success' && (
-                        <p className="text-green-600 font-medium text-sm">
+                        <p className="text-green-400 font-medium text-sm">
                             🎉 Thanks for subscribing!
                         </p>
                     )}
                     {subscribeStatus === 'error' && (
-                        <p className="text-red-600 font-medium text-sm">
+                        <p className="text-red-400 font-medium text-sm">
                             ⚠️ Please check your email and try again.
                         </p>
                     )}
