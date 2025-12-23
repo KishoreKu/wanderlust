@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { Button } from '../components/Button';
 import { MapPin, Calendar, Users, Star, ArrowRight, Plane, Hotel, Globe } from 'lucide-react';
 import { AviasalesPopularWidget } from '../components/AviasalesPopularWidget';
+import { NewsletterSignup } from '../components/NewsletterSignup';
 
 export function Home() {
   const featuredDestinations = [
@@ -265,6 +266,8 @@ export function Home() {
           </div>
         </div>
       </section>
+
+      <NewsletterSignup />
 
       <section className="py-20 bg-gradient-to-r from-primary-600 to-primary-800 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

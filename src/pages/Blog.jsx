@@ -2,13 +2,12 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Calendar, ArrowRight, Search } from 'lucide-react';
 import { Button } from '../components/Button';
+import { NewsletterSignup } from '../components/NewsletterSignup';
 
 export function Blog() {
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [searchQuery, setSearchQuery] = useState('');
   const [visiblePosts, setVisiblePosts] = useState(9);
-  const [email, setEmail] = useState('');
-  const [subscribeStatus, setSubscribeStatus] = useState(''); // 'success', 'error', or ''
 
   const blogPosts = [
     {
@@ -297,57 +296,6 @@ export function Blog() {
     setVisiblePosts(9); // Reset visible posts when changing category
   };
 
-  // Handler for newsletter subscription
-  const handleSubscribe = async (e) => {
-    e.preventDefault();
-
-    // Basic email validation
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-    if (!email) {
-      setSubscribeStatus('error');
-      return;
-    }
-
-    if (!emailRegex.test(email)) {
-      setSubscribeStatus('error');
-      return;
-    }
-
-    setSubscribeStatus('loading');
-
-    try {
-      // Send to Mailchimp via PHP backend
-      const response = await fetch('/api/subscribe.php', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          email: email,
-        }),
-      });
-
-      const data = await response.json();
-
-      if (data.success) {
-        setSubscribeStatus('success');
-        setEmail('');
-
-        // Reset status after 5 seconds
-        setTimeout(() => {
-          setSubscribeStatus('');
-        }, 5000);
-      } else {
-        setSubscribeStatus('error');
-        // You could also show the specific error message: data.message
-      }
-    } catch (error) {
-      console.error('Subscription error:', error);
-      setSubscribeStatus('error');
-    }
-  };
-
 
 
   return (
@@ -441,39 +389,7 @@ export function Blog() {
         </div>
       </section>
 
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">Subscribe to Our Newsletter</h2>
-          <p className="text-gray-600 mb-8">
-            Get the latest travel tips, destination guides, and exclusive deals delivered to your inbox
-          </p>
-          <form onSubmit={handleSubscribe} className="max-w-md mx-auto">
-            <div className="flex flex-col sm:flex-row gap-4">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                disabled={subscribeStatus === 'loading'}
-                className="flex-1 px-6 py-3 rounded-lg border-2 border-gray-300 focus:outline-none focus:border-primary-600 disabled:opacity-50"
-              />
-              <Button type="submit" disabled={subscribeStatus === 'loading'}>
-                {subscribeStatus === 'loading' ? 'Subscribing...' : 'Subscribe'}
-              </Button>
-            </div>
-            {subscribeStatus === 'success' && (
-              <p className="mt-4 text-green-600 font-medium">
-                🎉 Thanks for subscribing! You're now part of our travel community.
-              </p>
-            )}
-            {subscribeStatus === 'error' && (
-              <p className="mt-4 text-red-600 font-medium">
-                ⚠️ Something went wrong. Please check your email and try again.
-              </p>
-            )}
-          </form>
-        </div>
-      </section>
+      <NewsletterSignup />
     </div>
   );
 }
