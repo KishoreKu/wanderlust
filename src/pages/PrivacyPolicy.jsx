@@ -169,7 +169,7 @@ export function PrivacyPolicy() {
                                         <li><strong>Withdraw Consent:</strong> Withdraw consent for marketing communications at any time</li>
                                     </ul>
                                     <p className="mt-3">
-                                        To exercise these rights, please contact us at info@westley-group.com.
+                                        To exercise these rights, please contact us at contact@gubbu.io.
                                     </p>
                                 </div>
                             </div>
@@ -198,7 +198,7 @@ export function PrivacyPolicy() {
                                     If you have any questions about this Privacy Policy, please contact us:
                                 </p>
                                 <ul className="list-none ml-0 space-y-2 text-gray-700">
-                                    <li>Email: info@westley-group.com</li>
+                                    <li>Email: contact@gubbu.io</li>
                                     <li>Contact Form: <a href="/contact" className="text-primary-600 hover:underline">Visit our Contact Page</a></li>
                                 </ul>
                             </div>

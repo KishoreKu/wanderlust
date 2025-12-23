@@ -189,7 +189,7 @@ export function AffiliateDisclosure() {
                                     please don't hesitate to contact us:
                                 </p>
                                 <ul className="list-none ml-0 space-y-2 text-gray-700 mt-4">
-                                    <li>Email: info@westley-group.com</li>
+                                    <li>Email: contact@gubbu.io</li>
                                     <li>Contact Form: <a href="/contact" className="text-primary-600 hover:underline">Visit our Contact Page</a></li>
                                 </ul>
                             </div>

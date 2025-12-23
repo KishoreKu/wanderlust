@@ -52,7 +52,7 @@ export function Contact() {
         {
             icon: Mail,
             title: 'Email Us',
-            content: 'info@westley-group.com',
+            content: 'contact@gubbu.io',
             description: 'We typically respond within 24-48 hours',
         },
         {
@@ -73,7 +73,7 @@ export function Contact() {
     const faqs = [
         {
             question: 'How do I submit a guest post?',
-            answer: 'We love featuring guest writers! Please email us at info@westley-group.com with your article pitch, including the topic, outline, and a brief bio. We\'ll review and get back to you within a week.',
+            answer: 'We love featuring guest writers! Please email us at contact@gubbu.io with your article pitch, including the topic, outline, and a brief bio. We\'ll review and get back to you within a week.',
         },
         {
             question: 'Can you help plan my trip?',
@@ -114,7 +114,7 @@ export function Contact() {
                                     </div>
                                     <h3 className="text-xl font-semibold mb-2">{info.title}</h3>
                                     {info.title === 'Email Us' ? (
-                                        <a href="mailto:info@westley-group.com" className="text-primary-600 font-medium mb-2 hover:underline block">
+                                        <a href="mailto:contact@gubbu.io" className="text-primary-600 font-medium mb-2 hover:underline block">
                                             {info.content}
                                         </a>
                                     ) : (
@@ -219,7 +219,7 @@ export function Contact() {
                                 {submitStatus === 'error' && (
                                     <div className="mt-4 p-4 bg-red-50 border border-red-200 rounded-lg">
                                         <p className="text-red-800 font-medium">❌ Failed to send message</p>
-                                        <p className="text-red-600 text-sm mt-1">Please try again or email us directly at info@westley-group.com</p>
+                                        <p className="text-red-600 text-sm mt-1">Please try again or email us directly at contact@gubbu.io</p>
                                     </div>
                                 )}
                             </form>

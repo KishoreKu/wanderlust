@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
-const GA_MEASUREMENT_ID = 'G-VNY9DWFD4B';
+const measurementId = 'G-77JB64XNQ8'; // Gubbu Analytics
 
 export function GoogleAnalytics() {
     const location = useLocation();
@@ -10,7 +10,7 @@ export function GoogleAnalytics() {
         // Load Google Analytics script
         const script1 = document.createElement('script');
         script1.async = true;
-        script1.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
+        script1.src = `https://www.googletagmanager.com/gtag/js?id=${measurementId}`;
         document.head.appendChild(script1);
 
         // Initialize Google Analytics
@@ -20,7 +20,7 @@ export function GoogleAnalytics() {
         }
         window.gtag = gtag;
         gtag('js', new Date());
-        gtag('config', GA_MEASUREMENT_ID);
+        gtag('config', measurementId);
 
         return () => {
             // Cleanup
@@ -31,7 +31,7 @@ export function GoogleAnalytics() {
     // Track page views on route change
     useEffect(() => {
         if (window.gtag) {
-            window.gtag('config', GA_MEASUREMENT_ID, {
+            window.gtag('config', measurementId, {
                 page_path: location.pathname + location.search,
             });
         }
