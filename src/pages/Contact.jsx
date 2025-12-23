@@ -247,13 +247,13 @@ export function Contact() {
                         Join our community on social media for daily travel inspiration, tips, and exclusive content
                     </p>
                     <div className="flex flex-wrap gap-4 justify-center">
-                        <a href="https://www.facebook.com/profile.php?id=61554767398991" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.facebook.com/profile.php?id=61585608988393" target="_blank" rel="noopener noreferrer">
                             <Button variant="outline">Facebook</Button>
                         </a>
-                        <a href="https://www.instagram.com/westleygroup/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.instagram.com/mygubbu9/" target="_blank" rel="noopener noreferrer">
                             <Button variant="outline">Instagram</Button>
                         </a>
-                        <a href="https://www.pinterest.com/westleywanderlust/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.pinterest.com/gubbuna/" target="_blank" rel="noopener noreferrer">
                             <Button variant="outline">Pinterest</Button>
                         </a>
                     </div>
