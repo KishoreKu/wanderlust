@@ -103,7 +103,7 @@ export function Flights() {
           <p className="text-xl text-primary-100 mb-8 text-center">
             Compare prices from hundreds of airlines and travel agents
           </p>
-          
+
           <form onSubmit={handleSearch} className="bg-white rounded-xl p-6 shadow-2xl">
             <div className="flex gap-4 mb-6">
               <label className="flex items-center cursor-pointer">
@@ -112,7 +112,7 @@ export function Flights() {
                   name="tripType"
                   value="roundtrip"
                   checked={searchQuery.tripType === 'roundtrip'}
-                  onChange={(e) => setSearchQuery({...searchQuery, tripType: e.target.value})}
+                  onChange={(e) => setSearchQuery({ ...searchQuery, tripType: e.target.value })}
                   className="mr-2 text-primary-600 focus:ring-primary-500"
                 />
                 <span className="text-gray-700 font-medium">Round Trip</span>
@@ -123,7 +123,7 @@ export function Flights() {
                   name="tripType"
                   value="oneway"
                   checked={searchQuery.tripType === 'oneway'}
-                  onChange={(e) => setSearchQuery({...searchQuery, tripType: e.target.value})}
+                  onChange={(e) => setSearchQuery({ ...searchQuery, tripType: e.target.value })}
                   className="mr-2 text-primary-600 focus:ring-primary-500"
                 />
                 <span className="text-gray-700 font-medium">One Way</span>
@@ -141,12 +141,12 @@ export function Flights() {
                     type="text"
                     placeholder="Departure city"
                     value={searchQuery.from}
-                    onChange={(e) => setSearchQuery({...searchQuery, from: e.target.value})}
+                    onChange={(e) => setSearchQuery({ ...searchQuery, from: e.target.value })}
                     className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 text-gray-900"
                   />
                 </div>
               </div>
-              
+
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
                   To
@@ -157,12 +157,12 @@ export function Flights() {
                     type="text"
                     placeholder="Arrival city"
                     value={searchQuery.to}
-                    onChange={(e) => setSearchQuery({...searchQuery, to: e.target.value})}
+                    onChange={(e) => setSearchQuery({ ...searchQuery, to: e.target.value })}
                     className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 text-gray-900"
                   />
                 </div>
               </div>
-              
+
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
                   Departure
@@ -170,11 +170,11 @@ export function Flights() {
                 <input
                   type="date"
                   value={searchQuery.departure}
-                  onChange={(e) => setSearchQuery({...searchQuery, departure: e.target.value})}
+                  onChange={(e) => setSearchQuery({ ...searchQuery, departure: e.target.value })}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 text-gray-900"
                 />
               </div>
-              
+
               {searchQuery.tripType === 'roundtrip' && (
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
@@ -183,19 +183,19 @@ export function Flights() {
                   <input
                     type="date"
                     value={searchQuery.return}
-                    onChange={(e) => setSearchQuery({...searchQuery, return: e.target.value})}
+                    onChange={(e) => setSearchQuery({ ...searchQuery, return: e.target.value })}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 text-gray-900"
                   />
                 </div>
               )}
-              
+
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
                   Passengers
                 </label>
                 <select
                   value={searchQuery.passengers}
-                  onChange={(e) => setSearchQuery({...searchQuery, passengers: parseInt(e.target.value)})}
+                  onChange={(e) => setSearchQuery({ ...searchQuery, passengers: parseInt(e.target.value) })}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 text-gray-900"
                 >
                   {[1, 2, 3, 4, 5, 6].map(num => (
@@ -204,7 +204,7 @@ export function Flights() {
                 </select>
               </div>
             </div>
-            
+
             <div className="mt-6">
               <Button type="submit" size="lg" className="w-full md:w-auto">
                 <Search className="mr-2 h-5 w-5" />
@@ -212,6 +212,32 @@ export function Flights() {
               </Button>
             </div>
           </form>
+        </div>
+      </section>
+
+      {/* Kiwi.com Flight Search Widget */}
+      <section className="py-12 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl font-bold text-gray-900 mb-2">Search Multi-City Flights</h2>
+            <p className="text-gray-600">Find the best flight combinations with Kiwi.com's unique virtual interlining</p>
+          </div>
+          <div className="bg-gray-50 rounded-xl p-6">
+            <script async src="https://tpscr.com/content?currency=usd&trs=483263&shmarker=692183&locale=en&powered_by=true&limit=4&primary_color=00AE98&results_background_color=FFFFFF&form_background_color=FFFFFF&campaign_id=111&promo_id=3411" charset="utf-8"></script>
+          </div>
+        </div>
+      </section>
+
+      {/* Aviasales Flight Search Widget */}
+      <section className="py-12 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl font-bold text-gray-900 mb-2">Alternative Flight Search</h2>
+            <p className="text-gray-600">Compare prices across hundreds of airlines with Aviasales</p>
+          </div>
+          <div className="bg-white rounded-xl p-6 shadow-lg">
+            <script async src="https://tpscr.com/content?currency=usd&trs=483263&shmarker=692183&show_hotels=true&powered_by=true&locale=en&searchUrl=www.aviasales.com%2Fsearch&primary_override=%2332a8dd&color_button=%2332a8dd&color_icons=%2332a8dd&dark=%23262626&light=%23FFFFFF&secondary=%23FFFFFF&special=%23C4C4C4&color_focused=%2332a8dd&border_radius=0&plain=false&promo_id=7879&campaign_id=100" charset="utf-8"></script>
+          </div>
         </div>
       </section>
 
@@ -226,8 +252,8 @@ export function Flights() {
             {popularRoutes.map((route) => (
               <div key={route.id} className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
                 <div className="relative h-48">
-                  <img 
-                    src={route.image} 
+                  <img
+                    src={route.image}
                     alt={route.to}
                     className="w-full h-full object-cover"
                   />
@@ -238,7 +264,7 @@ export function Flights() {
                     </div>
                   )}
                 </div>
-                
+
                 <div className="p-6">
                   <div className="flex items-center justify-between mb-4">
                     <div>
@@ -255,12 +281,12 @@ export function Flights() {
                       <div className="text-sm text-gray-600">{route.to}</div>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-center text-gray-600 mb-4">
                     <Clock className="h-4 w-4 mr-1" />
                     <span className="text-sm">{route.duration}</span>
                   </div>
-                  
+
                   <div className="flex items-end justify-between">
                     <div>
                       <div className="text-sm text-gray-600">Starting from</div>
@@ -268,7 +294,7 @@ export function Flights() {
                         ${route.price}
                       </div>
                     </div>
-                    <a 
+                    <a
                       href={getFlightAffiliateLink(route.fromCode, route.toCode)}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -295,7 +321,7 @@ export function Flights() {
               We compare prices from top airlines and travel sites to find you the best deals
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center p-6">
               <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
@@ -304,7 +330,7 @@ export function Flights() {
               <h3 className="text-xl font-semibold mb-2">Lowest Prices</h3>
               <p className="text-gray-600">We search hundreds of sites to find you the cheapest flights available</p>
             </div>
-            
+
             <div className="text-center p-6">
               <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
                 <Calendar className="h-8 w-8 text-primary-600" />
@@ -312,7 +338,7 @@ export function Flights() {
               <h3 className="text-xl font-semibold mb-2">Flexible Dates</h3>
               <p className="text-gray-600">Find the best prices by comparing different dates and times</p>
             </div>
-            
+
             <div className="text-center p-6">
               <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
                 <Users className="h-8 w-8 text-primary-600" />

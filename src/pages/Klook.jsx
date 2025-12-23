@@ -224,6 +224,19 @@ export function Klook() {
                 </div>
             </section>
 
+            {/* Klook Activities Search Widget */}
+            <section className="py-12 bg-orange-50">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="text-center mb-8">
+                        <h2 className="text-3xl font-bold text-gray-900 mb-2">Search Activities</h2>
+                        <p className="text-gray-600">Find and book your perfect experience</p>
+                    </div>
+                    <div className="bg-white rounded-xl p-6 shadow-lg">
+                        <script async src="https://tpscr.com/content?currency=usd&trs=483263&shmarker=692183&locale=en&powered_by=true&limit=4&primary_color=00AE98&results_background_color=FFFFFF&form_background_color=FFFFFF&promo_id=4563&campaign_id=111" charset="utf-8"></script>
+                    </div>
+                </div>
+            </section>
+
             {/* Why Travelers Love Klook */}
             <section className="py-16 bg-white">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
