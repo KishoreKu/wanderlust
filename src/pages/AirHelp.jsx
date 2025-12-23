@@ -5,7 +5,7 @@ import { Plane, CheckCircle, DollarSign, Clock, Shield, ArrowRight, Gift, Calend
 export function AirHelp() {
     const [copiedCode, setCopiedCode] = useState('');
 
-    const affiliateLink = 'https://airhelp.tpx.li/V1GJ7JRX';
+    const affiliateLink = 'https://airhelp.tpx.li/h8JMCBhl';
 
     const copyPromoCode = (code) => {
         navigator.clipboard.writeText(code);

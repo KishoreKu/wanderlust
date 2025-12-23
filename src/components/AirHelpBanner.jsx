@@ -2,7 +2,7 @@ import { Gift, ArrowRight } from 'lucide-react';
 import { Button } from './Button';
 
 export function AirHelpBanner({ compact = false }) {
-    const affiliateLink = 'https://airhelp.tpx.li/V1GJ7JRX';
+    const affiliateLink = 'https://airhelp.tpx.li/h8JMCBhl';
 
     if (compact) {
         return (
