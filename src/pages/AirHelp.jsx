@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Button } from '../components/Button';
 import { Plane, CheckCircle, DollarSign, Clock, Shield, ArrowRight, Gift, Calendar } from 'lucide-react';
+import { AirHelpWidget } from '../components/AirHelpWidget';
 
 export function AirHelp() {
     const [copiedCode, setCopiedCode] = useState('');
@@ -206,7 +207,7 @@ export function AirHelp() {
                         <p className="text-gray-600">Enter your flight details to see if you're entitled to compensation</p>
                     </div>
                     <div className="bg-white rounded-xl p-6 shadow-lg">
-                        <script async src="https://tpscr.com/content?trs=483263&shmarker=692183&lang=en&powered_by=true&campaign_id=120&promo_id=8679" charset="utf-8"></script>
+                        <AirHelpWidget />
                     </div>
                 </div>
             </section>

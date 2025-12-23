@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { Button } from '../components/Button';
 import { Search, Plane, Calendar, Users, ExternalLink, Clock, TrendingDown } from 'lucide-react';
 import { buildAffiliateUrl, getFlightAffiliateLink } from '../config/affiliate';
+import { KiwiWidget } from '../components/KiwiWidget';
+import { AviasalesWidget } from '../components/AviasalesWidget';
 
 export function Flights() {
   const [searchQuery, setSearchQuery] = useState({
@@ -223,7 +225,7 @@ export function Flights() {
             <p className="text-gray-600">Find the best flight combinations with Kiwi.com's unique virtual interlining</p>
           </div>
           <div className="bg-gray-50 rounded-xl p-6">
-            <script async src="https://tpscr.com/content?currency=usd&trs=483263&shmarker=692183&locale=en&powered_by=true&limit=4&primary_color=00AE98&results_background_color=FFFFFF&form_background_color=FFFFFF&campaign_id=111&promo_id=3411" charset="utf-8"></script>
+            <KiwiWidget />
           </div>
         </div>
       </section>
@@ -236,7 +238,7 @@ export function Flights() {
             <p className="text-gray-600">Compare prices across hundreds of airlines with Aviasales</p>
           </div>
           <div className="bg-white rounded-xl p-6 shadow-lg">
-            <script async src="https://tpscr.com/content?currency=usd&trs=483263&shmarker=692183&show_hotels=true&powered_by=true&locale=en&searchUrl=www.aviasales.com%2Fsearch&primary_override=%2332a8dd&color_button=%2332a8dd&color_icons=%2332a8dd&dark=%23262626&light=%23FFFFFF&secondary=%23FFFFFF&special=%23C4C4C4&color_focused=%2332a8dd&border_radius=0&plain=false&promo_id=7879&campaign_id=100" charset="utf-8"></script>
+            <AviasalesWidget />
           </div>
         </div>
       </section>

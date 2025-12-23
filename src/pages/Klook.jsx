@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Button } from '../components/Button';
 import { MapPin, Star, Ticket, Camera, Shield, ArrowRight, Sparkles, TrendingUp } from 'lucide-react';
+import { KlookWidget } from '../components/KlookWidget';
 
 export function Klook() {
     const affiliateLink = 'https://klook.tpx.li/HbJ3wvlk';
@@ -232,7 +233,7 @@ export function Klook() {
                         <p className="text-gray-600">Find and book your perfect experience</p>
                     </div>
                     <div className="bg-white rounded-xl p-6 shadow-lg">
-                        <script async src="https://tpscr.com/content?currency=usd&trs=483263&shmarker=692183&locale=en&powered_by=true&limit=4&primary_color=00AE98&results_background_color=FFFFFF&form_background_color=FFFFFF&promo_id=4563&campaign_id=111" charset="utf-8"></script>
+                        <KlookWidget />
                     </div>
                 </div>
             </section>
