@@ -298,7 +298,7 @@ export function Blog() {
   };
 
   // Handler for newsletter subscription
-  const handleSubscribe = (e) => {
+  const handleSubscribe = async (e) => {
     e.preventDefault();
 
     // Basic email validation
@@ -314,14 +314,34 @@ export function Blog() {
       return;
     }
 
-    // Simulate successful subscription (in production, this would call an API)
-    setSubscribeStatus('success');
-    setEmail('');
+    try {
+      // Send to Formspree
+      const response = await fetch('https://formspree.io/f/mlgrooaq', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          email: email,
+          _subject: 'New Newsletter Subscription - Gubbu',
+          message: `New newsletter subscription from: ${email}`,
+        }),
+      });
 
-    // Reset status after 5 seconds
-    setTimeout(() => {
-      setSubscribeStatus('');
-    }, 5000);
+      if (response.ok) {
+        setSubscribeStatus('success');
+        setEmail('');
+
+        // Reset status after 5 seconds
+        setTimeout(() => {
+          setSubscribeStatus('');
+        }, 5000);
+      } else {
+        setSubscribeStatus('error');
+      }
+    } catch (error) {
+      setSubscribeStatus('error');
+    }
   };
 
 
