@@ -1,0 +1,7 @@
+# Mailchimp Environment Variables
+# IMPORTANT: Add these to your cPanel environment variables or .htaccess
+# DO NOT commit this file with real values to Git!
+
+SetEnv MAILCHIMP_API_KEY "your-api-key-here"
+SetEnv MAILCHIMP_LIST_ID "887adb19d6"
+SetEnv MAILCHIMP_SERVER "us18"

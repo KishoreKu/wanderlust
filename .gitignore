@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Sensitive configuration files
+public/api/.htaccess
+MAILCHIMP_CREDENTIALS_PRIVATE.txt

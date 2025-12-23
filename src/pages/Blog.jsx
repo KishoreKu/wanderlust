@@ -314,21 +314,23 @@ export function Blog() {
       return;
     }
 
+    setSubscribeStatus('loading');
+
     try {
-      // Send to Formspree
-      const response = await fetch('https://formspree.io/f/mlgrooaq', {
+      // Send to Mailchimp via PHP backend
+      const response = await fetch('/api/subscribe.php', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
           email: email,
-          _subject: 'New Newsletter Subscription - Gubbu',
-          message: `New newsletter subscription from: ${email}`,
         }),
       });
 
-      if (response.ok) {
+      const data = await response.json();
+
+      if (data.success) {
         setSubscribeStatus('success');
         setEmail('');
 
@@ -338,8 +340,10 @@ export function Blog() {
         }, 5000);
       } else {
         setSubscribeStatus('error');
+        // You could also show the specific error message: data.message
       }
     } catch (error) {
+      console.error('Subscription error:', error);
       setSubscribeStatus('error');
     }
   };
@@ -450,18 +454,21 @@ export function Blog() {
                 placeholder="Enter your email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="flex-1 px-6 py-3 rounded-lg border-2 border-gray-300 focus:outline-none focus:border-primary-600"
+                disabled={subscribeStatus === 'loading'}
+                className="flex-1 px-6 py-3 rounded-lg border-2 border-gray-300 focus:outline-none focus:border-primary-600 disabled:opacity-50"
               />
-              <Button type="submit">Subscribe</Button>
+              <Button type="submit" disabled={subscribeStatus === 'loading'}>
+                {subscribeStatus === 'loading' ? 'Subscribing...' : 'Subscribe'}
+              </Button>
             </div>
             {subscribeStatus === 'success' && (
               <p className="mt-4 text-green-600 font-medium">
-                🎉 Thanks for subscribing! Check your email for confirmation.
+                🎉 Thanks for subscribing! You're now part of our travel community.
               </p>
             )}
             {subscribeStatus === 'error' && (
               <p className="mt-4 text-red-600 font-medium">
-                ⚠️ Please enter a valid email address.
+                ⚠️ Something went wrong. Please check your email and try again.
               </p>
             )}
           </form>
