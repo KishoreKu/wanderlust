@@ -3,7 +3,7 @@ import { Button } from '../components/Button';
 import { MapPin, Star, Ticket, Camera, Shield, ArrowRight, Sparkles, TrendingUp } from 'lucide-react';
 
 export function Klook() {
-    const affiliateLink = 'https://klook.tpx.li/BSYAjqAw';
+    const affiliateLink = 'https://klook.tpx.li/HbJ3wvlk';
 
     const benefits = [
         {

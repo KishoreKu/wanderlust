@@ -2,7 +2,7 @@ import { Ticket, ArrowRight } from 'lucide-react';
 import { Button } from './Button';
 
 export function KlookBanner({ compact = false }) {
-    const affiliateLink = 'https://klook.tpx.li/BSYAjqAw';
+    const affiliateLink = 'https://klook.tpx.li/HbJ3wvlk';
 
     if (compact) {
         return (
