@@ -29,9 +29,10 @@ export function Navbar() {
                 className="text-2xl font-bold leading-tight"
                 style={{
                   color: '#FF6B35',
-                  textShadow: '2px 2px 4px rgba(0, 206, 209, 0.3), -1px -1px 2px rgba(255, 107, 53, 0.2)',
-                  fontFamily: 'Georgia, serif',
-                  letterSpacing: '0.5px'
+                  textShadow: '0 0 1px rgba(0, 0, 0, 0.8), 1px 1px 0 rgba(0, 0, 0, 0.4), 2px 2px 6px rgba(0, 206, 209, 0.5), -1px -1px 3px rgba(255, 107, 53, 0.3), 3px 3px 8px rgba(0, 206, 209, 0.3)',
+                  fontFamily: "'Brush Script MT', 'Lucida Handwriting', cursive",
+                  letterSpacing: '1px',
+                  filter: 'drop-shadow(0 1px 2px rgba(0, 206, 209, 0.4))'
                 }}
               >
                 Gubbu
@@ -39,9 +40,10 @@ export function Navbar() {
               <span
                 className="text-xs -mt-1 italic font-light"
                 style={{
-                  color: '#4A5568',
-                  textShadow: '1px 1px 2px rgba(0, 0, 0, 0.1)',
-                  fontFamily: 'Georgia, serif'
+                  color: '#2D3748',
+                  textShadow: '0 0 1px rgba(0, 0, 0, 0.3), 1px 1px 3px rgba(0, 206, 209, 0.3), 0 1px 2px rgba(255, 255, 255, 0.8)',
+                  fontFamily: "'Brush Script MT', 'Lucida Handwriting', cursive",
+                  letterSpacing: '0.5px'
                 }}
               >
                 Your Travel Companion
