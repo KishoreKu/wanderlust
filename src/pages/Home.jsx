@@ -118,7 +118,7 @@ export function Home() {
         </div>
       </section>
 
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-gradient-to-br from-blue-50 via-white to-purple-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center p-6">
@@ -146,7 +146,7 @@ export function Home() {
         </div>
       </section>
 
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-gradient-to-br from-orange-50 via-pink-50 to-purple-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Featured Destinations</h2>
@@ -182,7 +182,7 @@ export function Home() {
         </div>
       </section>
 
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-gradient-to-br from-green-50 via-blue-50 to-cyan-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Latest from Our Blog</h2>
@@ -229,7 +229,7 @@ export function Home() {
       </section>
 
       {/* Popular Flight Destinations */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-gradient-to-br from-amber-50 via-orange-50 to-rose-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Popular Flight Destinations</h2>
