@@ -19,9 +19,8 @@ export function Navbar() {
     <nav className="bg-white/95 backdrop-blur-sm shadow-md fixed w-full top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <Link to="/" className="flex items-center space-x-2">
-            <img src="/gubbu-logo.jpg" alt="Gubbu Logo" className="h-10 w-10 rounded-full object-cover" />
-            <span className="text-2xl font-bold bg-gradient-to-r from-primary-600 to-purple-600 bg-clip-text text-transparent">Gubbu</span>
+          <Link to="/" className="flex items-center">
+            <img src="/gubbu-logo.jpg" alt="Gubbu - Your Travel Companion" className="h-12 w-auto object-contain" />
           </Link>
 
           <div className="hidden md:flex items-center space-x-8">
