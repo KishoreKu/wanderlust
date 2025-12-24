@@ -239,33 +239,70 @@ export function Home() {
         </div>
       </section>
 
+      {/* Social Proof Section */}
       <section className="py-20 bg-primary-600 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4">What Our Travelers Say</h2>
-            <p className="text-xl text-primary-100">Real experiences from real travelers</p>
+            <h2 className="text-4xl font-bold mb-4">Join Our Growing Travel Community</h2>
+            <p className="text-xl text-primary-100">Trusted by travelers worldwide</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial) => (
-              <div key={testimonial.id} className="bg-white text-gray-900 rounded-xl p-6 shadow-xl">
-                <div className="flex mb-4">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
-                  ))}
-                </div>
-                <p className="text-gray-700 mb-4 italic">"{testimonial.text}"</p>
-                <div className="flex items-center">
-                  <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mr-3">
-                    <Users className="h-6 w-6 text-primary-600" />
-                  </div>
-                  <div>
-                    <p className="font-semibold">{testimonial.name}</p>
-                    <p className="text-sm text-gray-600">{testimonial.location}</p>
-                  </div>
-                </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div className="text-center">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-white/20 rounded-full mb-4">
+                <MapPin className="h-8 w-8 text-white" />
               </div>
-            ))}
+              <div className="text-4xl font-bold mb-2">25+</div>
+              <div className="text-primary-100">Destinations Covered</div>
+            </div>
+
+            <div className="text-center">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-white/20 rounded-full mb-4">
+                <Globe className="h-8 w-8 text-white" />
+              </div>
+              <div className="text-4xl font-bold mb-2">50+</div>
+              <div className="text-primary-100">Travel Guides</div>
+            </div>
+
+            <div className="text-center">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-white/20 rounded-full mb-4">
+                <Users className="h-8 w-8 text-white" />
+              </div>
+              <div className="text-4xl font-bold mb-2">1,000+</div>
+              <div className="text-primary-100">Newsletter Subscribers</div>
+            </div>
+
+            <div className="text-center">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-white/20 rounded-full mb-4">
+                <Star className="h-8 w-8 text-white" />
+              </div>
+              <div className="text-4xl font-bold mb-2">100%</div>
+              <div className="text-primary-100">Free Content</div>
+            </div>
+          </div>
+
+          <div className="mt-12 text-center">
+            <p className="text-lg text-primary-100 mb-6">
+              Join thousands of travelers who trust Gubbu for their travel planning
+            </p>
+            <div className="flex flex-wrap justify-center gap-4">
+              <a
+                href="https://www.facebook.com/profile.php?id=61585608988393"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-white text-primary-600 rounded-lg font-semibold hover:bg-primary-50 transition-colors"
+              >
+                Follow on Facebook
+              </a>
+              <a
+                href="https://www.instagram.com/mygubbu9/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-white text-primary-600 rounded-lg font-semibold hover:bg-primary-50 transition-colors"
+              >
+                Follow on Instagram
+              </a>
+            </div>
           </div>
         </div>
       </section>
