@@ -21,7 +21,10 @@ export function Navbar() {
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="flex items-center space-x-3">
             <img src="/gubbu-icon.png" alt="Gubbu Mascot" className="h-14 w-14 object-contain drop-shadow-xl" />
-            <div className="flex flex-col">
+            <div className="flex flex-col relative px-4 py-2 rounded-lg" style={{
+              background: 'linear-gradient(135deg, rgba(0, 206, 209, 0.15) 0%, rgba(64, 224, 208, 0.08) 50%, rgba(0, 206, 209, 0.12) 100%)',
+              boxShadow: '0 2px 8px rgba(0, 206, 209, 0.15), inset 0 1px 2px rgba(255, 255, 255, 0.5)',
+            }}>
               <span
                 className="text-2xl font-bold leading-tight"
                 style={{
