@@ -21,35 +21,7 @@ export function Navbar() {
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="flex items-center space-x-3">
             <img src="/gubbu-icon.png" alt="Gubbu Mascot" className="h-14 w-14 object-contain drop-shadow-xl" />
-            <div className="flex flex-col relative px-6 py-3" style={{
-              background: 'linear-gradient(135deg, rgba(0, 206, 209, 0.15) 0%, rgba(64, 224, 208, 0.08) 50%, rgba(0, 206, 209, 0.12) 100%)',
-              boxShadow: '0 2px 8px rgba(0, 206, 209, 0.15), inset 0 1px 2px rgba(255, 255, 255, 0.5)',
-              borderRadius: '60% 40% 40% 60% / 60% 50% 50% 40%',
-            }}>
-              <span
-                className="text-3xl font-bold leading-tight"
-                style={{
-                  color: '#FF6B35',
-                  textShadow: '0 0 1px rgba(0, 0, 0, 0.8), 1px 1px 0 rgba(0, 0, 0, 0.4), 2px 2px 6px rgba(0, 206, 209, 0.5), -1px -1px 3px rgba(255, 107, 53, 0.3), 3px 3px 8px rgba(0, 206, 209, 0.3)',
-                  fontFamily: "'Brush Script MT', 'Lucida Handwriting', cursive",
-                  letterSpacing: '1px',
-                  filter: 'drop-shadow(0 1px 2px rgba(0, 206, 209, 0.4))'
-                }}
-              >
-                Gubbu
-              </span>
-              <span
-                className="text-sm -mt-1 italic font-light"
-                style={{
-                  color: '#2D3748',
-                  textShadow: '0 0 1px rgba(0, 0, 0, 0.3), 1px 1px 3px rgba(0, 206, 209, 0.3), 0 1px 2px rgba(255, 255, 255, 0.8)',
-                  fontFamily: "'Brush Script MT', 'Lucida Handwriting', cursive",
-                  letterSpacing: '0.5px'
-                }}
-              >
-                Your Travel Companion
-              </span>
-            </div>
+            <img src="/gubbu-text-logo.png" alt="Gubbu - Your Travel Companion" className="h-16 w-auto object-contain" />
           </Link>
 
           <div className="hidden md:flex items-center space-x-8">
