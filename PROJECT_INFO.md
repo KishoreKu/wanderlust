@@ -13,7 +13,7 @@
 ## 🌐 Website & Social Media
 
 ### Website
-- **Domain:** [YOUR DOMAIN HERE - Please add]
+- **Domain:** gubbu.io
 - **Status:** Live and deployed
 
 ### Social Media Accounts
@@ -22,7 +22,7 @@
 - **Pinterest:** https://www.pinterest.com/gubbuna/
 - **YouTube:** https://www.youtube.com/@Gubbu-1
 - **X (Twitter):** https://x.com/gubbuo
-- **Bluesky:** https://bsky.app/profile/gubbu.bsky.social
+- **Bluesky:** https://bsky.app/profile/gubbu.io
 
 ---
 

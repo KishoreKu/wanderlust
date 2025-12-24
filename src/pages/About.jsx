@@ -189,7 +189,7 @@ export function About() {
                                 X (Twitter)
                             </a>
                             <a
-                                href="https://bsky.app/profile/gubbu.bsky.social"
+                                href="https://bsky.app/profile/gubbu.io"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-flex items-center gap-2 px-6 py-3 bg-white text-primary-600 rounded-lg font-semibold hover:bg-primary-50 transition-colors"
