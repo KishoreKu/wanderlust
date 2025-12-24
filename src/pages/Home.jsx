@@ -118,7 +118,7 @@ export function Home() {
         </div>
       </section>
 
-      <section className="py-16 bg-gradient-to-br from-blue-50 via-white to-purple-50">
+      <section className="py-16 bg-sky-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center p-6">
@@ -146,7 +146,7 @@ export function Home() {
         </div>
       </section>
 
-      <section className="py-20 bg-gradient-to-br from-orange-50 via-pink-50 to-purple-50">
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Featured Destinations</h2>
@@ -182,7 +182,7 @@ export function Home() {
         </div>
       </section>
 
-      <section className="py-20 bg-gradient-to-br from-green-50 via-blue-50 to-cyan-50">
+      <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Latest from Our Blog</h2>
@@ -229,7 +229,7 @@ export function Home() {
       </section>
 
       {/* Popular Flight Destinations */}
-      <section className="py-20 bg-gradient-to-br from-amber-50 via-orange-50 to-rose-50">
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Popular Flight Destinations</h2>
@@ -272,7 +272,7 @@ export function Home() {
 
       <NewsletterSignup />
 
-      <section className="py-20 bg-gradient-to-br from-gray-900 via-purple-900 to-pink-900 text-white">
+      <section className="py-20 bg-gradient-to-r from-primary-600 to-primary-800 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold mb-4">Ready to Start Your Adventure?</h2>
           <p className="text-xl mb-8 text-gray-200">
