@@ -3,6 +3,7 @@ import { Button } from '../components/Button';
 import { MapPin, Calendar, Users, Star, ArrowRight, Plane, Hotel, Globe } from 'lucide-react';
 import { AviasalesPopularWidget } from '../components/AviasalesPopularWidget';
 import { NewsletterSignup } from '../components/NewsletterSignup';
+import { Snowfall } from '../components/Snowfall';
 
 export function Home() {
   const featuredDestinations = [
@@ -82,6 +83,8 @@ export function Home() {
 
   return (
     <div className="min-h-screen">
+      <Snowfall density={30} />
+      {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center bg-gradient-to-br from-primary-600 to-primary-800 text-white">
         <div className="absolute inset-0 bg-black opacity-40"></div>
         <div
