@@ -27,7 +27,7 @@ export function Navbar() {
               borderRadius: '60% 40% 40% 60% / 60% 50% 50% 40%',
             }}>
               <span
-                className="text-2xl font-bold leading-tight"
+                className="text-3xl font-bold leading-tight"
                 style={{
                   color: '#FF6B35',
                   textShadow: '0 0 1px rgba(0, 0, 0, 0.8), 1px 1px 0 rgba(0, 0, 0, 0.4), 2px 2px 6px rgba(0, 206, 209, 0.5), -1px -1px 3px rgba(255, 107, 53, 0.3), 3px 3px 8px rgba(0, 206, 209, 0.3)',
@@ -39,7 +39,7 @@ export function Navbar() {
                 Gubbu
               </span>
               <span
-                className="text-xs -mt-1 italic font-light"
+                className="text-sm -mt-1 italic font-light"
                 style={{
                   color: '#2D3748',
                   textShadow: '0 0 1px rgba(0, 0, 0, 0.3), 1px 1px 3px rgba(0, 206, 209, 0.3), 0 1px 2px rgba(255, 255, 255, 0.8)',
