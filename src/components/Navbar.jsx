@@ -20,12 +20,12 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="flex items-center space-x-3">
-            <img src="/gubbu-icon.jpg" alt="Gubbu Mascot" className="h-14 w-14 object-contain drop-shadow-lg" />
-            <div className="flex flex-col">
-              <span className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-orange-600 leading-tight">
+            <img src="/gubbu-icon.jpg" alt="Gubbu Mascot" className="h-14 w-14 object-contain bg-white rounded-lg p-1" />
+            <div className="flex flex-col px-4 py-2 bg-gradient-to-r from-cyan-400 to-cyan-500 rounded-lg shadow-md">
+              <span className="text-2xl font-bold text-orange-500 leading-tight" style={{ fontFamily: 'Arial Black, sans-serif' }}>
                 Gubbu
               </span>
-              <span className="text-xs text-gray-600 -mt-1 italic">Your Travel Companion</span>
+              <span className="text-xs text-yellow-400 -mt-1 italic font-medium">Your Travel Companion</span>
             </div>
           </Link>
 
