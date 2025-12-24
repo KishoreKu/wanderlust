@@ -19,44 +19,74 @@
   text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
 }
 
+/* Straight fall */
 @keyframes fall {
   0% {
     transform: translateY(0) rotate(0deg);
   }
+
   100% {
     transform: translateY(110vh) rotate(360deg);
   }
 }
 
-/* Optional: Add slight horizontal drift */
-.snowflake:nth-child(3n) {
-  animation: fall-drift linear infinite;
-}
-
+/* Drift to the right with sway */
 @keyframes fall-drift {
   0% {
     transform: translateY(0) translateX(0) rotate(0deg);
   }
-  50% {
-    transform: translateY(55vh) translateX(20px) rotate(180deg);
+
+  25% {
+    transform: translateY(27.5vh) translateX(var(--sway-distance, 30px)) rotate(90deg);
   }
+
+  50% {
+    transform: translateY(55vh) translateX(0) rotate(180deg);
+  }
+
+  75% {
+    transform: translateY(82.5vh) translateX(var(--sway-distance, 30px)) rotate(270deg);
+  }
+
   100% {
     transform: translateY(110vh) translateX(0) rotate(360deg);
   }
 }
 
-.snowflake:nth-child(3n+1) {
-  animation: fall-drift-reverse linear infinite;
-}
-
+/* Drift to the left with sway */
 @keyframes fall-drift-reverse {
   0% {
     transform: translateY(0) translateX(0) rotate(0deg);
   }
-  50% {
-    transform: translateY(55vh) translateX(-20px) rotate(180deg);
+
+  25% {
+    transform: translateY(27.5vh) translateX(calc(-1 * var(--sway-distance, 30px))) rotate(90deg);
   }
+
+  50% {
+    transform: translateY(55vh) translateX(0) rotate(180deg);
+  }
+
+  75% {
+    transform: translateY(82.5vh) translateX(calc(-1 * var(--sway-distance, 30px))) rotate(270deg);
+  }
+
   100% {
     transform: translateY(110vh) translateX(0) rotate(360deg);
+  }
+}
+
+/* Add subtle wind effect */
+@media (prefers-reduced-motion: no-preference) {
+  .snowflake {
+    animation-timing-function: ease-in-out;
+  }
+}
+
+/* Respect user's motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .snowflake {
+    animation: none;
+    opacity: 0.3;
   }
 }
