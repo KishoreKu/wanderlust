@@ -16,12 +16,12 @@ export function Navbar() {
   ];
 
   return (
-    <nav className="bg-white shadow-md fixed w-full top-0 z-50">
+    <nav className="bg-gradient-to-r from-primary-600 via-purple-600 to-pink-600 shadow-lg fixed w-full top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="flex items-center space-x-2">
-            <Plane className="h-8 w-8 text-primary-600" />
-            <span className="text-2xl font-bold text-gray-900">Gubbu</span>
+            <Plane className="h-8 w-8 text-white" />
+            <span className="text-2xl font-bold text-white">Gubbu</span>
           </Link>
 
           <div className="hidden md:flex items-center space-x-8">
@@ -29,7 +29,7 @@ export function Navbar() {
               <Link
                 key={link.path}
                 to={link.path}
-                className="text-gray-700 hover:text-primary-600 font-medium transition-colors"
+                className="text-white hover:text-yellow-300 font-medium transition-colors"
               >
                 {link.name}
               </Link>
@@ -38,7 +38,7 @@ export function Navbar() {
 
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden text-gray-700 hover:text-primary-600"
+            className="md:hidden text-white hover:text-yellow-300"
           >
             {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
@@ -46,13 +46,13 @@ export function Navbar() {
       </div>
 
       {isOpen && (
-        <div className="md:hidden bg-white border-t">
+        <div className="md:hidden bg-primary-700 border-t border-primary-500">
           <div className="px-2 pt-2 pb-3 space-y-1">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
                 to={link.path}
-                className="block px-3 py-2 text-gray-700 hover:text-primary-600 hover:bg-gray-50 rounded-md font-medium"
+                className="block px-3 py-2 text-white hover:text-yellow-300 hover:bg-primary-600 rounded-md font-medium"
                 onClick={() => setIsOpen(false)}
               >
                 {link.name}

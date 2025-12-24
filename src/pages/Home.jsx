@@ -272,10 +272,10 @@ export function Home() {
 
       <NewsletterSignup />
 
-      <section className="py-20 bg-gradient-to-r from-primary-600 to-primary-800 text-white">
+      <section className="py-20 bg-gradient-to-br from-gray-900 via-purple-900 to-pink-900 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold mb-4">Ready to Start Your Adventure?</h2>
-          <p className="text-xl mb-8 text-primary-100">
+          <p className="text-xl mb-8 text-gray-200">
             Find the best deals on hotels and flights for your next trip
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
