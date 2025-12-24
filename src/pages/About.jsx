@@ -1,5 +1,5 @@
 import { Button } from '../components/Button';
-import { MapPin, Users, Award, Heart, Globe, Camera, Facebook, Instagram } from 'lucide-react';
+import { MapPin, Users, Award, Heart, Globe, Camera, Facebook, Instagram, Youtube } from 'lucide-react';
 import { NewsletterSignup } from '../components/NewsletterSignup';
 
 export function About() {
@@ -149,7 +149,7 @@ export function About() {
                     {/* Social Media Links */}
                     <div className="text-center">
                         <h3 className="text-2xl font-bold mb-6">Follow Us on Social Media</h3>
-                        <div className="flex justify-center gap-6">
+                        <div className="flex flex-wrap justify-center gap-4">
                             <a
                                 href="https://www.facebook.com/profile.php?id=61585608988393"
                                 target="_blank"
@@ -167,6 +167,26 @@ export function About() {
                             >
                                 <Instagram className="h-5 w-5" />
                                 Instagram
+                            </a>
+                            <a
+                                href="https://www.youtube.com/@Gubbu-1"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center gap-2 px-6 py-3 bg-white text-primary-600 rounded-lg font-semibold hover:bg-primary-50 transition-colors"
+                            >
+                                <Youtube className="h-5 w-5" />
+                                YouTube
+                            </a>
+                            <a
+                                href="https://x.com/gubbuo"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center gap-2 px-6 py-3 bg-white text-primary-600 rounded-lg font-semibold hover:bg-primary-50 transition-colors"
+                            >
+                                <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                                </svg>
+                                X (Twitter)
                             </a>
                             <a
                                 href="https://www.pinterest.com/gubbuna/"
