@@ -11,6 +11,16 @@ export function Blog() {
 
   const blogPosts = [
     {
+      id: 'christmas-2025',
+      title: '🎄 The Ultimate Christmas Travel Guide 2025: 10 Magical Destinations',
+      excerpt: 'Discover the world\'s most enchanting Christmas destinations! From snowy Lapland to festive New York City, find your perfect holiday escape. Complete with budget tips, packing lists, and insider secrets.',
+      image: 'https://images.unsplash.com/photo-1512389142860-9c449e58a543?w=800&auto=format&fit=crop',
+      date: 'Dec 24, 2024',
+      category: 'Destinations',
+      readTime: '8 min read',
+      featured: true,
+    },
+    {
       id: 1,
       title: '10 Hidden Gems in Southeast Asia',
       excerpt: 'Discover the most beautiful off-the-beaten-path destinations that most tourists miss. From secret beaches to mountain villages.',
