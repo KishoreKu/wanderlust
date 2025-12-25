@@ -353,6 +353,124 @@ export function Flights() {
         </div>
       </section>
 
+      {/* Flight Booking Tips - SEO Content */}
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-4xl font-bold text-gray-900 mb-6">How to Find Cheap Flights: The Ultimate Guide</h2>
+
+          <div className="prose prose-lg max-w-none">
+            <p className="text-xl text-gray-700 mb-8">
+              Finding cheap flights doesn't have to be complicated. With the right strategies and tools, you can save hundreds of dollars on your next trip. Here's everything you need to know about booking affordable flights.
+            </p>
+
+            <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">When to Book Flights for the Best Prices</h3>
+            <p className="text-gray-700 mb-4">
+              Timing is everything when it comes to finding cheap flights. Here's when you should book:
+            </p>
+            <ul className="list-disc pl-6 mb-6 space-y-2 text-gray-700">
+              <li><strong>Domestic Flights:</strong> Book 1-3 months in advance for the best prices</li>
+              <li><strong>International Flights:</strong> Book 2-8 months ahead, depending on destination</li>
+              <li><strong>Best Day to Book:</strong> Tuesday and Wednesday often have lower prices</li>
+              <li><strong>Best Time to Fly:</strong> Mid-week flights (Tuesday-Thursday) are usually cheaper</li>
+              <li><strong>Avoid Peak Seasons:</strong> Skip holidays, school breaks, and summer if possible</li>
+            </ul>
+
+            <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Flight Comparison Tools That Actually Work</h3>
+            <p className="text-gray-700 mb-4">
+              Don't rely on just one search engine. Compare prices across multiple platforms to ensure you're getting the best deal:
+            </p>
+            <ul className="list-disc pl-6 mb-6 space-y-2 text-gray-700">
+              <li><strong>Kiwi.com:</strong> Great for multi-city trips and unique route combinations</li>
+              <li><strong>Aviasales:</strong> Compares prices from hundreds of airlines and booking sites</li>
+              <li><strong>Google Flights:</strong> Excellent calendar view to find the cheapest dates</li>
+              <li><strong>Skyscanner:</strong> "Everywhere" search feature for inspiration</li>
+            </ul>
+
+            <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Money-Saving Flight Booking Strategies</h3>
+
+            <h4 className="text-xl font-semibold text-gray-900 mt-6 mb-3">1. Be Flexible with Your Dates</h4>
+            <p className="text-gray-700 mb-4">
+              Flying just one day earlier or later can save you $100-300. Use flexible date search tools to compare prices across different days. Mid-week flights are typically 20-30% cheaper than weekend departures.
+            </p>
+
+            <h4 className="text-xl font-semibold text-gray-900 mt-6 mb-3">2. Consider Nearby Airports</h4>
+            <p className="text-gray-700 mb-4">
+              Major cities often have multiple airports. For example, flying into Oakland instead of San Francisco, or Stansted instead of Heathrow, can save significant money. Factor in ground transportation costs when comparing.
+            </p>
+
+            <h4 className="text-xl font-semibold text-gray-900 mt-6 mb-3">3. Book One-Way Tickets Separately</h4>
+            <p className="text-gray-700 mb-4">
+              Sometimes booking two one-way tickets (even on different airlines) is cheaper than a round-trip ticket. This is especially true for international flights and when mixing budget and traditional carriers.
+            </p>
+
+            <h4 className="text-xl font-semibold text-gray-900 mt-6 mb-3">4. Use Incognito Mode</h4>
+            <p className="text-gray-700 mb-4">
+              Airlines and booking sites may track your searches and raise prices. Always search in incognito/private browsing mode to see the true lowest prices.
+            </p>
+
+            <h4 className="text-xl font-semibold text-gray-900 mt-6 mb-3">5. Set Price Alerts</h4>
+            <p className="text-gray-700 mb-4">
+              Most flight search engines offer price alerts. Set them up for your desired routes and get notified when prices drop. This is perfect for flexible travelers who can book quickly when deals appear.
+            </p>
+
+            <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Best Times to Travel by Destination</h3>
+            <ul className="list-disc pl-6 mb-6 space-y-2 text-gray-700">
+              <li><strong>Europe:</strong> Cheapest in November-March (except holidays), most expensive June-August</li>
+              <li><strong>Asia:</strong> Best prices in shoulder seasons (April-May, September-October)</li>
+              <li><strong>Caribbean:</strong> Lowest prices in May-June and September-November (hurricane season)</li>
+              <li><strong>South America:</strong> Cheapest during their winter (June-August)</li>
+              <li><strong>Australia:</strong> Best deals in their winter (June-August)</li>
+            </ul>
+
+            <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Hidden Fees to Watch Out For</h3>
+            <p className="text-gray-700 mb-4">
+              That cheap ticket price might not be so cheap once you add:
+            </p>
+            <ul className="list-disc pl-6 mb-6 space-y-2 text-gray-700">
+              <li><strong>Baggage Fees:</strong> Check airline policies - some charge for carry-ons!</li>
+              <li><strong>Seat Selection:</strong> Budget airlines charge extra for seat assignments</li>
+              <li><strong>Payment Fees:</strong> Credit card processing fees can add $10-30</li>
+              <li><strong>Booking Fees:</strong> Third-party sites may charge service fees</li>
+              <li><strong>Change/Cancellation Fees:</strong> Read the fine print before booking</li>
+            </ul>
+
+            <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Mistake Fares and Flash Sales</h3>
+            <p className="text-gray-700 mb-4">
+              Occasionally, airlines make pricing errors or offer flash sales with incredible discounts. Follow these tips to catch them:
+            </p>
+            <ul className="list-disc pl-6 mb-6 space-y-2 text-gray-700">
+              <li>Follow airline social media accounts for flash sale announcements</li>
+              <li>Subscribe to deal alert newsletters (Scott's Cheap Flights, Secret Flying)</li>
+              <li>Be ready to book immediately - these deals disappear fast</li>
+              <li>Have your passport and payment info ready</li>
+              <li>Be flexible with destinations - mistake fares are often to random locations</li>
+            </ul>
+
+            <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Frequently Asked Questions</h3>
+
+            <h4 className="text-xl font-semibold text-gray-900 mt-6 mb-3">What day of the week are flights cheapest?</h4>
+            <p className="text-gray-700 mb-4">
+              Tuesday, Wednesday, and Saturday flights are typically cheapest. Tuesday and Wednesday afternoons are often the best times to book, as airlines release deals early in the week.
+            </p>
+
+            <h4 className="text-xl font-semibold text-gray-900 mt-6 mb-3">How far in advance should I book international flights?</h4>
+            <p className="text-gray-700 mb-4">
+              For international flights, the sweet spot is 2-8 months in advance. Booking too early (more than 11 months) or too late (less than 3 weeks) usually results in higher prices.
+            </p>
+
+            <h4 className="text-xl font-semibold text-gray-900 mt-6 mb-3">Are budget airlines worth it?</h4>
+            <p className="text-gray-700 mb-4">
+              Budget airlines can save you money, but factor in all costs. Add up baggage fees, seat selection, food, and transportation to/from secondary airports. Sometimes traditional airlines offer better overall value.
+            </p>
+
+            <h4 className="text-xl font-semibold text-gray-900 mt-6 mb-3">Should I book directly with the airline or through a third party?</h4>
+            <p className="text-gray-700 mb-4">
+              While third-party sites can sometimes offer lower prices, booking directly with airlines gives you better customer service, easier changes/cancellations, and loyalty program benefits. Compare both options before deciding.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Aviasales Interactive Map */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
