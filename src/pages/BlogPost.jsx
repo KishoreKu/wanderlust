@@ -5,15 +5,80 @@ import { Button } from '../components/Button';
 export function BlogPost() {
   const { id } = useParams();
 
-  const post = {
-    id: 1,
-    title: '10 Hidden Gems in Southeast Asia',
-    author: 'Sarah Johnson',
-    date: 'December 15, 2024',
-    readTime: '8 min read',
-    category: 'Destinations',
-    image: 'https://images.unsplash.com/photo-1528181304800-259b08848526?w=1200&auto=format&fit=crop',
-    content: `
+  const posts = {
+    'christmas-2025': {
+      id: 'christmas-2025',
+      title: '🎄 The Ultimate Christmas Travel Guide 2025: 10 Magical Destinations',
+      author: 'Gubbu Team',
+      date: 'December 24, 2024',
+      readTime: '8 min read',
+      category: 'Destinations',
+      image: 'https://images.unsplash.com/photo-1512389142860-9c449e58a543?w=1200&auto=format&fit=crop',
+      content: `
+        <p class="text-lg mb-6">Merry Christmas from Gubbu! ✨ Dreaming of a magical Christmas getaway? Whether you're seeking snowy wonderlands, festive markets, or sunny beach escapes, we've curated the ultimate guide to the world's most enchanting Christmas destinations.</p>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🇫🇮 1. Lapland, Finland - The Ultimate Winter Wonderland</h2>
+        <p class="mb-4"><strong>Why Visit:</strong> Meet Santa Claus in his official hometown, experience the magical Northern Lights, stay in a glass igloo or ice hotel, and enjoy husky sledding and reindeer rides.</p>
+        <p class="mb-4"><strong>Best Time:</strong> December 15-30 | <strong>Average Cost:</strong> $2,000-3,500 per person (7 days)</p>
+        <p class="mb-6"><strong>Insider Tip:</strong> Book Northern Lights tours between 9 PM - 2 AM for the best viewing opportunities!</p>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🗽 2. New York City, USA - The Classic Christmas</h2>
+        <p class="mb-4"><strong>Why Visit:</strong> Iconic Rockefeller Center Christmas Tree, ice skating in Central Park, world-famous holiday window displays, and Broadway Christmas shows.</p>
+        <p class="mb-4"><strong>Best Time:</strong> December 1-31 | <strong>Average Cost:</strong> $1,500-2,500 per person (5 days)</p>
+        <p class="mb-6"><strong>Insider Tip:</strong> Visit early morning (7-9 AM) to avoid crowds at Rockefeller Center!</p>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🇩🇪 3. Munich, Germany - Christmas Market Heaven</h2>
+        <p class="mb-4"><strong>Why Visit:</strong> Traditional Christkindlmarkt (Christmas markets), authentic German mulled wine (Glühwein), handcrafted ornaments and gifts, and Bavarian Christmas traditions.</p>
+        <p class="mb-4"><strong>Best Time:</strong> November 27 - December 24 | <strong>Average Cost:</strong> $1,200-2,000 per person (5 days)</p>
+        <p class="mb-6"><strong>Insider Tip:</strong> Try the Lebkuchen (gingerbread) and Stollen (fruit bread) - authentic German Christmas treats!</p>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🏔️ 4. Swiss Alps, Switzerland - Snowy Paradise</h2>
+        <p class="mb-4"><strong>Why Visit:</strong> Picture-perfect snow-covered mountains, world-class skiing and snowboarding, charming alpine villages, and cozy chalets with fireplaces.</p>
+        <p class="mb-4"><strong>Best Time:</strong> December 20 - January 5 | <strong>Average Cost:</strong> $2,500-4,000 per person (7 days)</p>
+        <p class="mb-6"><strong>Insider Tip:</strong> Visit Zermatt for car-free village charm and Matterhorn views!</p>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🎻 5. Vienna, Austria - Imperial Christmas</h2>
+        <p class="mb-4"><strong>Why Visit:</strong> Elegant Christmas markets, classical Christmas concerts, imperial palaces decorated for holidays, and traditional Viennese pastries.</p>
+        <p class="mb-4"><strong>Best Time:</strong> November 15 - December 26 | <strong>Average Cost:</strong> $1,300-2,200 per person (5 days)</p>
+        <p class="mb-6"><strong>Insider Tip:</strong> Try Sachertorte at Café Sacher - the perfect Christmas treat!</p>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">💰 Budget Travel Tips for Christmas</h2>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li><strong>Book Early:</strong> Flights 2-3 months in advance, hotels 1-2 months ahead - save 30-50%</li>
+          <li><strong>Travel Off-Peak:</strong> Avoid December 23-26, consider December 15-20 or 27-31 - save 20-40%</li>
+          <li><strong>Use Points & Miles:</strong> Credit card rewards, airline miles, hotel loyalty programs</li>
+          <li><strong>Stay Outside City Centers:</strong> Use public transportation - save 40-60% on accommodation</li>
+          <li><strong>Eat Like a Local:</strong> Avoid tourist restaurants, try street food and markets - save 50-70%</li>
+        </ul>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🎁 Christmas Travel Packing Checklist</h2>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li>Warm winter coat (for cold destinations)</li>
+          <li>Thermal underwear and waterproof boots</li>
+          <li>Gloves, scarf, and hat</li>
+          <li>Festive outfit for Christmas dinner</li>
+          <li>Camera for Northern Lights/snow photos</li>
+          <li>Power adapters and portable charger</li>
+          <li>Passport (valid 6+ months) and travel insurance</li>
+        </ul>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">✈️ More Magical Destinations</h2>
+        <p class="mb-4">We've also covered Iceland (Northern Lights), London (Winter Wonderland), Tokyo (Illuminations), Sydney (Summer Christmas), and Quebec City (French-Canadian charm) in our complete guide!</p>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🎄 Final Thoughts</h2>
+        <p class="mb-4">Christmas is the most magical time to travel! Whether you're seeking snowy adventures in Lapland, festive markets in Germany, or sunny beaches in Australia, there's a perfect destination waiting for you.</p>
+        <p class="mb-6">From all of us at Gubbu, we wish you a Merry Christmas and happy travels! 🎅✈️</p>
+      `,
+    },
+    '1': {
+      id: 1,
+      title: '10 Hidden Gems in Southeast Asia',
+      author: 'Sarah Johnson',
+      date: 'December 15, 2024',
+      readTime: '8 min read',
+      category: 'Destinations',
+      image: 'https://images.unsplash.com/photo-1528181304800-259b08848526?w=1200&auto=format&fit=crop',
+      content: `
       <p class="text-lg mb-6">Southeast Asia is known for its popular destinations like Bangkok, Bali, and Singapore, but the region is filled with countless hidden gems waiting to be discovered. In this comprehensive guide, we'll take you through ten incredible destinations that most tourists miss.</p>
 
       <h2 class="text-3xl font-bold mt-8 mb-4">1. Luang Prabang, Laos</h2>
@@ -49,7 +114,11 @@ export function BlogPost() {
       <p class="mb-4">Southeast Asia's hidden gems offer authentic experiences away from the tourist crowds. These destinations provide incredible value for money, warm hospitality, and memories that will last a lifetime.</p>
       <p class="mb-6">Whether you're a budget backpacker or a luxury traveler, these hidden gems have something special to offer. Start planning your Southeast Asian adventure today!</p>
     `,
+    },
   };
+
+  // Get the post based on ID, default to Southeast Asia post if not found
+  const post = posts[id] || posts['1'];
 
   const relatedPosts = [
     {
@@ -73,7 +142,7 @@ export function BlogPost() {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50 pt-16">
+    <div className="min-h-screen bg-gray-50 pt-16" >
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <Link to="/blog" className="inline-flex items-center text-primary-600 hover:text-primary-700 mb-8">
           <ArrowLeft className="h-4 w-4 mr-2" />
@@ -82,8 +151,8 @@ export function BlogPost() {
 
         <div className="bg-white rounded-xl shadow-lg overflow-hidden">
           <div className="relative h-96">
-            <img 
-              src={post.image} 
+            <img
+              src={post.image}
               alt={post.title}
               className="w-full h-full object-cover"
             />
@@ -122,7 +191,7 @@ export function BlogPost() {
               </div>
             </div>
 
-            <div 
+            <div
               className="prose prose-lg max-w-none"
               dangerouslySetInnerHTML={{ __html: post.content }}
             />
@@ -151,14 +220,14 @@ export function BlogPost() {
         <h2 className="text-3xl font-bold mb-8">Related Articles</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {relatedPosts.map((relatedPost) => (
-            <Link 
-              key={relatedPost.id} 
+            <Link
+              key={relatedPost.id}
               to={`/blog/${relatedPost.id}`}
               className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1"
             >
               <div className="relative h-48">
-                <img 
-                  src={relatedPost.image} 
+                <img
+                  src={relatedPost.image}
                   alt={relatedPost.title}
                   className="w-full h-full object-cover"
                 />
@@ -175,6 +244,6 @@ export function BlogPost() {
           ))}
         </div>
       </section>
-    </div>
+    </div >
   );
 }
