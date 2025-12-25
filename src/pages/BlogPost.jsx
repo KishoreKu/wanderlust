@@ -22,10 +22,32 @@ export function BlogPost() {
         <p class="mb-4"><strong>Best Time:</strong> December 15-30 | <strong>Average Cost:</strong> $2,000-3,500 per person (7 days)</p>
         <p class="mb-6"><strong>Insider Tip:</strong> Book Northern Lights tours between 9 PM - 2 AM for the best viewing opportunities!</p>
 
+        <h3 class="text-2xl font-bold mt-6 mb-3">Where to Stay in Lapland</h3>
+        <div class="bg-primary-50 rounded-lg p-6 mb-6">
+          <p class="mb-3"><strong>Near Santa Claus Village (Rovaniemi):</strong> Stay close to the action with easy access to Santa's village and Northern Lights tours.</p>
+          <a href="https://www.anrdoezrs.net/click-101618526-10438018" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors mb-4">Find hotels in Rovaniemi, Lapland →</a>
+          
+          <p class="mb-3 mt-4"><strong>Glass Igloo Hotels:</strong> Watch the Northern Lights from your bed in a unique glass igloo experience.</p>
+          <a href="https://www.anrdoezrs.net/click-101618526-10438018" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors mb-4">Search glass igloo hotels →</a>
+          
+          <p class="text-sm text-gray-600 mt-4">💡 <strong>Booking Tip:</strong> Reserve 2-3 months in advance - glass igloos sell out fast for Christmas!</p>
+        </div>
+
         <h2 class="text-3xl font-bold mt-8 mb-4">🗽 2. New York City, USA - The Classic Christmas</h2>
         <p class="mb-4"><strong>Why Visit:</strong> Iconic Rockefeller Center Christmas Tree, ice skating in Central Park, world-famous holiday window displays, and Broadway Christmas shows.</p>
         <p class="mb-4"><strong>Best Time:</strong> December 1-31 | <strong>Average Cost:</strong> $1,500-2,500 per person (5 days)</p>
         <p class="mb-6"><strong>Insider Tip:</strong> Visit early morning (7-9 AM) to avoid crowds at Rockefeller Center!</p>
+
+        <h3 class="text-2xl font-bold mt-6 mb-3">Where to Stay in New York City</h3>
+        <div class="bg-primary-50 rounded-lg p-6 mb-6">
+          <p class="mb-3"><strong>Midtown Manhattan (Best for Christmas Activities):</strong> Stay near Rockefeller Center to be in the heart of the holiday action.</p>
+          <a href="https://www.anrdoezrs.net/click-101618526-10438018" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors mb-4">Find hotels in Midtown Manhattan →</a>
+          
+          <p class="mb-3 mt-4"><strong>Times Square Area:</strong> Perfect for Broadway shows and New Year's Eve celebrations.</p>
+          <a href="https://www.anrdoezrs.net/click-101618526-10438018" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors mb-4">Search Times Square hotels →</a>
+          
+          <p class="text-sm text-gray-600 mt-4">💡 <strong>Booking Tip:</strong> Book 2-3 months in advance for best Christmas rates!</p>
+        </div>
 
         <h2 class="text-3xl font-bold mt-8 mb-4">🇩🇪 3. Munich, Germany - Christmas Market Heaven</h2>
         <p class="mb-4"><strong>Why Visit:</strong> Traditional Christkindlmarkt (Christmas markets), authentic German mulled wine (Glühwein), handcrafted ornaments and gifts, and Bavarian Christmas traditions.</p>
