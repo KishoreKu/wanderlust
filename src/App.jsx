@@ -3,6 +3,7 @@ import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 import { GoogleAnalytics } from './components/GoogleAnalytics';
 import { NewsletterPopup } from './components/NewsletterPopup';
+import { CanonicalTag } from './components/CanonicalTag';
 import { Home } from './pages/Home';
 import { Blog } from './pages/Blog';
 import { BlogPost } from './pages/BlogPost';
@@ -21,6 +22,7 @@ function App() {
   return (
     <Router>
       <GoogleAnalytics />
+      <CanonicalTag />
       <div className="flex flex-col min-h-screen">
         <Navbar />
         <main className="flex-grow">
