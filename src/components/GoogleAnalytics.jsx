@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
-const measurementId = 'G-77JB64XNQ8'; // Gubbu Analytics
+const measurementId = 'G-VNY9DWFD4B'; // Gubbu Analytics - CORRECT ID
 
 export function GoogleAnalytics() {
     const location = useLocation();
