@@ -20,19 +20,35 @@ export function GoogleAnalytics() {
         }
         window.gtag = gtag;
         gtag('js', new Date());
-        gtag('config', measurementId);
+        gtag('config', measurementId, {
+            page_path: window.location.pathname + window.location.search,
+            page_title: document.title,
+            page_location: window.location.href,
+        });
 
         return () => {
             // Cleanup
-            document.head.removeChild(script1);
+            if (document.head.contains(script1)) {
+                document.head.removeChild(script1);
+            }
         };
     }, []);
 
     // Track page views on route change
     useEffect(() => {
         if (window.gtag) {
+            // Send pageview event with proper parameters
+            window.gtag('event', 'page_view', {
+                page_path: location.pathname + location.search,
+                page_title: document.title,
+                page_location: window.location.origin + location.pathname + location.search,
+            });
+
+            // Also update config
             window.gtag('config', measurementId, {
                 page_path: location.pathname + location.search,
+                page_title: document.title,
+                page_location: window.location.origin + location.pathname + location.search,
             });
         }
     }, [location]);
