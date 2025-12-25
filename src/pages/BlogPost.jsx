@@ -41,10 +41,10 @@ export function BlogPost() {
         <h3 class="text-2xl font-bold mt-6 mb-3">Where to Stay in New York City</h3>
         <div class="bg-primary-50 rounded-lg p-6 mb-6">
           <p class="mb-3"><strong>Midtown Manhattan (Best for Christmas Activities):</strong> Stay near Rockefeller Center to be in the heart of the holiday action.</p>
-          <a href="https://www.anrdoezrs.net/click-101618526-10438018" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors mb-4">Find hotels in Midtown Manhattan →</a>
+          <a href="https://www.jdoqocy.com/click-101618526-10430139" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors mb-4">Find hotels in Midtown Manhattan →</a>
           
           <p class="mb-3 mt-4"><strong>Times Square Area:</strong> Perfect for Broadway shows and New Year's Eve celebrations.</p>
-          <a href="https://www.anrdoezrs.net/click-101618526-10438018" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors mb-4">Search Times Square hotels →</a>
+          <a href="https://www.jdoqocy.com/click-101618526-10430139" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors mb-4">Search Times Square hotels →</a>
           
           <p class="text-sm text-gray-600 mt-4">💡 <strong>Booking Tip:</strong> Book 2-3 months in advance for best Christmas rates!</p>
         </div>

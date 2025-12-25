@@ -30,10 +30,17 @@ export const TRAVELPAYOUTS_CONFIG = {
 
 // Hotels.com Affiliate Configuration
 export const HOTELS_COM_CONFIG = {
-  // Hotels.com affiliate link (Commission Junction)
+  // General Hotels.com affiliate link
   affiliateLink: 'https://www.anrdoezrs.net/click-101618526-10438018',
   // Canada link for Canadian destinations
   canadaLink: 'https://www.tkqlhce.com/click-101618526-11131426',
+  // Destination-specific links for better conversions
+  destinations: {
+    'new york': 'https://www.jdoqocy.com/click-101618526-10430139',
+    'nyc': 'https://www.jdoqocy.com/click-101618526-10430139',
+    'london': 'https://www.anrdoezrs.net/click-101618526-10437075',
+    'tokyo': 'https://www.dpbolvw.net/click-101618526-13627287',
+  },
 };
 
 // Helper function to build affiliate URL
