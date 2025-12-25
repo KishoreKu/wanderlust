@@ -4,7 +4,7 @@
 export const TRAVELPAYOUTS_CONFIG = {
   // Your Travelpayouts marker (affiliate ID)
   marker: '691211',
-  
+
   // Hotel search widget settings
   hotels: {
     // Booking.com affiliate program through Travelpayouts
@@ -12,7 +12,7 @@ export const TRAVELPAYOUTS_CONFIG = {
     // Alternative: Direct Booking.com link with your affiliate ID
     bookingComUrl: 'https://www.booking.com/searchresults.html',
   },
-  
+
   // Flight search settings
   flights: {
     // Aviasales/JetRadar (Travelpayouts flight search)
@@ -20,7 +20,7 @@ export const TRAVELPAYOUTS_CONFIG = {
     // Alternative widgets
     jetRadarUrl: 'https://www.jetradar.com',
   },
-  
+
   // Travelpayouts API settings (optional - for dynamic data)
   api: {
     token: 'YOUR_API_TOKEN',
@@ -28,25 +28,24 @@ export const TRAVELPAYOUTS_CONFIG = {
   }
 };
 
+// Hotels.com Affiliate Configuration
+export const HOTELS_COM_CONFIG = {
+  // Hotels.com affiliate link (Commission Junction)
+  affiliateLink: 'https://www.anrdoezrs.net/click-101618526-10438018',
+  // Canada link for Canadian destinations
+  canadaLink: 'https://www.tkqlhce.com/click-101618526-11131426',
+};
+
 // Helper function to build affiliate URL
 export function buildAffiliateUrl(type, params = {}) {
-  const { marker } = TRAVELPAYOUTS_CONFIG;
-  
   if (type === 'hotel') {
-    const { destination, checkIn, checkOut, adults = 2 } = params;
-    // Booking.com search with affiliate tracking
-    const searchParams = new URLSearchParams({
-      ss: destination || '',
-      checkin: checkIn || '',
-      checkout: checkOut || '',
-      group_adults: adults,
-      aid: marker, // Your affiliate ID
-    });
-    return `${TRAVELPAYOUTS_CONFIG.hotels.bookingComUrl}?${searchParams.toString()}`;
+    // Use Hotels.com affiliate link
+    return HOTELS_COM_CONFIG.affiliateLink;
   }
-  
+
   if (type === 'flight') {
     const { origin, destination, departDate, returnDate } = params;
+    const { marker } = TRAVELPAYOUTS_CONFIG;
     // Aviasales search with affiliate tracking
     const searchParams = new URLSearchParams({
       origin_iata: origin || '',
@@ -57,15 +56,18 @@ export function buildAffiliateUrl(type, params = {}) {
     });
     return `${TRAVELPAYOUTS_CONFIG.flights.searchUrl}/search?${searchParams.toString()}`;
   }
-  
+
   return '#';
 }
 
 // Direct hotel affiliate link
 export function getHotelAffiliateLink(hotelName, location) {
-  return buildAffiliateUrl('hotel', {
-    destination: location,
-  });
+  // Check if it's a Canadian destination
+  const canadianCities = ['Quebec', 'Montreal', 'Toronto', 'Vancouver', 'Calgary'];
+  const isCanada = canadianCities.some(city => location?.includes(city));
+
+  // Return appropriate Hotels.com link
+  return isCanada ? HOTELS_COM_CONFIG.canadaLink : HOTELS_COM_CONFIG.affiliateLink;
 }
 
 // Direct flight affiliate link
