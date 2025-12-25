@@ -7,36 +7,48 @@ export function GoogleAnalytics() {
     const location = useLocation();
 
     useEffect(() => {
-        // Load Google Analytics script
-        const script1 = document.createElement('script');
-        script1.async = true;
-        script1.src = `https://www.googletagmanager.com/gtag/js?id=${measurementId}`;
-        document.head.appendChild(script1);
-
-        // Initialize Google Analytics
+        // Initialize dataLayer FIRST, before loading the script
         window.dataLayer = window.dataLayer || [];
+
+        // Define gtag function
         function gtag() {
             window.dataLayer.push(arguments);
         }
         window.gtag = gtag;
+
+        // Initialize with timestamp
         gtag('js', new Date());
-        gtag('config', measurementId, {
-            page_path: window.location.pathname + window.location.search,
-            page_title: document.title,
-            page_location: window.location.href,
-        });
+
+        // Load Google Analytics script AFTER dataLayer is ready
+        const script = document.createElement('script');
+        script.async = true;
+        script.src = `https://www.googletagmanager.com/gtag/js?id=${measurementId}`;
+
+        // Configure after script loads
+        script.onload = () => {
+            if (window.gtag) {
+                window.gtag('config', measurementId, {
+                    page_path: window.location.pathname + window.location.search,
+                    page_title: document.title,
+                    page_location: window.location.href,
+                    send_page_view: true,
+                });
+            }
+        };
+
+        document.head.appendChild(script);
 
         return () => {
             // Cleanup
-            if (document.head.contains(script1)) {
-                document.head.removeChild(script1);
+            if (document.head.contains(script)) {
+                document.head.removeChild(script);
             }
         };
     }, []);
 
     // Track page views on route change
     useEffect(() => {
-        if (window.gtag) {
+        if (window.gtag && window.dataLayer) {
             // Send pageview event with proper parameters
             window.gtag('event', 'page_view', {
                 page_path: location.pathname + location.search,
