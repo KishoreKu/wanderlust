@@ -84,8 +84,56 @@ export function BlogPost() {
           <li>Passport (valid 6+ months) and travel insurance</li>
         </ul>
 
+        <h2 class="text-3xl font-bold mt-8 mb-4">🇬🇧 7. London, England - Festive British Charm</h2>
+        <p class="mb-4"><strong>Why Visit:</strong> Winter Wonderland in Hyde Park, Oxford Street Christmas lights, traditional Christmas pantomimes, and festive afternoon tea.</p>
+        <p class="mb-4"><strong>Best Time:</strong> November 20 - January 5 | <strong>Average Cost:</strong> $1,500-2,500 per person (5 days)</p>
+        <p class="mb-6"><strong>Insider Tip:</strong> Book afternoon tea at The Ritz or Fortnum & Mason for a quintessential British Christmas experience!</p>
+
+        <h3 class="text-2xl font-bold mt-6 mb-3">Where to Stay in London</h3>
+        <div class="bg-primary-50 rounded-lg p-6 mb-6">
+          <p class="mb-3"><strong>Central London (West End):</strong> Walk to Oxford Street lights and Winter Wonderland.</p>
+          <a href="https://www.anrdoezrs.net/click-101618526-10437075" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors mb-4">Find hotels in Central London →</a>
+          
+          <p class="mb-3 mt-4"><strong>Near Hyde Park:</strong> Close to Winter Wonderland and Kensington attractions.</p>
+          <a href="https://www.anrdoezrs.net/click-101618526-10437075" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors mb-4">Search hotels near Hyde Park →</a>
+          
+          <p class="text-sm text-gray-600 mt-4">💡 <strong>Booking Tip:</strong> London is busy during Christmas - book early for best rates!</p>
+        </div>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🇯🇵 8. Tokyo, Japan - Illumination Wonderland</h2>
+        <p class="mb-4"><strong>Why Visit:</strong> Spectacular Christmas illuminations, unique Japanese Christmas traditions, KFC Christmas dinner (Japanese tradition!), and winter festivals.</p>
+        <p class="mb-4"><strong>Best Time:</strong> December 1-25 | <strong>Average Cost:</strong> $1,800-2,800 per person (7 days)</p>
+        <p class="mb-6"><strong>Insider Tip:</strong> In Japan, Christmas is more romantic than family-oriented - perfect for couples!</p>
+
+        <h3 class="text-2xl font-bold mt-6 mb-3">Where to Stay in Tokyo</h3>
+        <div class="bg-primary-50 rounded-lg p-6 mb-6">
+          <p class="mb-3"><strong>Shibuya/Shinjuku (City Center):</strong> Best Christmas illuminations and shopping districts.</p>
+          <a href="https://www.dpbolvw.net/click-101618526-13627287" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors mb-4">Find hotels in Shibuya/Shinjuku →</a>
+          
+          <p class="mb-3 mt-4"><strong>Roppongi Hills Area:</strong> Close to spectacular Christmas light displays.</p>
+          <a href="https://www.dpbolvw.net/click-101618526-13627287" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors mb-4">Search hotels in Roppongi →</a>
+          
+          <p class="text-sm text-gray-600 mt-4">💡 <strong>Booking Tip:</strong> Christmas Eve is peak romance season in Tokyo - book early!</p>
+        </div>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🇨🇦 10. Quebec City, Canada - French-Canadian Christmas</h2>
+        <p class="mb-4"><strong>Why Visit:</strong> European charm in North America, German Christmas Market, snow-covered Old Town, and ice hotel.</p>
+        <p class="mb-4"><strong>Best Time:</strong> December 1 - January 10 | <strong>Average Cost:</strong> $1,200-2,000 per person (5 days)</p>
+        <p class="mb-6"><strong>Insider Tip:</strong> Walk through Petit-Champlain district - the most photographed street in Canada!</p>
+
+        <h3 class="text-2xl font-bold mt-6 mb-3">Where to Stay in Quebec City</h3>
+        <div class="bg-primary-50 rounded-lg p-6 mb-6">
+          <p class="mb-3"><strong>Old Quebec (Vieux-Québec):</strong> Stay in the heart of the charming historic district.</p>
+          <a href="https://www.anrdoezrs.net/click-101618526-10438024" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors mb-4">Find hotels in Old Quebec →</a>
+          
+          <p class="mb-3 mt-4"><strong>Near German Christmas Market:</strong> Walk to the festive market and ice hotel.</p>
+          <a href="https://www.anrdoezrs.net/click-101618526-10438024" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors mb-4">Search hotels near Christmas Market →</a>
+          
+          <p class="text-sm text-gray-600 mt-4">💡 <strong>Booking Tip:</strong> Old Quebec is magical at Christmas - book early!</p>
+        </div>
+
         <h2 class="text-3xl font-bold mt-8 mb-4">✈️ More Magical Destinations</h2>
-        <p class="mb-4">We've also covered Iceland (Northern Lights), London (Winter Wonderland), Tokyo (Illuminations), Sydney (Summer Christmas), and Quebec City (French-Canadian charm) in our complete guide!</p>
+        <p class="mb-4">We've also covered Iceland (Northern Lights), Sydney (Summer Christmas), and more amazing destinations in our complete guide!</p>
 
         <h2 class="text-3xl font-bold mt-8 mb-4">🎄 Final Thoughts</h2>
         <p class="mb-4">Christmas is the most magical time to travel! Whether you're seeking snowy adventures in Lapland, festive markets in Germany, or sunny beaches in Australia, there's a perfect destination waiting for you.</p>
