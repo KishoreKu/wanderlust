@@ -149,40 +149,155 @@ export function BlogPost() {
       category: 'Destinations',
       image: 'https://images.unsplash.com/photo-1528181304800-259b08848526?w=1200&auto=format&fit=crop',
       content: `
-      <p class="text-lg mb-6">Southeast Asia is known for its popular destinations like Bangkok, Bali, and Singapore, but the region is filled with countless hidden gems waiting to be discovered. In this comprehensive guide, we'll take you through ten incredible destinations that most tourists miss.</p>
+      <p class="text-lg mb-6">Southeast Asia is known for its popular destinations like Bangkok, Bali, and Singapore, but the region is filled with countless hidden gems waiting to be discovered. In this comprehensive guide, we'll take you through ten incredible destinations that most tourists miss, complete with insider tips, budget advice, and accommodation recommendations.</p>
 
-      <h2 class="text-3xl font-bold mt-8 mb-4">1. Luang Prabang, Laos</h2>
-      <p class="mb-4">This UNESCO World Heritage site is a perfect blend of traditional Lao architecture and French colonial influences. Wake up early to witness the daily alms-giving ceremony, where hundreds of monks walk through the streets collecting offerings.</p>
-      <p class="mb-6">Don't miss the stunning Kuang Si Falls, just a short drive from the city. The turquoise pools are perfect for swimming, and the surrounding jungle is home to rescued bears at the nearby sanctuary.</p>
+      <h2 class="text-3xl font-bold mt-8 mb-4">1. Luang Prabang, Laos 🇱🇦</h2>
+      <p class="mb-4">This UNESCO World Heritage site is a perfect blend of traditional Lao architecture and French colonial influences. Wake up early to witness the daily alms-giving ceremony, where hundreds of monks walk through the streets collecting offerings from locals and visitors.</p>
+      <p class="mb-4">Don't miss the stunning Kuang Si Falls, just a short drive from the city. The turquoise pools are perfect for swimming, and the surrounding jungle is home to rescued bears at the nearby sanctuary.</p>
+      
+      <h3 class="text-2xl font-bold mt-6 mb-3">Where to Stay in Luang Prabang</h3>
+      <div class="bg-primary-50 rounded-lg p-6 mb-6">
+        <p class="mb-3"><strong>Best Hotels in Luang Prabang:</strong> From boutique guesthouses to luxury riverside resorts.</p>
+        <a href="https://www.anrdoezrs.net/click-101618526-10438018" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors mb-4">Find hotels in Luang Prabang →</a>
+        <p class="text-sm text-gray-600 mt-4">💡 <strong>Budget Tip:</strong> Guesthouses start at $15/night, luxury resorts from $80/night</p>
+      </div>
+      
+      <p class="mb-6"><strong>Best Time to Visit:</strong> November to February for cool, dry weather. <strong>Budget:</strong> $30-50 per day including accommodation, food, and activities.</p>
 
-      <h2 class="text-3xl font-bold mt-8 mb-4">2. Hoi An, Vietnam</h2>
-      <p class="mb-4">While not entirely unknown, Hoi An's ancient town offers a magical experience, especially at night when thousands of lanterns illuminate the streets. The town is famous for its tailor shops, where you can get custom-made clothes at incredibly affordable prices.</p>
-      <p class="mb-6">Take a cooking class to learn authentic Vietnamese cuisine, or rent a bicycle to explore the nearby rice paddies and beaches.</p>
+      <h2 class="text-3xl font-bold mt-8 mb-4">2. Hoi An, Vietnam 🇻🇳</h2>
+      <p class="mb-4">While not entirely unknown, Hoi An's ancient town offers a magical experience, especially at night when thousands of lanterns illuminate the streets. The town is famous for its tailor shops, where you can get custom-made clothes at incredibly affordable prices - a suit can cost as little as $100!</p>
+      <p class="mb-4">Take a cooking class to learn authentic Vietnamese cuisine, or rent a bicycle to explore the nearby rice paddies and beaches. An Bang Beach is just 4km away and offers a peaceful escape from the town center.</p>
+      
+      <h3 class="text-2xl font-bold mt-6 mb-3">Where to Stay in Hoi An</h3>
+      <div class="bg-primary-50 rounded-lg p-6 mb-6">
+        <p class="mb-3"><strong>Ancient Town Hotels:</strong> Stay in the heart of the UNESCO site.</p>
+        <a href="https://www.anrdoezrs.net/click-101618526-10438018" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors mb-4">Search hotels in Hoi An →</a>
+        <p class="text-sm text-gray-600 mt-4">💡 <strong>Insider Tip:</strong> Book hotels with pool access - it gets hot!</p>
+      </div>
+      
+      <p class="mb-6"><strong>Best Time to Visit:</strong> February to April for perfect weather. <strong>Budget:</strong> $25-40 per day.</p>
 
-      <h2 class="text-3xl font-bold mt-8 mb-4">3. Koh Rong, Cambodia</h2>
-      <p class="mb-4">This island paradise offers pristine beaches without the crowds of Thailand's more famous islands. The bioluminescent plankton in the waters around Koh Rong creates a magical swimming experience at night.</p>
-      <p class="mb-6">Stay in a beachfront bungalow and enjoy fresh seafood while watching incredible sunsets over the Gulf of Thailand.</p>
+      <h2 class="text-3xl font-bold mt-8 mb-4">3. Koh Rong, Cambodia 🇰🇭</h2>
+      <p class="mb-4">This island paradise offers pristine beaches without the crowds of Thailand's more famous islands. The bioluminescent plankton in the waters around Koh Rong creates a magical swimming experience at night - the water literally glows blue with every movement!</p>
+      <p class="mb-4">Stay in a beachfront bungalow and enjoy fresh seafood while watching incredible sunsets over the Gulf of Thailand. The island has limited electricity and WiFi, making it perfect for a digital detox.</p>
+      <p class="mb-6"><strong>Best Time to Visit:</strong> November to May (dry season). <strong>Budget:</strong> $20-35 per day. <strong>Getting There:</strong> Ferry from Sihanoukville (45 minutes).</p>
 
-      <h2 class="text-3xl font-bold mt-8 mb-4">4. Bagan, Myanmar</h2>
-      <p class="mb-4">Home to over 2,000 ancient temples and pagodas, Bagan offers one of the most spectacular sunrise experiences in the world. Rent an e-bike to explore the archaeological zone at your own pace.</p>
-      <p class="mb-6">For the ultimate experience, take a hot air balloon ride at dawn to see the temples emerging from the morning mist.</p>
+      <h2 class="text-3xl font-bold mt-8 mb-4">4. Bagan, Myanmar 🇲🇲</h2>
+      <p class="mb-4">Home to over 2,000 ancient temples and pagodas spread across 26 square miles, Bagan offers one of the most spectacular sunrise experiences in the world. Rent an e-bike ($5/day) to explore the archaeological zone at your own pace, stopping at whichever temples catch your eye.</p>
+      <p class="mb-4">For the ultimate experience, take a hot air balloon ride at dawn ($320-380) to see the temples emerging from the morning mist. It's expensive but absolutely worth it for the once-in-a-lifetime views.</p>
+      <p class="mb-6"><strong>Best Time to Visit:</strong> November to February. <strong>Budget:</strong> $35-50 per day including e-bike rental.</p>
 
-      <h2 class="text-3xl font-bold mt-8 mb-4">5. Palawan, Philippines</h2>
+      <h2 class="text-3xl font-bold mt-8 mb-4">5. Palawan, Philippines 🇵🇭</h2>
       <p class="mb-4">Often called the last frontier of the Philippines, Palawan is home to stunning limestone cliffs, crystal-clear lagoons, and some of the best diving in the world. El Nido and Coron are the main tourist hubs, but venture further to find truly secluded beaches.</p>
-      <p class="mb-6">The Underground River in Puerto Princesa is a UNESCO World Heritage site and one of the New Seven Wonders of Nature.</p>
+      <p class="mb-4">The Underground River in Puerto Princesa is a UNESCO World Heritage site and one of the New Seven Wonders of Nature. Book your tour in advance as daily visitor numbers are limited.</p>
+      <p class="mb-6"><strong>Best Time to Visit:</strong> December to May. <strong>Budget:</strong> $30-45 per day. <strong>Island Hopping:</strong> $25-35 per tour.</p>
 
-      <h2 class="text-3xl font-bold mt-8 mb-4">Travel Tips</h2>
+      <h2 class="text-3xl font-bold mt-8 mb-4">6. Nusa Penida, Indonesia 🇮🇩</h2>
+      <p class="mb-4">Just a 45-minute boat ride from Bali, Nusa Penida feels like a different world. The island is famous for its dramatic cliffs, including Kelingking Beach (T-Rex cliff), Angel's Billabong natural infinity pool, and Broken Beach.</p>
+      <p class="mb-4">Rent a scooter to explore the island, but be warned - the roads are rough and steep. If you're not confident on a scooter, hire a driver for the day ($40-50).</p>
+      <p class="mb-6"><strong>Best Time to Visit:</strong> April to October. <strong>Budget:</strong> $25-40 per day.</p>
+
+      <h2 class="text-3xl font-bold mt-8 mb-4">7. Kampot, Cambodia 🇰🇭</h2>
+      <p class="mb-4">This riverside town is famous for its pepper plantations and French colonial architecture. Visit a pepper farm to learn about Kampot pepper, considered the world's finest. The nearby Bokor National Park offers cooler temperatures and abandoned French hill stations.</p>
+      <p class="mb-4">Rent a bicycle to explore the countryside, stopping at salt fields and riverside cafes. The sunset boat cruises on the Kampot River are magical and cost just $5-7.</p>
+      <p class="mb-6"><strong>Best Time to Visit:</strong> November to March. <strong>Budget:</strong> $20-30 per day.</p>
+
+      <h2 class="text-3xl font-bold mt-8 mb-4">8. Pai, Thailand 🇹🇭</h2>
+      <p class="mb-4">Nestled in the mountains of northern Thailand, Pai is a laid-back town popular with backpackers and digital nomads. The journey from Chiang Mai involves 762 curves through the mountains - take motion sickness pills!</p>
+      <p class="mb-4">Rent a scooter to explore waterfalls, hot springs, and the famous Pai Canyon. Don't miss the sunset at the White Buddha statue overlooking the valley.</p>
+      <p class="mb-6"><strong>Best Time to Visit:</strong> November to February. <strong>Budget:</strong> $25-35 per day.</p>
+
+      <h2 class="text-3xl font-bold mt-8 mb-4">9. Cat Ba Island, Vietnam 🇻🇳</h2>
+      <p class="mb-4">The largest island in Halong Bay, Cat Ba offers stunning karst landscapes without the tourist crowds. Hike through Cat Ba National Park, kayak through hidden lagoons, or rock climb on the limestone cliffs.</p>
+      <p class="mb-4">Take a boat tour to explore the less-visited parts of Halong Bay, including floating fishing villages and secluded beaches.</p>
+      <p class="mb-6"><strong>Best Time to Visit:</strong> March to May and September to November. <strong>Budget:</strong> $30-45 per day.</p>
+
+      <h2 class="text-3xl font-bold mt-8 mb-4">10. Kep, Cambodia 🇰🇭</h2>
+      <p class="mb-4">This sleepy coastal town is famous for its fresh crab - head to the Kep Crab Market for the best seafood in Cambodia. The town is dotted with abandoned French villas, giving it a haunting beauty.</p>
+      <p class="mb-4">Visit nearby Rabbit Island for pristine beaches and simple bungalow accommodation. The island has no roads, no WiFi, and no ATMs - pure paradise!</p>
+      <p class="mb-6"><strong>Best Time to Visit:</strong> November to April. <strong>Budget:</strong> $25-35 per day.</p>
+
+      <h2 class="text-3xl font-bold mt-8 mb-4">💰 Budget Breakdown for Southeast Asia</h2>
       <ul class="list-disc pl-6 mb-6 space-y-2">
-        <li>Visit during shoulder season (April-May or September-October) for better weather and fewer crowds</li>
-        <li>Learn a few basic phrases in the local language - it goes a long way</li>
-        <li>Always carry cash, as many remote areas don't accept cards</li>
-        <li>Respect local customs and dress modestly when visiting temples</li>
-        <li>Book accommodations in advance during peak season</li>
+        <li><strong>Accommodation:</strong> $10-30/night (budget to mid-range)</li>
+        <li><strong>Food:</strong> $5-15/day (street food to restaurants)</li>
+        <li><strong>Transportation:</strong> $5-10/day (local transport, scooter rental)</li>
+        <li><strong>Activities:</strong> $10-30/day (tours, entrance fees)</li>
+        <li><strong>Total Daily Budget:</strong> $30-85 depending on travel style</li>
       </ul>
 
-      <h2 class="text-3xl font-bold mt-8 mb-4">Conclusion</h2>
+      <h2 class="text-3xl font-bold mt-8 mb-4">✈️ Getting Around Southeast Asia</h2>
+      <p class="mb-4">Southeast Asia is incredibly well-connected with budget airlines. Use our <a href="/flights" class="text-primary-600 hover:text-primary-700 underline">flight search tool</a> to find the cheapest flights between destinations.</p>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li><strong>Budget Airlines:</strong> AirAsia, VietJet, Nok Air, Cebu Pacific</li>
+        <li><strong>Buses:</strong> Comfortable sleeper buses connect most major cities</li>
+        <li><strong>Trains:</strong> Scenic but slower - great for overnight journeys</li>
+        <li><strong>Ferries:</strong> Essential for island hopping</li>
+      </ul>
+
+      <h2 class="text-3xl font-bold mt-8 mb-4">🏨 Where to Find Accommodation</h2>
+      <p class="mb-4">Book your hotels in advance during peak season (December-February). We recommend using <a href="/hotels" class="text-primary-600 hover:text-primary-700 underline">our hotel search</a> to compare prices across all major booking platforms.</p>
+      <div class="bg-primary-50 rounded-lg p-6 mb-6">
+        <p class="mb-3"><strong>Find Hotels Across Southeast Asia:</strong></p>
+        <a href="https://www.anrdoezrs.net/click-101618526-10438018" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors mb-4">Search Southeast Asia hotels →</a>
+      </div>
+
+      <h2 class="text-3xl font-bold mt-8 mb-4">📱 Essential Travel Apps</h2>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li><strong>Maps.me:</strong> Offline maps that work without internet</li>
+        <li><strong>Grab:</strong> Southeast Asia's Uber for rides and food delivery</li>
+        <li><strong>XE Currency:</strong> Real-time currency conversion</li>
+        <li><strong>Google Translate:</strong> Download languages for offline use</li>
+        <li><strong>Booking.com:</strong> Last-minute hotel deals</li>
+      </ul>
+
+      <h2 class="text-3xl font-bold mt-8 mb-4">🎒 Packing Essentials</h2>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li><strong>Light, breathable clothing:</strong> It's hot and humid year-round</li>
+        <li><strong>Modest clothing:</strong> For temple visits (cover shoulders and knees)</li>
+        <li><strong>Good walking shoes:</strong> You'll be doing a lot of exploring</li>
+        <li><strong>Rain jacket:</strong> Sudden tropical downpours are common</li>
+        <li><strong>Sunscreen \u0026 insect repellent:</strong> Essential in tropical climates</li>
+        <li><strong>Power adapter:</strong> Different countries use different plugs</li>
+        <li><strong>Waterproof phone case:</strong> For beach and water activities</li>
+      </ul>
+
+      <h2 class="text-3xl font-bold mt-8 mb-4">🍜 Food You Must Try</h2>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li><strong>Vietnam:</strong> Pho, Banh Mi, Bun Cha</li>
+        <li><strong>Thailand:</strong> Pad Thai, Som Tam, Massaman Curry</li>
+        <li><strong>Cambodia:</strong> Amok, Lok Lak, Kep Crab</li>
+        <li><strong>Laos:</strong> Larb, Sticky Rice, Khao Soi</li>
+        <li><strong>Philippines:</strong> Adobo, Sinigang, Lechon</li>
+      </ul>
+
+      <h2 class="text-3xl font-bold mt-8 mb-4">⚠️ Safety Tips</h2>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li>Keep valuables in hotel safe, not in your room</li>
+        <li>Use registered taxis or Grab - avoid unmarked vehicles</li>
+        <li>Drink bottled water only - ice is usually safe in tourist areas</li>
+        <li>Get travel insurance that covers scooter accidents</li>
+        <li>Be cautious with street food - choose busy stalls with high turnover</li>
+        <li>Respect local customs, especially at religious sites</li>
+      </ul>
+
+      <h2 class="text-3xl font-bold mt-8 mb-4">💡 Money-Saving Tips</h2>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li><strong>Eat street food:</strong> Delicious and costs $1-3 per meal</li>
+        <li><strong>Travel in shoulder season:</strong> April-May and September-October</li>
+        <li><strong>Book buses overnight:</strong> Save on accommodation costs</li>
+        <li><strong>Negotiate everything:</strong> Tuk-tuks, markets, tours</li>
+        <li><strong>Stay longer:</strong> Many guesthouses offer weekly/monthly discounts</li>
+        <li><strong>Use local SIM cards:</strong> Much cheaper than international roaming</li>
+      </ul>
+
+      <h2 class="text-3xl font-bold mt-8 mb-4">🎄 Related Guides</h2>
+      <p class="mb-4">Planning more trips? Check out our <a href="/blog/christmas-2025" class="text-primary-600 hover:text-primary-700 underline">Christmas Travel Guide</a> for magical winter destinations, or browse our <a href="/blog" class="text-primary-600 hover:text-primary-700 underline">complete blog</a> for more travel inspiration.</p>
+
+      <h2 class="text-3xl font-bold mt-8 mb-4">✅ Conclusion</h2>
       <p class="mb-4">Southeast Asia's hidden gems offer authentic experiences away from the tourist crowds. These destinations provide incredible value for money, warm hospitality, and memories that will last a lifetime.</p>
-      <p class="mb-6">Whether you're a budget backpacker or a luxury traveler, these hidden gems have something special to offer. Start planning your Southeast Asian adventure today!</p>
+      <p class="mb-4">Whether you're a budget backpacker or a luxury traveler, these hidden gems have something special to offer. The region is safe, affordable, and incredibly diverse - you can explore ancient temples, relax on pristine beaches, trek through jungles, and experience vibrant cultures all in one trip.</p>
+      <p class="mb-6">Start planning your Southeast Asian adventure today! Book your <a href="/flights" class="text-primary-600 hover:text-primary-700 underline">flights</a> and <a href="/hotels" class="text-primary-600 hover:text-primary-700 underline">hotels</a> now to secure the best deals.</p>
     `,
     },
   };
@@ -191,6 +306,12 @@ export function BlogPost() {
   const post = posts[id] || posts['1'];
 
   const relatedPosts = [
+    {
+      id: 'christmas-2025',
+      title: 'The Ultimate Christmas Travel Guide 2025',
+      image: 'https://images.unsplash.com/photo-1512389142860-9c449e58a543?w=400&auto=format&fit=crop',
+      category: 'Destinations',
+    },
     {
       id: 2,
       title: 'Budget Travel Tips for 2024',
