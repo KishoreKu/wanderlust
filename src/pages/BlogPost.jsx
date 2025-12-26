@@ -300,6 +300,249 @@ export function BlogPost() {
       <p class="mb-6">Start planning your Southeast Asian adventure today! Book your <a href="/flights" class="text-primary-600 hover:text-primary-700 underline">flights</a> and <a href="/hotels" class="text-primary-600 hover:text-primary-700 underline">hotels</a> now to secure the best deals.</p>
     `,
     },
+    'budget-travel-tips-2024': {
+      id: 'budget-travel-tips-2024',
+      title: 'Budget Travel Tips for 2025',
+      author: 'Gubbu Team',
+      date: 'December 12, 2024',
+      readTime: '6 min read',
+      category: 'Tips',
+      image: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1200&auto=format&fit=crop',
+      content: `
+        <p class="text-lg mb-6">Traveling the world doesn't have to drain your bank account! With smart planning and insider knowledge, you can explore amazing destinations on a budget. Here are our proven strategies to help you travel more while spending less in 2025.</p>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">✈️ 1. Master the Art of Finding Cheap Flights</h2>
+        <p class="mb-4">Flights are often the biggest expense, but there are many ways to save:</p>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li><strong>Book 2-3 months in advance</strong> for international flights, 1-2 months for domestic</li>
+          <li><strong>Fly on Tuesdays and Wednesdays</strong> - typically 20-30% cheaper than weekends</li>
+          <li><strong>Use incognito mode</strong> when searching to avoid price increases based on cookies</li>
+          <li><strong>Set price alerts</strong> on Google Flights and Skyscanner</li>
+          <li><strong>Consider nearby airports</strong> - sometimes flying into a smaller airport saves hundreds</li>
+          <li><strong>Be flexible with dates</strong> - shifting by a day or two can save 40%+</li>
+        </ul>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🏨 2. Save Big on Accommodation</h2>
+        <p class="mb-4">Accommodation is your second-biggest expense, but you have many budget-friendly options:</p>
+        
+        <h3 class="text-2xl font-bold mt-6 mb-3">Hostels (Not Just for Young Backpackers!)</h3>
+        <p class="mb-4">Modern hostels offer private rooms, great amenities, and social atmospheres. Average cost: $15-40/night.</p>
+        
+        <h3 class="text-2xl font-bold mt-6 mb-3">Budget Hotels & Guesthouses</h3>
+        <div class="bg-primary-50 rounded-lg p-6 mb-6">
+          <p class="mb-3"><strong>Find Budget-Friendly Hotels:</strong> Compare prices across all major booking platforms.</p>
+          <a href="https://www.anrdoezrs.net/click-101618526-10438018" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors mb-4">Search budget hotels worldwide →</a>
+          <p class="text-sm text-gray-600 mt-4">💡 <strong>Pro Tip:</strong> Book directly with hotels after finding them online - sometimes they'll match or beat the price!</p>
+        </div>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🍜 3. Eat Like a Local (Save 50-70%)</h2>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li><strong>Street food</strong> - Delicious, authentic, and costs $1-5 per meal</li>
+          <li><strong>Local markets</strong> - Buy fresh produce and snacks for a fraction of restaurant prices</li>
+          <li><strong>Cook your own meals</strong> - Stay in places with kitchens, cook 1-2 meals per day</li>
+          <li><strong>Avoid tourist areas</strong> - Walk 2-3 blocks away from main attractions for 40% cheaper prices</li>
+          <li><strong>Lunch specials</strong> - Many restaurants offer set lunch menus at half the dinner price</li>
+        </ul>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🚌 4. Transportation Hacks</h2>
+        <p class="mb-4"><strong>Public Transportation:</strong> Always use buses, metros, and trains instead of taxis. Download city transit apps.</p>
+        <p class="mb-4"><strong>Walking Tours:</strong> Free walking tours are available in most major cities (tip-based).</p>
+        <p class="mb-6"><strong>Overnight Buses/Trains:</strong> Save on accommodation by traveling at night.</p>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">💳 5. Money-Saving Tools & Apps</h2>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li><strong>Wise (formerly TransferWise):</strong> Best exchange rates, minimal fees</li>
+          <li><strong>Revolut:</strong> Multi-currency card with no foreign transaction fees</li>
+          <li><strong>Google Maps:</strong> Download offline maps to avoid roaming charges</li>
+          <li><strong>Skyscanner:</strong> Compare flight prices across all airlines</li>
+        </ul>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🎯 6. Choose Budget-Friendly Destinations</h2>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li><strong>Southeast Asia:</strong> Thailand, Vietnam, Cambodia ($30-50/day)</li>
+          <li><strong>Eastern Europe:</strong> Poland, Hungary, Romania ($40-60/day)</li>
+          <li><strong>Central America:</strong> Guatemala, Nicaragua, Mexico ($35-55/day)</li>
+          <li><strong>South America:</strong> Bolivia, Peru, Ecuador ($40-65/day)</li>
+        </ul>
+
+        <p class="mb-6">With these budget travel tips, you can explore the world without emptying your wallet. Start planning your affordable adventure today!</p>
+      `,
+    },
+    'best-time-visit-europe': {
+      id: 'best-time-visit-europe',
+      title: 'Best Time to Visit European Cities',
+      author: 'Gubbu Team',
+      date: 'December 10, 2024',
+      readTime: '10 min read',
+      category: 'Planning',
+      image: 'https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=1200&auto=format&fit=crop',
+      content: `
+        <p class="text-lg mb-6">Timing is everything when planning your European adventure! Visit during the right season and you'll enjoy perfect weather, fewer crowds, and better prices. Here's your comprehensive guide to the best time to visit Europe's most popular cities.</p>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🗼 Paris, France</h2>
+        <p class="mb-4"><strong>Best Time: April-June & September-October</strong></p>
+        <p class="mb-4">Spring (April-June) brings blooming gardens, pleasant temperatures (15-20°C), and outdoor café culture. Fall (September-October) offers beautiful autumn colors and harvest season.</p>
+        <p class="mb-4"><strong>Avoid:</strong> August (many locals vacation, some restaurants close) and December-February (cold and rainy).</p>
+        
+        <h3 class="text-2xl font-bold mt-6 mb-3">Where to Stay in Paris</h3>
+        <div class="bg-primary-50 rounded-lg p-6 mb-6">
+          <p class="mb-3"><strong>Best Neighborhoods:</strong> Le Marais (trendy), Latin Quarter (historic), Montmartre (artistic)</p>
+          <a href="https://www.dpbolvw.net/click-101618526-13627287" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors mb-4">Find hotels in Paris →</a>
+          <p class="text-sm text-gray-600 mt-4">💡 <strong>Pro Tip:</strong> Book 2-3 months ahead for spring and fall!</p>
+        </div>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🏛️ Rome, Italy</h2>
+        <p class="mb-4"><strong>Best Time: April-May & September-October</strong></p>
+        <p class="mb-4">Perfect weather (18-25°C), fewer tourists than summer, and reasonable prices. Easter can be crowded but spectacular.</p>
+        <p class="mb-6"><strong>Avoid:</strong> July-August (extremely hot, 35°C+, massive crowds).</p>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🏰 Barcelona, Spain</h2>
+        <p class="mb-4"><strong>Best Time: May-June & September-October</strong></p>
+        <p class="mb-4">Warm beach weather without summer crowds. Perfect for exploring Gaudí's architecture and enjoying tapas on terraces.</p>
+        <p class="mb-6"><strong>Avoid:</strong> August (very hot, crowded beaches, many locals away).</p>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🇬🇧 London, England</h2>
+        <p class="mb-4"><strong>Best Time: May-September</strong></p>
+        <p class="mb-4">Longest days, warmest weather (though still bring a jacket!), parks in bloom, outdoor festivals and events.</p>
+        <p class="mb-6"><strong>Good Alternative:</strong> December for Christmas markets and festive atmosphere.</p>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">📊 Europe Travel Season Breakdown</h2>
+        
+        <h3 class="text-2xl font-bold mt-6 mb-3">🌸 Spring (March-May)</h3>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li><strong>Pros:</strong> Blooming flowers, mild weather, fewer crowds, moderate prices</li>
+          <li><strong>Cons:</strong> Unpredictable weather, some attractions still on winter hours</li>
+          <li><strong>Best for:</strong> Netherlands (tulips), Paris, Rome, Barcelona</li>
+        </ul>
+
+        <h3 class="text-2xl font-bold mt-6 mb-3">☀️ Summer (June-August)</h3>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li><strong>Pros:</strong> Best weather, longest days, all attractions open, festivals</li>
+          <li><strong>Cons:</strong> Huge crowds, highest prices, very hot in southern Europe</li>
+          <li><strong>Best for:</strong> Scandinavia, Scotland, Iceland, beach destinations</li>
+        </ul>
+
+        <h3 class="text-2xl font-bold mt-6 mb-3">🍂 Fall (September-November)</h3>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li><strong>Pros:</strong> Beautiful colors, harvest season, fewer tourists, good weather</li>
+          <li><strong>Cons:</strong> Shorter days, some seasonal attractions close</li>
+          <li><strong>Best for:</strong> Tuscany, Paris, Prague, Vienna</li>
+        </ul>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">💰 Money-Saving Tips by Season</h2>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li><strong>Shoulder Season (April-May, Sept-Oct):</strong> Save 30-40% on hotels</li>
+          <li><strong>Winter (except Christmas):</strong> Save 40-60% on accommodation</li>
+          <li><strong>Book 2-3 months ahead:</strong> For spring and fall travel</li>
+        </ul>
+
+        <p class="mb-6">No matter when you visit, Europe offers incredible experiences year-round. Choose your timing based on your priorities: weather, crowds, or budget. Start planning your perfect European adventure today!</p>
+      `,
+    },
+    'solo-travel-safety-guide': {
+      id: 'solo-travel-safety-guide',
+      title: 'Solo Travel Safety Guide',
+      author: 'Gubbu Team',
+      date: 'December 8, 2024',
+      readTime: '7 min read',
+      category: 'Safety',
+      image: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1200&auto=format&fit=crop',
+      content: `
+        <p class="text-lg mb-6">Solo travel is one of the most rewarding experiences, but safety should always be your top priority. Whether you're a first-time solo traveler or a seasoned adventurer, these essential safety tips will help you explore the world confidently and securely.</p>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🔒 Before You Leave: Essential Preparations</h2>
+        
+        <h3 class="text-2xl font-bold mt-6 mb-3">Research Your Destination Thoroughly</h3>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li>Check government travel advisories (US State Dept, UK Foreign Office)</li>
+          <li>Research safe neighborhoods and areas to avoid</li>
+          <li>Learn about local customs, dress codes, and cultural norms</li>
+          <li>Understand local scams and common tourist traps</li>
+          <li>Know emergency numbers (police, ambulance, embassy)</li>
+        </ul>
+
+        <h3 class="text-2xl font-bold mt-6 mb-3">Get Comprehensive Travel Insurance</h3>
+        <p class="mb-4"><strong>Non-negotiable for solo travelers!</strong> Ensure your policy covers:</p>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li>Medical emergencies and evacuation</li>
+          <li>Trip cancellation and interruption</li>
+          <li>Lost or stolen belongings</li>
+          <li>Adventure activities (if applicable)</li>
+        </ul>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🏨 Accommodation Safety</h2>
+        
+        <h3 class="text-2xl font-bold mt-6 mb-3">Choosing Safe Accommodation</h3>
+        <div class="bg-primary-50 rounded-lg p-6 mb-6">
+          <p class="mb-3"><strong>Book Verified, Reviewed Properties:</strong> Read recent reviews from solo travelers.</p>
+          <a href="https://www.anrdoezrs.net/click-101618526-10438018" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors mb-4">Find safe, reviewed hotels →</a>
+          <p class="text-sm text-gray-600 mt-4">💡 <strong>Pro Tip:</strong> Look for properties with 24-hour reception and good lighting.</p>
+        </div>
+
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li>Choose well-reviewed hostels/hotels in safe neighborhoods</li>
+          <li>Look for 24-hour reception</li>
+          <li>Check for secure lockers or safes</li>
+          <li>Prefer properties with security cameras</li>
+          <li>Avoid ground-floor rooms in unfamiliar areas</li>
+        </ul>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🚶‍♀️ Staying Safe While Exploring</h2>
+
+        <h3 class="text-2xl font-bold mt-6 mb-3">Street Smarts</h3>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li><strong>Blend in:</strong> Don't look like an obvious tourist</li>
+          <li><strong>Stay aware:</strong> No headphones in unfamiliar areas</li>
+          <li><strong>Walk confidently:</strong> Even if you're lost, appear purposeful</li>
+          <li><strong>Avoid dark alleys:</strong> Stick to well-lit, populated areas</li>
+          <li><strong>Trust your gut:</strong> If something feels wrong, leave</li>
+        </ul>
+
+        <h3 class="text-2xl font-bold mt-6 mb-3">Protecting Your Belongings</h3>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li>Use anti-theft backpack with hidden zippers</li>
+          <li>Wear money belt or neck wallet under clothes</li>
+          <li>Keep phone and wallet in front pockets</li>
+          <li>Don't flash expensive jewelry, cameras, or electronics</li>
+          <li>Carry only what you need for the day</li>
+        </ul>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">📱 Technology & Communication</h2>
+
+        <h3 class="text-2xl font-bold mt-6 mb-3">Essential Apps for Solo Travelers</h3>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li><strong>Maps.me:</strong> Offline maps that work without internet</li>
+          <li><strong>Google Translate:</strong> Download languages for offline use</li>
+          <li><strong>WhatsApp:</strong> Free international messaging</li>
+          <li><strong>Citymapper:</strong> Navigate public transportation safely</li>
+        </ul>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🍷 Social Situations & Nightlife</h2>
+
+        <h3 class="text-2xl font-bold mt-6 mb-3">Nightlife Safety</h3>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li>Never leave drinks unattended</li>
+          <li>Watch bartender make your drink</li>
+          <li>Set drinking limits and stick to them</li>
+          <li>Have a plan for getting back safely</li>
+          <li>Stay in well-populated areas</li>
+        </ul>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">✅ Solo Travel Safety Checklist</h2>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li>✓ Comprehensive travel insurance purchased</li>
+          <li>✓ Itinerary shared with family/friends</li>
+          <li>✓ Emergency contacts saved offline</li>
+          <li>✓ Accommodation in safe area booked</li>
+          <li>✓ Safety apps downloaded</li>
+          <li>✓ Money belt/anti-theft bag packed</li>
+        </ul>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🌟 Final Thoughts</h2>
+        <p class="mb-4">Solo travel is incredibly rewarding and, with proper precautions, very safe. Millions of people travel solo every year without incident. The key is preparation, awareness, and trusting your instincts.</p>
+        <p class="mb-6">Don't let fear hold you back from amazing experiences, but do take sensible precautions. Stay alert, stay connected, and most importantly - enjoy your adventure! The world is waiting for you. 🌍✨</p>
+      `,
+    },
   };
 
   // Get the post based on ID, default to Southeast Asia post if not found
