@@ -7,6 +7,24 @@ export function GoogleAnalytics() {
     const location = useLocation();
 
     useEffect(() => {
+        // Check if this is a bot/crawler
+        const isBot = () => {
+            const userAgent = navigator.userAgent.toLowerCase();
+            const botPatterns = [
+                'bot', 'crawler', 'spider', 'crawling', 'slurp',
+                'googlebot', 'bingbot', 'yandex', 'baidu', 'duckduck',
+                'facebookexternalhit', 'twitterbot', 'whatsapp', 'telegram',
+                'headless', 'phantom', 'selenium', 'webdriver'
+            ];
+            return botPatterns.some(pattern => userAgent.includes(pattern));
+        };
+
+        // Don't load GA for bots
+        if (isBot()) {
+            console.log('Bot detected, skipping Google Analytics');
+            return;
+        }
+
         // Initialize dataLayer FIRST, before loading the script
         window.dataLayer = window.dataLayer || [];
 
