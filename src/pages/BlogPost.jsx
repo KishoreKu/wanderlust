@@ -1,9 +1,15 @@
+import { useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { Calendar, Clock, User, ArrowLeft, Share2, Bookmark } from 'lucide-react';
 import { Button } from '../components/Button';
 
 export function BlogPost() {
   const { id } = useParams();
+
+  // Scroll to top when navigating to a new blog post
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [id]);
 
   const posts = {
     'christmas-2025': {
