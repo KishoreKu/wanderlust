@@ -21,7 +21,7 @@ export function Blog() {
       featured: true,
     },
     {
-      id: 1,
+      id: 'southeast-asia-hidden-gems',
       title: '10 Hidden Gems in Southeast Asia',
       excerpt: 'Discover the most beautiful off-the-beaten-path destinations that most tourists miss. From secret beaches to mountain villages.',
       image: 'https://images.unsplash.com/photo-1528181304800-259b08848526?w=800&auto=format&fit=crop',
@@ -30,7 +30,7 @@ export function Blog() {
       readTime: '8 min read',
     },
     {
-      id: 2,
+      id: 'budget-travel-tips-2024',
       title: 'Budget Travel Tips for 2025',
       excerpt: 'Learn how to travel the world without breaking the bank with these expert tips. Save money on flights, accommodation, and activities.',
       image: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800&auto=format&fit=crop',
@@ -39,7 +39,7 @@ export function Blog() {
       readTime: '6 min read',
     },
     {
-      id: 3,
+      id: 'best-time-visit-europe',
       title: 'Best Time to Visit European Cities',
       excerpt: 'A comprehensive guide to planning your European adventure at the perfect time. Weather, crowds, and prices explained.',
       image: 'https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=800&auto=format&fit=crop',
@@ -48,7 +48,7 @@ export function Blog() {
       readTime: '10 min read',
     },
     {
-      id: 4,
+      id: 'solo-travel-safety-guide',
       title: 'Solo Travel Safety Guide',
       excerpt: 'Essential safety tips for solo travelers. Learn how to stay safe while exploring the world on your own.',
       image: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800&auto=format&fit=crop',

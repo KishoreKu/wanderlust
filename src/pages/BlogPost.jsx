@@ -140,8 +140,8 @@ export function BlogPost() {
         <p class="mb-6">From all of us at Gubbu, we wish you a Merry Christmas and happy travels! 🎅✈️</p>
       `,
     },
-    '1': {
-      id: 1,
+    'southeast-asia-hidden-gems': {
+      id: 'southeast-asia-hidden-gems',
       title: '10 Hidden Gems in Southeast Asia',
       author: 'Sarah Johnson',
       date: 'December 15, 2024',
@@ -303,9 +303,10 @@ export function BlogPost() {
   };
 
   // Get the post based on ID, default to Southeast Asia post if not found
-  const post = posts[id] || posts['1'];
+  const post = posts[id] || posts['southeast-asia-hidden-gems'];
 
-  const relatedPosts = [
+  // All available posts for related articles
+  const allRelatedPosts = [
     {
       id: 'christmas-2025',
       title: 'The Ultimate Christmas Travel Guide 2025',
@@ -313,24 +314,36 @@ export function BlogPost() {
       category: 'Destinations',
     },
     {
-      id: 2,
+      id: 'southeast-asia-hidden-gems',
+      title: '10 Hidden Gems in Southeast Asia',
+      image: 'https://images.unsplash.com/photo-1528181304800-259b08848526?w=400&auto=format&fit=crop',
+      category: 'Destinations',
+    },
+    {
+      id: 'budget-travel-tips-2024',
       title: 'Budget Travel Tips for 2024',
       image: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&auto=format&fit=crop',
       category: 'Tips',
     },
     {
-      id: 3,
+      id: 'best-time-visit-europe',
       title: 'Best Time to Visit European Cities',
       image: 'https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=400&auto=format&fit=crop',
       category: 'Planning',
     },
     {
-      id: 4,
+      id: 'solo-travel-safety-guide',
       title: 'Solo Travel Safety Guide',
       image: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=400&auto=format&fit=crop',
       category: 'Safety',
     },
   ];
+
+  // Filter out the current post and limit to 3 related articles
+  // Convert both IDs to strings for comparison to handle both string and number IDs
+  const relatedPosts = allRelatedPosts
+    .filter((relatedPost) => String(relatedPost.id) !== String(id))
+    .slice(0, 3);
 
   return (
     <div className="min-h-screen bg-gray-50 pt-16" >
