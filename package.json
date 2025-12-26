@@ -12,8 +12,7 @@
     "build": "vite build --mode production",
     "preview": "vite preview",
     "lint": "eslint . --ext .js,.jsx",
-    "postinstall": "npm run build",
-    "netlify-build": "npm install && npm run build"
+    "postinstall": "npm run build"
   },
   "dependencies": {
     "react": "^19.2.0",
