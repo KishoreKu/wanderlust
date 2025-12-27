@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { Button } from '../components/Button';
 import { MapPin, Calendar, Users, Star, ArrowRight } from 'lucide-react';
 import { NewsletterSignup } from '../components/NewsletterSignup';
@@ -7,6 +7,7 @@ import { GetYourGuideSection } from '../components/GetYourGuideWidget';
 
 export function Destinations() {
   const [selectedRegion, setSelectedRegion] = useState('All');
+  const navigate = useNavigate();
 
   const destinations = [
     {
@@ -310,7 +311,13 @@ export function Destinations() {
             {regions.map((region) => (
               <button
                 key={region}
-                onClick={() => setSelectedRegion(region)}
+                onClick={() => {
+                  if (region === 'Europe') {
+                    navigate('/europe-destinations');
+                  } else {
+                    setSelectedRegion(region);
+                  }
+                }}
                 className={`px-6 py-2 rounded-full font-medium shadow-sm transition-colors ${selectedRegion === region
                   ? 'bg-primary-600 text-white'
                   : 'bg-white text-gray-700 hover:bg-primary-600 hover:text-white'
