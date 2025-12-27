@@ -155,7 +155,7 @@ export function NewYearActivities() {
                                     )}
                                     {destination.name === 'Paris' && (
                                         <>
-                                            <a href="https://www.anrdoezrs.net/click-101618526-10438018" target="_blank" rel="nofollow noopener">
+                                            <a href="https://www.dpbolvw.net/click-101618526-10438016" target="_blank" rel="nofollow noopener">
                                                 <Button variant="primary">Find Hotels</Button>
                                             </a>
                                             <a href="https://www.aviasales.com/?marker=692183" target="_blank" rel="nofollow noopener">
