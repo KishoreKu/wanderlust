@@ -109,170 +109,38 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://gubbu.io/blog/1</loc>
-    <lastmod>2024-12-21</lastmod>
+    <loc>https://gubbu.io/blog/christmas-2025</loc>
+    <lastmod>2024-12-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://gubbu.io/blog/new-years-eve-usa-2025</loc>
+    <lastmod>2024-12-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://gubbu.io/blog/southeast-asia-hidden-gems</loc>
+    <lastmod>2024-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gubbu.io/blog/2</loc>
-    <lastmod>2024-12-21</lastmod>
+    <loc>https://gubbu.io/blog/budget-travel-tips-2024</loc>
+    <lastmod>2024-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gubbu.io/blog/3</loc>
-    <lastmod>2024-12-21</lastmod>
+    <loc>https://gubbu.io/blog/best-time-visit-europe</loc>
+    <lastmod>2024-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gubbu.io/blog/4</loc>
-    <lastmod>2024-12-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gubbu.io/blog/5</loc>
-    <lastmod>2024-12-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gubbu.io/blog/6</loc>
-    <lastmod>2024-12-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gubbu.io/blog/7</loc>
-    <lastmod>2024-12-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gubbu.io/blog/8</loc>
-    <lastmod>2024-12-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gubbu.io/blog/9</loc>
-    <lastmod>2024-12-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gubbu.io/blog/10</loc>
-    <lastmod>2024-12-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gubbu.io/blog/11</loc>
-    <lastmod>2024-12-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gubbu.io/blog/12</loc>
-    <lastmod>2024-12-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gubbu.io/blog/13</loc>
-    <lastmod>2024-12-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gubbu.io/blog/14</loc>
-    <lastmod>2024-12-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gubbu.io/blog/15</loc>
-    <lastmod>2024-12-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gubbu.io/blog/16</loc>
-    <lastmod>2024-12-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gubbu.io/blog/17</loc>
-    <lastmod>2024-12-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gubbu.io/blog/18</loc>
-    <lastmod>2024-12-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gubbu.io/blog/19</loc>
-    <lastmod>2024-12-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gubbu.io/blog/20</loc>
-    <lastmod>2024-12-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gubbu.io/blog/21</loc>
-    <lastmod>2024-12-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gubbu.io/blog/22</loc>
-    <lastmod>2024-12-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gubbu.io/blog/23</loc>
-    <lastmod>2024-12-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gubbu.io/blog/24</loc>
-    <lastmod>2024-12-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gubbu.io/blog/25</loc>
-    <lastmod>2024-12-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gubbu.io/blog/26</loc>
-    <lastmod>2024-12-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gubbu.io/blog/27</loc>
-    <lastmod>2024-12-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gubbu.io/blog/28</loc>
-    <lastmod>2024-12-21</lastmod>
+    <loc>https://gubbu.io/blog/solo-travel-safety-guide</loc>
+    <lastmod>2024-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
