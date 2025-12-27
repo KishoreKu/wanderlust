@@ -1,21 +1,11 @@
-import { useState } from 'react';
 import { Button } from '../components/Button';
-import { Search, Plane, Calendar, Users, ExternalLink, Clock, TrendingDown } from 'lucide-react';
-import { buildAffiliateUrl, getFlightAffiliateLink } from '../config/affiliate';
+import { Plane, Calendar, Users, ExternalLink, Clock, TrendingDown } from 'lucide-react';
+import { getFlightAffiliateLink } from '../config/affiliate';
 import { KiwiWidget } from '../components/KiwiWidget';
 import { AviasalesWidget } from '../components/AviasalesWidget';
 import { AviasalesMapWidget } from '../components/AviasalesMapWidget';
 
 export function Flights() {
-  const [searchQuery, setSearchQuery] = useState({
-    from: '',
-    to: '',
-    departure: '',
-    return: '',
-    passengers: 1,
-    tripType: 'roundtrip',
-  });
-
   const popularRoutes = [
     {
       id: 1,
@@ -85,141 +75,88 @@ export function Flights() {
     },
   ];
 
-  const handleSearch = (e) => {
-    e.preventDefault();
-    // Build Travelpayouts affiliate URL with search parameters
-    const affiliateUrl = buildAffiliateUrl('flight', {
-      origin: searchQuery.from,
-      destination: searchQuery.to,
-      departDate: searchQuery.departure,
-      returnDate: searchQuery.return,
-    });
-    // Open in new tab
-    window.open(affiliateUrl, '_blank');
-  };
-
   return (
     <div className="min-h-screen bg-gray-50 pt-16">
-      <section className="bg-gradient-to-r from-primary-600 to-primary-800 text-white py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-5xl font-bold mb-4 text-center">Find Cheap Flights</h1>
-          <p className="text-xl text-primary-100 mb-8 text-center">
-            Compare prices from hundreds of airlines and travel agents
-          </p>
+      {/* Stunning Hero Section */}
+      <section className="relative bg-gradient-to-r from-blue-600 to-indigo-800 text-white py-24 overflow-hidden">
+        {/* Background Pattern */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute inset-0" style={{
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+          }}></div>
+        </div>
 
-          <form onSubmit={handleSearch} className="bg-white rounded-xl p-6 shadow-2xl">
-            <div className="flex gap-4 mb-6">
-              <label className="flex items-center cursor-pointer">
-                <input
-                  type="radio"
-                  name="tripType"
-                  value="roundtrip"
-                  checked={searchQuery.tripType === 'roundtrip'}
-                  onChange={(e) => setSearchQuery({ ...searchQuery, tripType: e.target.value })}
-                  className="mr-2 text-primary-600 focus:ring-primary-500"
-                />
-                <span className="text-gray-700 font-medium">Round Trip</span>
-              </label>
-              <label className="flex items-center cursor-pointer">
-                <input
-                  type="radio"
-                  name="tripType"
-                  value="oneway"
-                  checked={searchQuery.tripType === 'oneway'}
-                  onChange={(e) => setSearchQuery({ ...searchQuery, tripType: e.target.value })}
-                  className="mr-2 text-primary-600 focus:ring-primary-500"
-                />
-                <span className="text-gray-700 font-medium">One Way</span>
-              </label>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center mb-12">
+            <h1 className="text-5xl md:text-6xl font-bold mb-6">
+              Find Cheap Flights
+            </h1>
+            <p className="text-xl md:text-2xl text-blue-100 mb-8 max-w-3xl mx-auto">
+              Compare prices from hundreds of airlines and travel agents to find the best deals
+            </p>
+          </div>
+
+          {/* Stats */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
+            <div className="text-center">
+              <div className="text-4xl md:text-5xl font-bold mb-2">500+</div>
+              <div className="text-blue-100">Airlines</div>
             </div>
+            <div className="text-center">
+              <div className="text-4xl md:text-5xl font-bold mb-2">Save</div>
+              <div className="text-blue-100">Up to 40%</div>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl md:text-5xl font-bold mb-2">24/7</div>
+              <div className="text-blue-100">Support</div>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl md:text-5xl font-bold mb-2">Free</div>
+              <div className="text-blue-100">Price Alerts</div>
+            </div>
+          </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+          {/* Benefits */}
+          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  From
-                </label>
-                <div className="relative">
-                  <Plane className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
-                  <input
-                    type="text"
-                    placeholder="Departure city"
-                    value={searchQuery.from}
-                    onChange={(e) => setSearchQuery({ ...searchQuery, from: e.target.value })}
-                    className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 text-gray-900"
-                  />
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-white/20 rounded-full mb-4">
+                  <TrendingDown className="h-8 w-8" />
                 </div>
+                <h3 className="font-semibold text-lg mb-2">Lowest Prices</h3>
+                <p className="text-blue-100 text-sm">Compare 500+ airlines instantly</p>
               </div>
-
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  To
-                </label>
-                <div className="relative">
-                  <Plane className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400 rotate-90" />
-                  <input
-                    type="text"
-                    placeholder="Arrival city"
-                    value={searchQuery.to}
-                    onChange={(e) => setSearchQuery({ ...searchQuery, to: e.target.value })}
-                    className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 text-gray-900"
-                  />
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-white/20 rounded-full mb-4">
+                  <Calendar className="h-8 w-8" />
                 </div>
+                <h3 className="font-semibold text-lg mb-2">Flexible Dates</h3>
+                <p className="text-blue-100 text-sm">Find the cheapest days to fly</p>
               </div>
-
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Departure
-                </label>
-                <input
-                  type="date"
-                  value={searchQuery.departure}
-                  onChange={(e) => setSearchQuery({ ...searchQuery, departure: e.target.value })}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 text-gray-900"
-                />
-              </div>
-
-              {searchQuery.tripType === 'roundtrip' && (
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Return
-                  </label>
-                  <input
-                    type="date"
-                    value={searchQuery.return}
-                    onChange={(e) => setSearchQuery({ ...searchQuery, return: e.target.value })}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 text-gray-900"
-                  />
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-white/20 rounded-full mb-4">
+                  <Plane className="h-8 w-8" />
                 </div>
-              )}
-
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Passengers
-                </label>
-                <select
-                  value={searchQuery.passengers}
-                  onChange={(e) => setSearchQuery({ ...searchQuery, passengers: parseInt(e.target.value) })}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 text-gray-900"
-                >
-                  {[1, 2, 3, 4, 5, 6].map(num => (
-                    <option key={num} value={num}>{num} {num === 1 ? 'Passenger' : 'Passengers'}</option>
-                  ))}
-                </select>
+                <h3 className="font-semibold text-lg mb-2">Multi-City Options</h3>
+                <p className="text-blue-100 text-sm">Complex routes made simple</p>
               </div>
             </div>
+          </div>
 
-            <div className="mt-6">
-              <Button type="submit" size="lg" className="w-full md:w-auto">
-                <Search className="mr-2 h-5 w-5" />
-                Search Flights
+          {/* CTA */}
+          <div className="text-center mt-12">
+            <a href="#search-flights">
+              <Button size="lg" variant="secondary" className="text-lg px-8 py-4">
+                Search Flights Now
+                <ExternalLink className="ml-2 h-5 w-5" />
               </Button>
-            </div>
-          </form>
+            </a>
+          </div>
         </div>
       </section>
 
       {/* Kiwi.com Flight Search Widget */}
-      <section className="py-12 bg-white">
+      <section className="py-12 bg-white" id="search-flights">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold text-gray-900 mb-2">Search Multi-City Flights</h2>
@@ -244,6 +181,7 @@ export function Flights() {
         </div>
       </section>
 
+      {/* Popular Routes */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-8">
@@ -316,6 +254,7 @@ export function Flights() {
         </div>
       </section>
 
+      {/* Why Book Section */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
@@ -349,124 +288,6 @@ export function Flights() {
               <h3 className="text-xl font-semibold mb-2">Trusted Partners</h3>
               <p className="text-gray-600">Book with confidence through our verified airline and travel partners</p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Flight Booking Tips - SEO Content */}
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-gray-900 mb-6">How to Find Cheap Flights: The Ultimate Guide</h2>
-
-          <div className="prose prose-lg max-w-none">
-            <p className="text-xl text-gray-700 mb-8">
-              Finding cheap flights doesn't have to be complicated. With the right strategies and tools, you can save hundreds of dollars on your next trip. Here's everything you need to know about booking affordable flights.
-            </p>
-
-            <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">When to Book Flights for the Best Prices</h3>
-            <p className="text-gray-700 mb-4">
-              Timing is everything when it comes to finding cheap flights. Here's when you should book:
-            </p>
-            <ul className="list-disc pl-6 mb-6 space-y-2 text-gray-700">
-              <li><strong>Domestic Flights:</strong> Book 1-3 months in advance for the best prices</li>
-              <li><strong>International Flights:</strong> Book 2-8 months ahead, depending on destination</li>
-              <li><strong>Best Day to Book:</strong> Tuesday and Wednesday often have lower prices</li>
-              <li><strong>Best Time to Fly:</strong> Mid-week flights (Tuesday-Thursday) are usually cheaper</li>
-              <li><strong>Avoid Peak Seasons:</strong> Skip holidays, school breaks, and summer if possible</li>
-            </ul>
-
-            <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Flight Comparison Tools That Actually Work</h3>
-            <p className="text-gray-700 mb-4">
-              Don't rely on just one search engine. Compare prices across multiple platforms to ensure you're getting the best deal:
-            </p>
-            <ul className="list-disc pl-6 mb-6 space-y-2 text-gray-700">
-              <li><strong>Kiwi.com:</strong> Great for multi-city trips and unique route combinations</li>
-              <li><strong>Aviasales:</strong> Compares prices from hundreds of airlines and booking sites</li>
-              <li><strong>Google Flights:</strong> Excellent calendar view to find the cheapest dates</li>
-              <li><strong>Skyscanner:</strong> "Everywhere" search feature for inspiration</li>
-            </ul>
-
-            <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Money-Saving Flight Booking Strategies</h3>
-
-            <h4 className="text-xl font-semibold text-gray-900 mt-6 mb-3">1. Be Flexible with Your Dates</h4>
-            <p className="text-gray-700 mb-4">
-              Flying just one day earlier or later can save you $100-300. Use flexible date search tools to compare prices across different days. Mid-week flights are typically 20-30% cheaper than weekend departures.
-            </p>
-
-            <h4 className="text-xl font-semibold text-gray-900 mt-6 mb-3">2. Consider Nearby Airports</h4>
-            <p className="text-gray-700 mb-4">
-              Major cities often have multiple airports. For example, flying into Oakland instead of San Francisco, or Stansted instead of Heathrow, can save significant money. Factor in ground transportation costs when comparing.
-            </p>
-
-            <h4 className="text-xl font-semibold text-gray-900 mt-6 mb-3">3. Book One-Way Tickets Separately</h4>
-            <p className="text-gray-700 mb-4">
-              Sometimes booking two one-way tickets (even on different airlines) is cheaper than a round-trip ticket. This is especially true for international flights and when mixing budget and traditional carriers.
-            </p>
-
-            <h4 className="text-xl font-semibold text-gray-900 mt-6 mb-3">4. Use Incognito Mode</h4>
-            <p className="text-gray-700 mb-4">
-              Airlines and booking sites may track your searches and raise prices. Always search in incognito/private browsing mode to see the true lowest prices.
-            </p>
-
-            <h4 className="text-xl font-semibold text-gray-900 mt-6 mb-3">5. Set Price Alerts</h4>
-            <p className="text-gray-700 mb-4">
-              Most flight search engines offer price alerts. Set them up for your desired routes and get notified when prices drop. This is perfect for flexible travelers who can book quickly when deals appear.
-            </p>
-
-            <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Best Times to Travel by Destination</h3>
-            <ul className="list-disc pl-6 mb-6 space-y-2 text-gray-700">
-              <li><strong>Europe:</strong> Cheapest in November-March (except holidays), most expensive June-August</li>
-              <li><strong>Asia:</strong> Best prices in shoulder seasons (April-May, September-October)</li>
-              <li><strong>Caribbean:</strong> Lowest prices in May-June and September-November (hurricane season)</li>
-              <li><strong>South America:</strong> Cheapest during their winter (June-August)</li>
-              <li><strong>Australia:</strong> Best deals in their winter (June-August)</li>
-            </ul>
-
-            <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Hidden Fees to Watch Out For</h3>
-            <p className="text-gray-700 mb-4">
-              That cheap ticket price might not be so cheap once you add:
-            </p>
-            <ul className="list-disc pl-6 mb-6 space-y-2 text-gray-700">
-              <li><strong>Baggage Fees:</strong> Check airline policies - some charge for carry-ons!</li>
-              <li><strong>Seat Selection:</strong> Budget airlines charge extra for seat assignments</li>
-              <li><strong>Payment Fees:</strong> Credit card processing fees can add $10-30</li>
-              <li><strong>Booking Fees:</strong> Third-party sites may charge service fees</li>
-              <li><strong>Change/Cancellation Fees:</strong> Read the fine print before booking</li>
-            </ul>
-
-            <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Mistake Fares and Flash Sales</h3>
-            <p className="text-gray-700 mb-4">
-              Occasionally, airlines make pricing errors or offer flash sales with incredible discounts. Follow these tips to catch them:
-            </p>
-            <ul className="list-disc pl-6 mb-6 space-y-2 text-gray-700">
-              <li>Follow airline social media accounts for flash sale announcements</li>
-              <li>Subscribe to deal alert newsletters (Scott's Cheap Flights, Secret Flying)</li>
-              <li>Be ready to book immediately - these deals disappear fast</li>
-              <li>Have your passport and payment info ready</li>
-              <li>Be flexible with destinations - mistake fares are often to random locations</li>
-            </ul>
-
-            <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Frequently Asked Questions</h3>
-
-            <h4 className="text-xl font-semibold text-gray-900 mt-6 mb-3">What day of the week are flights cheapest?</h4>
-            <p className="text-gray-700 mb-4">
-              Tuesday, Wednesday, and Saturday flights are typically cheapest. Tuesday and Wednesday afternoons are often the best times to book, as airlines release deals early in the week.
-            </p>
-
-            <h4 className="text-xl font-semibold text-gray-900 mt-6 mb-3">How far in advance should I book international flights?</h4>
-            <p className="text-gray-700 mb-4">
-              For international flights, the sweet spot is 2-8 months in advance. Booking too early (more than 11 months) or too late (less than 3 weeks) usually results in higher prices.
-            </p>
-
-            <h4 className="text-xl font-semibold text-gray-900 mt-6 mb-3">Are budget airlines worth it?</h4>
-            <p className="text-gray-700 mb-4">
-              Budget airlines can save you money, but factor in all costs. Add up baggage fees, seat selection, food, and transportation to/from secondary airports. Sometimes traditional airlines offer better overall value.
-            </p>
-
-            <h4 className="text-xl font-semibold text-gray-900 mt-6 mb-3">Should I book directly with the airline or through a third party?</h4>
-            <p className="text-gray-700 mb-4">
-              While third-party sites can sometimes offer lower prices, booking directly with airlines gives you better customer service, easier changes/cancellations, and loyalty program benefits. Compare both options before deciding.
-            </p>
           </div>
         </div>
       </section>
