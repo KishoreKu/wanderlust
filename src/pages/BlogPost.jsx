@@ -575,10 +575,10 @@ export function BlogPost() {
         <h3 class="text-2xl font-bold mt-6 mb-3">Where to Stay in NYC</h3>
         <div class="bg-primary-50 rounded-lg p-6 mb-6">
           <p class="mb-3"><strong>Times Square Area:</strong> Be in the heart of the action (book NOW - sells out fast!)</p>
-          <a href="https://www.dpbolvw.net/click-101618526-13627287?destination=New+York+City" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors mb-4">Find hotels in Times Square →</a>
+          <a href="https://www.jdoqocy.com/click-101618526-10430139" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors mb-4">Find hotels in Times Square →</a>
           
           <p class="mb-3 mt-4"><strong>Midtown Manhattan:</strong> Close to everything, great rooftop bars</p>
-          <a href="https://www.dpbolvw.net/click-101618526-13627287?destination=New+York+City" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors mb-4">Search Midtown hotels →</a>
+          <a href="https://www.jdoqocy.com/click-101618526-10430139" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors mb-4">Search Midtown hotels →</a>
           
           <p class="text-sm text-gray-600 mt-4">💡 <strong>Pro Tip:</strong> Book 2-3 months ahead! NYE is the most expensive night of the year.</p>
         </div>
@@ -601,10 +601,10 @@ export function BlogPost() {
         <h3 class="text-2xl font-bold mt-6 mb-3">Where to Stay in Las Vegas</h3>
         <div class="bg-primary-50 rounded-lg p-6 mb-6">
           <p class="mb-3"><strong>The Strip:</strong> Best views of the fireworks, walking distance to everything</p>
-          <a href="https://www.dpbolvw.net/click-101618526-13627287?destination=Las+Vegas" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors mb-4">Find Strip hotels →</a>
+          <a href="https://www.anrdoezrs.net/click-101618526-10438018" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors mb-4">Find Strip hotels →</a>
           
           <p class="mb-3 mt-4"><strong>Downtown (Fremont Street):</strong> More affordable, great party atmosphere</p>
-          <a href="https://www.dpbolvw.net/click-101618526-13627287?destination=Las+Vegas" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors mb-4">Search Downtown Vegas hotels →</a>
+          <a href="https://www.anrdoezrs.net/click-101618526-10438018" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors mb-4">Search Downtown Vegas hotels →</a>
           
           <p class="text-sm text-gray-600 mt-4">💡 <strong>Pro Tip:</strong> Book early for best rates. Prices triple closer to NYE!</p>
         </div>
@@ -627,10 +627,10 @@ export function BlogPost() {
         <h3 class="text-2xl font-bold mt-6 mb-3">Where to Stay in San Francisco</h3>
         <div class="bg-primary-50 rounded-lg p-6 mb-6">
           <p class="mb-3"><strong>Fisherman's Wharf:</strong> Close to fireworks, waterfront dining</p>
-          <a href="https://www.dpbolvw.net/click-101618526-13627287?destination=San+Francisco" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors mb-4">Find Fisherman's Wharf hotels →</a>
+          <a href="https://www.dpbolvw.net/click-101618526-13627287" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors mb-4">Find Fisherman's Wharf hotels →</a>
           
           <p class="mb-3 mt-4"><strong>Union Square:</strong> Central location, upscale dining and shopping</p>
-          <a href="https://www.dpbolvw.net/click-101618526-13627287?destination=San+Francisco" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors mb-4">Search Union Square hotels →</a>
+          <a href="https://www.dpbolvw.net/click-101618526-13627287" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors mb-4">Search Union Square hotels →</a>
         </div>
 
         <p class="mb-4"><strong>Budget:</strong> $250-450/night for hotels, $50-150 for events</p>
@@ -651,7 +651,7 @@ export function BlogPost() {
         <h3 class="text-2xl font-bold mt-6 mb-3">Where to Stay in Nashville</h3>
         <div class="bg-primary-50 rounded-lg p-6 mb-6">
           <p class="mb-3"><strong>Downtown/Broadway:</strong> Walk to all the honky tonks and events</p>
-          <a href="https://www.dpbolvw.net/click-101618526-13627287?destination=Nashville" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors mb-4">Find Downtown Nashville hotels →</a>
+          <a href="https://www.anrdoezrs.net/click-101618526-10438018" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors mb-4">Find Downtown Nashville hotels →</a>
         </div>
 
         <p class="mb-4"><strong>Budget:</strong> $150-300/night for hotels, many events are FREE!</p>
@@ -672,10 +672,10 @@ export function BlogPost() {
         <h3 class="text-2xl font-bold mt-6 mb-3">Where to Stay in Miami</h3>
         <div class="bg-primary-50 rounded-lg p-6 mb-6">
           <p class="mb-3"><strong>South Beach:</strong> Best beach parties and nightlife</p>
-          <a href="https://www.dpbolvw.net/click-101618526-13627287?destination=Miami" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors mb-4">Find South Beach hotels →</a>
+          <a href="https://www.anrdoezrs.net/click-101618526-10438018" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors mb-4">Find South Beach hotels →</a>
           
           <p class="mb-3 mt-4"><strong>Downtown Miami:</strong> Close to Bayfront Park events</p>
-          <a href="https://www.dpbolvw.net/click-101618526-13627287?destination=Miami" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors mb-4">Search Downtown Miami hotels →</a>
+          <a href="https://www.anrdoezrs.net/click-101618526-10438018" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors mb-4">Search Downtown Miami hotels →</a>
         </div>
 
         <p class="mb-4"><strong>Budget:</strong> $200-400/night for hotels, $100-300 for events</p>
