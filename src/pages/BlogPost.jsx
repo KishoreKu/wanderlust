@@ -627,10 +627,10 @@ export function BlogPost() {
         <h3 class="text-2xl font-bold mt-6 mb-3">Where to Stay in San Francisco</h3>
         <div class="bg-primary-50 rounded-lg p-6 mb-6">
           <p class="mb-3"><strong>Fisherman's Wharf:</strong> Close to fireworks, waterfront dining</p>
-          <a href="https://www.dpbolvw.net/click-101618526-13627287?city=20015&aid=2397898" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors mb-4">Find Fisherman's Wharf hotels →</a>
+          <a href="https://www.agoda.com/search?city=9937&aid=2397898" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors mb-4">Find Fisherman's Wharf hotels →</a>
           
           <p class="mb-3 mt-4"><strong>Union Square:</strong> Central location, upscale dining and shopping</p>
-          <a href="https://www.dpbolvw.net/click-101618526-13627287?city=20015&aid=2397898" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors mb-4">Search Union Square hotels →</a>
+          <a href="https://www.agoda.com/search?city=9937&aid=2397898" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors mb-4">Search Union Square hotels →</a>
         </div>
 
         <p class="mb-4"><strong>Budget:</strong> $250-450/night for hotels, $50-150 for events</p>
@@ -651,7 +651,7 @@ export function BlogPost() {
         <h3 class="text-2xl font-bold mt-6 mb-3">Where to Stay in Nashville</h3>
         <div class="bg-primary-50 rounded-lg p-6 mb-6">
           <p class="mb-3"><strong>Downtown/Broadway:</strong> Walk to all the honky tonks and events</p>
-          <a href="https://www.anrdoezrs.net/click-101618526-10438018?city=20173&aid=2397898" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors mb-4">Find Downtown Nashville hotels →</a>
+          <a href="https://www.agoda.com/search?city=7648&aid=2397898" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors mb-4">Find Downtown Nashville hotels →</a>
         </div>
 
         <p class="mb-4"><strong>Budget:</strong> $150-300/night for hotels, many events are FREE!</p>
@@ -672,10 +672,10 @@ export function BlogPost() {
         <h3 class="text-2xl font-bold mt-6 mb-3">Where to Stay in Miami</h3>
         <div class="bg-primary-50 rounded-lg p-6 mb-6">
           <p class="mb-3"><strong>South Beach:</strong> Best beach parties and nightlife</p>
-          <a href="https://www.anrdoezrs.net/click-101618526-10438018?city=20023&aid=2397898" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors mb-4">Find South Beach hotels →</a>
+          <a href="https://www.agoda.com/search?city=5178&aid=2397898" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors mb-4">Find South Beach hotels →</a>
           
           <p class="mb-3 mt-4"><strong>Downtown Miami:</strong> Close to Bayfront Park events</p>
-          <a href="https://www.anrdoezrs.net/click-101618526-10438018?city=20023&aid=2397898" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors mb-4">Search Downtown Miami hotels →</a>
+          <a href="https://www.agoda.com/search?city=5178&aid=2397898" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors mb-4">Search Downtown Miami hotels →</a>
         </div>
 
         <p class="mb-4"><strong>Budget:</strong> $200-400/night for hotels, $100-300 for events</p>
