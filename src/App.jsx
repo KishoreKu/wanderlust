@@ -19,6 +19,7 @@ import { AffiliateDisclosure } from './pages/AffiliateDisclosure';
 import { AirHelp } from './pages/AirHelp';
 import { Klook } from './pages/Klook';
 import { NewYearActivities } from './pages/NewYearActivities';
+import { EuropeDestinations } from './pages/EuropeDestinations';
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
             <Route path="/airhelp" element={<AirHelp />} />
             <Route path="/klook" element={<Klook />} />
             <Route path="/new-year-activities" element={<NewYearActivities />} />
+            <Route path="/europe-destinations" element={<EuropeDestinations />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
