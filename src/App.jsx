@@ -4,6 +4,7 @@ import { Footer } from './components/Footer';
 import { GoogleAnalytics } from './components/GoogleAnalytics';
 import { NewsletterPopup } from './components/NewsletterPopup';
 import { CanonicalTag } from './components/CanonicalTag';
+import { ScrollToTop } from './components/ScrollToTop';
 import { Home } from './pages/Home';
 import { Blog } from './pages/Blog';
 import { BlogPost } from './pages/BlogPost';
@@ -21,6 +22,7 @@ import { Klook } from './pages/Klook';
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <GoogleAnalytics />
       <CanonicalTag />
       <div className="flex flex-col min-h-screen">
