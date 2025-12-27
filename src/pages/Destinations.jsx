@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Button } from '../components/Button';
 import { MapPin, Calendar, Users, Star, ArrowRight } from 'lucide-react';
 import { NewsletterSignup } from '../components/NewsletterSignup';
+import { GetYourGuideSection } from '../components/GetYourGuideWidget';
 
 export function Destinations() {
   const [selectedRegion, setSelectedRegion] = useState('All');
@@ -410,6 +411,21 @@ export function Destinations() {
               <p className="text-gray-600">Get insider tips from locals and experienced travelers</p>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Popular Tours & Activities</h2>
+            <p className="text-xl text-gray-600">Book unforgettable experiences at your destination</p>
+          </div>
+
+          <GetYourGuideSection
+            location="Paris"
+            title="Top Experiences in Paris"
+            limit={6}
+          />
         </div>
       </section>
 
