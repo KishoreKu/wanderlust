@@ -627,10 +627,10 @@ export function BlogPost() {
         <h3 class="text-2xl font-bold mt-6 mb-3">Where to Stay in San Francisco</h3>
         <div class="bg-primary-50 rounded-lg p-6 mb-6">
           <p class="mb-3"><strong>Fisherman's Wharf:</strong> Close to fireworks, waterfront dining</p>
-          <a href="https://www.dpbolvw.net/click-101618526-13627287" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors mb-4">Find Fisherman's Wharf hotels →</a>
+          <a href="https://www.anrdoezrs.net/click-101618526-10438018" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors mb-4">Find Fisherman's Wharf hotels →</a>
           
           <p class="mb-3 mt-4"><strong>Union Square:</strong> Central location, upscale dining and shopping</p>
-          <a href="https://www.dpbolvw.net/click-101618526-13627287" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors mb-4">Search Union Square hotels →</a>
+          <a href="https://www.anrdoezrs.net/click-101618526-10438018" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors mb-4">Search Union Square hotels →</a>
         </div>
 
         <p class="mb-4"><strong>Budget:</strong> $250-450/night for hotels, $50-150 for events</p>
