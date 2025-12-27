@@ -18,6 +18,7 @@ import { TermsOfService } from './pages/TermsOfService';
 import { AffiliateDisclosure } from './pages/AffiliateDisclosure';
 import { AirHelp } from './pages/AirHelp';
 import { Klook } from './pages/Klook';
+import { NewYearActivities } from './pages/NewYearActivities';
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
             <Route path="/flights" element={<Flights />} />
             <Route path="/airhelp" element={<AirHelp />} />
             <Route path="/klook" element={<Klook />} />
+            <Route path="/new-year-activities" element={<NewYearActivities />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
