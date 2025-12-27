@@ -133,12 +133,66 @@ export function NewYearActivities() {
                                 <h2 className="text-4xl font-bold mb-4">{destination.name}</h2>
                                 <p className="text-lg text-gray-600 mb-6">{destination.description}</p>
                                 <div className="flex gap-4">
-                                    <Link to="/hotels">
-                                        <Button variant="primary">Find Hotels</Button>
-                                    </Link>
-                                    <Link to="/flights">
-                                        <Button variant="outline">Book Flights</Button>
-                                    </Link>
+                                    {destination.name === 'New York City' && (
+                                        <>
+                                            <a href="https://www.jdoqocy.com/click-101618526-10430139" target="_blank" rel="nofollow noopener">
+                                                <Button variant="primary">Find Hotels</Button>
+                                            </a>
+                                            <a href="https://www.aviasales.com/?marker=692183" target="_blank" rel="nofollow noopener">
+                                                <Button variant="outline">Book Flights</Button>
+                                            </a>
+                                        </>
+                                    )}
+                                    {destination.name === 'Las Vegas' && (
+                                        <>
+                                            <a href="https://www.tkqlhce.com/click-101618526-10437077" target="_blank" rel="nofollow noopener">
+                                                <Button variant="primary">Find Hotels</Button>
+                                            </a>
+                                            <a href="https://www.aviasales.com/?marker=692183" target="_blank" rel="nofollow noopener">
+                                                <Button variant="outline">Book Flights</Button>
+                                            </a>
+                                        </>
+                                    )}
+                                    {destination.name === 'Paris' && (
+                                        <>
+                                            <a href="https://www.anrdoezrs.net/click-101618526-10438018" target="_blank" rel="nofollow noopener">
+                                                <Button variant="primary">Find Hotels</Button>
+                                            </a>
+                                            <a href="https://www.aviasales.com/?marker=692183" target="_blank" rel="nofollow noopener">
+                                                <Button variant="outline">Book Flights</Button>
+                                            </a>
+                                        </>
+                                    )}
+                                    {destination.name === 'San Francisco' && (
+                                        <>
+                                            <a href="https://www.anrdoezrs.net/click-101618526-10438018" target="_blank" rel="nofollow noopener">
+                                                <Button variant="primary">Find Hotels</Button>
+                                            </a>
+                                            <a href="https://www.aviasales.com/?marker=692183" target="_blank" rel="nofollow noopener">
+                                                <Button variant="outline">Book Flights</Button>
+                                            </a>
+                                        </>
+                                    )}
+                                    {destination.name === 'Miami' && (
+                                        <>
+                                            <a href="https://www.jdoqocy.com/click-101618526-10537406" target="_blank" rel="nofollow noopener">
+                                                <Button variant="primary">Find Hotels</Button>
+                                            </a>
+                                            <a href="https://www.aviasales.com/?marker=692183" target="_blank" rel="nofollow noopener">
+                                                <Button variant="outline">Book Flights</Button>
+                                            </a>
+                                        </>
+                                    )}
+                                    {destination.name === 'London' && (
+                                        <>
+                                            <a href="https://www.jdoqocy.com/click-101618526-10437075" target="_blank" rel="nofollow noopener">
+                                                <Button variant="primary">Find Hotels</Button>
+                                            </a>
+                                            <a href="https://www.aviasales.com/?marker=692183" target="_blank" rel="nofollow noopener">
+                                                <Button variant="outline">Book Flights</Button>
+                                            </a>
+                                        </>
+                                    )}
                                 </div>
                             </div>
                         </div>
