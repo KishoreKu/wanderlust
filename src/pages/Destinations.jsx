@@ -314,6 +314,14 @@ export function Destinations() {
                 onClick={() => {
                   if (region === 'Europe') {
                     navigate('/europe-destinations');
+                  } else if (region === 'Asia') {
+                    navigate('/asia-destinations');
+                  } else if (region === 'Americas') {
+                    navigate('/americas-destinations');
+                  } else if (region === 'Africa') {
+                    navigate('/africa-destinations');
+                  } else if (region === 'Oceania') {
+                    navigate('/oceania-destinations');
                   } else {
                     setSelectedRegion(region);
                   }

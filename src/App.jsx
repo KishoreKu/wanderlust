@@ -20,6 +20,10 @@ import { AirHelp } from './pages/AirHelp';
 import { Klook } from './pages/Klook';
 import { NewYearActivities } from './pages/NewYearActivities';
 import { EuropeDestinations } from './pages/EuropeDestinations';
+import { AsiaDestinations } from './pages/AsiaDestinations';
+import { AmericasDestinations } from './pages/AmericasDestinations';
+import { AfricaDestinations } from './pages/AfricaDestinations';
+import { OceaniaDestinations } from './pages/OceaniaDestinations';
 
 function App() {
   return (
@@ -41,6 +45,10 @@ function App() {
             <Route path="/klook" element={<Klook />} />
             <Route path="/new-year-activities" element={<NewYearActivities />} />
             <Route path="/europe-destinations" element={<EuropeDestinations />} />
+            <Route path="/asia-destinations" element={<AsiaDestinations />} />
+            <Route path="/americas-destinations" element={<AmericasDestinations />} />
+            <Route path="/africa-destinations" element={<AfricaDestinations />} />
+            <Route path="/oceania-destinations" element={<OceaniaDestinations />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
