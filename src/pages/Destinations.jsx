@@ -4,6 +4,7 @@ import { Button } from '../components/Button';
 import { MapPin, Calendar, Users, Star, ArrowRight } from 'lucide-react';
 import { NewsletterSignup } from '../components/NewsletterSignup';
 import { GetYourGuideSection } from '../components/GetYourGuideWidget';
+import { getHotelAffiliateLink } from '../config/affiliate';
 
 export function Destinations() {
   const [selectedRegion, setSelectedRegion] = useState('All');
@@ -376,16 +377,16 @@ export function Destinations() {
                   </div>
 
                   <div className="flex gap-2">
-                    <Link to="/hotels" className="flex-1">
+                    <a href={getHotelAffiliateLink(destination.name, destination.name.split(',')[0])} target="_blank" rel="nofollow noopener" className="flex-1">
                       <Button variant="primary" size="sm" className="w-full">
                         Find Hotels
                       </Button>
-                    </Link>
-                    <Link to="/flights" className="flex-1">
+                    </a>
+                    <a href="https://www.aviasales.com/?marker=692183" target="_blank" rel="nofollow noopener" className="flex-1">
                       <Button variant="outline" size="sm" className="w-full">
                         Book Flights
                       </Button>
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>
