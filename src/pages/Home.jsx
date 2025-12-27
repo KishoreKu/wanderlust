@@ -118,6 +118,62 @@ export function Home() {
         </div>
       </section>
 
+      {/* New Year's Eve 2025-2026 Promotional Banner */}
+      <section className="relative py-16 bg-gradient-to-r from-purple-600 via-pink-600 to-red-600 text-white overflow-hidden">
+        <div className="absolute inset-0 bg-black opacity-20"></div>
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4xIj48cGF0aCBkPSJNMzYgMzRjMC0yLjIxLTEuNzktNC00LTRzLTQgMS43OS00IDQgMS43OSA0IDQgNCA0LTEuNzkgNC00em0wLTEwYzAtMi4yMS0xLjc5LTQtNC00cy00IDEuNzktNCA0IDEuNzkgNCA0IDQgNC0xLjc5IDQtNHoiLz48L2c+PC9nPjwvc3ZnPg==')] opacity-30"></div>
+
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <div className="inline-flex items-center bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-4 animate-pulse">
+              <Calendar className="h-5 w-5 mr-2" />
+              <span className="font-semibold">Limited Time - Book Now!</span>
+            </div>
+
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">
+              🎉 New Year's Eve 2025-2026 🎆
+            </h2>
+            <p className="text-xl md:text-2xl mb-6 text-white/90">
+              Ring in 2026 with unforgettable experiences in NYC, Vegas, Paris & more!
+            </p>
+            <p className="text-lg mb-8 text-white/80 max-w-2xl mx-auto">
+              Book exclusive tours, activities, and experiences before they sell out.
+              From Times Square ball drop to Vegas fireworks - we've got you covered!
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link to="/new-year-activities">
+                <Button size="lg" className="bg-white text-purple-600 hover:bg-gray-100 w-full sm:w-auto shadow-xl">
+                  <Star className="mr-2 h-5 w-5" />
+                  View NYE Activities
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </Link>
+              <Link to="/blog/new-years-eve-usa-2025">
+                <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white/10 w-full sm:w-auto">
+                  Read Travel Guide
+                </Button>
+              </Link>
+            </div>
+
+            <div className="mt-8 flex flex-wrap justify-center gap-6 text-sm">
+              <div className="flex items-center">
+                <MapPin className="h-4 w-4 mr-1" />
+                <span>6 Top Cities</span>
+              </div>
+              <div className="flex items-center">
+                <Star className="h-4 w-4 mr-1" />
+                <span>Top-Rated Experiences</span>
+              </div>
+              <div className="flex items-center">
+                <Calendar className="h-4 w-4 mr-1" />
+                <span>Book in Advance</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="py-16 bg-sky-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
