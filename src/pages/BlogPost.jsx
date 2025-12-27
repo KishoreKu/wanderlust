@@ -598,7 +598,7 @@ export function BlogPost() {
         <h3 class="text-2xl font-bold mt-6 mb-3">Where to Stay in Las Vegas</h3>
         <div class="bg-primary-50 rounded-lg p-6 mb-6">
           <p class="mb-3"><strong>The Strip & Downtown:</strong> Best views of fireworks, walking distance to casinos and shows</p>
-          <p class="text-sm text-gray-600 mb-4"><em>Specific hotel links coming soon - check back for verified Las Vegas hotel deals!</em></p>
+          <a href="https://www.tkqlhce.com/click-101618526-10437077" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors mb-4">Find Las Vegas hotels →</a>
           
           <p class="text-sm text-gray-600 mt-4">💡 <strong>Pro Tip:</strong> Book early for best rates. Prices triple closer to NYE!</p>
         </div>
@@ -627,28 +627,7 @@ export function BlogPost() {
         <p class="mb-4"><strong>Budget:</strong> $250-450/night for hotels, $50-150 for events</p>
         <p class="mb-6"><strong>Best For:</strong> Couples, foodies, those wanting a classy celebration</p>
 
-        <h2 class="text-3xl font-bold mt-8 mb-4">🎸 4. Nashville, Tennessee - Music City NYE</h2>
-        <p class="mb-4"><strong>Why Celebrate Here:</strong> Live country music, the famous Music Note Drop, and Southern hospitality. Plus, it's more affordable than coastal cities!</p>
-        
-        <h3 class="text-2xl font-bold mt-6 mb-3">🎉 New Year's Eve Events:</h3>
-        <ul class="list-disc pl-6 mb-6 space-y-2">
-          <li><strong>Jack Daniel's Music City Midnight</strong> - Free outdoor concert on Broadway</li>
-          <li><strong>Music Note Drop</strong> - Nashville's version of the ball drop</li>
-          <li><strong>Honky Tonk Bars</strong> - Live music all night on Broadway</li>
-          <li><strong>Grand Ole Opry</strong> - Special NYE show ($75-150)</li>
-          <li><strong>Fireworks</strong> - Midnight display over downtown</li>
-        </ul>
-
-        <h3 class="text-2xl font-bold mt-6 mb-3">Where to Stay in Nashville</h3>
-        <div class="bg-primary-50 rounded-lg p-6 mb-6">
-          <p class="mb-3"><strong>Downtown/Broadway:</strong> Walk to all the honky tonks and events</p>
-          <a href="https://www.anrdoezrs.net/click-101618526-10438018" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors mb-4">Find Downtown Nashville hotels →</a>
-        </div>
-
-        <p class="mb-4"><strong>Budget:</strong> $150-300/night for hotels, many events are FREE!</p>
-        <p class="mb-6"><strong>Best For:</strong> Music lovers, budget travelers, groups</p>
-
-        <h2 class="text-3xl font-bold mt-8 mb-4">🌴 5. Miami, Florida - Beach Party NYE</h2>
+        <h2 class="text-3xl font-bold mt-8 mb-4">� 4. Miami, Florida - Beach Party NYE</h2>
         <p class="mb-4"><strong>Why Celebrate Here:</strong> Warm weather, beach parties, and Latin-inspired celebrations. Party on the beach in 75°F weather!</p>
         
         <h3 class="text-2xl font-bold mt-6 mb-3">🎉 New Year's Eve Events:</h3>
@@ -663,7 +642,7 @@ export function BlogPost() {
         <h3 class="text-2xl font-bold mt-6 mb-3">Where to Stay in Miami</h3>
         <div class="bg-primary-50 rounded-lg p-6 mb-6">
           <p class="mb-3"><strong>South Beach & Downtown:</strong> Best beach parties, nightlife, and close to Bayfront Park events</p>
-          <p class="text-sm text-gray-600 mb-4"><em>Specific hotel links coming soon - check back for verified Miami hotel deals!</em></p>
+          <a href="https://www.jdoqocy.com/click-101618526-10537406" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors mb-4">Find Miami Beach hotels →</a>
         </div>
 
         <p class="mb-4"><strong>Budget:</strong> $200-400/night for hotels, $100-300 for events</p>
