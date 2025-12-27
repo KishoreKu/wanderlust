@@ -549,6 +549,234 @@ export function BlogPost() {
         <p class="mb-6">Don't let fear hold you back from amazing experiences, but do take sensible precautions. Stay alert, stay connected, and most importantly - enjoy your adventure! The world is waiting for you. 🌍✨</p>
       `,
     },
+    'new-years-eve-usa-2025': {
+      id: 'new-years-eve-usa-2025',
+      title: 'New Year\'s Eve 2025 USA: Best Cities to Celebrate + Travel Guide',
+      author: 'Gubbu Team',
+      date: 'December 26, 2024',
+      readTime: '12 min read',
+      category: 'Destinations',
+      image: 'https://images.unsplash.com/photo-1467810563316-b5476525c0f9?w=1200&auto=format&fit=crop',
+      content: `
+        <p class="text-lg mb-6">Ring in 2025 in style! Whether you want to watch the ball drop in Times Square, party on the Las Vegas Strip, or enjoy a sophisticated celebration in San Francisco, we've got you covered. Here's your complete guide to the best New Year's Eve destinations in the USA! 🎉🎆</p>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🗽 1. New York City, New York - The Iconic Ball Drop</h2>
+        <p class="mb-4"><strong>Why Celebrate Here:</strong> The world's most famous New Year's Eve celebration! Watch the ball drop in Times Square, enjoy rooftop parties with skyline views, and experience the electric energy of NYC.</p>
+        
+        <h3 class="text-2xl font-bold mt-6 mb-3">🎉 New Year's Eve Events:</h3>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li><strong>Times Square Ball Drop</strong> - Free! Arrive by 3 PM to secure a spot</li>
+          <li><strong>Rooftop Parties</strong> - 230 Fifth, The Press Lounge ($150-500)</li>
+          <li><strong>Cruises</strong> - Hudson River dinner cruises ($200-400)</li>
+          <li><strong>Brooklyn Bridge Fireworks</strong> - Midnight spectacular</li>
+          <li><strong>Central Park Midnight Run</strong> - 4-mile fun run at midnight</li>
+        </ul>
+
+        <h3 class="text-2xl font-bold mt-6 mb-3">Where to Stay in NYC</h3>
+        <div class="bg-primary-50 rounded-lg p-6 mb-6">
+          <p class="mb-3"><strong>Times Square Area:</strong> Be in the heart of the action (book NOW - sells out fast!)</p>
+          <a href="https://www.jdoqocy.com/click-101618526-10430139" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors mb-4">Find hotels in Times Square →</a>
+          
+          <p class="mb-3 mt-4"><strong>Midtown Manhattan:</strong> Close to everything, great rooftop bars</p>
+          <a href="https://www.jdoqocy.com/click-101618526-10430139" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors mb-4">Search Midtown hotels →</a>
+          
+          <p class="text-sm text-gray-600 mt-4">💡 <strong>Pro Tip:</strong> Book 2-3 months ahead! NYE is the most expensive night of the year.</p>
+        </div>
+
+        <p class="mb-4"><strong>Budget:</strong> $300-600/night for hotels, $50-200 for events</p>
+        <p class="mb-6"><strong>Best For:</strong> First-timers, couples, anyone wanting the iconic experience</p>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🎰 2. Las Vegas, Nevada - Party Capital</h2>
+        <p class="mb-4"><strong>Why Celebrate Here:</strong> The Strip transforms into the world's biggest party! Fireworks from casino rooftops, celebrity DJ performances, and 24/7 celebrations.</p>
+        
+        <h3 class="text-2xl font-bold mt-6 mb-3">🎉 New Year's Eve Events:</h3>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li><strong>Strip Fireworks Show</strong> - Free! 8-minute display from 7 casinos at midnight</li>
+          <li><strong>Nightclub Parties</strong> - Omnia, XS, Hakkasan ($100-300)</li>
+          <li><strong>Fremont Street</strong> - Free concert and LED canopy show</li>
+          <li><strong>Casino Parties</strong> - Every major casino has events</li>
+          <li><strong>Helicopter Tours</strong> - See fireworks from above ($300-500)</li>
+        </ul>
+
+        <h3 class="text-2xl font-bold mt-6 mb-3">Where to Stay in Las Vegas</h3>
+        <div class="bg-primary-50 rounded-lg p-6 mb-6">
+          <p class="mb-3"><strong>The Strip:</strong> Best views of the fireworks, walking distance to everything</p>
+          <a href="https://www.anrdoezrs.net/click-101618526-10438018" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors mb-4">Find Strip hotels →</a>
+          
+          <p class="mb-3 mt-4"><strong>Downtown (Fremont Street):</strong> More affordable, great party atmosphere</p>
+          <a href="https://www.anrdoezrs.net/click-101618526-10438018" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors mb-4">Search Downtown Vegas hotels →</a>
+          
+          <p class="text-sm text-gray-600 mt-4">💡 <strong>Pro Tip:</strong> Book early for best rates. Prices triple closer to NYE!</p>
+        </div>
+
+        <p class="mb-4"><strong>Budget:</strong> $200-500/night for hotels, $100-300 for club entry</p>
+        <p class="mb-6"><strong>Best For:</strong> Party lovers, groups, anyone wanting non-stop entertainment</p>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🌉 3. San Francisco, California - Sophisticated Celebration</h2>
+        <p class="mb-4"><strong>Why Celebrate Here:</strong> Waterfront fireworks, upscale parties, and stunning bay views. More refined than Vegas, more intimate than NYC.</p>
+        
+        <h3 class="text-2xl font-bold mt-6 mb-3">🎉 New Year's Eve Events:</h3>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li><strong>Embarcadero Fireworks</strong> - Free! Best views from Ferry Building</li>
+          <li><strong>Pier 39 Celebration</strong> - Free concert and fireworks</li>
+          <li><strong>Dinner Cruises</strong> - Bay cruises with champagne ($150-300)</li>
+          <li><strong>Rooftop Parties</strong> - Cityscape, Charmaine's ($100-250)</li>
+          <li><strong>Golden Gate Bridge Views</strong> - Battery Spencer viewpoint</li>
+        </ul>
+
+        <h3 class="text-2xl font-bold mt-6 mb-3">Where to Stay in San Francisco</h3>
+        <div class="bg-primary-50 rounded-lg p-6 mb-6">
+          <p class="mb-3"><strong>Fisherman's Wharf:</strong> Close to fireworks, waterfront dining</p>
+          <a href="https://www.dpbolvw.net/click-101618526-13627287" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors mb-4">Find Fisherman's Wharf hotels →</a>
+          
+          <p class="mb-3 mt-4"><strong>Union Square:</strong> Central location, upscale dining and shopping</p>
+          <a href="https://www.dpbolvw.net/click-101618526-13627287" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors mb-4">Search Union Square hotels →</a>
+        </div>
+
+        <p class="mb-4"><strong>Budget:</strong> $250-450/night for hotels, $50-150 for events</p>
+        <p class="mb-6"><strong>Best For:</strong> Couples, foodies, those wanting a classy celebration</p>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🎸 4. Nashville, Tennessee - Music City NYE</h2>
+        <p class="mb-4"><strong>Why Celebrate Here:</strong> Live country music, the famous Music Note Drop, and Southern hospitality. Plus, it's more affordable than coastal cities!</p>
+        
+        <h3 class="text-2xl font-bold mt-6 mb-3">🎉 New Year's Eve Events:</h3>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li><strong>Jack Daniel's Music City Midnight</strong> - Free outdoor concert on Broadway</li>
+          <li><strong>Music Note Drop</strong> - Nashville's version of the ball drop</li>
+          <li><strong>Honky Tonk Bars</strong> - Live music all night on Broadway</li>
+          <li><strong>Grand Ole Opry</strong> - Special NYE show ($75-150)</li>
+          <li><strong>Fireworks</strong> - Midnight display over downtown</li>
+        </ul>
+
+        <h3 class="text-2xl font-bold mt-6 mb-3">Where to Stay in Nashville</h3>
+        <div class="bg-primary-50 rounded-lg p-6 mb-6">
+          <p class="mb-3"><strong>Downtown/Broadway:</strong> Walk to all the honky tonks and events</p>
+          <a href="https://www.anrdoezrs.net/click-101618526-10438018" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors mb-4">Find Downtown Nashville hotels →</a>
+        </div>
+
+        <p class="mb-4"><strong>Budget:</strong> $150-300/night for hotels, many events are FREE!</p>
+        <p class="mb-6"><strong>Best For:</strong> Music lovers, budget travelers, groups</p>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🌴 5. Miami, Florida - Beach Party NYE</h2>
+        <p class="mb-4"><strong>Why Celebrate Here:</strong> Warm weather, beach parties, and Latin-inspired celebrations. Party on the beach in 75°F weather!</p>
+        
+        <h3 class="text-2xl font-bold mt-6 mb-3">🎉 New Year's Eve Events:</h3>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li><strong>Bayfront Park</strong> - Free concert and fireworks</li>
+          <li><strong>South Beach Parties</strong> - Beach clubs and hotels ($100-400)</li>
+          <li><strong>Ocean Drive</strong> - Street party atmosphere</li>
+          <li><strong>Cruises</strong> - Biscayne Bay dinner cruises ($150-350)</li>
+          <li><strong>Nightclubs</strong> - LIV, Story, E11EVEN ($150-500)</li>
+        </ul>
+
+        <h3 class="text-2xl font-bold mt-6 mb-3">Where to Stay in Miami</h3>
+        <div class="bg-primary-50 rounded-lg p-6 mb-6">
+          <p class="mb-3"><strong>South Beach:</strong> Best beach parties and nightlife</p>
+          <a href="https://www.anrdoezrs.net/click-101618526-10438018" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors mb-4">Find South Beach hotels →</a>
+          
+          <p class="mb-3 mt-4"><strong>Downtown Miami:</strong> Close to Bayfront Park events</p>
+          <a href="https://www.anrdoezrs.net/click-101618526-10438018" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors mb-4">Search Downtown Miami hotels →</a>
+        </div>
+
+        <p class="mb-4"><strong>Budget:</strong> $200-400/night for hotels, $100-300 for events</p>
+        <p class="mb-6"><strong>Best For:</strong> Beach lovers, party animals, those escaping winter</p>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🎆 More Amazing NYE Destinations</h2>
+        
+        <h3 class="text-2xl font-bold mt-6 mb-3">6. New Orleans, Louisiana</h3>
+        <p class="mb-4"><strong>Highlights:</strong> Bourbon Street parties, Fleur-de-Lis drop, live jazz, and Creole cuisine. Budget: $150-350/night</p>
+        
+        <h3 class="text-2xl font-bold mt-6 mb-3">7. Chicago, Illinois</h3>
+        <p class="mb-4"><strong>Highlights:</strong> Navy Pier fireworks, Magnificent Mile parties, ice skating. Budget: $180-400/night</p>
+        
+        <h3 class="text-2xl font-bold mt-6 mb-3">8. Seattle, Washington</h3>
+        <p class="mb-4"><strong>Highlights:</strong> Space Needle fireworks, Pike Place Market, waterfront celebrations. Budget: $200-380/night</p>
+        
+        <h3 class="text-2xl font-bold mt-6 mb-3">9. Austin, Texas</h3>
+        <p class="mb-4"><strong>Highlights:</strong> 6th Street parties, live music, fireworks over Lady Bird Lake. Budget: $150-320/night</p>
+        
+        <h3 class="text-2xl font-bold mt-6 mb-3">10. Boston, Massachusetts</h3>
+        <p class="mb-6"><strong>Highlights:</strong> First Night Boston, harbor fireworks, historic celebrations. Budget: $180-400/night</p>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">✈️ Book Your New Year's Eve Flights</h2>
+        <div class="bg-primary-50 rounded-lg p-6 mb-6">
+          <p class="mb-3"><strong>⚠️ Book NOW!</strong> Flight prices increase 40-60% in the final 2 weeks before NYE.</p>
+          <p class="mb-4"><strong>Best Booking Times:</strong></p>
+          <ul class="list-disc pl-6 mb-4 space-y-2">
+            <li>Fly out: December 30 (cheaper than Dec 31)</li>
+            <li>Return: January 2 (cheaper than Jan 1)</li>
+            <li>Book 6-8 weeks ahead for best prices</li>
+          </ul>
+          <a href="/flights" class="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors mb-4">Search NYE Flights →</a>
+        </div>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">💰 Budget Breakdown by City</h2>
+        <div class="bg-gray-50 rounded-lg p-6 mb-6">
+          <table class="w-full">
+            <thead>
+              <tr class="border-b">
+                <th class="text-left py-2">City</th>
+                <th class="text-left py-2">Hotels/Night</th>
+                <th class="text-left py-2">Events</th>
+                <th class="text-left py-2">Total (3 nights)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b"><td class="py-2">New York</td><td>$300-600</td><td>$50-500</td><td>$1,000-2,300</td></tr>
+              <tr class="border-b"><td class="py-2">Las Vegas</td><td>$200-500</td><td>$100-300</td><td>$800-1,800</td></tr>
+              <tr class="border-b"><td class="py-2">San Francisco</td><td>$250-450</td><td>$50-300</td><td>$850-1,650</td></tr>
+              <tr class="border-b"><td class="py-2">Nashville</td><td>$150-300</td><td>$0-150</td><td>$450-1,050</td></tr>
+              <tr class="border-b"><td class="py-2">Miami</td><td>$200-400</td><td>$100-400</td><td>$800-1,600</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">💡 Money-Saving Tips for NYE Travel</h2>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li><strong>Book Early:</strong> Hotels and flights get 2-3x more expensive in December</li>
+          <li><strong>Travel Dec 30, Return Jan 2:</strong> Save 30-40% vs. traveling on NYE itself</li>
+          <li><strong>Free Events:</strong> Many cities have free outdoor celebrations</li>
+          <li><strong>Happy Hour:</strong> Pre-game at happy hour before expensive NYE dinners</li>
+          <li><strong>Group Discounts:</strong> Split hotel rooms and Airbnbs with friends</li>
+          <li><strong>Public Transportation:</strong> Avoid surge-priced Ubers ($50-150 on NYE!)</li>
+        </ul>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">📋 NYE Travel Checklist</h2>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li>✓ Book hotels NOW (2-3 months ahead minimum)</li>
+          <li>✓ Book flights 6-8 weeks ahead</li>
+          <li>✓ Research event tickets (many sell out)</li>
+          <li>✓ Make dinner reservations (book 1-2 months ahead)</li>
+          <li>✓ Plan transportation (public transit or designated driver)</li>
+          <li>✓ Pack warm clothes (even Miami can be cool at night)</li>
+          <li>✓ Charge phone fully (you'll be taking lots of photos!)</li>
+          <li>✓ Book early checkout if flying Jan 1 (avoid hangover rush)</li>
+        </ul>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🎉 Final Tips for an Amazing NYE</h2>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li><strong>Arrive Early:</strong> Popular spots fill up 2-4 hours before midnight</li>
+          <li><strong>Dress Warm:</strong> Even in warm cities, midnight can be chilly</li>
+          <li><strong>Stay Hydrated:</strong> Drink water between alcoholic beverages</li>
+          <li><strong>Have a Backup Plan:</strong> If one venue is full, know where else to go</li>
+          <li><strong>Book Brunch:</strong> New Year's Day brunch is a great tradition</li>
+          <li><strong>Be Safe:</strong> Use rideshare, don't drink and drive, stay with your group</li>
+        </ul>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🚀 Start Planning Your NYE 2025!</h2>
+        <p class="mb-4">New Year's Eve is the biggest party night of the year, and these US cities know how to celebrate! Whether you want the iconic Times Square experience, a wild Vegas party, or a sophisticated San Francisco soirée, there's a perfect destination for you.</p>
+        <p class="mb-6"><strong>Don't wait!</strong> Hotels and flights sell out fast. Book your NYE adventure today and ring in 2025 in style! 🎆✨</p>
+
+        <div class="bg-gradient-to-r from-primary-50 to-primary-100 rounded-xl p-8 mb-6">
+          <h3 class="text-2xl font-bold mb-4">Ready to Book Your NYE Trip?</h3>
+          <p class="text-gray-700 mb-6">Find the best deals on hotels and flights for your New Year's Eve celebration!</p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="/hotels" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors text-center">Browse Hotels</a>
+            <a href="/flights" class="inline-block bg-white text-primary-600 border-2 border-primary-600 px-6 py-3 rounded-lg hover:bg-primary-50 transition-colors text-center">Search Flights</a>
+          </div>
+        </div>
+      `,
+    },
   };
 
   // Get the post based on ID, default to Southeast Asia post if not found
@@ -585,6 +813,12 @@ export function BlogPost() {
       title: 'Solo Travel Safety Guide',
       image: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=400&auto=format&fit=crop',
       category: 'Safety',
+    },
+    {
+      id: 'new-years-eve-usa-2025',
+      title: 'New Year\'s Eve 2025 USA: Best Cities to Celebrate',
+      image: 'https://images.unsplash.com/photo-1467810563316-b5476525c0f9?w=400&auto=format&fit=crop',
+      category: 'Destinations',
     },
   ];
 

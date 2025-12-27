@@ -21,6 +21,16 @@ export function Blog() {
       featured: true,
     },
     {
+      id: 'new-years-eve-usa-2025',
+      title: '🎉 New Year\'s Eve 2025 USA: Best Cities to Celebrate + Travel Guide',
+      excerpt: 'Ring in 2025 in style! From Times Square to Vegas, discover the best NYE destinations in the USA with hotel and flight booking tips.',
+      image: 'https://images.unsplash.com/photo-1467810563316-b5476525c0f9?w=800&auto=format&fit=crop',
+      date: 'Dec 26, 2024',
+      category: 'Destinations',
+      readTime: '12 min read',
+      featured: true,
+    },
+    {
       id: 'southeast-asia-hidden-gems',
       title: '10 Hidden Gems in Southeast Asia',
       excerpt: 'Discover the most beautiful off-the-beaten-path destinations that most tourists miss. From secret beaches to mountain villages.',
