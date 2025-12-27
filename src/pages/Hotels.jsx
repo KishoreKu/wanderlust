@@ -1,16 +1,8 @@
-import { useState } from 'react';
 import { Button } from '../components/Button';
-import { Search, MapPin, Star, Wifi, Coffee, Dumbbell, ExternalLink } from 'lucide-react';
-import { buildAffiliateUrl, getHotelAffiliateLink } from '../config/affiliate';
+import { MapPin, Star, Wifi, ExternalLink } from 'lucide-react';
+import { getHotelAffiliateLink } from '../config/affiliate';
 
 export function Hotels() {
-  const [searchQuery, setSearchQuery] = useState({
-    destination: '',
-    checkIn: '',
-    checkOut: '',
-    guests: 2,
-  });
-
   const featuredHotels = [
     {
       id: 1,
@@ -21,7 +13,7 @@ export function Hotels() {
       reviews: 1250,
       price: 189,
       amenities: ['WiFi', 'Gym', 'Restaurant', 'Pool'],
-      affiliateLink: 'https://booking.com',
+      city: 'Paris',
     },
     {
       id: 2,
@@ -80,90 +72,88 @@ export function Hotels() {
     },
   ];
 
-  const handleSearch = (e) => {
-    e.preventDefault();
-    // Build Travelpayouts affiliate URL with search parameters
-    const affiliateUrl = buildAffiliateUrl('hotel', {
-      destination: searchQuery.destination,
-      checkIn: searchQuery.checkIn,
-      checkOut: searchQuery.checkOut,
-      adults: searchQuery.guests,
-    });
-    // Open in new tab
-    window.open(affiliateUrl, '_blank');
-  };
-
   return (
     <div className="min-h-screen bg-gray-50 pt-16">
-      <section className="bg-gradient-to-r from-primary-600 to-primary-800 text-white py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-5xl font-bold mb-4 text-center">Find Your Perfect Hotel</h1>
-          <p className="text-xl text-primary-100 mb-8 text-center">
-            Compare prices and book the best hotels worldwide
-          </p>
+      {/* Stunning Hero Section */}
+      <section className="relative bg-gradient-to-r from-primary-600 to-primary-800 text-white py-24 overflow-hidden">
+        {/* Background Pattern */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute inset-0" style={{
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+          }}></div>
+        </div>
 
-          <form onSubmit={handleSearch} className="bg-white rounded-xl p-6 shadow-2xl">
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center mb-12">
+            <h1 className="text-5xl md:text-6xl font-bold mb-6">
+              Find Your Perfect Hotel
+            </h1>
+            <p className="text-xl md:text-2xl text-primary-100 mb-8 max-w-3xl mx-auto">
+              Discover hand-picked hotels worldwide with exclusive deals and verified reviews
+            </p>
+          </div>
+
+          {/* Stats */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
+            <div className="text-center">
+              <div className="text-4xl md:text-5xl font-bold mb-2">1M+</div>
+              <div className="text-primary-100">Hotels Worldwide</div>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl md:text-5xl font-bold mb-2">4.8★</div>
+              <div className="text-primary-100">Average Rating</div>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl md:text-5xl font-bold mb-2">24/7</div>
+              <div className="text-primary-100">Customer Support</div>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl md:text-5xl font-bold mb-2">Best</div>
+              <div className="text-primary-100">Price Guarantee</div>
+            </div>
+          </div>
+
+          {/* Benefits */}
+          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Destination
-                </label>
-                <div className="relative">
-                  <MapPin className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
-                  <input
-                    type="text"
-                    placeholder="Where are you going?"
-                    value={searchQuery.destination}
-                    onChange={(e) => setSearchQuery({ ...searchQuery, destination: e.target.value })}
-                    className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 text-gray-900"
-                  />
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-white/20 rounded-full mb-4">
+                  <Star className="h-8 w-8" />
                 </div>
+                <h3 className="font-semibold text-lg mb-2">Verified Reviews</h3>
+                <p className="text-primary-100 text-sm">Real reviews from real travelers</p>
               </div>
-
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Check-in
-                </label>
-                <input
-                  type="date"
-                  value={searchQuery.checkIn}
-                  onChange={(e) => setSearchQuery({ ...searchQuery, checkIn: e.target.value })}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 text-gray-900"
-                />
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-white/20 rounded-full mb-4">
+                  <MapPin className="h-8 w-8" />
+                </div>
+                <h3 className="font-semibold text-lg mb-2">Prime Locations</h3>
+                <p className="text-primary-100 text-sm">Hotels in the best neighborhoods</p>
               </div>
-
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Check-out
-                </label>
-                <input
-                  type="date"
-                  value={searchQuery.checkOut}
-                  onChange={(e) => setSearchQuery({ ...searchQuery, checkOut: e.target.value })}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 text-gray-900"
-                />
-              </div>
-
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Guests
-                </label>
-                <select
-                  value={searchQuery.guests}
-                  onChange={(e) => setSearchQuery({ ...searchQuery, guests: parseInt(e.target.value) })}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 text-gray-900"
-                >
-                  {[1, 2, 3, 4, 5, 6].map(num => (
-                    <option key={num} value={num}>{num} {num === 1 ? 'Guest' : 'Guests'}</option>
-                  ))}
-                </select>
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-white/20 rounded-full mb-4">
+                  <Wifi className="h-8 w-8" />
+                </div>
+                <h3 className="font-semibold text-lg mb-2">Top Amenities</h3>
+                <p className="text-primary-100 text-sm">WiFi, pools, gyms & more</p>
               </div>
             </div>
-          </form>
+          </div>
+
+          {/* CTA */}
+          <div className="text-center mt-12">
+            <a href="#featured-hotels">
+              <Button size="lg" variant="secondary" className="text-lg px-8 py-4">
+                Browse Featured Hotels
+                <ExternalLink className="ml-2 h-5 w-5" />
+              </Button>
+            </a>
+          </div>
         </div>
       </section>
 
-      <section className="py-16">
+      {/* Featured Hotels */}
+      <section className="py-16" id="featured-hotels">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-8">
             <h2 className="text-3xl font-bold text-gray-900 mb-2">Featured Hotels</h2>
@@ -230,6 +220,7 @@ export function Hotels() {
         </div>
       </section>
 
+      {/* Why Book Section */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
@@ -258,7 +249,7 @@ export function Hotels() {
 
             <div className="text-center p-6">
               <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
-                <Coffee className="h-8 w-8 text-primary-600" />
+                <MapPin className="h-8 w-8 text-primary-600" />
               </div>
               <h3 className="text-xl font-semibold mb-2">24/7 Support</h3>
               <p className="text-gray-600">Get help anytime with our partner's round-the-clock customer service</p>
