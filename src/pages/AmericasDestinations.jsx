@@ -38,7 +38,8 @@ export function AmericasDestinations() {
             image: 'https://images.unsplash.com/photo-1568402102990-bc541580b59f?w=800&auto=format&fit=crop',
             description: 'Caribbean beaches, Mayan ruins, and vibrant nightlife',
             highlights: ['Beaches', 'Mayan Ruins', 'Snorkeling', 'Nightlife'],
-            hotelLink: 'https://www.anrdoezrs.net/click-101618526-10438018',
+            hotelLink: 'https://www.dpbolvw.net/click-101618526-12675755',
+            travelGuideLink: 'https://www.anrdoezrs.net/click-101618526-10543429',
             location: 'Cancun',
             bestTime: 'December - April',
         },
@@ -47,7 +48,7 @@ export function AmericasDestinations() {
             image: 'https://images.unsplash.com/photo-1589909202802-8f4aadce1849?w=800&auto=format&fit=crop',
             description: 'European-style architecture, tango culture, and world-class steakhouses',
             highlights: ['Tango', 'Steakhouses', 'Architecture', 'Wine'],
-            hotelLink: 'https://www.anrdoezrs.net/click-101618526-10438018',
+            hotelLink: 'https://www.tkqlhce.com/click-101618526-17138920',
             location: 'Buenos Aires',
             bestTime: 'March - May, September - November',
         },
@@ -56,7 +57,7 @@ export function AmericasDestinations() {
             image: 'https://images.unsplash.com/photo-1517935706615-2717063c2225?w=800&auto=format&fit=crop',
             description: 'Multicultural metropolis with CN Tower, diverse neighborhoods, and Niagara Falls nearby',
             highlights: ['CN Tower', 'Niagara Falls', 'Museums', 'Food Scene'],
-            hotelLink: 'https://www.anrdoezrs.net/click-101618526-10438018',
+            hotelLink: 'https://www.dpbolvw.net/click-101618526-11131426',
             location: 'Toronto',
             bestTime: 'May - October',
         },
@@ -165,6 +166,11 @@ export function AmericasDestinations() {
                                     <a href="https://www.aviasales.com/?marker=692183" target="_blank" rel="nofollow noopener">
                                         <Button variant="outline">Book Flights</Button>
                                     </a>
+                                    {city.travelGuideLink && (
+                                        <a href={city.travelGuideLink} target="_blank" rel="nofollow noopener">
+                                            <Button variant="outline">All-Inclusive Resorts</Button>
+                                        </a>
+                                    )}
                                 </div>
                             </div>
                         </div>
