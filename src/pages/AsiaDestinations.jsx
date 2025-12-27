@@ -12,6 +12,7 @@ export function AsiaDestinations() {
             description: 'Where ancient traditions meet cutting-edge technology and innovation',
             highlights: ['Temples', 'Technology', 'Food', 'Cherry Blossoms'],
             hotelLink: 'https://www.anrdoezrs.net/click-101618526-10438018',
+            travelGuideLink: 'https://www.tkqlhce.com/click-101618526-13627287',
             location: 'Tokyo',
             bestTime: 'March - May, September - November',
         },
@@ -165,6 +166,11 @@ export function AsiaDestinations() {
                                     <a href="https://www.aviasales.com/?marker=692183" target="_blank" rel="nofollow noopener">
                                         <Button variant="outline">Book Flights</Button>
                                     </a>
+                                    {city.travelGuideLink && (
+                                        <a href={city.travelGuideLink} target="_blank" rel="nofollow noopener">
+                                            <Button variant="outline">Travel Guide</Button>
+                                        </a>
+                                    )}
                                 </div>
                             </div>
                         </div>
