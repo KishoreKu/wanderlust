@@ -69,9 +69,29 @@ export function buildAffiliateUrl(type, params = {}) {
 
 // Direct hotel affiliate link
 export function getHotelAffiliateLink(hotelName, location) {
+  // Normalize location for matching
+  const normalizedLocation = location?.toLowerCase() || '';
+
+  // Check destination-specific links first
+  if (normalizedLocation.includes('paris')) {
+    return 'https://www.dpbolvw.net/click-101618526-10438016';
+  }
+  if (normalizedLocation.includes('rome')) {
+    return 'https://www.tkqlhce.com/click-101618526-10438021';
+  }
+  if (normalizedLocation.includes('london')) {
+    return 'https://www.jdoqocy.com/click-101618526-10437075';
+  }
+  if (normalizedLocation.includes('new york') || normalizedLocation.includes('nyc')) {
+    return 'https://www.jdoqocy.com/click-101618526-10430139';
+  }
+  if (normalizedLocation.includes('tokyo')) {
+    return 'https://www.tkqlhce.com/click-101618526-13627287';
+  }
+
   // Check if it's a Canadian destination
   const canadianCities = ['Quebec', 'Montreal', 'Toronto', 'Vancouver', 'Calgary'];
-  const isCanada = canadianCities.some(city => location?.includes(city));
+  const isCanada = canadianCities.some(city => normalizedLocation.includes(city.toLowerCase()));
 
   // Return appropriate Hotels.com link
   return isCanada ? HOTELS_COM_CONFIG.canadaLink : HOTELS_COM_CONFIG.affiliateLink;

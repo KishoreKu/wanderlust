@@ -101,7 +101,7 @@ export function Hotels() {
           <p className="text-xl text-primary-100 mb-8 text-center">
             Compare prices and book the best hotels worldwide
           </p>
-          
+
           <form onSubmit={handleSearch} className="bg-white rounded-xl p-6 shadow-2xl">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
               <div>
@@ -114,12 +114,12 @@ export function Hotels() {
                     type="text"
                     placeholder="Where are you going?"
                     value={searchQuery.destination}
-                    onChange={(e) => setSearchQuery({...searchQuery, destination: e.target.value})}
+                    onChange={(e) => setSearchQuery({ ...searchQuery, destination: e.target.value })}
                     className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 text-gray-900"
                   />
                 </div>
               </div>
-              
+
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
                   Check-in
@@ -127,11 +127,11 @@ export function Hotels() {
                 <input
                   type="date"
                   value={searchQuery.checkIn}
-                  onChange={(e) => setSearchQuery({...searchQuery, checkIn: e.target.value})}
+                  onChange={(e) => setSearchQuery({ ...searchQuery, checkIn: e.target.value })}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 text-gray-900"
                 />
               </div>
-              
+
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
                   Check-out
@@ -139,18 +139,18 @@ export function Hotels() {
                 <input
                   type="date"
                   value={searchQuery.checkOut}
-                  onChange={(e) => setSearchQuery({...searchQuery, checkOut: e.target.value})}
+                  onChange={(e) => setSearchQuery({ ...searchQuery, checkOut: e.target.value })}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 text-gray-900"
                 />
               </div>
-              
+
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
                   Guests
                 </label>
                 <select
                   value={searchQuery.guests}
-                  onChange={(e) => setSearchQuery({...searchQuery, guests: parseInt(e.target.value)})}
+                  onChange={(e) => setSearchQuery({ ...searchQuery, guests: parseInt(e.target.value) })}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 text-gray-900"
                 >
                   {[1, 2, 3, 4, 5, 6].map(num => (
@@ -158,13 +158,6 @@ export function Hotels() {
                   ))}
                 </select>
               </div>
-            </div>
-            
-            <div className="mt-6">
-              <Button type="submit" size="lg" className="w-full md:w-auto">
-                <Search className="mr-2 h-5 w-5" />
-                Search Hotels
-              </Button>
             </div>
           </form>
         </div>
@@ -181,8 +174,8 @@ export function Hotels() {
             {featuredHotels.map((hotel) => (
               <div key={hotel.id} className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
                 <div className="relative h-56">
-                  <img 
-                    src={hotel.image} 
+                  <img
+                    src={hotel.image}
                     alt={hotel.name}
                     className="w-full h-full object-cover"
                   />
@@ -194,14 +187,14 @@ export function Hotels() {
                     <div className="text-xs text-gray-600">{hotel.reviews} reviews</div>
                   </div>
                 </div>
-                
+
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-1">{hotel.name}</h3>
                   <div className="flex items-center text-gray-600 mb-4">
                     <MapPin className="h-4 w-4 mr-1" />
                     <span className="text-sm">{hotel.location}</span>
                   </div>
-                  
+
                   <div className="flex flex-wrap gap-2 mb-4">
                     {hotel.amenities.slice(0, 3).map((amenity, index) => (
                       <span key={index} className="px-3 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">
@@ -209,7 +202,7 @@ export function Hotels() {
                       </span>
                     ))}
                   </div>
-                  
+
                   <div className="flex items-end justify-between">
                     <div>
                       <div className="text-sm text-gray-600">Starting from</div>
@@ -218,7 +211,7 @@ export function Hotels() {
                         <span className="text-sm text-gray-600 font-normal">/night</span>
                       </div>
                     </div>
-                    <a 
+                    <a
                       href={getHotelAffiliateLink(hotel.name, hotel.city)}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -245,7 +238,7 @@ export function Hotels() {
               We partner with the world's leading hotel booking platforms to bring you the best deals
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center p-6">
               <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
@@ -254,7 +247,7 @@ export function Hotels() {
               <h3 className="text-xl font-semibold mb-2">Best Price Guarantee</h3>
               <p className="text-gray-600">Find the lowest prices on hotels worldwide with our trusted partners</p>
             </div>
-            
+
             <div className="text-center p-6">
               <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
                 <Wifi className="h-8 w-8 text-primary-600" />
@@ -262,7 +255,7 @@ export function Hotels() {
               <h3 className="text-xl font-semibold mb-2">Verified Reviews</h3>
               <p className="text-gray-600">Read authentic reviews from real travelers to make informed decisions</p>
             </div>
-            
+
             <div className="text-center p-6">
               <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
                 <Coffee className="h-8 w-8 text-primary-600" />
