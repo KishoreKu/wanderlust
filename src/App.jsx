@@ -19,6 +19,7 @@ import { AffiliateDisclosure } from './pages/AffiliateDisclosure';
 import { AirHelp } from './pages/AirHelp';
 import { Klook } from './pages/Klook';
 import { NewYearActivities } from './pages/NewYearActivities';
+import { NewYearNYC } from './pages/NewYearNYC';
 import { EuropeDestinations } from './pages/EuropeDestinations';
 import { AsiaDestinations } from './pages/AsiaDestinations';
 import { AmericasDestinations } from './pages/AmericasDestinations';
@@ -44,6 +45,7 @@ function App() {
             <Route path="/airhelp" element={<AirHelp />} />
             <Route path="/klook" element={<Klook />} />
             <Route path="/new-year-activities" element={<NewYearActivities />} />
+            <Route path="/new-year-nyc-2026" element={<NewYearNYC />} />
             <Route path="/europe-destinations" element={<EuropeDestinations />} />
             <Route path="/asia-destinations" element={<AsiaDestinations />} />
             <Route path="/americas-destinations" element={<AmericasDestinations />} />
