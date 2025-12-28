@@ -272,7 +272,9 @@ export function NewYearNYC() {
                             Book Your Hotel
                         </a>
                         <a
-                            href="/flights"
+                            href="https://www.kiwi.com/deep?affilid=coinmasterfreesp-coinmasterfr&currency=USD&flightsTo=NYC&lang=en"
+                            target="_blank"
+                            rel="nofollow noopener"
                             className="inline-block bg-primary-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary-800 transition-colors border-2 border-white"
                         >
                             Find Flights to NYC
