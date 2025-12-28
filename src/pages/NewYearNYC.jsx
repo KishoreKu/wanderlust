@@ -13,19 +13,6 @@ export function NewYearNYC() {
             document.head.appendChild(metaDescription);
         }
         metaDescription.content = "Celebrate New Year's Eve 2026 in NYC! Discover the best events, parties, fireworks, and activities to ring in the new year in the city that never sleeps.";
-
-        // Load GetYourGuide widget script
-        const script = document.createElement('script');
-        script.src = 'https://widget.getyourguide.com/dist/pa.umd.production.min.js';
-        script.async = true;
-        script.setAttribute('data-gyg-partner-id', 'NEGURHX');
-        document.body.appendChild(script);
-
-        return () => {
-            if (document.body.contains(script)) {
-                document.body.removeChild(script);
-            }
-        };
     }, []);
 
     return (
@@ -60,24 +47,27 @@ export function NewYearNYC() {
                 </div>
             </section>
 
-            {/* GetYourGuide Widget */}
+            {/* GetYourGuide Link */}
             <section className="py-12 bg-gray-50">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="bg-white rounded-xl shadow-lg p-8">
-                        <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">Book Your New Year's Eve Experience</h2>
-                        <p className="text-gray-600 text-center mb-8">
+                    <div className="bg-white rounded-xl shadow-lg p-8 text-center">
+                        <h2 className="text-3xl font-bold text-gray-900 mb-6">Book Your New Year's Eve Experience</h2>
+                        <p className="text-gray-600 mb-8 text-lg">
                             Browse and book the best New Year's Eve activities, tours, and events in New York City
                         </p>
 
-                        {/* GetYourGuide Widget */}
-                        <div
-                            data-gyg-href="https://widget.getyourguide.com/default/city.frame"
-                            data-gyg-location-id="59"
-                            data-gyg-locale-code="en-US"
-                            data-gyg-widget="city"
-                            data-gyg-partner-id="NEGURHX"
-                            className="min-h-[600px]"
-                        ></div>
+                        <a
+                            href="https://www.getyourguide.com/new-york-city-l59/?partner_id=NEGURHX&utm_medium=online_publisher"
+                            target="_blank"
+                            rel="nofollow noopener"
+                            className="inline-block bg-primary-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-primary-700 transition-colors text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                        >
+                            🎉 Explore New Year's Eve Activities in NYC →
+                        </a>
+
+                        <p className="text-sm text-gray-500 mt-6">
+                            Discover dinner cruises, rooftop parties, Broadway shows, and more!
+                        </p>
                     </div>
                 </div>
             </section>
