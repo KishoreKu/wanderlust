@@ -1,0 +1,37 @@
+name: Auto-Embed Blog Posts
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'src/content/**/*.md'  # Only run when markdown files change
+
+jobs:
+  embed:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run embedding script
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: npm run embed
+
+      - name: Notify completion
+        run: |
+          echo "✅ Embedding complete!"
+          echo "📊 Check Supabase dashboard to verify"
