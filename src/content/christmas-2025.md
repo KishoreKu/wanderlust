@@ -199,3 +199,4 @@ Don't wait! The best Christmas destinations book up fast. Start planning your ma
 **Need help booking?** Check out our flight and hotel search tools for the best deals on Christmas travel.
 
 Merry Christmas and happy travels! 🎅✈️
+# Updated schema
