@@ -28,15 +28,23 @@ export default function ChatWidget() {
                 body: JSON.stringify({ messages: next }),
             });
 
-            const data = await resp.json();
+            const responseText = await resp.text();
+            let data;
+            try {
+                data = JSON.parse(responseText);
+            } catch {
+                data = { error: responseText };
+            }
+
+            if (!resp.ok) {
+                throw new Error(data.error || `Request failed: ${resp.status}`);
+            }
 
             setMessages([
                 ...next,
                 {
                     role: "assistant",
-                    content:
-                        data.answer ||
-                        "Sorry, I couldn't answer that. Please try again.",
+                    content: data.answer || "No answer returned.",
                 },
             ]);
         } catch (err) {
@@ -44,7 +52,7 @@ export default function ChatWidget() {
                 ...next,
                 {
                     role: "assistant",
-                    content: "Network error. Please try again.",
+                    content: `Error: ${err.message || "Network error. Please try again."}`,
                 },
             ]);
         } finally {
