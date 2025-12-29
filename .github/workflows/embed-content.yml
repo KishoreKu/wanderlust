@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - 'src/content/**/*.md'  # Only run when markdown files change
+  workflow_dispatch:  # Allow manual triggering
 
 jobs:
   embed:
