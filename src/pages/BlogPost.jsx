@@ -6,8 +6,72 @@ import { Button } from '../components/Button';
 export function BlogPost() {
   const { id } = useParams();
 
-  // Scroll to top when navigating to a new blog post
+  // Update meta tags and scroll to top when navigating to a new blog post
   useEffect(() => {
+    const post = posts[id];
+
+    if (post) {
+      // 1. Update page title (CRITICAL for SEO and Analytics)
+      document.title = `${post.title} | Gubbu`;
+
+      // 2. Update meta description
+      let metaDescription = document.querySelector('meta[name="description"]');
+      if (!metaDescription) {
+        metaDescription = document.createElement('meta');
+        metaDescription.name = 'description';
+        document.head.appendChild(metaDescription);
+      }
+
+      // Extract plain text from HTML content for description
+      const tempDiv = document.createElement('div');
+      tempDiv.innerHTML = post.content;
+      const textContent = tempDiv.textContent || tempDiv.innerText || '';
+      const description = textContent.replace(/\s+/g, ' ').trim().substring(0, 160) + '...';
+      metaDescription.content = description;
+
+      // 3. Update canonical URL
+      let canonical = document.querySelector('link[rel="canonical"]');
+      if (!canonical) {
+        canonical = document.createElement('link');
+        canonical.rel = 'canonical';
+        document.head.appendChild(canonical);
+      }
+      canonical.href = `https://gubbu.io/blog/${id}`;
+
+      // 4. Update Open Graph meta tags
+      let ogTitle = document.querySelector('meta[property="og:title"]');
+      if (ogTitle) {
+        ogTitle.content = post.title;
+      }
+
+      let ogDescription = document.querySelector('meta[property="og:description"]');
+      if (ogDescription) {
+        ogDescription.content = description;
+      }
+
+      let ogUrl = document.querySelector('meta[property="og:url"]');
+      if (ogUrl) {
+        ogUrl.content = `https://gubbu.io/blog/${id}`;
+      }
+
+      let ogImage = document.querySelector('meta[property="og:image"]');
+      if (ogImage) {
+        ogImage.content = post.image;
+      }
+
+      // 5. Update Twitter Card meta tags
+      let twitterTitle = document.querySelector('meta[name="twitter:title"]');
+      if (twitterTitle) {
+        twitterTitle.content = post.title;
+      }
+
+      let twitterDescription = document.querySelector('meta[name="twitter:description"]');
+      if (twitterDescription) {
+        twitterDescription.content = description;
+      }
+    }
+
+    // Scroll to top
     window.scrollTo(0, 0);
   }, [id]);
 
