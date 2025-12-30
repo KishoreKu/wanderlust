@@ -2,7 +2,7 @@ import { useState } from "react";
 
 export default function ChatWidget() {
     const [open, setOpen] = useState(false);
-    const [maximized, setMaximized] = useState(false);
+    const [size, setSize] = useState('small'); // 'small', 'quarter', 'half'
     const [messages, setMessages] = useState([
         {
             role: "assistant",
@@ -12,6 +12,57 @@ export default function ChatWidget() {
     ]);
     const [input, setInput] = useState("");
     const [loading, setLoading] = useState(false);
+
+    const cycleSize = () => {
+        setSize(current => {
+            if (current === 'small') return 'quarter';
+            if (current === 'quarter') return 'half';
+            return 'small';
+        });
+    };
+
+    const getSizeConfig = () => {
+        switch (size) {
+            case 'quarter':
+                return {
+                    width: '25%',
+                    height: '100%',
+                    right: 0,
+                    bottom: 0,
+                    top: 0,
+                    minWidth: 400,
+                    borderRadius: 0,
+                    padding: 24,
+                    maxWidth: 600,
+                };
+            case 'half':
+                return {
+                    width: '50%',
+                    height: '100%',
+                    right: 0,
+                    bottom: 0,
+                    top: 0,
+                    minWidth: 500,
+                    borderRadius: 0,
+                    padding: 24,
+                    maxWidth: 800,
+                };
+            default: // 'small'
+                return {
+                    width: 360,
+                    height: 480,
+                    right: 18,
+                    bottom: 18,
+                    top: 'auto',
+                    minWidth: 360,
+                    borderRadius: 14,
+                    padding: 12,
+                    maxWidth: 360,
+                };
+        }
+    };
+
+    const config = getSizeConfig();
 
     async function send() {
         const text = input.trim();
@@ -87,17 +138,17 @@ export default function ChatWidget() {
                 <div
                     style={{
                         position: "fixed",
-                        right: maximized ? 0 : 18,
-                        bottom: maximized ? 0 : 18,
-                        top: maximized ? 0 : "auto",
-                        left: maximized ? 0 : "auto",
-                        width: maximized ? "100%" : 360,
-                        height: maximized ? "100%" : 480,
-                        maxWidth: maximized ? "none" : 360,
+                        right: config.right,
+                        bottom: config.bottom,
+                        top: config.top,
+                        left: "auto",
+                        width: config.width,
+                        height: config.height,
+                        minWidth: config.minWidth,
                         background: "white",
-                        border: maximized ? "none" : "1px solid #e5e7eb",
-                        borderRadius: maximized ? 0 : 14,
-                        boxShadow: maximized ? "none" : "0 10px 30px rgba(0,0,0,0.12)",
+                        border: size === 'small' ? "1px solid #e5e7eb" : "none",
+                        borderRadius: config.borderRadius,
+                        boxShadow: size === 'small' ? "0 10px 30px rgba(0,0,0,0.12)" : "0 -2px 10px rgba(0,0,0,0.1)",
                         display: "flex",
                         flexDirection: "column",
                         overflow: "hidden",
@@ -119,23 +170,23 @@ export default function ChatWidget() {
                         <strong>Gubbu AI Travel Assistant</strong>
                         <div style={{ display: "flex", gap: 8 }}>
                             <button
-                                onClick={() => setMaximized(!maximized)}
+                                onClick={cycleSize}
                                 style={{
                                     cursor: "pointer",
                                     border: "none",
                                     background: "none",
                                     color: "white",
-                                    fontSize: 18,
+                                    fontSize: 16,
                                     padding: "0 8px",
                                 }}
-                                title={maximized ? "Minimize" : "Maximize"}
+                                title={size === 'small' ? '1/4 Screen' : size === 'quarter' ? '1/2 Screen' : 'Small'}
                             >
-                                {maximized ? "⊡" : "□"}
+                                {size === 'small' ? '◧' : size === 'quarter' ? '▬' : '▭'}
                             </button>
                             <button
                                 onClick={() => {
                                     setOpen(false);
-                                    setMaximized(false);
+                                    setSize('small');
                                 }}
                                 style={{
                                     cursor: "pointer",
@@ -153,11 +204,11 @@ export default function ChatWidget() {
                     <div
                         style={{
                             flex: 1,
-                            padding: maximized ? "24px" : 12,
+                            padding: config.padding,
                             overflowY: "auto",
                             fontSize: 14,
-                            maxWidth: maximized ? 800 : "none",
-                            margin: maximized ? "0 auto" : 0,
+                            maxWidth: size !== 'small' ? config.maxWidth : "none",
+                            margin: size !== 'small' ? "0 auto" : 0,
                             width: "100%",
                         }}
                     >
@@ -193,12 +244,12 @@ export default function ChatWidget() {
 
                     <div
                         style={{
-                            padding: maximized ? "16px 24px" : 12,
+                            padding: size !== 'small' ? `16px ${config.padding}px` : config.padding,
                             borderTop: "1px solid #e5e7eb",
                             display: "flex",
                             gap: 8,
-                            maxWidth: maximized ? 800 : "none",
-                            margin: maximized ? "0 auto" : 0,
+                            maxWidth: size !== 'small' ? config.maxWidth : "none",
+                            margin: size !== 'small' ? "0 auto" : 0,
                             width: "100%",
                         }}
                     >
