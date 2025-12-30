@@ -14,8 +14,14 @@ export default function ChatWidget() {
     const [loading, setLoading] = useState(false);
     const [isListening, setIsListening] = useState(false);
     const [isSpeaking, setIsSpeaking] = useState(false);
+    const [continuousMode, setContinuousMode] = useState(false);
     const recognitionRef = useRef(null);
     const synthRef = useRef(null);
+    const continuousModeRef = useRef(false);
+
+    useEffect(() => {
+        continuousModeRef.current = continuousMode;
+    }, [continuousMode]);
 
     // Initialize speech recognition
     useEffect(() => {
@@ -28,9 +34,33 @@ export default function ChatWidget() {
                 recognitionRef.current.lang = 'en-US';
 
                 recognitionRef.current.onresult = (event) => {
-                    const transcript = event.results[0][0].transcript;
+                    let transcript = event.results[0][0].transcript;
+
+                    // Auto-correct common misheard words for "Gubbu"
+                    const gubuVariations = [
+                        /\bgoogle\b/gi,
+                        /\bgoo boo\b/gi,
+                        /\bgu bu\b/gi,
+                        /\bgoo bu\b/gi,
+                        /\bgooboo\b/gi,
+                        /\bgubu\b/gi,
+                        /\bgoobu\b/gi,
+                        /\bguboo\b/gi,
+                        /\bgo boo\b/gi,
+                        /\bgoo buu\b/gi,
+                    ];
+
+                    gubuVariations.forEach(pattern => {
+                        transcript = transcript.replace(pattern, 'Gubbu');
+                    });
+
                     setInput(transcript);
                     setIsListening(false);
+
+                    // If in continuous mode, auto-send
+                    if (continuousModeRef.current) {
+                        send(transcript);
+                    }
                 };
 
                 recognitionRef.current.onerror = () => {
@@ -73,7 +103,21 @@ export default function ChatWidget() {
         utterance.volume = 1.0;
 
         utterance.onstart = () => setIsSpeaking(true);
-        utterance.onend = () => setIsSpeaking(false);
+        utterance.onend = () => {
+            setIsSpeaking(false);
+            // In continuous mode, auto-start listening after AI finishes speaking
+            if (continuousModeRef.current && recognitionRef.current) {
+                setTimeout(() => {
+                    try {
+                        recognitionRef.current.start();
+                        setIsListening(true);
+                    } catch (e) {
+                        // Recognition might already be running
+                        console.log('Recognition already active');
+                    }
+                }, 500); // Small delay for better UX
+            }
+        };
         utterance.onerror = () => setIsSpeaking(false);
 
         synthRef.current.speak(utterance);
@@ -137,8 +181,8 @@ export default function ChatWidget() {
 
     const config = getSizeConfig();
 
-    async function send() {
-        const text = input.trim();
+    async function send(overrideText = null) {
+        const text = (overrideText || input).trim();
         if (!text || loading) return;
 
         const next = [...messages, { role: "user", content: text }];
@@ -175,8 +219,8 @@ export default function ChatWidget() {
                 },
             ]);
 
-            // Auto-speak the response if user used voice input
-            if (isListening || isSpeaking) {
+            // Auto-speak the response if user used voice input or in continuous mode
+            if (isListening || isSpeaking || continuousMode) {
                 speakText(answerContent);
             }
         } catch (err) {
@@ -265,8 +309,30 @@ export default function ChatWidget() {
                             </button>
                             <button
                                 onClick={() => {
+                                    const next = !continuousMode;
+                                    setContinuousMode(next);
+                                    if (next && !isListening && !isSpeaking) {
+                                        toggleListening();
+                                    }
+                                }}
+                                style={{
+                                    cursor: "pointer",
+                                    border: "none",
+                                    background: continuousMode ? "#3b82f6" : "none",
+                                    color: "white",
+                                    fontSize: 14,
+                                    padding: "4px 8px",
+                                    borderRadius: 4,
+                                }}
+                                title={continuousMode ? "Disable Hands-free Mode" : "Enable Hands-free Mode"}
+                            >
+                                {continuousMode ? "ON" : "OFF"} 🎧
+                            </button>
+                            <button
+                                onClick={() => {
                                     setOpen(false);
                                     setSize('small');
+                                    setContinuousMode(false);
                                 }}
                                 style={{
                                     cursor: "pointer",
