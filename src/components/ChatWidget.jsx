@@ -23,6 +23,23 @@ export default function ChatWidget() {
         continuousModeRef.current = continuousMode;
     }, [continuousMode]);
 
+    const messagesEndRef = useRef(null);
+    const scrollToEnd = () => {
+        messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+    };
+
+    useEffect(() => {
+        scrollToEnd();
+    }, [messages, loading]);
+
+    const suggestions = [
+        "Find cheap flights",
+        "Best hotels in Paris",
+        "Budget travel tips",
+        "Solo travel safety",
+        "New Year's in NYC"
+    ];
+
     // Initialize speech recognition
     useEffect(() => {
         if (typeof window !== 'undefined') {
@@ -356,53 +373,127 @@ export default function ChatWidget() {
                             maxWidth: size !== 'small' ? config.maxWidth : "none",
                             margin: size !== 'small' ? "0 auto" : 0,
                             width: "100%",
+                            scrollBehavior: "smooth",
                         }}
                     >
-                        {messages.map((m, i) => (
-                            <div
-                                key={i}
-                                style={{
-                                    marginBottom: 10,
-                                    textAlign: m.role === "user" ? "right" : "left",
-                                }}
-                            >
+                        {messages.map((m, i) => {
+                            // Detect if the message has a booking link
+                            const hasLink = m.content.includes("https://gubbu.io/");
+                            const linkMatch = m.content.match(/https:\/\/gubbu.io\/[a-z]+/);
+                            const link = linkMatch ? linkMatch[0] : null;
+
+                            return (
                                 <div
+                                    key={i}
                                     style={{
-                                        display: "inline-block",
-                                        padding: "10px 12px",
-                                        borderRadius: 12,
-                                        maxWidth: "90%",
-                                        background:
-                                            m.role === "user" ? "#0f172a" : "#f1f5f9",
-                                        color:
-                                            m.role === "user" ? "white" : "#0f172a",
-                                        whiteSpace: "pre-wrap",
-                                        position: "relative",
+                                        marginBottom: 16,
+                                        textAlign: m.role === "user" ? "right" : "left",
                                     }}
                                 >
-                                    {m.content}
-                                    {m.role === "assistant" && (
-                                        <button
-                                            onClick={() => speakText(m.content)}
-                                            style={{
-                                                marginLeft: 8,
-                                                padding: "2px 6px",
-                                                border: "none",
-                                                background: "transparent",
-                                                cursor: "pointer",
-                                                fontSize: 16,
-                                            }}
-                                            title="Listen to response"
-                                        >
-                                            🔊
-                                        </button>
-                                    )}
+                                    <div
+                                        style={{
+                                            display: "inline-block",
+                                            padding: "12px 16px",
+                                            borderRadius: 16,
+                                            maxWidth: "85%",
+                                            background: m.role === "user" ? "#0f172a" : "#f8fafc",
+                                            color: m.role === "user" ? "white" : "#0f172a",
+                                            boxShadow: m.role === "assistant" ? "0 2px 5px rgba(0,0,0,0.05)" : "none",
+                                            border: m.role === "assistant" ? "1px solid #f1f5f9" : "none",
+                                            whiteSpace: "pre-wrap",
+                                            position: "relative",
+                                        }}
+                                    >
+                                        {m.content}
+
+                                        {/* Interactive Booking Button */}
+                                        {m.role === "assistant" && link && (
+                                            <div style={{ marginTop: 12 }}>
+                                                <a
+                                                    href={link}
+                                                    style={{
+                                                        display: "inline-flex",
+                                                        alignItems: "center",
+                                                        gap: 6,
+                                                        background: "#2563eb",
+                                                        color: "white",
+                                                        padding: "8px 16px",
+                                                        borderRadius: 8,
+                                                        textDecoration: "none",
+                                                        fontWeight: "600",
+                                                        fontSize: 13,
+                                                        transition: "transform 0.2s",
+                                                    }}
+                                                    onMouseEnter={(e) => e.target.style.transform = "scale(1.05)"}
+                                                    onMouseLeave={(e) => e.target.style.transform = "scale(1)"}
+                                                >
+                                                    🚀 Book Now on Gubbu
+                                                </a>
+                                            </div>
+                                        )}
+
+                                        {m.role === "assistant" && (
+                                            <button
+                                                onClick={() => speakText(m.content)}
+                                                style={{
+                                                    marginLeft: 8,
+                                                    padding: "4px",
+                                                    border: "none",
+                                                    background: "transparent",
+                                                    cursor: "pointer",
+                                                    verticalAlign: "middle",
+                                                    opacity: 0.6
+                                                }}
+                                                title="Listen to response"
+                                            >
+                                                🔊
+                                            </button>
+                                        )}
+                                    </div>
                                 </div>
+                            );
+                        })}
+
+                        {/* Interactive Suggestion Chips */}
+                        {!loading && messages.length === 1 && (
+                            <div style={{ display: "flex", flexWrap: "wrap", gap: 8, marginTop: 16 }}>
+                                {suggestions.map((s, i) => (
+                                    <button
+                                        key={i}
+                                        onClick={() => send(s)}
+                                        style={{
+                                            padding: "8px 12px",
+                                            borderRadius: 16,
+                                            background: "white",
+                                            border: "1px solid #e2e8f0",
+                                            color: "#334155",
+                                            fontSize: 12,
+                                            cursor: "pointer",
+                                            transition: "all 0.2s",
+                                        }}
+                                        onMouseEnter={(e) => Object.assign(e.target.style, { background: "#f1f5f9", borderColor: "#cbd5e1" })}
+                                        onMouseLeave={(e) => Object.assign(e.target.style, { background: "white", borderColor: "#e2e8f0" })}
+                                    >
+                                        {s}
+                                    </button>
+                                ))}
                             </div>
-                        ))}
-                        {loading && (
-                            <div style={{ color: "#64748b" }}>Thinking…</div>
                         )}
+
+                        {loading && (
+                            <div style={{ padding: 8, display: "flex", gap: 4, alignItems: "center" }}>
+                                <div style={{ width: 8, height: 8, borderRadius: "50%", background: "#cbd5e1", animation: "bounce 1.4s infinite ease-in-out both" }}></div>
+                                <div style={{ width: 8, height: 8, borderRadius: "50%", background: "#cbd5e1", animation: "bounce 1.4s infinite 0.2s ease-in-out both" }}></div>
+                                <div style={{ width: 8, height: 8, borderRadius: "50%", background: "#cbd5e1", animation: "bounce 1.4s infinite 0.4s ease-in-out both" }}></div>
+                                <style>{`
+                                    @keyframes bounce {
+                                        0%, 80%, 100% { transform: scale(0); }
+                                        40% { transform: scale(1.0); }
+                                    }
+                                `}</style>
+                            </div>
+                        )}
+                        <div ref={messagesEndRef} />
                     </div>
 
                     <div
@@ -438,11 +529,19 @@ export default function ChatWidget() {
                                 color: isListening ? "white" : "#0f172a",
                                 cursor: "pointer",
                                 fontSize: 18,
+                                animation: isListening ? "pulse 1.5s infinite" : "none",
                             }}
                             title={isListening ? "Stop listening" : "Voice input"}
                         >
                             🎤
                         </button>
+                        <style>{`
+                            @keyframes pulse {
+                                0% { box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.4); }
+                                70% { box-shadow: 0 0 0 10px rgba(59, 130, 246, 0); }
+                                100% { box-shadow: 0 0 0 0 rgba(59, 130, 246, 0); }
+                            }
+                        `}</style>
                         {isSpeaking && (
                             <button
                                 onClick={stopSpeaking}
@@ -461,17 +560,22 @@ export default function ChatWidget() {
                             </button>
                         )}
                         <button
-                            onClick={send}
+                            onClick={() => send()}
                             disabled={loading}
                             style={{
-                                padding: "10px 14px",
+                                padding: "10px 20px",
                                 borderRadius: 10,
-                                border: "1px solid #e5e7eb",
-                                background: loading ? "#e2e8f0" : "white",
+                                border: "none",
+                                background: loading ? "#94a3b8" : "#0f172a",
+                                color: "white",
+                                fontWeight: "600",
                                 cursor: loading ? "not-allowed" : "pointer",
+                                transition: "all 0.2s",
                             }}
+                            onMouseEnter={(e) => !loading && (e.target.style.background = "#1e293b")}
+                            onMouseLeave={(e) => !loading && (e.target.style.background = "#0f172a")}
                         >
-                            Send
+                            {loading ? "..." : "Send"}
                         </button>
                     </div>
                 </div>
