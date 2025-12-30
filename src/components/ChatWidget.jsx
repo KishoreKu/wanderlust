@@ -2,6 +2,7 @@ import { useState } from "react";
 
 export default function ChatWidget() {
     const [open, setOpen] = useState(false);
+    const [maximized, setMaximized] = useState(false);
     const [messages, setMessages] = useState([
         {
             role: "assistant",
@@ -86,18 +87,22 @@ export default function ChatWidget() {
                 <div
                     style={{
                         position: "fixed",
-                        right: 18,
-                        bottom: 18,
-                        width: 360,
-                        height: 480,
+                        right: maximized ? 0 : 18,
+                        bottom: maximized ? 0 : 18,
+                        top: maximized ? 0 : "auto",
+                        left: maximized ? 0 : "auto",
+                        width: maximized ? "100%" : 360,
+                        height: maximized ? "100%" : 480,
+                        maxWidth: maximized ? "none" : 360,
                         background: "white",
-                        border: "1px solid #e5e7eb",
-                        borderRadius: 14,
-                        boxShadow: "0 10px 30px rgba(0,0,0,0.12)",
+                        border: maximized ? "none" : "1px solid #e5e7eb",
+                        borderRadius: maximized ? 0 : 14,
+                        boxShadow: maximized ? "none" : "0 10px 30px rgba(0,0,0,0.12)",
                         display: "flex",
                         flexDirection: "column",
                         overflow: "hidden",
                         zIndex: 9999,
+                        transition: "all 0.3s ease",
                     }}
                 >
                     <div
@@ -107,23 +112,53 @@ export default function ChatWidget() {
                             display: "flex",
                             justifyContent: "space-between",
                             alignItems: "center",
+                            background: "#0f172a",
+                            color: "white",
                         }}
                     >
-                        <strong>Gubbu AI</strong>
-                        <button
-                            onClick={() => setOpen(false)}
-                            style={{ cursor: "pointer", border: "none", background: "none" }}
-                        >
-                            ✕
-                        </button>
+                        <strong>Gubbu AI Travel Assistant</strong>
+                        <div style={{ display: "flex", gap: 8 }}>
+                            <button
+                                onClick={() => setMaximized(!maximized)}
+                                style={{
+                                    cursor: "pointer",
+                                    border: "none",
+                                    background: "none",
+                                    color: "white",
+                                    fontSize: 18,
+                                    padding: "0 8px",
+                                }}
+                                title={maximized ? "Minimize" : "Maximize"}
+                            >
+                                {maximized ? "⊡" : "□"}
+                            </button>
+                            <button
+                                onClick={() => {
+                                    setOpen(false);
+                                    setMaximized(false);
+                                }}
+                                style={{
+                                    cursor: "pointer",
+                                    border: "none",
+                                    background: "none",
+                                    color: "white",
+                                    fontSize: 18,
+                                }}
+                            >
+                                ✕
+                            </button>
+                        </div>
                     </div>
 
                     <div
                         style={{
                             flex: 1,
-                            padding: 12,
+                            padding: maximized ? "24px" : 12,
                             overflowY: "auto",
                             fontSize: 14,
+                            maxWidth: maximized ? 800 : "none",
+                            margin: maximized ? "0 auto" : 0,
+                            width: "100%",
                         }}
                     >
                         {messages.map((m, i) => (
@@ -158,10 +193,13 @@ export default function ChatWidget() {
 
                     <div
                         style={{
-                            padding: 12,
+                            padding: maximized ? "16px 24px" : 12,
                             borderTop: "1px solid #e5e7eb",
                             display: "flex",
                             gap: 8,
+                            maxWidth: maximized ? 800 : "none",
+                            margin: maximized ? "0 auto" : 0,
+                            width: "100%",
                         }}
                     >
                         <input
