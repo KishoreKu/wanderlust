@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 
 export default function ChatWidget() {
     const [open, setOpen] = useState(false);
@@ -12,6 +12,79 @@ export default function ChatWidget() {
     ]);
     const [input, setInput] = useState("");
     const [loading, setLoading] = useState(false);
+    const [isListening, setIsListening] = useState(false);
+    const [isSpeaking, setIsSpeaking] = useState(false);
+    const recognitionRef = useRef(null);
+    const synthRef = useRef(null);
+
+    // Initialize speech recognition
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+            const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+            if (SpeechRecognition) {
+                recognitionRef.current = new SpeechRecognition();
+                recognitionRef.current.continuous = false;
+                recognitionRef.current.interimResults = false;
+                recognitionRef.current.lang = 'en-US';
+
+                recognitionRef.current.onresult = (event) => {
+                    const transcript = event.results[0][0].transcript;
+                    setInput(transcript);
+                    setIsListening(false);
+                };
+
+                recognitionRef.current.onerror = () => {
+                    setIsListening(false);
+                };
+
+                recognitionRef.current.onend = () => {
+                    setIsListening(false);
+                };
+            }
+
+            synthRef.current = window.speechSynthesis;
+        }
+    }, []);
+
+    const toggleListening = () => {
+        if (!recognitionRef.current) {
+            alert('Speech recognition not supported in your browser');
+            return;
+        }
+
+        if (isListening) {
+            recognitionRef.current.stop();
+            setIsListening(false);
+        } else {
+            recognitionRef.current.start();
+            setIsListening(true);
+        }
+    };
+
+    const speakText = (text) => {
+        if (!synthRef.current) return;
+
+        // Stop any ongoing speech
+        synthRef.current.cancel();
+
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.rate = 1.0;
+        utterance.pitch = 1.0;
+        utterance.volume = 1.0;
+
+        utterance.onstart = () => setIsSpeaking(true);
+        utterance.onend = () => setIsSpeaking(false);
+        utterance.onerror = () => setIsSpeaking(false);
+
+        synthRef.current.speak(utterance);
+    };
+
+    const stopSpeaking = () => {
+        if (synthRef.current) {
+            synthRef.current.cancel();
+            setIsSpeaking(false);
+        }
+    };
 
     const cycleSize = () => {
         setSize(current => {
@@ -92,13 +165,20 @@ export default function ChatWidget() {
                 throw new Error(data.error || `Request failed: ${resp.status}`);
             }
 
+            const answerContent = data.answer || "No answer returned.";
+
             setMessages([
                 ...next,
                 {
                     role: "assistant",
-                    content: data.answer || "No answer returned.",
+                    content: answerContent,
                 },
             ]);
+
+            // Auto-speak the response if user used voice input
+            if (isListening || isSpeaking) {
+                speakText(answerContent);
+            }
         } catch (err) {
             setMessages([
                 ...next,
@@ -231,9 +311,26 @@ export default function ChatWidget() {
                                         color:
                                             m.role === "user" ? "white" : "#0f172a",
                                         whiteSpace: "pre-wrap",
+                                        position: "relative",
                                     }}
                                 >
                                     {m.content}
+                                    {m.role === "assistant" && (
+                                        <button
+                                            onClick={() => speakText(m.content)}
+                                            style={{
+                                                marginLeft: 8,
+                                                padding: "2px 6px",
+                                                border: "none",
+                                                background: "transparent",
+                                                cursor: "pointer",
+                                                fontSize: 16,
+                                            }}
+                                            title="Listen to response"
+                                        >
+                                            🔊
+                                        </button>
+                                    )}
                                 </div>
                             </div>
                         ))}
@@ -257,14 +354,46 @@ export default function ChatWidget() {
                             value={input}
                             onChange={(e) => setInput(e.target.value)}
                             onKeyDown={(e) => e.key === "Enter" && send()}
-                            placeholder="e.g., 5 days in NYC under $1500"
+                            placeholder={isListening ? "Listening..." : "e.g., 5 days in NYC under $1500"}
                             style={{
                                 flex: 1,
                                 padding: 10,
                                 borderRadius: 10,
-                                border: "1px solid #e5e7eb",
+                                border: isListening ? "2px solid #3b82f6" : "1px solid #e5e7eb",
                             }}
                         />
+                        <button
+                            onClick={toggleListening}
+                            style={{
+                                padding: "10px 14px",
+                                borderRadius: 10,
+                                border: "1px solid #e5e7eb",
+                                background: isListening ? "#3b82f6" : "white",
+                                color: isListening ? "white" : "#0f172a",
+                                cursor: "pointer",
+                                fontSize: 18,
+                            }}
+                            title={isListening ? "Stop listening" : "Voice input"}
+                        >
+                            🎤
+                        </button>
+                        {isSpeaking && (
+                            <button
+                                onClick={stopSpeaking}
+                                style={{
+                                    padding: "10px 14px",
+                                    borderRadius: 10,
+                                    border: "1px solid #e5e7eb",
+                                    background: "#ef4444",
+                                    color: "white",
+                                    cursor: "pointer",
+                                    fontSize: 18,
+                                }}
+                                title="Stop speaking"
+                            >
+                                🔇
+                            </button>
+                        )}
                         <button
                             onClick={send}
                             disabled={loading}
