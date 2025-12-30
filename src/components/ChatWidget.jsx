@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from "react";
+import Linkify from "react-linkify";
 
 export default function ChatWidget() {
     const [open, setOpen] = useState(false);
@@ -404,7 +405,15 @@ export default function ChatWidget() {
                                             position: "relative",
                                         }}
                                     >
-                                        {m.content}
+                                        <Linkify
+                                            componentDecorator={(href, text, key) => (
+                                                <a href={href} key={key} target="_blank" rel="noopener noreferrer" style={{ color: m.role === "user" ? "#93c5fd" : "#2563eb", textDecoration: "underline" }}>
+                                                    {text}
+                                                </a>
+                                            )}
+                                        >
+                                            {m.content}
+                                        </Linkify>
 
                                         {/* Interactive Booking Button */}
                                         {m.role === "assistant" && link && (
