@@ -22,12 +22,12 @@ export function Blog() {
     },
     {
       id: 'new-years-eve-usa-2025',
-      title: '🎉 New Year\'s Eve 2025 USA: Best Cities to Celebrate + Travel Guide',
-      excerpt: 'Ring in 2025 in style! From Times Square to Vegas, discover the best NYE destinations in the USA with hotel and flight booking tips.',
+      title: '🎉 New Year\'s Eve in the USA (2025): Best Ways to Celebrate Across the Country',
+      excerpt: 'Discover the best ways to celebrate New Year\'s Eve across the USA — from fireworks and crowds to family-friendly events and late-night parties.',
       image: 'https://images.unsplash.com/photo-1467810563316-b5476525c0f9?w=800&auto=format&fit=crop',
-      date: 'Dec 26, 2024',
+      date: 'Dec 31, 2025',
       category: 'Destinations',
-      readTime: '12 min read',
+      readTime: '8 min read',
       featured: true,
     },
     {
