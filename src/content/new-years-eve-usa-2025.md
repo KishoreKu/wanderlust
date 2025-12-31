@@ -2,7 +2,7 @@
 id: new-years-eve-usa-2025
 title: "New Year's Eve in the USA (2025): Best Ways to Celebrate Across the Country"
 author: "Gubbu Team"
-date: "2024-12-26"
+date: "2025-12-31"
 category: "Destinations"
 readTime: "8 min read"
 image: "https://images.unsplash.com/photo-1467810563316-b5476525c0f9?w=1200&auto=format&fit=crop"

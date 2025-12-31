@@ -617,7 +617,7 @@ export function BlogPost() {
       id: 'new-years-eve-usa-2025',
       title: 'New Year\'s Eve in the USA (2025): Best Ways to Celebrate Across the Country',
       author: 'Gubbu Team',
-      date: 'December 26, 2024',
+      date: 'December 31, 2025',
       readTime: '8 min read',
       category: 'Destinations',
       image: 'https://images.unsplash.com/photo-1467810563316-b5476525c0f9?w=1200&auto=format&fit=crop',
@@ -817,10 +817,23 @@ export function BlogPost() {
                 <span>{post.readTime}</span>
               </div>
               <div className="ml-auto flex gap-3">
-                <button className="p-2 hover:bg-gray-100 rounded-full transition-colors">
+                <button
+                  onClick={() => {
+                    navigator.clipboard.writeText(window.location.href);
+                    alert('Link copied to clipboard!');
+                  }}
+                  className="p-2 hover:bg-gray-100 rounded-full transition-colors"
+                  title="Share this article"
+                >
                   <Share2 className="h-5 w-5" />
                 </button>
-                <button className="p-2 hover:bg-gray-100 rounded-full transition-colors">
+                <button
+                  onClick={() => {
+                    alert('Bookmark feature coming soon!');
+                  }}
+                  className="p-2 hover:bg-gray-100 rounded-full transition-colors"
+                  title="Bookmark this article"
+                >
                   <Bookmark className="h-5 w-5" />
                 </button>
               </div>
