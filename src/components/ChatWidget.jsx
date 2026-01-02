@@ -273,7 +273,7 @@ export default function ChatWidget() {
                         zIndex: 9999,
                     }}
                 >
-                    Chat with Gubbu AI
+                    Ask Gubbu
                 </button>
             )}
 
@@ -310,7 +310,7 @@ export default function ChatWidget() {
                             color: "white",
                         }}
                     >
-                        <strong>Gubbu AI Travel Assistant</strong>
+                        <strong>Ask Gubbu</strong>
                         <div style={{ display: "flex", gap: 8 }}>
                             <button
                                 onClick={cycleSize}
