@@ -20,7 +20,10 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="flex items-center">
-            <img src="/gubbu-new-logo.png" alt="Gubbu - Navigate the Modern World" className="h-20 w-auto object-contain" />
+            <div className="flex flex-col">
+              <img src="/gubbu-new-logo.png" alt="Gubbu" className="h-16 w-auto object-contain" />
+              <span className="text-xs text-gray-600 text-center -mt-1">Navigate the Modern World</span>
+            </div>
           </Link>
 
           <div className="hidden md:flex items-center space-x-8">
