@@ -20,7 +20,7 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="flex items-center">
-            <img src="/gubbu-logo-tech.png" alt="Gubbu - Navigate the Modern World" className="h-20 w-auto object-contain" />
+            <img src="/gubbu-logo-final.png" alt="Gubbu - Navigate the Modern World" className="h-20 w-auto object-contain" />
           </Link>
 
           <div className="hidden md:flex items-center space-x-8">
