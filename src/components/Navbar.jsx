@@ -20,9 +20,7 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="flex items-center space-x-3">
-            <img src="/gubbu-icon.png" alt="Gubbu Mascot" className="h-14 w-14 object-contain drop-shadow-xl" />
-            <img src="/gubbu-text-logo.png" alt="Gubbu - Your Travel Companion" className="h-16 w-auto object-contain" />
-            <span className="text-2xl">🐾</span>
+            <img src="/gubbu-hero-logo.jpg" alt="Gubbu - Navigate the Modern World" className="h-12 w-auto object-contain" />
           </Link>
 
           <div className="hidden md:flex items-center space-x-8">
