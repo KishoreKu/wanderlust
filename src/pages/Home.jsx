@@ -1,89 +1,13 @@
 import { Link } from 'react-router-dom';
 import { Button } from '../components/Button';
-import { MapPin, Calendar, Users, Star, ArrowRight, Plane, Hotel, Globe } from 'lucide-react';
-import { AviasalesPopularWidget } from '../components/AviasalesPopularWidget';
-import { NewsletterSignup } from '../components/NewsletterSignup';
+import { MessageCircle, ArrowRight, Compass, Lightbulb, CheckCircle, Heart, Shield, Sparkles } from 'lucide-react';
 import { Snowfall } from '../components/Snowfall';
 
 export function Home() {
-  const featuredDestinations = [
-    {
-      id: 1,
-      name: 'Bali, Indonesia',
-      image: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800&auto=format&fit=crop',
-      description: 'Tropical paradise with stunning beaches and rich culture',
-      price: 'From $899',
-    },
-    {
-      id: 2,
-      name: 'Paris, France',
-      image: 'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800&auto=format&fit=crop',
-      description: 'The city of love, art, and exquisite cuisine',
-      price: 'From $1,299',
-    },
-    {
-      id: 3,
-      name: 'Tokyo, Japan',
-      image: 'https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=800&auto=format&fit=crop',
-      description: 'Where ancient traditions meet modern innovation',
-      price: 'From $1,499',
-    },
-  ];
-
-  const recentPosts = [
-    {
-      id: 1,
-      title: '10 Hidden Gems in Southeast Asia',
-      excerpt: 'Discover the most beautiful off-the-beaten-path destinations that most tourists miss.',
-      image: 'https://images.unsplash.com/photo-1528181304800-259b08848526?w=800&auto=format&fit=crop',
-      date: 'Dec 15, 2024',
-      category: 'Destinations',
-    },
-    {
-      id: 2,
-      title: 'Budget Travel Tips for 2024',
-      excerpt: 'Learn how to travel the world without breaking the bank with these expert tips.',
-      image: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800&auto=format&fit=crop',
-      date: 'Dec 12, 2024',
-      category: 'Tips',
-    },
-    {
-      id: 3,
-      title: 'Best Time to Visit European Cities',
-      excerpt: 'A comprehensive guide to planning your European adventure at the perfect time.',
-      image: 'https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=800&auto=format&fit=crop',
-      date: 'Dec 10, 2024',
-      category: 'Planning',
-    },
-  ];
-
-  const testimonials = [
-    {
-      id: 1,
-      name: 'Sarah Johnson',
-      location: 'New York, USA',
-      text: 'Gubbu helped me find amazing deals on my dream vacation to Bali. The blog posts were incredibly helpful!',
-      rating: 5,
-    },
-    {
-      id: 2,
-      name: 'Michael Chen',
-      location: 'London, UK',
-      text: 'The travel tips and destination guides are top-notch. I saved over $500 on my last trip using their recommendations.',
-      rating: 5,
-    },
-    {
-      id: 3,
-      name: 'Emma Rodriguez',
-      location: 'Barcelona, Spain',
-      text: 'Best travel resource I\'ve found online. The affiliate deals for hotels and flights are genuinely good.',
-      rating: 5,
-    },
-  ];
-
   return (
     <div className="min-h-screen">
       <Snowfall density={30} />
+
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center bg-gradient-to-br from-primary-600 to-primary-800 text-white">
         <div className="absolute inset-0 bg-black opacity-40"></div>
@@ -97,291 +21,281 @@ export function Home() {
 
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 text-balance">
-            Explore the World with Confidence
+            Navigate the Modern World
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-gray-100">
-            Discover amazing destinations, get expert travel tips, and find the best deals on hotels and flights
+            Make better decisions — wherever life takes you
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/destinations">
               <Button size="lg" className="w-full sm:w-auto">
-                <Globe className="mr-2 h-5 w-5" />
-                Explore Destinations
+                <Compass className="mr-2 h-5 w-5" />
+                Explore What You Can Do Next
               </Button>
             </Link>
-            <Link to="/blog">
+            <Link to="/">
               <Button size="lg" variant="secondary" className="w-full sm:w-auto">
-                Read Travel Blog
+                <MessageCircle className="mr-2 h-5 w-5" />
+                Talk to Gubbu 🐾
               </Button>
             </Link>
           </div>
         </div>
       </section>
 
-      {/* New Year's Eve 2025-2026 Promotional Banner */}
-      <section className="relative py-16 bg-gradient-to-r from-purple-600 via-pink-600 to-red-600 text-white overflow-hidden">
-        <div className="absolute inset-0 bg-black opacity-20"></div>
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4xIj48cGF0aCBkPSJNMzYgMzRjMC0yLjIxLTEuNzktNC00LTRzLTQgMS43OS00IDQgMS43OSA0IDQgNCA0LTEuNzkgNC00em0wLTEwYzAtMi4yMS0xLjc5LTQtNC00cy00IDEuNzktNCA0IDEuNzkgNCA0IDQgNC0xLjc5IDQtNHoiLz48L2c+PC9nPjwvc3ZnPg==')] opacity-30"></div>
+      {/* Section 1: What Gubbu Helps You Do */}
+      <section className="py-20 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-4xl font-bold text-gray-900 mb-6">
+            Make Better Decisions — Wherever Life Takes You
+          </h2>
+          <div className="prose prose-lg max-w-none text-gray-700">
+            <p className="text-xl mb-4">
+              The modern world moves fast. Travel, technology, tools, and lifestyle choices are more connected than ever — and more confusing than they should be.
+            </p>
+            <p className="text-xl mb-4">
+              Gubbu helps you cut through the noise by guiding you toward options that fit how you live, move, and decide.
+            </p>
+            <p className="text-xl font-semibold text-gray-900">
+              No pressure. No overwhelm. Just clarity.
+            </p>
+          </div>
+        </div>
+      </section>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Section 2: How Gubbu Works */}
+      <section className="py-20 bg-primary-50">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">How Gubbu Works</h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            {/* Step 1 */}
+            <div className="bg-white rounded-xl p-8 shadow-lg text-center">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
+                <MessageCircle className="h-8 w-8 text-primary-600" />
+              </div>
+              <h3 className="text-2xl font-bold mb-3">1. Start with a question</h3>
+              <p className="text-gray-700">
+                Tell Gubbu what you're trying to decide — a trip, an experience, a tool, or what to do next.
+              </p>
+            </div>
+
+            {/* Step 2 */}
+            <div className="bg-white rounded-xl p-8 shadow-lg text-center">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
+                <Lightbulb className="h-8 w-8 text-primary-600" />
+              </div>
+              <h3 className="text-2xl font-bold mb-3">2. Explore thoughtful guidance</h3>
+              <p className="text-gray-700">
+                Gubbu surfaces relevant guides, experiences, and insights tailored to your situation.
+              </p>
+            </div>
+
+            {/* Step 3 */}
+            <div className="bg-white rounded-xl p-8 shadow-lg text-center">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
+                <CheckCircle className="h-8 w-8 text-primary-600" />
+              </div>
+              <h3 className="text-2xl font-bold mb-3">3. Move forward with clarity</h3>
+              <p className="text-gray-700">
+                When you're ready, explore options through trusted partners — or simply use the guidance to decide on your own.
+              </p>
+            </div>
+          </div>
+
           <div className="text-center">
-            <div className="inline-flex items-center bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-4 animate-pulse">
-              <Calendar className="h-5 w-5 mr-2" />
-              <span className="font-semibold">Limited Time - Book Now!</span>
-            </div>
+            <p className="text-xl font-semibold text-gray-900">
+              Gubbu guides first. You decide always.
+            </p>
+          </div>
+        </div>
+      </section>
 
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              🎉 New Year's Eve 2025-2026 🎆
+      {/* Section 3: What You Can Explore */}
+      <section className="py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              Explore the World — and the Tools That Shape It
             </h2>
-            <p className="text-xl md:text-2xl mb-6 text-white/90">
-              Ring in 2026 with unforgettable experiences in NYC, Vegas, Paris & more!
-            </p>
-            <p className="text-lg mb-8 text-white/80 max-w-2xl mx-auto">
-              Book exclusive tours, activities, and experiences before they sell out.
-              From Times Square ball drop to Vegas fireworks - we've got you covered!
-            </p>
+          </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/new-year-activities">
-                <Button size="lg" className="bg-white text-purple-600 hover:bg-gray-100 w-full sm:w-auto shadow-xl">
-                  <Star className="mr-2 h-5 w-5" />
-                  View NYE Activities
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </Link>
-              <Link to="/blog/new-years-eve-usa-2025">
-                <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white/10 w-full sm:w-auto">
-                  Read Travel Guide
-                </Button>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Travel & Experiences */}
+            <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-8 hover:shadow-xl transition-shadow">
+              <div className="text-4xl mb-4">✈️</div>
+              <h3 className="text-2xl font-bold mb-3 text-gray-900">Travel & Experiences</h3>
+              <p className="text-gray-700 mb-4">
+                Trips, events, activities, and destinations
+              </p>
+              <Link to="/destinations" className="text-primary-600 font-semibold hover:text-primary-700 inline-flex items-center">
+                Explore <ArrowRight className="ml-1 h-4 w-4" />
               </Link>
             </div>
 
-            <div className="mt-8 flex flex-wrap justify-center gap-6 text-sm">
-              <div className="flex items-center">
-                <MapPin className="h-4 w-4 mr-1" />
-                <span>6 Top Cities</span>
-              </div>
-              <div className="flex items-center">
-                <Star className="h-4 w-4 mr-1" />
-                <span>Top-Rated Experiences</span>
-              </div>
-              <div className="flex items-center">
-                <Calendar className="h-4 w-4 mr-1" />
-                <span>Book in Advance</span>
-              </div>
+            {/* Tech for Modern Life */}
+            <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl p-8 hover:shadow-xl transition-shadow">
+              <div className="text-4xl mb-4">💻</div>
+              <h3 className="text-2xl font-bold mb-3 text-gray-900">Tech for Modern Life</h3>
+              <p className="text-gray-700 mb-4">
+                Tools, apps, and platforms that support how you travel and work
+              </p>
+              <Link to="/blog" className="text-primary-600 font-semibold hover:text-primary-700 inline-flex items-center">
+                Explore <ArrowRight className="ml-1 h-4 w-4" />
+              </Link>
+            </div>
+
+            {/* Lifestyle & Sustainability */}
+            <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-8 hover:shadow-xl transition-shadow">
+              <div className="text-4xl mb-4">🌱</div>
+              <h3 className="text-2xl font-bold mb-3 text-gray-900">Lifestyle & Sustainability</h3>
+              <p className="text-gray-700 mb-4">
+                Smarter choices for health, balance, and impact
+              </p>
+              <Link to="/blog" className="text-primary-600 font-semibold hover:text-primary-700 inline-flex items-center">
+                Explore <ArrowRight className="ml-1 h-4 w-4" />
+              </Link>
+            </div>
+
+            {/* Guides & Ideas */}
+            <div className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl p-8 hover:shadow-xl transition-shadow">
+              <div className="text-4xl mb-4">🧭</div>
+              <h3 className="text-2xl font-bold mb-3 text-gray-900">Guides & Ideas</h3>
+              <p className="text-gray-700 mb-4">
+                Curated insights to help you plan, compare, and decide
+              </p>
+              <Link to="/blog" className="text-primary-600 font-semibold hover:text-primary-700 inline-flex items-center">
+                Explore <ArrowRight className="ml-1 h-4 w-4" />
+              </Link>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="py-16 bg-sky-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center p-6">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
-                <Hotel className="h-8 w-8 text-primary-600" />
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Best Hotel Deals</h3>
-              <p className="text-gray-600">Find exclusive discounts on hotels worldwide with our trusted partners</p>
-            </div>
-            <div className="text-center p-6">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
-                <Plane className="h-8 w-8 text-primary-600" />
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Cheap Flights</h3>
-              <p className="text-gray-600">Compare prices and book the cheapest flights to your dream destination</p>
-            </div>
-            <div className="text-center p-6">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
-                <MapPin className="h-8 w-8 text-primary-600" />
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Expert Guides</h3>
-              <p className="text-gray-600">Get insider tips and comprehensive guides for every destination</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Featured Destinations</h2>
-            <p className="text-xl text-gray-600">Discover the most popular travel destinations</p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {featuredDestinations.map((destination) => (
-              <div key={destination.id} className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
-                <div className="relative h-64">
-                  <img
-                    src={destination.image}
-                    alt={destination.name}
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute top-4 right-4 bg-white px-3 py-1 rounded-full text-sm font-semibold text-primary-600">
-                    {destination.price}
-                  </div>
-                </div>
-                <div className="p-6">
-                  <h3 className="text-2xl font-bold mb-2">{destination.name}</h3>
-                  <p className="text-gray-600 mb-4">{destination.description}</p>
-                  <Link to="/destinations">
-                    <Button variant="outline" className="w-full">
-                      View Details
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Button>
-                  </Link>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
+      {/* Section 4: Why Gubbu Is Different */}
       <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Latest from Our Blog</h2>
-            <p className="text-xl text-gray-600">Travel tips, guides, and inspiration</p>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Why People Choose Gubbu</h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {recentPosts.map((post) => (
-              <article key={post.id} className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
-                <div className="relative h-48">
-                  <img
-                    src={post.image}
-                    alt={post.title}
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute top-4 left-4 bg-primary-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
-                    {post.category}
-                  </div>
+          <div className="space-y-6">
+            <div className="flex items-start">
+              <div className="flex-shrink-0">
+                <div className="flex items-center justify-center h-12 w-12 rounded-md bg-primary-600 text-white">
+                  <Compass className="h-6 w-6" />
                 </div>
-                <div className="p-6">
-                  <div className="flex items-center text-sm text-gray-500 mb-3">
-                    <Calendar className="h-4 w-4 mr-1" />
-                    {post.date}
-                  </div>
-                  <h3 className="text-xl font-bold mb-2 hover:text-primary-600 transition-colors">
-                    <Link to={`/blog/${post.id}`}>{post.title}</Link>
-                  </h3>
-                  <p className="text-gray-600 mb-4">{post.excerpt}</p>
-                  <Link to={`/blog/${post.id}`} className="text-primary-600 font-semibold hover:text-primary-700 inline-flex items-center">
-                    Read More
-                    <ArrowRight className="ml-1 h-4 w-4" />
-                  </Link>
+              </div>
+              <div className="ml-4">
+                <p className="text-lg text-gray-900 font-semibold">We focus on decisions, not just destinations</p>
+              </div>
+            </div>
+
+            <div className="flex items-start">
+              <div className="flex-shrink-0">
+                <div className="flex items-center justify-center h-12 w-12 rounded-md bg-primary-600 text-white">
+                  <Heart className="h-6 w-6" />
                 </div>
-              </article>
-            ))}
-          </div>
-
-          <div className="text-center mt-12">
-            <Link to="/blog">
-              <Button size="lg">View All Posts</Button>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Popular Flight Destinations */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Popular Flight Destinations</h2>
-            <p className="text-xl text-gray-600">Discover the best flight deals to top destinations</p>
-          </div>
-          <AviasalesPopularWidget />
-        </div>
-      </section>
-
-      {/* Social Proof Section */}
-      <section className="py-20 bg-primary-600 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4">Join Our Growing Travel Community</h2>
-            <p className="text-xl text-primary-100">Trusted by travelers worldwide</p>
-          </div>
-
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-white/20 rounded-full mb-4">
-                <MapPin className="h-8 w-8 text-white" />
               </div>
-              <div className="text-4xl font-bold mb-2">25+</div>
-              <div className="text-primary-100">Destinations Covered</div>
+              <div className="ml-4">
+                <p className="text-lg text-gray-900 font-semibold">We guide — we don't push</p>
+              </div>
             </div>
 
-            <div className="text-center">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-white/20 rounded-full mb-4">
-                <Globe className="h-8 w-8 text-white" />
+            <div className="flex items-start">
+              <div className="flex-shrink-0">
+                <div className="flex items-center justify-center h-12 w-12 rounded-md bg-primary-600 text-white">
+                  <CheckCircle className="h-6 w-6" />
+                </div>
               </div>
-              <div className="text-4xl font-bold mb-2">50+</div>
-              <div className="text-primary-100">Travel Guides</div>
+              <div className="ml-4">
+                <p className="text-lg text-gray-900 font-semibold">We respect your time, budget, and preferences</p>
+              </div>
             </div>
 
-            <div className="text-center">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-white/20 rounded-full mb-4">
-                <Users className="h-8 w-8 text-white" />
+            <div className="flex items-start">
+              <div className="flex-shrink-0">
+                <div className="flex items-center justify-center h-12 w-12 rounded-md bg-primary-600 text-white">
+                  <Sparkles className="h-6 w-6" />
+                </div>
               </div>
-              <div className="text-4xl font-bold mb-2">1,000+</div>
-              <div className="text-primary-100">Newsletter Subscribers</div>
-            </div>
-
-            <div className="text-center">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-white/20 rounded-full mb-4">
-                <Star className="h-8 w-8 text-white" />
+              <div className="ml-4">
+                <p className="text-lg text-gray-900 font-semibold">We design for people, not algorithms</p>
               </div>
-              <div className="text-4xl font-bold mb-2">100%</div>
-              <div className="text-primary-100">Free Content</div>
             </div>
           </div>
 
-          <div className="mt-12 text-center">
-            <p className="text-lg text-primary-100 mb-6">
-              Join thousands of travelers who trust Gubbu for their travel planning
+          <div className="mt-8 text-center">
+            <p className="text-lg text-gray-700">
+              Technology powers the platform, but the goal is always human:<br />
+              <span className="font-semibold text-gray-900">to make choices feel easier and more thoughtful.</span>
             </p>
-            <div className="flex flex-wrap justify-center gap-4">
-              <a
-                href="https://www.facebook.com/profile.php?id=61585608988393"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-white text-primary-600 rounded-lg font-semibold hover:bg-primary-50 transition-colors"
-              >
-                Follow on Facebook
-              </a>
-              <a
-                href="https://www.instagram.com/mygubbu9/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-white text-primary-600 rounded-lg font-semibold hover:bg-primary-50 transition-colors"
-              >
-                Follow on Instagram
-              </a>
-            </div>
           </div>
         </div>
       </section>
 
-      <NewsletterSignup />
+      {/* Section 5: Meet Your Guide */}
+      <section className="py-20 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-4xl font-bold text-gray-900 mb-6">
+            Meet Gubbu 🐾
+          </h2>
+          <div className="prose prose-lg max-w-none text-gray-700">
+            <p className="text-xl mb-4">
+              Gubbu is your friendly guide through modern decisions.
+            </p>
+            <p className="text-xl mb-4">
+              Curious. Calm. Always ready to explore.
+            </p>
+            <p className="text-xl mb-4">
+              Inspired by a real-life bond, Gubbu represents how guidance should feel — approachable, trustworthy, and on your side.
+            </p>
+            <p className="text-xl font-semibold text-gray-900">
+              When things feel complex, Gubbu helps you pause, explore, and move forward.
+            </p>
+          </div>
+        </div>
+      </section>
 
+      {/* Section 6: Trust & Transparency */}
+      <section className="py-20 bg-primary-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <Shield className="h-16 w-16 mx-auto mb-4 text-primary-600" />
+            <h2 className="text-4xl font-bold text-gray-900 mb-6">Built on Trust</h2>
+          </div>
+
+          <div className="bg-white rounded-xl p-8 shadow-lg">
+            <p className="text-xl text-gray-700 mb-4">
+              Gubbu is free to use.
+            </p>
+            <p className="text-xl text-gray-700 mb-4">
+              Some recommendations may include links to trusted partners. If you choose to explore through those links, it helps support Gubbu — at no extra cost to you.
+            </p>
+            <p className="text-xl font-semibold text-gray-900">
+              Clarity always comes first.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 7: Final CTA */}
       <section className="py-20 bg-gradient-to-r from-primary-600 to-primary-800 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold mb-4">Ready to Start Your Adventure?</h2>
-          <p className="text-xl mb-8 text-gray-200">
-            Find the best deals on hotels and flights for your next trip
-          </p>
+          <h2 className="text-4xl font-bold mb-6">Ready to Navigate What's Next?</h2>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/hotels">
+            <Link to="/destinations">
               <Button size="lg" variant="secondary" className="w-full sm:w-auto">
-                <Hotel className="mr-2 h-5 w-5" />
-                Browse Hotels
+                <Compass className="mr-2 h-5 w-5" />
+                Explore What You Can Do Next
               </Button>
             </Link>
-            <Link to="/flights">
-              <Button size="lg" variant="secondary" className="w-full sm:w-auto">
-                <Plane className="mr-2 h-5 w-5" />
-                Search Flights
+            <Link to="/">
+              <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white/10 w-full sm:w-auto">
+                <MessageCircle className="mr-2 h-5 w-5" />
+                Talk to Gubbu 🐾
               </Button>
             </Link>
           </div>
