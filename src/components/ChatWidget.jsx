@@ -511,7 +511,6 @@ export default function ChatWidget() {
                             padding: size !== 'small' ? `16px ${config.padding}px` : config.padding,
                             borderTop: "1px solid #e5e7eb",
                             display: "flex",
-                            flexWrap: "wrap",
                             gap: 8,
                             maxWidth: size !== 'small' ? config.maxWidth : "none",
                             margin: size !== 'small' ? "0 auto" : 0,
