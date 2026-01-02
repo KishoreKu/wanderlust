@@ -159,6 +159,19 @@ export function About() {
                 </div>
             </section>
 
+            {/* Partner Offers Note */}
+            <section className="py-12 bg-gray-50">
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <p className="text-gray-600">
+                        Some optional partner offers may be available for specific situations.
+                        These are listed separately on our{' '}
+                        <Link to="/deals" className="text-primary-600 hover:underline font-medium">
+                            Deals page
+                        </Link>.
+                    </p>
+                </div>
+            </section>
+
             {/* Navigate What's Next */}
             <section className="py-20 bg-gradient-to-r from-primary-600 to-primary-800 text-white">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

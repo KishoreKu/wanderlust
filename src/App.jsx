@@ -13,6 +13,7 @@ import { Hotels } from './pages/Hotels';
 import { Flights } from './pages/Flights';
 import { About } from './pages/About';
 import { Contact } from './pages/Contact';
+import { Deals } from './pages/Deals';
 import { PrivacyPolicy } from './pages/PrivacyPolicy';
 import { TermsOfService } from './pages/TermsOfService';
 import { AffiliateDisclosure } from './pages/AffiliateDisclosure';
@@ -54,6 +55,7 @@ function App() {
             <Route path="/oceania-destinations" element={<OceaniaDestinations />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/deals" element={<Deals />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms-of-service" element={<TermsOfService />} />
             <Route path="/affiliate-disclosure" element={<AffiliateDisclosure />} />
