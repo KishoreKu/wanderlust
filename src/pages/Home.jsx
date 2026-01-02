@@ -66,42 +66,72 @@ export function Home() {
       {/* Section 2: How Gubbu Works */}
       <section className="py-20 bg-primary-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">How Gubbu Works</h2>
+          <div className="text-center mb-4">
+            <h2 className="text-4xl font-bold text-gray-900 mb-2">How Gubbu Works</h2>
+            <p className="text-gray-600">Navigate decisions with clarity — from question to action.</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 mt-12">
             {/* Step 1 */}
-            <div className="bg-white rounded-xl p-8 shadow-lg text-center">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
-                <MessageCircle className="h-8 w-8 text-primary-600" />
+            <div className="relative">
+              <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow text-center h-full">
+                <div className="inline-flex items-center justify-center w-20 h-20 bg-green-100 rounded-full mb-6">
+                  <span className="text-4xl">🐾</span>
+                </div>
+                <div className="mb-4">
+                  <span className="inline-block px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-semibold mb-3">
+                    Step 1
+                  </span>
+                </div>
+                <h3 className="text-2xl font-bold mb-4 text-gray-900">Ask Gubbu</h3>
+                <p className="text-gray-700 leading-relaxed">
+                  Tell Gubbu what you're trying to decide — a trip, an experience, a tool, or what to do next.
+                </p>
               </div>
-              <h3 className="text-2xl font-bold mb-3">1. Start with a question</h3>
-              <p className="text-gray-700">
-                Tell Gubbu what you're trying to decide — a trip, an experience, a tool, or what to do next.
-              </p>
+              {/* Connector - hidden on mobile */}
+              <div className="hidden md:block absolute top-1/2 -right-4 transform -translate-y-1/2 z-10">
+                <div className="w-8 h-0.5 bg-gradient-to-r from-green-300 to-blue-300"></div>
+              </div>
             </div>
 
             {/* Step 2 */}
-            <div className="bg-white rounded-xl p-8 shadow-lg text-center">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
-                <Lightbulb className="h-8 w-8 text-primary-600" />
+            <div className="relative">
+              <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow text-center h-full">
+                <div className="inline-flex items-center justify-center w-20 h-20 bg-blue-100 rounded-full mb-6">
+                  <Lightbulb className="h-10 w-10 text-blue-600" />
+                </div>
+                <div className="mb-4">
+                  <span className="inline-block px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-semibold mb-3">
+                    Step 2
+                  </span>
+                </div>
+                <h3 className="text-2xl font-bold mb-4 text-gray-900">Explore Your Options</h3>
+                <p className="text-gray-700 leading-relaxed">
+                  Gubbu brings together relevant guides, ideas, and experiences — shaped around how you travel, live, and decide.
+                </p>
               </div>
-              <h3 className="text-2xl font-bold mb-3">2. Explore thoughtful guidance</h3>
-              <p className="text-gray-700">
-                Gubbu surfaces relevant guides, experiences, and insights tailored to your situation.
-              </p>
+              {/* Connector - hidden on mobile */}
+              <div className="hidden md:block absolute top-1/2 -right-4 transform -translate-y-1/2 z-10">
+                <div className="w-8 h-0.5 bg-gradient-to-r from-blue-300 to-purple-300"></div>
+              </div>
             </div>
 
             {/* Step 3 */}
-            <div className="bg-white rounded-xl p-8 shadow-lg text-center">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
-                <CheckCircle className="h-8 w-8 text-primary-600" />
+            <div className="relative">
+              <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow text-center h-full">
+                <div className="inline-flex items-center justify-center w-20 h-20 bg-purple-100 rounded-full mb-6">
+                  <CheckCircle className="h-10 w-10 text-purple-600" />
+                </div>
+                <div className="mb-4">
+                  <span className="inline-block px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm font-semibold mb-3">
+                    Step 3
+                  </span>
+                </div>
+                <h3 className="text-2xl font-bold mb-4 text-gray-900">Move Forward with Clarity</h3>
+                <p className="text-gray-700 leading-relaxed">
+                  When you're ready, explore trusted options or simply use the guidance to make your own choice.
+                </p>
               </div>
-              <h3 className="text-2xl font-bold mb-3">3. Move forward with clarity</h3>
-              <p className="text-gray-700">
-                When you're ready, explore options through trusted partners — or simply use the guidance to decide on your own.
-              </p>
             </div>
           </div>
 
