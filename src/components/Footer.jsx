@@ -48,7 +48,7 @@ export function Footer() {
               <span className="text-2xl">🐾</span>
             </div>
             <p className="text-sm mb-3">Navigate the Modern World</p>
-            <p className="text-xs text-gray-400 mb-4">Powered by AI.</p>
+            <p className="text-xs text-gray-400 mb-4">Intelligence behind the scenes.</p>
             <p className="text-2xl mb-6">🐾</p>
 
             {/* Social Media */}
