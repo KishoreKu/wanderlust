@@ -8,6 +8,10 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Column 1 - Gubbu */}
           <div>
+            <div className="flex items-center space-x-2 mb-4">
+              <span className="text-3xl">🐾</span>
+              <span className="text-2xl font-bold text-white">Gubbu 🐾</span>
+            </div>
             <h3 className="text-white font-semibold mb-4">Gubbu</h3>
             <ul className="space-y-2">
               <li><Link to="/about" className="hover:text-primary-400 transition-colors">About</Link></li>

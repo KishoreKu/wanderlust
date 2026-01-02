@@ -22,6 +22,7 @@ export function Navbar() {
           <Link to="/" className="flex items-center space-x-3">
             <img src="/gubbu-icon.png" alt="Gubbu Mascot" className="h-14 w-14 object-contain drop-shadow-xl" />
             <img src="/gubbu-text-logo.png" alt="Gubbu - Your Travel Companion" className="h-16 w-auto object-contain" />
+            <span className="text-2xl">🐾</span>
           </Link>
 
           <div className="hidden md:flex items-center space-x-8">
