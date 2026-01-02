@@ -20,10 +20,10 @@ export function Footer() {
           <div>
             <h3 className="text-white font-semibold mb-4">Explore</h3>
             <ul className="space-y-2">
-              <li><Link to="/destinations" className="hover:text-primary-400 transition-colors">Destinations</Link></li>
+              <li><Link to="/destinations" className="hover:text-primary-400 transition-colors">Travel Experiences</Link></li>
               <li><Link to="/new-year-activities" className="hover:text-primary-400 transition-colors">Things to Do</Link></li>
-              <li><Link to="/hotels" className="hover:text-primary-400 transition-colors">Hotels</Link></li>
-              <li><Link to="/flights" className="hover:text-primary-400 transition-colors">Flights</Link></li>
+              <li><Link to="/destinations" className="hover:text-primary-400 transition-colors">Destinations</Link></li>
+              <li><Link to="/blog" className="hover:text-primary-400 transition-colors">Work From Anywhere</Link></li>
             </ul>
           </div>
 
