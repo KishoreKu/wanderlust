@@ -511,6 +511,7 @@ export default function ChatWidget() {
                             padding: size !== 'small' ? `16px ${config.padding}px` : config.padding,
                             borderTop: "1px solid #e5e7eb",
                             display: "flex",
+                            flexWrap: "wrap",
                             gap: 8,
                             maxWidth: size !== 'small' ? config.maxWidth : "none",
                             margin: size !== 'small' ? "0 auto" : 0,
@@ -523,7 +524,8 @@ export default function ChatWidget() {
                             onKeyDown={(e) => e.key === "Enter" && send()}
                             placeholder={isListening ? "Listening..." : "e.g., 5 days in NYC under $1500"}
                             style={{
-                                flex: 1,
+                                flex: "1 1 auto",
+                                minWidth: "150px",
                                 padding: 10,
                                 borderRadius: 10,
                                 border: isListening ? "2px solid #3b82f6" : "1px solid #e5e7eb",
@@ -540,6 +542,7 @@ export default function ChatWidget() {
                                 cursor: "pointer",
                                 fontSize: 18,
                                 animation: isListening ? "pulse 1.5s infinite" : "none",
+                                flexShrink: 0,
                             }}
                             title={isListening ? "Stop listening" : "Voice input"}
                         >
@@ -563,6 +566,7 @@ export default function ChatWidget() {
                                     color: "white",
                                     cursor: "pointer",
                                     fontSize: 18,
+                                    flexShrink: 0,
                                 }}
                                 title="Stop speaking"
                             >
@@ -581,6 +585,8 @@ export default function ChatWidget() {
                                 fontWeight: "600",
                                 cursor: loading ? "not-allowed" : "pointer",
                                 transition: "all 0.2s",
+                                flexShrink: 0,
+                                minWidth: "70px",
                             }}
                             onMouseEnter={(e) => !loading && (e.target.style.background = "#1e293b")}
                             onMouseLeave={(e) => !loading && (e.target.style.background = "#0f172a")}
