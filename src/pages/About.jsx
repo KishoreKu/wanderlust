@@ -1,242 +1,193 @@
+import { Link } from 'react-router-dom';
 import { Button } from '../components/Button';
-import { MapPin, Users, Award, Heart, Globe, Camera, Facebook, Instagram, Youtube } from 'lucide-react';
-import { NewsletterSignup } from '../components/NewsletterSignup';
+import { Compass, MessageCircle } from 'lucide-react';
 
 export function About() {
-    const stats = [
-        { label: 'Countries Visited', value: '50+' },
-        { label: 'Articles Published', value: '200+' },
-        { label: 'Happy Readers', value: '100K+' },
-        { label: 'Years of Experience', value: '8+' },
-    ];
-
-    const values = [
-        {
-            icon: Heart,
-            title: 'Passion for Travel',
-            description: 'We believe travel transforms lives and broadens perspectives. Our mission is to inspire and enable more people to explore the world.',
-        },
-        {
-            icon: Award,
-            title: 'Expert Knowledge',
-            description: 'Our team consists of experienced travelers, travel writers, and destination experts who provide authentic, tested advice.',
-        },
-        {
-            icon: Users,
-            title: 'Community First',
-            description: 'We build a community of travelers who share experiences, tips, and support each other on their journeys.',
-        },
-        {
-            icon: Globe,
-            title: 'Sustainable Travel',
-            description: 'We promote responsible tourism that respects local cultures, supports communities, and protects our planet.',
-        },
-    ];
-
     return (
         <div className="min-h-screen bg-gray-50 pt-16">
+            {/* Hero Section */}
             <section className="bg-gradient-to-r from-primary-600 to-primary-800 text-white py-20">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <h1 className="text-5xl font-bold mb-4">About Gubbu</h1>
-                    <p className="text-xl text-primary-100 max-w-3xl mx-auto">
-                        Your trusted companion for discovering the world's most amazing destinations
+                    <p className="text-2xl text-primary-100">
+                        Navigate the Modern World
                     </p>
                 </div>
             </section>
 
+            {/* The World Today */}
             <section className="py-16 bg-white">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-                        {stats.map((stat, index) => (
-                            <div key={index} className="text-center">
-                                <div className="text-4xl font-bold text-primary-600 mb-2">{stat.value}</div>
-                                <div className="text-gray-600">{stat.label}</div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-            <section className="py-20">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="grid md:grid-cols-2 gap-12 items-center">
-                        <div>
-                            <h2 className="text-4xl font-bold text-gray-900 mb-6">Our Story</h2>
-                            <div className="space-y-4 text-gray-700 leading-relaxed">
-                                <p>
-                                    Gubbu was born from a simple idea: everyone deserves to experience the joy of travel.
-                                    Founded in 2016 by a group of passionate travelers, we started as a small blog sharing our
-                                    adventures and tips with friends and family.
-                                </p>
-                                <p>
-                                    Today, we've grown into a comprehensive travel resource trusted by hundreds of thousands of
-                                    travelers worldwide. Our team has explored over 50 countries across six continents, staying
-                                    in everything from luxury resorts to budget hostels, and experiencing cultures from bustling
-                                    cities to remote villages.
-                                </p>
-                                <p>
-                                    What sets us apart is our commitment to authentic, practical advice. We don't just write about
-                                    places we've read about—we write about places we've lived, explored, and fallen in love with.
-                                    Every recommendation, every tip, and every guide comes from real experience.
-                                </p>
-                                <p>
-                                    We also believe in making travel accessible to everyone. That's why we partner with trusted
-                                    booking platforms to help you find the best deals on hotels, flights, and experiences. When
-                                    you book through our affiliate links, you get great prices, and we earn a small commission
-                                    that helps us keep creating free content for you.
-                                </p>
-                            </div>
-                        </div>
-                        <div className="relative">
-                            <img
-                                src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800&auto=format&fit=crop"
-                                alt="Travel adventure"
-                                className="rounded-xl shadow-2xl"
-                            />
-                            <div className="absolute -bottom-6 -left-6 bg-primary-600 text-white p-6 rounded-lg shadow-xl max-w-xs">
-                                <Camera className="h-8 w-8 mb-2" />
-                                <p className="font-semibold">Capturing moments, sharing stories, inspiring journeys</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section className="py-20 bg-white">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-12">
-                        <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Values</h2>
-                        <p className="text-xl text-gray-600">What drives us to create the best travel content</p>
-                    </div>
-
-                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                        {values.map((value, index) => {
-                            const Icon = value.icon;
-                            return (
-                                <div key={index} className="text-center p-6">
-                                    <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
-                                        <Icon className="h-8 w-8 text-primary-600" />
-                                    </div>
-                                    <h3 className="text-xl font-semibold mb-3">{value.title}</h3>
-                                    <p className="text-gray-600">{value.description}</p>
-                                </div>
-                            );
-                        })}
-                    </div>
-                </div>
-            </section>
-
-            <section className="py-20 bg-gradient-to-r from-primary-600 to-primary-800 text-white">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-12">
-                        <h2 className="text-4xl font-bold mb-4">Join Our Community</h2>
-                        <p className="text-xl mb-8 text-primary-100">
-                            Connect with fellow travelers, share your experiences, and get inspired for your next adventure
+                    <div className="prose prose-lg max-w-none text-gray-700">
+                        <p className="text-xl mb-6">
+                            The world today is full of choices.
+                        </p>
+                        <ul className="text-xl space-y-2 mb-6 list-none">
+                            <li>Where to travel.</li>
+                            <li>What to book.</li>
+                            <li>Which tools to use.</li>
+                            <li>How to live, work, and move smarter.</li>
+                        </ul>
+                        <p className="text-xl mb-6">
+                            But more choices don't always mean better decisions.
+                        </p>
+                        <p className="text-xl font-semibold text-gray-900">
+                            Gubbu exists to change that.
                         </p>
                     </div>
+                </div>
+            </section>
 
-                    {/* Newsletter Signup */}
-                    <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 mb-8">
-                        <div className="max-w-md mx-auto">
-                            <h3 className="text-2xl font-bold mb-4 text-center">Subscribe to Our Newsletter</h3>
-                            <p className="text-primary-100 mb-6 text-center">
-                                Get weekly travel tips, destination guides, and exclusive deals
-                            </p>
-                            <NewsletterSignup variant="compact" />
-                        </div>
-                    </div>
-
-                    {/* Social Media Links */}
-                    <div className="text-center">
-                        <h3 className="text-2xl font-bold mb-6">Follow Us on Social Media</h3>
-                        <div className="flex flex-wrap justify-center gap-4">
-                            <a
-                                href="https://www.facebook.com/profile.php?id=61585608988393"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="inline-flex items-center gap-2 px-6 py-3 bg-white text-primary-600 rounded-lg font-semibold hover:bg-primary-50 transition-colors"
-                            >
-                                <Facebook className="h-5 w-5" />
-                                Facebook
-                            </a>
-                            <a
-                                href="https://www.instagram.com/mygubbu9/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="inline-flex items-center gap-2 px-6 py-3 bg-white text-primary-600 rounded-lg font-semibold hover:bg-primary-50 transition-colors"
-                            >
-                                <Instagram className="h-5 w-5" />
-                                Instagram
-                            </a>
-                            <a
-                                href="https://www.youtube.com/@Gubbu-1"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="inline-flex items-center gap-2 px-6 py-3 bg-white text-primary-600 rounded-lg font-semibold hover:bg-primary-50 transition-colors"
-                            >
-                                <Youtube className="h-5 w-5" />
-                                YouTube
-                            </a>
-                            <a
-                                href="https://x.com/gubbuo"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="inline-flex items-center gap-2 px-6 py-3 bg-white text-primary-600 rounded-lg font-semibold hover:bg-primary-50 transition-colors"
-                            >
-                                <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                                </svg>
-                                X (Twitter)
-                            </a>
-                            <a
-                                href="https://bsky.app/profile/gubbu.io"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="inline-flex items-center gap-2 px-6 py-3 bg-white text-primary-600 rounded-lg font-semibold hover:bg-primary-50 transition-colors"
-                            >
-                                <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.815 2.736 3.713 3.66 6.383 3.364.136-.02.275-.039.415-.056-.138.022-.276.04-.415.056-3.912.58-7.387 2.005-2.83 7.078 5.013 5.19 6.87-1.113 7.823-4.308.953 3.195 2.05 9.271 7.733 4.308 4.267-4.308 1.172-6.498-2.74-7.078a8.741 8.741 0 0 1-.415-.056c.14.017.279.036.415.056 2.67.297 5.568-.628 6.383-3.364.246-.828.624-5.79.624-6.478 0-.69-.139-1.861-.902-2.206-.659-.298-1.664-.62-4.3 1.24C16.046 4.748 13.087 8.687 12 10.8Z" />
-                                </svg>
-                                Bluesky
-                            </a>
-                            <a
-                                href="https://www.pinterest.com/gubbuna/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="inline-flex items-center gap-2 px-6 py-3 bg-white text-primary-600 rounded-lg font-semibold hover:bg-primary-50 transition-colors"
-                            >
-                                <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z" />
-                                </svg>
-                                Pinterest
-                            </a>
-                        </div>
+            {/* Meet Gubbu */}
+            <section className="py-20 bg-gray-50">
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <h2 className="text-4xl font-bold text-gray-900 mb-6 text-center">Meet Gubbu 🐾</h2>
+                    <div className="prose prose-lg max-w-none text-gray-700">
+                        <p className="text-xl mb-6">
+                            Gubbu isn't just a brand name.
+                        </p>
+                        <p className="text-xl mb-6">
+                            Gubbu is a companion — curious, friendly, and always ready to explore.
+                            The kind of guide you'd want by your side when you're trying to decide what's next.
+                        </p>
+                        <p className="text-xl mb-4">
+                            Inspired by a real-life bond, Gubbu represents how we believe decisions should feel:
+                        </p>
+                        <ul className="text-xl space-y-2 mb-6">
+                            <li>calm, not overwhelming</li>
+                            <li>helpful, not pushy</li>
+                            <li>thoughtful, not rushed</li>
+                        </ul>
                     </div>
                 </div>
             </section>
 
-            <section className="py-16 bg-gray-50">
+            {/* Why We Built Gubbu */}
+            <section className="py-20 bg-white">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="bg-white rounded-xl p-8 shadow-lg">
-                        <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Commitment to You</h2>
-                        <div className="space-y-4 text-gray-700">
-                            <p>
-                                <strong>Honest Reviews:</strong> We provide unbiased, honest reviews and recommendations.
-                                Our opinions are our own and are never influenced by affiliate partnerships.
-                            </p>
-                            <p>
-                                <strong>Transparency:</strong> We clearly disclose our affiliate relationships. When you
-                                book through our links, you support our work at no extra cost to you.
-                            </p>
-                            <p>
-                                <strong>Quality Content:</strong> Every article is thoroughly researched, fact-checked,
-                                and based on real travel experiences.
-                            </p>
-                            <p>
-                                <strong>Your Privacy:</strong> We respect your privacy and handle your data responsibly.
-                                Read our <a href="/privacy-policy" className="text-primary-600 hover:underline">Privacy Policy</a> for details.
-                            </p>
-                        </div>
+                    <h2 className="text-4xl font-bold text-gray-900 mb-6 text-center">Why We Built Gubbu</h2>
+                    <div className="prose prose-lg max-w-none text-gray-700">
+                        <p className="text-xl mb-6">
+                            Modern life sits at the intersection of travel, technology, and lifestyle.
+                        </p>
+                        <p className="text-xl mb-4">
+                            Planning a trip today involves:
+                        </p>
+                        <ul className="text-xl space-y-2 mb-6">
+                            <li>digital bookings</li>
+                            <li>financial tools</li>
+                            <li>apps and platforms</li>
+                            <li>wellness considerations</li>
+                            <li>sustainability choices</li>
+                            <li>remote work and learning</li>
+                        </ul>
+                        <p className="text-xl mb-6">
+                            Yet most platforms treat these as separate worlds.
+                        </p>
+                        <p className="text-xl font-semibold text-gray-900 mb-6">
+                            Gubbu brings them together.
+                        </p>
+                        <p className="text-xl">
+                            We help you navigate the modern world by making complex choices simpler — whether you're planning a trip, choosing tools, or exploring new ways to live and work.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            {/* How Gubbu Helps */}
+            <section className="py-20 bg-primary-50">
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <h2 className="text-4xl font-bold text-gray-900 mb-6 text-center">How Gubbu Helps</h2>
+                    <div className="prose prose-lg max-w-none text-gray-700">
+                        <p className="text-xl mb-4">
+                            Gubbu uses intelligent systems to:
+                        </p>
+                        <ul className="text-xl space-y-2 mb-6">
+                            <li>understand what you're trying to decide</li>
+                            <li>surface relevant guides, experiences, and tools</li>
+                            <li>adapt recommendations to different needs and styles</li>
+                        </ul>
+                        <p className="text-xl mb-6">
+                            We don't believe in one-size-fits-all answers.
+                        </p>
+                        <p className="text-xl">
+                            Instead, Gubbu focuses on decision clarity — helping you explore options, understand trade-offs, and move forward with confidence.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            {/* What Makes Gubbu Different */}
+            <section className="py-20 bg-white">
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <h2 className="text-4xl font-bold text-gray-900 mb-6 text-center">What Makes Gubbu Different</h2>
+                    <div className="prose prose-lg max-w-none text-gray-700">
+                        <ul className="text-xl space-y-3 mb-6">
+                            <li>We focus on decisions, not just destinations</li>
+                            <li>We guide, not sell</li>
+                            <li>We value trust over hype</li>
+                            <li>We design for people, not algorithms</li>
+                        </ul>
+                        <p className="text-xl">
+                            Behind the scenes, technology helps power the experience — but the goal is always human:
+                            <span className="font-semibold text-gray-900"> to make choices feel easier, clearer, and more personal.</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            {/* Our Vision */}
+            <section className="py-20 bg-gray-50">
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <h2 className="text-4xl font-bold text-gray-900 mb-6 text-center">Our Vision</h2>
+                    <div className="prose prose-lg max-w-none text-gray-700">
+                        <p className="text-xl mb-6">
+                            We believe the future belongs to platforms that help people think better, not just click faster.
+                        </p>
+                        <p className="text-xl mb-4">
+                            Gubbu is evolving into a place where:
+                        </p>
+                        <ul className="text-xl space-y-2 mb-6">
+                            <li>travel meets technology</li>
+                            <li>tools meet real-world needs</li>
+                            <li>guidance feels natural, not automated</li>
+                        </ul>
+                        <p className="text-xl">
+                            A place to pause, explore, and decide — with a little help from a friendly guide.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            {/* Navigate What's Next */}
+            <section className="py-20 bg-gradient-to-r from-primary-600 to-primary-800 text-white">
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <h2 className="text-4xl font-bold mb-6">Navigate What's Next</h2>
+                    <p className="text-xl mb-8 text-primary-100">
+                        Whether you're planning a journey, exploring new tools, or figuring out your next move, Gubbu is here to help.
+                    </p>
+                    <p className="text-2xl font-semibold mb-8">
+                        Navigate the modern world — one better decision at a time.
+                    </p>
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                        <Link to="/destinations">
+                            <Button size="lg" variant="secondary" className="w-full sm:w-auto">
+                                <Compass className="mr-2 h-5 w-5" />
+                                Explore What You Can Do Next
+                            </Button>
+                        </Link>
+                        <Button
+                            size="lg"
+                            variant="outline"
+                            className="border-2 border-white text-white hover:bg-white/10 w-full sm:w-auto"
+                            onClick={() => {
+                                const chatButton = document.querySelector('[data-chat-widget-toggle]');
+                                if (chatButton) chatButton.click();
+                            }}
+                        >
+                            <MessageCircle className="mr-2 h-5 w-5" />
+                            Talk to Gubbu 🐾
+                        </Button>
                     </div>
                 </div>
             </section>
