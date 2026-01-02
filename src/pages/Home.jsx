@@ -33,12 +33,18 @@ export function Home() {
                 Explore What You Can Do Next
               </Button>
             </Link>
-            <Link to="/">
-              <Button size="lg" variant="secondary" className="w-full sm:w-auto">
-                <MessageCircle className="mr-2 h-5 w-5" />
-                Talk to Gubbu 🐾
-              </Button>
-            </Link>
+            <Button
+              size="lg"
+              variant="secondary"
+              className="w-full sm:w-auto"
+              onClick={() => {
+                const chatButton = document.querySelector('[data-chat-widget-toggle]');
+                if (chatButton) chatButton.click();
+              }}
+            >
+              <MessageCircle className="mr-2 h-5 w-5" />
+              Talk to Gubbu 🐾
+            </Button>
           </div>
         </div>
       </section>
@@ -322,12 +328,18 @@ export function Home() {
                 Explore What You Can Do Next
               </Button>
             </Link>
-            <Link to="/">
-              <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white/10 w-full sm:w-auto">
-                <MessageCircle className="mr-2 h-5 w-5" />
-                Talk to Gubbu 🐾
-              </Button>
-            </Link>
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-2 border-white text-white hover:bg-white/10 w-full sm:w-auto"
+              onClick={() => {
+                const chatButton = document.querySelector('[data-chat-widget-toggle]');
+                if (chatButton) chatButton.click();
+              }}
+            >
+              <MessageCircle className="mr-2 h-5 w-5" />
+              Talk to Gubbu 🐾
+            </Button>
           </div>
         </div>
       </section>

@@ -258,6 +258,7 @@ export default function ChatWidget() {
         <>
             {!open && (
                 <button
+                    data-chat-widget-toggle
                     onClick={() => setOpen(true)}
                     style={{
                         position: "fixed",
