@@ -262,33 +262,17 @@ export default function ChatWidget() {
                     onClick={() => setOpen(true)}
                     style={{
                         position: "fixed",
-                        right: 20,
-                        bottom: 20,
-                        padding: "16px 24px",
-                        borderRadius: 50,
-                        border: "none",
-                        background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+                        right: 18,
+                        bottom: 18,
+                        padding: "12px 14px",
+                        borderRadius: 999,
+                        border: "1px solid #e5e7eb",
+                        background: "#0f172a",
                         color: "white",
                         cursor: "pointer",
                         zIndex: 9999,
-                        boxShadow: "0 8px 24px rgba(102, 126, 234, 0.4)",
-                        fontSize: "15px",
-                        fontWeight: "600",
-                        transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
-                        display: "flex",
-                        alignItems: "center",
-                        gap: "8px",
-                    }}
-                    onMouseEnter={(e) => {
-                        e.currentTarget.style.transform = "translateY(-2px)";
-                        e.currentTarget.style.boxShadow = "0 12px 32px rgba(102, 126, 234, 0.5)";
-                    }}
-                    onMouseLeave={(e) => {
-                        e.currentTarget.style.transform = "translateY(0)";
-                        e.currentTarget.style.boxShadow = "0 8px 24px rgba(102, 126, 234, 0.4)";
                     }}
                 >
-                    <span style={{ fontSize: "20px" }}>💬</span>
                     Ask Gubbu
                 </button>
             )}
@@ -304,32 +288,29 @@ export default function ChatWidget() {
                         width: config.width,
                         height: config.height,
                         minWidth: config.minWidth,
-                        background: "linear-gradient(to bottom, #ffffff 0%, #f8fafc 100%)",
-                        border: size === 'small' ? "1px solid rgba(102, 126, 234, 0.1)" : "none",
+                        background: "white",
+                        border: size === 'small' ? "1px solid #e5e7eb" : "none",
                         borderRadius: config.borderRadius,
-                        boxShadow: size === 'small' ? "0 20px 60px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.1)" : "0 -2px 20px rgba(0,0,0,0.1)",
+                        boxShadow: size === 'small' ? "0 10px 30px rgba(0,0,0,0.12)" : "0 -2px 10px rgba(0,0,0,0.1)",
                         display: "flex",
                         flexDirection: "column",
                         overflow: "hidden",
                         zIndex: 9999,
-                        transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
+                        transition: "all 0.3s ease",
                     }}
                 >
                     <div
                         style={{
-                            padding: "16px 20px",
-                            borderBottom: "1px solid rgba(102, 126, 234, 0.1)",
+                            padding: 12,
+                            borderBottom: "1px solid #e5e7eb",
                             display: "flex",
                             justifyContent: "space-between",
                             alignItems: "center",
-                            background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+                            background: "#0f172a",
                             color: "white",
                         }}
                     >
-                        <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                            <span style={{ fontSize: "20px" }}>🐾</span>
-                            <strong style={{ fontSize: "16px", fontWeight: "600" }}>Ask Gubbu</strong>
-                        </div>
+                        <strong>Ask Gubbu</strong>
                         <div style={{ display: "flex", gap: 8 }}>
                             <button
                                 onClick={cycleSize}
@@ -375,15 +356,10 @@ export default function ChatWidget() {
                                 style={{
                                     cursor: "pointer",
                                     border: "none",
-                                    background: "rgba(255, 255, 255, 0.2)",
+                                    background: "none",
                                     color: "white",
-                                    fontSize: 20,
-                                    padding: "4px 8px",
-                                    borderRadius: "6px",
-                                    transition: "all 0.2s",
+                                    fontSize: 18,
                                 }}
-                                onMouseEnter={(e) => e.currentTarget.style.background = "rgba(255, 255, 255, 0.3)"}
-                                onMouseLeave={(e) => e.currentTarget.style.background = "rgba(255, 255, 255, 0.2)"}
                             >
                                 ✕
                             </button>
