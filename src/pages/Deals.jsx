@@ -5,8 +5,11 @@ export function Deals() {
             <section className="bg-gradient-to-r from-primary-600 to-primary-800 text-white py-20">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <h1 className="text-5xl font-bold mb-4">Special Offers & Deals</h1>
-                    <p className="text-xl text-primary-100">
+                    <p className="text-xl text-primary-100 mb-3">
                         Exclusive discounts and partner offers to help you save
+                    </p>
+                    <p className="text-sm text-primary-200">
+                        Offers are updated occasionally and may change or expire.
                     </p>
                 </div>
             </section>
@@ -32,7 +35,7 @@ export function Deals() {
                                     rel="noopener noreferrer sponsored"
                                     className="inline-flex items-center gap-2 px-6 py-3 bg-primary-600 text-white rounded-lg font-semibold hover:bg-primary-700 transition-colors"
                                 >
-                                    Claim Teacher Discount
+                                    Check Eligibility & Explore Hotel Options
                                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                                     </svg>
