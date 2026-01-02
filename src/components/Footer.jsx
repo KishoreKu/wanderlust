@@ -11,6 +11,7 @@ export function Footer() {
             <h3 className="text-white font-semibold mb-4">Gubbu</h3>
             <ul className="space-y-2">
               <li><Link to="/about" className="hover:text-primary-400 transition-colors">About</Link></li>
+              <li><Link to="/about" className="hover:text-primary-400 transition-colors">How Gubbu Works</Link></li>
               <li><Link to="/blog" className="hover:text-primary-400 transition-colors">Guides</Link></li>
               <li><Link to="/blog" className="hover:text-primary-400 transition-colors">Blog</Link></li>
             </ul>
