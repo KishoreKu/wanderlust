@@ -196,38 +196,37 @@ export function Blog() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {displayedPosts.map((post) => (
-              <article key={post.id} className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
-                <div className="relative h-56">
-                  <img
-                    src={post.image}
-                    alt={post.title}
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute top-4 left-4 bg-primary-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
-                    {post.category}
-                  </div>
-                </div>
-                <div className="p-6">
-                  <div className="flex items-center justify-between text-sm text-gray-500 mb-3">
-                    <div className="flex items-center">
-                      <Calendar className="h-4 w-4 mr-1" />
-                      {post.date}
+              <Link key={post.id} to={`/blog/${post.id}`} className="group">
+                <article className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 cursor-pointer">
+                  <div className="relative h-56">
+                    <img
+                      src={post.image}
+                      alt={post.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                    <div className="absolute top-4 left-4 bg-primary-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                      {post.category}
                     </div>
-                    <span>{post.readTime}</span>
                   </div>
-                  <h3 className="text-xl font-bold mb-3 hover:text-primary-600 transition-colors">
-                    <Link to={`/blog/${post.id}`}>{post.title}</Link>
-                  </h3>
-                  <p className="text-gray-600 mb-4 line-clamp-3">{post.excerpt}</p>
-                  <Link
-                    to={`/blog/${post.id}`}
-                    className="text-primary-600 font-semibold hover:text-primary-700 inline-flex items-center group"
-                  >
-                    Read More
-                    <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                  </Link>
-                </div>
-              </article>
+                  <div className="p-6">
+                    <div className="flex items-center justify-between text-sm text-gray-500 mb-3">
+                      <div className="flex items-center">
+                        <Calendar className="h-4 w-4 mr-1" />
+                        {post.date}
+                      </div>
+                      <span>{post.readTime}</span>
+                    </div>
+                    <h3 className="text-xl font-bold mb-3 group-hover:text-primary-600 transition-colors">
+                      {post.title}
+                    </h3>
+                    <p className="text-gray-600 mb-4 line-clamp-3">{post.excerpt}</p>
+                    <div className="text-primary-600 font-semibold hover:text-primary-700 inline-flex items-center">
+                      Read More
+                      <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                    </div>
+                  </div>
+                </article>
+              </Link>
             ))}
           </div>
 
