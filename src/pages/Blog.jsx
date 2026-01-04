@@ -96,6 +96,16 @@ export function Blog() {
       readTime: '10 min read',
       featured: true,
     },
+    {
+      id: 'marrakech-activities-guide',
+      title: '🇲🇦 Top Marrakech Activities & Day Trips',
+      excerpt: 'Discover the best things to do in Marrakech! From Agafay Desert adventures to Atlas Mountains day trips and hot air balloon rides. Complete guide with prices starting from $15.',
+      image: 'https://images.unsplash.com/photo-1597212618440-806262de4f6b?w=800&auto=format&fit=crop',
+      date: 'Jan 4, 2026',
+      category: 'Destinations',
+      readTime: '11 min read',
+      featured: true,
+    },
   ];
 
   const categories = ['All', 'Destinations', 'Tips', 'Planning', 'Safety'];

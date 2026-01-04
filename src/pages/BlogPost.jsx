@@ -1354,6 +1354,187 @@ export function BlogPost() {
         <p class="text-sm text-gray-600 italic mt-8">Disclosure: This post contains affiliate links. When you book through GetYourGuide using our links, we may earn a small commission at no extra cost to you. This helps us keep creating helpful travel content. Thank you for your support!</p>
       `,
     },
+    'marrakech-activities-guide': {
+      id: 'marrakech-activities-guide',
+      title: '🇲🇦 Top Marrakech Activities & Day Trips: Complete Guide',
+      author: 'Gubbu Team',
+      date: 'January 4, 2026',
+      readTime: '11 min read',
+      category: 'Destinations',
+      image: 'https://images.unsplash.com/photo-1597212618440-806262de4f6b?w=1200&auto=format&fit=crop',
+      content: `
+        <p class="text-lg mb-6">Marrakech – the Red City where ancient medinas meet modern luxury, where desert adventures await just beyond the city walls, and where every corner offers a new sensory experience!</p>
+        
+        <p class="mb-6">We've analyzed <strong>over 120,000 reviews</strong> to bring you the <strong>top-rated activities and day trips</strong> from Marrakech, complete with real prices, honest ratings, and insider tips!</p>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🏜️ 1. Agafay Desert Sunset, Camel Ride & Dinner Show</h2>
+        <p class="mb-2"><strong>Price:</strong> From $27 (was $39) – Save 31%!</p>
+        <p class="mb-2"><strong>Rating:</strong> ⭐ 4.6/5 (33,683+ reviews)</p>
+        <p class="mb-6"><strong>Duration:</strong> 4.5-5 hours</p>
+
+        <p class="mb-6">Experience the magic of the Moroccan desert without traveling to the Sahara! Watch the sunset, ride a camel, and dine under the stars with live Berber entertainment.</p>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🏍️ 2. Agafay Quad & Camel with Dinner – TOP RATED!</h2>
+        <p class="mb-2"><strong>Price:</strong> From $33 (was $61) – Save 46%!</p>
+        <p class="mb-2"><strong>Rating:</strong> ⭐ 4.9/5 (22,252+ reviews)</p>
+        <p class="mb-6"><strong>Duration:</strong> 7 hours</p>
+
+        <p class="mb-6">Get the best of both worlds – adrenaline-pumping quad biking AND traditional camel riding, all in one epic day! Marrakech's highest-rated desert experience!</p>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">⛰️ 3. Ourika Waterfalls & Atlas Mountains – BEST VALUE!</h2>
+        <p class="mb-2"><strong>Price:</strong> From $16 (was $21)</p>
+        <p class="mb-2"><strong>Rating:</strong> ⭐ 4.9/5 (6,530+ reviews)</p>
+        <p class="mb-6"><strong>Duration:</strong> 7 hours</p>
+
+        <p class="mb-6">For just $16, get a FULL DAY guided tour with lunch included! Hike to waterfalls, visit Berber villages, and enjoy stunning mountain views.</p>
+
+        <div class="bg-gradient-to-r from-primary-50 to-primary-100 rounded-xl p-8 mb-8">
+          <h3 class="text-2xl font-bold mb-4">🎯 Ready to Book Your Marrakech Adventure?</h3>
+          <p class="text-gray-700 mb-6">From $15 budget day trips to $123 luxury hot air balloon flights. All activities include hotel pickup, verified reviews, and flexible cancellation.</p>
+          <a href="https://www.getyourguide.com/s?partner_id=NEGURHX&et=477070&lc=208" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
+            👉 Browse All Marrakech Activities
+          </a>
+        </div>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">💧 4. Ouzoud Waterfalls Hike & Boat Trip</h2>
+        <p class="mb-2"><strong>Price:</strong> From $25 (was $30)</p>
+        <p class="mb-2"><strong>Rating:</strong> ⭐ 4.7/5 (32,600+ reviews)</p>
+        <p class="mb-6"><strong>Duration:</strong> 10 hours</p>
+
+        <p class="mb-6">Morocco's highest waterfalls (110 meters)! Take a boat trip to the base, swim in pools, and spot wild Barbary apes.</p>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🌊 5. Essaouira Coastal Day Trip</h2>
+        <p class="mb-2"><strong>Price:</strong> From $15 (was $19)</p>
+        <p class="mb-2"><strong>Rating:</strong> ⭐ 4.9/5 (5,258+ reviews)</p>
+        <p class="mb-6"><strong>Duration:</strong> Full day</p>
+
+        <p class="mb-6">Escape to the Atlantic coast! Explore the UNESCO medina, enjoy fresh seafood, and visit the Game of Thrones filming location.</p>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🎈 6. Hot Air Balloon Flight with Breakfast</h2>
+        <p class="mb-2"><strong>Price:</strong> From $110-$123 (up to 40% off)</p>
+        <p class="mb-2"><strong>Rating:</strong> ⭐ 4.8/5 (7,333+ reviews)</p>
+        <p class="mb-2"><strong>Duration:</strong> 4-5 hours</p>
+        <p class="mb-6"><strong>Trending:</strong> Booked 70+ times yesterday!</p>
+
+        <p class="mb-6">Float above the Moroccan landscape at sunrise – an absolutely magical bucket list experience! Includes Berber breakfast and flight certificate.</p>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🏕️ 7. Agafay Desert Retreat with Pool</h2>
+        <p class="mb-2"><strong>Price:</strong> From $76 (was $101)</p>
+        <p class="mb-2"><strong>Rating:</strong> ⭐ 4.8/5 (5,415+ reviews)</p>
+        <p class="mb-6"><strong>Duration:</strong> 16 hours</p>
+
+        <p class="mb-6">Luxury desert experience! Spend the day relaxing by the pool with desert views, then enjoy sunset camel ride and gourmet dinner.</p>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🏜️ 8. Agafay Quad Biking with Dinner</h2>
+        <p class="mb-2"><strong>Price:</strong> From $28 (was $31)</p>
+        <p class="mb-2"><strong>Rating:</strong> ⭐ 4.8/5 (14,591+ reviews)</p>
+        <p class="mb-6"><strong>Duration:</strong> 6 hours</p>
+
+        <p class="mb-6">Maximum quad biking time (1.5 hours) through dramatic desert landscapes, followed by dinner show.</p>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🕌 9. Bahia Palace & Medina Tour</h2>
+        <p class="mb-6"><strong>Duration:</strong> 4 hours</p>
+
+        <p class="mb-6">Skip-the-line access to Bahia Palace, Saadian Tombs, and guided medina exploration with expert guide.</p>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🐪 10. Palmeraie Camel Ride</h2>
+        <p class="mb-2"><strong>Price:</strong> From $30</p>
+        <p class="mb-2"><strong>Rating:</strong> ⭐ 4.5/5 (4,815+ reviews)</p>
+        <p class="mb-6"><strong>Duration:</strong> 2 hours</p>
+
+        <p class="mb-6">Quick desert experience! 1-hour camel ride through palm groves without leaving Marrakech. Perfect for families!</p>
+
+        <div class="bg-primary-50 rounded-lg p-6 mb-8">
+          <h3 class="text-xl font-bold mb-3">🎯 Compare All Marrakech Experiences</h3>
+          <p class="mb-4">From budget-friendly $15 day trips to luxury $123 balloon flights – find your perfect adventure!</p>
+          <a href="https://www.getyourguide.com/s?partner_id=NEGURHX&et=477070&lc=208" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
+            👉 View All Marrakech Tours
+          </a>
+        </div>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">💰 Price Comparison</h2>
+
+        <h3 class="text-2xl font-bold mt-6 mb-3">Budget-Friendly ($15-$30):</h3>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li><strong>$15</strong> - Essaouira Day Trip (Best coastal value!)</li>
+          <li><strong>$16</strong> - Ourika Waterfalls + Lunch (Best mountain value!)</li>
+          <li><strong>$25</strong> - Ouzoud Waterfalls</li>
+          <li><strong>$27</strong> - Agafay Desert Sunset & Dinner</li>
+          <li><strong>$28</strong> - Agafay Quad Biking</li>
+          <li><strong>$30</strong> - Palmeraie Camel Ride</li>
+        </ul>
+
+        <h3 class="text-2xl font-bold mt-6 mb-3">Mid-Range ($31-$75):</h3>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li><strong>$33</strong> - Agafay Quad + Camel + Dinner (Top rated 4.9★!)</li>
+        </ul>
+
+        <h3 class="text-2xl font-bold mt-6 mb-3">Premium ($76-$123):</h3>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li><strong>$76</strong> - Desert Retreat with Pool</li>
+          <li><strong>$110-$123</strong> - Hot Air Balloon Flight</li>
+        </ul>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">📅 How to Choose</h2>
+
+        <h3 class="text-2xl font-bold mt-6 mb-3">For First-Time Visitors:</h3>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li>✅ Agafay Desert Sunset ($27) - Classic experience</li>
+          <li>✅ Ourika Waterfalls ($16) - See the mountains</li>
+        </ul>
+
+        <h3 class="text-2xl font-bold mt-6 mb-3">For Adventure Seekers:</h3>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li>✅ Agafay Quad + Camel ($33) - Best combo</li>
+          <li>✅ Ouzoud Waterfalls ($25) - Hiking & swimming</li>
+        </ul>
+
+        <h3 class="text-2xl font-bold mt-6 mb-3">For Couples:</h3>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li>✅ Hot Air Balloon ($110) - Unforgettable!</li>
+          <li>✅ Desert Retreat with Pool ($76) - Luxury</li>
+        </ul>
+
+        <h3 class="text-2xl font-bold mt-6 mb-3">For Budget Travelers:</h3>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li>✅ Essaouira ($15) - Full day coastal trip</li>
+          <li>✅ Ourika ($16) - Includes lunch!</li>
+        </ul>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🎫 Booking Tips</h2>
+
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li><strong>Book 1-2 Days Ahead:</strong> Desert tours fill up fast</li>
+          <li><strong>Hot Air Balloons:</strong> Book 3-5 days ahead (weather dependent)</li>
+          <li><strong>Best Season:</strong> March-May, Sept-Nov for perfect weather</li>
+          <li><strong>Free Cancellation:</strong> Most tours offer 24-hour cancellation</li>
+          <li><strong>Hotel Pickup:</strong> All tours include pickup from Marrakech</li>
+        </ul>
+
+        <div class="bg-gradient-to-r from-primary-50 to-primary-100 rounded-xl p-8 mb-6">
+          <h3 class="text-2xl font-bold mb-4">🎯 Ready to Explore Marrakech?</h3>
+          <p class="text-gray-700 mb-6">From $15 budget day trips to $123 luxury balloon flights, there's a perfect adventure for every traveler. All tours include hotel pickup, verified reviews from 120,000+ travelers, and flexible cancellation.</p>
+          <a href="https://www.getyourguide.com/s?partner_id=NEGURHX&et=477070&lc=208" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
+            👉 Book Your Marrakech Adventure Now
+          </a>
+        </div>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🌟 Final Thoughts</h2>
+        <p class="mb-4">Marrakech is more than just a city – it's a gateway to incredible adventures. From the moon-like landscapes of the Agafay Desert to the cascading Ouzoud Waterfalls, from sunrise balloon flights to sunset camel rides, every experience offers a unique window into Morocco's beauty.</p>
+        <p class="mb-6">With options ranging from $15 to $123, there's an adventure for every budget. The consistently high ratings (4.6-4.9 stars) speak to the quality of Marrakech's tour operators.</p>
+
+        <p class="mb-4"><strong>Our Top Picks:</strong></p>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li><strong>Best Value:</strong> Ourika Waterfalls ($16) - Full day with lunch!</li>
+          <li><strong>Most Popular:</strong> Agafay Quad + Camel ($33) - 4.9★</li>
+          <li><strong>Best for Couples:</strong> Hot Air Balloon ($110)</li>
+          <li><strong>Best Desert:</strong> Agafay Sunset ($27)</li>
+          <li><strong>Best Day Trip:</strong> Ouzoud Waterfalls ($25)</li>
+        </ul>
+
+        <p class="text-sm text-gray-600 italic mt-8">Disclosure: This post contains affiliate links. When you book through GetYourGuide using our links, we may earn a small commission at no extra cost to you. This helps us keep creating helpful travel content. Thank you for your support!</p>
+      `,
+    },
   };
 
   // Get the post based on ID, default to Southeast Asia post if not found
@@ -1413,6 +1594,12 @@ export function BlogPost() {
       id: 'dubai-desert-safari-guide',
       title: 'Top 10 Dubai Desert Safari Adventures',
       image: 'https://images.unsplash.com/photo-1451337516015-6b6e9a44a8a3?w=400&auto=format&fit=crop',
+      category: 'Destinations',
+    },
+    {
+      id: 'marrakech-activities-guide',
+      title: 'Top Marrakech Activities & Day Trips',
+      image: 'https://images.unsplash.com/photo-1597212618440-806262de4f6b?w=400&auto=format&fit=crop',
       category: 'Destinations',
     },
   ];
