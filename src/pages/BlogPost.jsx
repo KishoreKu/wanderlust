@@ -38,37 +38,37 @@ export function BlogPost() {
       }
       canonical.href = `https://gubbu.io/blog/${id}`;
 
-      // 4. Update Open Graph meta tags
-      let ogTitle = document.querySelector('meta[property="og:title"]');
-      if (ogTitle) {
-        ogTitle.content = post.title;
-      }
+      // Helper function to create or update meta tags
+      const updateMetaTag = (attribute, attributeValue, content) => {
+        let tag = document.querySelector(`meta[${attribute}="${attributeValue}"]`);
+        if (!tag) {
+          tag = document.createElement('meta');
+          tag.setAttribute(attribute, attributeValue);
+          document.head.appendChild(tag);
+        }
+        tag.content = content;
+      };
 
-      let ogDescription = document.querySelector('meta[property="og:description"]');
-      if (ogDescription) {
-        ogDescription.content = description;
-      }
-
-      let ogUrl = document.querySelector('meta[property="og:url"]');
-      if (ogUrl) {
-        ogUrl.content = `https://gubbu.io/blog/${id}`;
-      }
-
-      let ogImage = document.querySelector('meta[property="og:image"]');
-      if (ogImage) {
-        ogImage.content = post.image;
-      }
+      // 4. Update Open Graph meta tags (Facebook, LinkedIn, WhatsApp)
+      updateMetaTag('property', 'og:type', 'article');
+      updateMetaTag('property', 'og:title', post.title);
+      updateMetaTag('property', 'og:description', description);
+      updateMetaTag('property', 'og:url', `https://gubbu.io/blog/${id}`);
+      updateMetaTag('property', 'og:image', post.image);
+      updateMetaTag('property', 'og:image:width', '1200');
+      updateMetaTag('property', 'og:image:height', '630');
+      updateMetaTag('property', 'og:site_name', 'Gubbu');
+      updateMetaTag('property', 'article:published_time', post.date);
+      updateMetaTag('property', 'article:author', post.author);
+      updateMetaTag('property', 'article:section', post.category);
 
       // 5. Update Twitter Card meta tags
-      let twitterTitle = document.querySelector('meta[name="twitter:title"]');
-      if (twitterTitle) {
-        twitterTitle.content = post.title;
-      }
-
-      let twitterDescription = document.querySelector('meta[name="twitter:description"]');
-      if (twitterDescription) {
-        twitterDescription.content = description;
-      }
+      updateMetaTag('name', 'twitter:card', 'summary_large_image');
+      updateMetaTag('name', 'twitter:title', post.title);
+      updateMetaTag('name', 'twitter:description', description);
+      updateMetaTag('name', 'twitter:image', post.image);
+      updateMetaTag('name', 'twitter:site', '@gubbu');
+      updateMetaTag('name', 'twitter:creator', '@gubbu');
     }
 
     // Scroll to top
