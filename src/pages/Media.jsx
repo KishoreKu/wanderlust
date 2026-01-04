@@ -209,7 +209,7 @@ export function Media() {
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h2 className="text-4xl font-bold text-gray-900 mb-8 text-center">Quick Facts</h2>
 
-                    <div className="grid md:grid-cols-3 gap-6">
+                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                         <div className="bg-gray-50 rounded-lg p-6 text-center">
                             <h3 className="text-xl font-bold text-gray-900 mb-2">Founded</h3>
                             <p className="text-gray-700">2025</p>
@@ -221,6 +221,10 @@ export function Media() {
                         <div className="bg-gray-50 rounded-lg p-6 text-center">
                             <h3 className="text-xl font-bold text-gray-900 mb-2">Focus</h3>
                             <p className="text-gray-700">AI-assisted decision guidance for travel & modern lifestyle planning</p>
+                        </div>
+                        <div className="bg-gray-50 rounded-lg p-6 text-center">
+                            <h3 className="text-xl font-bold text-gray-900 mb-2">Partnerships</h3>
+                            <p className="text-gray-700">Content-led affiliate integrations, contextual recommendations, and AI-assisted discovery</p>
                         </div>
                     </div>
                 </div>
