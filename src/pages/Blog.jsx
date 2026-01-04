@@ -86,6 +86,16 @@ export function Blog() {
       readTime: '9 min read',
       featured: true,
     },
+    {
+      id: 'dubai-desert-safari-guide',
+      title: '🏜️ Top 10 Dubai Desert Safari Adventures',
+      excerpt: 'Experience the magic of Dubai\'s desert! From thrilling dune bashing to cultural BBQ dinners under the stars. Complete guide to the top 10 desert safaris with prices, ratings, and insider tips.',
+      image: 'https://images.unsplash.com/photo-1451337516015-6b6e9a44a8a3?w=800&auto=format&fit=crop',
+      date: 'Jan 4, 2026',
+      category: 'Destinations',
+      readTime: '10 min read',
+      featured: true,
+    },
   ];
 
   const categories = ['All', 'Destinations', 'Tips', 'Planning', 'Safety'];
