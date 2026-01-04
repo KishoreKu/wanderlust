@@ -12,6 +12,16 @@ export function Blog() {
   const blogPosts = [
     // New GetYourGuide Destination Guides - Featured at Top
     {
+      id: 'barcelona-activities-guide',
+      title: '🇪🇸 Best Things to Do in Barcelona',
+      excerpt: 'Experience the best of Barcelona! From skip-the-line Sagrada Familia tickets to Montserrat day trips and 3-country tours. Complete guide with prices starting from $25.',
+      image: 'https://images.unsplash.com/photo-1583422409516-2895a77efded?w=800&auto=format&fit=crop',
+      date: 'Jan 4, 2026',
+      category: 'Destinations',
+      readTime: '12 min read',
+      featured: true,
+    },
+    {
       id: 'las-vegas-activities-guide',
       title: '🎰 Best Las Vegas Activities & Tours',
       excerpt: 'Entertainment Capital of the World! From Grand Canyon tours to Cirque du Soleil shows, helicopter flights, and desert adventures. Complete guide with prices starting from $30.',

@@ -2154,6 +2154,128 @@ export function BlogPost() {
         <p class="text-sm text-gray-600 italic mt-8">Disclosure: This post contains affiliate links. When you book through Viator using our links, we may earn a small commission at no extra cost to you. This helps us keep creating helpful travel content. Thank you for your support!</p>
       `,
     },
+    'barcelona-activities-guide': {
+      id: 'barcelona-activities-guide',
+      title: '🇪🇸 Best Things to Do in Barcelona: Top 2026 Tours & Day Trips',
+      author: 'Gubbu Team',
+      date: 'January 4, 2026',
+      readTime: '12 min read',
+      category: 'Destinations',
+      image: 'https://images.unsplash.com/photo-1583422409516-2895a77efded?w=1200&auto=format&fit=crop',
+      content: `
+        <p class="text-lg mb-6">Barcelona is a city that dreams are made of. With its whimsical Gaudí architecture, golden beaches, and world-class food scene, it's Europe's most beloved destination!</p>
+        
+        <p class="mb-6">We've analyzed <strong>over 70,000 reviews</strong> to bring you the <strong>best Barcelona tours</strong> – helping you skip the long lines and discover hidden gems!</p>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🏰 1. Sagrada Familia Skip-the-Line Tour</h2>
+        <p class="mb-2"><strong>Price:</strong> From $59</p>
+        <p class="mb-2"><strong>Rating:</strong> ⭐ 4.7/5 (2,441+ reviews)</p>
+        <p class="mb-6"><strong>Duration:</strong> 1.5 hours</p>
+
+        <p class="mb-6">The #1 must-see! Skip the notorious lines and explore Gaudí's unfinished masterpiece with an expert guide.</p>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🏔️ 2. Montserrat + Wine Tasting & Lunch</h2>
+        <p class="mb-2"><strong>Price:</strong> From $68</p>
+        <p class="mb-2"><strong>Rating:</strong> ⭐ 4.9/5 (6,141+ reviews)</p>
+        <p class="mb-6"><strong>Duration:</strong> 7-8 hours</p>
+
+        <p class="mb-6">Escape to the "Jagged Mountain!" Includes cogwheel train ride, Black Madonna visit, and wine tasting in a castle.</p>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🏰 3. Park Güell & Sagrada Familia Combo</h2>
+        <p class="mb-2"><strong>Price:</strong> From $118</p>
+        <p class="mb-2"><strong>Rating:</strong> ⭐ 4.8/5 (6,312+ reviews)</p>
+        <p class="mb-6"><strong>Duration:</strong> 4 hours</p>
+
+        <p class="mb-6">Knock out the two biggest sights in one morning with comfortable transport included!</p>
+
+        <div class="bg-gradient-to-r from-primary-50 to-primary-100 rounded-xl p-8 mb-8">
+          <h3 class="text-2xl font-bold mb-4">🇪🇸 Ready to Book Your Spanish Adventure?</h3>
+          <p class="text-gray-700 mb-6">Skip the lines at Sagrada Familia and discover amazing day trips. Verified reviews from 70,000+ travelers!</p>
+          <a href="https://www.viator.com/Barcelona/d562-ttd?pid=p00282987&mcid=42383&medium=link&campaign=gubbu-barcelona" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
+            👉 Browse All Barcelona Tours
+          </a>
+        </div>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🗺️ 4. Barcelona in 1 Day – TOP CHOICE!</h2>
+        <p class="mb-2"><strong>Price:</strong> From $119</p>
+        <p class="mb-2"><strong>Rating:</strong> ⭐ 4.9/5 (13,360+ reviews)</p>
+        <p class="mb-6"><strong>Duration:</strong> 8 hours</p>
+
+        <p class="mb-6">The ultimate overview! Skip-the-line at Sagrada & Park Güell, plus Gothic Quarter tour and Montjuïc views.</p>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🌍 5. 3 Countries in 1 Day: Spain, France & Andorra</h2>
+        <p class="mb-2"><strong>Price:</strong> From $85</p>
+        <p class="mb-2"><strong>Rating:</strong> ⭐ 4.5/5 (837+ reviews)</p>
+        <p class="mb-6"><strong>Duration:</strong> 12 hours</p>
+
+        <p class="mb-6">Breakfast in Spain, lunch in France, afternoon tea in Andorra! The ultimate bucket list day trip.</p>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🌊 6. Girona & Costa Brava Day Trip</h2>
+        <p class="mb-2"><strong>Price:</strong> From $119</p>
+        <p class="mb-2"><strong>Rating:</strong> ⭐ 4.9/5 (6,856+ reviews)</p>
+        <p class="mb-6"><strong>Duration:</strong> 10 hours</p>
+
+        <p class="mb-6">Explore medieval Girona (Game of Thrones location!) and the breathtaking Costa Brava coastline.</p>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">💃 7. Flamenco Show at City Hall</h2>
+        <p class="mb-2"><strong>Price:</strong> From $25</p>
+        <p class="mb-2"><strong>Rating:</strong> ⭐ 4.4/5 (1,223+ reviews)</p>
+        <p class="mb-6"><strong>Duration:</strong> 1 hour</p>
+
+        <p class="mb-6">Experience the passion of Spain in a historic theater. Authentic, affordable, and centrally located.</p>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🍷 8. Tapas & Wine Walking Tour</h2>
+        <p class="mb-2"><strong>Price:</strong> From $85</p>
+        <p class="mb-2"><strong>Rating:</strong> ⭐ 4.8/5 (2,000+ reviews)</p>
+        <p class="mb-6"><strong>Duration:</strong> 3 hours</p>
+
+        <p class="mb-6">Don't just eat – taste Barcelona like a local! Visit historic bodegas and try the best Jamón and wine.</p>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🚌 9. Hop-On Hop-Off Bus</h2>
+        <p class="mb-2"><strong>Price:</strong> From $39</p>
+        <p class="mb-2"><strong>Rating:</strong> ⭐ 4.0/5 (5,236+ reviews)</p>
+        <p class="mb-6"><strong>Duration:</strong> 24-48 hours</p>
+
+        <p class="mb-6">The easiest way to see it all! Two routes covering everything from the beach to Camp Nou.</p>
+
+        <div class="bg-primary-50 rounded-lg p-6 mb-8">
+          <h3 class="text-xl font-bold mb-3">🇪🇸 Don't Miss Out!</h3>
+          <p class="mb-4">Skip-the-line tickets for Sagrada Familia are a necessity, not a luxury!</p>
+          <a href="https://www.viator.com/Barcelona/d562-ttd?pid=p00282987&mcid=42383&medium=link&campaign=gubbu-barcelona" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
+            👉 Book Your Barcelona Activities
+          </a>
+        </div>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">💰 Price Comparison</h2>
+
+        <h3 class="text-2xl font-bold mt-6 mb-3">Essentials ($25-$60):</h3>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li><strong>$25</strong> - Flamenco Show</li>
+          <li><strong>$39</strong> - Hop-On Hop-Off Bus</li>
+          <li><strong>$59</strong> - Sagrada Familia Tour</li>
+        </ul>
+
+        <h3 class="text-2xl font-bold mt-6 mb-3">Day Trips ($68-$120):</h3>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li><strong>$68</strong> - Montserrat & Wine (Best Value!)</li>
+          <li><strong>$85</strong> - 3 Countries Tour</li>
+          <li><strong>$119</strong> - Girona & Costa Brava</li>
+          <li><strong>$119</strong> - Barcelona in 1 Day</li>
+        </ul>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🌟 Final Thoughts</h2>
+        <p class="mb-4">Barcelona offers a dazzling mix of culture, architecture, and beach life. Whether you're marveling at Sagrada Familia or climbing Montserrat, this city will capture your heart.</p>
+
+        <p class="mb-4"><strong>Our Top Picks:</strong></p>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li><strong>Must-Do:</strong> Sagrada Familia Skip-the-Line ($59)</li>
+          <li><strong>Best Day Trip:</strong> Montserrat + Wine ($68)</li>
+          <li><strong>Most Comprehensive:</strong> Barcelona in 1 Day ($119)</li>
+        </ul>
+
+        <p class="text-sm text-gray-600 italic mt-8">Disclosure: This post contains affiliate links. When you book through Viator using our links, we may earn a small commission at no extra cost to you. Thank you for your support!</p>
+      `,
+    },
   };
 
   // Get the post based on ID, default to Southeast Asia post if not found
@@ -2243,6 +2365,12 @@ export function BlogPost() {
       id: 'las-vegas-activities-guide',
       title: 'Best Las Vegas Activities & Tours',
       image: 'https://images.unsplash.com/photo-1605833556294-ea5c7a74f57d?w=400&auto=format&fit=crop',
+      category: 'Destinations',
+    },
+    {
+      id: 'barcelona-activities-guide',
+      title: 'Best Tours & Day Trips in Barcelona',
+      image: 'https://images.unsplash.com/photo-1583422409516-2895a77efded?w=400&auto=format&fit=crop',
       category: 'Destinations',
     },
   ];
