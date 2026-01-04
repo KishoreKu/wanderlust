@@ -725,6 +725,441 @@ export function BlogPost() {
         </div>
       `,
     },
+    'getyourguide-tours-activities': {
+      id: 'getyourguide-tours-activities',
+      title: '🎯 Discover Amazing Tours & Activities with GetYourGuide',
+      author: 'Gubbu Team',
+      date: 'January 4, 2026',
+      readTime: '7 min read',
+      category: 'Travel Tips',
+      image: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1200&auto=format&fit=crop',
+      content: `
+        <p class="text-lg mb-6">Planning a trip can be overwhelming. Between researching attractions, comparing prices, reading reviews, and worrying about sold-out tickets, it's easy to feel stressed before your vacation even begins.</p>
+        
+        <p class="mb-6">That's where <strong>GetYourGuide</strong> comes in – your one-stop platform for discovering and booking incredible tours, activities, and experiences around the world. Whether you're exploring iconic landmarks, seeking adventure, or diving into local culture, GetYourGuide makes it simple.</p>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🌟 Why Use GetYourGuide for Your Travel Experiences?</h2>
+
+        <h3 class="text-2xl font-bold mt-6 mb-3">1. Skip-the-Line Access</h3>
+        <p class="mb-4">Nobody wants to waste precious vacation time standing in long queues. GetYourGuide offers skip-the-line tickets for major attractions worldwide, including:</p>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li>The Eiffel Tower in Paris</li>
+          <li>The Colosseum in Rome</li>
+          <li>Sagrada Familia in Barcelona</li>
+          <li>Empire State Building in New York</li>
+          <li>And thousands more!</li>
+        </ul>
+
+        <h3 class="text-2xl font-bold mt-6 mb-3">2. Verified Reviews from Real Travelers</h3>
+        <p class="mb-6">With millions of authentic reviews, you can make informed decisions about which tours and activities are worth your time and money. See what other travelers loved (or didn't) before you book.</p>
+
+        <h3 class="text-2xl font-bold mt-6 mb-3">3. Flexible Cancellation</h3>
+        <p class="mb-6">Plans change – we get it! Many GetYourGuide experiences offer free cancellation up to 24 hours before your activity, giving you peace of mind when booking.</p>
+
+        <div class="bg-gradient-to-r from-primary-50 to-primary-100 rounded-xl p-8 mb-8">
+          <h3 class="text-2xl font-bold mb-4">🎯 Ready to Discover Amazing Experiences?</h3>
+          <p class="text-gray-700 mb-6">Browse thousands of tours, activities, and skip-the-line tickets worldwide. Book with confidence with verified reviews and flexible cancellation.</p>
+          <a href="https://www.getyourguide.com/s?partner_id=NEGURHX&et=694395&lc=29" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
+            👉 Explore GetYourGuide Tours & Activities
+          </a>
+        </div>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🎭 What Types of Experiences Can You Book?</h2>
+
+        <h3 class="text-2xl font-bold mt-6 mb-3">🏛️ Museum & Attraction Tickets</h3>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li>Skip-the-line access to world-famous museums</li>
+          <li>Combo tickets for multiple attractions</li>
+          <li>Audio guides and guided tours</li>
+          <li>Special exhibitions and events</li>
+        </ul>
+
+        <h3 class="text-2xl font-bold mt-6 mb-3">🚌 City Tours & Sightseeing</h3>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li>Hop-on hop-off bus tours</li>
+          <li>Walking tours with local guides</li>
+          <li>Bike tours through historic neighborhoods</li>
+          <li>Segway and scooter tours</li>
+          <li>Private city tours</li>
+        </ul>
+
+        <h3 class="text-2xl font-bold mt-6 mb-3">🍕 Food & Culinary Experiences</h3>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li>Food walking tours</li>
+          <li>Cooking classes with local chefs</li>
+          <li>Wine tasting experiences</li>
+          <li>Market tours and tastings</li>
+          <li>Traditional dinner experiences</li>
+        </ul>
+
+        <h3 class="text-2xl font-bold mt-6 mb-3">🏔️ Adventure & Outdoor Activities</h3>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li>Hiking and trekking tours</li>
+          <li>Water sports and diving</li>
+          <li>Zip-lining and bungee jumping</li>
+          <li>Hot air balloon rides</li>
+          <li>Paragliding experiences</li>
+        </ul>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">💡 How to Get the Most Out of GetYourGuide</h2>
+
+        <h3 class="text-2xl font-bold mt-6 mb-3">1. Book Popular Attractions in Advance</h3>
+        <p class="mb-6">Major attractions like the Louvre, Vatican Museums, and Machu Picchu can sell out weeks in advance, especially during peak season. Book early to secure your preferred date and time.</p>
+
+        <h3 class="text-2xl font-bold mt-6 mb-3">2. Read the Reviews Carefully</h3>
+        <p class="mb-4">Look for recent reviews (within the last 3-6 months) to get the most accurate picture. Pay attention to comments about:</p>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li>Tour guide quality</li>
+          <li>Group size</li>
+          <li>Meeting point clarity</li>
+          <li>Value for money</li>
+          <li>What's included vs. what costs extra</li>
+        </ul>
+
+        <h3 class="text-2xl font-bold mt-6 mb-3">3. Consider Combo Deals</h3>
+        <p class="mb-6">GetYourGuide often offers combo packages that bundle multiple attractions or activities at a discounted price. These can save you money and time!</p>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🌍 Top Destinations to Explore on GetYourGuide</h2>
+
+        <h3 class="text-2xl font-bold mt-6 mb-3">Paris, France 🗼</h3>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li>Eiffel Tower skip-the-line tickets</li>
+          <li>Louvre Museum guided tours</li>
+          <li>Seine River cruises</li>
+          <li>Versailles Palace day trips</li>
+          <li>Montmartre walking tours</li>
+        </ul>
+
+        <h3 class="text-2xl font-bold mt-6 mb-3">Rome, Italy 🏛️</h3>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li>Colosseum and Roman Forum tours</li>
+          <li>Vatican Museums and Sistine Chapel</li>
+          <li>Food tours in Trastevere</li>
+          <li>Pompeii day trips</li>
+          <li>Cooking classes</li>
+        </ul>
+
+        <h3 class="text-2xl font-bold mt-6 mb-3">Barcelona, Spain 🏖️</h3>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li>Sagrada Familia fast-track tickets</li>
+          <li>Park Güell guided tours</li>
+          <li>Tapas and wine tasting tours</li>
+          <li>Montserrat day trips</li>
+          <li>Flamenco shows</li>
+        </ul>
+
+        <h3 class="text-2xl font-bold mt-6 mb-3">New York City, USA 🗽</h3>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li>Statue of Liberty and Ellis Island</li>
+          <li>Empire State Building tickets</li>
+          <li>Broadway show tickets</li>
+          <li>Food tours in Brooklyn</li>
+          <li>Central Park bike tours</li>
+        </ul>
+
+        <div class="bg-primary-50 rounded-lg p-6 mb-8">
+          <h3 class="text-xl font-bold mb-3">🎯 Find Tours in Your Destination</h3>
+          <p class="mb-4">Whether you're visiting Paris, Rome, New York, or anywhere else in the world, GetYourGuide has thousands of verified experiences waiting for you.</p>
+          <a href="https://www.getyourguide.com/s?partner_id=NEGURHX&et=694395&lc=29" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
+            👉 Browse Tours by Destination
+          </a>
+        </div>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">💰 Money-Saving Tips for Booking Activities</h2>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li><strong>Book in Advance:</strong> Early bird discounts are common</li>
+          <li><strong>Look for Combo Deals:</strong> Bundle attractions to save 20-30%</li>
+          <li><strong>Check for Promotions:</strong> GetYourGuide regularly offers seasonal deals</li>
+          <li><strong>Compare Similar Tours:</strong> Different operators may offer the same experience at different prices</li>
+          <li><strong>Travel During Shoulder Season:</strong> Activities are often cheaper outside peak tourist season</li>
+        </ul>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">✅ Quick Booking Checklist</h2>
+        <p class="mb-4">Before you book your GetYourGuide experience:</p>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li>✓ Read recent reviews (last 3-6 months)</li>
+          <li>✓ Check what's included in the price</li>
+          <li>✓ Verify the meeting point and time</li>
+          <li>✓ Understand the cancellation policy</li>
+          <li>✓ Check if you need to print tickets or if mobile is accepted</li>
+          <li>✓ Look for combo deals to save money</li>
+          <li>✓ Book popular attractions 2-4 weeks in advance</li>
+        </ul>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🌟 Final Thoughts</h2>
+        <p class="mb-4">The best trips are filled with unforgettable experiences, not hours of planning stress. GetYourGuide takes the guesswork out of finding amazing things to do, so you can focus on what really matters – making memories.</p>
+        <p class="mb-6">From world-famous landmarks to hidden local gems, from relaxing food tours to heart-pounding adventures, there's something for every traveler. With verified reviews, flexible booking, and instant confirmation, you can book with confidence.</p>
+
+        <div class="bg-gradient-to-r from-primary-50 to-primary-100 rounded-xl p-8 mb-6">
+          <h3 class="text-2xl font-bold mb-4">🎯 Ready to Start Exploring?</h3>
+          <p class="text-gray-700 mb-6">Don't let planning stress hold you back from amazing experiences. Discover thousands of tours and activities worldwide with GetYourGuide.</p>
+          <a href="https://www.getyourguide.com/s?partner_id=NEGURHX&et=694395&lc=29" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
+            👉 Explore GetYourGuide Now
+          </a>
+        </div>
+
+        <p class="text-sm text-gray-600 italic mt-8">Disclosure: This post contains affiliate links. When you book through GetYourGuide using our links, we may earn a small commission at no extra cost to you. This helps us keep creating helpful travel content. Thank you for your support!</p>
+      `,
+    },
+    'istanbul-activities-guide': {
+      id: 'istanbul-activities-guide',
+      title: '🕌 Top 11 Must-Do Activities in Istanbul: Your Ultimate Experience Guide',
+      author: 'Gubbu Team',
+      date: 'January 4, 2026',
+      readTime: '9 min read',
+      category: 'Destinations',
+      image: 'https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=1200&auto=format&fit=crop',
+      content: `
+        <p class="text-lg mb-6">Istanbul – where East meets West, where ancient history blends with modern culture, and where every corner tells a story. This magical city straddling two continents offers some of the world's most unforgettable experiences.</p>
+        
+        <p class="mb-6">Whether you're cruising the Bosphorus at sunset, exploring Byzantine wonders, or relaxing in a traditional Turkish bath, Istanbul has something for every traveler. Here's your complete guide to the <strong>top 11 must-do activities</strong> in Istanbul!</p>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🚢 1. Bosphorus Dinner Cruise & Show with Private Table</h2>
+        <p class="mb-2"><strong>Price:</strong> From $29 (was $37) – Save 22%!</p>
+        <p class="mb-2"><strong>Rating:</strong> ⭐ 4.8/5 (60,000+ reviews)</p>
+        <p class="mb-6"><strong>Duration:</strong> 3 hours</p>
+
+        <h3 class="text-2xl font-bold mt-6 mb-3">Why You'll Love It:</h3>
+        <p class="mb-4">Experience Istanbul's skyline illuminated at night while enjoying a delicious Turkish dinner and live entertainment. Your private table ensures an intimate experience as you cruise past iconic landmarks like the Dolmabahçe Palace, Maiden's Tower, and Bosphorus Bridge.</p>
+
+        <p class="mb-2"><strong>What's Included:</strong></p>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li>Private table seating</li>
+          <li>Traditional Turkish dinner</li>
+          <li>Live music and belly dancing show</li>
+          <li>Skip-the-line boarding</li>
+          <li>Stunning views of both European and Asian sides</li>
+        </ul>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🌙 2. Bosphorus Dinner Cruise & Turkish Night Show</h2>
+        <p class="mb-2"><strong>Price:</strong> From $27 (was $39) – Save 31%!</p>
+        <p class="mb-2"><strong>Rating:</strong> ⭐ 4.9/5 (12,800+ reviews)</p>
+        <p class="mb-2"><strong>Duration:</strong> 3 hours</p>
+        <p class="mb-6"><strong>Certified by GetYourGuide</strong></p>
+
+        <p class="mb-4">This highly-rated experience includes hotel pickup and drop-off, making it incredibly convenient. Enjoy authentic Turkish cuisine while watching traditional folk dances, whirling dervishes, and belly dancing performances.</p>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">⛵ 3. Bosphorus Sunset Cruise on Luxury Yacht</h2>
+        <p class="mb-2"><strong>Price:</strong> From $19</p>
+        <p class="mb-2"><strong>Rating:</strong> ⭐ 4.9/5 (2,700+ reviews)</p>
+        <p class="mb-6"><strong>Duration:</strong> 135 minutes</p>
+
+        <p class="mb-6">Sail the Bosphorus on a luxury yacht during the golden hour. Your live guide shares fascinating stories about the palaces, fortresses, and mansions lining the shores while you watch the sun set over this historic waterway.</p>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🌊 4. Daytime or Sunset Sightseeing Cruise</h2>
+        <p class="mb-2"><strong>Price:</strong> From $8 – Best Value!</p>
+        <p class="mb-2"><strong>Rating:</strong> ⭐ 4.8/5 (14,000+ reviews)</p>
+        <p class="mb-6"><strong>Duration:</strong> 2 hours</p>
+
+        <p class="mb-6">Don't let a tight budget stop you from experiencing the Bosphorus! This affordable cruise offers the same stunning views with an informative audio guide available in multiple languages.</p>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🎉 5. New Year's Eve Bosphorus Cruise</h2>
+        <p class="mb-2"><strong>Price:</strong> From $240</p>
+        <p class="mb-2"><strong>Rating:</strong> ⭐ 4.9/5</p>
+        <p class="mb-6"><strong>Duration:</strong> 4 hours</p>
+
+        <p class="mb-6">Celebrate New Year's Eve on the Bosphorus with a spectacular gala dinner, live entertainment, and front-row seats to Istanbul's fireworks display over the water.</p>
+
+        <div class="bg-gradient-to-r from-primary-50 to-primary-100 rounded-xl p-8 mb-8">
+          <h3 class="text-2xl font-bold mb-4">🎯 Ready to Book Your Bosphorus Cruise?</h3>
+          <p class="text-gray-700 mb-6">Choose from budget-friendly options to luxury experiences. All cruises offer skip-the-line access and verified reviews from thousands of travelers.</p>
+          <a href="https://www.getyourguide.com/s?partner_id=NEGURHX&et=415437&lc=56" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
+            👉 Browse All Istanbul Cruises & Activities
+          </a>
+        </div>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🏛️ 6. Topkapi Palace and Harem Ticket</h2>
+        <p class="mb-2"><strong>Price:</strong> From $79 (was $93)</p>
+        <p class="mb-2"><strong>Rating:</strong> ⭐ 4.4/5 (2,200+ reviews)</p>
+        <p class="mb-6"><strong>Duration:</strong> 20 minutes - 3 hours</p>
+
+        <p class="mb-4">Step into the opulent world of Ottoman sultans at Topkapi Palace. This sprawling complex served as the primary residence of Ottoman sultans for nearly 400 years.</p>
+
+        <p class="mb-2"><strong>What You'll Discover:</strong></p>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li>Imperial Treasury (including the famous Topkapi Dagger)</li>
+          <li>Sacred Relics Chamber</li>
+          <li>Harem (where the sultan's family lived)</li>
+          <li>Stunning courtyards and pavilions</li>
+          <li>Panoramic Bosphorus views</li>
+          <li>Audio guide in 10+ languages</li>
+        </ul>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">💧 7. Basilica Cistern Fast-Track Entry</h2>
+        <p class="mb-2"><strong>Price:</strong> From $35</p>
+        <p class="mb-6"><strong>Rating:</strong> ⭐ 4.6/5 (7,200+ reviews)</p>
+
+        <p class="mb-4">This underground marvel, built in 532 AD, is one of Istanbul's most atmospheric attractions. Walk among 336 marble columns in this dimly-lit ancient water reservoir.</p>
+
+        <p class="mb-2"><strong>Highlights:</strong></p>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li>Medusa head columns (upside-down and sideways!)</li>
+          <li>Atmospheric lighting and music</li>
+          <li>9,800 square meters of underground architecture</li>
+          <li>Audio guide with historical context</li>
+          <li>Fast-track entry (skip the long lines)</li>
+        </ul>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🗼 8. Galata Tower Entry Ticket</h2>
+        <p class="mb-2"><strong>Price:</strong> From $41</p>
+        <p class="mb-6"><strong>Rating:</strong> ⭐ 4.3/5 (420 reviews)</p>
+
+        <p class="mb-6">Climb this 67-meter medieval stone tower for panoramic views of Istanbul's skyline, the Golden Horn, and the Bosphorus.</p>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🕌 9. Hagia Sophia Skip-the-Line Ticket</h2>
+        <p class="mb-2"><strong>Duration:</strong> 1 hour</p>
+        <p class="mb-2"><strong>Certified by GetYourGuide</strong></p>
+        <p class="mb-6"><strong>Very Popular:</strong> 120+ bookings yesterday!</p>
+
+        <p class="mb-6">Built in 537 AD, Hagia Sophia has served as a church, mosque, museum, and mosque again. Its massive dome and stunning mosaics make it one of the world's most important architectural achievements.</p>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🛁 10. Private Turkish Bath, Massage, and Spa</h2>
+        <p class="mb-2"><strong>Price:</strong> From $52</p>
+        <p class="mb-2"><strong>Rating:</strong> ⭐ 4.6/5 (3,000+ reviews)</p>
+        <p class="mb-6"><strong>Duration:</strong> 50-125 minutes</p>
+
+        <p class="mb-4">Treat yourself to a traditional Ottoman hamam experience in a historic bathhouse. This centuries-old ritual will leave you feeling refreshed and rejuvenated.</p>
+
+        <p class="mb-2"><strong>The Traditional Hamam Ritual:</strong></p>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li>Warm-up in the heated marble room (15 mins)</li>
+          <li>Exfoliation with traditional kese mitt</li>
+          <li>Foam massage with olive oil soap</li>
+          <li>Rinse with warm water</li>
+          <li>Relaxation in the cooling room</li>
+          <li>Optional: Add oil massage or facial</li>
+        </ul>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🍽️ 11. Turkish Food Night and Rooftop Experience</h2>
+        <p class="mb-2"><strong>Rating:</strong> Top Rated</p>
+        <p class="mb-6"><strong>Duration:</strong> 3 hours</p>
+
+        <p class="mb-6">Explore Istanbul's food scene with a local guide, sampling authentic Turkish dishes while enjoying rooftop views of the city.</p>
+
+        <div class="bg-primary-50 rounded-lg p-6 mb-8">
+          <h3 class="text-xl font-bold mb-3">🎯 Book Your Istanbul Activities Now</h3>
+          <p class="mb-4">All these experiences are available with skip-the-line access, verified reviews, and flexible cancellation. Book early to secure your preferred dates!</p>
+          <a href="https://www.getyourguide.com/s?partner_id=NEGURHX&et=415437&lc=56" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
+            👉 Explore All Istanbul Experiences
+          </a>
+        </div>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">💰 Istanbul Activities: Budget Breakdown</h2>
+
+        <h3 class="text-2xl font-bold mt-6 mb-3">Budget-Friendly (Under $50):</h3>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li>Bosphorus Sightseeing Cruise: <strong>$8</strong></li>
+          <li>Bosphorus Sunset Yacht: <strong>$19</strong></li>
+          <li>Bosphorus Dinner Cruise: <strong>$27-29</strong></li>
+          <li>Basilica Cistern: <strong>$35</strong></li>
+          <li>Galata Tower: <strong>$41</strong></li>
+        </ul>
+
+        <h3 class="text-2xl font-bold mt-6 mb-3">Mid-Range ($50-100):</h3>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li>Turkish Bath & Spa: <strong>$52</strong></li>
+          <li>Topkapi Palace & Harem: <strong>$79</strong></li>
+        </ul>
+
+        <h3 class="text-2xl font-bold mt-6 mb-3">Premium Experiences ($100+):</h3>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li>New Year's Eve Cruise: <strong>$240</strong></li>
+        </ul>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">📅 Sample 3-Day Istanbul Itinerary</h2>
+
+        <h3 class="text-2xl font-bold mt-6 mb-3">Day 1: Historical Highlights</h3>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li>Morning: Topkapi Palace (3 hours)</li>
+          <li>Afternoon: Hagia Sophia (1-2 hours)</li>
+          <li>Evening: Bosphorus Dinner Cruise (3 hours)</li>
+        </ul>
+
+        <h3 class="text-2xl font-bold mt-6 mb-3">Day 2: Underground & Heights</h3>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li>Morning: Basilica Cistern (1 hour)</li>
+          <li>Afternoon: Explore Sultanahmet area</li>
+          <li>Late Afternoon: Galata Tower for sunset (1 hour)</li>
+          <li>Evening: Turkish Food Tour (3 hours)</li>
+        </ul>
+
+        <h3 class="text-2xl font-bold mt-6 mb-3">Day 3: Relaxation & Culture</h3>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li>Morning: Turkish Bath & Spa (2 hours)</li>
+          <li>Afternoon: Shopping at Grand Bazaar</li>
+          <li>Evening: Sunset Yacht Cruise (2.5 hours)</li>
+        </ul>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🎫 Booking Tips for Istanbul</h2>
+
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li><strong>Book in Advance:</strong> Popular activities sell out 1-2 weeks ahead during peak season</li>
+          <li><strong>Skip-the-Line is Worth It:</strong> Save 2-3 hours at major attractions</li>
+          <li><strong>Check What's Included:</strong> Some tickets include audio guides, hotel pickup, or meals</li>
+          <li><strong>Flexible Cancellation:</strong> Choose activities with free cancellation up to 24 hours before</li>
+          <li><strong>Read Recent Reviews:</strong> Check reviews from the last 3-6 months</li>
+        </ul>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🌟 Best Time to Visit Istanbul</h2>
+
+        <p class="mb-2"><strong>Peak Season (April-October):</strong></p>
+        <ul class="list-disc pl-6 mb-4 space-y-2">
+          <li>Best weather, all activities available, long daylight hours</li>
+          <li>Book 2-4 weeks in advance</li>
+        </ul>
+
+        <p class="mb-2"><strong>Shoulder Season (March, November):</strong></p>
+        <ul class="list-disc pl-6 mb-4 space-y-2">
+          <li>Fewer crowds, moderate prices, pleasant weather</li>
+          <li>Book 1-2 weeks in advance</li>
+        </ul>
+
+        <p class="mb-2"><strong>Winter (December-February):</strong></p>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li>Lowest prices, no crowds, festive atmosphere</li>
+          <li>Can book last-minute</li>
+        </ul>
+
+        <p class="mb-6"><strong>Best Overall:</strong> April-May or September-October for perfect weather and manageable crowds.</p>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🎯 Which Activities Should You Prioritize?</h2>
+
+        <h3 class="text-2xl font-bold mt-6 mb-3">Must-Do for First-Time Visitors:</h3>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li>✅ Bosphorus Dinner Cruise</li>
+          <li>✅ Topkapi Palace</li>
+          <li>✅ Basilica Cistern</li>
+        </ul>
+
+        <h3 class="text-2xl font-bold mt-6 mb-3">Best for Couples:</h3>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li>💑 Sunset Yacht Cruise</li>
+          <li>💑 Turkish Bath & Spa</li>
+          <li>💑 Rooftop Food Experience</li>
+        </ul>
+
+        <h3 class="text-2xl font-bold mt-6 mb-3">Best for Budget Travelers:</h3>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li>💰 $8 Sightseeing Cruise</li>
+          <li>💰 Basilica Cistern</li>
+          <li>💰 Galata Tower</li>
+        </ul>
+
+        <div class="bg-gradient-to-r from-primary-50 to-primary-100 rounded-xl p-8 mb-6">
+          <h3 class="text-2xl font-bold mb-4">🎯 Ready to Experience Istanbul?</h3>
+          <p class="text-gray-700 mb-6">From $8 budget cruises to $240 luxury experiences, there's something for every traveler. Book with confidence with verified reviews and flexible cancellation.</p>
+          <a href="https://www.getyourguide.com/s?partner_id=NEGURHX&et=415437&lc=56" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
+            👉 Browse All Istanbul Activities Now
+          </a>
+        </div>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🌟 Final Thoughts</h2>
+        <p class="mb-4">Istanbul is a city that rewards exploration. Whether you're sailing the Bosphorus at sunset, marveling at Byzantine architecture, or relaxing in a traditional hamam, each experience offers a unique window into this city's incredible 2,600-year history.</p>
+        <p class="mb-6">The activities listed here represent the best of what Istanbul has to offer – all with verified reviews, skip-the-line access, and flexible booking options. Start with a Bosphorus cruise to get your bearings, then dive into the historical sites. End your trip with a relaxing Turkish bath – the perfect way to reflect on your Istanbul adventure!</p>
+
+        <p class="text-sm text-gray-600 italic mt-8">Disclosure: This post contains affiliate links. When you book through GetYourGuide using our links, we may earn a small commission at no extra cost to you. This helps us keep creating helpful travel content. Thank you for your support!</p>
+      `,
+    },
   };
 
   // Get the post based on ID, default to Southeast Asia post if not found
@@ -766,6 +1201,18 @@ export function BlogPost() {
       id: 'new-years-eve-usa-2025',
       title: 'New Year\'s Eve 2025 USA: Best Cities to Celebrate',
       image: 'https://images.unsplash.com/photo-1467810563316-b5476525c0f9?w=400&auto=format&fit=crop',
+      category: 'Destinations',
+    },
+    {
+      id: 'getyourguide-tours-activities',
+      title: 'Discover Amazing Tours & Activities with GetYourGuide',
+      image: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&auto=format&fit=crop',
+      category: 'Travel Tips',
+    },
+    {
+      id: 'istanbul-activities-guide',
+      title: 'Top 11 Must-Do Activities in Istanbul',
+      image: 'https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=400&auto=format&fit=crop',
       category: 'Destinations',
     },
   ];

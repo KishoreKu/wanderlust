@@ -66,6 +66,26 @@ export function Blog() {
       category: 'Safety',
       readTime: '7 min read',
     },
+    {
+      id: 'getyourguide-tours-activities',
+      title: '🎯 Discover Amazing Tours & Activities with GetYourGuide',
+      excerpt: 'Skip the planning stress and discover unforgettable experiences! Learn how GetYourGuide helps you find the best tours, activities, and attractions worldwide with skip-the-line access, expert guides, and flexible booking.',
+      image: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800&auto=format&fit=crop',
+      date: 'Jan 4, 2026',
+      category: 'Tips',
+      readTime: '7 min read',
+      featured: true,
+    },
+    {
+      id: 'istanbul-activities-guide',
+      title: '🕌 Top 11 Must-Do Activities in Istanbul',
+      excerpt: 'Discover the best tours and activities in Istanbul! From magical Bosphorus cruises to historic landmarks and traditional Turkish baths. Complete guide with prices, ratings, and insider tips.',
+      image: 'https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=800&auto=format&fit=crop',
+      date: 'Jan 4, 2026',
+      category: 'Destinations',
+      readTime: '9 min read',
+      featured: true,
+    },
   ];
 
   const categories = ['All', 'Destinations', 'Tips', 'Planning', 'Safety'];
