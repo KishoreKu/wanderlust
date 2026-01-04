@@ -230,7 +230,7 @@ export function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Budapest */}
             <Link to="/blog/budapest-activities-guide" className="group">
-              <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer">
                 <div className="relative">
                   <img
                     src="https://images.unsplash.com/photo-1541849546-216549ae216d?w=800&auto=format&fit=crop"
@@ -259,7 +259,7 @@ export function Home() {
 
             {/* Marrakech */}
             <Link to="/blog/marrakech-activities-guide" className="group">
-              <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer">
                 <div className="relative">
                   <img
                     src="https://images.unsplash.com/photo-1597212618440-806262de4f6b?w=800&auto=format&fit=crop"
@@ -288,7 +288,7 @@ export function Home() {
 
             {/* Dubai */}
             <Link to="/blog/dubai-desert-safari-guide" className="group">
-              <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer">
                 <div className="relative">
                   <img
                     src="https://images.unsplash.com/photo-1451337516015-6b6e9a44a8a3?w=800&auto=format&fit=crop"
@@ -317,7 +317,7 @@ export function Home() {
 
             {/* Istanbul */}
             <Link to="/blog/istanbul-activities-guide" className="group">
-              <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer">
                 <div className="relative">
                   <img
                     src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=800&auto=format&fit=crop"
@@ -346,7 +346,7 @@ export function Home() {
 
             {/* GetYourGuide General */}
             <Link to="/blog/getyourguide-tours-activities" className="group md:col-span-2 lg:col-span-1">
-              <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer">
                 <div className="relative">
                   <img
                     src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800&auto=format&fit=crop"
