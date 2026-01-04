@@ -12,6 +12,16 @@ export function Blog() {
   const blogPosts = [
     // New GetYourGuide Destination Guides - Featured at Top
     {
+      id: 'rome-colosseum-tours-guide',
+      title: '🏛️ Best Rome Colosseum Tours',
+      excerpt: 'Skip the 2-3 hour lines! From underground chambers to arena floor access. Complete guide to the best Colosseum tours with prices starting from $20.',
+      image: 'https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=800&auto=format&fit=crop',
+      date: 'Jan 4, 2026',
+      category: 'Destinations',
+      readTime: '10 min read',
+      featured: true,
+    },
+    {
       id: 'budapest-activities-guide',
       title: '🇭🇺 Top Budapest Activities & Experiences',
       excerpt: 'Experience the Pearl of the Danube! From river cruises to famous ruin bars, thermal spas, and food tours. Complete guide with prices starting from $11.',
