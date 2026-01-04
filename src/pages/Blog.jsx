@@ -71,6 +71,16 @@ export function Blog() {
       readTime: '7 min read',
       featured: true,
     },
+    {
+      id: 'auschwitz-birkenau-visit-guide',
+      title: 'Visiting Auschwitz-Birkenau: Complete Guide from Krakow',
+      excerpt: 'A respectful guide to visiting Auschwitz-Birkenau Memorial and Museum. Essential information about tours, transportation, and what to expect at this important historical site.',
+      image: 'https://images.unsplash.com/photo-1609137144813-7d9921338f24?w=800&auto=format&fit=crop',
+      date: 'Jan 4, 2026',
+      category: 'Destinations',
+      readTime: '12 min read',
+      featured: true,
+    },
     // Original Blog Posts
     {
       id: 'christmas-2025',

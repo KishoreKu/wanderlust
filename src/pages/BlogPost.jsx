@@ -1896,6 +1896,110 @@ export function BlogPost() {
         <p class="text-sm text-gray-600 italic mt-8">Disclosure: This post contains affiliate links. When you book through GetYourGuide using our links, we may earn a small commission at no extra cost to you. This helps us keep creating helpful travel content. Thank you for your support!</p>
       `,
     },
+    'auschwitz-birkenau-visit-guide': {
+      id: 'auschwitz-birkenau-visit-guide',
+      title: 'Visiting Auschwitz-Birkenau: Complete Guide from Krakow',
+      author: 'Gubbu Team',
+      date: 'January 4, 2026',
+      readTime: '12 min read',
+      category: 'Destinations',
+      image: 'https://images.unsplash.com/photo-1609137144813-7d9921338f24?w=1200&auto=format&fit=crop',
+      content: `
+        <p class="text-lg mb-6">Auschwitz-Birkenau stands as one of the most important historical sites in the world – a place of profound tragedy and a powerful reminder of the Holocaust. This guide provides essential information for planning a respectful and meaningful visit.</p>
+        
+        <p class="mb-6"><strong>Important:</strong> This is not tourism in the traditional sense; it's an act of remembrance, education, and bearing witness to history.</p>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">Understanding Auschwitz-Birkenau</h2>
+        <p class="mb-6">Between 1940 and 1945, Nazi Germany operated Auschwitz-Birkenau as the largest concentration and extermination camp complex. Over 1.1 million people, predominantly Jews, were murdered here. Today, it serves as a memorial, museum, and UNESCO World Heritage Site.</p>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🚌 1. Guided Tour with Transportation – RECOMMENDED</h2>
+        <p class="mb-2"><strong>Price:</strong> From $21</p>
+        <p class="mb-2"><strong>Rating:</strong> ⭐ 4.5/5 (31,868+ reviews)</p>
+        <p class="mb-6"><strong>Duration:</strong> 7 hours (including travel)</p>
+
+        <p class="mb-6">Round-trip transportation from Krakow, hotel pickup, skip-the-line entry, professional guide, and visit to both Auschwitz I and Birkenau.</p>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🏛️ 2. Auschwitz + Wieliczka Salt Mine Combo</h2>
+        <p class="mb-2"><strong>Price:</strong> From $54 (was $108) – 50% off</p>
+        <p class="mb-2"><strong>Rating:</strong> ⭐ 4.7/5 (8,708+ reviews)</p>
+        <p class="mb-6"><strong>Duration:</strong> 11 hours</p>
+
+        <p class="mb-6">Morning visit to Auschwitz-Birkenau, afternoon visit to Wieliczka Salt Mine. Comprehensive day trip with transportation and guides at both locations.</p>
+
+        <div class="bg-gray-100 rounded-xl p-8 mb-8 border-l-4 border-gray-600">
+          <h3 class="text-2xl font-bold mb-4">📚 Plan Your Visit Respectfully</h3>
+          <p class="text-gray-700 mb-6">Visiting Auschwitz-Birkenau requires advance booking and respectful behavior. All tours include professional guides who provide essential historical context.</p>
+          <a href="https://www.getyourguide.com/s?partner_id=NEGURHX&et=88880&lc=147222" target="_blank" rel="nofollow noopener" class="inline-block bg-gray-700 text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors">
+            👉 View Available Tours
+          </a>
+        </div>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">📋 Essential Visitor Guidelines</h2>
+
+        <h3 class="text-2xl font-bold mt-6 mb-3">Respectful Behavior (REQUIRED):</h3>
+        <p class="mb-4">This is a cemetery and memorial. Visitors must:</p>
+        
+        <p class="mb-2"><strong>DO:</strong></p>
+        <ul class="list-disc pl-6 mb-4 space-y-1">
+          <li>✅ Maintain silence and respectful demeanor</li>
+          <li>✅ Listen carefully to your guide</li>
+          <li>✅ Follow all posted rules</li>
+          <li>✅ Dress modestly and appropriately</li>
+        </ul>
+
+        <p class="mb-2"><strong>DON'T:</strong></p>
+        <ul class="list-disc pl-6 mb-6 space-y-1">
+          <li>❌ Take selfies or pose for photos</li>
+          <li>❌ Eat, drink, or smoke on site</li>
+          <li>❌ Touch artifacts or structures</li>
+          <li>❌ Make noise or behave disrespectfully</li>
+        </ul>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🎫 Booking Information</h2>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li><strong>Advance Booking Required:</strong> Book 2-4 weeks ahead (peak season)</li>
+          <li><strong>Timed Entry:</strong> Must arrive at designated time</li>
+          <li><strong>ID Required:</strong> Bring valid identification</li>
+          <li><strong>Age:</strong> Recommended for ages 14+</li>
+        </ul>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">What to Expect</h2>
+        <p class="mb-4">Your visit includes both sites:</p>
+        
+        <p class="mb-2"><strong>Auschwitz I:</strong> Original camp with preserved buildings, exhibitions, and the infamous "Arbeit Macht Frei" gate (2-2.5 hours)</p>
+        <p class="mb-6"><strong>Auschwitz II-Birkenau:</strong> Larger extermination camp with railway tracks, destroyed gas chambers, and memorial monuments (1-1.5 hours)</p>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">Preparing Emotionally</h2>
+        <p class="mb-4">Visiting Auschwitz-Birkenau is emotionally challenging. Visitors commonly experience profound sadness, anger, and difficulty processing the scale of suffering.</p>
+        <p class="mb-6"><strong>This is normal.</strong> Allow time for reflection afterward and don't schedule demanding activities after your visit.</p>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">Why This Matters Today</h2>
+        <p class="mb-4">Auschwitz-Birkenau serves as:</p>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li><strong>Evidence:</strong> Undeniable proof of the Holocaust</li>
+          <li><strong>Warning:</strong> Reminder of where hatred leads</li>
+          <li><strong>Education:</strong> Teaching tool for future generations</li>
+          <li><strong>Memorial:</strong> Honoring victims and survivors</li>
+        </ul>
+
+        <div class="bg-gray-100 rounded-xl p-8 mb-6 border-l-4 border-gray-600">
+          <h3 class="text-2xl font-bold mb-4">📚 Plan Your Visit</h3>
+          <p class="text-gray-700 mb-6">Visiting Auschwitz-Birkenau is an important educational experience. Book in advance and prepare for a profound, emotionally challenging visit that will stay with you forever.</p>
+          <a href="https://www.getyourguide.com/s?partner_id=NEGURHX&et=88880&lc=147222" target="_blank" rel="nofollow noopener" class="inline-block bg-gray-700 text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors">
+            👉 Book Your Visit
+          </a>
+        </div>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">Final Thoughts</h2>
+        <p class="mb-4">Visiting Auschwitz-Birkenau is not entertainment or typical tourism. It's an act of remembrance, education, and moral responsibility. The experience will be difficult, emotionally draining, and profoundly moving.</p>
+        <p class="mb-6">But it's also essential. By visiting, learning, and sharing what you've learned, you help ensure that the victims are remembered and that the lessons of the Holocaust are never forgotten.</p>
+
+        <p class="mb-6 text-xl font-semibold">"Those who cannot remember the past are condemned to repeat it." – George Santayana</p>
+        <p class="mb-6 text-xl font-bold">Never forget.</p>
+
+        <p class="text-sm text-gray-600 italic mt-8">Note: This post contains affiliate links to help you book your visit. A portion of proceeds supports Holocaust education and remembrance initiatives.</p>
+      `,
+    },
   };
 
   // Get the post based on ID, default to Southeast Asia post if not found
@@ -1973,6 +2077,12 @@ export function BlogPost() {
       id: 'rome-colosseum-tours-guide',
       title: 'Best Rome Colosseum Tours',
       image: 'https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=400&auto=format&fit=crop',
+      category: 'Destinations',
+    },
+    {
+      id: 'auschwitz-birkenau-visit-guide',
+      title: 'Visiting Auschwitz-Birkenau Memorial',
+      image: 'https://images.unsplash.com/photo-1609137144813-7d9921338f24?w=400&auto=format&fit=crop',
       category: 'Destinations',
     },
   ];
