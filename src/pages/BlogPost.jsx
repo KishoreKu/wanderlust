@@ -2000,6 +2000,160 @@ export function BlogPost() {
         <p class="text-sm text-gray-600 italic mt-8">Note: This post contains affiliate links to help you book your visit. A portion of proceeds supports Holocaust education and remembrance initiatives.</p>
       `,
     },
+    'las-vegas-activities-guide': {
+      id: 'las-vegas-activities-guide',
+      title: '🎰 Best Las Vegas Activities & Tours: Complete 2026 Guide',
+      author: 'Gubbu Team',
+      date: 'January 4, 2026',
+      readTime: '11 min read',
+      category: 'Destinations',
+      image: 'https://images.unsplash.com/photo-1605833556294-ea5c7a74f57d?w=1200&auto=format&fit=crop',
+      content: `
+        <p class="text-lg mb-6">Las Vegas – the Entertainment Capital of the World! Beyond casinos, Vegas offers world-class shows, breathtaking desert adventures, and unforgettable experiences!</p>
+        
+        <p class="mb-6">We've analyzed <strong>over 50,000 reviews</strong> to bring you the <strong>best Las Vegas activities</strong> from Grand Canyon tours to Cirque du Soleil shows!</p>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🏜️ 1. Grand Canyon West + Hoover Dam – BEST SELLER!</h2>
+        <p class="mb-2"><strong>Price:</strong> From $99</p>
+        <p class="mb-2"><strong>Rating:</strong> ⭐ 4.9/5 (18,461+ reviews)</p>
+        <p class="mb-6"><strong>Duration:</strong> 11-12 hours</p>
+
+        <p class="mb-6">Vegas's #1 tour! Visit the iconic Grand Canyon West Rim and Hoover Dam with lunch, transportation, and optional Skywalk upgrade.</p>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🏜️ 2. Lower Antelope Canyon & Horseshoe Bend</h2>
+        <p class="mb-2"><strong>Price:</strong> From $189</p>
+        <p class="mb-2"><strong>Rating:</strong> ⭐ 4.9/5 (6,444+ reviews)</p>
+        <p class="mb-6"><strong>Duration:</strong> 14-16 hours | Likely to sell out!</p>
+
+        <p class="mb-6">Photographer's paradise! Visit two of the Southwest's most Instagram-worthy locations in one epic day.</p>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🌄 3. Valley of Fire Half-Day Tour</h2>
+        <p class="mb-2"><strong>Price:</strong> From $99</p>
+        <p class="mb-2"><strong>Rating:</strong> ⭐ 5.0/5 (1,692+ reviews) – PERFECT!</p>
+        <p class="mb-6"><strong>Duration:</strong> 7.5 hours</p>
+
+        <p class="mb-6">Perfect 5.0 rating! Explore stunning red rock formations just 1 hour from Vegas. Small group tour.</p>
+
+        <div class="bg-gradient-to-r from-primary-50 to-primary-100 rounded-xl p-8 mb-8">
+          <h3 class="text-2xl font-bold mb-4">🎰 Ready to Book Your Vegas Adventure?</h3>
+          <p class="text-gray-700 mb-6">From $30 budget options to $249 premium experiences. Over 1,000+ activities with verified reviews!</p>
+          <a href="https://www.viator.com/Las-Vegas/d684-ttd?pid=p00282987&mcid=42383&medium=link&medium_version=selector&campaign=gubbu-lasvegas" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
+            👉 Browse All Las Vegas Activities
+          </a>
+        </div>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🎭 4. "O" by Cirque du Soleil</h2>
+        <p class="mb-2"><strong>Price:</strong> From $122</p>
+        <p class="mb-2"><strong>Rating:</strong> ⭐ 4.3/5 (1,414+ reviews)</p>
+        <p class="mb-6"><strong>Duration:</strong> 1.5 hours</p>
+
+        <p class="mb-6">The most iconic Cirque show! Aquatic masterpiece performed in a 1.5 million-gallon pool at Bellagio.</p>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🎭 5. Michael Jackson ONE</h2>
+        <p class="mb-2"><strong>Price:</strong> From $106</p>
+        <p class="mb-2"><strong>Rating:</strong> ⭐ 4.5/5 (1,348+ reviews)</p>
+        <p class="mb-6"><strong>Duration:</strong> 1.5 hours</p>
+
+        <p class="mb-6">Celebrate the King of Pop with incredible acrobatics and his greatest hits!</p>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🚁 6. Helicopter Night Strip Flight</h2>
+        <p class="mb-2"><strong>Price:</strong> From $89</p>
+        <p class="mb-2"><strong>Rating:</strong> ⭐ 4.3/5 (5,646+ reviews)</p>
+        <p class="mb-6"><strong>Duration:</strong> 2-3 hours</p>
+
+        <p class="mb-6">Soar over the dazzling Las Vegas Strip at night! Includes hotel pickup and champagne toast.</p>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🏍️ 7. Mojave Desert ATV Tour</h2>
+        <p class="mb-2"><strong>Price:</strong> From $100</p>
+        <p class="mb-2"><strong>Rating:</strong> ⭐ 4.8/5 (7,337+ reviews)</p>
+        <p class="mb-6"><strong>Duration:</strong> 4 hours | Likely to sell out!</p>
+
+        <p class="mb-6">Tear through the Mojave Desert on a powerful ATV! 2 hours of riding with all gear included.</p>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🚗 8. Exotic Car Driving Experience</h2>
+        <p class="mb-2"><strong>Price:</strong> From $249</p>
+        <p class="mb-2"><strong>Rating:</strong> ⭐ 4.9/5 (2,850+ reviews)</p>
+        <p class="mb-6"><strong>Duration:</strong> 2 hours</p>
+
+        <p class="mb-6">Drive Ferrari, Lamborghini, Porsche, and McLaren on real roads! Ultimate bucket list experience.</p>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🎡 9. High Roller Observation Wheel</h2>
+        <p class="mb-2"><strong>Price:</strong> From $30 – BEST VALUE!</p>
+        <p class="mb-2"><strong>Rating:</strong> ⭐ 4.4/5 (3,362+ reviews)</p>
+        <p class="mb-6"><strong>Duration:</strong> 30 minutes</p>
+
+        <p class="mb-6">World's tallest observation wheel! See Vegas from 550 feet up in climate-controlled cabin.</p>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🎨 10. FlyOver Las Vegas</h2>
+        <p class="mb-2"><strong>Price:</strong> From $33</p>
+        <p class="mb-2"><strong>Rating:</strong> ⭐ 4.6/5 (983+ reviews)</p>
+        <p class="mb-6"><strong>Duration:</strong> 30 minutes</p>
+
+        <p class="mb-6">Immersive flight experience with moving seats, wind, mist, and scent effects!</p>
+
+        <div class="bg-primary-50 rounded-lg p-6 mb-8">
+          <h3 class="text-xl font-bold mb-3">🎯 Compare All Vegas Activities</h3>
+          <p class="mb-4">From $30 observation wheels to $249 exotic car experiences!</p>
+          <a href="https://www.viator.com/Las-Vegas/d684-ttd?pid=p00282987&mcid=42383&medium=link&medium_version=selector&campaign=gubbu-lasvegas" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
+            👉 View All Activities
+          </a>
+        </div>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">💰 Price Comparison</h2>
+
+        <h3 class="text-2xl font-bold mt-6 mb-3">Budget ($30-$90):</h3>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li><strong>$30</strong> - High Roller (Best value!)</li>
+          <li><strong>$33</strong> - FlyOver Las Vegas</li>
+          <li><strong>$89</strong> - Helicopter Night Flight</li>
+        </ul>
+
+        <h3 class="text-2xl font-bold mt-6 mb-3">Mid-Range ($95-$189):</h3>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li><strong>$99</strong> - Grand Canyon West (Best seller!)</li>
+          <li><strong>$99</strong> - Valley of Fire (Perfect 5.0!)</li>
+          <li><strong>$100</strong> - Mojave ATV</li>
+          <li><strong>$106</strong> - Michael Jackson ONE</li>
+          <li><strong>$122</strong> - "O" Cirque Show</li>
+          <li><strong>$189</strong> - Antelope Canyon</li>
+        </ul>
+
+        <h3 class="text-2xl font-bold mt-6 mb-3">Premium ($249):</h3>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li><strong>$249</strong> - Exotic Car Driving</li>
+        </ul>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🎫 Booking Tips</h2>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li><strong>Book in Advance:</strong> 1-2 weeks for shows, 2-3 weeks for Grand Canyon</li>
+          <li><strong>Best Times:</strong> Spring/Fall for outdoor activities</li>
+          <li><strong>Money Savers:</strong> Mid-week bookings, combo tickets</li>
+          <li><strong>What's Included:</strong> Most tours include hotel pickup</li>
+        </ul>
+
+        <div class="bg-gradient-to-r from-primary-50 to-primary-100 rounded-xl p-8 mb-6">
+          <h3 class="text-2xl font-bold mb-4">🎰 Ready to Experience Las Vegas?</h3>
+          <p class="text-gray-700 mb-6">From $30 budget activities to $249 luxury experiences. All activities include verified reviews from 50,000+ visitors and flexible cancellation.</p>
+          <a href="https://www.viator.com/Las-Vegas/d684-ttd?pid=p00282987&mcid=42383&medium=link&medium_version=selector&campaign=gubbu-lasvegas" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
+            👉 Book Your Vegas Adventure Now
+          </a>
+        </div>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🌟 Final Thoughts</h2>
+        <p class="mb-4">Las Vegas is so much more than casinos. From Grand Canyon natural wonders to world-class Cirque shows, from desert ATVs to peaceful kayak tours, Vegas offers unforgettable experiences for every traveler.</p>
+
+        <p class="mb-4"><strong>Our Top Picks:</strong></p>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li><strong>Best Overall:</strong> Grand Canyon West ($99) - 18K+ reviews!</li>
+          <li><strong>Best Value:</strong> High Roller ($30)</li>
+          <li><strong>Best Show:</strong> "O" by Cirque ($122)</li>
+          <li><strong>Best Adventure:</strong> Mojave ATV ($100)</li>
+          <li><strong>Best Nature:</strong> Valley of Fire ($99) - Perfect 5.0!</li>
+        </ul>
+
+        <p class="text-sm text-gray-600 italic mt-8">Disclosure: This post contains affiliate links. When you book through Viator using our links, we may earn a small commission at no extra cost to you. This helps us keep creating helpful travel content. Thank you for your support!</p>
+      `,
+    },
   };
 
   // Get the post based on ID, default to Southeast Asia post if not found
@@ -2083,6 +2237,12 @@ export function BlogPost() {
       id: 'auschwitz-birkenau-visit-guide',
       title: 'Visiting Auschwitz-Birkenau Memorial',
       image: 'https://images.unsplash.com/photo-1609137144813-7d9921338f24?w=400&auto=format&fit=crop',
+      category: 'Destinations',
+    },
+    {
+      id: 'las-vegas-activities-guide',
+      title: 'Best Las Vegas Activities & Tours',
+      image: 'https://images.unsplash.com/photo-1605833556294-ea5c7a74f57d?w=400&auto=format&fit=crop',
       category: 'Destinations',
     },
   ];

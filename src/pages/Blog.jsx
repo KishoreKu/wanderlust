@@ -12,6 +12,16 @@ export function Blog() {
   const blogPosts = [
     // New GetYourGuide Destination Guides - Featured at Top
     {
+      id: 'las-vegas-activities-guide',
+      title: '🎰 Best Las Vegas Activities & Tours',
+      excerpt: 'Entertainment Capital of the World! From Grand Canyon tours to Cirque du Soleil shows, helicopter flights, and desert adventures. Complete guide with prices starting from $30.',
+      image: 'https://images.unsplash.com/photo-1605833556294-ea5c7a74f57d?w=800&auto=format&fit=crop',
+      date: 'Jan 4, 2026',
+      category: 'Destinations',
+      readTime: '11 min read',
+      featured: true,
+    },
+    {
       id: 'rome-colosseum-tours-guide',
       title: '🏛️ Best Rome Colosseum Tours',
       excerpt: 'Skip the 2-3 hour lines! From underground chambers to arena floor access. Complete guide to the best Colosseum tours with prices starting from $20.',
