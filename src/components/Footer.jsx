@@ -14,6 +14,7 @@ export function Footer() {
               <li><Link to="/about" className="hover:text-primary-400 transition-colors">How Gubbu Works</Link></li>
               <li><Link to="/blog" className="hover:text-primary-400 transition-colors">Guides</Link></li>
               <li><Link to="/blog" className="hover:text-primary-400 transition-colors">Blog</Link></li>
+              <li><Link to="/media" className="hover:text-primary-400 transition-colors">Media Kit</Link></li>
             </ul>
           </div>
 
