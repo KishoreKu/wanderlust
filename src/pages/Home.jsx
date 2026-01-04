@@ -210,6 +210,181 @@ export function Home() {
         </div>
       </section>
 
+      {/* NEW: Latest Destination Guides Section */}
+      <section className="py-20 bg-gradient-to-br from-primary-50 to-blue-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <div className="inline-block mb-4">
+              <span className="bg-gradient-to-r from-primary-600 to-blue-600 text-white px-4 py-2 rounded-full text-sm font-bold animate-pulse">
+                ✨ NEW TODAY
+              </span>
+            </div>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              Latest Destination Guides
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Fresh guides to help you discover amazing experiences in the world's most exciting cities
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Budapest */}
+            <Link to="/blog/budapest-activities-guide" className="group">
+              <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <div className="relative">
+                  <img
+                    src="https://images.unsplash.com/photo-1541849546-216549ae216d?w=800&auto=format&fit=crop"
+                    alt="Budapest"
+                    className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+                  />
+                  <div className="absolute top-4 right-4">
+                    <span className="bg-red-500 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
+                      NEW
+                    </span>
+                  </div>
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary-600 transition-colors">
+                    🇭🇺 Budapest Activities
+                  </h3>
+                  <p className="text-gray-600 text-sm mb-4">
+                    From $11 • Ruin bars, river cruises & thermal spas
+                  </p>
+                  <div className="flex items-center text-primary-600 font-semibold text-sm">
+                    Explore Guide <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                  </div>
+                </div>
+              </div>
+            </Link>
+
+            {/* Marrakech */}
+            <Link to="/blog/marrakech-activities-guide" className="group">
+              <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <div className="relative">
+                  <img
+                    src="https://images.unsplash.com/photo-1597212618440-806262de4f6b?w=800&auto=format&fit=crop"
+                    alt="Marrakech"
+                    className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+                  />
+                  <div className="absolute top-4 right-4">
+                    <span className="bg-red-500 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
+                      NEW
+                    </span>
+                  </div>
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary-600 transition-colors">
+                    🇲🇦 Marrakech Adventures
+                  </h3>
+                  <p className="text-gray-600 text-sm mb-4">
+                    From $15 • Desert safaris, Atlas Mountains & hot air balloons
+                  </p>
+                  <div className="flex items-center text-primary-600 font-semibold text-sm">
+                    Explore Guide <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                  </div>
+                </div>
+              </div>
+            </Link>
+
+            {/* Dubai */}
+            <Link to="/blog/dubai-desert-safari-guide" className="group">
+              <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <div className="relative">
+                  <img
+                    src="https://images.unsplash.com/photo-1451337516015-6b6e9a44a8a3?w=800&auto=format&fit=crop"
+                    alt="Dubai"
+                    className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+                  />
+                  <div className="absolute top-4 right-4">
+                    <span className="bg-red-500 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
+                      NEW
+                    </span>
+                  </div>
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary-600 transition-colors">
+                    🏜️ Dubai Desert Safaris
+                  </h3>
+                  <p className="text-gray-600 text-sm mb-4">
+                    From $27 • Dune bashing, camel rides & BBQ dinners
+                  </p>
+                  <div className="flex items-center text-primary-600 font-semibold text-sm">
+                    Explore Guide <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                  </div>
+                </div>
+              </div>
+            </Link>
+
+            {/* Istanbul */}
+            <Link to="/blog/istanbul-activities-guide" className="group">
+              <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <div className="relative">
+                  <img
+                    src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=800&auto=format&fit=crop"
+                    alt="Istanbul"
+                    className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+                  />
+                  <div className="absolute top-4 right-4">
+                    <span className="bg-red-500 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
+                      NEW
+                    </span>
+                  </div>
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary-600 transition-colors">
+                    🕌 Istanbul Experiences
+                  </h3>
+                  <p className="text-gray-600 text-sm mb-4">
+                    From $8 • Bosphorus cruises, palaces & Turkish baths
+                  </p>
+                  <div className="flex items-center text-primary-600 font-semibold text-sm">
+                    Explore Guide <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                  </div>
+                </div>
+              </div>
+            </Link>
+
+            {/* GetYourGuide General */}
+            <Link to="/blog/getyourguide-tours-activities" className="group md:col-span-2 lg:col-span-1">
+              <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <div className="relative">
+                  <img
+                    src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800&auto=format&fit=crop"
+                    alt="GetYourGuide"
+                    className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+                  />
+                  <div className="absolute top-4 right-4">
+                    <span className="bg-red-500 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
+                      NEW
+                    </span>
+                  </div>
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary-600 transition-colors">
+                    🎯 GetYourGuide Guide
+                  </h3>
+                  <p className="text-gray-600 text-sm mb-4">
+                    How to find & book the best tours worldwide
+                  </p>
+                  <div className="flex items-center text-primary-600 font-semibold text-sm">
+                    Explore Guide <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                  </div>
+                </div>
+              </div>
+            </Link>
+          </div>
+
+          <div className="text-center mt-12">
+            <Link to="/blog">
+              <Button size="lg" className="group">
+                View All Destination Guides
+                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Section 4: Why Gubbu Is Different */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
