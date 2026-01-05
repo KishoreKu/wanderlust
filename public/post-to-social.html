@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post to Social Media - Zapier Integration</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 40px;
+        }
+
+        h1 {
+            color: #1a202c;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+
+        .subtitle {
+            color: #718096;
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #2d3748;
+        }
+
+        input,
+        textarea,
+        select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            font-size: 14px;
+            transition: border-color 0.3s;
+        }
+
+        input:focus,
+        textarea:focus,
+        select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+
+        .blog-select {
+            display: grid;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .blog-option {
+            padding: 15px;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .blog-option:hover {
+            border-color: #667eea;
+            background: #f7fafc;
+        }
+
+        .blog-option.selected {
+            border-color: #667eea;
+            background: #edf2f7;
+        }
+
+        .blog-option h3 {
+            color: #2d3748;
+            margin-bottom: 5px;
+            font-size: 16px;
+        }
+
+        .blog-option p {
+            color: #718096;
+            font-size: 13px;
+        }
+
+        button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 14px 32px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .status {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            display: none;
+        }
+
+        .status.success {
+            background: #c6f6d5;
+            color: #22543d;
+            border: 2px solid #9ae6b4;
+        }
+
+        .status.error {
+            background: #fed7d7;
+            color: #742a2a;
+            border: 2px solid #fc8181;
+        }
+
+        .platforms {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        .platform {
+            padding: 10px;
+            text-align: center;
+            border-radius: 8px;
+            background: #f7fafc;
+            border: 2px solid #e2e8f0;
+        }
+
+        .platform.active {
+            background: #edf2f7;
+            border-color: #667eea;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>📱 Post to Social Media</h1>
+        <p class="subtitle">Select a blog post and share it across all your social platforms via Zapier</p>
+
+        <div class="platforms">
+            <div class="platform active">📷 Instagram</div>
+            <div class="platform active">📘 Facebook</div>
+            <div class="platform active">💼 LinkedIn</div>
+            <div class="platform active">🎵 TikTok</div>
+            <div class="platform active">▶️ YouTube</div>
+            <div class="platform active">🐦 Twitter</div>
+            <div class="platform active">📌 Pinterest</div>
+        </div>
+
+        <form id="postForm">
+            <div class="form-group">
+                <label>Select Blog Post:</label>
+                <div class="blog-select" id="blogSelect">
+                    <!-- Will be populated by JavaScript -->
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Or Enter Custom URL:</label>
+                <input type="url" id="customUrl" placeholder="https://yourdomain.com/blog/post-slug">
+            </div>
+
+            <button type="submit" id="submitBtn">
+                🚀 Post to All Platforms
+            </button>
+        </form>
+
+        <div id="status" class="status"></div>
+    </div>
+
+    <script>
+        // Your recent blog posts
+        const blogPosts = [
+            {
+                id: 'barcelona-activities-guide',
+                title: '🇪🇸 Best Things to Do in Barcelona',
+                excerpt: 'Experience the best of Barcelona! From skip-the-line Sagrada Familia tickets to Montserrat day trips.',
+                image: 'https://images.unsplash.com/photo-1583422409516-2895a77efded?w=1200&auto=format&fit=crop',
+                category: 'Destinations'
+            },
+            {
+                id: 'las-vegas-activities-guide',
+                title: '🎰 Best Las Vegas Activities & Tours',
+                excerpt: 'From Grand Canyon tours to Cirque du Soleil shows, helicopter flights, and desert adventures.',
+                image: 'https://images.unsplash.com/photo-1605833556294-ea5c7a74f57d?w=1200&auto=format&fit=crop',
+                category: 'Destinations'
+            },
+            {
+                id: 'rome-colosseum-tours-guide',
+                title: '🏛️ Best Rome Colosseum Tours',
+                excerpt: 'Skip the 2-3 hour lines! From underground chambers to arena floor access.',
+                image: 'https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=1200&auto=format&fit=crop',
+                category: 'Destinations'
+            },
+            {
+                id: 'budapest-activities-guide',
+                title: '🏰 Top Budapest Activities & Experiences',
+                excerpt: 'Discover thermal baths, river cruises, ruin bars, and more in Hungary\'s capital.',
+                image: 'https://images.unsplash.com/photo-1541849546-216549ae216d?w=1200&auto=format&fit=crop',
+                category: 'Destinations'
+            }
+        ];
+
+        let selectedPost = null;
+
+        // Populate blog post options
+        const blogSelect = document.getElementById('blogSelect');
+        blogPosts.forEach(post => {
+            const option = document.createElement('div');
+            option.className = 'blog-option';
+            option.innerHTML = `
+                <h3>${post.title}</h3>
+                <p>${post.excerpt.substring(0, 80)}...</p>
+            `;
+            option.onclick = () => selectPost(post, option);
+            blogSelect.appendChild(option);
+        });
+
+        function selectPost(post, element) {
+            // Remove previous selection
+            document.querySelectorAll('.blog-option').forEach(el => {
+                el.classList.remove('selected');
+            });
+
+            // Select new post
+            element.classList.add('selected');
+            selectedPost = post;
+            document.getElementById('customUrl').value = '';
+        }
+
+        // Handle form submission
+        document.getElementById('postForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const customUrl = document.getElementById('customUrl').value;
+            const statusDiv = document.getElementById('status');
+            const submitBtn = document.getElementById('submitBtn');
+
+            // Determine which post to send
+            let postData;
+            if (customUrl) {
+                postData = {
+                    title: 'Custom Blog Post',
+                    url: customUrl,
+                    excerpt: 'Check out this amazing travel guide!',
+                    image: '',
+                    category: 'Travel'
+                };
+            } else if (selectedPost) {
+                postData = {
+                    ...selectedPost,
+                    url: `https://yourdomain.com/blog/${selectedPost.id}`
+                };
+            } else {
+                showStatus('error', 'Please select a blog post or enter a custom URL');
+                return;
+            }
+
+            // Show loading state
+            submitBtn.disabled = true;
+            submitBtn.textContent = '⏳ Posting...';
+            statusDiv.style.display = 'none';
+
+            try {
+                // Send to your webhook handler
+                const response = await fetch('/api/notify-zapier.php', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(postData)
+                });
+
+                const result = await response.json();
+
+                if (result.success) {
+                    showStatus('success', '✅ Successfully posted to all social media platforms! Check your accounts in a few minutes.');
+                } else {
+                    showStatus('error', '❌ Failed to post: ' + (result.error || 'Unknown error'));
+                }
+            } catch (error) {
+                showStatus('error', '❌ Network error: ' + error.message);
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.textContent = '🚀 Post to All Platforms';
+            }
+        });
+
+        function showStatus(type, message) {
+            const statusDiv = document.getElementById('status');
+            statusDiv.className = `status ${type}`;
+            statusDiv.textContent = message;
+            statusDiv.style.display = 'block';
+        }
+    </script>
+</body>
+
+</html>
