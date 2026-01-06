@@ -1,7 +1,7 @@
 ---
 title: "Best Dog Food for Busy & Traveling Pet Parents (2026 Guide)"
 description: "A practical guide to choosing the right dog food when you travel often, work long hours, or juggle multiple responsibilities. Make decisions based on your lifestyle, not just brand names."
-date: 2026-01-05
+date: 2026-01-06
 author: "Gubbu Lifestyle Team"
 category: "Pet Care"
 tags: ["dog food", "pet care", "travel tips", "busy lifestyle", "pet parents", "2026 guide"]
