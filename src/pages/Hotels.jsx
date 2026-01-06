@@ -6,59 +6,12 @@ export function Hotels() {
   const [city, setCity] = useState('');
   const [adults, setAdults] = useState('2');
   const [showSuggestions, setShowSuggestions] = useState(false);
-  const [filteredCities, setFilteredCities] = useState([]);
+  const [suggestions, setSuggestions] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
   const inputRef = useRef(null);
   const suggestionsRef = useRef(null);
 
-  // Comprehensive list of popular cities
-  const allCities = [
-    { name: 'New York City', country: 'USA' },
-    { name: 'Las Vegas', country: 'USA' },
-    { name: 'Los Angeles', country: 'USA' },
-    { name: 'Miami', country: 'USA' },
-    { name: 'Chicago', country: 'USA' },
-    { name: 'San Francisco', country: 'USA' },
-    { name: 'Dubai', country: 'UAE' },
-    { name: 'Abu Dhabi', country: 'UAE' },
-    { name: 'Marrakech', country: 'Morocco' },
-    { name: 'Bangkok', country: 'Thailand' },
-    { name: 'Phuket', country: 'Thailand' },
-    { name: 'Barcelona', country: 'Spain' },
-    { name: 'Madrid', country: 'Spain' },
-    { name: 'Paris', country: 'France' },
-    { name: 'Nice', country: 'France' },
-    { name: 'Istanbul', country: 'Turkey' },
-    { name: 'London', country: 'UK' },
-    { name: 'Rome', country: 'Italy' },
-    { name: 'Venice', country: 'Italy' },
-    { name: 'Milan', country: 'Italy' },
-    { name: 'Amsterdam', country: 'Netherlands' },
-    { name: 'Berlin', country: 'Germany' },
-    { name: 'Munich', country: 'Germany' },
-    { name: 'Vienna', country: 'Austria' },
-    { name: 'Prague', country: 'Czech Republic' },
-    { name: 'Budapest', country: 'Hungary' },
-    { name: 'Lisbon', country: 'Portugal' },
-    { name: 'Athens', country: 'Greece' },
-    { name: 'Tokyo', country: 'Japan' },
-    { name: 'Osaka', country: 'Japan' },
-    { name: 'Singapore', country: 'Singapore' },
-    { name: 'Hong Kong', country: 'Hong Kong' },
-    { name: 'Seoul', country: 'South Korea' },
-    { name: 'Sydney', country: 'Australia' },
-    { name: 'Melbourne', country: 'Australia' },
-    { name: 'Toronto', country: 'Canada' },
-    { name: 'Vancouver', country: 'Canada' },
-    { name: 'Montreal', country: 'Canada' },
-    { name: 'Mexico City', country: 'Mexico' },
-    { name: 'Cancun', country: 'Mexico' },
-    { name: 'Rio de Janeiro', country: 'Brazil' },
-    { name: 'Buenos Aires', country: 'Argentina' },
-    { name: 'Lima', country: 'Peru' },
-    { name: 'Cairo', country: 'Egypt' },
-    { name: 'Cape Town', country: 'South Africa' },
-    { name: 'Nairobi', country: 'Kenya' }
-  ];
+  const MAPBOX_TOKEN = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN;
 
   // Close suggestions when clicking outside
   useEffect(() => {
@@ -73,23 +26,92 @@ export function Hotels() {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
-  const handleCityChange = (value) => {
-    setCity(value);
+  // Debounce function to avoid too many API calls
+  const debounce = (func, wait) => {
+    let timeout;
+    return (...args) => {
+      clearTimeout(timeout);
+      timeout = setTimeout(() => func(...args), wait);
+    };
+  };
 
-    if (value.length > 0) {
-      const filtered = allCities.filter(destination =>
-        destination.name.toLowerCase().includes(value.toLowerCase()) ||
-        destination.country.toLowerCase().includes(value.toLowerCase())
-      ).slice(0, 8); // Limit to 8 suggestions
-      setFilteredCities(filtered);
-      setShowSuggestions(true);
-    } else {
+  // Fetch city suggestions from Mapbox API
+  const fetchCitySuggestions = async (query) => {
+    if (!query || query.length < 2) {
+      setSuggestions([]);
       setShowSuggestions(false);
+      return;
+    }
+
+    if (!MAPBOX_TOKEN || MAPBOX_TOKEN === 'your_mapbox_token_here') {
+      // Fallback to manual list if no API key
+      const fallbackCities = [
+        { name: 'New York City', country: 'USA' },
+        { name: 'Las Vegas', country: 'USA' },
+        { name: 'Los Angeles', country: 'USA' },
+        { name: 'Dubai', country: 'UAE' },
+        { name: 'Bangkok', country: 'Thailand' },
+        { name: 'Barcelona', country: 'Spain' },
+        { name: 'Paris', country: 'France' },
+        { name: 'London', country: 'UK' },
+        { name: 'Tokyo', country: 'Japan' },
+        { name: 'Singapore', country: 'Singapore' }
+      ];
+
+      const filtered = fallbackCities.filter(city =>
+        city.name.toLowerCase().includes(query.toLowerCase())
+      );
+      setSuggestions(filtered.map(city => ({
+        place_name: `${city.name}, ${city.country}`,
+        text: city.name,
+        context: [{ text: city.country }]
+      })));
+      setShowSuggestions(true);
+      return;
+    }
+
+    setIsLoading(true);
+
+    try {
+      const response = await fetch(
+        `https://api.mapbox.com/geocoding/v5/mapbox.places/${encodeURIComponent(query)}.json?` +
+        `access_token=${MAPBOX_TOKEN}&` +
+        `types=place,locality&` + // Only cities and towns
+        `limit=8&` + // Max 8 suggestions
+        `language=en`
+      );
+
+      const data = await response.json();
+
+      if (data.features && data.features.length > 0) {
+        setSuggestions(data.features);
+        setShowSuggestions(true);
+      } else {
+        setSuggestions([]);
+        setShowSuggestions(false);
+      }
+    } catch (error) {
+      console.error('Error fetching city suggestions:', error);
+      setSuggestions([]);
+    } finally {
+      setIsLoading(false);
     }
   };
 
-  const selectCity = (destination) => {
-    setCity(destination.name);
+  // Debounced version of fetch function
+  const debouncedFetch = useRef(
+    debounce((query) => fetchCitySuggestions(query), 300)
+  ).current;
+
+  const handleCityChange = (value) => {
+    setCity(value);
+    debouncedFetch(value);
+  };
+
+  const selectCity = (suggestion) => {
+    // Extract city name from Mapbox response
+    const cityName = suggestion.text || suggestion.place_name.split(',')[0];
+    setCity(cityName);
     setShowSuggestions(false);
   };
 
@@ -142,6 +164,13 @@ export function Hotels() {
     }
   ];
 
+  // Helper function to extract country from Mapbox context
+  const getCountryFromContext = (context) => {
+    if (!context) return '';
+    const countryContext = context.find(c => c.id && c.id.startsWith('country'));
+    return countryContext ? countryContext.text : '';
+  };
+
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
@@ -187,27 +216,38 @@ export function Hotels() {
                     type="text"
                     value={city}
                     onChange={(e) => handleCityChange(e.target.value)}
-                    onFocus={() => city.length > 0 && setShowSuggestions(true)}
-                    placeholder="Edison, NJ · Dubai · Barcelona"
+                    onFocus={() => city.length >= 2 && setShowSuggestions(true)}
+                    placeholder="Type a city name... (e.g., New York, Paris, Tokyo)"
                     className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                     onKeyPress={(e) => e.key === 'Enter' && handleSearch()}
                   />
 
+                  {/* Loading indicator */}
+                  {isLoading && (
+                    <div className="absolute right-3 top-1/2 transform -translate-y-1/2">
+                      <div className="animate-spin h-5 w-5 border-2 border-primary-600 border-t-transparent rounded-full"></div>
+                    </div>
+                  )}
+
                   {/* Autocomplete Dropdown */}
-                  {showSuggestions && filteredCities.length > 0 && (
+                  {showSuggestions && suggestions.length > 0 && (
                     <div
                       ref={suggestionsRef}
                       className="absolute z-20 w-full mt-1 bg-white border border-gray-200 rounded-lg shadow-lg max-h-60 overflow-y-auto"
                     >
-                      {filteredCities.map((destination, index) => (
+                      {suggestions.map((suggestion, index) => (
                         <button
                           key={index}
-                          onClick={() => selectCity(destination)}
+                          onClick={() => selectCity(suggestion)}
                           className="w-full px-4 py-3 text-left hover:bg-primary-50 transition-colors flex items-center justify-between border-b border-gray-100 last:border-b-0"
                         >
                           <div>
-                            <div className="font-medium text-gray-900">{destination.name}</div>
-                            <div className="text-sm text-gray-500">{destination.country}</div>
+                            <div className="font-medium text-gray-900">
+                              {suggestion.text || suggestion.place_name.split(',')[0]}
+                            </div>
+                            <div className="text-sm text-gray-500">
+                              {getCountryFromContext(suggestion.context) || suggestion.place_name}
+                            </div>
                           </div>
                           <MapPin className="h-4 w-4 text-gray-400" />
                         </button>
@@ -215,6 +255,11 @@ export function Hotels() {
                     </div>
                   )}
                 </div>
+                <p className="text-xs text-gray-500 mt-1">
+                  {MAPBOX_TOKEN && MAPBOX_TOKEN !== 'your_mapbox_token_here'
+                    ? '✓ Powered by Mapbox - Search any city worldwide'
+                    : '⚠️ Using fallback mode - Add Mapbox API key for full search'}
+                </p>
               </div>
 
               <div>
