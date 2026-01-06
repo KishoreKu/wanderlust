@@ -76,6 +76,169 @@ export function BlogPost() {
   }, [id]);
 
   const posts = {
+    'best-dog-food-busy-traveling-pet-parents-2026': {
+      id: 'best-dog-food-busy-traveling-pet-parents-2026',
+      title: '🐾 Best Dog Food for Busy & Traveling Pet Parents (2026 Guide)',
+      author: 'Gubbu Lifestyle Team',
+      date: 'January 5, 2026',
+      readTime: '9 min read',
+      category: 'Pet Care & Lifestyle',
+      image: 'https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=1200&auto=format&fit=crop',
+      content: `
+        <p class="text-lg mb-6">Being a modern pet parent isn't just about love — it's about making the right decisions when time, travel, and routines change.</p>
+        
+        <p class="mb-4">If you travel often, work long hours, or juggle multiple responsibilities, choosing the right dog food becomes harder than it should be.</p>
+        
+        <p class="mb-6">This guide helps you decide what kind of dog food actually works for busy and traveling lifestyles, without overwhelm or guesswork.</p>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🐕 Why Dog Food Decisions Matter More for Busy Pet Parents</h2>
+        <p class="mb-4">When routines change, dogs feel it first.</p>
+        <p class="mb-4">Busy schedules and travel can affect:</p>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li><strong>Digestion</strong> — Inconsistent feeding times can upset their stomach</li>
+          <li><strong>Energy levels</strong> — Poor nutrition shows up in their daily activity</li>
+          <li><strong>Appetite consistency</strong> — Stress from schedule changes impacts eating habits</li>
+          <li><strong>Stress and anxiety</strong> — Dogs thrive on routine and predictability</li>
+        </ul>
+        <p class="mb-6">That's why the type of dog food matters just as much as the brand. Instead of chasing "top-rated" lists, it's better to choose based on how you live.</p>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🎯 How to Choose the Right Dog Food (Decision Framework)</h2>
+        <p class="mb-4">Before picking any product, ask yourself these 4 questions:</p>
+        
+        <h3 class="text-2xl font-bold mt-6 mb-3">1️⃣ How often are you away from home?</h3>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li>Day trips</li>
+          <li>Long work hours</li>
+          <li>Frequent travel</li>
+        </ul>
+
+        <h3 class="text-2xl font-bold mt-6 mb-3">2️⃣ Do you need convenience or customization?</h3>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li>Subscription delivery</li>
+          <li>Pre-portioned meals</li>
+          <li>Easy storage</li>
+        </ul>
+
+        <h3 class="text-2xl font-bold mt-6 mb-3">3️⃣ Does your dog have sensitivities?</h3>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li>Allergies</li>
+          <li>Senior digestion</li>
+          <li>Sensitive stomach</li>
+        </ul>
+
+        <h3 class="text-2xl font-bold mt-6 mb-3">4️⃣ Will someone else feed your dog sometimes?</h3>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li>Family members</li>
+          <li>Pet sitter</li>
+          <li>Boarding facility</li>
+        </ul>
+        <p class="mb-6"><strong>Your answers determine the right category of food — not just the brand.</strong></p>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🥩 Dog Food Options That Work Best for Modern Lifestyles</h2>
+
+        <h3 class="text-2xl font-bold mt-6 mb-3">Fresh Dog Food (Best for Consistency & Health)</h3>
+        <p class="mb-4"><strong>Best for:</strong> Pet parents who want premium nutrition with minimal effort.</p>
+        <p class="mb-4"><strong>Why it works:</strong></p>
+        <ul class="list-disc pl-6 mb-4 space-y-2">
+          <li>Human-grade ingredients</li>
+          <li>Pre-portioned meals</li>
+          <li>Easier digestion</li>
+          <li>Subscription delivery</li>
+        </ul>
+        <p class="mb-6"><strong>Consider if:</strong> Your dog has allergies, you travel but want predictable feeding, or you value health over price.</p>
+
+        <h3 class="text-2xl font-bold mt-6 mb-3">High-Quality Dry Food (Best for Flexibility)</h3>
+        <p class="mb-4"><strong>Best for:</strong> Busy households and short trips.</p>
+        <p class="mb-4"><strong>Why it works:</strong></p>
+        <ul class="list-disc pl-6 mb-4 space-y-2">
+          <li>Easy to store</li>
+          <li>Longer shelf life</li>
+          <li>Simple instructions for sitters</li>
+          <li>Cost-effective</li>
+        </ul>
+        <p class="mb-6"><strong>Consider if:</strong> You need convenience, travel occasionally, or your dog tolerates dry food well.</p>
+
+        <h3 class="text-2xl font-bold mt-6 mb-3">✈️ Travel-Friendly Dog Food Options</h3>
+        <p class="mb-4"><strong>Best for:</strong> Road trips, flights, or temporary stays.</p>
+        <p class="mb-4"><strong>What to look for:</strong></p>
+        <ul class="list-disc pl-6 mb-4 space-y-2">
+          <li>Compact packaging</li>
+          <li>No refrigeration required</li>
+          <li>Clear feeding instructions</li>
+          <li>Easy digestion</li>
+          <li>Single-serve portions</li>
+        </ul>
+        <p class="mb-6">These options reduce stress for both you and your dog while traveling.</p>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">🚫 What NOT to Do (Common Mistakes)</h2>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li><strong>Switching food right before travel</strong> — This can cause digestive upset at the worst time</li>
+          <li><strong>Overfeeding to "make up" for absence</strong> — Leads to weight gain and health issues</li>
+          <li><strong>Choosing food based only on reviews</strong> — What works for others may not fit your lifestyle</li>
+          <li><strong>Ignoring ingredient lists</strong> — Marketing doesn't tell the whole story</li>
+        </ul>
+        <p class="mb-6"><strong>Consistency matters more than novelty.</strong></p>
+
+        <div class="bg-gradient-to-r from-primary-50 to-primary-100 rounded-xl p-8 mb-8">
+          <h3 class="text-2xl font-bold mb-4">🐾 Making the Right Choice for Your Lifestyle</h3>
+          <p class="text-gray-700 mb-4">Not sure which option fits your lifestyle?</p>
+          <p class="text-gray-700 mb-6">Modern living means making decisions that work even when plans change. Choosing the right dog food reduces stress, improves pet health, saves time, and supports travel flexibility.</p>
+          <a href="https://tr.ee/l_Ro2_DMIE" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
+            👉 Explore trusted lifestyle choices pet parents use
+          </a>
+          <p class="text-sm text-gray-600 mt-4"><em>Gubbu helps you navigate modern decisions — for travel, lifestyle, and the ones who depend on you.</em></p>
+        </div>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">💡 How Dog Food Fits a Smarter Lifestyle</h2>
+        <p class="mb-4">It's not about perfection — it's about choosing what fits your life.</p>
+        <p class="mb-4">The best approach combines:</p>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li><strong>Quality nutrition</strong> that supports your dog's health</li>
+          <li><strong>Practical storage</strong> that works with your space</li>
+          <li><strong>Feeding flexibility</strong> for changing schedules</li>
+          <li><strong>Travel compatibility</strong> when you're on the go</li>
+        </ul>
+        <p class="mb-6">Your dog's food should adapt to your lifestyle, not the other way around.</p>
+
+        <h2 class="text-3xl font-bold mt-8 mb-4">✨ Final Thoughts</h2>
+        <p class="mb-4">Your dog depends on you to make the right calls — even when you're busy or away.</p>
+        <p class="mb-4">The best dog food isn't the most expensive or most advertised. <strong>It's the one that fits your lifestyle and your dog's needs.</strong></p>
+        <p class="mb-6">And that's exactly the kind of decision Gubbu exists to help with.</p>
+
+        <div class="bg-primary-50 rounded-lg p-6 mb-6">
+          <h3 class="text-xl font-bold mb-4">🎯 Take Action</h3>
+          <p class="mb-4">Making better choices shouldn't be complicated. Choose the approach that fits your situation:</p>
+          <div class="space-y-4">
+            <div>
+              <a href="https://tr.ee/l_Ro2_DMIE" target="_blank" rel="nofollow noopener" class="text-primary-600 hover:text-primary-700 font-semibold underline">
+                👉 Explore Dog Food Options That Fit Your Lifestyle
+              </a>
+              <p class="text-sm text-gray-600 mt-1">Compare convenient, travel-friendly, and health-focused choices.</p>
+            </div>
+            <div>
+              <a href="https://tr.ee/l_Ro2_DMIE" target="_blank" rel="nofollow noopener" class="text-primary-600 hover:text-primary-700 font-semibold underline">
+                🐶 Find Convenient Dog Food for Busy Pet Parents
+              </a>
+              <p class="text-sm text-gray-600 mt-1">Great for workdays, travel, and shared caregiving.</p>
+            </div>
+            <div>
+              <a href="https://tr.ee/l_Ro2_DMIE" target="_blank" rel="nofollow noopener" class="text-primary-600 hover:text-primary-700 font-semibold underline">
+                🥩 See Dog Food Options for Sensitive Dogs
+              </a>
+              <p class="text-sm text-gray-600 mt-1">Gentle ingredients, consistent routines.</p>
+            </div>
+            <div>
+              <a href="https://tr.ee/l_Ro2_DMIE" target="_blank" rel="nofollow noopener" class="text-primary-600 hover:text-primary-700 font-semibold underline">
+                ✨ Make Smarter Lifestyle Choices with Gubbu
+              </a>
+              <p class="text-sm text-gray-600 mt-1">From travel to everyday decisions — in one place.</p>
+            </div>
+          </div>
+        </div>
+
+        <p class="mb-6"><strong>Remember:</strong> The goal isn't to find the "perfect" dog food. It's to find the right fit for how you and your dog actually live. When you make decisions based on your real lifestyle, everything gets easier — for both of you.</p>
+      `,
+    },
     'christmas-2025': {
       id: 'christmas-2025',
       title: '🎄 The Ultimate Christmas Travel Guide 2025: 10 Magical Destinations',
