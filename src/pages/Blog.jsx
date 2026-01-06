@@ -1,177 +1,18 @@
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { Calendar, ArrowRight, Search } from 'lucide-react';
 import { Button } from '../components/Button';
 import { NewsletterSignup } from '../components/NewsletterSignup';
+import { getAllBlogPosts, getAllCategories } from '../utils/blogLoader';
 
 export function Blog() {
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [searchQuery, setSearchQuery] = useState('');
   const [visiblePosts, setVisiblePosts] = useState(9);
 
-  const blogPosts = [
-    // Pet Care Guide - Featured
-    {
-      id: 'best-dog-food-busy-traveling-pet-parents-2026',
-      title: '🐾 Best Dog Food for Busy & Traveling Pet Parents (2026 Guide)',
-      excerpt: 'A practical guide to choosing the right dog food when you travel often, work long hours, or juggle multiple responsibilities. Make decisions based on your lifestyle, not just brand names.',
-      image: 'https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=800&auto=format&fit=crop',
-      date: 'Jan 5, 2026',
-      category: 'Tips',
-      readTime: '9 min read',
-      featured: true,
-    },
-    // New GetYourGuide Destination Guides - Featured at Top
-    {
-      id: 'barcelona-activities-guide',
-      title: '🇪🇸 Best Things to Do in Barcelona',
-      excerpt: 'Experience the best of Barcelona! From skip-the-line Sagrada Familia tickets to Montserrat day trips and 3-country tours. Complete guide with prices starting from $25.',
-      image: 'https://images.unsplash.com/photo-1583422409516-2895a77efded?w=800&auto=format&fit=crop',
-      date: 'Jan 4, 2026',
-      category: 'Destinations',
-      readTime: '12 min read',
-      featured: true,
-    },
-    {
-      id: 'las-vegas-activities-guide',
-      title: '🎰 Best Las Vegas Activities & Tours',
-      excerpt: 'Entertainment Capital of the World! From Grand Canyon tours to Cirque du Soleil shows, helicopter flights, and desert adventures. Complete guide with prices starting from $30.',
-      image: 'https://images.unsplash.com/photo-1605833556294-ea5c7a74f57d?w=800&auto=format&fit=crop',
-      date: 'Jan 4, 2026',
-      category: 'Destinations',
-      readTime: '11 min read',
-      featured: true,
-    },
-    {
-      id: 'rome-colosseum-tours-guide',
-      title: '🏛️ Best Rome Colosseum Tours',
-      excerpt: 'Skip the 2-3 hour lines! From underground chambers to arena floor access. Complete guide to the best Colosseum tours with prices starting from $20.',
-      image: 'https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=800&auto=format&fit=crop',
-      date: 'Jan 4, 2026',
-      category: 'Destinations',
-      readTime: '10 min read',
-      featured: true,
-    },
-    {
-      id: 'budapest-activities-guide',
-      title: '🇭🇺 Top Budapest Activities & Experiences',
-      excerpt: 'Experience the Pearl of the Danube! From river cruises to famous ruin bars, thermal spas, and food tours. Complete guide with prices starting from $11.',
-      image: 'https://images.unsplash.com/photo-1541849546-216549ae216d?w=800&auto=format&fit=crop',
-      date: 'Jan 4, 2026',
-      category: 'Destinations',
-      readTime: '10 min read',
-      featured: true,
-    },
-    {
-      id: 'marrakech-activities-guide',
-      title: '🇲🇦 Top Marrakech Activities & Day Trips',
-      excerpt: 'Discover the best things to do in Marrakech! From Agafay Desert adventures to Atlas Mountains day trips and hot air balloon rides. Complete guide with prices starting from $15.',
-      image: 'https://images.unsplash.com/photo-1597212618440-806262de4f6b?w=800&auto=format&fit=crop',
-      date: 'Jan 4, 2026',
-      category: 'Destinations',
-      readTime: '11 min read',
-      featured: true,
-    },
-    {
-      id: 'dubai-desert-safari-guide',
-      title: '🏜️ Top 10 Dubai Desert Safari Adventures',
-      excerpt: 'Experience the magic of Dubai\'s desert! From thrilling dune bashing to cultural BBQ dinners under the stars. Complete guide to the top 10 desert safaris with prices, ratings, and insider tips.',
-      image: 'https://images.unsplash.com/photo-1451337516015-6b6e9a44a8a3?w=800&auto=format&fit=crop',
-      date: 'Jan 4, 2026',
-      category: 'Destinations',
-      readTime: '10 min read',
-      featured: true,
-    },
-    {
-      id: 'istanbul-activities-guide',
-      title: '🕌 Top 11 Must-Do Activities in Istanbul',
-      excerpt: 'Discover the best tours and activities in Istanbul! From magical Bosphorus cruises to historic landmarks and traditional Turkish baths. Complete guide with prices, ratings, and insider tips.',
-      image: 'https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=800&auto=format&fit=crop',
-      date: 'Jan 4, 2026',
-      category: 'Destinations',
-      readTime: '9 min read',
-      featured: true,
-    },
-    {
-      id: 'getyourguide-tours-activities',
-      title: '🎯 Discover Amazing Tours & Activities with GetYourGuide',
-      excerpt: 'Skip the planning stress and discover unforgettable experiences! Learn how GetYourGuide helps you find the best tours, activities, and attractions worldwide with skip-the-line access, expert guides, and flexible booking.',
-      image: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800&auto=format&fit=crop',
-      date: 'Jan 4, 2026',
-      category: 'Tips',
-      readTime: '7 min read',
-      featured: true,
-    },
-    {
-      id: 'auschwitz-birkenau-visit-guide',
-      title: 'Visiting Auschwitz-Birkenau: Complete Guide from Krakow',
-      excerpt: 'A respectful guide to visiting Auschwitz-Birkenau Memorial and Museum. Essential information about tours, transportation, and what to expect at this important historical site.',
-      image: 'https://images.unsplash.com/photo-1609137144813-7d9921338f24?w=800&auto=format&fit=crop',
-      date: 'Jan 4, 2026',
-      category: 'Destinations',
-      readTime: '12 min read',
-      featured: true,
-    },
-    // Original Blog Posts
-    {
-      id: 'christmas-2025',
-      title: '🎄 The Ultimate Christmas Travel Guide 2025: 10 Magical Destinations',
-      excerpt: 'Discover the world\'s most enchanting Christmas destinations! From snowy Lapland to festive New York City, find your perfect holiday escape. Complete with budget tips, packing lists, and insider secrets.',
-      image: 'https://images.unsplash.com/photo-1512389142860-9c449e58a543?w=800&auto=format&fit=crop',
-      date: 'Dec 31, 2025',
-      category: 'Destinations',
-      readTime: '8 min read',
-      featured: true,
-    },
-    {
-      id: 'new-years-eve-usa-2025',
-      title: '🎉 New Year\'s Eve in the USA (2025): Best Ways to Celebrate Across the Country',
-      excerpt: 'Discover the best ways to celebrate New Year\'s Eve across the USA — from fireworks and crowds to family-friendly events and late-night parties.',
-      image: 'https://images.unsplash.com/photo-1467810563316-b5476525c0f9?w=800&auto=format&fit=crop',
-      date: 'Dec 31, 2025',
-      category: 'Destinations',
-      readTime: '8 min read',
-      featured: true,
-    },
-    {
-      id: 'southeast-asia-hidden-gems',
-      title: '10 Hidden Gems in Southeast Asia',
-      excerpt: 'Discover the most beautiful off-the-beaten-path destinations that most tourists miss. From secret beaches to mountain villages.',
-      image: 'https://images.unsplash.com/photo-1528181304800-259b08848526?w=800&auto=format&fit=crop',
-      date: 'Dec 31, 2025',
-      category: 'Destinations',
-      readTime: '8 min read',
-    },
-    {
-      id: 'budget-travel-tips-2024',
-      title: 'Budget Travel Tips for 2025',
-      excerpt: 'Learn how to travel the world without breaking the bank with these expert tips. Save money on flights, accommodation, and activities.',
-      image: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800&auto=format&fit=crop',
-      date: 'Dec 31, 2025',
-      category: 'Tips',
-      readTime: '6 min read',
-    },
-    {
-      id: 'best-time-visit-europe',
-      title: 'Best Time to Visit European Cities',
-      excerpt: 'A comprehensive guide to planning your European adventure at the perfect time. Weather, crowds, and prices explained.',
-      image: 'https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=800&auto=format&fit=crop',
-      date: 'Dec 31, 2025',
-      category: 'Planning',
-      readTime: '10 min read',
-    },
-    {
-      id: 'solo-travel-safety-guide',
-      title: 'Solo Travel Safety Guide',
-      excerpt: 'Essential safety tips for solo travelers. Learn how to stay safe while exploring the world on your own.',
-      image: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800&auto=format&fit=crop',
-      date: 'Dec 31, 2025',
-      category: 'Safety',
-      readTime: '7 min read',
-    },
-  ];
-
-  const categories = ['All', 'Destinations', 'Tips', 'Planning', 'Safety'];
+  // Load blog posts dynamically from markdown files
+  const blogPosts = useMemo(() => getAllBlogPosts(), []);
+  const categories = useMemo(() => getAllCategories(), []);
 
   // Filter posts based on category and search query
   const filteredPosts = blogPosts.filter(post => {
