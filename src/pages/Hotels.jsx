@@ -1,260 +1,297 @@
+import { useState } from 'react';
 import { Button } from '../components/Button';
-import { MapPin, Star, Wifi, ExternalLink } from 'lucide-react';
-import { getHotelAffiliateLink } from '../config/affiliate';
+import { MapPin, MessageCircle, Compass, Handshake, Brain, Search, ChevronDown } from 'lucide-react';
 
 export function Hotels() {
-  const featuredHotels = [
+  const [city, setCity] = useState('');
+  const [adults, setAdults] = useState('2');
+
+  const handleSearch = (cityName = '', countryName = '') => {
+    const searchCity = cityName || city;
+    const searchCountry = countryName || '';
+
+    if (!searchCity) {
+      alert('Please enter a city or destination');
+      return;
+    }
+
+    const params = new URLSearchParams({
+      city: searchCity,
+      ...(searchCountry && { country: searchCountry }),
+      adults: adults,
+      src: cityName ? 'web_hotels_city' : 'web_hotels'
+    });
+
+    window.open(`/go/hotels?${params.toString()}`, '_blank');
+  };
+
+  const popularCities = [
+    { name: 'New York City', country: 'USA', image: 'https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=600&auto=format&fit=crop' },
+    { name: 'Las Vegas', country: 'USA', image: 'https://images.unsplash.com/photo-1605833556294-ea5c7a74f57d?w=600&auto=format&fit=crop' },
+    { name: 'Dubai', country: 'UAE', image: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600&auto=format&fit=crop' },
+    { name: 'Marrakech', country: 'Morocco', image: 'https://images.unsplash.com/photo-1597212618440-806262de4f6b?w=600&auto=format&fit=crop' },
+    { name: 'Bangkok', country: 'Thailand', image: 'https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=600&auto=format&fit=crop' },
+    { name: 'Barcelona', country: 'Spain', image: 'https://images.unsplash.com/photo-1583422409516-2895a77efded?w=600&auto=format&fit=crop' },
+    { name: 'Paris', country: 'France', image: 'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=600&auto=format&fit=crop' },
+    { name: 'Istanbul', country: 'Turkey', image: 'https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=600&auto=format&fit=crop' }
+  ];
+
+  const faqs = [
     {
-      id: 1,
-      name: 'Grand Plaza Hotel',
-      location: 'Paris, France',
-      image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&auto=format&fit=crop',
-      rating: 4.8,
-      reviews: 1250,
-      price: 189,
-      amenities: ['WiFi', 'Gym', 'Restaurant', 'Pool'],
-      city: 'Paris',
+      q: 'Can I book directly on Gubbu?',
+      a: 'Gubbu helps you decide. Booking happens securely on partner sites.'
     },
     {
-      id: 2,
-      name: 'Beachfront Resort & Spa',
-      location: 'Bali, Indonesia',
-      image: 'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&auto=format&fit=crop',
-      rating: 4.9,
-      reviews: 2100,
-      price: 145,
-      amenities: ['WiFi', 'Spa', 'Beach Access', 'Pool'],
-      city: 'Bali',
+      q: "Why don't you ask for dates here?",
+      a: 'Dates and pricing change quickly — we let partners handle that in real time.'
     },
     {
-      id: 3,
-      name: 'City Center Boutique Hotel',
-      location: 'Tokyo, Japan',
-      image: 'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=800&auto=format&fit=crop',
-      rating: 4.7,
-      reviews: 890,
-      price: 210,
-      amenities: ['WiFi', 'Restaurant', 'Bar', 'Gym'],
-      city: 'Tokyo',
+      q: 'Will my booking be tracked?',
+      a: 'Yes. When you continue via Gubbu, your booking is attributed to us.'
     },
     {
-      id: 4,
-      name: 'Mountain View Lodge',
-      location: 'Swiss Alps, Switzerland',
-      image: 'https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800&auto=format&fit=crop',
-      rating: 4.9,
-      reviews: 1560,
-      price: 275,
-      amenities: ['WiFi', 'Spa', 'Restaurant', 'Ski Access'],
-      city: 'Interlaken',
-    },
-    {
-      id: 5,
-      name: 'Historic Downtown Inn',
-      location: 'Rome, Italy',
-      image: 'https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800&auto=format&fit=crop',
-      rating: 4.6,
-      reviews: 720,
-      price: 165,
-      amenities: ['WiFi', 'Breakfast', 'Terrace', 'Bar'],
-      city: 'Rome',
-    },
-    {
-      id: 6,
-      name: 'Luxury Oceanfront Hotel',
-      location: 'Maldives',
-      image: 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800&auto=format&fit=crop',
-      rating: 5.0,
-      reviews: 3200,
-      price: 450,
-      amenities: ['WiFi', 'Private Beach', 'Spa', 'Water Sports'],
-      city: 'Male',
-    },
+      q: 'Why do I sometimes see a previous search?',
+      a: 'Some partners restore recent searches. You can always update the fields before searching.'
+    }
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50 pt-16">
-      {/* Stunning Hero Section */}
-      <section className="relative bg-gradient-to-r from-primary-600 to-primary-800 text-white py-24 overflow-hidden">
-        {/* Background Pattern */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0" style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-          }}></div>
-        </div>
+    <div className="min-h-screen bg-gray-50">
+      {/* Hero Section */}
+      <section className="bg-gradient-to-br from-primary-600 via-primary-700 to-primary-800 text-white py-20 pt-28">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6">
+            Find the right place to stay — without the overwhelm
+          </h1>
+          <p className="text-xl md:text-2xl text-primary-100 mb-8 max-w-3xl mx-auto">
+            Search hotels by city, compare options, and book via trusted partners — all guided by Gubbu.
+          </p>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="text-center mb-12">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              Find Your Perfect Hotel
-            </h1>
-            <p className="text-xl md:text-2xl text-primary-100 mb-8 max-w-3xl mx-auto">
-              Discover hand-picked hotels worldwide with exclusive deals and verified reviews
-            </p>
-          </div>
-
-          {/* Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
-            <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold mb-2">1M+</div>
-              <div className="text-primary-100">Hotels Worldwide</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold mb-2">4.8★</div>
-              <div className="text-primary-100">Average Rating</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold mb-2">24/7</div>
-              <div className="text-primary-100">Customer Support</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold mb-2">Best</div>
-              <div className="text-primary-100">Price Guarantee</div>
-            </div>
-          </div>
-
-          {/* Benefits */}
-          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 max-w-4xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
-              <div>
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-white/20 rounded-full mb-4">
-                  <Star className="h-8 w-8" />
-                </div>
-                <h3 className="font-semibold text-lg mb-2">Verified Reviews</h3>
-                <p className="text-primary-100 text-sm">Real reviews from real travelers</p>
-              </div>
-              <div>
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-white/20 rounded-full mb-4">
-                  <MapPin className="h-8 w-8" />
-                </div>
-                <h3 className="font-semibold text-lg mb-2">Prime Locations</h3>
-                <p className="text-primary-100 text-sm">Hotels in the best neighborhoods</p>
-              </div>
-              <div>
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-white/20 rounded-full mb-4">
-                  <Wifi className="h-8 w-8" />
-                </div>
-                <h3 className="font-semibold text-lg mb-2">Top Amenities</h3>
-                <p className="text-primary-100 text-sm">WiFi, pools, gyms & more</p>
-              </div>
-            </div>
-          </div>
-
-          {/* CTA */}
-          <div className="text-center mt-12">
-            <a href="#featured-hotels">
-              <Button size="lg" variant="secondary" className="text-lg px-8 py-4">
-                Browse Featured Hotels
-                <ExternalLink className="ml-2 h-5 w-5" />
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
+            <a href="#search">
+              <Button size="lg" className="bg-white text-primary-600 hover:bg-gray-100">
+                Search Hotels
               </Button>
             </a>
+          </div>
+
+          <button className="text-primary-100 hover:text-white transition-colors flex items-center mx-auto">
+            <MessageCircle className="h-5 w-5 mr-2" />
+            💬 Need help choosing a city or area? Talk to Gubbu
+          </button>
+        </div>
+      </section>
+
+      {/* Search Card */}
+      <section id="search" className="py-16 bg-white">
+        <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-white rounded-2xl shadow-2xl p-8 border border-gray-100">
+            <h2 className="text-2xl font-bold mb-6 text-center">Where do you want to stay?</h2>
+
+            <div className="space-y-4">
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">
+                  City / Destination <span className="text-red-500">*</span>
+                </label>
+                <div className="relative">
+                  <MapPin className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
+                  <input
+                    type="text"
+                    value={city}
+                    onChange={(e) => setCity(e.target.value)}
+                    placeholder="Edison, NJ · Dubai · Barcelona"
+                    className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                    onKeyPress={(e) => e.key === 'Enter' && handleSearch()}
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">
+                  Adults (optional)
+                </label>
+                <select
+                  value={adults}
+                  onChange={(e) => setAdults(e.target.value)}
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent appearance-none bg-white"
+                >
+                  <option value="1">1 Adult</option>
+                  <option value="2">2 Adults</option>
+                  <option value="3">3 Adults</option>
+                  <option value="4">4 Adults</option>
+                  <option value="5">5+ Adults</option>
+                </select>
+              </div>
+
+              <button
+                onClick={() => handleSearch()}
+                className="w-full bg-primary-600 text-white py-4 rounded-lg hover:bg-primary-700 transition-colors font-semibold text-lg flex items-center justify-center"
+              >
+                <Search className="h-5 w-5 mr-2" />
+                See Available Hotels
+              </button>
+
+              <p className="text-sm text-gray-500 text-center">
+                You'll select dates and room options on our booking partner's site.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Featured Hotels */}
-      <section className="py-16" id="featured-hotels">
+      {/* Popular Destinations */}
+      <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="mb-8">
-            <h2 className="text-3xl font-bold text-gray-900 mb-2">Featured Hotels</h2>
-            <p className="text-gray-600">Hand-picked accommodations with the best deals</p>
+          <h2 className="text-3xl font-bold text-center mb-4">Popular Destinations</h2>
+          <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
+            Quick shortcuts to find hotels in top cities
+          </p>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            {popularCities.map((destination, index) => (
+              <button
+                key={index}
+                onClick={() => handleSearch(destination.name, destination.country)}
+                className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1"
+              >
+                <div className="aspect-[4/3] relative">
+                  <img
+                    src={destination.image}
+                    alt={destination.name}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+                  <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
+                    <h3 className="font-bold text-lg mb-1">{destination.name}</h3>
+                    <p className="text-sm text-gray-200">{destination.country}</p>
+                  </div>
+                </div>
+              </button>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* How Gubbu Helps */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-center mb-12">How Gubbu Helps You Choose</h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="text-center">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-100 text-primary-600 rounded-full mb-4">
+                <Compass className="h-8 w-8" />
+              </div>
+              <h3 className="font-bold text-lg mb-2">🧭 Clarity before booking</h3>
+              <p className="text-gray-600">We help you decide where to stay before you compare prices.</p>
+            </div>
+
+            <div className="text-center">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-100 text-primary-600 rounded-full mb-4">
+                <Handshake className="h-8 w-8" />
+              </div>
+              <h3 className="font-bold text-lg mb-2">🤝 Book via trusted partners</h3>
+              <p className="text-gray-600">We don't sell rooms — we guide you to reliable booking platforms.</p>
+            </div>
+
+            <div className="text-center">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-100 text-primary-600 rounded-full mb-4">
+                <Brain className="h-8 w-8" />
+              </div>
+              <h3 className="font-bold text-lg mb-2">🧠 AI-assisted recommendations</h3>
+              <p className="text-gray-600">Ask Gubbu about neighborhoods, safety, or trip style.</p>
+            </div>
+
+            <div className="text-center">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-100 text-primary-600 rounded-full mb-4">
+                <Search className="h-8 w-8" />
+              </div>
+              <h3 className="font-bold text-lg mb-2">🔍 No hidden bias</h3>
+              <p className="text-gray-600">No fake urgency. No "last room" pressure.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* How It Works */}
+      <section className="py-16 bg-gradient-to-br from-primary-50 to-primary-100">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-center mb-12">How Hotel Booking Works on Gubbu</h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div className="text-center">
+              <div className="w-12 h-12 bg-primary-600 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">1</div>
+              <h3 className="font-bold mb-2">Search by city on Gubbu</h3>
+              <p className="text-gray-600 text-sm">Enter your destination above</p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-12 h-12 bg-primary-600 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">2</div>
+              <h3 className="font-bold mb-2">Choose what fits your trip</h3>
+              <p className="text-gray-600 text-sm">Browse options on partner site</p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-12 h-12 bg-primary-600 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">3</div>
+              <h3 className="font-bold mb-2">Continue to our booking partner</h3>
+              <p className="text-gray-600 text-sm">Secure, trusted platforms</p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-12 h-12 bg-primary-600 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">4</div>
+              <h3 className="font-bold mb-2">Select dates & complete booking</h3>
+              <p className="text-gray-600 text-sm">Real-time pricing and availability</p>
+            </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {featuredHotels.map((hotel) => (
-              <div key={hotel.id} className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
-                <div className="relative h-56">
-                  <img
-                    src={hotel.image}
-                    alt={hotel.name}
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute top-4 right-4 bg-white px-3 py-2 rounded-lg shadow-md">
-                    <div className="flex items-center">
-                      <Star className="h-4 w-4 text-yellow-400 fill-current mr-1" />
-                      <span className="font-bold text-gray-900">{hotel.rating}</span>
-                    </div>
-                    <div className="text-xs text-gray-600">{hotel.reviews} reviews</div>
-                  </div>
-                </div>
+          <p className="text-sm text-gray-600 text-center mt-8">
+            Prices, availability, and booking are handled by our partners.
+          </p>
+        </div>
+      </section>
 
-                <div className="p-6">
-                  <h3 className="text-xl font-bold mb-1">{hotel.name}</h3>
-                  <div className="flex items-center text-gray-600 mb-4">
-                    <MapPin className="h-4 w-4 mr-1" />
-                    <span className="text-sm">{hotel.location}</span>
-                  </div>
+      {/* FAQ */}
+      <section className="py-16 bg-white">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-center mb-12">Frequently Asked Questions</h2>
 
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {hotel.amenities.slice(0, 3).map((amenity, index) => (
-                      <span key={index} className="px-3 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">
-                        {amenity}
-                      </span>
-                    ))}
-                  </div>
-
-                  <div className="flex items-end justify-between">
-                    <div>
-                      <div className="text-sm text-gray-600">Starting from</div>
-                      <div className="text-3xl font-bold text-primary-600">
-                        ${hotel.price}
-                        <span className="text-sm text-gray-600 font-normal">/night</span>
-                      </div>
-                    </div>
-                    <a
-                      href={getHotelAffiliateLink(hotel.name, hotel.city)}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-block"
-                    >
-                      <Button variant="primary" size="sm">
-                        Book Now
-                        <ExternalLink className="ml-2 h-4 w-4" />
-                      </Button>
-                    </a>
-                  </div>
-                </div>
+          <div className="space-y-6">
+            {faqs.map((faq, index) => (
+              <div key={index} className="border border-gray-200 rounded-lg p-6">
+                <h3 className="font-bold text-lg mb-2">{faq.q}</h3>
+                <p className="text-gray-600">{faq.a}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Why Book Section */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Why Book Hotels Through Us?</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              We partner with the world's leading hotel booking platforms to bring you the best deals
-            </p>
+      {/* Final CTA */}
+      <section className="py-16 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-4xl font-bold mb-6">Ready to find the right place to stay?</h2>
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
+            <a href="#search">
+              <Button size="lg" className="bg-primary-600 hover:bg-primary-700">
+                Search Hotels Now
+              </Button>
+            </a>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center p-6">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
-                <Star className="h-8 w-8 text-primary-600" />
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Best Price Guarantee</h3>
-              <p className="text-gray-600">Find the lowest prices on hotels worldwide with our trusted partners</p>
-            </div>
+          <button className="text-gray-300 hover:text-white transition-colors flex items-center mx-auto">
+            <MessageCircle className="h-5 w-5 mr-2" />
+            💬 Not sure which city or area? Ask Gubbu
+          </button>
+        </div>
+      </section>
 
-            <div className="text-center p-6">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
-                <Wifi className="h-8 w-8 text-primary-600" />
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Verified Reviews</h3>
-              <p className="text-gray-600">Read authentic reviews from real travelers to make informed decisions</p>
-            </div>
-
-            <div className="text-center p-6">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
-                <MapPin className="h-8 w-8 text-primary-600" />
-              </div>
-              <h3 className="text-xl font-semibold mb-2">24/7 Support</h3>
-              <p className="text-gray-600">Get help anytime with our partner's round-the-clock customer service</p>
-            </div>
-          </div>
+      {/* Footer Trust Line */}
+      <section className="py-6 bg-gray-50 border-t">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <p className="text-sm text-gray-600">
+            Gubbu is a Decision-as-a-Service (DaaS) platform for travel and modern lifestyle planning.
+          </p>
         </div>
       </section>
     </div>
