@@ -177,5 +177,14 @@ Southeast Asia's hidden gems offer authentic experiences away from the tourist c
 
 Whether you're a budget backpacker or a luxury traveler, these hidden gems have something special to offer. The region is safe, affordable, and incredibly diverse - you can explore ancient temples, relax on pristine beaches, trek through jungles, and experience vibrant cultures all in one trip.
 
-Start planning your Southeast Asian adventure today!
+<div class="bg-gradient-to-r from-primary-50 to-primary-100 rounded-xl p-8 mb-6">
+  <h3 class="text-2xl font-bold mb-4">🌏 Ready to Explore Southeast Asia?</h3>
+  <p class="text-gray-700 mb-6">Discover hidden gems and authentic experiences across Southeast Asia. Find the best flights and hotels for your adventure!</p>
+  <a href="https://gubbu.io/flights" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
+    👉 Search Flights & Hotels
+  </a>
+</div>
 
+---
+
+Start planning your Southeast Asian adventure today!

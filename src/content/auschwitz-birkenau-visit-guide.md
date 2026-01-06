@@ -77,10 +77,10 @@ The combination allows you to visit both major sites near Krakow in one day. The
 
 **Best For:** Visitors with limited time in Krakow, those wanting to maximize their day
 
-<div class="bg-gray-100 rounded-xl p-8 mb-8 border-l-4 border-gray-600">
+<div class="bg-gradient-to-r from-primary-50 to-primary-100 rounded-xl p-8 mb-8">
   <h3 class="text-2xl font-bold mb-4">📚 Plan Your Visit Respectfully</h3>
   <p class="text-gray-700 mb-6">Visiting Auschwitz-Birkenau requires advance booking and respectful behavior. All tours include professional guides who provide essential historical context.</p>
-  <a href="https://www.getyourguide.com/s?partner_id=NEGURHX&et=88880&lc=147222" target="_blank" rel="nofollow noopener" class="inline-block bg-gray-700 text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors">
+  <a href="https://www.getyourguide.com/s?partner_id=NEGURHX&et=88880&lc=147222" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
     👉 View Available Tours
   </a>
 </div>
@@ -461,10 +461,10 @@ By visiting, you:
 - Contribute to preventing future genocides
 - Fulfill a moral obligation to remember
 
-<div class="bg-gray-100 rounded-xl p-8 mb-6 border-l-4 border-gray-600">
+<div class="bg-gradient-to-r from-primary-50 to-primary-100 rounded-xl p-8 mb-6">
   <h3 class="text-2xl font-bold mb-4">📚 Plan Your Visit</h3>
   <p class="text-gray-700 mb-6">Visiting Auschwitz-Birkenau is an important educational experience. Book in advance and prepare for a profound, emotionally challenging visit that will stay with you forever.</p>
-  <a href="https://www.getyourguide.com/s?partner_id=NEGURHX&et=88880&lc=147222" target="_blank" rel="nofollow noopener" class="inline-block bg-gray-700 text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors">
+  <a href="https://www.getyourguide.com/s?partner_id=NEGURHX&et=88880&lc=147222" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
     👉 Book Your Visit
   </a>
 </div>
