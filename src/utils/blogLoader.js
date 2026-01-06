@@ -136,9 +136,10 @@ export function getAllBlogPosts() {
         const post = {
             id: filename,
             title: frontmatter.title || 'Untitled',
-            excerpt: frontmatter.description || markdownContent.substring(0, 160) + '...',
+            excerpt: frontmatter.description || frontmatter.excerpt || markdownContent.substring(0, 160) + '...',
             image: frontmatter.image || getDefaultImage(frontmatter.category),
             date: formatDate(frontmatter.date),
+            rawDate: frontmatter.date, // Keep raw date for sorting
             category: frontmatter.category || 'Uncategorized',
             readTime: frontmatter.readTime || calculateReadTime(markdownContent),
             featured: frontmatter.featured || false,
@@ -148,8 +149,12 @@ export function getAllBlogPosts() {
         posts.push(post);
     });
 
-    // Sort by date (newest first)
-    posts.sort((a, b) => new Date(b.date) - new Date(a.date));
+    // Sort by raw date (newest first)
+    posts.sort((a, b) => {
+        const dateA = new Date(a.rawDate || a.date);
+        const dateB = new Date(b.rawDate || b.date);
+        return dateB - dateA;
+    });
 
     return posts;
 }
