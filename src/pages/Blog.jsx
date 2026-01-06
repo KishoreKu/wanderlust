@@ -10,6 +10,17 @@ export function Blog() {
   const [visiblePosts, setVisiblePosts] = useState(9);
 
   const blogPosts = [
+    // Pet Care Guide - Featured
+    {
+      id: 'best-dog-food-busy-traveling-pet-parents-2026',
+      title: '🐾 Best Dog Food for Busy & Traveling Pet Parents (2026 Guide)',
+      excerpt: 'A practical guide to choosing the right dog food when you travel often, work long hours, or juggle multiple responsibilities. Make decisions based on your lifestyle, not just brand names.',
+      image: 'https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=800&auto=format&fit=crop',
+      date: 'Jan 5, 2026',
+      category: 'Tips',
+      readTime: '9 min read',
+      featured: true,
+    },
     // New GetYourGuide Destination Guides - Featured at Top
     {
       id: 'barcelona-activities-guide',
