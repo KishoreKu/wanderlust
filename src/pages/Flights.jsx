@@ -7,12 +7,12 @@ export function Flights() {
   };
 
   const popularRoutes = [
-    { from: 'New York', to: 'London', route: 'JFK-LHR' },
-    { from: 'Los Angeles', to: 'Tokyo', route: 'LAX-NRT' },
-    { from: 'Newark', to: 'Bangkok', route: 'EWR-BKK' },
-    { from: 'Paris', to: 'Barcelona', route: 'CDG-BCN' },
-    { from: 'Chicago', to: 'London', route: 'ORD-LHR' },
-    { from: 'Miami', to: 'Madrid', route: 'MIA-MAD' }
+    { from: 'New York', to: 'London', route: 'JFK-LHR', image: 'https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=600&auto=format&fit=crop' },
+    { from: 'Los Angeles', to: 'Tokyo', route: 'LAX-NRT', image: 'https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=600&auto=format&fit=crop' },
+    { from: 'Newark', to: 'Bangkok', route: 'EWR-BKK', image: 'https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=600&auto=format&fit=crop' },
+    { from: 'Paris', to: 'Barcelona', route: 'CDG-BCN', image: 'https://images.unsplash.com/photo-1583422409516-2895a77efded?w=600&auto=format&fit=crop' },
+    { from: 'Chicago', to: 'London', route: 'ORD-LHR', image: 'https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=600&auto=format&fit=crop' },
+    { from: 'Miami', to: 'Madrid', route: 'MIA-MAD', image: 'https://images.unsplash.com/photo-1539037116277-4db20889f2d4?w=600&auto=format&fit=crop' }
   ];
 
   const faqs = [
@@ -150,19 +150,29 @@ export function Flights() {
             Explore flights for popular routes and destinations
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mb-8">
             {popularRoutes.map((route, index) => (
               <button
                 key={index}
                 onClick={() => window.open('https://api.gubbu.io/go/flights?src=web_flights_popular', '_blank')}
-                className="bg-gray-50 hover:bg-primary-50 border border-gray-200 hover:border-primary-300 rounded-xl p-6 transition-all duration-300 hover:shadow-lg text-left"
+                className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1"
               >
-                <div className="flex items-center justify-between mb-2">
-                  <span className="font-bold text-gray-900">{route.from}</span>
-                  <Plane className="h-5 w-5 text-primary-600" />
-                  <span className="font-bold text-gray-900">{route.to}</span>
+                <div className="aspect-[4/3] relative">
+                  <img
+                    src={route.image}
+                    alt={route.to}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+                  <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
+                    <div className="flex items-center justify-between mb-2">
+                      <span className="font-bold text-lg">{route.from}</span>
+                      <Plane className="h-5 w-5" />
+                      <span className="font-bold text-lg">{route.to}</span>
+                    </div>
+                    <p className="text-sm text-gray-200">{route.route}</p>
+                  </div>
                 </div>
-                <p className="text-sm text-gray-500">{route.route}</p>
               </button>
             ))}
           </div>
