@@ -266,17 +266,14 @@ export function Hotels() {
                 <label className="block text-sm font-medium text-gray-700 mb-2">
                   Adults (optional)
                 </label>
-                <select
+                <input
+                  type="number"
+                  min="1"
                   value={adults}
                   onChange={(e) => setAdults(e.target.value)}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent appearance-none bg-white"
-                >
-                  <option value="1">1 Adult</option>
-                  <option value="2">2 Adults</option>
-                  <option value="3">3 Adults</option>
-                  <option value="4">4 Adults</option>
-                  <option value="5">5+ Adults</option>
-                </select>
+                  placeholder="2"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                />
               </div>
 
               <button
