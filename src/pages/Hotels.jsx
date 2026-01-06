@@ -22,7 +22,7 @@ export function Hotels() {
       src: cityName ? 'web_hotels_city' : 'web_hotels'
     });
 
-    window.open(`/go/hotels?${params.toString()}`, '_blank');
+    window.open(`https://api.gubbu.io/go/hotels?${params.toString()}`, '_blank');
   };
 
   const popularCities = [
