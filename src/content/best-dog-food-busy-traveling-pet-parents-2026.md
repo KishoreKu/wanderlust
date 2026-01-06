@@ -60,6 +60,8 @@ Before picking any product, ask yourself these 4 questions:
 
 **Your answers determine the right category of food — not just the brand.**
 
+💡 **Not sure where to start?** [Explore dog food options that fit your lifestyle](https://tr.ee/l_Ro2_DMIE)
+
 ---
 
 ## Dog Food Options That Work Best for Modern Lifestyles
@@ -114,6 +116,8 @@ Road trips, flights, or temporary stays.
 
 These options reduce stress for both you and your dog while traveling.
 
+🐶 **Ready to choose?** [Compare dog food options for your needs](https://tr.ee/l_Ro2_DMIE)
+
 ---
 
 ## What NOT to Do (Common Mistakes)
@@ -124,24 +128,6 @@ These options reduce stress for both you and your dog while traveling.
 🚫 **Ignoring ingredient lists** — Marketing doesn't tell the whole story
 
 **Consistency matters more than novelty.**
-
----
-
-## 🐾 Making the Right Choice for Your Lifestyle
-
-Not sure which option fits your lifestyle?
-
-Modern living means making decisions that work even when plans change.
-
-Choosing the right dog food:
-- Reduces stress for you and your pet
-- Improves pet health and wellbeing
-- Saves time and mental energy
-- Supports travel flexibility
-
-👉 **[Explore trusted lifestyle choices pet parents use](https://tr.ee/l_Ro2_DMIE)**
-
-*(Gubbu helps you navigate modern decisions — for travel, lifestyle, and the ones who depend on you.)*
 
 ---
 
@@ -170,23 +156,9 @@ And that's exactly the kind of decision Gubbu exists to help with.
 
 ---
 
-## 🎯 Take Action
+🐾 **Make smarter lifestyle choices** — [Explore solutions on Gubbu](https://tr.ee/l_Ro2_DMIE)
 
-Making better choices shouldn't be complicated.
-
-Choose the approach that fits your situation:
-
-### 👉 [Explore Dog Food Options That Fit Your Lifestyle](https://tr.ee/l_Ro2_DMIE)
-*Compare convenient, travel-friendly, and health-focused choices.*
-
-### 🐶 [Find Convenient Dog Food for Busy Pet Parents](https://tr.ee/l_Ro2_DMIE)
-*Great for workdays, travel, and shared caregiving.*
-
-### 🥩 [See Dog Food Options for Sensitive Dogs](https://tr.ee/l_Ro2_DMIE)
-*Gentle ingredients, consistent routines.*
-
-### ✨ [Make Smarter Lifestyle Choices with Gubbu](https://tr.ee/l_Ro2_DMIE)
-*From travel to everyday decisions — in one place.*
+*From travel to everyday decisions, Gubbu helps you navigate modern life with confidence.*
 
 ---
 
