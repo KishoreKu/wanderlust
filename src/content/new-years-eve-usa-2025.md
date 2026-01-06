@@ -100,10 +100,10 @@ New Year's Eve is less about where you go — and more about how you want to cel
 
 Whether you're planning a big night out, a family-friendly evening, or a simple getaway, exploring your options early makes the experience smoother and more enjoyable.
 
----
-
-## 🎯 Still deciding how to celebrate New Year's Eve?
-
-Explore events, experiences, and activities happening near you — all in one place.
-
-👉 [Explore New Year events & experiences now](https://api.gubbu.io/go/activities?src=blog_new_year_usa)
+<div class="bg-gradient-to-r from-primary-50 to-primary-100 rounded-xl p-8 mb-6">
+  <h3 class="text-2xl font-bold mb-4">🎆 Plan Your New Year's Eve Celebration</h3>
+  <p class="text-gray-700 mb-6">Still deciding how to celebrate? Explore events, experiences, and activities happening near you — all in one place!</p>
+  <a href="https://api.gubbu.io/go/activities?src=blog_new_year_usa" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
+    👉 Explore New Year Events & Experiences
+  </a>
+</div>

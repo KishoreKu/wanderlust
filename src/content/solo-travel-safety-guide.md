@@ -112,4 +112,16 @@ Book verified, reviewed properties. Read recent reviews from solo travelers.
 
 Solo travel is incredibly rewarding and, with proper precautions, very safe. Millions of people travel solo every year without incident. The key is preparation, awareness, and trusting your instincts.
 
-Don't let fear hold you back from amazing experiences, but do take sensible precautions. Stay alert, stay connected, and most importantly - enjoy your adventure! The world is waiting for you. 🌍✨
+Don't let fear hold you back from amazing experiences, but do take sensible precautions. Stay alert, stay connected, and most importantly - enjoy your adventure!
+
+<div class="bg-gradient-to-r from-primary-50 to-primary-100 rounded-xl p-8 mb-6">
+  <h3 class="text-2xl font-bold mb-4">🌍 Ready for Your Solo Adventure?</h3>
+  <p class="text-gray-700 mb-6">Plan your safe and exciting solo journey with confidence. Find the best flights and accommodations for your next adventure!</p>
+  <a href="https://gubbu.io/flights" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
+    👉 Search Flights & Hotels
+  </a>
+</div>
+
+---
+
+The world is waiting for you. 🌍✨

@@ -191,9 +191,15 @@ The best trips are filled with unforgettable experiences, not hours of planning 
 
 From world-famous landmarks to hidden local gems, from relaxing food tours to heart-pounding adventures, there's something for every traveler. With verified reviews, flexible booking, and instant confirmation, you can book with confidence.
 
-**Ready to discover your next adventure?**
+<div class="bg-gradient-to-r from-primary-50 to-primary-100 rounded-xl p-8 mb-6">
+  <h3 class="text-2xl font-bold mb-4">🎯 Discover Your Next Adventure</h3>
+  <p class="text-gray-700 mb-6">Ready to explore amazing tours and activities worldwide? Find skip-the-line tickets, expert guides, and unforgettable experiences!</p>
+  <a href="https://www.getyourguide.com/s?partner_id=NEGURHX&et=694395&lc=29" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
+    👉 Start Exploring GetYourGuide Now
+  </a>
+</div>
 
-**[👉 Start Exploring GetYourGuide Now](https://www.getyourguide.com/s?partner_id=NEGURHX&et=694395&lc=29)**
+---
 
 Happy travels! ✈️🌍
 
