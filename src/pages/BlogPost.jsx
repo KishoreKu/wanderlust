@@ -134,6 +134,14 @@ export function BlogPost() {
         </ul>
         <p class="mb-6"><strong>Your answers determine the right category of food — not just the brand.</strong></p>
 
+        <div class="bg-primary-50 rounded-lg p-6 mb-8">
+          <p class="mb-3"><strong>💡 Not sure where to start?</strong></p>
+          <p class="text-gray-700 mb-4">Explore dog food options that fit your specific lifestyle and travel needs.</p>
+          <a href="https://tr.ee/l_Ro2_DMIE" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
+            👉 Find the right dog food for your lifestyle
+          </a>
+        </div>
+
         <h2 class="text-3xl font-bold mt-8 mb-4">🥩 Dog Food Options That Work Best for Modern Lifestyles</h2>
 
         <h3 class="text-2xl font-bold mt-6 mb-3">Fresh Dog Food (Best for Consistency & Health)</h3>
@@ -170,6 +178,14 @@ export function BlogPost() {
         </ul>
         <p class="mb-6">These options reduce stress for both you and your dog while traveling.</p>
 
+        <div class="bg-primary-50 rounded-lg p-6 mb-8">
+          <p class="mb-3"><strong>🐶 Ready to choose?</strong></p>
+          <p class="text-gray-700 mb-4">Compare fresh, dry, and travel-friendly dog food options based on your needs.</p>
+          <a href="https://tr.ee/l_Ro2_DMIE" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
+            👉 Explore dog food options
+          </a>
+        </div>
+
         <h2 class="text-3xl font-bold mt-8 mb-4">🚫 What NOT to Do (Common Mistakes)</h2>
         <ul class="list-disc pl-6 mb-6 space-y-2">
           <li><strong>Switching food right before travel</strong> — This can cause digestive upset at the worst time</li>
@@ -178,16 +194,6 @@ export function BlogPost() {
           <li><strong>Ignoring ingredient lists</strong> — Marketing doesn't tell the whole story</li>
         </ul>
         <p class="mb-6"><strong>Consistency matters more than novelty.</strong></p>
-
-        <div class="bg-gradient-to-r from-primary-50 to-primary-100 rounded-xl p-8 mb-8">
-          <h3 class="text-2xl font-bold mb-4">🐾 Making the Right Choice for Your Lifestyle</h3>
-          <p class="text-gray-700 mb-4">Not sure which option fits your lifestyle?</p>
-          <p class="text-gray-700 mb-6">Modern living means making decisions that work even when plans change. Choosing the right dog food reduces stress, improves pet health, saves time, and supports travel flexibility.</p>
-          <a href="https://tr.ee/l_Ro2_DMIE" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
-            👉 Explore trusted lifestyle choices pet parents use
-          </a>
-          <p class="text-sm text-gray-600 mt-4"><em>Gubbu helps you navigate modern decisions — for travel, lifestyle, and the ones who depend on you.</em></p>
-        </div>
 
         <h2 class="text-3xl font-bold mt-8 mb-4">💡 How Dog Food Fits a Smarter Lifestyle</h2>
         <p class="mb-4">It's not about perfection — it's about choosing what fits your life.</p>
@@ -205,38 +211,15 @@ export function BlogPost() {
         <p class="mb-4">The best dog food isn't the most expensive or most advertised. <strong>It's the one that fits your lifestyle and your dog's needs.</strong></p>
         <p class="mb-6">And that's exactly the kind of decision Gubbu exists to help with.</p>
 
-        <div class="bg-primary-50 rounded-lg p-6 mb-6">
-          <h3 class="text-xl font-bold mb-4">🎯 Take Action</h3>
-          <p class="mb-4">Making better choices shouldn't be complicated. Choose the approach that fits your situation:</p>
-          <div class="space-y-4">
-            <div>
-              <a href="https://tr.ee/l_Ro2_DMIE" target="_blank" rel="nofollow noopener" class="text-primary-600 hover:text-primary-700 font-semibold underline">
-                👉 Explore Dog Food Options That Fit Your Lifestyle
-              </a>
-              <p class="text-sm text-gray-600 mt-1">Compare convenient, travel-friendly, and health-focused choices.</p>
-            </div>
-            <div>
-              <a href="https://tr.ee/l_Ro2_DMIE" target="_blank" rel="nofollow noopener" class="text-primary-600 hover:text-primary-700 font-semibold underline">
-                🐶 Find Convenient Dog Food for Busy Pet Parents
-              </a>
-              <p class="text-sm text-gray-600 mt-1">Great for workdays, travel, and shared caregiving.</p>
-            </div>
-            <div>
-              <a href="https://tr.ee/l_Ro2_DMIE" target="_blank" rel="nofollow noopener" class="text-primary-600 hover:text-primary-700 font-semibold underline">
-                🥩 See Dog Food Options for Sensitive Dogs
-              </a>
-              <p class="text-sm text-gray-600 mt-1">Gentle ingredients, consistent routines.</p>
-            </div>
-            <div>
-              <a href="https://tr.ee/l_Ro2_DMIE" target="_blank" rel="nofollow noopener" class="text-primary-600 hover:text-primary-700 font-semibold underline">
-                ✨ Make Smarter Lifestyle Choices with Gubbu
-              </a>
-              <p class="text-sm text-gray-600 mt-1">From travel to everyday decisions — in one place.</p>
-            </div>
-          </div>
+        <div class="bg-gradient-to-r from-primary-50 to-primary-100 rounded-xl p-8 mb-6">
+          <h3 class="text-2xl font-bold mb-4">🐾 Make Smarter Lifestyle Choices</h3>
+          <p class="text-gray-700 mb-6">From travel to everyday decisions — Gubbu helps you navigate modern life with confidence.</p>
+          <a href="https://tr.ee/l_Ro2_DMIE" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
+            👉 Explore lifestyle solutions on Gubbu
+          </a>
         </div>
 
-        <p class="mb-6"><strong>Remember:</strong> The goal isn't to find the "perfect" dog food. It's to find the right fit for how you and your dog actually live. When you make decisions based on your real lifestyle, everything gets easier — for both of you.</p>
+        <p class="mb-6 text-gray-600"><em>Remember: The goal isn't to find the "perfect" dog food. It's to find the right fit for how you and your dog actually live. When you make decisions based on your real lifestyle, everything gets easier — for both of you.</em></p>
       `,
     },
     'christmas-2025': {
