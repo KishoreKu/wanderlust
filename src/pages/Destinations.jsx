@@ -195,7 +195,7 @@ export function Destinations() {
                         Explore Activities
                       </Button>
                     </Link>
-                    <Link to={destination.blogLink} className="flex-1">
+                    <Link to="/flights" className="flex-1">
                       <Button variant="outline" size="sm" className="w-full">
                         Plan Your Trip
                       </Button>
