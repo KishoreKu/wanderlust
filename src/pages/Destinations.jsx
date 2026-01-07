@@ -174,13 +174,15 @@ export function Destinations() {
                 className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1"
               >
                 <div className="relative h-56">
-                  <img
-                    src={destination.image}
-                    alt={destination.city}
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                  <div className="absolute bottom-4 left-4 right-4 text-white">
+                  <Link to={destination.blogLink}>
+                    <img
+                      src={destination.image}
+                      alt={destination.city}
+                      className="w-full h-full object-cover cursor-pointer hover:scale-105 transition-transform duration-300"
+                    />
+                  </Link>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent pointer-events-none"></div>
+                  <div className="absolute bottom-4 left-4 right-4 text-white pointer-events-none">
                     <h3 className="text-2xl font-bold mb-1">{destination.city}</h3>
                     <p className="text-sm text-gray-200">{destination.country}</p>
                   </div>
