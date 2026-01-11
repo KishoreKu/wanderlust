@@ -23,6 +23,22 @@ At Gubbu, we simplify decisions. This guide breaks down trusted, vet-recommended
 
 ---
 
+## 🧠 How Gubbu Evaluates Dog Food Brands
+
+At Gubbu, we don't rank products based on hype or sponsorships. We focus on decision clarity, using a consistent evaluation framework designed for real pet owners.
+
+**We assess dog food brands based on:**
+
+- ✅ **Ingredient transparency** — Clear protein sources, no vague fillers
+- ✅ **Life-stage suitability** — Puppy, adult, senior formulations
+- ✅ **Veterinary research & formulation standards** — Science-backed nutrition
+- ✅ **Brand consistency & recall history** — Track record of safety
+- ✅ **Ease of availability** — For long-term feeding consistency
+
+**Our goal is not to tell you what to buy** — but to help you understand which option fits your dog's needs best.
+
+---
+
 ## 🧠 How to Choose the Right Dog Food (Before Buying)
 
 Before picking a brand, consider:
@@ -117,7 +133,35 @@ Perfect for pet owners who prioritize natural ingredients, want to avoid by-prod
 
 ---
 
-## 🔍 Quick Comparison: Which One Is Right for Your Dog?
+## 🐾 Which Dogs Should Avoid These Foods?
+
+Not every "top brand" is right for every dog.
+
+**You should consult your vet before switching if your dog:**
+
+- ⚠️ Has food allergies or chronic digestive issues
+- ⚠️ Is on prescription or therapeutic diets
+- ⚠️ Is a senior dog with kidney, liver, or mobility concerns
+- ⚠️ Is a growing puppy requiring breed-specific nutrition
+
+**This guide is designed for general decision support, not medical diagnosis.**
+
+---
+
+## 🔍 Choosing the Right Food for Your Dog
+
+If you're unsure where to start, use this simple guide:
+
+- **High-energy / active dogs** → Higher protein, balanced fats
+- **Sensitive stomachs** → Limited ingredient or easily digestible formulas
+- **Weight management** → Controlled calorie density, higher fiber
+- **Senior dogs** → Joint support, moderate protein, easier digestion
+
+**The "best" dog food is the one your dog thrives on consistently.**
+
+---
+
+## 📊 Quick Comparison: Which One Is Right for Your Dog?
 
 <div class="overflow-x-auto mb-8">
   <table class="min-w-full bg-white border border-gray-200 rounded-lg">
@@ -214,6 +258,25 @@ If you're changing your dog's food:
 
 ---
 
+## 🌱 Part of Gubbu's Lifestyle Picks
+
+This guide is part of **Gubbu's Lifestyle Picks** — a growing collection of practical recommendations across:
+
+- 🐾 **Pet care** — Food, travel, health decisions
+- ✈️ **Travel essentials** — Destinations, booking, planning
+- 💼 **Work-from-anywhere tools** — Remote work solutions
+- 🧭 **Everyday decision guides** — Modern lifestyle choices
+
+<div class="bg-primary-50 rounded-lg p-6 mb-8">
+  <h3 class="text-xl font-bold mb-3">🎯 Explore More Lifestyle Picks</h3>
+  <p class="mb-4">Discover curated guides and practical recommendations for modern living.</p>
+  <a href="/lifestyle-picks" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
+    👉 Browse Gubbu Lifestyle Picks
+  </a>
+</div>
+
+---
+
 <div class="bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 rounded-2xl p-8 my-8 border border-indigo-200">
   <h3 class="text-2xl font-bold mb-4 text-gray-900">🐾 Need More Help Choosing?</h3>
   <p class="text-gray-700 mb-4">At Gubbu, we're building tools to help you make better decisions for your pets based on:</p>
@@ -238,5 +301,39 @@ If you're changing your dog's food:
 ---
 
 **Remember:** The "best" dog food is the one that keeps your dog healthy, happy, and thriving. Use this guide as a starting point, but always consider your individual dog's needs.
+
+---
+
+## ❓ Frequently Asked Questions (FAQ)
+
+### Is grain-free dog food better?
+
+**Not always.** Grain-free diets are helpful for dogs with specific allergies, but many dogs digest grains well. Some studies have linked grain-free diets to heart issues in certain breeds. Consult a vet before switching.
+
+### How often should I change my dog's food?
+
+**Only when needed** — life-stage changes, health concerns, or vet advice. Sudden changes can upset digestion. If you do switch, transition gradually over 7-10 days.
+
+### Can puppies eat adult dog food?
+
+**Generally no.** Puppies need higher calories and nutrients (especially DHA, calcium, and protein) for proper growth and development. Always choose puppy-specific formulas.
+
+### What ingredients should I avoid?
+
+**Watch out for:**
+- Artificial colors and flavors
+- Vague meat by-products ("meat meal" without specifying the source)
+- Excessive fillers (corn, wheat, soy as primary ingredients)
+- Unnamed animal sources ("animal fat" instead of "chicken fat")
+
+### Should I consult a vet before switching brands?
+
+**Yes, especially for:**
+- Senior dogs or those with medical conditions
+- Dogs with food allergies or sensitivities
+- Puppies transitioning from mother's milk
+- Dogs on prescription diets
+
+---
 
 *Have questions about choosing dog food? The Gubbu team is here to help you make informed decisions — not just push products.*
