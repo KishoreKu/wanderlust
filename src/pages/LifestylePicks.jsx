@@ -1,7 +1,15 @@
-import { ShoppingBag, Plane, Laptop, Heart, Home, Sparkles, ArrowRight, CheckCircle2 } from 'lucide-react';
+import { useMemo } from 'react';
+import { Link } from 'react-router-dom';
+import { ShoppingBag, Plane, Laptop, Heart, Home, Sparkles, ArrowRight, CheckCircle2, Calendar } from 'lucide-react';
 import { Button } from '../components/Button';
+import { getAllBlogPosts } from '../utils/blogLoader';
 
 export function LifestylePicks() {
+    const petPosts = useMemo(() => {
+        const posts = getAllBlogPosts();
+        return posts.filter(post => post.category === 'Pet Care' || post.tags.some(tag => tag.toLowerCase().includes('pet') || tag.toLowerCase().includes('dog')));
+    }, []);
+
     const categories = [
         {
             icon: Plane,
@@ -205,8 +213,57 @@ export function LifestylePicks() {
                 </div>
             </section>
 
+            {/* Pet & Family Picks Section */}
+            <section id="family" className="py-20 bg-white">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="flex items-center gap-4 mb-12">
+                        <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-500 rounded-2xl flex items-center justify-center shadow-lg transform -rotate-3">
+                            <span className="text-2xl">🐶</span>
+                        </div>
+                        <div>
+                            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Pet & Family Picks</h2>
+                            <p className="text-lg text-gray-600 mt-1">Travel comfortably with your four-legged friends</p>
+                        </div>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        {petPosts.map((post) => (
+                            <Link key={post.id} to={`/blog/${post.id}`} className="group">
+                                <article className="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 h-full flex flex-col">
+                                    <div className="relative h-48 overflow-hidden">
+                                        <img
+                                            src={post.image}
+                                            alt={post.title}
+                                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                        />
+                                        <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-emerald-600 shadow-sm">
+                                            {post.category}
+                                        </div>
+                                    </div>
+                                    <div className="p-6 flex flex-col flex-grow">
+                                        <div className="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                                            <Calendar className="h-4 w-4" />
+                                            <span>{post.date}</span>
+                                        </div>
+                                        <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-emerald-600 transition-colors line-clamp-2">
+                                            {post.title}
+                                        </h3>
+                                        <p className="text-gray-600 text-sm line-clamp-3 mb-4 flex-grow">
+                                            {post.excerpt}
+                                        </p>
+                                        <div className="flex items-center text-emerald-600 font-semibold text-sm group-hover:gap-2 transition-all">
+                                            Read Guide <ArrowRight className="h-4 w-4 ml-1" />
+                                        </div>
+                                    </div>
+                                </article>
+                            </Link>
+                        ))}
+                    </div>
+                </div>
+            </section >
+
             {/* Why Gubbu Picks Section */}
-            <section className="py-20 bg-white">
+            < section className="py-20 bg-white" >
                 <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 rounded-3xl p-12 md:p-16 border border-indigo-100 shadow-xl">
                         <div className="text-center">
@@ -225,15 +282,15 @@ export function LifestylePicks() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section >
 
             {/* Soft CTA Section */}
-            <section className="py-20 bg-gradient-to-br from-gray-900 via-indigo-900 to-purple-900 text-white relative overflow-hidden">
+            < section className="py-20 bg-gradient-to-br from-gray-900 via-indigo-900 to-purple-900 text-white relative overflow-hidden" >
                 {/* Animated Background */}
-                <div className="absolute inset-0 opacity-10">
+                < div className="absolute inset-0 opacity-10" >
                     <div className="absolute top-0 left-1/4 w-96 h-96 bg-purple-500 rounded-full mix-blend-overlay filter blur-3xl animate-pulse"></div>
                     <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-indigo-500 rounded-full mix-blend-overlay filter blur-3xl animate-pulse delay-1000"></div>
-                </div>
+                </div >
 
                 <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <h2 className="text-3xl md:text-4xl font-bold mb-6 leading-tight">
@@ -265,10 +322,10 @@ export function LifestylePicks() {
                         </a>
                     </div>
                 </div>
-            </section>
+            </section >
 
             {/* Footer Disclosure */}
-            <section className="py-12 bg-gray-50 border-t border-gray-200">
+            < section className="py-12 bg-gray-50 border-t border-gray-200" >
                 <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm">
                         <div className="flex items-start gap-4">
@@ -286,7 +343,7 @@ export function LifestylePicks() {
                         </div>
                     </div>
                 </div>
-            </section>
-        </div>
+            </section >
+        </div >
     );
 }

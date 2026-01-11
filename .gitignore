@@ -30,3 +30,4 @@ MAILCHIMP_CREDENTIALS_PRIVATE.txt
 # Backend files (managed in separate API repo)
 server-with-rag.js
 .github/workflows/embed-content.yml
+.env
