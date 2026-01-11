@@ -25,7 +25,7 @@ export function LifestylePicks() {
             emoji: '💻',
             title: 'Work From Anywhere',
             description: 'Tools and gear that support remote work, flexible schedules, and location-independent lifestyles.',
-            link: '#work',
+            link: '/work-from-anywhere',
             gradient: 'from-purple-500 to-pink-500',
             bgGradient: 'from-purple-50 to-pink-50'
         },
