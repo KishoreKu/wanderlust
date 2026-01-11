@@ -69,12 +69,28 @@ Before picking a brand, consider:
 
 Perfect for dog owners who want a scientifically-backed, reliable option with formulas tailored to specific life stages and activity levels.
 
-<div class="bg-primary-50 rounded-lg p-6 mb-8">
-  <h3 class="text-xl font-bold mb-3">🥇 Ready to give your dog premium nutrition?</h3>
-  <p class="mb-4">Explore Purina Pro Plan options on Amazon — backed by decades of veterinary research.</p>
-  <a href="https://amzn.to/4sEK5ZG" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
-    👉 View Purina Pro Plan on Amazon
-  </a>
+<div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 mb-8 border-l-4 border-blue-500">
+  <div class="space-y-3">
+    <div class="flex items-start">
+      <span class="text-2xl mr-3">🟦</span>
+      <div>
+        <p class="font-semibold text-gray-900">Recommended for:</p>
+        <p class="text-gray-700">Active dogs, working breeds, high-energy lifestyles</p>
+      </div>
+    </div>
+    <div class="flex items-start">
+      <span class="text-2xl mr-3">🐾</span>
+      <div>
+        <p class="font-semibold text-gray-900">Why we like it:</p>
+        <p class="text-gray-700">High protein, vet-backed research, specialized formulas</p>
+      </div>
+    </div>
+    <div class="pt-2">
+      <a href="https://amzn.to/4sEK5ZG" target="_blank" rel="nofollow noopener" class="inline-flex items-center bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors font-semibold">
+        <span class="mr-2">🔗</span> Check Purina Pro Plan on Amazon
+      </a>
+    </div>
+  </div>
 </div>
 
 ---
@@ -96,12 +112,28 @@ Perfect for dog owners who want a scientifically-backed, reliable option with fo
 
 Ideal for dogs with digestive issues, food sensitivities, or those following a vet-recommended diet plan. Also great for senior dogs with changing nutritional needs.
 
-<div class="bg-primary-50 rounded-lg p-6 mb-8">
-  <h3 class="text-xl font-bold mb-3">🥈 Does your dog have a sensitive stomach?</h3>
-  <p class="mb-4">Explore Hill's Science Diet formulas — the #1 choice among veterinarians for digestive health.</p>
-  <a href="https://amzn.to/3LG7iK6" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
-    👉 Explore Hill's Science Diet on Amazon
-  </a>
+<div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl p-6 mb-8 border-l-4 border-green-500">
+  <div class="space-y-3">
+    <div class="flex items-start">
+      <span class="text-2xl mr-3">🟩</span>
+      <div>
+        <p class="font-semibold text-gray-900">Recommended for:</p>
+        <p class="text-gray-700">Sensitive stomachs, weight management, health-specific needs</p>
+      </div>
+    </div>
+    <div class="flex items-start">
+      <span class="text-2xl mr-3">🐾</span>
+      <div>
+        <p class="font-semibold text-gray-900">Why we like it:</p>
+        <p class="text-gray-700">Clinically tested, vet-recommended, precise nutrition</p>
+      </div>
+    </div>
+    <div class="pt-2">
+      <a href="https://amzn.to/3LG7iK6" target="_blank" rel="nofollow noopener" class="inline-flex items-center text-white px-6 py-3 rounded-lg transition-colors font-semibold" style="background-color: #059669; hover:background-color: #047857;">
+        <span class="mr-2">🔗</span> Check Hill's Science Diet on Amazon
+      </a>
+    </div>
+  </div>
 </div>
 
 ---
@@ -123,12 +155,28 @@ Ideal for dogs with digestive issues, food sensitivities, or those following a v
 
 Perfect for pet owners who prioritize natural ingredients, want to avoid by-products, and prefer a brand with clear ingredient sourcing.
 
-<div class="bg-primary-50 rounded-lg p-6 mb-8">
-  <h3 class="text-xl font-bold mb-3">🥉 Want natural, high-quality ingredients?</h3>
-  <p class="mb-4">Explore Blue Buffalo options — real meat, no by-products, and natural preservation.</p>
-  <a href="https://amzn.to/3YBjoHp" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
-    👉 Check Blue Buffalo on Amazon
-  </a>
+<div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-6 mb-8 border-l-4 border-purple-500">
+  <div class="space-y-3">
+    <div class="flex items-start">
+      <span class="text-2xl mr-3">🟪</span>
+      <div>
+        <p class="font-semibold text-gray-900">Recommended for:</p>
+        <p class="text-gray-700">Natural ingredient preference, allergy-prone dogs</p>
+      </div>
+    </div>
+    <div class="flex items-start">
+      <span class="text-2xl mr-3">🐾</span>
+      <div>
+        <p class="font-semibold text-gray-900">Why we like it:</p>
+        <p class="text-gray-700">Real meat, no by-products, natural preservation</p>
+      </div>
+    </div>
+    <div class="pt-2">
+      <a href="https://amzn.to/3YBjoHp" target="_blank" rel="nofollow noopener" class="inline-flex items-center text-white px-6 py-3 rounded-lg transition-colors font-semibold" style="background-color: #9333ea; hover:background-color: #7e22ce;">
+        <span class="mr-2">🔗</span> Check Blue Buffalo on Amazon
+      </a>
+    </div>
+  </div>
 </div>
 
 ---
