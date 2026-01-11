@@ -26,6 +26,7 @@ export function Footer() {
               <li><Link to="/new-year-activities" className="hover:text-primary-400 transition-colors">Things to Do</Link></li>
               <li><Link to="/destinations" className="hover:text-primary-400 transition-colors">Destinations</Link></li>
               <li><Link to="/work-from-anywhere" className="hover:text-primary-400 transition-colors">Work From Anywhere</Link></li>
+              <li><Link to="/lifestyle-picks" className="hover:text-primary-400 transition-colors">Lifestyle Picks</Link></li>
             </ul>
           </div>
 

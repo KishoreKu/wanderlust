@@ -19,8 +19,12 @@ export function Navbar() {
     <nav className="bg-white/95 backdrop-blur-sm shadow-md fixed w-full top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <Link to="/" className="flex items-center">
-            <img src="/gubbu-logo-final.png" alt="Gubbu - Navigate the Modern World" className="h-20 w-auto object-contain" />
+          <Link to="/" className="flex items-center gap-2">
+            <img src="/gubbu-icon.png" alt="Gubbu Icon" className="h-10 w-10 object-contain" />
+            <div className="flex items-center gap-0.5">
+              <span className="text-5xl tracking-tighter bg-gradient-to-r from-red-600 to-orange-500 bg-clip-text text-transparent" style={{ fontFamily: 'Genos, sans-serif', fontWeight: 100 }}>GUBBU</span>
+              <span className="text-xl">🐾</span>
+            </div>
           </Link>
 
           <div className="hidden md:flex items-center space-x-8">
