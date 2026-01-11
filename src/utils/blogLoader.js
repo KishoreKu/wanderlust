@@ -144,6 +144,7 @@ export function getAllBlogPosts() {
             readTime: frontmatter.readTime || calculateReadTime(markdownContent),
             featured: frontmatter.featured || false,
             author: frontmatter.author || 'Gubbu Team',
+            tags: frontmatter.tags || [],
         };
 
         posts.push(post);
