@@ -19,7 +19,7 @@ At Gubbu, we simplify decisions. This guide breaks down trusted, vet-recommended
 
 ## ⚠️ Affiliate Disclosure
 
-**Disclosure:** As an Amazon Associate, Gubbu earns from qualifying purchases. This does not affect our recommendations — our goal is to help you make informed, confident decisions.
+**Disclosure:** As an Amazon Associate, Gubbu earns from qualifying purchases at no additional cost to you. This does not affect our recommendations — our goal is to help you make informed, confident decisions.
 
 ---
 
