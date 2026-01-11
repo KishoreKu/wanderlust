@@ -16,6 +16,7 @@ import { Contact } from './pages/Contact';
 import { Deals } from './pages/Deals';
 import { Media } from './pages/Media';
 import { WorkFromAnywhere } from './pages/WorkFromAnywhere';
+import { LifestylePicks } from './pages/LifestylePicks';
 import { PrivacyPolicy } from './pages/PrivacyPolicy';
 import { TermsOfService } from './pages/TermsOfService';
 import { AffiliateDisclosure } from './pages/AffiliateDisclosure';
@@ -56,6 +57,7 @@ function App() {
             <Route path="/africa-destinations" element={<AfricaDestinations />} />
             <Route path="/oceania-destinations" element={<OceaniaDestinations />} />
             <Route path="/work-from-anywhere" element={<WorkFromAnywhere />} />
+            <Route path="/lifestyle-picks" element={<LifestylePicks />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/deals" element={<Deals />} />
