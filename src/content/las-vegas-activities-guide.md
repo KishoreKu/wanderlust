@@ -108,7 +108,7 @@ Perfect 5.0 rating! The Valley of Fire offers Mars-like landscapes without the l
 <div class="bg-gradient-to-r from-primary-50 to-primary-100 rounded-xl p-8 mb-8">
   <h3 class="text-2xl font-bold mb-4">🎰 Ready to Book Your Vegas Adventure?</h3>
   <p class="text-gray-700 mb-6">From $30 budget options to $249 premium experiences. Over 1,000+ activities with verified reviews from real travelers!</p>
-  <a href="https://www.viator.com/Las-Vegas/d684-ttd?pid=p00282987&mcid=42383&medium=link&medium_version=selector&campaign=gubbu-lasvegas" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
+  <a href="https://api.gubbu.io/go/activities" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
     👉 Browse All Las Vegas Activities
   </a>
 </div>
@@ -298,7 +298,7 @@ Drive supercars like Ferrari, Lamborghini, and Porsche on real roads!
 <div class="bg-primary-50 rounded-lg p-6 mb-8">
   <h3 class="text-xl font-bold mb-3">🎯 Compare All Vegas Activities</h3>
   <p class="mb-4">From $30 observation wheels to $249 exotic car experiences!</p>
-  <a href="https://www.viator.com/Las-Vegas/d684-ttd?pid=p00282987&mcid=42383&medium=link&medium_version=selector&campaign=gubbu-lasvegas" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
+  <a href="https://api.gubbu.io/go/activities" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
     👉 View All Activities
   </a>
 </div>
@@ -585,7 +585,7 @@ Most tours include:
 <div class="bg-gradient-to-r from-primary-50 to-primary-100 rounded-xl p-8 mb-6">
   <h3 class="text-2xl font-bold mb-4">🎰 Ready to Experience Las Vegas?</h3>
   <p class="text-gray-700 mb-6">From $30 budget activities to $249 luxury experiences, there's something for everyone in Vegas. All activities include verified reviews from 50,000+ visitors and flexible cancellation.</p>
-  <a href="https://www.viator.com/Las-Vegas/d684-ttd?pid=p00282987&mcid=42383&medium=link&medium_version=selector&campaign=gubbu-lasvegas" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
+  <a href="https://api.gubbu.io/go/activities" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
     👉 Book Your Vegas Adventure Now
   </a>
 </div>

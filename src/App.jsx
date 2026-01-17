@@ -33,7 +33,7 @@ import ChatWidget from './components/ChatWidget';
 
 function App() {
   return (
-    <Router>
+    <Router future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
       <ScrollToTop />
       <GoogleAnalytics />
       <CanonicalTag />

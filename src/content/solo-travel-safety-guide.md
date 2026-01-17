@@ -117,7 +117,7 @@ Don't let fear hold you back from amazing experiences, but do take sensible prec
 <div class="bg-gradient-to-r from-primary-50 to-primary-100 rounded-xl p-8 mb-6">
   <h3 class="text-2xl font-bold mb-4">🌍 Ready for Your Solo Adventure?</h3>
   <p class="text-gray-700 mb-6">Plan your safe and exciting solo journey with confidence. Find the best flights and accommodations for your next adventure!</p>
-  <a href="https://gubbu.io/flights" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
+  <a href="https://api.gubbu.io/go/flights" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
     👉 Search Flights & Hotels
   </a>
 </div>

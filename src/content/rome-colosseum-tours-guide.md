@@ -61,7 +61,7 @@ Nearly identical to #1 but with smaller groups for a more intimate experience. P
 <div class="bg-gradient-to-r from-primary-50 to-primary-100 rounded-xl p-8 mb-8">
   <h3 class="text-2xl font-bold mb-4">🎯 Ready to Book Your Rome Adventure?</h3>
   <p class="text-gray-700 mb-6">From $20 budget options to $92 premium experiences. All tours include skip-the-line access and verified reviews from 160,000+ travelers.</p>
-  <a href="https://www.getyourguide.com/s?partner_id=NEGURHX&et=408602&lc=33" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
+  <a href="https://api.gubbu.io/go/activities" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
     👉 Browse All Rome Colosseum Tours
   </a>
 </div>
@@ -161,7 +161,7 @@ This combines the exclusivity of underground access with a thorough exploration 
 <div class="bg-primary-50 rounded-lg p-6 mb-8">
   <h3 class="text-xl font-bold mb-3">🎯 Compare All Colosseum Tours</h3>
   <p class="mb-4">From budget-friendly $20 audio tours to exclusive $92 underground experiences!</p>
-  <a href="https://www.getyourguide.com/s?partner_id=NEGURHX&et=408602&lc=33" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
+  <a href="https://api.gubbu.io/go/activities" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
     👉 View All Rome Tours
   </a>
 </div>
@@ -466,7 +466,7 @@ Most tours include:
 <div class="bg-gradient-to-r from-primary-50 to-primary-100 rounded-xl p-8 mb-6">
   <h3 class="text-2xl font-bold mb-4">🎯 Ready to Experience Ancient Rome?</h3>
   <p class="text-gray-700 mb-6">From $20 budget tours to $92 exclusive underground experiences, there's a perfect Colosseum tour for every traveler. All tours include skip-the-line access, verified reviews from 160,000+ visitors, and flexible cancellation.</p>
-  <a href="https://www.getyourguide.com/s?partner_id=NEGURHX&et=408602&lc=33" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
+  <a href="https://api.gubbu.io/go/activities" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
     👉 Book Your Colosseum Tour Now
   </a>
 </div>

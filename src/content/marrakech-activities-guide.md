@@ -69,7 +69,7 @@ With nearly perfect 4.9/5 rating from 22,000+ travelers, this is Marrakech's hig
 <div class="bg-gradient-to-r from-primary-50 to-primary-100 rounded-xl p-8 mb-8">
   <h3 class="text-2xl font-bold mb-4">🎯 Ready to Book Your Marrakech Adventure?</h3>
   <p class="text-gray-700 mb-6">From $15 budget day trips to $123 luxury hot air balloon flights. All activities include hotel pickup, verified reviews, and flexible cancellation.</p>
-  <a href="https://www.getyourguide.com/s?partner_id=NEGURHX&et=477070&lc=208" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
+  <a href="https://api.gubbu.io/go/activities" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
     👉 Browse All Marrakech Activities
   </a>
 </div>
@@ -206,7 +206,7 @@ Watch the sun rise over the Atlas Mountains while floating peacefully above Berb
 <div class="bg-primary-50 rounded-lg p-6 mb-8">
   <h3 class="text-xl font-bold mb-3">🎯 Compare All Marrakech Experiences</h3>
   <p class="mb-4">From budget-friendly $15 day trips to luxury $123 balloon flights – find the perfect experience for your Marrakech adventure!</p>
-  <a href="https://www.getyourguide.com/s?partner_id=NEGURHX&et=477070&lc=208" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
+  <a href="https://api.gubbu.io/go/activities" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
     👉 View All Marrakech Tours & Activities
   </a>
 </div>
@@ -497,7 +497,7 @@ Most tours include traditional Moroccan meals featuring:
 <div class="bg-gradient-to-r from-primary-50 to-primary-100 rounded-xl p-8 mb-6">
   <h3 class="text-2xl font-bold mb-4">🎯 Ready to Explore Marrakech?</h3>
   <p class="text-gray-700 mb-6">From $15 budget day trips to $123 luxury balloon flights, there's a perfect Marrakech adventure for every traveler. All tours include hotel pickup, verified reviews, and flexible cancellation.</p>
-  <a href="https://www.getyourguide.com/s?partner_id=NEGURHX&et=477070&lc=208" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
+  <a href="https://api.gubbu.io/go/activities" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
     👉 Book Your Marrakech Adventure Now
   </a>
 </div>
