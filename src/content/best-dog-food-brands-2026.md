@@ -5,7 +5,7 @@ date: 2026-01-10
 author: "Gubbu Team"
 category: "Pet Care"
 tags: ["dog food", "pet care", "dog nutrition", "pet health", "2026 guide"]
-image: "/hero-dog-food-brands.svg"
+image: "/dog-food-brands-hero.png"
 featured: true
 ---
 

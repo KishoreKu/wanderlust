@@ -6,7 +6,7 @@ author: "Gubbu Lifestyle Team"
 category: "Pet Care"
 tags: ["dog food", "pet care", "travel tips", "busy lifestyle", "pet parents", "2026 guide"]
 featured: true
-image: "/hero-dog-food-busy.svg"
+image: "/dog-food-travel-hero.png"
 ---
 
 # Best Dog Food for Busy & Traveling Pet Parents (2026 Guide)

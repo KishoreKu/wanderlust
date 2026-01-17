@@ -5,7 +5,7 @@ date: 2026-01-17
 author: "Gubbu Lifestyle Team"
 category: "Pet Care"
 tags: ["pet care", "flea prevention", "tick prevention", "heartworm", "busy lifestyle", "pet health", "2026 guide"]
-image: "/hero-pet-care-essentials.svg"
+image: "/pet-care-routine-hero.png"
 featured: false
 id: canada-pet-care-guide
 ---
