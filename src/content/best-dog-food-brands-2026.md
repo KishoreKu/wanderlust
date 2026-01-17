@@ -5,7 +5,7 @@ date: 2026-01-10
 author: "Gubbu Team"
 category: "Pet Care"
 tags: ["dog food", "pet care", "dog nutrition", "pet health", "2026 guide"]
-image: "/dog_food_blog_hero_1768093564720.png"
+image: "/hero-dog-food-brands.svg"
 featured: true
 ---
 
@@ -86,7 +86,7 @@ Perfect for dog owners who want a scientifically-backed, reliable option with fo
       </div>
     </div>
     <div class="pt-2">
-      <a href="https://amzn.to/4sEK5ZG" target="_blank" rel="nofollow noopener" class="inline-flex items-center bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors font-semibold">
+      <a href="https://api.gubbu.io/go/amazon?query=Purina%20Pro%20Plan%20dog%20food&source=blog" target="_blank" rel="nofollow noopener" class="inline-flex items-center bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors font-semibold">
         <span class="mr-2">🔗</span> Check Purina Pro Plan on Amazon
       </a>
     </div>
@@ -129,7 +129,7 @@ Ideal for dogs with digestive issues, food sensitivities, or those following a v
       </div>
     </div>
     <div class="pt-2">
-      <a href="https://amzn.to/3LG7iK6" target="_blank" rel="nofollow noopener" class="inline-flex items-center text-white px-6 py-3 rounded-lg transition-colors font-semibold" style="background-color: #059669; hover:background-color: #047857;">
+      <a href="https://api.gubbu.io/go/amazon?query=Hill%27s%20Science%20Diet%20dog%20food&source=blog" target="_blank" rel="nofollow noopener" class="inline-flex items-center text-white px-6 py-3 rounded-lg transition-colors font-semibold" style="background-color: #059669;">
         <span class="mr-2">🔗</span> Check Hill's Science Diet on Amazon
       </a>
     </div>
@@ -172,7 +172,7 @@ Perfect for pet owners who prioritize natural ingredients, want to avoid by-prod
       </div>
     </div>
     <div class="pt-2">
-      <a href="https://amzn.to/3YBjoHp" target="_blank" rel="nofollow noopener" class="inline-flex items-center text-white px-6 py-3 rounded-lg transition-colors font-semibold" style="background-color: #9333ea; hover:background-color: #7e22ce;">
+      <a href="https://api.gubbu.io/go/amazon?query=Blue%20Buffalo%20dog%20food&source=blog" target="_blank" rel="nofollow noopener" class="inline-flex items-center text-white px-6 py-3 rounded-lg transition-colors font-semibold" style="background-color: #9333ea;">
         <span class="mr-2">🔗</span> Check Blue Buffalo on Amazon
       </a>
     </div>
