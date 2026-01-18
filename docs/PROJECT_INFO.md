@@ -85,9 +85,7 @@
 4. Site updates automatically
 
 ### Deployment Guides
-- `CPANEL_AUTO_DEPLOY_GUIDE.md` - Automated deployment setup
-- `CPANEL_DEPLOYMENT_GUIDE.md` - Manual deployment guide
-- `DEPLOYMENT_GUIDE.md` - Netlify deployment (alternative)
+- `deployment/DEPLOYMENT.md` - Auto-deploy + manual deployment reference
 
 ---
 

@@ -138,23 +138,7 @@ Currently, the website uses static data. To add a CMS:
 
 ## 🌐 Deployment
 
-### Netlify
-
-```bash
-npm run build
-# Deploy the dist folder to Netlify
-```
-
-### Vercel
-
-```bash
-npm run build
-# Deploy using Vercel CLI or GitHub integration
-```
-
-### Other Platforms
-
-The built files in `dist/` can be deployed to any static hosting service.
+See `docs/deployment/DEPLOYMENT.md` for the auto-deploy workflow (GitHub Actions → cPanel) and manual alternatives.
 
 ## 📄 License
 

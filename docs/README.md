@@ -6,10 +6,7 @@ This folder contains all documentation, guides, and reference materials for the 
 
 ### 🚀 `/deployment`
 Guides for deploying and hosting the website:
-- `DEPLOYMENT_GUIDE.md` - General deployment instructions
-- `DEPLOYMENT_INFO.md` - Deployment configuration details
-- `CPANEL_DEPLOYMENT_GUIDE.md` - cPanel hosting setup
-- `CPANEL_AUTO_DEPLOY_GUIDE.md` - Automated deployment from GitHub to cPanel
+- `DEPLOYMENT.md` - Auto-deploy (GitHub Actions → cPanel) plus manual/alternative options
 
 ### ⚙️ `/setup`
 Configuration guides for third-party services:
