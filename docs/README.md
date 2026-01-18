@@ -35,6 +35,10 @@ Content creation guides and templates:
 
 ### 📄 Root Documentation
 - `PROJECT_INFO.md` - General project information
+- `affiliate-governance.md` - Affiliate and outbound link rules
+- `api-routing.md` - /go/* endpoint reference for frontend
+- `chat-implementation.md` - Frontend chat integration with API
+- `gubbu-architecture.md` - System architecture summary
 - `README.md` - This file
 
 ## 🎯 Purpose
