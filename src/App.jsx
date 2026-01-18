@@ -7,33 +7,30 @@ import { GoogleAnalytics } from './components/GoogleAnalytics';
 import { NewsletterPopup } from './components/NewsletterPopup';
 import { CanonicalTag } from './components/CanonicalTag';
 import { ScrollToTop } from './components/ScrollToTop';
-const lazyPage = (path, exportName) =>
-  lazy(() => import(path).then((module) => ({ default: module[exportName] })));
-
-const Home = lazyPage('./pages/Home', 'Home');
-const Blog = lazyPage('./pages/Blog', 'Blog');
-const BlogPost = lazyPage('./pages/BlogPost', 'BlogPost');
-const Destinations = lazyPage('./pages/Destinations', 'Destinations');
-const Hotels = lazyPage('./pages/Hotels', 'Hotels');
-const Flights = lazyPage('./pages/Flights', 'Flights');
-const About = lazyPage('./pages/About', 'About');
-const Contact = lazyPage('./pages/Contact', 'Contact');
-const Deals = lazyPage('./pages/Deals', 'Deals');
-const Media = lazyPage('./pages/Media', 'Media');
-const WorkFromAnywhere = lazyPage('./pages/WorkFromAnywhere', 'WorkFromAnywhere');
-const LifestylePicks = lazyPage('./pages/LifestylePicks', 'LifestylePicks');
-const PrivacyPolicy = lazyPage('./pages/PrivacyPolicy', 'PrivacyPolicy');
-const TermsOfService = lazyPage('./pages/TermsOfService', 'TermsOfService');
-const AffiliateDisclosure = lazyPage('./pages/AffiliateDisclosure', 'AffiliateDisclosure');
-const AirHelp = lazyPage('./pages/AirHelp', 'AirHelp');
-const Klook = lazyPage('./pages/Klook', 'Klook');
-const NewYearActivities = lazyPage('./pages/NewYearActivities', 'NewYearActivities');
-const NewYearNYC = lazyPage('./pages/NewYearNYC', 'NewYearNYC');
-const EuropeDestinations = lazyPage('./pages/EuropeDestinations', 'EuropeDestinations');
-const AsiaDestinations = lazyPage('./pages/AsiaDestinations', 'AsiaDestinations');
-const AmericasDestinations = lazyPage('./pages/AmericasDestinations', 'AmericasDestinations');
-const AfricaDestinations = lazyPage('./pages/AfricaDestinations', 'AfricaDestinations');
-const OceaniaDestinations = lazyPage('./pages/OceaniaDestinations', 'OceaniaDestinations');
+const Home = lazy(() => import('./pages/Home').then((module) => ({ default: module.Home })));
+const Blog = lazy(() => import('./pages/Blog').then((module) => ({ default: module.Blog })));
+const BlogPost = lazy(() => import('./pages/BlogPost').then((module) => ({ default: module.BlogPost })));
+const Destinations = lazy(() => import('./pages/Destinations').then((module) => ({ default: module.Destinations })));
+const Hotels = lazy(() => import('./pages/Hotels').then((module) => ({ default: module.Hotels })));
+const Flights = lazy(() => import('./pages/Flights').then((module) => ({ default: module.Flights })));
+const About = lazy(() => import('./pages/About').then((module) => ({ default: module.About })));
+const Contact = lazy(() => import('./pages/Contact').then((module) => ({ default: module.Contact })));
+const Deals = lazy(() => import('./pages/Deals').then((module) => ({ default: module.Deals })));
+const Media = lazy(() => import('./pages/Media').then((module) => ({ default: module.Media })));
+const WorkFromAnywhere = lazy(() => import('./pages/WorkFromAnywhere').then((module) => ({ default: module.WorkFromAnywhere })));
+const LifestylePicks = lazy(() => import('./pages/LifestylePicks').then((module) => ({ default: module.LifestylePicks })));
+const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy').then((module) => ({ default: module.PrivacyPolicy })));
+const TermsOfService = lazy(() => import('./pages/TermsOfService').then((module) => ({ default: module.TermsOfService })));
+const AffiliateDisclosure = lazy(() => import('./pages/AffiliateDisclosure').then((module) => ({ default: module.AffiliateDisclosure })));
+const AirHelp = lazy(() => import('./pages/AirHelp').then((module) => ({ default: module.AirHelp })));
+const Klook = lazy(() => import('./pages/Klook').then((module) => ({ default: module.Klook })));
+const NewYearActivities = lazy(() => import('./pages/NewYearActivities').then((module) => ({ default: module.NewYearActivities })));
+const NewYearNYC = lazy(() => import('./pages/NewYearNYC').then((module) => ({ default: module.NewYearNYC })));
+const EuropeDestinations = lazy(() => import('./pages/EuropeDestinations').then((module) => ({ default: module.EuropeDestinations })));
+const AsiaDestinations = lazy(() => import('./pages/AsiaDestinations').then((module) => ({ default: module.AsiaDestinations })));
+const AmericasDestinations = lazy(() => import('./pages/AmericasDestinations').then((module) => ({ default: module.AmericasDestinations })));
+const AfricaDestinations = lazy(() => import('./pages/AfricaDestinations').then((module) => ({ default: module.AfricaDestinations })));
+const OceaniaDestinations = lazy(() => import('./pages/OceaniaDestinations').then((module) => ({ default: module.OceaniaDestinations })));
 
 function PageFallback() {
   return (
