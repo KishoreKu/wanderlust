@@ -6,6 +6,7 @@ author: "Gubbu Travel Team"
 category: "Destinations"
 tags: ["Carlsbad", "California", "resort", "spa", "beach", "family travel", "coastal getaway", "San Diego"]
 featured: true
+image: "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=1200&auto=format&fit=crop&q=80"
 ---
 
 # Westin Carlsbad Resort & Spa: A Relaxing Coastal Stay in Southern California
