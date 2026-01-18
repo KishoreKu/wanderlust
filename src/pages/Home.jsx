@@ -31,40 +31,35 @@ export function Home() {
 
   return (
     <div
-      className={`min-h-screen relative overflow-hidden transition-colors duration-300 ${
-        isDark ? 'bg-black text-white' : 'bg-gradient-to-br from-rose-100 via-orange-100 to-amber-100 text-gray-900'
-      }`}
+      className={`min-h-screen relative overflow-hidden transition-colors duration-300 ${isDark ? 'bg-black text-white' : 'bg-gradient-to-br from-rose-100 via-orange-100 to-amber-100 text-gray-900'
+        }`}
     >
       <Snowfall density={isDark ? 60 : 40} />
       <div
-        className={`absolute inset-0 pointer-events-none ${
-          isDark
+        className={`absolute inset-0 pointer-events-none ${isDark
             ? 'bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.08),transparent_55%)]'
             : 'bg-[radial-gradient(circle_at_top_left,rgba(248,113,113,0.28),transparent_55%),radial-gradient(circle_at_bottom_right,rgba(251,191,36,0.3),transparent_55%)]'
-        }`}
+          }`}
       />
       {!isDark && <div className="absolute inset-0 bg-black/10 pointer-events-none" />}
 
       <button
         type="button"
         onClick={() => setIsDark((prev) => !prev)}
-        className={`fixed top-20 right-6 z-40 inline-flex items-center gap-2 rounded-full border px-3 py-1.5 text-xs font-semibold transition ${
-          isDark
+        className={`fixed top-20 right-6 z-40 inline-flex items-center gap-2 rounded-full border px-3 py-1.5 text-xs font-semibold transition ${isDark
             ? 'border-white/20 bg-white/10 text-white hover:border-white/40'
             : 'border-gray-300 bg-white/80 text-gray-800 hover:border-gray-400'
-        }`}
+          }`}
         aria-label="Toggle theme"
       >
         <span>{isDark ? 'Dark' : 'Light'}</span>
         <span
-          className={`relative inline-flex h-5 w-10 items-center rounded-full transition ${
-            isDark ? 'bg-white/20' : 'bg-gray-200'
-          }`}
+          className={`relative inline-flex h-5 w-10 items-center rounded-full transition ${isDark ? 'bg-white/20' : 'bg-gray-200'
+            }`}
         >
           <span
-            className={`inline-block h-4 w-4 transform rounded-full transition ${
-              isDark ? 'translate-x-5 bg-white' : 'translate-x-1 bg-gray-700'
-            }`}
+            className={`inline-block h-4 w-4 transform rounded-full transition ${isDark ? 'translate-x-5 bg-white' : 'translate-x-1 bg-gray-700'
+              }`}
           />
         </span>
       </button>
@@ -96,19 +91,17 @@ export function Home() {
             className="relative"
           >
             <div
-              className={`flex items-center gap-3 rounded-full px-5 py-3 shadow-sm focus-within:shadow-md transition ${
-                isDark
+              className={`flex items-center gap-3 rounded-full px-5 py-3 shadow-sm focus-within:shadow-md transition ${isDark
                   ? 'bg-white/10 border border-white/15 focus-within:border-white/30'
                   : 'bg-gray-100 border border-gray-300 focus-within:border-primary-500'
-              }`}
+                }`}
             >
               <Search className={`h-5 w-5 ${isDark ? 'text-gray-300' : 'text-gray-500'}`} />
               <input
                 type="text"
                 placeholder="Ask Gubbu anything..."
-                className={`flex-1 bg-transparent text-lg focus:outline-none ${
-                  isDark ? 'text-white placeholder-gray-400' : 'text-gray-900 placeholder-gray-500'
-                }`}
+                className={`flex-1 bg-transparent text-lg focus:outline-none ${isDark ? 'text-white placeholder-gray-400' : 'text-gray-900 placeholder-gray-500'
+                  }`}
                 autoComplete="off"
               />
               <button
@@ -117,20 +110,18 @@ export function Home() {
                   setAutoListen(true);
                   setShowChat(true);
                 }}
-                className={`hidden sm:inline-flex items-center justify-center rounded-full border px-4 py-2 text-sm font-semibold transition ${
-                  isDark
+                className={`inline-flex items-center justify-center rounded-full border px-4 py-2 text-sm font-semibold transition ${isDark
                     ? 'border-white/15 text-gray-200 hover:border-white/40 hover:text-white'
                     : 'border-gray-300 text-gray-700 hover:border-gray-400 hover:text-gray-900'
-                }`}
+                  }`}
                 aria-label="Open voice input"
               >
                 <Mic className="h-4 w-4" />
               </button>
               <button
                 type="submit"
-                className={`inline-flex items-center justify-center rounded-full px-3 py-2 text-sm font-semibold transition ${
-                  isDark ? 'bg-white text-gray-900 hover:bg-gray-100' : 'bg-primary-600 text-white hover:bg-primary-700'
-                }`}
+                className={`inline-flex items-center justify-center rounded-full px-3 py-2 text-sm font-semibold transition ${isDark ? 'bg-white text-gray-900 hover:bg-gray-100' : 'bg-primary-600 text-white hover:bg-primary-700'
+                  }`}
                 aria-label="AI mode"
               >
                 <Sparkles className="h-4 w-4" />
@@ -141,51 +132,46 @@ export function Home() {
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             <Link
               to="/destinations"
-              className={`rounded-full border px-4 py-2 text-sm font-medium transition ${
-                isDark
+              className={`rounded-full border px-4 py-2 text-sm font-medium transition ${isDark
                   ? 'border-white/15 bg-white/5 text-gray-200 hover:border-white/40 hover:text-white'
                   : 'border-gray-300 bg-gray-100 text-gray-700 hover:border-gray-400 hover:text-gray-900'
-              }`}
+                }`}
             >
               Destinations
             </Link>
             <Link
               to="/blog"
-              className={`rounded-full border px-4 py-2 text-sm font-medium transition ${
-                isDark
+              className={`rounded-full border px-4 py-2 text-sm font-medium transition ${isDark
                   ? 'border-white/15 bg-white/5 text-gray-200 hover:border-white/40 hover:text-white'
                   : 'border-gray-300 bg-gray-100 text-gray-700 hover:border-gray-400 hover:text-gray-900'
-              }`}
+                }`}
             >
               Guides & Blogs
             </Link>
             <Link
               to="/lifestyle-picks"
-              className={`rounded-full border px-4 py-2 text-sm font-medium transition ${
-                isDark
+              className={`rounded-full border px-4 py-2 text-sm font-medium transition ${isDark
                   ? 'border-white/15 bg-white/5 text-gray-200 hover:border-white/40 hover:text-white'
                   : 'border-gray-300 bg-gray-100 text-gray-700 hover:border-gray-400 hover:text-gray-900'
-              }`}
+                }`}
             >
               Lifestyle Picks
             </Link>
             <Link
               to="/work-from-anywhere"
-              className={`rounded-full border px-4 py-2 text-sm font-medium transition ${
-                isDark
+              className={`rounded-full border px-4 py-2 text-sm font-medium transition ${isDark
                   ? 'border-white/15 bg-white/5 text-gray-200 hover:border-white/40 hover:text-white'
                   : 'border-gray-300 bg-gray-100 text-gray-700 hover:border-gray-400 hover:text-gray-900'
-              }`}
+                }`}
             >
               Work From Anywhere
             </Link>
             <Link
               to="/deals"
-              className={`rounded-full border px-4 py-2 text-sm font-medium transition ${
-                isDark
+              className={`rounded-full border px-4 py-2 text-sm font-medium transition ${isDark
                   ? 'border-white/15 bg-white/5 text-gray-200 hover:border-white/40 hover:text-white'
                   : 'border-gray-300 bg-gray-100 text-gray-700 hover:border-gray-400 hover:text-gray-900'
-              }`}
+                }`}
             >
               Deals
             </Link>

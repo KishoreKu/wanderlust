@@ -7,7 +7,7 @@ import { GoogleAnalytics } from './components/GoogleAnalytics';
 import { NewsletterPopup } from './components/NewsletterPopup';
 import { CanonicalTag } from './components/CanonicalTag';
 import { ScrollToTop } from './components/ScrollToTop';
-const Home = lazy(() => import('./pages/Home').then((module) => ({ default: module.Home })));
+import { Home } from './pages/Home';
 const Blog = lazy(() => import('./pages/Blog').then((module) => ({ default: module.Blog })));
 const BlogPost = lazy(() => import('./pages/BlogPost').then((module) => ({ default: module.BlogPost })));
 const Destinations = lazy(() => import('./pages/Destinations').then((module) => ({ default: module.Destinations })));
