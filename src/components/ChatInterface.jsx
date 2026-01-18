@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import Linkify from 'react-linkify';
 import { Send, X, Loader2, Mic, VolumeX, Repeat } from 'lucide-react';
+import { Snowfall } from '../components/Snowfall';
 
 const suggestions = [
   'Best time to visit Japan',
@@ -10,7 +11,7 @@ const suggestions = [
   'Quiet beaches in Europe'
 ];
 
-export function ChatInterface({ initialQuery = '', onClose }) {
+export function ChatInterface({ initialQuery = '', autoListen = false, onClose }) {
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState(initialQuery);
   const [isLoading, setIsLoading] = useState(false);
@@ -88,6 +89,21 @@ export function ChatInterface({ initialQuery = '', onClose }) {
       handleSend(initialQuery);
     }
   }, [initialQuery]);
+
+  useEffect(() => {
+    if (!autoListen) return;
+    const startListening = () => {
+      if (!recognitionRef.current || isListening) return;
+      try {
+        recognitionRef.current.start();
+        setIsListening(true);
+      } catch {
+        // recognition may already be active
+      }
+    };
+    const timer = setTimeout(startListening, 300);
+    return () => clearTimeout(timer);
+  }, [autoListen, isListening]);
 
   const toggleListening = () => {
     if (!recognitionRef.current) {
@@ -207,142 +223,144 @@ export function ChatInterface({ initialQuery = '', onClose }) {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="text-primary-600 hover:text-primary-700 underline"
+      className="text-primary-300 hover:text-primary-200 underline"
     >
       {text}
     </a>
   );
 
   return (
-    <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4">
-      <div className="bg-white rounded-2xl shadow-2xl w-full max-w-4xl h-[80vh] flex flex-col">
-        <div className="flex items-center justify-between p-6 border-b">
+    <div className="fixed inset-0 z-50 bg-[#0b0b0b]">
+      <Snowfall density={18} />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60" />
+
+      <div className="relative z-10 flex h-full flex-col">
+        <header className="flex items-center justify-between px-6 py-4 border-b border-white/10">
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 bg-gradient-to-br from-primary-500 to-primary-700 rounded-full flex items-center justify-center text-white text-xl">
               🐾
             </div>
             <div>
-              <h2 className="text-xl font-bold text-gray-900">Gubbu</h2>
-              <p className="text-sm text-gray-500">Ask a question. Get clarity.</p>
+              <h2 className="text-lg font-semibold text-white" style={{ fontFamily: 'Genos, sans-serif', fontWeight: 300 }}>
+                Gubbu
+              </h2>
+              <p className="text-xs text-gray-400">AI mode for decisions</p>
             </div>
           </div>
           <button
             onClick={onClose}
-            className="p-2 hover:bg-gray-100 rounded-full transition-colors"
+            className="p-2 rounded-full hover:bg-white/10 transition-colors"
             aria-label="Close"
           >
-            <X className="h-6 w-6 text-gray-500" />
+            <X className="h-5 w-5 text-gray-300" />
           </button>
-        </div>
+        </header>
 
-        <div className="flex-1 overflow-y-auto p-6 space-y-4">
-          {messages.length === 0 && (
-            <div className="text-center py-8">
-              <div className="text-6xl mb-4">🐾</div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">Hi! I'm Gubbu</h3>
-              <p className="text-gray-600">Ask anything about travel, decisions, or everyday choices.</p>
-              <div className="mt-6 flex flex-wrap gap-3 justify-center">
-                {suggestions.map((suggestion) => (
-                  <button
-                    key={suggestion}
-                    onClick={() => handleSend(suggestion)}
-                    className="px-4 py-2 rounded-full border border-gray-200 text-sm text-gray-700 hover:border-gray-300 hover:text-gray-900 transition"
-                  >
-                    {suggestion}
-                  </button>
-                ))}
+        <main className="flex-1 overflow-y-auto px-4 py-6">
+          <div className="mx-auto w-full max-w-3xl space-y-6">
+            {messages.length === 0 && (
+              <div className="text-center py-6">
+                <h3 className="text-2xl font-bold text-white mb-2">Ask Gubbu anything</h3>
+                <p className="text-gray-400">Travel, lifestyle, pets, or planning — start with a question.</p>
+                <div className="mt-6 flex flex-wrap gap-3 justify-center">
+                  {suggestions.map((suggestion) => (
+                    <button
+                      key={suggestion}
+                      onClick={() => handleSend(suggestion)}
+                      className="px-4 py-2 rounded-full border border-white/15 text-sm text-gray-200 hover:border-white/40 hover:text-white transition"
+                    >
+                      {suggestion}
+                    </button>
+                  ))}
+                </div>
               </div>
-            </div>
-          )}
+            )}
 
-          {messages.map((message, index) => (
-            <div
-              key={index}
-              className={`flex ${message.role === 'user' ? 'justify-end' : 'justify-start'}`}
-            >
-              <div
-                className={`max-w-[80%] rounded-2xl px-4 py-3 ${message.role === 'user'
-                  ? 'bg-primary-600 text-white'
-                  : 'bg-gray-100 text-gray-900'
-                  }`}
-              >
-                <Linkify componentDecorator={linkDecorator}>
-                  <div className="prose prose-sm max-w-none">
-                    {message.content.split('\n').map((line, i) => (
-                      <p key={i} className={message.role === 'user' ? 'text-white' : 'text-gray-900'}>
-                        {line}
-                      </p>
-                    ))}
-                  </div>
-                </Linkify>
+            {messages.map((message, index) => (
+              <div key={index} className="flex">
+                <div
+                  className={`max-w-[85%] rounded-2xl px-4 py-3 text-sm leading-relaxed ${message.role === 'user'
+                    ? 'ml-auto bg-primary-600 text-white'
+                    : 'bg-white/10 text-gray-100'
+                    }`}
+                >
+                  <Linkify componentDecorator={linkDecorator}>
+                    <div className="prose prose-sm max-w-none">
+                      {message.content.split('\n').map((line, i) => (
+                        <p key={i} className={message.role === 'user' ? 'text-white' : 'text-gray-100'}>
+                          {line}
+                        </p>
+                      ))}
+                    </div>
+                  </Linkify>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
 
-          {isLoading && (
-            <div className="flex justify-start">
-              <div className="bg-gray-100 rounded-2xl px-4 py-3">
-                <Loader2 className="h-5 w-5 animate-spin text-primary-600" />
+            {isLoading && (
+              <div className="flex">
+                <div className="bg-white/10 rounded-2xl px-4 py-3">
+                  <Loader2 className="h-5 w-5 animate-spin text-primary-400" />
+                </div>
               </div>
-            </div>
-          )}
+            )}
 
-          <div ref={messagesEndRef} />
-        </div>
-
-        <div className="p-6 border-t space-y-3">
-          <div className="flex flex-wrap items-center gap-2 text-xs text-gray-500">
-            <button
-              type="button"
-              onClick={toggleListening}
-              className={`inline-flex items-center gap-1 rounded-full border px-3 py-1 transition ${isListening
-                ? 'border-primary-500 text-primary-600'
-                : 'border-gray-200 text-gray-600 hover:border-gray-300'
-                }`}
-            >
-              <Mic className="h-3.5 w-3.5" />
-              {isListening ? 'Listening' : 'Voice input'}
-            </button>
-            <button
-              type="button"
-              onClick={() => setContinuousMode((prev) => !prev)}
-              className={`inline-flex items-center gap-1 rounded-full border px-3 py-1 transition ${continuousMode
-                ? 'border-primary-500 text-primary-600'
-                : 'border-gray-200 text-gray-600 hover:border-gray-300'
-                }`}
-            >
-              <Repeat className="h-3.5 w-3.5" />
-              {continuousMode ? 'Continuous on' : 'Continuous off'}
-            </button>
-            <button
-              type="button"
-              onClick={stopSpeaking}
-              className="inline-flex items-center gap-1 rounded-full border border-gray-200 px-3 py-1 text-gray-600 hover:border-gray-300 transition"
-            >
-              <VolumeX className="h-3.5 w-3.5" />
-              Stop voice
-            </button>
+            <div ref={messagesEndRef} />
           </div>
+        </main>
 
-          <form onSubmit={handleSubmit} className="flex gap-3">
-            <input
-              type="text"
-              value={input}
-              onChange={(e) => setInput(e.target.value)}
-              placeholder="Ask Gubbu anything..."
-              className="flex-1 px-4 py-3 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-              disabled={isLoading}
-            />
-            <button
-              type="submit"
-              disabled={isLoading || !input.trim()}
-              className="px-6 py-3 bg-primary-600 text-white rounded-full hover:bg-primary-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors flex items-center gap-2"
-            >
-              <Send className="h-5 w-5" />
-              <span className="hidden sm:inline">Send</span>
-            </button>
-          </form>
-        </div>
+        <footer className="border-t border-white/10 px-4 py-4">
+          <div className="mx-auto w-full max-w-3xl">
+            <form onSubmit={handleSubmit} className="flex items-center gap-2 rounded-full bg-white/10 border border-white/10 px-3 py-2">
+              <input
+                type="text"
+                value={input}
+                onChange={(e) => setInput(e.target.value)}
+                placeholder="Message Gubbu..."
+                className="flex-1 bg-transparent text-white placeholder-gray-400 focus:outline-none"
+                disabled={isLoading}
+              />
+              <button
+                type="button"
+                onClick={toggleListening}
+                className={`inline-flex items-center justify-center rounded-full border px-3 py-2 transition ${isListening
+                  ? 'border-primary-400 text-primary-200'
+                  : 'border-white/15 text-gray-300 hover:border-white/40'
+                  }`}
+                aria-label={isListening ? 'Stop listening' : 'Start voice input'}
+              >
+                <Mic className="h-3.5 w-3.5" />
+              </button>
+              <button
+                type="button"
+                onClick={() => setContinuousMode((prev) => !prev)}
+                className={`inline-flex items-center justify-center rounded-full border px-3 py-2 transition ${continuousMode
+                  ? 'border-primary-400 text-primary-200'
+                  : 'border-white/15 text-gray-300 hover:border-white/40'
+                  }`}
+                aria-label={continuousMode ? 'Disable continuous mode' : 'Enable continuous mode'}
+              >
+                <Repeat className="h-3.5 w-3.5" />
+              </button>
+              <button
+                type="button"
+                onClick={stopSpeaking}
+                className="inline-flex items-center justify-center rounded-full border border-white/15 px-3 py-2 text-gray-300 hover:border-white/40 transition"
+                aria-label="Stop voice output"
+              >
+                <VolumeX className="h-3.5 w-3.5" />
+              </button>
+              <button
+                type="submit"
+                disabled={isLoading || !input.trim()}
+                className="inline-flex items-center justify-center rounded-full bg-primary-600 px-4 py-2 text-white hover:bg-primary-700 disabled:opacity-50 disabled:cursor-not-allowed transition"
+                aria-label="Send message"
+              >
+                <Send className="h-4 w-4" />
+              </button>
+            </form>
+          </div>
+        </footer>
       </div>
     </div>
   );

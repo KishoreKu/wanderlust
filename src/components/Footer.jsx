@@ -8,7 +8,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Column 1 - Gubbu */}
           <div>
-            <h3 className="text-white font-semibold mb-4">Gubbu</h3>
+            <h3 className="text-white font-semibold mb-4" style={{ fontFamily: 'Genos, sans-serif', fontWeight: 300 }}>Gubbu</h3>
             <ul className="space-y-2">
               <li><Link to="/about" className="hover:text-primary-400 transition-colors">About</Link></li>
               <li><Link to="/about" className="hover:text-primary-400 transition-colors">How Gubbu Works</Link></li>
@@ -46,7 +46,7 @@ export function Footer() {
           <div>
             <div className="flex items-center space-x-2 mb-4">
               <img src="/gubbu-icon.png" alt="Gubbu" className="h-8 w-8 object-contain" />
-              <span className="text-2xl font-bold text-white">Gubbu</span>
+              <span className="text-2xl text-white" style={{ fontFamily: 'Genos, sans-serif', fontWeight: 300 }}>Gubbu</span>
               <span className="text-2xl">🐾</span>
             </div>
             <p className="text-sm mb-3">Navigate the Modern World</p>

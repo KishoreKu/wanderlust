@@ -36,7 +36,7 @@ export function Snowfall({ density = 50 }) {
             const animationDelay = Math.random() * 10; // 0 to 10s
 
             // Opacity based on size (larger = more visible)
-            const opacity = 0.3 + (size * 0.4); // 0.3 to 0.9
+            const opacity = Math.min(1, 0.65 + (size * 0.4)); // 0.77 to 1.0
 
             // Horizontal sway distance
             const swayDistance = 20 + Math.random() * 30; // 20-50px
@@ -50,7 +50,7 @@ export function Snowfall({ density = 50 }) {
 
             // Add blur to smaller, distant flakes
             if (size < 0.5) {
-                snowflake.style.filter = 'blur(1px)';
+                snowflake.style.filter = 'blur(0.4px)';
             }
 
             // Assign animation type (straight, drift left, drift right)
