@@ -4,7 +4,8 @@
 // Import all markdown files from the content directory
 const contentModules = import.meta.glob('../content/*.md', {
     eager: true,
-    as: 'raw'
+    query: '?raw',
+    import: 'default',
 });
 
 // Parse frontmatter from markdown content
