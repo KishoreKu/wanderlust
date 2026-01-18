@@ -29,7 +29,6 @@ import { AsiaDestinations } from './pages/AsiaDestinations';
 import { AmericasDestinations } from './pages/AmericasDestinations';
 import { AfricaDestinations } from './pages/AfricaDestinations';
 import { OceaniaDestinations } from './pages/OceaniaDestinations';
-import ChatWidget from './components/ChatWidget';
 
 function App() {
   return (
@@ -69,7 +68,6 @@ function App() {
         </main>
         <Footer />
         <NewsletterPopup />
-        <ChatWidget />
       </div>
     </Router>
   );
