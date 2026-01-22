@@ -5,6 +5,15 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   publicDir: 'public',
+  server: {
+    proxy: {
+      '/api-proxy': {
+        target: 'https://api.gubbu.io',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api-proxy/, '')
+      }
+    }
+  },
   build: {
     rollupOptions: {
       output: {

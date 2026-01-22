@@ -114,7 +114,8 @@ export function Home() {
       setSearchMode('ai'); // Switch to AI mode automatically
 
       try {
-        const response = await fetch('https://api.gubbu.io/chat', {
+        const apiUrl = import.meta.env.DEV ? '/api-proxy/chat' : 'https://api.gubbu.io/chat';
+        const response = await fetch(apiUrl, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
