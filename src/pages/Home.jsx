@@ -4,6 +4,7 @@ import { Search, ArrowRight, Compass, Lightbulb, CheckCircle, Heart, Shield, Spa
 import { Button } from '../components/Button';
 import { Snowfall } from '../components/Snowfall';
 import { getAllBlogPosts } from '../utils/blogLoader';
+import ReactMarkdown from 'react-markdown';
 
 export function Home() {
   const [searchMode, setSearchMode] = useState('content'); // 'content' or 'ai'
@@ -347,9 +348,28 @@ export function Home() {
                                 : 'bg-gray-100 text-gray-900'
                               }`}
                           >
-                            {message.content.split('\n').map((line, i) => (
-                              <p key={i}>{line}</p>
-                            ))}
+                            {message.role === 'user' ? (
+                              message.content
+                            ) : (
+                              <ReactMarkdown
+                                components={{
+                                  a: ({ node, ...props }) => (
+                                    <a
+                                      {...props}
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                      className={`underline decoration-primary-400 underline-offset-2 ${isDark ? 'text-blue-300 hover:text-blue-200' : 'text-blue-600 hover:text-blue-700'}`}
+                                    />
+                                  ),
+                                  p: ({ node, ...props }) => <p {...props} className="mb-1 last:mb-0" />,
+                                  ul: ({ node, ...props }) => <ul {...props} className="list-disc pl-4 mb-2 space-y-1" />,
+                                  ol: ({ node, ...props }) => <ol {...props} className="list-decimal pl-4 mb-2 space-y-1" />,
+                                  li: ({ node, ...props }) => <li {...props} className="mb-0.5" />,
+                                }}
+                              >
+                                {message.content}
+                              </ReactMarkdown>
+                            )}
                           </div>
                         </div>
                       ))}
