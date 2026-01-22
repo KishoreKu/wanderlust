@@ -165,14 +165,16 @@ export function Home() {
 
   return (
     <div
-      className={`min-h-screen relative overflow-hidden transition-colors duration-300 ${isDark ? 'bg-black text-white' : 'bg-gradient-to-br from-rose-100 via-orange-100 to-amber-100 text-gray-900'
+      className={`min-h-screen relative overflow-hidden transition-colors duration-500 ${isDark
+        ? 'bg-[#050505] text-white'
+        : 'bg-gradient-to-br from-slate-50 via-gray-50 to-zinc-100 text-slate-900'
         }`}
     >
-      <Snowfall density={isDark ? 60 : 40} />
+      <Snowfall density={isDark ? 50 : 30} />
       <div
-        className={`absolute inset-0 pointer-events-none ${isDark
-          ? 'bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.08),transparent_55%)]'
-          : 'bg-[radial-gradient(circle_at_top_left,rgba(248,113,113,0.28),transparent_55%),radial-gradient(circle_at_bottom_right,rgba(251,191,36,0.3),transparent_55%)]'
+        className={`absolute inset-0 pointer-events-none transition-opacity duration-500 ${isDark
+          ? 'bg-[radial-gradient(circle_at_top,rgba(120,130,180,0.15),transparent_60%)]'
+          : 'bg-[radial-gradient(circle_at_top_left,rgba(56,189,248,0.05),transparent_50%),radial-gradient(circle_at_bottom_right,rgba(99,102,241,0.05),transparent_50%)]'
           }`}
       />
       {!isDark && <div className="absolute inset-0 bg-black/10 pointer-events-none" />}
@@ -219,9 +221,9 @@ export function Home() {
             className="relative"
           >
             <div
-              className={`flex items-center gap-3 rounded-full px-5 py-3 shadow-sm focus-within:shadow-md transition ${isDark
-                ? 'bg-white/10 border border-white/15 focus-within:border-white/30'
-                : 'bg-gray-100 border border-gray-300 focus-within:border-primary-500'
+              className={`flex items-center gap-3 rounded-full px-5 py-3 shadow-lg focus-within:shadow-xl transition-all duration-300 ${isDark
+                ? 'bg-white/10 border border-white/10 focus-within:border-white/20 backdrop-blur-md'
+                : 'bg-white border border-slate-200 focus-within:border-slate-300'
                 }`}
             >
               <Search className={`h-5 w-5 ${isDark ? 'text-gray-300' : 'text-gray-500'}`} />
@@ -275,9 +277,9 @@ export function Home() {
                       <Link
                         key={`${result.type}-${result.link}-${index}`}
                         to={result.link}
-                        className={`block p-4 rounded-lg transition-all hover:scale-[1.02] ${isDark
+                        className={`block p-4 rounded-xl transition-all duration-300 hover:scale-[1.01] ${isDark
                           ? 'bg-white/5 hover:bg-white/10 border border-white/10'
-                          : 'bg-gray-50 hover:bg-gray-100 border border-gray-200'
+                          : 'bg-white hover:shadow-md border border-slate-100 shadow-sm'
                           }`}
                       >
                         <div className="flex items-start gap-4">
@@ -341,11 +343,13 @@ export function Home() {
                       {messages.map((message, index) => (
                         <div key={index} className="flex">
                           <div
-                            className={`max-w-[85%] rounded-2xl px-4 py-2 text-sm leading-relaxed ${message.role === 'user'
-                              ? 'ml-auto bg-primary-600 text-white'
+                            className={`max-w-[85%] rounded-2xl px-5 py-3 text-sm leading-relaxed shadow-sm ${message.role === 'user'
+                              ? isDark
+                                ? 'ml-auto bg-blue-600/80 text-white backdrop-blur-sm'
+                                : 'ml-auto bg-slate-800 text-white'
                               : isDark
-                                ? 'bg-white/10 text-gray-100'
-                                : 'bg-gray-100 text-gray-900'
+                                ? 'bg-white/5 border border-white/10 text-gray-200'
+                                : 'bg-white border border-gray-100 text-slate-800 shadow-sm'
                               }`}
                           >
                             {message.role === 'user' ? (
