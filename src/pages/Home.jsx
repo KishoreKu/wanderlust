@@ -206,8 +206,8 @@ export function Home() {
   return (
     <div
       className={`min-h-screen relative overflow-hidden transition-colors duration-500 ${isDark
-        ? 'bg-[#050505] text-white'
-        : 'bg-gradient-to-br from-slate-50 via-gray-50 to-zinc-100 text-slate-900'
+        ? 'bg-gray-900 text-white'
+        : 'bg-gradient-to-br from-primary-600 to-primary-800 text-white'
         }`}
     >
       <Snowfall density={isDark ? 50 : 30} />
@@ -245,12 +245,12 @@ export function Home() {
         <div className="w-full max-w-3xl text-center">
           <div className="mb-10">
             <h1
-              className={`text-6xl md:text-7xl tracking-wide ${isDark ? 'text-white' : 'text-gray-900'}`}
+              className="text-6xl md:text-7xl tracking-wide text-white"
               style={{ fontFamily: 'Genos, sans-serif', fontWeight: 200 }}
             >
               GUBBU
             </h1>
-            <p className={`mt-3 text-lg ${isDark ? 'text-gray-300' : 'text-gray-700'}`}>
+            <p className="mt-3 text-lg text-gray-200">
               Clear decisions for travel, life, and everything in between.
             </p>
           </div>
@@ -388,10 +388,10 @@ export function Home() {
                             className={`max-w-[85%] rounded-2xl px-5 py-3 text-sm leading-relaxed shadow-sm ${message.role === 'user'
                               ? isDark
                                 ? 'ml-auto bg-blue-600/80 text-white backdrop-blur-sm'
-                                : 'ml-auto bg-slate-800 text-white'
+                                : 'ml-auto bg-white text-primary-900 shadow-md'
                               : isDark
                                 ? 'bg-white/5 border border-white/10 text-gray-200'
-                                : 'bg-white border border-gray-100 text-slate-800 shadow-sm'
+                                : 'bg-white/10 border border-white/20 text-white backdrop-blur-md shadow-sm'
                               }`}
                           >
                             {message.role === 'user' ? (
