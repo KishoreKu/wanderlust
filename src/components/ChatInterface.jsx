@@ -11,7 +11,7 @@ const suggestions = [
   'Quiet beaches in Europe'
 ];
 
-export function ChatInterface({ initialQuery = '', autoListen = false, onClose }) {
+export function ChatInterface({ initialQuery = '', autoListen = false, onClose, inline = false }) {
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState(initialQuery);
   const [isLoading, setIsLoading] = useState(false);
@@ -229,6 +229,119 @@ export function ChatInterface({ initialQuery = '', autoListen = false, onClose }
     </a>
   );
 
+  // Inline version for homepage
+  if (inline) {
+    return (
+      <div className="rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 overflow-hidden">
+        <div className="flex items-center justify-between px-4 py-3 border-b border-white/10">
+          <div className="flex items-center gap-2">
+            <div className="w-8 h-8 bg-gradient-to-br from-primary-500 to-primary-700 rounded-full flex items-center justify-center text-lg">
+              🐾
+            </div>
+            <div>
+              <h3 className="text-sm font-semibold text-white" style={{ fontFamily: 'Genos, sans-serif', fontWeight: 300 }}>
+                Gubbu AI
+              </h3>
+            </div>
+          </div>
+          <button
+            onClick={onClose}
+            className="p-1.5 rounded-full hover:bg-white/10 transition-colors"
+            aria-label="Close AI chat"
+          >
+            <X className="h-4 w-4 text-gray-300" />
+          </button>
+        </div>
+
+        <div className="h-[400px] overflow-y-auto px-4 py-4">
+          <div className="space-y-4">
+            {messages.length === 0 && (
+              <div className="text-center py-6">
+                <h3 className="text-lg font-bold text-white mb-2">Ask Gubbu anything</h3>
+                <p className="text-sm text-gray-400">Travel, lifestyle, pets, or planning — start with a question.</p>
+                <div className="mt-4 flex flex-wrap gap-2 justify-center">
+                  {suggestions.map((suggestion) => (
+                    <button
+                      key={suggestion}
+                      onClick={() => handleSend(suggestion)}
+                      className="px-3 py-1.5 rounded-full border border-white/15 text-xs text-gray-200 hover:border-white/40 hover:text-white transition"
+                    >
+                      {suggestion}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {messages.map((message, index) => (
+              <div key={index} className="flex">
+                <div
+                  className={`max-w-[85%] rounded-2xl px-4 py-2 text-sm leading-relaxed ${message.role === 'user'
+                    ? 'ml-auto bg-primary-600 text-white'
+                    : 'bg-white/10 text-gray-100'
+                    }`}
+                >
+                  <Linkify componentDecorator={linkDecorator}>
+                    <div className="prose prose-sm max-w-none">
+                      {message.content.split('\n').map((line, i) => (
+                        <p key={i} className={message.role === 'user' ? 'text-white' : 'text-gray-100'}>
+                          {line}
+                        </p>
+                      ))}
+                    </div>
+                  </Linkify>
+                </div>
+              </div>
+            ))}
+
+            {isLoading && (
+              <div className="flex">
+                <div className="bg-white/10 rounded-2xl px-4 py-3">
+                  <Loader2 className="h-5 w-5 animate-spin text-primary-400" />
+                </div>
+              </div>
+            )}
+
+            <div ref={messagesEndRef} />
+          </div>
+        </div>
+
+        <div className="border-t border-white/10 px-4 py-3">
+          <form onSubmit={handleSubmit} className="flex items-center gap-2 rounded-full bg-white/10 border border-white/10 px-3 py-2">
+            <input
+              type="text"
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+              placeholder="Message Gubbu..."
+              className="flex-1 bg-transparent text-sm text-white placeholder-gray-400 focus:outline-none"
+              disabled={isLoading}
+            />
+            <button
+              type="button"
+              onClick={toggleListening}
+              className={`inline-flex items-center justify-center rounded-full border p-2 transition ${isListening
+                ? 'border-primary-400 text-primary-200'
+                : 'border-white/15 text-gray-300 hover:border-white/40'
+                }`}
+              aria-label={isListening ? 'Stop listening' : 'Start voice input'}
+            >
+              <Mic className="h-3.5 w-3.5" />
+            </button>
+            <button
+              type="submit"
+              disabled={isLoading || !input.trim()}
+              className="inline-flex items-center justify-center rounded-full bg-primary-600 px-4 py-2 text-white hover:bg-primary-700 disabled:opacity-50 disabled:cursor-not-allowed transition"
+              aria-label="Send message"
+            >
+              <Send className="h-3.5 w-3.5" />
+            </button>
+          </form>
+        </div>
+      </div>
+    );
+  }
+
+  // Original fullscreen modal version
   return (
     <div className="fixed inset-0 z-50 bg-[#0b0b0b]">
       <Snowfall density={18} />
@@ -299,7 +412,7 @@ export function ChatInterface({ initialQuery = '', autoListen = false, onClose }
 
             {isLoading && (
               <div className="flex">
-                <div className="bg-white/10 rounded-2xl px-4 py-3">
+                <div className="bg-white/10 rounded-2xl px-4 py-3" >
                   <Loader2 className="h-5 w-5 animate-spin text-primary-400" />
                 </div>
               </div>

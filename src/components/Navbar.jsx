@@ -1,11 +1,9 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Menu, Search, X } from 'lucide-react';
-import { SearchBar } from './SearchBar';
+import { Menu, X } from 'lucide-react';
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [isSearchOpen, setIsSearchOpen] = useState(false);
 
   const navLinks = [
     { name: 'Home', path: '/' },
@@ -43,13 +41,6 @@ export function Navbar() {
 
           <div className="flex items-center gap-3">
             <button
-              onClick={() => setIsSearchOpen(true)}
-              className="text-gray-700 hover:text-primary-600 transition-colors"
-              aria-label="Search site"
-            >
-              <Search className="h-5 w-5" />
-            </button>
-            <button
               onClick={() => setIsOpen(!isOpen)}
               className="md:hidden text-gray-700 hover:text-primary-600"
               aria-label="Toggle menu"
@@ -76,7 +67,6 @@ export function Navbar() {
           </div>
         </div>
       )}
-      <SearchBar isOpen={isSearchOpen} onClose={() => setIsSearchOpen(false)} />
     </nav>
   );
 }

@@ -1,14 +1,20 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { Search, ArrowRight, Compass, Lightbulb, CheckCircle, Heart, Shield, Sparkles, MessageCircle, Mic } from 'lucide-react';
+import { Search, ArrowRight, Compass, Lightbulb, CheckCircle, Heart, Shield, Sparkles, MessageCircle, Mic, X, Send, Loader2 } from 'lucide-react';
 import { Button } from '../components/Button';
-import { ChatInterface } from '../components/ChatInterface';
 import { Snowfall } from '../components/Snowfall';
+import { getAllBlogPosts } from '../utils/blogLoader';
 
 export function Home() {
-  const [showChat, setShowChat] = useState(false);
-  const [chatQuery, setChatQuery] = useState('');
-  const [autoListen, setAutoListen] = useState(false);
+  const [searchMode, setSearchMode] = useState('content'); // 'content' or 'ai'
+  const [searchQuery, setSearchQuery] = useState('');
+  const [searchResults, setSearchResults] = useState([]);
+
+  // Chat state
+  const [messages, setMessages] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
+  const messagesEndRef = useRef(null);
+
   const [isDark, setIsDark] = useState(() => {
     if (typeof window === 'undefined') return true;
     return localStorage.getItem('gubbu-theme') !== 'light';
@@ -19,15 +25,156 @@ export function Home() {
     localStorage.setItem('gubbu-theme', isDark ? 'dark' : 'light');
   }, [isDark]);
 
-  const handleSearchSubmit = (query) => {
-    setChatQuery(query);
-    setAutoListen(false);
-    setShowChat(true);
+  // Content search function
+  const performContentSearch = (query) => {
+    if (!query.trim()) {
+      setSearchResults([]);
+      return;
+    }
+
+    const lowerQuery = query.toLowerCase();
+    const results = [];
+
+    // Search blog posts
+    const blogPosts = getAllBlogPosts();
+    blogPosts.forEach(post => {
+      const score =
+        (post.title.toLowerCase().includes(lowerQuery) ? 3 : 0) +
+        (post.excerpt.toLowerCase().includes(lowerQuery) ? 2 : 0) +
+        (post.category.toLowerCase().includes(lowerQuery) ? 1 : 0) +
+        (post.tags?.some(tag => tag.toLowerCase().includes(lowerQuery)) ? 1 : 0);
+
+      if (score > 0) {
+        results.push({
+          type: 'blog',
+          title: post.title,
+          excerpt: post.excerpt,
+          category: post.category,
+          link: `/blog/${post.id}`,
+          image: post.image,
+          score
+        });
+      }
+    });
+
+    // Search static pages
+    const staticPages = [
+      { title: 'Destinations', excerpt: 'Explore amazing travel destinations worldwide', category: 'Travel', link: '/destinations' },
+      { title: 'Hotels', excerpt: 'Find and compare the best hotels for your trip', category: 'Booking', link: '/hotels' },
+      { title: 'Flights', excerpt: 'Search and book flights to your destination', category: 'Booking', link: '/flights' },
+      { title: 'Work From Anywhere', excerpt: 'Remote work guides and digital nomad resources', category: 'Lifestyle', link: '/work-from-anywhere' },
+      { title: 'Lifestyle Picks', excerpt: 'Curated lifestyle recommendations for modern travelers', category: 'Lifestyle', link: '/lifestyle-picks' },
+      { title: 'About Gubbu', excerpt: 'Learn about our mission and approach to travel planning', category: 'About', link: '/about' },
+    ];
+
+    staticPages.forEach(page => {
+      const score =
+        (page.title.toLowerCase().includes(lowerQuery) ? 3 : 0) +
+        (page.excerpt.toLowerCase().includes(lowerQuery) ? 2 : 0) +
+        (page.category.toLowerCase().includes(lowerQuery) ? 1 : 0);
+
+      if (score > 0) {
+        results.push({ ...page, type: 'page', score });
+      }
+    });
+
+    // Sort by score
+    results.sort((a, b) => b.score - a.score);
+
+    setSearchResults(results.slice(0, 6)); // Limit to 6 results
   };
 
-  const openChat = () => {
-    setShowChat(true);
+  const handleSearchInput = (query) => {
+    setSearchQuery(query);
+    if (searchMode === 'content') {
+      performContentSearch(query);
+    }
   };
+
+  const handleSearchSubmit = async (e) => {
+    e.preventDefault();
+    if (!searchQuery.trim()) return;
+
+    if (searchMode === 'content') {
+      // If no search results, auto-switch to AI
+      if (searchResults.length === 0) {
+        setSearchMode('ai');
+        // Fall through to AI logic below
+      } else {
+        return; // Results exist, just show them
+      }
+    }
+
+    if (searchMode === 'ai') {
+      // Send chat message
+      const userMessage = { role: 'user', content: searchQuery.trim() };
+      setMessages((prev) => [...prev, userMessage]);
+      setSearchQuery('');
+      setIsLoading(true);
+
+      try {
+        const response = await fetch('https://api.gubbu.io/chat', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            messages: [...messages, userMessage],
+          }),
+        });
+
+        const responseText = await response.text();
+        let data;
+        try {
+          data = JSON.parse(responseText);
+        } catch {
+          data = { error: responseText };
+        }
+
+        if (!response.ok) {
+          throw new Error(data.error || `Request failed: ${response.status}`);
+        }
+
+        const answerContent = data.answer || 'No answer returned.';
+
+        setMessages((prev) => [
+          ...prev,
+          {
+            role: 'assistant',
+            content: answerContent,
+          },
+        ]);
+      } catch (error) {
+        setMessages((prev) => [
+          ...prev,
+          {
+            role: 'assistant',
+            content: `Error: ${error.message || 'Network error. Please try again.'}`,
+          },
+        ]);
+      } finally {
+        setIsLoading(false);
+      }
+    }
+  };
+
+  const toggleSearchMode = () => {
+    if (searchMode === 'content') {
+      setSearchMode('ai');
+      setSearchResults([]);
+    } else {
+      setSearchMode('content');
+      setMessages([]);
+      if (searchQuery.trim()) {
+        performContentSearch(searchQuery);
+      }
+    }
+  };
+
+  // Auto-scroll to bottom of messages
+  useEffect(() => {
+    messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+  }, [messages, isLoading]);
 
   return (
     <div
@@ -37,8 +184,8 @@ export function Home() {
       <Snowfall density={isDark ? 60 : 40} />
       <div
         className={`absolute inset-0 pointer-events-none ${isDark
-            ? 'bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.08),transparent_55%)]'
-            : 'bg-[radial-gradient(circle_at_top_left,rgba(248,113,113,0.28),transparent_55%),radial-gradient(circle_at_bottom_right,rgba(251,191,36,0.3),transparent_55%)]'
+          ? 'bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.08),transparent_55%)]'
+          : 'bg-[radial-gradient(circle_at_top_left,rgba(248,113,113,0.28),transparent_55%),radial-gradient(circle_at_bottom_right,rgba(251,191,36,0.3),transparent_55%)]'
           }`}
       />
       {!isDark && <div className="absolute inset-0 bg-black/10 pointer-events-none" />}
@@ -47,8 +194,8 @@ export function Home() {
         type="button"
         onClick={() => setIsDark((prev) => !prev)}
         className={`fixed top-20 right-6 z-40 inline-flex items-center gap-2 rounded-full border px-3 py-1.5 text-xs font-semibold transition ${isDark
-            ? 'border-white/20 bg-white/10 text-white hover:border-white/40'
-            : 'border-gray-300 bg-white/80 text-gray-800 hover:border-gray-400'
+          ? 'border-white/20 bg-white/10 text-white hover:border-white/40'
+          : 'border-gray-300 bg-white/80 text-gray-800 hover:border-gray-400'
           }`}
         aria-label="Toggle theme"
       >
@@ -79,62 +226,212 @@ export function Home() {
             </p>
           </div>
 
+          {/* Universal Search Bar - Always Visible */}
           <form
-            onSubmit={(e) => {
-              e.preventDefault();
-              const input = e.target.querySelector('input');
-              if (input && input.value.trim()) {
-                handleSearchSubmit(input.value.trim());
-                input.value = '';
-              }
-            }}
+            onSubmit={handleSearchSubmit}
             className="relative"
           >
             <div
               className={`flex items-center gap-3 rounded-full px-5 py-3 shadow-sm focus-within:shadow-md transition ${isDark
-                  ? 'bg-white/10 border border-white/15 focus-within:border-white/30'
-                  : 'bg-gray-100 border border-gray-300 focus-within:border-primary-500'
+                ? 'bg-white/10 border border-white/15 focus-within:border-white/30'
+                : 'bg-gray-100 border border-gray-300 focus-within:border-primary-500'
                 }`}
             >
               <Search className={`h-5 w-5 ${isDark ? 'text-gray-300' : 'text-gray-500'}`} />
               <input
                 type="text"
-                placeholder="Ask Gubbu anything..."
+                value={searchQuery}
+                onChange={(e) => handleSearchInput(e.target.value)}
+                placeholder="Search guides, blogs, destinations..."
                 className={`flex-1 bg-transparent text-lg focus:outline-none ${isDark ? 'text-white placeholder-gray-400' : 'text-gray-900 placeholder-gray-500'
                   }`}
                 autoComplete="off"
               />
+              {searchQuery && (
+                <button
+                  type="button"
+                  onClick={() => {
+                    setSearchQuery('');
+                    setSearchResults([]);
+                  }}
+                  className={`p-1 rounded-full hover:bg-gray-200/20 transition ${isDark ? 'text-gray-400' : 'text-gray-500'}`}
+                  aria-label="Clear search"
+                >
+                  <X className="h-4 w-4" />
+                </button>
+              )}
               <button
                 type="button"
-                onClick={() => {
-                  setAutoListen(true);
-                  setShowChat(true);
-                }}
+                onClick={() => setSearchMode('ai')}
                 className={`inline-flex items-center justify-center rounded-full border px-4 py-2 text-sm font-semibold transition ${isDark
-                    ? 'border-white/15 text-gray-200 hover:border-white/40 hover:text-white'
-                    : 'border-gray-300 text-gray-700 hover:border-gray-400 hover:text-gray-900'
+                  ? 'border-white/15 text-gray-200 hover:border-white/40 hover:text-white'
+                  : 'border-gray-300 text-gray-700 hover:border-gray-400 hover:text-gray-900'
                   }`}
                 aria-label="Open voice input"
               >
                 <Mic className="h-4 w-4" />
               </button>
               <button
-                type="submit"
-                className={`inline-flex items-center justify-center rounded-full px-3 py-2 text-sm font-semibold transition ${isDark ? 'bg-white text-gray-900 hover:bg-gray-100' : 'bg-primary-600 text-white hover:bg-primary-700'
+                type="button"
+                onClick={toggleSearchMode}
+                className={`inline-flex items-center justify-center rounded-full px-3 py-2 text-sm font-semibold transition ${isDark
+                  ? 'bg-white/10 text-gray-200 hover:bg-white/20'
+                  : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
                   }`}
-                aria-label="AI mode"
+                aria-label="Switch to AI chat"
+                title="Ask AI"
               >
                 <Sparkles className="h-4 w-4" />
               </button>
             </div>
           </form>
 
+          <>
+            {/* Search Results Display */}
+            {searchMode === 'content' && searchResults.length > 0 && (
+              <div className={`mt-8 w-full max-w-3xl mx-auto animate-fadeIn`}>
+                <div className={`rounded-xl p-6 ${isDark ? 'bg-white/5 backdrop-blur-sm' : 'bg-white shadow-lg'}`}>
+                  <h3 className={`text-lg font-semibold mb-4 ${isDark ? 'text-white' : 'text-gray-900'}`}>
+                    Found {searchResults.length} result{searchResults.length !== 1 ? 's' : ''}
+                  </h3>
+                  <div className="space-y-3">
+                    {searchResults.map((result, index) => (
+                      <Link
+                        key={`${result.type}-${result.link}-${index}`}
+                        to={result.link}
+                        className={`block p-4 rounded-lg transition-all hover:scale-[1.02] ${isDark
+                          ? 'bg-white/5 hover:bg-white/10 border border-white/10'
+                          : 'bg-gray-50 hover:bg-gray-100 border border-gray-200'
+                          }`}
+                      >
+                        <div className="flex items-start gap-4">
+                          {result.image && (
+                            <img
+                              src={result.image}
+                              alt={result.title}
+                              className="w-20 h-20 rounded-lg object-cover flex-shrink-0"
+                            />
+                          )}
+                          <div className="flex-1 min-w-0">
+                            <div className="flex items-center gap-2 mb-1">
+                              <span className={`text-xs px-2 py-0.5 rounded-full ${isDark ? 'bg-primary-500/20 text-primary-300' : 'bg-primary-100 text-primary-700'}`}>
+                                {result.category}
+                              </span>
+                              <span className={`text-xs ${isDark ? 'text-gray-500' : 'text-gray-400'}`}>
+                                {result.type === 'blog' ? 'Blog Post' : 'Page'}
+                              </span>
+                            </div>
+                            <h4 className={`font-semibold mb-1 ${isDark ? 'text-white' : 'text-gray-900'}`}>
+                              {result.title}
+                            </h4>
+                            <p className={`text-sm line-clamp-2 ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
+                              {result.excerpt}
+                            </p>
+                            <div className="flex items-center gap-1 mt-2">
+                              <span className={`text-xs ${isDark ? 'text-primary-400' : 'text-primary-600'}`}>
+                                Read more
+                              </span>
+                              <ArrowRight className={`h-3 w-3 ${isDark ? 'text-primary-400' : 'text-primary-600'}`} />
+                            </div>
+                          </div>
+                        </div>
+                      </Link>
+                    ))}
+                  </div>
+                  <p className={`mt-4 text-sm text-center ${isDark ? 'text-gray-500' : 'text-gray-600'}`}>
+                    Not finding what you're looking for?{' '}
+                    <button
+                      onClick={() => {
+                        setSearchMode('ai');
+                        setSearchQuery(searchQuery || 'Help me find...');
+                      }}
+                      className={`font-semibold ${isDark ? 'text-primary-400 hover:text-primary-300' : 'text-primary-600 hover:text-primary-700'}`}
+                    >
+                      Ask AI instead
+                    </button>
+                  </p>
+                </div>
+              </div>
+            )}
+
+            {/* AI Chat Messages - Simple expansion below search bar */}
+            {searchMode === 'ai' && (
+              <div className={`mt-4 w-full max-w-3xl mx-auto animate-fadeIn`}>
+                {/* Messages */}
+                {messages.length > 0 && (
+                  <div className={`rounded-xl p-4 mb-3 max-h-[400px] overflow-y-auto ${isDark ? 'bg-white/5 backdrop-blur-sm border border-white/10' : 'bg-white shadow-lg border border-gray-200'
+                    }`}>
+                    <div className="space-y-3">
+                      {messages.map((message, index) => (
+                        <div key={index} className="flex">
+                          <div
+                            className={`max-w-[85%] rounded-2xl px-4 py-2 text-sm leading-relaxed ${message.role === 'user'
+                              ? 'ml-auto bg-primary-600 text-white'
+                              : isDark
+                                ? 'bg-white/10 text-gray-100'
+                                : 'bg-gray-100 text-gray-900'
+                              }`}
+                          >
+                            {message.content.split('\n').map((line, i) => (
+                              <p key={i}>{line}</p>
+                            ))}
+                          </div>
+                        </div>
+                      ))}
+                      <div ref={messagesEndRef} />
+                    </div>
+                  </div>
+                )}
+
+                {/* Loading */}
+                {isLoading && (
+                  <div className={`rounded-xl p-4 mb-3 ${isDark ? 'bg-white/5 backdrop-blur-sm' : 'bg-white shadow-lg'}`}>
+                    <div className="flex items-center gap-2">
+                      <Loader2 className={`h-5 w-5 animate-spin ${isDark ? 'text-primary-400' : 'text-primary-600'}`} />
+                      <span className={`text-sm ${isDark ? 'text-gray-300' : 'text-gray-600'}`}>Thinking...</span>
+                    </div>
+                  </div>
+                )}
+
+                {/* Suggestions when no messages */}
+                {messages.length === 0 && !isLoading && (
+                  <div className={`text-center py-4 rounded-xl ${isDark ? 'bg-white/5 backdrop-blur-sm' : 'bg-white shadow-lg'}`}>
+                    <p className={`text-sm mb-3 ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>Try asking:</p>
+                    <div className="flex flex-wrap gap-2 justify-center">
+                      {[
+                        'Best time to visit Japan',
+                        'Weekend trips from NYC',
+                        'Work-from-anywhere tips'
+                      ].map((suggestion) => (
+                        <button
+                          key={suggestion}
+                          onClick={() => {
+                            setSearchQuery(suggestion);
+                            handleSearchSubmit({ preventDefault: () => { } });
+                          }}
+                          className={`px-3 py-1.5 rounded-full text-xs transition ${isDark
+                            ? 'border border-white/15 text-gray-200 hover:border-white/40 hover:text-white'
+                            : 'border border-gray-300 text-gray-700 hover:border-gray-400 hover:text-gray-900'
+                            }`}
+                        >
+                          {suggestion}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+            )}
+
+
+          </>
+
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             <Link
               to="/destinations"
               className={`rounded-full border px-4 py-2 text-sm font-medium transition ${isDark
-                  ? 'border-white/15 bg-white/5 text-gray-200 hover:border-white/40 hover:text-white'
-                  : 'border-gray-300 bg-gray-100 text-gray-700 hover:border-gray-400 hover:text-gray-900'
+                ? 'border-white/15 bg-white/5 text-gray-200 hover:border-white/40 hover:text-white'
+                : 'border-gray-300 bg-gray-100 text-gray-700 hover:border-gray-400 hover:text-gray-900'
                 }`}
             >
               Destinations
@@ -142,8 +439,8 @@ export function Home() {
             <Link
               to="/blog"
               className={`rounded-full border px-4 py-2 text-sm font-medium transition ${isDark
-                  ? 'border-white/15 bg-white/5 text-gray-200 hover:border-white/40 hover:text-white'
-                  : 'border-gray-300 bg-gray-100 text-gray-700 hover:border-gray-400 hover:text-gray-900'
+                ? 'border-white/15 bg-white/5 text-gray-200 hover:border-white/40 hover:text-white'
+                : 'border-gray-300 bg-gray-100 text-gray-700 hover:border-gray-400 hover:text-gray-900'
                 }`}
             >
               Guides & Blogs
@@ -151,8 +448,8 @@ export function Home() {
             <Link
               to="/lifestyle-picks"
               className={`rounded-full border px-4 py-2 text-sm font-medium transition ${isDark
-                  ? 'border-white/15 bg-white/5 text-gray-200 hover:border-white/40 hover:text-white'
-                  : 'border-gray-300 bg-gray-100 text-gray-700 hover:border-gray-400 hover:text-gray-900'
+                ? 'border-white/15 bg-white/5 text-gray-200 hover:border-white/40 hover:text-white'
+                : 'border-gray-300 bg-gray-100 text-gray-700 hover:border-gray-400 hover:text-gray-900'
                 }`}
             >
               Lifestyle Picks
@@ -160,8 +457,8 @@ export function Home() {
             <Link
               to="/work-from-anywhere"
               className={`rounded-full border px-4 py-2 text-sm font-medium transition ${isDark
-                  ? 'border-white/15 bg-white/5 text-gray-200 hover:border-white/40 hover:text-white'
-                  : 'border-gray-300 bg-gray-100 text-gray-700 hover:border-gray-400 hover:text-gray-900'
+                ? 'border-white/15 bg-white/5 text-gray-200 hover:border-white/40 hover:text-white'
+                : 'border-gray-300 bg-gray-100 text-gray-700 hover:border-gray-400 hover:text-gray-900'
                 }`}
             >
               Work From Anywhere
@@ -169,8 +466,8 @@ export function Home() {
             <Link
               to="/deals"
               className={`rounded-full border px-4 py-2 text-sm font-medium transition ${isDark
-                  ? 'border-white/15 bg-white/5 text-gray-200 hover:border-white/40 hover:text-white'
-                  : 'border-gray-300 bg-gray-100 text-gray-700 hover:border-gray-400 hover:text-gray-900'
+                ? 'border-white/15 bg-white/5 text-gray-200 hover:border-white/40 hover:text-white'
+                : 'border-gray-300 bg-gray-100 text-gray-700 hover:border-gray-400 hover:text-gray-900'
                 }`}
             >
               Deals
@@ -181,19 +478,9 @@ export function Home() {
             Decide first. Book later.
           </p>
         </div>
-      </section>
+      </section >
 
-      {showChat && (
-        <ChatInterface
-          initialQuery={chatQuery}
-          autoListen={autoListen}
-          onClose={() => {
-            setShowChat(false);
-            setChatQuery('');
-            setAutoListen(false);
-          }}
-        />
-      )}
+
 
       <section className="py-20 bg-white text-gray-900 relative z-10">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -713,7 +1000,10 @@ export function Home() {
               size="lg"
               variant="outline"
               className="border-2 border-white text-white hover:bg-white/10 w-full sm:w-auto"
-              onClick={openChat}
+              onClick={() => {
+                setSearchMode('ai');
+                setShowChat(true);
+              }}
             >
               <MessageCircle className="mr-2 h-5 w-5" />
               Talk to Gubbu 🐾
@@ -721,6 +1011,6 @@ export function Home() {
           </div>
         </div>
       </section>
-    </div>
+    </div >
   );
 }
