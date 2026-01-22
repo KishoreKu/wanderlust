@@ -14,6 +14,7 @@ export function Home() {
   // Chat state
   const [messages, setMessages] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
+  const [isListening, setIsListening] = useState(false);
 
   const [isDark, setIsDark] = useState(() => {
     if (typeof window === 'undefined') return true;
@@ -159,6 +160,45 @@ export function Home() {
     }
   };
 
+  const handleVoiceInput = () => {
+    if (!('webkitSpeechRecognition' in window)) {
+      alert('Voice input is not supported in this browser.');
+      return;
+    }
+
+    if (isListening) {
+      setIsListening(false);
+      return;
+    }
+
+    setIsListening(true);
+    const recognition = new window.webkitSpeechRecognition();
+    recognition.continuous = false;
+    recognition.interimResults = false;
+    recognition.lang = 'en-US';
+
+    recognition.onresult = (event) => {
+      const transcript = event.results[0][0].transcript;
+      setSearchQuery(transcript);
+      setIsListening(false);
+
+      // Optional: Auto-submit after voice input
+      // handleSearchSubmit({ preventDefault: () => {} }); 
+      // User might want to edit first, so let's just fill the input.
+    };
+
+    recognition.onerror = (event) => {
+      console.error('Speech recognition error', event.error);
+      setIsListening(false);
+    };
+
+    recognition.onend = () => {
+      setIsListening(false);
+    };
+
+    recognition.start();
+  };
+
 
 
 
@@ -251,15 +291,17 @@ export function Home() {
               )}
               <button
                 type="button"
-                onClick={() => setSearchMode('ai')}
-                className={`inline-flex items-center justify-center rounded-full border px-4 py-2 text-sm font-semibold transition ${isDark
-                  ? 'border-white/15 text-gray-200 hover:border-white/40 hover:text-white'
-                  : 'border-gray-300 text-gray-700 hover:border-gray-400 hover:text-gray-900'
+                onClick={handleVoiceInput}
+                className={`inline-flex items-center justify-center rounded-full border px-4 py-2 text-sm font-semibold transition ${isListening
+                  ? 'bg-red-500 border-red-500 text-white animate-pulse'
+                  : isDark
+                    ? 'border-white/15 text-gray-200 hover:border-white/40 hover:text-white'
+                    : 'border-slate-300 text-slate-700 hover:border-slate-400 hover:text-slate-900'
                   }`}
                 aria-label="Voice input"
                 title="Voice input"
               >
-                <Mic className="h-4 w-4" />
+                <Mic className={`h-4 w-4 ${isListening ? 'animate-bounce' : ''}`} />
               </button>
             </div>
           </form>
