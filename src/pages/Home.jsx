@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Search, ArrowRight, Compass, Lightbulb, CheckCircle, Heart, Shield, Sparkles, MessageCircle, Mic, X, Send, Loader2 } from 'lucide-react';
 import { Button } from '../components/Button';
@@ -13,7 +13,6 @@ export function Home() {
   // Chat state
   const [messages, setMessages] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
-  const messagesEndRef = useRef(null);
 
   const [isDark, setIsDark] = useState(() => {
     if (typeof window === 'undefined') return true;
@@ -99,8 +98,6 @@ export function Home() {
       // If no search results, auto-switch to AI
       if (searchResults.length === 0) {
         setSearchMode('ai');
-        // Scroll to top to show AI interface
-        window.scrollTo({ top: 0, behavior: 'smooth' });
         // Fall through to AI logic below
       } else {
         return; // Results exist, just show them
@@ -108,9 +105,6 @@ export function Home() {
     }
 
     if (searchMode === 'ai') {
-      // Scroll to top to show AI response
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-
       // Send chat message
       const userMessage = { role: 'user', content: searchQuery.trim() };
       setMessages((prev) => [...prev, userMessage]);
@@ -167,21 +161,18 @@ export function Home() {
     if (searchMode === 'content') {
       setSearchMode('ai');
       setSearchResults([]);
-      // Scroll to top when switching to AI mode
-      window.scrollTo({ top: 0, behavior: 'smooth' });
     } else {
       setSearchMode('content');
       setMessages([]);
+      setSearchResults([]);
+      setSearchQuery('');
       if (searchQuery.trim()) {
         performContentSearch(searchQuery);
       }
     }
   };
 
-  // Auto-scroll to bottom of messages
-  useEffect(() => {
-    messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
-  }, [messages, isLoading]);
+
 
   return (
     <div
@@ -385,7 +376,6 @@ export function Home() {
                           </div>
                         </div>
                       ))}
-                      <div ref={messagesEndRef} />
                     </div>
                   </div>
                 )}
@@ -1007,10 +997,7 @@ export function Home() {
               size="lg"
               variant="outline"
               className="border-2 border-white text-white hover:bg-white/10 w-full sm:w-auto"
-              onClick={() => {
-                setSearchMode('ai');
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-              }}
+              onClick={() => setSearchMode('ai')}
             >
               <MessageCircle className="mr-2 h-5 w-5" />
               Talk to Gubbu 🐾
