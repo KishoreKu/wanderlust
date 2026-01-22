@@ -94,22 +94,20 @@ export function Home() {
     e.preventDefault();
     if (!searchQuery.trim()) return;
 
-    if (searchMode === 'content') {
-      // If no search results, auto-switch to AI
-      if (searchResults.length === 0) {
-        setSearchMode('ai');
-        // Fall through to AI logic below
-      } else {
-        return; // Results exist, just show them
-      }
-    }
+    const query = searchQuery.trim();
 
-    if (searchMode === 'ai') {
-      // Send chat message
-      const userMessage = { role: 'user', content: searchQuery.trim() };
+    // Smart detection: Use AI for questions and conversational queries
+    const isQuestion = /^(what|where|when|why|how|who|can|should|is|are|do|does|tell|explain|hi|hello|help)/i.test(query) ||
+      query.includes('?') ||
+      query.split(' ').length > 5; // Longer queries are likely questions
+
+    if (isQuestion || searchResults.length === 0) {
+      // Use AI for questions or when no content found
+      const userMessage = { role: 'user', content: query };
       setMessages((prev) => [...prev, userMessage]);
       setSearchQuery('');
       setIsLoading(true);
+      setSearchMode('ai'); // Switch to AI mode automatically
 
       try {
         const response = await fetch('https://api.gubbu.io/chat', {
@@ -154,23 +152,13 @@ export function Home() {
       } finally {
         setIsLoading(false);
       }
+    } else {
+      // Show content search results (they're already displayed from handleSearchInput)
+      setSearchMode('content');
     }
   };
 
-  const toggleSearchMode = () => {
-    if (searchMode === 'content') {
-      setSearchMode('ai');
-      setSearchResults([]);
-    } else {
-      setSearchMode('content');
-      setMessages([]);
-      setSearchResults([]);
-      setSearchQuery('');
-      if (searchQuery.trim()) {
-        performContentSearch(searchQuery);
-      }
-    }
-  };
+
 
 
 
@@ -240,7 +228,7 @@ export function Home() {
                 type="text"
                 value={searchQuery}
                 onChange={(e) => handleSearchInput(e.target.value)}
-                placeholder="Search guides, blogs, destinations..."
+                placeholder="Ask me anything or search guides..."
                 className={`flex-1 bg-transparent text-lg focus:outline-none ${isDark ? 'text-white placeholder-gray-400' : 'text-gray-900 placeholder-gray-500'
                   }`}
                 autoComplete="off"
@@ -265,21 +253,10 @@ export function Home() {
                   ? 'border-white/15 text-gray-200 hover:border-white/40 hover:text-white'
                   : 'border-gray-300 text-gray-700 hover:border-gray-400 hover:text-gray-900'
                   }`}
-                aria-label="Open voice input"
+                aria-label="Voice input"
+                title="Voice input"
               >
                 <Mic className="h-4 w-4" />
-              </button>
-              <button
-                type="button"
-                onClick={toggleSearchMode}
-                className={`inline-flex items-center justify-center rounded-full px-3 py-2 text-sm font-semibold transition ${isDark
-                  ? 'bg-white/10 text-gray-200 hover:bg-white/20'
-                  : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
-                  }`}
-                aria-label="Switch to AI chat"
-                title="Ask AI"
-              >
-                <Sparkles className="h-4 w-4" />
               </button>
             </div>
           </form>
