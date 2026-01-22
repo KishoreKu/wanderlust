@@ -99,6 +99,8 @@ export function Home() {
       // If no search results, auto-switch to AI
       if (searchResults.length === 0) {
         setSearchMode('ai');
+        // Scroll to top to show AI interface
+        window.scrollTo({ top: 0, behavior: 'smooth' });
         // Fall through to AI logic below
       } else {
         return; // Results exist, just show them
@@ -106,6 +108,9 @@ export function Home() {
     }
 
     if (searchMode === 'ai') {
+      // Scroll to top to show AI response
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+
       // Send chat message
       const userMessage = { role: 'user', content: searchQuery.trim() };
       setMessages((prev) => [...prev, userMessage]);
@@ -162,6 +167,8 @@ export function Home() {
     if (searchMode === 'content') {
       setSearchMode('ai');
       setSearchResults([]);
+      // Scroll to top when switching to AI mode
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     } else {
       setSearchMode('content');
       setMessages([]);
@@ -1002,6 +1009,7 @@ export function Home() {
               className="border-2 border-white text-white hover:bg-white/10 w-full sm:w-auto"
               onClick={() => {
                 setSearchMode('ai');
+                window.scrollTo({ top: 0, behavior: 'smooth' });
               }}
             >
               <MessageCircle className="mr-2 h-5 w-5" />
