@@ -403,7 +403,7 @@ export function Home() {
                                 : 'ml-auto bg-white text-primary-900 shadow-md'
                               : isDark
                                 ? 'bg-white/5 border border-white/10 text-gray-200'
-                                : 'bg-white/10 border border-white/20 text-white backdrop-blur-md shadow-sm'
+                                : 'bg-gray-100 border border-gray-200 text-gray-800 shadow-sm'
                               }`}
                           >
                             {message.role === 'user' ? (
