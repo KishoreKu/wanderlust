@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { Search, ArrowRight, Compass, Lightbulb, CheckCircle, Heart, Shield, Sparkles, MessageCircle, Mic, X, Send, Loader2 } from 'lucide-react';
 import { Button } from '../components/Button';
@@ -8,6 +8,7 @@ import ReactMarkdown from 'react-markdown';
 
 export function Home() {
   const [searchMode, setSearchMode] = useState('content'); // 'content' or 'ai'
+  const searchInputRef = useRef(null);
   const [searchQuery, setSearchQuery] = useState('');
   const [searchResults, setSearchResults] = useState([]);
 
@@ -275,6 +276,7 @@ export function Home() {
                 className={`flex-1 bg-transparent text-lg focus:outline-none ${isDark ? 'text-white placeholder-gray-400' : 'text-gray-900 placeholder-gray-500'
                   }`}
                 autoComplete="off"
+                ref={searchInputRef}
               />
               {searchQuery && (
                 <button
@@ -309,7 +311,7 @@ export function Home() {
           {/* Tagline - Visible only when NOT searching (no messages, no query focus) */}
           {!isFocused && messages.length === 0 && searchQuery === '' && (
             <div className="mt-8 animate-fadeIn">
-              <p className="text-xl tracking-[0.2em] text-gray-200 uppercase font-light">
+              <p className="text-sm md:text-base tracking-[0.2em] text-gray-200 uppercase font-light">
                 Navigate the Modern World
               </p>
             </div>
@@ -1014,7 +1016,15 @@ export function Home() {
               size="lg"
               variant="outline"
               className="border-2 border-white text-white hover:bg-white/10 w-full sm:w-auto"
-              onClick={() => setSearchMode('ai')}
+              onClick={() => {
+                setSearchMode('ai');
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+                setTimeout(() => {
+                  if (searchInputRef.current) {
+                    searchInputRef.current.focus();
+                  }
+                }, 800);
+              }}
             >
               <MessageCircle className="mr-2 h-5 w-5" />
               Talk to Gubbu 🐾
