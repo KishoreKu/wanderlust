@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { Search, ArrowRight, Compass, Lightbulb, CheckCircle, Heart, Shield, Sparkles, MessageCircle, Mic, X, Send, Loader2 } from 'lucide-react';
+import { Search, ArrowRight, Compass, Lightbulb, CheckCircle, Heart, Shield, Sparkles, MessageCircle, Mic, X, Send, Loader2, Sun, Moon } from 'lucide-react';
 import { Button } from '../components/Button';
 import { Snowfall } from '../components/Snowfall';
 import { getAllBlogPosts } from '../utils/blogLoader';
@@ -19,8 +19,9 @@ export function Home() {
   const [isFocused, setIsFocused] = useState(false);
 
   const [isDark, setIsDark] = useState(() => {
-    if (typeof window === 'undefined') return true;
-    return localStorage.getItem('gubbu-theme') !== 'light';
+    if (typeof window === 'undefined') return false;
+    // Default to light (false) unless explicitly set to dark
+    return localStorage.getItem('gubbu-theme') === 'dark';
   });
 
   useEffect(() => {
@@ -225,22 +226,17 @@ export function Home() {
       <button
         type="button"
         onClick={() => setIsDark((prev) => !prev)}
-        className={`fixed top-20 right-6 z-40 inline-flex items-center gap-2 rounded-full border px-3 py-1.5 text-xs font-semibold transition ${isDark
-          ? 'border-white/20 bg-white/10 text-white hover:border-white/40'
-          : 'border-gray-300 bg-white/80 text-gray-800 hover:border-gray-400'
+        className={`fixed top-24 right-6 z-40 p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110 focus:outline-none ${isDark
+          ? 'bg-gray-800 text-yellow-400 border border-gray-700'
+          : 'bg-white text-orange-500 border border-gray-200'
           }`}
         aria-label="Toggle theme"
       >
-        <span>{isDark ? 'Dark' : 'Light'}</span>
-        <span
-          className={`relative inline-flex h-5 w-10 items-center rounded-full transition ${isDark ? 'bg-white/20' : 'bg-gray-200'
-            }`}
-        >
-          <span
-            className={`inline-block h-4 w-4 transform rounded-full transition ${isDark ? 'translate-x-5 bg-white' : 'translate-x-1 bg-gray-700'
-              }`}
-          />
-        </span>
+        {isDark ? (
+          <Moon className="w-5 h-5 fill-current" />
+        ) : (
+          <Sun className="w-5 h-5 fill-current" />
+        )}
       </button>
 
       <section className="min-h-screen flex items-center justify-center px-4 relative z-10">

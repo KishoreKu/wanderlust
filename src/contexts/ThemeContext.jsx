@@ -4,13 +4,11 @@ const ThemeContext = createContext();
 
 export function ThemeProvider({ children }) {
     const [theme, setTheme] = useState(() => {
-        // Check localStorage first, then system preference
+        // Check localStorage first
         const saved = localStorage.getItem('theme');
         if (saved) return saved;
 
-        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            return 'dark';
-        }
+        // Default to light as per user request
         return 'light';
     });
 
