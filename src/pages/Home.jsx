@@ -490,9 +490,7 @@ export function Home() {
 
 
 
-          <p className={`mt-10 text-xs uppercase tracking-[0.3em] ${isDark ? 'text-gray-400' : 'text-gray-500'}`}>
-            Decide first. Book later.
-          </p>
+
         </div>
       </section >
 
