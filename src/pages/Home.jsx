@@ -15,6 +15,7 @@ export function Home() {
   const [messages, setMessages] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [isListening, setIsListening] = useState(false);
+  const [isFocused, setIsFocused] = useState(false);
 
   const [isDark, setIsDark] = useState(() => {
     if (typeof window === 'undefined') return true;
@@ -243,16 +244,13 @@ export function Home() {
       <section className="min-h-screen flex items-center justify-center px-4 relative z-10">
 
         <div className="w-full max-w-3xl text-center">
-          <div className="mb-10">
+          <div className="mb-8">
             <h1
               className="text-6xl md:text-7xl tracking-wide text-white"
               style={{ fontFamily: 'Genos, sans-serif', fontWeight: 200 }}
             >
               GUBBU
             </h1>
-            <p className="mt-3 text-lg text-gray-200">
-              Clear decisions for travel, life, and everything in between.
-            </p>
           </div>
 
           {/* Universal Search Bar - Always Visible */}
@@ -270,8 +268,10 @@ export function Home() {
               <input
                 type="text"
                 value={searchQuery}
+                onFocus={() => setIsFocused(true)}
+                onBlur={() => setTimeout(() => setIsFocused(false), 200)}
                 onChange={(e) => handleSearchInput(e.target.value)}
-                placeholder="Ask me anything or search guides..."
+                placeholder="Ask me anything..."
                 className={`flex-1 bg-transparent text-lg focus:outline-none ${isDark ? 'text-white placeholder-gray-400' : 'text-gray-900 placeholder-gray-500'
                   }`}
                 autoComplete="off"
@@ -305,6 +305,15 @@ export function Home() {
               </button>
             </div>
           </form>
+
+          {/* Tagline - Visible only when NOT searching (no messages, no query focus) */}
+          {!isFocused && messages.length === 0 && searchQuery === '' && (
+            <div className="mt-8 animate-fadeIn">
+              <p className="text-xl tracking-[0.2em] text-gray-200 uppercase font-light">
+                Navigate the Modern World
+              </p>
+            </div>
+          )}
 
           <>
             {/* Search Results Display */}
@@ -433,11 +442,15 @@ export function Home() {
                   </div>
                 )}
 
-                {/* Suggestions when no messages */}
-                {messages.length === 0 && !isLoading && (
-                  <div className={`text-center py-4 rounded-xl ${isDark ? 'bg-white/5 backdrop-blur-sm' : 'bg-white shadow-lg'}`}>
-                    <p className={`text-sm mb-3 ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>Try asking:</p>
-                    <div className="flex flex-wrap gap-2 justify-center">
+                {/* Suggestions / Quick Links - Shown when focused or no messages */}
+                {(isFocused || messages.length === 0) && !isLoading && (
+                  <div className={`text-center py-6 rounded-xl animate-fadeIn ${isDark ? 'bg-white/5 backdrop-blur-sm' : 'bg-white shadow-lg'}`}>
+                    <p className={`text-sm mb-4 ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
+                      {messages.length > 0 ? "Try asking:" : "Explore or Ask:"}
+                    </p>
+
+                    {/* Primary Suggestions */}
+                    <div className="flex flex-wrap gap-2 justify-center mb-4">
                       {[
                         'Best time to visit Japan',
                         'Weekend trips from NYC',
@@ -458,6 +471,15 @@ export function Home() {
                         </button>
                       ))}
                     </div>
+
+                    {/* Quick Access Links (Moved from bottom) */}
+                    <div className="flex flex-wrap justify-center gap-3 border-t border-white/10 pt-4 mt-2">
+                      <Link to="/destinations" className={`rounded-full px-4 py-1.5 text-xs font-medium transition ${isDark ? 'bg-white/10 text-white hover:bg-white/20' : 'bg-gray-100 text-gray-800 hover:bg-gray-200'}`}>Destinations</Link>
+                      <Link to="/blog" className={`rounded-full px-4 py-1.5 text-xs font-medium transition ${isDark ? 'bg-white/10 text-white hover:bg-white/20' : 'bg-gray-100 text-gray-800 hover:bg-gray-200'}`}>Guides</Link>
+                      <Link to="/lifestyle-picks" className={`rounded-full px-4 py-1.5 text-xs font-medium transition ${isDark ? 'bg-white/10 text-white hover:bg-white/20' : 'bg-gray-100 text-gray-800 hover:bg-gray-200'}`}>Lifestyle</Link>
+                      <Link to="/work-from-anywhere" className={`rounded-full px-4 py-1.5 text-xs font-medium transition ${isDark ? 'bg-white/10 text-white hover:bg-white/20' : 'bg-gray-100 text-gray-800 hover:bg-gray-200'}`}>Remote Work</Link>
+                      <Link to="/deals" className={`rounded-full px-4 py-1.5 text-xs font-medium transition ${isDark ? 'bg-white/10 text-white hover:bg-white/20' : 'bg-gray-100 text-gray-800 hover:bg-gray-200'}`}>Deals</Link>
+                    </div>
                   </div>
                 )}
               </div>
@@ -466,53 +488,7 @@ export function Home() {
 
           </>
 
-          <div className="mt-8 flex flex-wrap justify-center gap-3">
-            <Link
-              to="/destinations"
-              className={`rounded-full border px-4 py-2 text-sm font-medium transition ${isDark
-                ? 'border-white/15 bg-white/5 text-gray-200 hover:border-white/40 hover:text-white'
-                : 'border-gray-300 bg-gray-100 text-gray-700 hover:border-gray-400 hover:text-gray-900'
-                }`}
-            >
-              Destinations
-            </Link>
-            <Link
-              to="/blog"
-              className={`rounded-full border px-4 py-2 text-sm font-medium transition ${isDark
-                ? 'border-white/15 bg-white/5 text-gray-200 hover:border-white/40 hover:text-white'
-                : 'border-gray-300 bg-gray-100 text-gray-700 hover:border-gray-400 hover:text-gray-900'
-                }`}
-            >
-              Guides & Blogs
-            </Link>
-            <Link
-              to="/lifestyle-picks"
-              className={`rounded-full border px-4 py-2 text-sm font-medium transition ${isDark
-                ? 'border-white/15 bg-white/5 text-gray-200 hover:border-white/40 hover:text-white'
-                : 'border-gray-300 bg-gray-100 text-gray-700 hover:border-gray-400 hover:text-gray-900'
-                }`}
-            >
-              Lifestyle Picks
-            </Link>
-            <Link
-              to="/work-from-anywhere"
-              className={`rounded-full border px-4 py-2 text-sm font-medium transition ${isDark
-                ? 'border-white/15 bg-white/5 text-gray-200 hover:border-white/40 hover:text-white'
-                : 'border-gray-300 bg-gray-100 text-gray-700 hover:border-gray-400 hover:text-gray-900'
-                }`}
-            >
-              Work From Anywhere
-            </Link>
-            <Link
-              to="/deals"
-              className={`rounded-full border px-4 py-2 text-sm font-medium transition ${isDark
-                ? 'border-white/15 bg-white/5 text-gray-200 hover:border-white/40 hover:text-white'
-                : 'border-gray-300 bg-gray-100 text-gray-700 hover:border-gray-400 hover:text-gray-900'
-                }`}
-            >
-              Deals
-            </Link>
-          </div>
+
 
           <p className={`mt-10 text-xs uppercase tracking-[0.3em] ${isDark ? 'text-gray-400' : 'text-gray-500'}`}>
             Decide first. Book later.
