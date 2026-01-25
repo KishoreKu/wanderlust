@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "gubbu-23533"
+  },
+  "targets": {
+    "gubbu-23533": {
+      "hosting": {
+        "gubbu": [
+          "gubbu-io-official"
+        ]
+      }
+    }
   }
 }
