@@ -47,11 +47,9 @@ export function Footer() {
             <div className="flex items-center space-x-2 mb-4">
               <img src="/gubbu-icon.png" alt="Gubbu" className="h-8 w-8 object-contain" />
               <span className="text-2xl text-white" style={{ fontFamily: 'Genos, sans-serif', fontWeight: 300 }}>Gubbu</span>
-              <span className="text-2xl">🐾</span>
             </div>
-            <p className="text-sm mb-3">Navigate the Modern World</p>
+            <p className="text-sm font-semibold text-white mb-2">Don't Just Search. Decide.</p>
             <p className="text-xs text-gray-400 mb-4">Thoughtful intelligence behind the scenes.</p>
-            <p className="text-2xl mb-6">🐾</p>
 
             {/* Social Media */}
             <div className="flex space-x-3 flex-wrap gap-2">
@@ -90,7 +88,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm">
-          <p>&copy; 2026 Gubbu.io — Navigate the Modern World.</p>
+          <p>&copy; 2026 Gubbu.io</p>
           <p className="text-xs text-gray-400 mt-2">
             Some links on this site may earn us a commission. This helps keep Gubbu running — at no extra cost to you.
           </p>

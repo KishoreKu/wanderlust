@@ -79,7 +79,7 @@ Perfect for dog owners who want a scientifically-backed, reliable option with fo
       </div>
     </div>
     <div class="flex items-start">
-      <span class="text-2xl mr-3">🐾</span>
+      <span class="text-2xl mr-3">💡</span>
       <div>
         <p class="font-semibold text-gray-900">Why we like it:</p>
         <p class="text-gray-700">High protein, vet-backed research, specialized formulas</p>
@@ -122,7 +122,7 @@ Ideal for dogs with digestive issues, food sensitivities, or those following a v
       </div>
     </div>
     <div class="flex items-start">
-      <span class="text-2xl mr-3">🐾</span>
+      <span class="text-2xl mr-3">💡</span>
       <div>
         <p class="font-semibold text-gray-900">Why we like it:</p>
         <p class="text-gray-700">Clinically tested, vet-recommended, precise nutrition</p>
@@ -165,7 +165,7 @@ Perfect for pet owners who prioritize natural ingredients, want to avoid by-prod
       </div>
     </div>
     <div class="flex items-start">
-      <span class="text-2xl mr-3">🐾</span>
+      <span class="text-2xl mr-3">💡</span>
       <div>
         <p class="font-semibold text-gray-900">Why we like it:</p>
         <p class="text-gray-700">Real meat, no by-products, natural preservation</p>
@@ -181,7 +181,7 @@ Perfect for pet owners who prioritize natural ingredients, want to avoid by-prod
 
 ---
 
-## 🐾 Which Dogs Should Avoid These Foods?
+## Which Dogs Should Avoid These Foods?
 
 Not every "top brand" is right for every dog.
 
@@ -310,7 +310,7 @@ If you're changing your dog's food:
 
 This guide is part of **Gubbu's Lifestyle Picks** — a growing collection of practical recommendations across:
 
-- 🐾 **Pet care** — Food, travel, health decisions
+- **Pet care** — Food, travel, health decisions
 - ✈️ **Travel essentials** — Destinations, booking, planning
 - 💼 **Work-from-anywhere tools** — Remote work solutions
 - 🧭 **Everyday decision guides** — Modern lifestyle choices
@@ -326,7 +326,7 @@ This guide is part of **Gubbu's Lifestyle Picks** — a growing collection of pr
 ---
 
 <div class="bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 rounded-2xl p-8 my-8 border border-indigo-200">
-  <h3 class="text-2xl font-bold mb-4 text-gray-900">🐾 Need More Help Choosing?</h3>
+  <h3 class="text-2xl font-bold mb-4 text-gray-900">Need More Help Choosing?</h3>
   <p class="text-gray-700 mb-4">At Gubbu, we're building tools to help you make better decisions for your pets based on:</p>
   <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
     <li><strong>Breed-specific needs</strong> - Different breeds have different requirements</li>

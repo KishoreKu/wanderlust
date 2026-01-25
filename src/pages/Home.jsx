@@ -305,11 +305,11 @@ export function Home() {
             </div>
           </form>
 
-          {/* Tagline - Visible only when NOT searching (no messages, no query focus) */}
+          {/* Hero Tagline - Visible only when NOT searching */}
           {!isFocused && messages.length === 0 && searchQuery === '' && (
             <div className="mt-8 animate-fadeIn">
               <p className="text-sm md:text-base tracking-[0.2em] text-gray-200 uppercase font-light">
-                Navigate the Modern World
+                Don't Just Search. Decide.
               </p>
             </div>
           )}
@@ -525,7 +525,7 @@ export function Home() {
             <div className="relative">
               <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow text-center h-full">
                 <div className="inline-flex items-center justify-center w-20 h-20 bg-green-100 rounded-full mb-6">
-                  <span className="text-4xl">🐾</span>
+                  <span className="text-4xl">💡</span>
                 </div>
                 <div className="mb-4">
                   <span className="inline-block px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-semibold mb-3">
@@ -959,7 +959,7 @@ export function Home() {
       <section className="py-20 bg-white text-gray-900 relative z-10">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold text-gray-900 mb-6">
-            Meet Gubbu 🐾
+            Meet Gubbu
           </h2>
           <div className="prose prose-lg max-w-none text-gray-700">
             <p className="text-xl mb-4">
@@ -1024,7 +1024,7 @@ export function Home() {
               }}
             >
               <MessageCircle className="mr-2 h-5 w-5" />
-              Talk to Gubbu 🐾
+              Talk to Gubbu
             </Button>
           </div>
         </div>

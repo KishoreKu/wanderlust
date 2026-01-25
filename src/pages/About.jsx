@@ -10,7 +10,7 @@ export function About() {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <h1 className="text-5xl font-bold mb-4">About Gubbu</h1>
                     <p className="text-2xl text-primary-100">
-                        Navigate the Modern World
+                        Don't Just Search. Decide.
                     </p>
                 </div>
             </section>
@@ -41,7 +41,7 @@ export function About() {
             {/* Meet Gubbu */}
             <section className="py-20 bg-gray-50">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <h2 className="text-4xl font-bold text-gray-900 mb-6 text-center">Meet Gubbu 🐾</h2>
+                    <h2 className="text-4xl font-bold text-gray-900 mb-6 text-center">Meet Gubbu</h2>
                     <div className="prose prose-lg max-w-none text-gray-700">
                         <p className="text-xl mb-6">
                             Gubbu isn't just a brand name.
@@ -88,7 +88,7 @@ export function About() {
                             Gubbu brings them together.
                         </p>
                         <p className="text-xl">
-                            We help you navigate the modern world by making complex choices simpler — whether you're planning a trip, choosing tools, or exploring new ways to live and work.
+                            We help you make complex choices simpler — whether you're planning a trip, choosing tools, or exploring new ways to live and work.
                         </p>
                     </div>
                 </div>
@@ -179,9 +179,6 @@ export function About() {
                     <p className="text-xl mb-8 text-primary-100">
                         Whether you're planning a journey, exploring new tools, or figuring out your next move, Gubbu is here to help.
                     </p>
-                    <p className="text-2xl font-semibold mb-8">
-                        Navigate the modern world — one better decision at a time.
-                    </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <Link to="/destinations">
                             <Button size="lg" variant="secondary" className="w-full sm:w-auto">
@@ -199,7 +196,7 @@ export function About() {
                             }}
                         >
                             <MessageCircle className="mr-2 h-5 w-5" />
-                            Talk to Gubbu 🐾
+                            Talk to Gubbu
                         </Button>
                     </div>
                 </div>

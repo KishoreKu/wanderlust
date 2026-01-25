@@ -124,7 +124,7 @@ export function Media() {
                         <div className="bg-gray-50 rounded-xl p-8 border-2 border-gray-200">
                             <div className="bg-white rounded-lg p-6 mb-4 flex items-center justify-center min-h-[200px]">
                                 <img
-                                    src="/gubbu-complete-logo.jpg"
+                                    src="/gubbu-complete-logo.png"
                                     alt="Gubbu Complete Logo"
                                     className="max-w-full h-auto max-h-[180px] object-contain"
                                 />
@@ -132,12 +132,12 @@ export function Media() {
                             <h3 className="text-xl font-bold text-gray-900 mb-2">Complete Logo</h3>
                             <p className="text-gray-600 mb-4">Full brand presentation</p>
                             <a
-                                href="/gubbu-complete-logo.jpg"
+                                href="/gubbu-complete-logo.png"
                                 download
                                 className="inline-flex items-center text-primary-600 hover:text-primary-700 font-semibold"
                             >
                                 <Download className="h-4 w-4 mr-2" />
-                                Download JPG
+                                Download PNG
                             </a>
                         </div>
                     </div>
@@ -149,7 +149,6 @@ export function Media() {
                             <li>• Please maintain adequate spacing around the logo</li>
                             <li>• Do not alter the logo colors or proportions</li>
                             <li>• Use the appropriate logo variant for your background</li>
-                            <li>• The Gubbu paw emoji 🐾 is part of our brand identity</li>
                         </ul>
                     </div>
                 </div>
@@ -190,7 +189,7 @@ export function Media() {
                                 </div>
                                 <div>
                                     <h3 className="font-bold text-gray-900 mb-2">Tagline</h3>
-                                    <p className="text-gray-700">Navigate the Modern World</p>
+                                    <p className="text-gray-700">Don't Just Search. Decide.</p>
                                 </div>
                             </div>
                         </div>

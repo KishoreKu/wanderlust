@@ -235,8 +235,8 @@ export function ChatInterface({ initialQuery = '', autoListen = false, onClose, 
       <div className="rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 overflow-hidden">
         <div className="flex items-center justify-between px-4 py-3 border-b border-white/10">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-gradient-to-br from-primary-500 to-primary-700 rounded-full flex items-center justify-center text-lg">
-              🐾
+            <div className="w-8 h-8 flex items-center justify-center">
+              <img src="/gubbu-icon.png" alt="Gubbu AI" className="w-full h-full object-contain" />
             </div>
             <div>
               <h3 className="text-sm font-semibold text-white" style={{ fontFamily: 'Genos, sans-serif', fontWeight: 300 }}>
@@ -350,8 +350,8 @@ export function ChatInterface({ initialQuery = '', autoListen = false, onClose, 
       <div className="relative z-10 flex h-full flex-col">
         <header className="flex items-center justify-between px-6 py-4 border-b border-white/10">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-gradient-to-br from-primary-500 to-primary-700 rounded-full flex items-center justify-center text-white text-xl">
-              🐾
+            <div className="w-10 h-10 flex items-center justify-center">
+              <img src="/gubbu-icon.png" alt="Gubbu AI" className="w-full h-full object-contain" />
             </div>
             <div>
               <h2 className="text-lg font-semibold text-white" style={{ fontFamily: 'Genos, sans-serif', fontWeight: 300 }}>

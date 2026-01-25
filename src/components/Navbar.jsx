@@ -21,10 +21,7 @@ export function Navbar() {
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="flex items-center gap-2">
             <img src="/gubbu-icon.png" alt="Gubbu Icon" className="h-10 w-10 object-contain" />
-            <div className="flex items-center gap-0.5">
-              <span className="text-5xl tracking-tighter bg-gradient-to-r from-red-600 to-orange-500 bg-clip-text text-transparent" style={{ fontFamily: 'Genos, sans-serif', fontWeight: 100 }}>GUBBU</span>
-              <span className="text-xl">🐾</span>
-            </div>
+            <span className="text-5xl tracking-tighter bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent" style={{ fontFamily: 'Genos, sans-serif', fontWeight: 100 }}>GUBBU</span>
           </Link>
 
           <div className="hidden md:flex items-center space-x-8">
