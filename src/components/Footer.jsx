@@ -45,7 +45,7 @@ export function Footer() {
           {/* Column 4 - Brand */}
           <div>
             <div className="flex items-center space-x-2 mb-4">
-              <img src="/gubbu-icon.png" alt="Gubbu" className="h-8 w-8 object-contain" />
+              <img src="/gubbu-icon.png" alt="Gubbu" className="h-8 w-8 object-contain grayscale brightness-200 contrast-125" />
               <span className="text-2xl text-white" style={{ fontFamily: 'Genos, sans-serif', fontWeight: 300 }}>Gubbu</span>
             </div>
             <p className="text-sm font-semibold text-white mb-2">Don't Just Search. Decide.</p>
