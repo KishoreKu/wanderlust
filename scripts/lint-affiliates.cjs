@@ -6,6 +6,7 @@ const contentDir = path.join(process.cwd(), "src", "content");
 const allowedCanonical = [
   /^https?:\/\/api\.gubbu\.io\/go\//i,
   /^https?:\/\/gubbu\.io\/go\//i,
+  /^https?:\/\/gubbu-api-612568200950\.us-central1\.run\.app\/go\//i,
 ];
 
 // Add exceptions for approved non-commercial references.

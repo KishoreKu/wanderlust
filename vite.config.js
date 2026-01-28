@@ -11,6 +11,11 @@ export default defineConfig({
         target: 'http://localhost:3000',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api-proxy/, '')
+      },
+      '/go': {
+        target: 'https://gubbu-api-612568200950.us-central1.run.app',
+        changeOrigin: true,
+        secure: true
       }
     }
   },
