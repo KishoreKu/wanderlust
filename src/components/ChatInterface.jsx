@@ -12,7 +12,7 @@ const suggestions = [
 
 const MessageBubble = ({ message }) => {
   const isUser = message.role === 'user';
-  
+
   const linkDecorator = (href, text, key) => (
     <a
       key={key}
@@ -34,8 +34,8 @@ const MessageBubble = ({ message }) => {
       )}
       <div
         className={`max-w-[85%] sm:max-w-[75%] rounded-3xl px-6 py-4 shadow-xl text-[15px] leading-relaxed relative ${isUser
-            ? 'bg-gradient-to-br from-blue-600 to-indigo-600 text-white rounded-tr-none'
-            : 'bg-[#1e2128] border border-white/[0.03] text-slate-200 rounded-tl-none'
+          ? 'bg-gradient-to-br from-blue-600 to-indigo-600 text-white rounded-tr-none'
+          : 'bg-[#1e2128] border border-white/[0.03] text-slate-200 rounded-tl-none'
           }`}
       >
         <Linkify componentDecorator={isUser ? undefined : linkDecorator}>
@@ -62,7 +62,7 @@ export function ChatInterface({ initialQuery = '', autoListen = false, onClose, 
   const [isListening, setIsListening] = useState(false);
   const [isSpeaking, setIsSpeaking] = useState(false);
   const [continuousMode, setContinuousMode] = useState(false);
-  
+
   const messagesEndRef = useRef(null);
   const recognitionRef = useRef(null);
   const synthRef = useRef(null);
@@ -142,7 +142,7 @@ export function ChatInterface({ initialQuery = '', autoListen = false, onClose, 
       setIsSpeaking(false);
       if (continuousModeRef.current && recognitionRef.current) {
         setTimeout(() => {
-          try { recognitionRef.current.start(); setIsListening(true); } catch { } 
+          try { recognitionRef.current.start(); setIsListening(true); } catch { }
         }, 500);
       }
     };
@@ -168,7 +168,7 @@ export function ChatInterface({ initialQuery = '', autoListen = false, onClose, 
 
       const responseText = await response.text();
       let data;
-      try { data = JSON.parse(responseText); } catch { data = { error: responseText }; } 
+      try { data = JSON.parse(responseText); } catch { data = { error: responseText }; }
 
       if (!response.ok) throw new Error(data.error || `Request failed: ${response.status}`);
 
@@ -191,19 +191,26 @@ export function ChatInterface({ initialQuery = '', autoListen = false, onClose, 
   };
 
   return (
-    <div className="fixed inset-0 z-[100] flex flex-col h-[100dvh] w-screen overflow-hidden bg-[#12141a] text-slate-200">
-      {/* Dynamic Lighter Dark Background */}
+    <div className="fixed inset-0 z-[100] flex flex-col h-[100dvh] w-screen overflow-hidden bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-slate-200">
+      {/* Modern Gradient Background with Animated Orbs */}
       <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none transform-gpu">
-        <div className="absolute top-[-10%] right-[-10%] w-[75%] h-[75%] bg-indigo-600/10 rounded-full blur-[120px] animate-pulse duration-[15s]"></div>
-        <div className="absolute bottom-[-10%] left-[-10%] w-[65%] h-[65%] bg-blue-600/10 rounded-full blur-[100px] animate-pulse duration-[12s] [animation-delay:2s]"></div>
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[85%] h-[85%] bg-blue-900/5 rounded-full blur-[140px]"></div>
-        
-        {/* Subtle Texture Overlay */}
-        <div className="absolute inset-0 opacity-[0.02] mix-blend-overlay" style={{ backgroundImage: 'url("https://grainy-gradients.vercel.app/noise.svg")' }}></div>
+        {/* Animated gradient orbs */}
+        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-to-br from-purple-500/30 to-pink-500/30 rounded-full blur-[120px] animate-pulse duration-[20s]"></div>
+        <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-gradient-to-tr from-blue-500/30 to-cyan-500/30 rounded-full blur-[100px] animate-pulse duration-[15s] [animation-delay:3s]"></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-gradient-to-r from-indigo-500/20 to-purple-500/20 rounded-full blur-[140px] animate-pulse duration-[25s] [animation-delay:7s]"></div>
+
+        {/* Subtle grid pattern */}
+        <div className="absolute inset-0 opacity-[0.015]" style={{
+          backgroundImage: 'linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px)',
+          backgroundSize: '50px 50px'
+        }}></div>
+
+        {/* Noise texture overlay */}
+        <div className="absolute inset-0 opacity-[0.03] mix-blend-overlay" style={{ backgroundImage: 'url("https://grainy-gradients.vercel.app/noise.svg")' }}></div>
       </div>
 
-      {/* Header - Glassmorphic Lighter Dark */}
-      <header className="flex-none bg-[#1a1d24]/80 backdrop-blur-xl border-b border-white/[0.05] px-6 py-4 flex items-center justify-between z-20">
+      {/* Header - Enhanced Glassmorphic */}
+      <header className="flex-none bg-white/5 backdrop-blur-2xl border-b border-white/10 px-6 py-4 flex items-center justify-between z-20 shadow-lg shadow-black/10">
         <div className="flex items-center gap-4">
           <div className="relative">
             <div className="w-11 h-11 rounded-2xl bg-gradient-to-tr from-blue-600 to-indigo-600 flex items-center justify-center shadow-lg shadow-blue-500/20">
@@ -242,7 +249,7 @@ export function ChatInterface({ initialQuery = '', autoListen = false, onClose, 
               <p className="text-slate-400 max-w-md mx-auto text-lg leading-relaxed mb-10">
                 I'm Gubbu, your modern AI guide for travel, lifestyle, and pet care decisions.
               </p>
-              
+
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full">
                 {suggestions.map((s, i) => (
                   <button
@@ -261,7 +268,7 @@ export function ChatInterface({ initialQuery = '', autoListen = false, onClose, 
           ) : (
             <div className="space-y-2 pb-10">
               {messages.map((msg, i) => <MessageBubble key={i} message={msg} />)}
-              
+
               {isLoading && (
                 <div className="flex w-full justify-start mb-8 animate-fadeIn">
                   <div className="w-10 h-10 rounded-full overflow-hidden mr-3 flex-shrink-0 bg-[#1e2128] border border-white/5 shadow-md mt-1">
@@ -283,10 +290,10 @@ export function ChatInterface({ initialQuery = '', autoListen = false, onClose, 
         </div>
       </main>
 
-      {/* Input Area - Floating Modern Dark */}
+      {/* Input Area - Modern Glassmorphic */}
       <footer className="flex-none pb-8 px-4 z-20">
         <div className="max-w-3xl mx-auto">
-          <div className="bg-[#1e2128]/90 backdrop-blur-2xl border border-white/[0.08] rounded-[32px] p-2 shadow-2xl focus-within:border-blue-500/50 focus-within:bg-[#1e2128] transition-all duration-500">
+          <div className="bg-white/10 backdrop-blur-2xl border border-white/20 rounded-[32px] p-2 shadow-2xl shadow-black/20 focus-within:border-purple-400/50 focus-within:bg-white/[0.12] transition-all duration-500">
             <form
               onSubmit={handleSubmit}
               className="flex items-center gap-2"
@@ -294,10 +301,10 @@ export function ChatInterface({ initialQuery = '', autoListen = false, onClose, 
               <button
                 type="button"
                 onClick={toggleListening}
-                className={`p-3.5 rounded-2xl transition-all duration-300 ${ isListening 
-                    ? 'bg-red-500 text-white shadow-lg shadow-red-500/20 animate-pulse'
-                    : 'text-slate-500 hover:bg-white/5 hover:text-white'
-                }`}
+                className={`p-3.5 rounded-2xl transition-all duration-300 ${isListening
+                  ? 'bg-red-500 text-white shadow-lg shadow-red-500/30 animate-pulse'
+                  : 'text-slate-300 hover:bg-white/10 hover:text-white'
+                  }`}
                 title="Voice Input"
               >
                 <Mic className="h-5 w-5" />
@@ -308,30 +315,30 @@ export function ChatInterface({ initialQuery = '', autoListen = false, onClose, 
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 placeholder="Ask Gubbu a question..."
-                className="flex-1 bg-transparent border-none focus:ring-0 text-white placeholder-slate-500 text-[16px] py-3 px-2"
+                className="flex-1 bg-transparent border-none focus:ring-0 text-white placeholder-slate-400 text-[16px] py-3 px-2"
                 disabled={isLoading}
               />
 
               <button
                 type="submit"
                 disabled={isLoading || !input.trim()}
-                className={`p-3.5 rounded-[22px] transition-all duration-300 flex-shrink-0 ${ input.trim() && !isLoading
-                    ? 'bg-blue-600 text-white shadow-lg shadow-blue-500/20 hover:bg-blue-500 hover:-translate-y-0.5 active:translate-y-0' 
-                    : 'bg-white/5 text-slate-600 cursor-not-allowed'
-                }`}
+                className={`p-3.5 rounded-[22px] transition-all duration-300 flex-shrink-0 ${input.trim() && !isLoading
+                  ? 'bg-gradient-to-r from-purple-600 to-pink-600 text-white shadow-lg shadow-purple-500/30 hover:shadow-purple-500/50 hover:-translate-y-0.5 active:translate-y-0'
+                  : 'bg-white/10 text-slate-500 cursor-not-allowed'
+                  }`}
               >
                 {isLoading ? <Loader2 className="h-5 w-5 animate-spin" /> : <Send className="h-5 w-5 ml-0.5" />}
               </button>
             </form>
           </div>
-          
-          <div className="flex items-center justify-center gap-4 mt-4 opacity-60">
+
+          <div className="flex items-center justify-center gap-4 mt-4 opacity-70">
             <div className="flex items-center gap-1.5">
-              <ShieldCheck className="w-3 h-3 text-blue-400" />
-              <span className="text-[10px] font-bold uppercase tracking-tighter text-slate-400">Decision Assistant</span>
+              <ShieldCheck className="w-3 h-3 text-purple-400" />
+              <span className="text-[10px] font-bold uppercase tracking-tighter text-slate-300">Decision Assistant</span>
             </div>
-            <div className="w-1 h-1 rounded-full bg-slate-700"></div>
-            <p className="text-[10px] text-slate-500 font-medium">
+            <div className="w-1 h-1 rounded-full bg-slate-600"></div>
+            <p className="text-[10px] text-slate-400 font-medium">
               Gubbu AI provides grounded recommendations based on guides.
             </p>
           </div>
