@@ -8,7 +8,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api-proxy': {
-        target: 'https://api.gubbu.io',
+        target: 'http://localhost:3000',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api-proxy/, '')
       }

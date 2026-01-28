@@ -20,8 +20,8 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="flex items-center gap-2">
-            <img src="/gubbu-icon.png" alt="Gubbu Icon" className="h-10 w-10 object-contain" />
-            <span className="text-6xl tracking-tighter bg-gradient-to-r from-blue-700 to-cyan-600 bg-clip-text text-transparent" style={{ fontFamily: 'Genos, sans-serif', fontWeight: 250 }}>GUBBU</span>
+            <img src="/subject-icon.png" alt="Gubbu Icon" className="h-12 w-12 object-contain" />
+            <span className="text-6xl tracking-tighter bg-gradient-to-r from-indigo-600 to-blue-500 bg-clip-text text-transparent" style={{ fontFamily: 'Genos, sans-serif', fontWeight: 250 }}>GUBBU</span>
           </Link>
 
           <div className="hidden md:flex items-center space-x-8">

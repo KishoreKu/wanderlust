@@ -1,26 +1,25 @@
 import { useEffect, useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { Search, ArrowRight, Compass, Lightbulb, CheckCircle, Heart, Shield, Sparkles, MessageCircle, Mic, X, Send, Loader2, Sun, Moon } from 'lucide-react';
+import { Search, ArrowRight, Compass, Lightbulb, CheckCircle, Heart, Shield, Sparkles, MessageCircle, Mic, X, Sun, Moon } from 'lucide-react';
 import { Button } from '../components/Button';
 import { Snowfall } from '../components/Snowfall';
+import { ChatInterface } from '../components/ChatInterface';
 import { getAllBlogPosts } from '../utils/blogLoader';
-import ReactMarkdown from 'react-markdown';
 
 export function Home() {
-  const [searchMode, setSearchMode] = useState('content'); // 'content' or 'ai'
   const searchInputRef = useRef(null);
   const [searchQuery, setSearchQuery] = useState('');
   const [searchResults, setSearchResults] = useState([]);
+  
+  // Chat Modal State
+  const [isChatOpen, setIsChatOpen] = useState(false);
+  const [initialChatQuery, setInitialChatQuery] = useState('');
 
-  // Chat state
-  const [messages, setMessages] = useState([]);
-  const [isLoading, setIsLoading] = useState(false);
   const [isListening, setIsListening] = useState(false);
   const [isFocused, setIsFocused] = useState(false);
 
   const [isDark, setIsDark] = useState(() => {
     if (typeof window === 'undefined') return false;
-    // Default to light (false) unless explicitly set to dark
     return localStorage.getItem('gubbu-theme') === 'dark';
   });
 
@@ -90,78 +89,18 @@ export function Home() {
 
   const handleSearchInput = (query) => {
     setSearchQuery(query);
-    if (searchMode === 'content') {
-      performContentSearch(query);
-    }
+    performContentSearch(query);
   };
 
-  const handleSearchSubmit = async (e) => {
+  const handleSearchSubmit = (e) => {
     e.preventDefault();
     if (!searchQuery.trim()) return;
 
-    const query = searchQuery.trim();
-
-    // Smart detection: Use AI for questions and conversational queries
-    const isQuestion = /^(what|where|when|why|how|who|can|should|is|are|do|does|tell|explain|hi|hello|help)/i.test(query) ||
-      query.includes('?') ||
-      query.split(' ').length > 5; // Longer queries are likely questions
-
-    if (isQuestion || searchResults.length === 0) {
-      // Use AI for questions or when no content found
-      const userMessage = { role: 'user', content: query };
-      setMessages((prev) => [...prev, userMessage]);
-      setSearchQuery('');
-      setIsLoading(true);
-      setSearchMode('ai'); // Switch to AI mode automatically
-
-      try {
-        const apiUrl = import.meta.env.DEV ? '/api-proxy/chat' : 'https://api.gubbu.io/chat';
-        const response = await fetch(apiUrl, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-            messages: [...messages, userMessage],
-          }),
-        });
-
-        const responseText = await response.text();
-        let data;
-        try {
-          data = JSON.parse(responseText);
-        } catch {
-          data = { error: responseText };
-        }
-
-        if (!response.ok) {
-          throw new Error(data.error || `Request failed: ${response.status}`);
-        }
-
-        const answerContent = data.answer || 'No answer returned.';
-
-        setMessages((prev) => [
-          ...prev,
-          {
-            role: 'assistant',
-            content: answerContent,
-          },
-        ]);
-      } catch (error) {
-        setMessages((prev) => [
-          ...prev,
-          {
-            role: 'assistant',
-            content: `Error: ${error.message || 'Network error. Please try again.'}`,
-          },
-        ]);
-      } finally {
-        setIsLoading(false);
-      }
-    } else {
-      // Show content search results (they're already displayed from handleSearchInput)
-      setSearchMode('content');
-    }
+    // Open chat modal with the query
+    setInitialChatQuery(searchQuery);
+    setIsChatOpen(true);
+    setSearchQuery(''); // Optional: clear input after submitting
+    setSearchResults([]);
   };
 
   const handleVoiceInput = () => {
@@ -185,10 +124,7 @@ export function Home() {
       const transcript = event.results[0][0].transcript;
       setSearchQuery(transcript);
       setIsListening(false);
-
-      // Optional: Auto-submit after voice input
-      // handleSearchSubmit({ preventDefault: () => {} }); 
-      // User might want to edit first, so let's just fill the input.
+      performContentSearch(transcript);
     };
 
     recognition.onerror = (event) => {
@@ -202,10 +138,6 @@ export function Home() {
 
     recognition.start();
   };
-
-
-
-
 
   return (
     <div
@@ -241,7 +173,7 @@ export function Home() {
 
       <section className="min-h-screen flex items-center justify-center px-4 relative z-10">
 
-        <div className="w-full max-w-3xl text-center">
+        <div className="w-full max-w-3xl text-center relative">
           <div className="mb-8">
             <h1
               className="text-6xl md:text-7xl tracking-wide text-white"
@@ -251,10 +183,10 @@ export function Home() {
             </h1>
           </div>
 
-          {/* Universal Search Bar - Always Visible */}
+          {/* Universal Search Bar */}
           <form
             onSubmit={handleSearchSubmit}
-            className="relative"
+            className="relative z-50"
           >
             <div
               className={`flex items-center gap-3 rounded-full px-5 py-3 shadow-lg focus-within:shadow-xl transition-all duration-300 ${isDark
@@ -305,195 +237,96 @@ export function Home() {
             </div>
           </form>
 
-          {/* Hero Tagline - Visible only when NOT searching */}
-          {!isFocused && messages.length === 0 && searchQuery === '' && (
-            <div className="mt-8 animate-fadeIn">
-              <p className="text-sm md:text-base tracking-[0.2em] text-gray-200 uppercase font-light">
-                Don't Just Search. Decide.
-              </p>
+          {/* Floating Search Results - Absolute Positioned */}
+          {searchResults.length > 0 && (
+            <div className="absolute top-full left-0 right-0 mt-4 z-40 animate-fadeIn text-left">
+              <div className={`rounded-xl p-4 max-h-[60vh] overflow-y-auto ${isDark ? 'bg-gray-900/95 border border-white/10 backdrop-blur-md' : 'bg-white/95 border border-gray-200 shadow-xl backdrop-blur-md'}`}>
+                <h3 className={`text-sm font-semibold mb-3 px-2 ${isDark ? 'text-gray-400' : 'text-gray-500'}`}>
+                  Suggestions
+                </h3>
+                <div className="space-y-2">
+                  {searchResults.map((result, index) => (
+                    <Link
+                      key={`${result.type}-${result.link}-${index}`}
+                      to={result.link}
+                      className={`block p-3 rounded-lg transition-all duration-200 ${isDark
+                        ? 'hover:bg-white/10'
+                        : 'hover:bg-gray-50'
+                        }`}
+                    >
+                      <div className="flex items-center gap-3">
+                        {result.image && (
+                          <img
+                            src={result.image}
+                            alt={result.title}
+                            className="w-10 h-10 rounded-md object-cover flex-shrink-0"
+                          />
+                        )}
+                        <div className="flex-1 min-w-0">
+                          <h4 className={`font-medium truncate ${isDark ? 'text-white' : 'text-gray-900'}`}>
+                            {result.title}
+                          </h4>
+                          <div className="flex items-center gap-2 mt-0.5">
+                            <span className={`text-[10px] px-1.5 py-0.5 rounded-full ${isDark ? 'bg-indigo-500/20 text-indigo-300' : 'bg-indigo-50 text-indigo-700'}`}>
+                              {result.category}
+                            </span>
+                          </div>
+                        </div>
+                        <ArrowRight className={`h-4 w-4 flex-shrink-0 ${isDark ? 'text-gray-500' : 'text-gray-400'}`} />
+                      </div>
+                    </Link>
+                  ))}
+                </div>
+                <div className="mt-3 pt-3 border-t border-gray-100/10 text-center">
+                  <button
+                    onClick={handleSearchSubmit}
+                    className={`text-sm font-medium ${isDark ? 'text-indigo-400 hover:text-indigo-300' : 'text-indigo-600 hover:text-indigo-700'}`}
+                  >
+                    Ask AI: "{searchQuery}"
+                  </button>
+                </div>
+              </div>
             </div>
           )}
 
-          <>
-            {/* Search Results Display */}
-            {searchMode === 'content' && searchResults.length > 0 && (
-              <div className={`mt-8 w-full max-w-3xl mx-auto animate-fadeIn`}>
-                <div className={`rounded-xl p-6 ${isDark ? 'bg-white/5 backdrop-blur-sm' : 'bg-white shadow-lg'}`}>
-                  <h3 className={`text-lg font-semibold mb-4 ${isDark ? 'text-white' : 'text-gray-900'}`}>
-                    Found {searchResults.length} result{searchResults.length !== 1 ? 's' : ''}
-                  </h3>
-                  <div className="space-y-3">
-                    {searchResults.map((result, index) => (
-                      <Link
-                        key={`${result.type}-${result.link}-${index}`}
-                        to={result.link}
-                        className={`block p-4 rounded-xl transition-all duration-300 hover:scale-[1.01] ${isDark
-                          ? 'bg-white/5 hover:bg-white/10 border border-white/10'
-                          : 'bg-white hover:shadow-md border border-slate-100 shadow-sm'
-                          }`}
-                      >
-                        <div className="flex items-start gap-4">
-                          {result.image && (
-                            <img
-                              src={result.image}
-                              alt={result.title}
-                              className="w-20 h-20 rounded-lg object-cover flex-shrink-0"
-                            />
-                          )}
-                          <div className="flex-1 min-w-0">
-                            <div className="flex items-center gap-2 mb-1">
-                              <span className={`text-xs px-2 py-0.5 rounded-full ${isDark ? 'bg-primary-500/20 text-primary-300' : 'bg-primary-100 text-primary-700'}`}>
-                                {result.category}
-                              </span>
-                              <span className={`text-xs ${isDark ? 'text-gray-500' : 'text-gray-400'}`}>
-                                {result.type === 'blog' ? 'Blog Post' : 'Page'}
-                              </span>
-                            </div>
-                            <h4 className={`font-semibold mb-1 ${isDark ? 'text-white' : 'text-gray-900'}`}>
-                              {result.title}
-                            </h4>
-                            <p className={`text-sm line-clamp-2 ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
-                              {result.excerpt}
-                            </p>
-                            <div className="flex items-center gap-1 mt-2">
-                              <span className={`text-xs ${isDark ? 'text-primary-400' : 'text-primary-600'}`}>
-                                Read more
-                              </span>
-                              <ArrowRight className={`h-3 w-3 ${isDark ? 'text-primary-400' : 'text-primary-600'}`} />
-                            </div>
-                          </div>
-                        </div>
-                      </Link>
-                    ))}
-                  </div>
-                  <p className={`mt-4 text-sm text-center ${isDark ? 'text-gray-500' : 'text-gray-600'}`}>
-                    Not finding what you're looking for?{' '}
+          {/* Hero Tagline - Preserves layout space */}
+          <div className={`mt-8 transition-opacity duration-300 relative z-0 ${!isFocused && searchQuery === '' ? 'opacity-100' : 'opacity-0'}`}>
+            <p className="text-sm md:text-base tracking-[0.2em] text-gray-200 uppercase font-light">
+              Don't Just Search. Decide.
+            </p>
+          </div>
+
+          {/* Quick Suggestions (Only when focused and empty) */}
+          {isFocused && searchQuery === '' && (
+            <div className="absolute top-full left-0 right-0 mt-4 animate-fadeIn z-30">
+               <div className="flex flex-wrap gap-2 justify-center">
+                  {[
+                    'Best time to visit Japan',
+                    'Weekend trips from NYC',
+                    'Work-from-anywhere tips'
+                  ].map((suggestion) => (
                     <button
-                      onClick={() => {
-                        setSearchMode('ai');
-                        setSearchQuery(searchQuery || 'Help me find...');
+                      key={suggestion}
+                      onMouseDown={(e) => {
+                        e.preventDefault(); // Prevent blur
+                        setSearchQuery(suggestion);
+                        setInitialChatQuery(suggestion);
+                        setIsChatOpen(true);
                       }}
-                      className={`font-semibold ${isDark ? 'text-primary-400 hover:text-primary-300' : 'text-primary-600 hover:text-primary-700'}`}
+                      className={`px-4 py-2 rounded-full text-sm backdrop-blur-md transition ${isDark
+                        ? 'bg-white/10 text-white hover:bg-white/20 border border-white/10'
+                        : 'bg-white/80 text-gray-800 hover:bg-white border border-white/40 shadow-sm'
+                        }`}
                     >
-                      Ask AI instead
+                      {suggestion}
                     </button>
-                  </p>
+                  ))}
                 </div>
-              </div>
-            )}
-
-            {/* AI Chat Messages - Simple expansion below search bar */}
-            {searchMode === 'ai' && (
-              <div className={`mt-4 w-full max-w-3xl mx-auto animate-fadeIn`}>
-                {/* Messages */}
-                {messages.length > 0 && (
-                  <div className={`rounded-xl p-4 mb-3 max-h-[400px] overflow-y-auto ${isDark ? 'bg-white/5 backdrop-blur-sm border border-white/10' : 'bg-white shadow-lg border border-gray-200'
-                    }`}>
-                    <div className="space-y-3">
-                      {messages.map((message, index) => (
-                        <div key={index} className="flex">
-                          <div
-                            className={`max-w-[85%] rounded-2xl px-5 py-3 text-sm leading-relaxed shadow-sm ${message.role === 'user'
-                              ? isDark
-                                ? 'ml-auto bg-blue-600/80 text-white backdrop-blur-sm'
-                                : 'ml-auto bg-white text-primary-900 shadow-md'
-                              : isDark
-                                ? 'bg-white/5 border border-white/10 text-gray-200'
-                                : 'bg-gray-100 border border-gray-200 text-gray-800 shadow-sm'
-                              }`}
-                          >
-                            {message.role === 'user' ? (
-                              message.content
-                            ) : (
-                              <ReactMarkdown
-                                components={{
-                                  a: ({ node, ...props }) => (
-                                    <a
-                                      {...props}
-                                      target="_blank"
-                                      rel="noopener noreferrer"
-                                      className={`underline decoration-primary-400 underline-offset-2 ${isDark ? 'text-blue-300 hover:text-blue-200' : 'text-blue-600 hover:text-blue-700'}`}
-                                    />
-                                  ),
-                                  p: ({ node, ...props }) => <p {...props} className="mb-1 last:mb-0" />,
-                                  ul: ({ node, ...props }) => <ul {...props} className="list-disc pl-4 mb-2 space-y-1" />,
-                                  ol: ({ node, ...props }) => <ol {...props} className="list-decimal pl-4 mb-2 space-y-1" />,
-                                  li: ({ node, ...props }) => <li {...props} className="mb-0.5" />,
-                                }}
-                              >
-                                {message.content}
-                              </ReactMarkdown>
-                            )}
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                )}
-
-                {/* Loading */}
-                {isLoading && (
-                  <div className={`rounded-xl p-4 mb-3 ${isDark ? 'bg-white/5 backdrop-blur-sm' : 'bg-white shadow-lg'}`}>
-                    <div className="flex items-center gap-2">
-                      <Loader2 className={`h-5 w-5 animate-spin ${isDark ? 'text-primary-400' : 'text-primary-600'}`} />
-                      <span className={`text-sm ${isDark ? 'text-gray-300' : 'text-gray-600'}`}>Thinking...</span>
-                    </div>
-                  </div>
-                )}
-
-                {/* Suggestions / Quick Links - Shown when focused or no messages */}
-                {(isFocused || messages.length === 0) && !isLoading && (
-                  <div className={`text-center py-6 rounded-xl animate-fadeIn ${isDark ? 'bg-white/5 backdrop-blur-sm' : 'bg-white shadow-lg'}`}>
-                    <p className={`text-sm mb-4 ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
-                      {messages.length > 0 ? "Try asking:" : "Explore or Ask:"}
-                    </p>
-
-                    {/* Primary Suggestions */}
-                    <div className="flex flex-wrap gap-2 justify-center mb-4">
-                      {[
-                        'Best time to visit Japan',
-                        'Weekend trips from NYC',
-                        'Work-from-anywhere tips'
-                      ].map((suggestion) => (
-                        <button
-                          key={suggestion}
-                          onClick={() => {
-                            setSearchQuery(suggestion);
-                            handleSearchSubmit({ preventDefault: () => { } });
-                          }}
-                          className={`px-3 py-1.5 rounded-full text-xs transition ${isDark
-                            ? 'border border-white/15 text-gray-200 hover:border-white/40 hover:text-white'
-                            : 'border border-gray-300 text-gray-700 hover:border-gray-400 hover:text-gray-900'
-                            }`}
-                        >
-                          {suggestion}
-                        </button>
-                      ))}
-                    </div>
-
-                    {/* Quick Access Links (Moved from bottom) */}
-                    <div className="flex flex-wrap justify-center gap-3 border-t border-white/10 pt-4 mt-2">
-                      <Link to="/destinations" className={`rounded-full px-4 py-1.5 text-xs font-medium transition ${isDark ? 'bg-white/10 text-white hover:bg-white/20' : 'bg-gray-100 text-gray-800 hover:bg-gray-200'}`}>Destinations</Link>
-                      <Link to="/blog" className={`rounded-full px-4 py-1.5 text-xs font-medium transition ${isDark ? 'bg-white/10 text-white hover:bg-white/20' : 'bg-gray-100 text-gray-800 hover:bg-gray-200'}`}>Guides</Link>
-                      <Link to="/lifestyle-picks" className={`rounded-full px-4 py-1.5 text-xs font-medium transition ${isDark ? 'bg-white/10 text-white hover:bg-white/20' : 'bg-gray-100 text-gray-800 hover:bg-gray-200'}`}>Lifestyle</Link>
-                      <Link to="/work-from-anywhere" className={`rounded-full px-4 py-1.5 text-xs font-medium transition ${isDark ? 'bg-white/10 text-white hover:bg-white/20' : 'bg-gray-100 text-gray-800 hover:bg-gray-200'}`}>Remote Work</Link>
-                      <Link to="/deals" className={`rounded-full px-4 py-1.5 text-xs font-medium transition ${isDark ? 'bg-white/10 text-white hover:bg-white/20' : 'bg-gray-100 text-gray-800 hover:bg-gray-200'}`}>Deals</Link>
-                    </div>
-                  </div>
-                )}
-              </div>
-            )}
-
-
-          </>
-
-
-
+            </div>
+          )}
 
         </div>
       </section >
-
-
 
       <section className="py-20 bg-white text-gray-900 relative z-10">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -885,7 +718,7 @@ export function Home() {
           </div>
 
           <div className="text-center mt-12">
-            <Link to="/blog">
+            <Link to="/destinations">
               <Button size="lg" className="group">
                 View All Destination Guides
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
@@ -1014,13 +847,8 @@ export function Home() {
               variant="outline"
               className="border-2 border-white text-white hover:bg-white/10 w-full sm:w-auto"
               onClick={() => {
-                setSearchMode('ai');
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-                setTimeout(() => {
-                  if (searchInputRef.current) {
-                    searchInputRef.current.focus();
-                  }
-                }, 800);
+                setIsChatOpen(true);
+                // Wait for modal transition then focus? ChatInterface handles auto focus usually.
               }}
             >
               <MessageCircle className="mr-2 h-5 w-5" />
@@ -1029,6 +857,18 @@ export function Home() {
           </div>
         </div>
       </section>
+
+      {/* Full Chat Modal */}
+      {isChatOpen && (
+        <ChatInterface
+          initialQuery={initialChatQuery}
+          autoListen={false}
+          onClose={() => {
+            setIsChatOpen(false);
+            setInitialChatQuery('');
+          }}
+        />
+      )}
     </div >
   );
 }
