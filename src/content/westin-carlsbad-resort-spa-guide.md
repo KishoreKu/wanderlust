@@ -92,7 +92,7 @@ After checking in, you'll find plenty to do nearby—whether you want adventure,
 <div class="bg-primary-50 rounded-lg p-6 mb-8">
   <h3 class="text-xl font-bold mb-3">🎯 Explore Carlsbad Activities</h3>
   <p class="mb-4">Discover curated experiences, tours, and attractions in the Carlsbad and San Diego area.</p>
-  <a href="https://api.gubbu.io/go/activities" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
+  <a href="https://gubbu-api-612568200950.us-central1.run.app/go/activities" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
     👉 Browse Carlsbad activities
   </a>
 </div>
@@ -118,7 +118,7 @@ Most travelers fly into **San Diego International Airport (SAN)**, which is the 
 <div class="bg-primary-50 rounded-lg p-6 mb-8">
   <h3 class="text-xl font-bold mb-3">✈️ Find Flights to San Diego</h3>
   <p class="mb-4">Compare flight options and travel dates for San Diego International Airport (SAN).</p>
-  <a href="https://api.gubbu.io/go/flights" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
+  <a href="https://gubbu-api-612568200950.us-central1.run.app/go/flights" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
     👉 Search flights to SAN
   </a>
 </div>
@@ -134,7 +134,7 @@ When searching for accommodations, compare rates and availability across multipl
 <div class="bg-primary-50 rounded-lg p-6 mb-8">
   <h3 class="text-xl font-bold mb-3">🏨 Find Hotels in Carlsbad</h3>
   <p class="mb-4">Compare accommodation options including Westin Carlsbad and other properties in the area.</p>
-  <a href="https://api.gubbu.io/go/hotels" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
+  <a href="https://gubbu-api-612568200950.us-central1.run.app/go/hotels" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
     👉 Search Carlsbad hotels
   </a>
 </div>

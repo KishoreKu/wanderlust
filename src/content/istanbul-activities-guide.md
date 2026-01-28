@@ -110,7 +110,7 @@ Celebrate New Year's Eve on the Bosphorus with a spectacular gala dinner, live e
 <div class="bg-gradient-to-r from-primary-50 to-primary-100 rounded-xl p-8 mb-8">
   <h3 class="text-2xl font-bold mb-4">🎯 Ready to Book Your Bosphorus Cruise?</h3>
   <p class="text-gray-700 mb-6">Choose from budget-friendly options to luxury experiences. All cruises offer skip-the-line access and verified reviews from thousands of travelers.</p>
-  <a href="https://api.gubbu.io/go/activities" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
+  <a href="https://gubbu-api-612568200950.us-central1.run.app/go/activities" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
     👉 Browse All Istanbul Cruises & Activities
   </a>
 </div>
@@ -242,7 +242,7 @@ Explore Istanbul's food scene with a local guide, sampling authentic Turkish dis
 <div class="bg-primary-50 rounded-lg p-6 mb-8">
   <h3 class="text-xl font-bold mb-3">🎯 Book Your Istanbul Activities Now</h3>
   <p class="mb-4">All these experiences are available with skip-the-line access, verified reviews, and flexible cancellation. Book early to secure your preferred dates!</p>
-  <a href="https://api.gubbu.io/go/activities" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
+  <a href="https://gubbu-api-612568200950.us-central1.run.app/go/activities" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
     👉 Explore All Istanbul Experiences
   </a>
 </div>
@@ -390,7 +390,7 @@ Check reviews from the last 3-6 months for the most accurate information about c
 <div class="bg-gradient-to-r from-primary-50 to-primary-100 rounded-xl p-8 mb-6">
   <h3 class="text-2xl font-bold mb-4">🎯 Ready to Experience Istanbul?</h3>
   <p class="text-gray-700 mb-6">From $8 budget cruises to $240 luxury experiences, there's something for every traveler. Book with confidence with verified reviews and flexible cancellation.</p>
-  <a href="https://api.gubbu.io/go/activities" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
+  <a href="https://gubbu-api-612568200950.us-central1.run.app/go/activities" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
     👉 Browse All Istanbul Activities Now
   </a>
 </div>

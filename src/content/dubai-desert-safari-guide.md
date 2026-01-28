@@ -89,7 +89,7 @@ The red dunes of Dubai are higher and more dramatic than the regular desert – 
 <div class="bg-gradient-to-r from-primary-50 to-primary-100 rounded-xl p-8 mb-8">
   <h3 class="text-2xl font-bold mb-4">🎯 Ready to Book Your Desert Safari?</h3>
   <p class="text-gray-700 mb-6">Choose from budget-friendly $27 adventures to premium $91 experiences. All safaris include hotel pickup, skip-the-line access, and verified reviews from thousands of travelers.</p>
-  <a href="https://api.gubbu.io/go/activities" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
+  <a href="https://gubbu-api-612568200950.us-central1.run.app/go/activities" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
     👉 Browse All Dubai Desert Safaris
   </a>
 </div>
@@ -268,7 +268,7 @@ At just $27, you get 4x more quad biking time than tours costing the same price.
 <div class="bg-primary-50 rounded-lg p-6 mb-8">
   <h3 class="text-xl font-bold mb-3">🎯 Compare All Dubai Desert Safaris</h3>
   <p class="mb-4">From $27 budget adventures to $91 premium experiences – find the perfect desert safari for your style and budget. All tours include hotel pickup and verified reviews.</p>
-  <a href="https://api.gubbu.io/go/activities" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
+  <a href="https://gubbu-api-612568200950.us-central1.run.app/go/activities" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
     👉 View All Desert Safari Options
   </a>
 </div>
@@ -545,7 +545,7 @@ Most tours offer free cancellation up to 24 hours before. Always verify before b
 <div class="bg-gradient-to-r from-primary-50 to-primary-100 rounded-xl p-8 mb-6">
   <h3 class="text-2xl font-bold mb-4">🎯 Ready for Your Desert Adventure?</h3>
   <p class="text-gray-700 mb-6">From $27 budget safaris to $91 premium experiences, there's a perfect desert adventure for every traveler. All tours include hotel pickup, safety equipment, and verified reviews from thousands of happy adventurers.</p>
-  <a href="https://api.gubbu.io/go/activities" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
+  <a href="https://gubbu-api-612568200950.us-central1.run.app/go/activities" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
     👉 Book Your Dubai Desert Safari Now
   </a>
 </div>

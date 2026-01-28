@@ -64,7 +64,7 @@ Before picking any product, ask yourself these 4 questions:
 <div class="bg-primary-50 rounded-lg p-6 mb-8">
   <h3 class="text-xl font-bold mb-3">💡 Not sure where to start?</h3>
   <p class="mb-4">Explore dog food options that fit your specific lifestyle and travel needs.</p>
-  <a href="https://api.gubbu.io/go/amazon?query=dog%20food%20for%20busy%20pet%20parents&source=blog" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
+  <a href="https://gubbu-api-612568200950.us-central1.run.app/go/amazon?query=dog%20food%20for%20busy%20pet%20parents&source=blog" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
     👉 Find the right dog food for your lifestyle
   </a>
 </div>
@@ -126,7 +126,7 @@ These options reduce stress for both you and your dog while traveling.
 <div class="bg-primary-50 rounded-lg p-6 mb-8">
   <h3 class="text-xl font-bold mb-3">🐶 Ready to choose?</h3>
   <p class="mb-4">Compare fresh, dry, and travel-friendly dog food options based on your needs.</p>
-  <a href="https://api.gubbu.io/go/amazon?query=travel%20friendly%20dog%20food&source=blog" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
+  <a href="https://gubbu-api-612568200950.us-central1.run.app/go/amazon?query=travel%20friendly%20dog%20food&source=blog" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
     👉 Explore dog food options
   </a>
 </div>
@@ -172,7 +172,7 @@ And that's exactly the kind of decision Gubbu exists to help with.
 <div class="bg-gradient-to-r from-primary-50 to-primary-100 rounded-xl p-8 mb-6">
   <h3 class="text-2xl font-bold mb-4">Make Smarter Lifestyle Choices</h3>
   <p class="text-gray-700 mb-6">From travel to everyday decisions, Gubbu helps you navigate modern life with confidence.</p>
-  <a href="https://api.gubbu.io/go/amazon?query=vet%20recommended%20dog%20food&source=blog" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
+  <a href="https://gubbu-api-612568200950.us-central1.run.app/go/amazon?query=vet%20recommended%20dog%20food&source=blog" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
     👉 Explore lifestyle solutions on Gubbu
   </a>
 </div>

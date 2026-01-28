@@ -24,7 +24,7 @@ This guide focuses on the recurring essentials that prevent the biggest problems
       <h3 class="text-2xl font-bold mb-2">The Monthly Prevention Stack</h3>
       <p class="text-gray-700">Pick one flea/tick solution + one heartworm solution. Keep it consistent for 6-12 months.</p>
     </div>
-    <a href="https://api.gubbu.io/go/rakuten?query=pet%20flea%20tick%20heartworm%20prevention&source=blog" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
+    <a href="https://gubbu-api-612568200950.us-central1.run.app/go/rakuten?query=pet%20flea%20tick%20heartworm%20prevention&source=blog" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
       Build your prevention kit
     </a>
   </div>
@@ -49,7 +49,7 @@ Use these three rules instead of getting lost in lists:
     <h3 class="text-xl font-bold mb-2">Frontline Plus (Flea + Tick)</h3>
     <p class="text-gray-700 mb-3">A classic monthly topical for steady, predictable coverage.</p>
     <p class="text-sm text-gray-600 mb-4"><strong>Best for:</strong> owners who prefer topicals and want a long track record.</p>
-    <a href="https://api.gubbu.io/go/rakuten?query=Frontline%20Plus%20for%20Dogs&source=blog" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-5 py-2 rounded-lg hover:bg-primary-700 transition-colors">
+    <a href="https://gubbu-api-612568200950.us-central1.run.app/go/rakuten?query=Frontline%20Plus%20for%20Dogs&source=blog" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-5 py-2 rounded-lg hover:bg-primary-700 transition-colors">
       Check Frontline Plus options
     </a>
   </div>
@@ -58,7 +58,7 @@ Use these three rules instead of getting lost in lists:
     <h3 class="text-xl font-bold mb-2">K9 Advantix (Flea + Tick)</h3>
     <p class="text-gray-700 mb-3">Topical coverage for fleas and ticks with strong outdoor protection.</p>
     <p class="text-sm text-gray-600 mb-4"><strong>Best for:</strong> outdoor dogs or high-tick regions.</p>
-    <a href="https://api.gubbu.io/go/rakuten?query=K9%20Advantix%20for%20Dogs&source=blog" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-5 py-2 rounded-lg hover:bg-primary-700 transition-colors">
+    <a href="https://gubbu-api-612568200950.us-central1.run.app/go/rakuten?query=K9%20Advantix%20for%20Dogs&source=blog" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-5 py-2 rounded-lg hover:bg-primary-700 transition-colors">
       Check K9 Advantix options
     </a>
   </div>
@@ -67,7 +67,7 @@ Use these three rules instead of getting lost in lists:
     <h3 class="text-xl font-bold mb-2">Bravecto (Flea + Tick)</h3>
     <p class="text-gray-700 mb-3">Longer-lasting chewable that reduces monthly reminders.</p>
     <p class="text-sm text-gray-600 mb-4"><strong>Best for:</strong> owners who want fewer doses per year.</p>
-    <a href="https://api.gubbu.io/go/rakuten?query=Bravecto%20for%20Dogs&source=blog" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-5 py-2 rounded-lg hover:bg-primary-700 transition-colors">
+    <a href="https://gubbu-api-612568200950.us-central1.run.app/go/rakuten?query=Bravecto%20for%20Dogs&source=blog" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-5 py-2 rounded-lg hover:bg-primary-700 transition-colors">
       Check Bravecto options
     </a>
   </div>
@@ -76,7 +76,7 @@ Use these three rules instead of getting lost in lists:
     <h3 class="text-xl font-bold mb-2">Advantage Multi (Heartworm Combo)</h3>
     <p class="text-gray-700 mb-3">A combination option that simplifies routine management.</p>
     <p class="text-sm text-gray-600 mb-4"><strong>Best for:</strong> owners who want fewer separate products.</p>
-    <a href="https://api.gubbu.io/go/rakuten?query=Advantage%20Multi%20for%20Dogs&source=blog" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-5 py-2 rounded-lg hover:bg-primary-700 transition-colors">
+    <a href="https://gubbu-api-612568200950.us-central1.run.app/go/rakuten?query=Advantage%20Multi%20for%20Dogs&source=blog" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-5 py-2 rounded-lg hover:bg-primary-700 transition-colors">
       Check Advantage Multi options
     </a>
   </div>
@@ -85,7 +85,7 @@ Use these three rules instead of getting lost in lists:
     <h3 class="text-xl font-bold mb-2">Revolution (Heartworm + Flea)</h3>
     <p class="text-gray-700 mb-3">A trusted monthly option that covers multiple needs.</p>
     <p class="text-sm text-gray-600 mb-4"><strong>Best for:</strong> owners who want a combined monthly routine.</p>
-    <a href="https://api.gubbu.io/go/rakuten?query=Revolution%20for%20Dogs&source=blog" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-5 py-2 rounded-lg hover:bg-primary-700 transition-colors">
+    <a href="https://gubbu-api-612568200950.us-central1.run.app/go/rakuten?query=Revolution%20for%20Dogs&source=blog" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-5 py-2 rounded-lg hover:bg-primary-700 transition-colors">
       Check Revolution options
     </a>
   </div>
@@ -94,7 +94,7 @@ Use these three rules instead of getting lost in lists:
     <h3 class="text-xl font-bold mb-2">Heartgard Plus (Heartworm)</h3>
     <p class="text-gray-700 mb-3">A simple monthly chewable with a long history of use.</p>
     <p class="text-sm text-gray-600 mb-4"><strong>Best for:</strong> owners who want a straightforward heartworm-only option.</p>
-    <a href="https://api.gubbu.io/go/rakuten?query=Heartgard%20Plus%20for%20Dogs&source=blog" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-5 py-2 rounded-lg hover:bg-primary-700 transition-colors">
+    <a href="https://gubbu-api-612568200950.us-central1.run.app/go/rakuten?query=Heartgard%20Plus%20for%20Dogs&source=blog" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-5 py-2 rounded-lg hover:bg-primary-700 transition-colors">
       Check Heartgard Plus options
     </a>
   </div>
@@ -103,7 +103,7 @@ Use these three rules instead of getting lost in lists:
     <h3 class="text-xl font-bold mb-2">Interceptor (Heartworm)</h3>
     <p class="text-gray-700 mb-3">Monthly heartworm prevention for consistent coverage.</p>
     <p class="text-sm text-gray-600 mb-4"><strong>Best for:</strong> owners who already have a flea/tick solution and need heartworm coverage.</p>
-    <a href="https://api.gubbu.io/go/rakuten?query=Interceptor%20for%20Dogs&source=blog" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-5 py-2 rounded-lg hover:bg-primary-700 transition-colors">
+    <a href="https://gubbu-api-612568200950.us-central1.run.app/go/rakuten?query=Interceptor%20for%20Dogs&source=blog" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-5 py-2 rounded-lg hover:bg-primary-700 transition-colors">
       Check Interceptor options
     </a>
   </div>
@@ -136,7 +136,7 @@ Consistency protects your pet more than a perfect brand choice.
 <div class="bg-gradient-to-r from-primary-50 to-primary-100 rounded-xl p-8 mb-6">
   <h3 class="text-2xl font-bold mb-4">Ready to build your monthly prevention routine?</h3>
   <p class="text-gray-700 mb-6">Choose the products that match your schedule, then keep it simple and consistent.</p>
-  <a href="https://api.gubbu.io/go/rakuten?query=dog%20flea%20tick%20heartworm%20prevention&source=blog" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
+  <a href="https://gubbu-api-612568200950.us-central1.run.app/go/rakuten?query=dog%20flea%20tick%20heartworm%20prevention&source=blog" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
     Build your prevention kit
   </a>
 </div>

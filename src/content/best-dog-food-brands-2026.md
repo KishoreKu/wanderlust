@@ -86,7 +86,7 @@ Perfect for dog owners who want a scientifically-backed, reliable option with fo
       </div>
     </div>
     <div class="pt-2">
-      <a href="https://api.gubbu.io/go/amazon?query=Purina%20Pro%20Plan%20dog%20food&source=blog" target="_blank" rel="nofollow noopener" class="inline-flex items-center bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors font-semibold">
+      <a href="https://gubbu-api-612568200950.us-central1.run.app/go/amazon?query=Purina%20Pro%20Plan%20dog%20food&source=blog" target="_blank" rel="nofollow noopener" class="inline-flex items-center bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors font-semibold">
         <span class="mr-2">🔗</span> Check Purina Pro Plan on Amazon
       </a>
     </div>
@@ -129,7 +129,7 @@ Ideal for dogs with digestive issues, food sensitivities, or those following a v
       </div>
     </div>
     <div class="pt-2">
-      <a href="https://api.gubbu.io/go/amazon?query=Hill%27s%20Science%20Diet%20dog%20food&source=blog" target="_blank" rel="nofollow noopener" class="inline-flex items-center text-white px-6 py-3 rounded-lg transition-colors font-semibold" style="background-color: #059669;">
+      <a href="https://gubbu-api-612568200950.us-central1.run.app/go/amazon?query=Hill%27s%20Science%20Diet%20dog%20food&source=blog" target="_blank" rel="nofollow noopener" class="inline-flex items-center text-white px-6 py-3 rounded-lg transition-colors font-semibold" style="background-color: #059669;">
         <span class="mr-2">🔗</span> Check Hill's Science Diet on Amazon
       </a>
     </div>
@@ -172,7 +172,7 @@ Perfect for pet owners who prioritize natural ingredients, want to avoid by-prod
       </div>
     </div>
     <div class="pt-2">
-      <a href="https://api.gubbu.io/go/amazon?query=Blue%20Buffalo%20dog%20food&source=blog" target="_blank" rel="nofollow noopener" class="inline-flex items-center text-white px-6 py-3 rounded-lg transition-colors font-semibold" style="background-color: #9333ea;">
+      <a href="https://gubbu-api-612568200950.us-central1.run.app/go/amazon?query=Blue%20Buffalo%20dog%20food&source=blog" target="_blank" rel="nofollow noopener" class="inline-flex items-center text-white px-6 py-3 rounded-lg transition-colors font-semibold" style="background-color: #9333ea;">
         <span class="mr-2">🔗</span> Check Blue Buffalo on Amazon
       </a>
     </div>

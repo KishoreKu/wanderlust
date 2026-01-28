@@ -71,7 +71,7 @@ With over 13,000 top reviews, this is the gold standard for city tours.
 <div class="bg-gradient-to-r from-primary-50 to-primary-100 rounded-xl p-8 mb-8">
   <h3 class="text-2xl font-bold mb-4">🇪🇸 Ready to Book Your Spanish Adventure?</h3>
   <p class="text-gray-700 mb-6">Skip the lines at Sagrada Familia and discover amazing day trips. Verified reviews from 70,000+ travelers!</p>
-  <a href="https://api.gubbu.io/go/activities" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
+  <a href="https://gubbu-api-612568200950.us-central1.run.app/go/activities" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
     👉 Browse All Barcelona Tours
   </a>
 </div>
@@ -206,7 +206,7 @@ The easiest way to get your bearings. Two routes cover everything from the Beach
 <div class="bg-primary-50 rounded-lg p-6 mb-8">
   <h3 class="text-xl font-bold mb-3">🇪🇸 Don't Miss Out!</h3>
   <p class="mb-4">Barcelona represents one of the world's most popular destinations. Skip-the-line tickets are not a luxury – they are a necessity!</p>
-  <a href="https://api.gubbu.io/go/activities" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
+  <a href="https://gubbu-api-612568200950.us-central1.run.app/go/activities" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
     👉 Book Your Barcelona Activities
   </a>
 </div>

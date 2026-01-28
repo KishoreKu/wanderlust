@@ -255,13 +255,13 @@ export function Destinations() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="https://api.gubbu.io/go/flights?src=destinations_plan" target="_blank" rel="noopener noreferrer">
+            <a href="https://gubbu-api-612568200950.us-central1.run.app/go/flights?src=destinations_plan" target="_blank" rel="noopener noreferrer">
               <Button size="lg" className="bg-primary-600 hover:bg-primary-700">
                 <Plane className="h-5 w-5 mr-2" />
                 ✈️ Search Flights
               </Button>
             </a>
-            <a href="https://api.gubbu.io/go/hotels?src=destinations_plan" target="_blank" rel="noopener noreferrer">
+            <a href="https://gubbu-api-612568200950.us-central1.run.app/go/hotels?src=destinations_plan" target="_blank" rel="noopener noreferrer">
               <Button size="lg" variant="outline" className="border-primary-600 text-primary-600 hover:bg-primary-600 hover:text-white">
                 <Hotel className="h-5 w-5 mr-2" />
                 🏨 Find Hotels

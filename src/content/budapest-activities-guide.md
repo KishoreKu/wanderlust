@@ -68,7 +68,7 @@ The most popular daytime cruise in Budapest! See all the major landmarks from th
 <div class="bg-gradient-to-r from-primary-50 to-primary-100 rounded-xl p-8 mb-8">
   <h3 class="text-2xl font-bold mb-4">🎯 Ready to Book Your Budapest Adventure?</h3>
   <p class="text-gray-700 mb-6">From $11 ruin bar crawls to $97 unique experiences. All activities include verified reviews and flexible cancellation.</p>
-  <a href="https://api.gubbu.io/go/activities" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
+  <a href="https://gubbu-api-612568200950.us-central1.run.app/go/activities" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
     👉 Browse All Budapest Activities
   </a>
 </div>
@@ -196,7 +196,7 @@ Learn about Hungarian drinking culture while sampling authentic local beverages.
 <div class="bg-primary-50 rounded-lg p-6 mb-8">
   <h3 class="text-xl font-bold mb-3">🎯 Compare All Budapest Experiences</h3>
   <p class="mb-4">From budget-friendly $11 pub crawls to luxury $97 adventures – find your perfect Budapest experience!</p>
-  <a href="https://api.gubbu.io/go/activities" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
+  <a href="https://gubbu-api-612568200950.us-central1.run.app/go/activities" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
     👉 View All Budapest Tours
   </a>
 </div>
@@ -564,7 +564,7 @@ Most tours include:
 <div class="bg-gradient-to-r from-primary-50 to-primary-100 rounded-xl p-8 mb-6">
   <h3 class="text-2xl font-bold mb-4">🎯 Ready to Experience Budapest?</h3>
   <p class="text-gray-700 mb-6">From $11 pub crawls to $97 unique adventures, there's a perfect Budapest experience for every traveler. All tours include verified reviews from 130,000+ happy visitors and flexible cancellation.</p>
-  <a href="https://api.gubbu.io/go/activities" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
+  <a href="https://gubbu-api-612568200950.us-central1.run.app/go/activities" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
     👉 Book Your Budapest Adventure Now
   </a>
 </div>

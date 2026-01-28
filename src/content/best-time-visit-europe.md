@@ -81,7 +81,7 @@ No matter when you visit, Europe offers incredible experiences year-round. Choos
 <div class="bg-gradient-to-r from-primary-50 to-primary-100 rounded-xl p-8 mb-6">
   <h3 class="text-2xl font-bold mb-4">🇪🇺 Plan Your European Adventure</h3>
   <p class="text-gray-700 mb-6">Find the perfect time to visit Europe based on your preferences. Search for flights and hotels now!</p>
-  <a href="https://api.gubbu.io/go/flights" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
+  <a href="https://gubbu-api-612568200950.us-central1.run.app/go/flights" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
     👉 Search Flights & Hotels
   </a>
 </div>

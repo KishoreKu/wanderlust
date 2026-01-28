@@ -169,7 +169,7 @@ Many attractions offer tours at different times of day. Early morning or late af
 
 Don't let planning stress hold you back from amazing experiences. GetYourGuide makes it easy to discover, compare, and book the best tours and activities for your next adventure.
 
-**[👉 Explore Tours & Activities on GetYourGuide](https://api.gubbu.io/go/activities)**
+**[👉 Explore Tours & Activities on GetYourGuide](https://gubbu-api-612568200950.us-central1.run.app/go/activities)**
 
 Whether you're planning a weekend getaway or a month-long adventure, GetYourGuide has thousands of verified experiences waiting for you. From skip-the-line museum tickets to adrenaline-pumping adventures, find everything you need in one place.
 
@@ -194,7 +194,7 @@ From world-famous landmarks to hidden local gems, from relaxing food tours to he
 <div class="bg-gradient-to-r from-primary-50 to-primary-100 rounded-xl p-8 mb-6">
   <h3 class="text-2xl font-bold mb-4">🎯 Discover Your Next Adventure</h3>
   <p class="text-gray-700 mb-6">Ready to explore amazing tours and activities worldwide? Find skip-the-line tickets, expert guides, and unforgettable experiences!</p>
-  <a href="https://api.gubbu.io/go/activities" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
+  <a href="https://gubbu-api-612568200950.us-central1.run.app/go/activities" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
     👉 Start Exploring GetYourGuide Now
   </a>
 </div>
