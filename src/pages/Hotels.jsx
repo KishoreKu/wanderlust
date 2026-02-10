@@ -131,7 +131,7 @@ export function Hotels() {
       src: cityName ? 'web_hotels_city' : 'web_hotels'
     });
 
-    window.open(`https://gubbu-api-612568200950.us-central1.run.app/go/hotels?${params.toString()}`, '_blank');
+    window.open(`https://api.gubbu.io/go/hotels?${params.toString()}`, '_blank');
   };
 
   const popularCities = [

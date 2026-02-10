@@ -3,7 +3,7 @@ import { Plane, MessageCircle, Shield, Globe, Smartphone, Search } from 'lucide-
 
 export function Flights() {
   const handleSearch = () => {
-    window.open('https://gubbu-api-612568200950.us-central1.run.app/go/flights?src=web_flights', '_blank');
+    window.open('https://api.gubbu.io/go/flights?src=web_flights', '_blank');
   };
 
   const popularRoutes = [
@@ -154,7 +154,7 @@ export function Flights() {
             {popularRoutes.map((route, index) => (
               <button
                 key={index}
-                onClick={() => window.open('https://gubbu-api-612568200950.us-central1.run.app/go/flights?src=web_flights_popular', '_blank')}
+                onClick={() => window.open('https://api.gubbu.io/go/flights?src=web_flights_popular', '_blank')}
                 className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1"
               >
                 <div className="aspect-[4/3] relative">
@@ -178,7 +178,7 @@ export function Flights() {
           </div>
 
           <div className="text-center">
-            <Button size="lg" onClick={() => window.open('https://gubbu-api-612568200950.us-central1.run.app/go/flights?src=web_flights_popular', '_blank')}>
+            <Button size="lg" onClick={() => window.open('https://api.gubbu.io/go/flights?src=web_flights_popular', '_blank')}>
               🔵 Search Flights
             </Button>
           </div>
@@ -243,7 +243,7 @@ export function Flights() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
-            <Button size="lg" onClick={() => window.open('https://gubbu-api-612568200950.us-central1.run.app/go/flights?src=web_flights_cta', '_blank')} className="bg-primary-600 hover:bg-primary-700">
+            <Button size="lg" onClick={() => window.open('https://api.gubbu.io/go/flights?src=web_flights_cta', '_blank')} className="bg-primary-600 hover:bg-primary-700">
               🔵 Search Flights Now
             </Button>
           </div>

@@ -13,7 +13,7 @@ export default defineConfig({
         rewrite: (path) => path.replace(/^\/api-proxy/, '')
       },
       '/go': {
-        target: 'https://gubbu-api-612568200950.us-central1.run.app',
+        target: 'https://api.gubbu.io',
         changeOrigin: true,
         secure: true
       }
