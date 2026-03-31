@@ -135,7 +135,7 @@ As the leaves change, expect harvest festivals, trunk-or-treat events, and commu
 ### 🎄 Holiday Events
 The township organizes holiday tree lighting ceremonies, winter markets, and seasonal activities through December.
 
-**Stay updated:** Visit [oldbridge.com](https://www.oldbridge.com) for official event calendars and community announcements.
+**Stay updated:** Visit **oldbridge.com** for official event calendars and community announcements.
 
 ---
 
