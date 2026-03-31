@@ -55,6 +55,41 @@ function parseFrontmatter(content) {
 function markdownToHtml(markdown) {
     let html = markdown;
 
+    // Tables — parse before other transformations to avoid mangling pipe chars
+    html = html.replace(
+        /((?:^\|.+\|[ \t]*\n)+)/gm,
+        (tableBlock) => {
+            const rows = tableBlock.trim().split('\n').filter(r => r.trim());
+            if (rows.length < 2) return tableBlock;
+
+            // Check if the second row is a separator row (e.g. |---|---|)
+            const separatorRow = rows[1].trim();
+            const isSeparator = /^\|[\s:-]+\|/.test(separatorRow) && /^[\s|:\-]+$/.test(separatorRow);
+
+            let thead = '';
+            let bodyStart = 0;
+
+            if (isSeparator) {
+                // First row is header
+                const headerCells = rows[0].split('|').filter(c => c.trim() !== '');
+                thead = '<thead><tr>' +
+                    headerCells.map(c => `<th class="px-4 py-3 text-left font-semibold text-gray-900 bg-primary-50">${c.trim()}</th>`).join('') +
+                    '</tr></thead>';
+                bodyStart = 2; // skip header row and separator
+            }
+
+            const bodyRows = rows.slice(bodyStart).map((row, idx) => {
+                const cells = row.split('|').filter(c => c.trim() !== '');
+                const bgClass = idx % 2 === 0 ? 'bg-white' : 'bg-gray-50';
+                return '<tr class="' + bgClass + '">' +
+                    cells.map(c => `<td class="px-4 py-3 text-gray-700 border-t border-gray-200">${c.trim()}</td>`).join('') +
+                    '</tr>';
+            }).join('');
+
+            return `<div class="overflow-x-auto my-6"><table class="min-w-full border border-gray-200 rounded-lg overflow-hidden text-sm">${thead}<tbody>${bodyRows}</tbody></table></div>\n`;
+        }
+    );
+
     // Headers
     html = html.replace(/^### (.*$)/gim, '<h3 class="text-2xl font-bold mt-6 mb-3">$1</h3>');
     html = html.replace(/^## (.*$)/gim, '<h2 class="text-3xl font-bold mt-8 mb-4">$1</h2>');
@@ -81,6 +116,8 @@ function markdownToHtml(markdown) {
         const line = lines[i].trim();
 
         if (line.startsWith('<h') || line.startsWith('<ul') || line.startsWith('<div') ||
+            line.startsWith('<table') || line.startsWith('<thead') || line.startsWith('<tbody') ||
+            line.startsWith('<tr') || line.startsWith('<td') || line.startsWith('<th') ||
             line.startsWith('</') || line.startsWith('<li') || line === '---' || line === '') {
             processedLines.push(line);
         } else if (!line.match(/^<.*>$/)) {
