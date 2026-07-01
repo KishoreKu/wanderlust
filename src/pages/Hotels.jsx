@@ -131,7 +131,7 @@ export function Hotels() {
       src: cityName ? 'web_hotels_city' : 'web_hotels'
     });
 
-    window.open(`https://api.gubbu.io/go/hotels?${params.toString()}`, '_blank');
+    window.open(`https://gubbu-api.proudwater-f3417084.eastus2.azurecontainerapps.io/go/hotels?${params.toString()}`, '_blank');
   };
 
   const popularCities = [

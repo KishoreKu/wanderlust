@@ -1,0 +1,384 @@
+{
+  "nodes": [
+    {
+      "id": "components_klookbanner_klookbanner",
+      "label": "KlookBanner",
+      "file_type": "code",
+      "source_file": "src/components/KlookBanner.jsx"
+    },
+    {
+      "id": "components_klookwidget_klookwidget",
+      "label": "KlookWidget",
+      "file_type": "code",
+      "source_file": "src/components/KlookWidget.jsx"
+    },
+    {
+      "id": "components_navbar_navbar",
+      "label": "Navbar",
+      "file_type": "code",
+      "source_file": "src/components/Navbar.jsx"
+    },
+    {
+      "id": "components_newsletterpopup_newsletterpopup",
+      "label": "NewsletterPopup",
+      "file_type": "code",
+      "source_file": "src/components/NewsletterPopup.jsx"
+    },
+    {
+      "id": "components_newslettersignup_newslettersignup",
+      "label": "NewsletterSignup",
+      "file_type": "code",
+      "source_file": "src/components/NewsletterSignup.jsx"
+    },
+    {
+      "id": "components_scrolltotop_scrolltotop",
+      "label": "ScrollToTop",
+      "file_type": "code",
+      "source_file": "src/components/ScrollToTop.jsx"
+    },
+    {
+      "id": "components_searchbar_searchbar",
+      "label": "SearchBar",
+      "file_type": "code",
+      "source_file": "src/components/SearchBar.jsx"
+    },
+    {
+      "id": "components_snowfall_snowfall",
+      "label": "Snowfall",
+      "file_type": "code",
+      "source_file": "src/components/Snowfall.jsx"
+    },
+    {
+      "id": "config_affiliate_travelpayouts_config",
+      "label": "TRAVELPAYOUTS_CONFIG",
+      "file_type": "code",
+      "source_file": "src/config/affiliate.js"
+    },
+    {
+      "id": "config_affiliate_hotels_com_config",
+      "label": "HOTELS_COM_CONFIG",
+      "file_type": "code",
+      "source_file": "src/config/affiliate.js"
+    },
+    {
+      "id": "config_affiliate_buildaffiliateurl",
+      "label": "buildAffiliateUrl",
+      "file_type": "code",
+      "source_file": "src/config/affiliate.js"
+    },
+    {
+      "id": "config_affiliate_gethotelaffiliatelink",
+      "label": "getHotelAffiliateLink",
+      "file_type": "code",
+      "source_file": "src/config/affiliate.js"
+    },
+    {
+      "id": "config_affiliate_getflightaffiliatelink",
+      "label": "getFlightAffiliateLink",
+      "file_type": "code",
+      "source_file": "src/config/affiliate.js"
+    },
+    {
+      "id": "contexts_themecontext_themecontext",
+      "label": "ThemeContext",
+      "file_type": "code",
+      "source_file": "src/contexts/ThemeContext.jsx"
+    },
+    {
+      "id": "contexts_themecontext_themeprovider",
+      "label": "ThemeProvider",
+      "file_type": "code",
+      "source_file": "src/contexts/ThemeContext.jsx"
+    },
+    {
+      "id": "contexts_themecontext_usetheme",
+      "label": "useTheme",
+      "file_type": "code",
+      "source_file": "src/contexts/ThemeContext.jsx"
+    },
+    {
+      "id": "pages_about_about",
+      "label": "About",
+      "file_type": "code",
+      "source_file": "src/pages/About.jsx"
+    },
+    {
+      "id": "pages_affiliatedisclosure_affiliatedisclosure",
+      "label": "AffiliateDisclosure",
+      "file_type": "code",
+      "source_file": "src/pages/AffiliateDisclosure.jsx"
+    },
+    {
+      "id": "pages_africadestinations_africadestinations",
+      "label": "AfricaDestinations",
+      "file_type": "code",
+      "source_file": "src/pages/AfricaDestinations.jsx"
+    },
+    {
+      "id": "pages_airhelp_airhelp",
+      "label": "AirHelp",
+      "file_type": "code",
+      "source_file": "src/pages/AirHelp.jsx"
+    },
+    {
+      "id": "pages_americasdestinations_americasdestinations",
+      "label": "AmericasDestinations",
+      "file_type": "code",
+      "source_file": "src/pages/AmericasDestinations.jsx"
+    },
+    {
+      "id": "pages_asiadestinations_asiadestinations",
+      "label": "AsiaDestinations",
+      "file_type": "code",
+      "source_file": "src/pages/AsiaDestinations.jsx"
+    },
+    {
+      "id": "pages_blog_blog",
+      "label": "Blog",
+      "file_type": "code",
+      "source_file": "src/pages/Blog.jsx"
+    },
+    {
+      "id": "pages_blogpost_blogpost",
+      "label": "BlogPost",
+      "file_type": "code",
+      "source_file": "src/pages/BlogPost.jsx"
+    },
+    {
+      "id": "pages_contact_contact",
+      "label": "Contact",
+      "file_type": "code",
+      "source_file": "src/pages/Contact.jsx"
+    },
+    {
+      "id": "pages_deals_deals",
+      "label": "Deals",
+      "file_type": "code",
+      "source_file": "src/pages/Deals.jsx"
+    },
+    {
+      "id": "pages_destinations_destinations",
+      "label": "Destinations",
+      "file_type": "code",
+      "source_file": "src/pages/Destinations.jsx"
+    },
+    {
+      "id": "pages_europedestinations_europedestinations",
+      "label": "EuropeDestinations",
+      "file_type": "code",
+      "source_file": "src/pages/EuropeDestinations.jsx"
+    },
+    {
+      "id": "pages_flights_flights",
+      "label": "Flights",
+      "file_type": "code",
+      "source_file": "src/pages/Flights.jsx"
+    }
+  ],
+  "edges": [
+    {
+      "source": "components_navbar_navbar",
+      "target": "contexts_themecontext_usetheme",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/Navbar.jsx"
+    },
+    {
+      "source": "components_klookbanner_klookbanner",
+      "target": "components_klookwidget_klookwidget",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/components/KlookBanner.jsx"
+    },
+    {
+      "source": "config_affiliate_buildaffiliateurl",
+      "target": "config_affiliate_hotels_com_config",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/config/affiliate.js"
+    },
+    {
+      "source": "config_affiliate_buildaffiliateurl",
+      "target": "config_affiliate_travelpayouts_config",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/config/affiliate.js"
+    },
+    {
+      "source": "config_affiliate_gethotelaffiliatelink",
+      "target": "config_affiliate_hotels_com_config",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/config/affiliate.js"
+    },
+    {
+      "source": "config_affiliate_getflightaffiliatelink",
+      "target": "config_affiliate_buildaffiliateurl",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/config/affiliate.js"
+    },
+    {
+      "source": "contexts_themecontext_usetheme",
+      "target": "contexts_themecontext_themecontext",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/contexts/ThemeContext.jsx"
+    },
+    {
+      "source": "contexts_themecontext_themeprovider",
+      "target": "contexts_themecontext_themecontext",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/contexts/ThemeContext.jsx"
+    },
+    {
+      "source": "pages_about_about",
+      "target": "components_newslettersignup_newslettersignup",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/About.jsx"
+    },
+    {
+      "source": "pages_africadestinations_africadestinations",
+      "target": "components_newslettersignup_newslettersignup",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/AfricaDestinations.jsx"
+    },
+    {
+      "source": "pages_americasdestinations_americasdestinations",
+      "target": "components_newslettersignup_newslettersignup",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/AmericasDestinations.jsx"
+    },
+    {
+      "source": "pages_asiadestinations_asiadestinations",
+      "target": "components_newslettersignup_newslettersignup",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/AsiaDestinations.jsx"
+    },
+    {
+      "source": "pages_blog_blog",
+      "target": "components_newslettersignup_newslettersignup",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/Blog.jsx"
+    },
+    {
+      "source": "pages_blogpost_blogpost",
+      "target": "components_newslettersignup_newslettersignup",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/BlogPost.jsx"
+    },
+    {
+      "source": "pages_blogpost_blogpost",
+      "target": "config_affiliate_gethotelaffiliatelink",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/BlogPost.jsx"
+    },
+    {
+      "source": "pages_blogpost_blogpost",
+      "target": "config_affiliate_getflightaffiliatelink",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/BlogPost.jsx"
+    },
+    {
+      "source": "pages_deals_deals",
+      "target": "components_newslettersignup_newslettersignup",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/Deals.jsx"
+    },
+    {
+      "source": "pages_destinations_destinations",
+      "target": "components_newslettersignup_newslettersignup",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/Destinations.jsx"
+    },
+    {
+      "source": "pages_europedestinations_europedestinations",
+      "target": "components_newslettersignup_newslettersignup",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/EuropeDestinations.jsx"
+    },
+    {
+      "source": "pages_flights_flights",
+      "target": "components_searchbar_searchbar",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/Flights.jsx"
+    },
+    {
+      "source": "pages_flights_flights",
+      "target": "ui_button_button",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/Flights.jsx"
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "destination_pages",
+      "label": "Destination Pages",
+      "nodes": [
+        "pages_africadestinations_africadestinations",
+        "pages_americasdestinations_americasdestinations",
+        "pages_asiadestinations_asiadestinations",
+        "pages_europedestinations_europedestinations"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/pages/AsiaDestinations.jsx"
+    },
+    {
+      "id": "newsletter_subscribers",
+      "label": "Newsletter Subscribers",
+      "nodes": [
+        "pages_about_about",
+        "pages_africadestinations_africadestinations",
+        "pages_americasdestinations_americasdestinations",
+        "pages_asiadestinations_asiadestinations",
+        "pages_blog_blog",
+        "pages_blogpost_blogpost",
+        "pages_deals_deals",
+        "pages_destinations_destinations",
+        "pages_europedestinations_europedestinations",
+        "components_newslettersignup_newslettersignup"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/components/NewsletterSignup.jsx"
+    }
+  ]
+}

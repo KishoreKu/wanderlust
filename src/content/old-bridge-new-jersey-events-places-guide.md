@@ -176,7 +176,7 @@ Old Bridge is centrally located in **Middlesex County**, making it easy to reach
 <div class="bg-primary-50 rounded-lg p-6 mb-8">
   <h3 class="text-xl font-bold mb-3">🏨 Need a Place to Stay?</h3>
   <p class="mb-4">Find hotels near Old Bridge and the Central New Jersey area for your visit.</p>
-  <a href="https://api.gubbu.io/go/hotels?query=hotels%20near%20Old%20Bridge%20New%20Jersey&source=blog" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
+  <a href="https://gubbu-api.proudwater-f3417084.eastus2.azurecontainerapps.io/go/hotels?query=hotels%20near%20Old%20Bridge%20New%20Jersey&source=blog" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
     👉 Browse nearby hotels
   </a>
 </div>
@@ -223,7 +223,7 @@ And now you do too.
 <div class="bg-gradient-to-r from-primary-50 to-primary-100 rounded-xl p-8 mb-6">
   <h3 class="text-2xl font-bold mb-4">Plan Your New Jersey Trip</h3>
   <p class="text-gray-700 mb-6">From flights to hotels, Gubbu helps you find the best deals for your next adventure.</p>
-  <a href="https://api.gubbu.io/go/hotels?query=New%20Jersey%20hotels&source=blog" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
+  <a href="https://gubbu-api.proudwater-f3417084.eastus2.azurecontainerapps.io/go/hotels?query=New%20Jersey%20hotels&source=blog" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
     👉 Explore New Jersey travel deals
   </a>
 </div>

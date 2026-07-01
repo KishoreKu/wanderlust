@@ -7,6 +7,7 @@ const allowedCanonical = [
   /^https?:\/\/api\.gubbu\.io\/go\//i,
   /^https?:\/\/gubbu\.io\/go\//i,
   /^https?:\/\/gubbu-api-612568200950\.us-central1\.run\.app\/go\//i,
+  /^https?:\/\/gubbu-api\.proudwater-f3417084\.eastus2\.azurecontainerapps\.io\/go\//i,
 ];
 
 // Add exceptions for approved non-commercial references.

@@ -1,0 +1,461 @@
+{
+  "nodes": [
+    {
+      "id": "public_robots_rules",
+      "label": "robots.txt Rules",
+      "file_type": "document",
+      "source_file": "public/robots.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_auschwitz_birkenau_visit_guide_article",
+      "label": "Auschwitz Birkenau Visit Guide",
+      "file_type": "document",
+      "source_file": "src/content/auschwitz-birkenau-visit-guide.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_auschwitz_birkenau_visit_guide_auschwitz_birkenau",
+      "label": "Auschwitz Birkenau",
+      "file_type": "concept",
+      "source_file": "src/content/auschwitz-birkenau-visit-guide.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_barcelona_activities_guide_article",
+      "label": "Barcelona Activities Guide",
+      "file_type": "document",
+      "source_file": "src/content/barcelona-activities-guide.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_barcelona_activities_guide_barcelona",
+      "label": "Barcelona",
+      "file_type": "concept",
+      "source_file": "src/content/barcelona-activities-guide.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_best_dog_food_brands_2026_article",
+      "label": "Best Dog Food Brands 2026",
+      "file_type": "document",
+      "source_file": "src/content/best-dog-food-brands-2026.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_best_dog_food_brands_2026_dog_food",
+      "label": "Dog Food",
+      "file_type": "concept",
+      "source_file": "src/content/best-dog-food-brands-2026.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_best_dog_food_busy_traveling_pet_parents_2026_article",
+      "label": "Best Dog Food For Traveling Pet Parents 2026",
+      "file_type": "document",
+      "source_file": "src/content/best-dog-food-busy-traveling-pet-parents-2026.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_best_time_visit_europe_article",
+      "label": "Best Time to Visit Europe",
+      "file_type": "document",
+      "source_file": "src/content/best-time-visit-europe.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_best_time_visit_europe_europe_travel",
+      "label": "Europe Travel",
+      "file_type": "concept",
+      "source_file": "src/content/best-time-visit-europe.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_budapest_activities_guide_article",
+      "label": "Budapest Activities Guide",
+      "file_type": "document",
+      "source_file": "src/content/budapest-activities-guide.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_budapest_activities_guide_budapest",
+      "label": "Budapest",
+      "file_type": "concept",
+      "source_file": "src/content/budapest-activities-guide.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_budget_travel_tips_2024_article",
+      "label": "Budget Travel Tips 2024",
+      "file_type": "document",
+      "source_file": "src/content/budget-travel-tips-2024.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_canada_pet_care_guide_article",
+      "label": "Canada Pet Care Guide",
+      "file_type": "document",
+      "source_file": "src/content/canada-pet-care-guide.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_christmas_2025_article",
+      "label": "Christmas 2025",
+      "file_type": "document",
+      "source_file": "src/content/christmas-2025.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_dubai_desert_safari_guide_article",
+      "label": "Dubai Desert Safari Guide",
+      "file_type": "document",
+      "source_file": "src/content/dubai-desert-safari-guide.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_dubai_desert_safari_guide_dubai",
+      "label": "Dubai",
+      "file_type": "concept",
+      "source_file": "src/content/dubai-desert-safari-guide.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_getyourguide_tours_activities_article",
+      "label": "GetYourGuide Tours Activities",
+      "file_type": "document",
+      "source_file": "src/content/getyourguide-tours-activities.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_istanbul_activities_guide_article",
+      "label": "Istanbul Activities Guide",
+      "file_type": "document",
+      "source_file": "src/content/istanbul-activities-guide.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_las_vegas_activities_guide_article",
+      "label": "Las Vegas Activities Guide",
+      "file_type": "document",
+      "source_file": "src/content/las-vegas-activities-guide.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_marrakech_activities_guide_article",
+      "label": "Marrakech Activities Guide",
+      "file_type": "document",
+      "source_file": "src/content/marrakech-activities-guide.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_new_years_eve_usa_2025_article",
+      "label": "New Years Eve USA 2025",
+      "file_type": "document",
+      "source_file": "src/content/new-years-eve-usa-2025.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_old_bridge_new_jersey_events_places_guide_article",
+      "label": "Old Bridge New Jersey Events Places Guide",
+      "file_type": "document",
+      "source_file": "src/content/old-bridge-new-jersey-events-places-guide.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_pet_prevention_essentials_2026_article",
+      "label": "Pet Prevention Essentials 2026",
+      "file_type": "document",
+      "source_file": "src/content/pet-prevention-essentials-2026.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_rome_colosseum_tours_guide_article",
+      "label": "Rome Colosseum Tours Guide",
+      "file_type": "document",
+      "source_file": "src/content/rome-colosseum-tours-guide.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_solo_travel_safety_guide_article",
+      "label": "Solo Travel Safety Guide",
+      "file_type": "document",
+      "source_file": "src/content/solo-travel-safety-guide.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_southeast_asia_hidden_gems_article",
+      "label": "Southeast Asia Hidden Gems",
+      "file_type": "document",
+      "source_file": "src/content/southeast-asia-hidden-gems.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_westin_carlsbad_resort_spa_guide_article",
+      "label": "Westin Carlsbad Resort & Spa Guide",
+      "file_type": "document",
+      "source_file": "src/content/westin-carlsbad-resort-spa-guide.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_westin_carlsbad_resort_spa_guide_westin_carlsbad",
+      "label": "Westin Carlsbad Resort & Spa",
+      "file_type": "concept",
+      "source_file": "src/content/westin-carlsbad-resort-spa-guide.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_westin_carlsbad_resort_spa_guide_carlsbad",
+      "label": "Carlsbad",
+      "file_type": "concept",
+      "source_file": "src/content/westin-carlsbad-resort-spa-guide.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_westin_carlsbad_resort_spa_guide_san_diego",
+      "label": "San Diego",
+      "file_type": "concept",
+      "source_file": "src/content/westin-carlsbad-resort-spa-guide.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_westin_carlsbad_resort_spa_guide_legoland",
+      "label": "LEGOLAND California",
+      "file_type": "concept",
+      "source_file": "src/content/westin-carlsbad-resort-spa-guide.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "content_auschwitz_birkenau_visit_guide_article",
+      "target": "content_auschwitz_birkenau_visit_guide_auschwitz_birkenau",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/auschwitz-birkenau-visit-guide.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "content_barcelona_activities_guide_article",
+      "target": "content_barcelona_activities_guide_barcelona",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/barcelona-activities-guide.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "content_best_dog_food_brands_2026_article",
+      "target": "content_best_dog_food_brands_2026_dog_food",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/best-dog-food-brands-2026.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "content_best_time_visit_europe_article",
+      "target": "content_best_time_visit_europe_europe_travel",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/best-time-visit-europe.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "content_budapest_activities_guide_article",
+      "target": "content_budapest_activities_guide_budapest",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/budapest-activities-guide.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "content_dubai_desert_safari_guide_article",
+      "target": "content_dubai_desert_safari_guide_dubai",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/dubai-desert-safari-guide.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "content_westin_carlsbad_resort_spa_guide_article",
+      "target": "content_westin_carlsbad_resort_spa_guide_westin_carlsbad",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/westin-carlsbad-resort-spa-guide.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "content_westin_carlsbad_resort_spa_guide_article",
+      "target": "content_westin_carlsbad_resort_spa_guide_carlsbad",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/westin-carlsbad-resort-spa-guide.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "content_westin_carlsbad_resort_spa_guide_article",
+      "target": "content_westin_carlsbad_resort_spa_guide_san_diego",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/westin-carlsbad-resort-spa-guide.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "content_westin_carlsbad_resort_spa_guide_article",
+      "target": "content_westin_carlsbad_resort_spa_guide_legoland",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/westin-carlsbad-resort-spa-guide.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

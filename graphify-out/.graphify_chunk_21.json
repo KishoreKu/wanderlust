@@ -1,0 +1,83 @@
+{
+  "nodes": [
+    {
+      "id": "public_gubbu_logo_v2_logo",
+      "label": "Gubbu Logo Version 2",
+      "file_type": "image",
+      "source_file": "public/gubbu-logo-v2.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_gubbu_logo_v2_mascot",
+      "label": "Flying Superhero Dog Mascot",
+      "file_type": "concept",
+      "source_file": "public/gubbu-logo-v2.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_gubbu_logo_v2_brand_name",
+      "label": "Gubbu Brand Text",
+      "file_type": "concept",
+      "source_file": "public/gubbu-logo-v2.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_gubbu_logo_v2_slogan",
+      "label": "Navigate The Modern World (Slogan)",
+      "file_type": "concept",
+      "source_file": "public/gubbu-logo-v2.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "public_gubbu_logo_v2_logo",
+      "target": "public_gubbu_logo_v2_mascot",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/gubbu-logo-v2.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_gubbu_logo_v2_logo",
+      "target": "public_gubbu_logo_v2_brand_name",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/gubbu-logo-v2.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_gubbu_logo_v2_logo",
+      "target": "public_gubbu_logo_v2_slogan",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/gubbu-logo-v2.png",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

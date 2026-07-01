@@ -1,0 +1,62 @@
+{
+  "nodes": [
+    {
+      "id": "public_old_bridge_nj_hero_image",
+      "label": "Old Bridge NJ Hero Image",
+      "file_type": "image",
+      "source_file": "public/old-bridge-nj-hero.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_old_bridge_nj_hero_waterfront_boardwalk",
+      "label": "Waterfront Boardwalk",
+      "file_type": "concept",
+      "source_file": "public/old-bridge-nj-hero.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_old_bridge_nj_hero_city_skyline",
+      "label": "City Skyline",
+      "file_type": "concept",
+      "source_file": "public/old-bridge-nj-hero.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "public_old_bridge_nj_hero_image",
+      "target": "public_old_bridge_nj_hero_waterfront_boardwalk",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/old-bridge-nj-hero.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_old_bridge_nj_hero_image",
+      "target": "public_old_bridge_nj_hero_city_skyline",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/old-bridge-nj-hero.png",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

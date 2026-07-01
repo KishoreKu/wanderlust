@@ -1,0 +1,1 @@
+{"nodes": [{"id": "api_test_mailchimp", "label": "Mailchimp Configuration Test", "file_type": "code", "source_file": "public/api/test.php"}], "edges": [{"source": "api_test_mailchimp", "target": "api_subscribe_mailchimp", "relation": "conceptually_related_to", "confidence": "INFERRED", "confidence_score": 0.85, "source_file": "public/api/test.php"}], "hyperedges": []}

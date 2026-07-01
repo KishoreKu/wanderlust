@@ -8,12 +8,12 @@ export default defineConfig({
   server: {
     proxy: {
       '/api-proxy': {
-        target: 'http://localhost:3000',
+        target: 'http://localhost:8080',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api-proxy/, '')
       },
       '/go': {
-        target: 'https://api.gubbu.io',
+        target: 'https://gubbu-api.proudwater-f3417084.eastus2.azurecontainerapps.io',
         changeOrigin: true,
         secure: true
       }

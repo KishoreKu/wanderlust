@@ -1,0 +1,3908 @@
+{
+  "nodes": [
+    {
+      "id": "eslint_config_default",
+      "label": "eslint.config.js default",
+      "file_type": "code",
+      "source_file": "eslint.config.js"
+    },
+    {
+      "id": "firebase_config",
+      "label": "Firebase Config",
+      "file_type": "code",
+      "source_file": "firebase.json"
+    },
+    {
+      "id": "mcp_social_server_index_server",
+      "label": "Gubbu Social Manager Server",
+      "file_type": "code",
+      "source_file": "mcp-social-server/index.js"
+    },
+    {
+      "id": "mcp_social_server_index_post_to_twitter",
+      "label": "post_to_twitter",
+      "file_type": "code",
+      "source_file": "mcp-social-server/index.js"
+    },
+    {
+      "id": "mcp_social_server_index_post_to_linkedin",
+      "label": "post_to_linkedin",
+      "file_type": "code",
+      "source_file": "mcp-social-server/index.js"
+    },
+    {
+      "id": "mcp_social_server_index_main",
+      "label": "main",
+      "file_type": "code",
+      "source_file": "mcp-social-server/index.js"
+    },
+    {
+      "id": "mcp_social_server_package_mcp_social_server",
+      "label": "mcp-social-server package",
+      "file_type": "code",
+      "source_file": "mcp-social-server/package.json"
+    },
+    {
+      "id": "package_travel_blog_website",
+      "label": "travel-blog-website package",
+      "file_type": "code",
+      "source_file": "package.json"
+    },
+    {
+      "id": "postcss_config_default",
+      "label": "postcss.config.js default",
+      "file_type": "code",
+      "source_file": "postcss.config.js"
+    },
+    {
+      "id": "api_notify_zapier_generateinstagramcaption",
+      "label": "generateInstagramCaption",
+      "file_type": "code",
+      "source_file": "public/api/notify-zapier.php"
+    },
+    {
+      "id": "api_notify_zapier_generatetwittertext",
+      "label": "generateTwitterText",
+      "file_type": "code",
+      "source_file": "public/api/notify-zapier.php"
+    },
+    {
+      "id": "api_notify_zapier_generatelinkedinpost",
+      "label": "generateLinkedInPost",
+      "file_type": "code",
+      "source_file": "public/api/notify-zapier.php"
+    },
+    {
+      "id": "api_notify_zapier_generatefacebookpost",
+      "label": "generateFacebookPost",
+      "file_type": "code",
+      "source_file": "public/api/notify-zapier.php"
+    },
+    {
+      "id": "api_notify_zapier_generatepinterestdescription",
+      "label": "generatePinterestDescription",
+      "file_type": "code",
+      "source_file": "public/api/notify-zapier.php"
+    },
+    {
+      "id": "api_notify_zapier_zapierwebhookurl",
+      "label": "zapierWebhookUrl",
+      "file_type": "code",
+      "source_file": "public/api/notify-zapier.php"
+    },
+    {
+      "id": "api_subscribe_mailchimp",
+      "label": "Mailchimp Subscription Config",
+      "file_type": "code",
+      "source_file": "public/api/subscribe.php"
+    },
+    {
+      "id": "api_test_mailchimp",
+      "label": "Mailchimp Configuration Test",
+      "file_type": "code",
+      "source_file": "public/api/test.php"
+    },
+    {
+      "id": "public_blog_metadata_json",
+      "label": "Blog Metadata JSON",
+      "file_type": "document",
+      "source_file": "public/blog-metadata.json"
+    },
+    {
+      "id": "scripts_generate_blog_metadata_parsefrontmatter",
+      "label": "parseFrontmatter",
+      "file_type": "code",
+      "source_file": "scripts/generate-blog-metadata.js"
+    },
+    {
+      "id": "scripts_generate_blog_metadata_metadata",
+      "label": "metadata dictionary",
+      "file_type": "code",
+      "source_file": "scripts/generate-blog-metadata.js"
+    },
+    {
+      "id": "src_app_app",
+      "label": "App",
+      "file_type": "code",
+      "source_file": "src/App.jsx"
+    },
+    {
+      "id": "components_airhelpbanner_airhelpbanner",
+      "label": "AirHelpBanner",
+      "file_type": "code",
+      "source_file": "src/components/AirHelpBanner.jsx"
+    },
+    {
+      "id": "components_airhelpwidget_airhelpwidget",
+      "label": "AirHelpWidget",
+      "file_type": "code",
+      "source_file": "src/components/AirHelpWidget.jsx"
+    },
+    {
+      "id": "components_aviasalesmapwidget_aviasalesmapwidget",
+      "label": "AviasalesMapWidget",
+      "file_type": "code",
+      "source_file": "src/components/AviasalesMapWidget.jsx"
+    },
+    {
+      "id": "components_aviasalespopularwidget_aviasalespopularwidget",
+      "label": "AviasalesPopularWidget",
+      "file_type": "code",
+      "source_file": "src/components/AviasalesPopularWidget.jsx"
+    },
+    {
+      "id": "components_aviasaleswidget_aviasaleswidget",
+      "label": "AviasalesWidget",
+      "file_type": "code",
+      "source_file": "src/components/AviasalesWidget.jsx"
+    },
+    {
+      "id": "components_backtotopbutton_backtotopbutton",
+      "label": "BackToTopButton",
+      "file_type": "code",
+      "source_file": "src/components/BackToTopButton.jsx"
+    },
+    {
+      "id": "components_button_button",
+      "label": "Button",
+      "file_type": "code",
+      "source_file": "src/components/Button.jsx"
+    },
+    {
+      "id": "components_canonicaltag_canonicaltag",
+      "label": "CanonicalTag",
+      "file_type": "code",
+      "source_file": "src/components/CanonicalTag.jsx"
+    },
+    {
+      "id": "components_chatinterface_chatinterface",
+      "label": "ChatInterface",
+      "file_type": "code",
+      "source_file": "src/components/ChatInterface.jsx"
+    },
+    {
+      "id": "components_footer_footer",
+      "label": "Footer",
+      "file_type": "code",
+      "source_file": "src/components/Footer.jsx"
+    },
+    {
+      "id": "components_getyourguidewidget_getyourguidewidget",
+      "label": "GetYourGuideWidget",
+      "file_type": "code",
+      "source_file": "src/components/GetYourGuideWidget.jsx"
+    },
+    {
+      "id": "components_getyourguidewidget_getyourguidesection",
+      "label": "GetYourGuideSection",
+      "file_type": "code",
+      "source_file": "src/components/GetYourGuideWidget.jsx"
+    },
+    {
+      "id": "components_googleanalytics_googleanalytics",
+      "label": "GoogleAnalytics",
+      "file_type": "code",
+      "source_file": "src/components/GoogleAnalytics.jsx"
+    },
+    {
+      "id": "components_kiwiwidget_kiwiwidget",
+      "label": "KiwiWidget",
+      "file_type": "code",
+      "source_file": "src/components/KiwiWidget.jsx"
+    },
+    {
+      "id": "components_klookbanner_klookbanner",
+      "label": "KlookBanner",
+      "file_type": "code",
+      "source_file": "src/components/KlookBanner.jsx"
+    },
+    {
+      "id": "components_klookwidget_klookwidget",
+      "label": "KlookWidget",
+      "file_type": "code",
+      "source_file": "src/components/KlookWidget.jsx"
+    },
+    {
+      "id": "components_navbar_navbar",
+      "label": "Navbar",
+      "file_type": "code",
+      "source_file": "src/components/Navbar.jsx"
+    },
+    {
+      "id": "components_newsletterpopup_newsletterpopup",
+      "label": "NewsletterPopup",
+      "file_type": "code",
+      "source_file": "src/components/NewsletterPopup.jsx"
+    },
+    {
+      "id": "components_newslettersignup_newslettersignup",
+      "label": "NewsletterSignup",
+      "file_type": "code",
+      "source_file": "src/components/NewsletterSignup.jsx"
+    },
+    {
+      "id": "components_scrolltotop_scrolltotop",
+      "label": "ScrollToTop",
+      "file_type": "code",
+      "source_file": "src/components/ScrollToTop.jsx"
+    },
+    {
+      "id": "components_searchbar_searchbar",
+      "label": "SearchBar",
+      "file_type": "code",
+      "source_file": "src/components/SearchBar.jsx"
+    },
+    {
+      "id": "components_snowfall_snowfall",
+      "label": "Snowfall",
+      "file_type": "code",
+      "source_file": "src/components/Snowfall.jsx"
+    },
+    {
+      "id": "config_affiliate_travelpayouts_config",
+      "label": "TRAVELPAYOUTS_CONFIG",
+      "file_type": "code",
+      "source_file": "src/config/affiliate.js"
+    },
+    {
+      "id": "config_affiliate_hotels_com_config",
+      "label": "HOTELS_COM_CONFIG",
+      "file_type": "code",
+      "source_file": "src/config/affiliate.js"
+    },
+    {
+      "id": "config_affiliate_buildaffiliateurl",
+      "label": "buildAffiliateUrl",
+      "file_type": "code",
+      "source_file": "src/config/affiliate.js"
+    },
+    {
+      "id": "config_affiliate_gethotelaffiliatelink",
+      "label": "getHotelAffiliateLink",
+      "file_type": "code",
+      "source_file": "src/config/affiliate.js"
+    },
+    {
+      "id": "config_affiliate_getflightaffiliatelink",
+      "label": "getFlightAffiliateLink",
+      "file_type": "code",
+      "source_file": "src/config/affiliate.js"
+    },
+    {
+      "id": "contexts_themecontext_themecontext",
+      "label": "ThemeContext",
+      "file_type": "code",
+      "source_file": "src/contexts/ThemeContext.jsx"
+    },
+    {
+      "id": "contexts_themecontext_themeprovider",
+      "label": "ThemeProvider",
+      "file_type": "code",
+      "source_file": "src/contexts/ThemeContext.jsx"
+    },
+    {
+      "id": "contexts_themecontext_usetheme",
+      "label": "useTheme",
+      "file_type": "code",
+      "source_file": "src/contexts/ThemeContext.jsx"
+    },
+    {
+      "id": "pages_about_about",
+      "label": "About",
+      "file_type": "code",
+      "source_file": "src/pages/About.jsx"
+    },
+    {
+      "id": "pages_affiliatedisclosure_affiliatedisclosure",
+      "label": "AffiliateDisclosure",
+      "file_type": "code",
+      "source_file": "src/pages/AffiliateDisclosure.jsx"
+    },
+    {
+      "id": "pages_africadestinations_africadestinations",
+      "label": "AfricaDestinations",
+      "file_type": "code",
+      "source_file": "src/pages/AfricaDestinations.jsx"
+    },
+    {
+      "id": "pages_airhelp_airhelp",
+      "label": "AirHelp",
+      "file_type": "code",
+      "source_file": "src/pages/AirHelp.jsx"
+    },
+    {
+      "id": "pages_americasdestinations_americasdestinations",
+      "label": "AmericasDestinations",
+      "file_type": "code",
+      "source_file": "src/pages/AmericasDestinations.jsx"
+    },
+    {
+      "id": "pages_asiadestinations_asiadestinations",
+      "label": "AsiaDestinations",
+      "file_type": "code",
+      "source_file": "src/pages/AsiaDestinations.jsx"
+    },
+    {
+      "id": "pages_blog_blog",
+      "label": "Blog",
+      "file_type": "code",
+      "source_file": "src/pages/Blog.jsx"
+    },
+    {
+      "id": "pages_blogpost_blogpost",
+      "label": "BlogPost",
+      "file_type": "code",
+      "source_file": "src/pages/BlogPost.jsx"
+    },
+    {
+      "id": "pages_contact_contact",
+      "label": "Contact",
+      "file_type": "code",
+      "source_file": "src/pages/Contact.jsx"
+    },
+    {
+      "id": "pages_deals_deals",
+      "label": "Deals",
+      "file_type": "code",
+      "source_file": "src/pages/Deals.jsx"
+    },
+    {
+      "id": "pages_destinations_destinations",
+      "label": "Destinations",
+      "file_type": "code",
+      "source_file": "src/pages/Destinations.jsx"
+    },
+    {
+      "id": "pages_europedestinations_europedestinations",
+      "label": "EuropeDestinations",
+      "file_type": "code",
+      "source_file": "src/pages/EuropeDestinations.jsx"
+    },
+    {
+      "id": "pages_flights_flights",
+      "label": "Flights",
+      "file_type": "code",
+      "source_file": "src/pages/Flights.jsx"
+    },
+    {
+      "id": "pages_home_home",
+      "label": "Home",
+      "file_type": "code",
+      "source_file": "src/pages/Home.jsx",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "pages_hotels_hotels",
+      "label": "Hotels",
+      "file_type": "code",
+      "source_file": "src/pages/Hotels.jsx",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "pages_klook_klook",
+      "label": "Klook",
+      "file_type": "code",
+      "source_file": "src/pages/Klook.jsx",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "pages_lifestylepicks_lifestylepicks",
+      "label": "Lifestyle Picks",
+      "file_type": "code",
+      "source_file": "src/pages/LifestylePicks.jsx",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "pages_media_media",
+      "label": "Media",
+      "file_type": "code",
+      "source_file": "src/pages/Media.jsx",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "pages_newyearactivities_newyearactivities",
+      "label": "New Year Activities",
+      "file_type": "code",
+      "source_file": "src/pages/NewYearActivities.jsx",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "pages_newyearnyc_newyearnyc",
+      "label": "New Year NYC",
+      "file_type": "code",
+      "source_file": "src/pages/NewYearNYC.jsx",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "pages_oceaniadestinations_oceaniadestinations",
+      "label": "Oceania Destinations",
+      "file_type": "code",
+      "source_file": "src/pages/OceaniaDestinations.jsx",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "pages_privacypolicy_privacypolicy",
+      "label": "Privacy Policy",
+      "file_type": "code",
+      "source_file": "src/pages/PrivacyPolicy.jsx",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "pages_termsofservice_termsofservice",
+      "label": "Terms Of Service",
+      "file_type": "code",
+      "source_file": "src/pages/TermsOfService.jsx",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "pages_workfromanywhere_workfromanywhere",
+      "label": "Work From Anywhere",
+      "file_type": "code",
+      "source_file": "src/pages/WorkFromAnywhere.jsx",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "src_setuptests_setuptests",
+      "label": "Setup Tests",
+      "file_type": "code",
+      "source_file": "src/setupTests.js",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "utils_blogloader_getallblogposts",
+      "label": "getAllBlogPosts",
+      "file_type": "code",
+      "source_file": "src/utils/blogLoader.js",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "utils_blogloader_getblogpost",
+      "label": "getBlogPost",
+      "file_type": "code",
+      "source_file": "src/utils/blogLoader.js",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "utils_blogloader_getrelatedposts",
+      "label": "getRelatedPosts",
+      "file_type": "code",
+      "source_file": "src/utils/blogLoader.js",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "utils_blogloader_getpostsbycategory",
+      "label": "getPostsByCategory",
+      "file_type": "code",
+      "source_file": "src/utils/blogLoader.js",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "utils_cn_cn",
+      "label": "cn",
+      "file_type": "code",
+      "source_file": "src/utils/cn.js",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "tailwind_config_tailwind_config",
+      "label": "Tailwind Config",
+      "file_type": "code",
+      "source_file": "tailwind.config.js",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "vite_config_vite_config",
+      "label": "Vite Config",
+      "file_type": "code",
+      "source_file": "vite.config.js",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "update_api_url_script",
+      "label": "Update API URL Script",
+      "file_type": "code",
+      "source_file": "update-api-url.sh",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "workflows_deploy_firebase_deploy_firebase",
+      "label": "Deploy Firebase Workflow",
+      "file_type": "code",
+      "source_file": ".github/workflows/deploy-firebase.yml",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "agents_agents",
+      "label": "AGENTS.md",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "agents_ai_agents",
+      "label": "AI Agents System",
+      "file_type": "concept",
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Gubbu employs AI Agents using the Gemini model to assist users."
+    },
+    {
+      "id": "check_backend_deploy_check_backend_deploy",
+      "label": "CHECK_BACKEND_DEPLOY.md",
+      "file_type": "document",
+      "source_file": "CHECK_BACKEND_DEPLOY.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "check_backend_deploy_verification",
+      "label": "Backend Deploy Verification",
+      "file_type": "concept",
+      "source_file": "CHECK_BACKEND_DEPLOY.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "gubbu_migration_gubbu_migration",
+      "label": "GUBBU_MIGRATION.md",
+      "file_type": "document",
+      "source_file": "GUBBU_MIGRATION.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "gubbu_migration_gemini_migration",
+      "label": "Gemini Migration",
+      "file_type": "concept",
+      "source_file": "GUBBU_MIGRATION.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "The Gubbu project has been migrated from OpenAI to Google Gemini. Chat Model: gemini-2.0-flash, Embedding Model: text-embedding-004."
+    },
+    {
+      "id": "pages_to_index_pages_to_index",
+      "label": "PAGES_TO_INDEX.md",
+      "file_type": "document",
+      "source_file": "PAGES_TO_INDEX.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "pages_to_index_google_search_console",
+      "label": "Google Search Console Indexing",
+      "file_type": "concept",
+      "source_file": "PAGES_TO_INDEX.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "readme_readme",
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "readme_travelpayouts_affiliate",
+      "label": "Travelpayouts Affiliate Integration",
+      "file_type": "concept",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Integrated with Travelpayouts to automatically track affiliate commissions for hotel and flight bookings."
+    },
+    {
+      "id": "voice_chat_guide_voice_chat_guide",
+      "label": "VOICE_CHAT_GUIDE.md",
+      "file_type": "document",
+      "source_file": "VOICE_CHAT_GUIDE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "voice_chat_guide_web_speech_api",
+      "label": "Web Speech API Voice Implementation",
+      "file_type": "concept",
+      "source_file": "VOICE_CHAT_GUIDE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Uses the browser's built-in Web Speech API for voice interactions to avoid external service costs and enable offline functionality."
+    },
+    {
+      "id": "voice_recognition_tips_voice_recognition_tips",
+      "label": "VOICE_RECOGNITION_TIPS.md",
+      "file_type": "document",
+      "source_file": "VOICE_RECOGNITION_TIPS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "voice_recognition_tips_voice_autocorrect",
+      "label": "Voice Recognition Autocorrect",
+      "file_type": "concept",
+      "source_file": "VOICE_RECOGNITION_TIPS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Since 'Gubbu' is an unknown word to speech recognition, it often hears 'Google' or 'goo boo'. An auto-correct function replaces these variations with 'Gubbu' before sending."
+    },
+    {
+      "id": "travel_blog_website_deploy_api_action",
+      "label": "Deploy API to cPanel GitHub Action",
+      "file_type": "code",
+      "source_file": "deploy-api.yml",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_project_info_gubbu",
+      "label": "Gubbu Project Overview",
+      "file_type": "concept",
+      "source_file": "docs/PROJECT_INFO.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_zapier_social_media_setup_webhook",
+      "label": "Zapier Social Media Webhook",
+      "file_type": "concept",
+      "source_file": "docs/ZAPIER_SOCIAL_MEDIA_SETUP.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_affiliate_governance_rules",
+      "label": "Affiliate Governance Rules",
+      "file_type": "rationale",
+      "source_file": "docs/affiliate-governance.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_api_routing_endpoints",
+      "label": "/go/* Canonical Endpoints",
+      "file_type": "concept",
+      "source_file": "docs/api-routing.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_chat_implementation_chatinterface",
+      "label": "ChatInterface Implementation",
+      "file_type": "concept",
+      "source_file": "docs/chat-implementation.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_gubbu_architecture_daas",
+      "label": "Decision-as-a-Service (DaaS)",
+      "file_type": "concept",
+      "source_file": "docs/gubbu-architecture.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_gubbu_architecture_orchestrator",
+      "label": "Orchestrator Agent",
+      "file_type": "concept",
+      "source_file": "docs/gubbu-architecture.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_gubbu_architecture_rag",
+      "label": "RAG Grounding Guardrails",
+      "file_type": "rationale",
+      "source_file": "docs/gubbu-architecture.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "setup_newsletter_multipage_summary_signup",
+      "label": "NewsletterSignup Component Specs",
+      "file_type": "concept",
+      "source_file": "docs/setup/NEWSLETTER_MULTIPAGE_SUMMARY.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "setup_newsletter_popup_guide_popup",
+      "label": "NewsletterPopup Component Specs",
+      "file_type": "concept",
+      "source_file": "docs/setup/NEWSLETTER_POPUP_GUIDE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "setup_travelpayouts_setup_integration",
+      "label": "Travelpayouts Integration",
+      "file_type": "concept",
+      "source_file": "docs/setup/TRAVELPAYOUTS_SETUP.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "travel_blog_website_index_page",
+      "label": "Main HTML Entry Point",
+      "file_type": "code",
+      "source_file": "index.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_post_to_social_page",
+      "label": "Post to Social Media UI",
+      "file_type": "code",
+      "source_file": "public/post-to-social.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_robots_rules",
+      "label": "robots.txt Rules",
+      "file_type": "document",
+      "source_file": "public/robots.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_auschwitz_birkenau_visit_guide_article",
+      "label": "Auschwitz Birkenau Visit Guide",
+      "file_type": "document",
+      "source_file": "src/content/auschwitz-birkenau-visit-guide.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_auschwitz_birkenau_visit_guide_auschwitz_birkenau",
+      "label": "Auschwitz Birkenau",
+      "file_type": "concept",
+      "source_file": "src/content/auschwitz-birkenau-visit-guide.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_barcelona_activities_guide_article",
+      "label": "Barcelona Activities Guide",
+      "file_type": "document",
+      "source_file": "src/content/barcelona-activities-guide.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_barcelona_activities_guide_barcelona",
+      "label": "Barcelona",
+      "file_type": "concept",
+      "source_file": "src/content/barcelona-activities-guide.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_best_dog_food_brands_2026_article",
+      "label": "Best Dog Food Brands 2026",
+      "file_type": "document",
+      "source_file": "src/content/best-dog-food-brands-2026.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_best_dog_food_brands_2026_dog_food",
+      "label": "Dog Food",
+      "file_type": "concept",
+      "source_file": "src/content/best-dog-food-brands-2026.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_best_dog_food_busy_traveling_pet_parents_2026_article",
+      "label": "Best Dog Food For Traveling Pet Parents 2026",
+      "file_type": "document",
+      "source_file": "src/content/best-dog-food-busy-traveling-pet-parents-2026.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_best_time_visit_europe_article",
+      "label": "Best Time to Visit Europe",
+      "file_type": "document",
+      "source_file": "src/content/best-time-visit-europe.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_best_time_visit_europe_europe_travel",
+      "label": "Europe Travel",
+      "file_type": "concept",
+      "source_file": "src/content/best-time-visit-europe.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_budapest_activities_guide_article",
+      "label": "Budapest Activities Guide",
+      "file_type": "document",
+      "source_file": "src/content/budapest-activities-guide.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_budapest_activities_guide_budapest",
+      "label": "Budapest",
+      "file_type": "concept",
+      "source_file": "src/content/budapest-activities-guide.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_budget_travel_tips_2024_article",
+      "label": "Budget Travel Tips 2024",
+      "file_type": "document",
+      "source_file": "src/content/budget-travel-tips-2024.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_canada_pet_care_guide_article",
+      "label": "Canada Pet Care Guide",
+      "file_type": "document",
+      "source_file": "src/content/canada-pet-care-guide.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_christmas_2025_article",
+      "label": "Christmas 2025",
+      "file_type": "document",
+      "source_file": "src/content/christmas-2025.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_dubai_desert_safari_guide_article",
+      "label": "Dubai Desert Safari Guide",
+      "file_type": "document",
+      "source_file": "src/content/dubai-desert-safari-guide.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_dubai_desert_safari_guide_dubai",
+      "label": "Dubai",
+      "file_type": "concept",
+      "source_file": "src/content/dubai-desert-safari-guide.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_getyourguide_tours_activities_article",
+      "label": "GetYourGuide Tours Activities",
+      "file_type": "document",
+      "source_file": "src/content/getyourguide-tours-activities.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_istanbul_activities_guide_article",
+      "label": "Istanbul Activities Guide",
+      "file_type": "document",
+      "source_file": "src/content/istanbul-activities-guide.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_las_vegas_activities_guide_article",
+      "label": "Las Vegas Activities Guide",
+      "file_type": "document",
+      "source_file": "src/content/las-vegas-activities-guide.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_marrakech_activities_guide_article",
+      "label": "Marrakech Activities Guide",
+      "file_type": "document",
+      "source_file": "src/content/marrakech-activities-guide.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_new_years_eve_usa_2025_article",
+      "label": "New Years Eve USA 2025",
+      "file_type": "document",
+      "source_file": "src/content/new-years-eve-usa-2025.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_old_bridge_new_jersey_events_places_guide_article",
+      "label": "Old Bridge New Jersey Events Places Guide",
+      "file_type": "document",
+      "source_file": "src/content/old-bridge-new-jersey-events-places-guide.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_pet_prevention_essentials_2026_article",
+      "label": "Pet Prevention Essentials 2026",
+      "file_type": "document",
+      "source_file": "src/content/pet-prevention-essentials-2026.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_rome_colosseum_tours_guide_article",
+      "label": "Rome Colosseum Tours Guide",
+      "file_type": "document",
+      "source_file": "src/content/rome-colosseum-tours-guide.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_solo_travel_safety_guide_article",
+      "label": "Solo Travel Safety Guide",
+      "file_type": "document",
+      "source_file": "src/content/solo-travel-safety-guide.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_southeast_asia_hidden_gems_article",
+      "label": "Southeast Asia Hidden Gems",
+      "file_type": "document",
+      "source_file": "src/content/southeast-asia-hidden-gems.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_westin_carlsbad_resort_spa_guide_article",
+      "label": "Westin Carlsbad Resort & Spa Guide",
+      "file_type": "document",
+      "source_file": "src/content/westin-carlsbad-resort-spa-guide.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_westin_carlsbad_resort_spa_guide_westin_carlsbad",
+      "label": "Westin Carlsbad Resort & Spa",
+      "file_type": "concept",
+      "source_file": "src/content/westin-carlsbad-resort-spa-guide.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_westin_carlsbad_resort_spa_guide_carlsbad",
+      "label": "Carlsbad",
+      "file_type": "concept",
+      "source_file": "src/content/westin-carlsbad-resort-spa-guide.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_westin_carlsbad_resort_spa_guide_san_diego",
+      "label": "San Diego",
+      "file_type": "concept",
+      "source_file": "src/content/westin-carlsbad-resort-spa-guide.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_westin_carlsbad_resort_spa_guide_legoland",
+      "label": "LEGOLAND California",
+      "file_type": "concept",
+      "source_file": "src/content/westin-carlsbad-resort-spa-guide.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_dog_food_brands_hero_hero_image",
+      "label": "Dog Food Brands Hero Image",
+      "file_type": "image",
+      "source_file": "public/dog-food-brands-hero.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_dog_food_brands_hero_golden_retriever",
+      "label": "Golden Retriever",
+      "file_type": "concept",
+      "source_file": "public/dog-food-brands-hero.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_dog_food_brands_hero_terrier_mix",
+      "label": "Small Terrier Mix",
+      "file_type": "concept",
+      "source_file": "public/dog-food-brands-hero.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_dog_food_brands_hero_brindle_dog",
+      "label": "Brindle Dog",
+      "file_type": "concept",
+      "source_file": "public/dog-food-brands-hero.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_dog_food_brands_hero_premium_dog_food",
+      "label": "Premium Dog Food with Toppings",
+      "file_type": "concept",
+      "source_file": "public/dog-food-brands-hero.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_dog_food_brands_hero_kitchen_setting",
+      "label": "Kitchen Setting with Fresh Ingredients",
+      "file_type": "concept",
+      "source_file": "public/dog-food-brands-hero.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_dog_food_travel_hero_image",
+      "label": "Dog Travel Remote Work Hero Image",
+      "file_type": "image",
+      "source_file": "public/dog-food-travel-hero.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_dog_food_travel_hero_pet_travel",
+      "label": "Pet Travel Concept",
+      "file_type": "concept",
+      "source_file": "public/dog-food-travel-hero.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_dog_food_travel_hero_remote_work",
+      "label": "Remote Work Concept",
+      "file_type": "concept",
+      "source_file": "public/dog-food-travel-hero.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_dog_food_blog_hero_1768093564720",
+      "label": "Dog Food Blog Hero",
+      "file_type": "image",
+      "source_file": "public/dog_food_blog_hero_1768093564720.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_dog_food_blog_hero_1768093564720_premium_dog_food",
+      "label": "Premium Dog Food",
+      "file_type": "concept",
+      "source_file": "public/dog_food_blog_hero_1768093564720.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_dog_food_blog_hero_1768093564720_golden_retriever",
+      "label": "Golden Retriever",
+      "file_type": "concept",
+      "source_file": "public/dog_food_blog_hero_1768093564720.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_dog_food_blog_hero_1768093564720_foreground_focus_pattern",
+      "label": "Foreground Focus Pattern",
+      "file_type": "rationale",
+      "source_file": "public/dog_food_blog_hero_1768093564720.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_dogicon",
+      "label": "Dog Icon Image",
+      "file_type": "image",
+      "source_file": "public/dogicon.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_dogicon_network_art",
+      "label": "Polygonal Network Dog Art",
+      "file_type": "concept",
+      "source_file": "public/dogicon.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_gubbu_complete_logo_image",
+      "label": "Gubbu Complete Logo Image",
+      "file_type": "image",
+      "source_file": "public/gubbu-complete-logo.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_gubbu_complete_logo_brand",
+      "label": "Gubbu Brand",
+      "file_type": "concept",
+      "source_file": "public/gubbu-complete-logo.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_gubbu_complete_logo_mascot",
+      "label": "Superhero Dog Mascot",
+      "file_type": "concept",
+      "source_file": "public/gubbu-complete-logo.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_gubbu_complete_logo_tagline",
+      "label": "Navigate the modern world",
+      "file_type": "concept",
+      "source_file": "public/gubbu-complete-logo.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_gubbu_complete_logo_network_mesh_dog",
+      "label": "Network Mesh Dog Graphic",
+      "file_type": "concept",
+      "source_file": "public/gubbu-complete-logo.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_gubbu_final_logo_image",
+      "label": "Gubbu Final Logo File",
+      "file_type": "image",
+      "source_file": "public/gubbu-final-logo.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_gubbu_final_logo_polygonal_dog",
+      "label": "Polygonal Network Dog Design",
+      "file_type": "concept",
+      "source_file": "public/gubbu-final-logo.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "A stylized dog or wolf head constructed from a glowing dark blue and cyan wireframe/network. Represents themes of AI, graph networks, and connectivity."
+    },
+    {
+      "id": "public_gubbu_full_logo_logo",
+      "label": "Gubbu Full Logo",
+      "file_type": "image",
+      "source_file": "public/gubbu-full-logo.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_gubbu_full_logo_mascot",
+      "label": "Gubbu Mascot (Super Dog)",
+      "file_type": "concept",
+      "source_file": "public/gubbu-full-logo.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_gubbu_full_logo_brand_name",
+      "label": "Gubbu Brand Name",
+      "file_type": "concept",
+      "source_file": "public/gubbu-full-logo.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_gubbu_full_logo_tagline",
+      "label": "Your Travel Companion Tagline",
+      "file_type": "concept",
+      "source_file": "public/gubbu-full-logo.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_gubbu_hero_logo_logo",
+      "label": "Gubbu Hero Logo Image",
+      "file_type": "image",
+      "source_file": "public/gubbu-hero-logo.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_gubbu_hero_logo_mascot",
+      "label": "Superhero Dog Mascot",
+      "file_type": "concept",
+      "source_file": "public/gubbu-hero-logo.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_gubbu_hero_logo_brand",
+      "label": "Gubbu Brand",
+      "file_type": "concept",
+      "source_file": "public/gubbu-hero-logo.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_gubbu_hero_logo_tagline",
+      "label": "Navigate The Modern World (Tagline)",
+      "file_type": "concept",
+      "source_file": "public/gubbu-hero-logo.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_gubbu_icon_mascot",
+      "label": "Gubbu Mascot",
+      "file_type": "concept",
+      "source_file": "public/gubbu-icon.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_gubbu_icon_superhero_theme",
+      "label": "Superhero Theme",
+      "file_type": "concept",
+      "source_file": "public/gubbu-icon.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_gubbu_icon_image",
+      "label": "Gubbu Icon",
+      "file_type": "image",
+      "source_file": "public/gubbu-icon.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_gubbu_icon_network_dog",
+      "label": "Network Constellation Dog Concept",
+      "file_type": "concept",
+      "source_file": "public/gubbu-icon.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_gubbu_logo_combined_logo",
+      "label": "Gubbu Logo",
+      "file_type": "image",
+      "source_file": "public/gubbu-logo-combined.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_gubbu_logo_combined_mascot",
+      "label": "Geometric Animal Mascot",
+      "file_type": "concept",
+      "source_file": "public/gubbu-logo-combined.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_gubbu_logo_combined_typography",
+      "label": "GUBBU Typography",
+      "file_type": "concept",
+      "source_file": "public/gubbu-logo-combined.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_gubbu_logo_combined_tech_aesthetic",
+      "label": "Tech Network Aesthetic",
+      "file_type": "rationale",
+      "source_file": "public/gubbu-logo-combined.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_gubbu_logo_cyan",
+      "label": "Gubbu Logo Image",
+      "file_type": "image",
+      "source_file": "public/gubbu-logo-cyan.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_gubbu_logo_cyan_mascot",
+      "label": "Superhero Dog Mascot",
+      "file_type": "concept",
+      "source_file": "public/gubbu-logo-cyan.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_gubbu_logo_cyan_slogan",
+      "label": "Slogan: Navigate The Modern World",
+      "file_type": "concept",
+      "source_file": "public/gubbu-logo-cyan.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_gubbu_logo_cyan_paw_prints",
+      "label": "Geometric Paw Prints",
+      "file_type": "concept",
+      "source_file": "public/gubbu-logo-cyan.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_gubbu_logo_final_logo",
+      "label": "Gubbu Logo",
+      "file_type": "image",
+      "source_file": "public/gubbu-logo-final.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_gubbu_logo_final_superherodog",
+      "label": "Superhero Dog Character",
+      "file_type": "concept",
+      "source_file": "public/gubbu-logo-final.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_gubbu_logo_final_brandname",
+      "label": "Gubbu Brand Name",
+      "file_type": "concept",
+      "source_file": "public/gubbu-logo-final.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_gubbu_logo_final_tagline",
+      "label": "Navigate the Modern World",
+      "file_type": "concept",
+      "source_file": "public/gubbu-logo-final.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_gubbu_logo_tech_logo",
+      "label": "Gubbu Tech Logo",
+      "file_type": "image",
+      "source_file": "public/gubbu-logo-tech.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_gubbu_logo_tech_mascot",
+      "label": "Superhero Dog Mascot",
+      "file_type": "concept",
+      "source_file": "public/gubbu-logo-tech.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_gubbu_logo_tech_text",
+      "label": "Gubbu Logo Text",
+      "file_type": "concept",
+      "source_file": "public/gubbu-logo-tech.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_gubbu_logo_tech_subtitle",
+      "label": "Navigate the Modern World Subtitle",
+      "file_type": "concept",
+      "source_file": "public/gubbu-logo-tech.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_gubbu_logo_tech_circuit",
+      "label": "Circuit Board Background",
+      "file_type": "concept",
+      "source_file": "public/gubbu-logo-tech.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_gubbu_logo_tech_paws",
+      "label": "Polygonal Paw Prints",
+      "file_type": "concept",
+      "source_file": "public/gubbu-logo-tech.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_gubbu_logo_v2_logo",
+      "label": "Gubbu Logo Version 2",
+      "file_type": "image",
+      "source_file": "public/gubbu-logo-v2.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_gubbu_logo_v2_mascot",
+      "label": "Flying Superhero Dog Mascot",
+      "file_type": "concept",
+      "source_file": "public/gubbu-logo-v2.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_gubbu_logo_v2_brand_name",
+      "label": "Gubbu Brand Text",
+      "file_type": "concept",
+      "source_file": "public/gubbu-logo-v2.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_gubbu_logo_v2_slogan",
+      "label": "Navigate The Modern World (Slogan)",
+      "file_type": "concept",
+      "source_file": "public/gubbu-logo-v2.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_gubbu_logo_gubbu_logo",
+      "label": "Gubbu Logo",
+      "file_type": "image",
+      "source_file": "public/gubbu-logo.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_gubbu_logo_superhero_dog",
+      "label": "Superhero Dog Mascot",
+      "file_type": "concept",
+      "source_file": "public/gubbu-logo.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_gubbu_logo_travel_companion",
+      "label": "Your Travel Companion",
+      "file_type": "concept",
+      "source_file": "public/gubbu-logo.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_gubbu_logo_geometric_dog_design",
+      "label": "Geometric Constellation Dog Design",
+      "file_type": "concept",
+      "source_file": "public/gubbu-logo.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_gubbu_new_logo_logo",
+      "label": "Gubbu Logo",
+      "file_type": "image",
+      "source_file": "public/gubbu-new-logo.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_gubbu_new_logo_superdog_mascot",
+      "label": "Superhero Dog Mascot",
+      "file_type": "concept",
+      "source_file": "public/gubbu-new-logo.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_gubbu_new_logo_brand_text",
+      "label": "Gubbu Brand Text",
+      "file_type": "concept",
+      "source_file": "public/gubbu-new-logo.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_gubbu_new_logo_paw_prints",
+      "label": "Geometric Paw Prints",
+      "file_type": "concept",
+      "source_file": "public/gubbu-new-logo.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_gubbu_text_logo_image",
+      "label": "Gubbu Text Logo Image",
+      "file_type": "image",
+      "source_file": "public/gubbu-text-logo.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_gubbu_text_logo_brand",
+      "label": "Gubbu Brand",
+      "file_type": "concept",
+      "source_file": "public/gubbu-text-logo.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_gubbu_text_logo_tagline",
+      "label": "Your Travel Companion",
+      "file_type": "concept",
+      "source_file": "public/gubbu-text-logo.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_gubbu_text_logo_gubbu_logo",
+      "label": "Gubbu Logo",
+      "file_type": "image",
+      "source_file": "public/gubbu-text-logo.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_gubbu_text_logo_geometric_dog_mascot",
+      "label": "Geometric Dog Mascot",
+      "file_type": "concept",
+      "source_file": "public/gubbu-text-logo.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_gubbu_text_logo_network_mesh_design",
+      "label": "Network Mesh Design",
+      "file_type": "concept",
+      "source_file": "public/gubbu-text-logo.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_hero_dog_food_brands",
+      "label": "Dog Food Brands Hero Image",
+      "file_type": "image",
+      "source_file": "public/hero-dog-food-brands.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_hero_dog_food_busy_graphic",
+      "label": "Hero Dog Food Busy Graphic",
+      "file_type": "image",
+      "source_file": "public/hero-dog-food-busy.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_hero_dog_food_busy_abstract_ui_card",
+      "label": "Abstract UI Card Design",
+      "file_type": "concept",
+      "source_file": "public/hero-dog-food-busy.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_hero_pet_care_essentials_svg",
+      "label": "Pet Care Essentials Hero Image",
+      "file_type": "image",
+      "source_file": "public/hero-pet-care-essentials.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_hero_pet_prevention_hero_pet_prevention",
+      "label": "hero-pet-prevention.svg",
+      "file_type": "image",
+      "source_file": "public/hero-pet-prevention.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_og_image_social_preview",
+      "label": "Gubbu Social Preview Image",
+      "file_type": "image",
+      "source_file": "public/og-image.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_og_image_mascot",
+      "label": "Gubbu Flying Dog Mascot",
+      "file_type": "concept",
+      "source_file": "public/og-image.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_og_image_brand_name",
+      "label": "Gubbu Brand Name",
+      "file_type": "concept",
+      "source_file": "public/og-image.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_og_image_tagline",
+      "label": "Your Travel Companion",
+      "file_type": "concept",
+      "source_file": "public/og-image.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_old_bridge_nj_hero_image",
+      "label": "Old Bridge NJ Hero Image",
+      "file_type": "image",
+      "source_file": "public/old-bridge-nj-hero.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_old_bridge_nj_hero_waterfront_boardwalk",
+      "label": "Waterfront Boardwalk",
+      "file_type": "concept",
+      "source_file": "public/old-bridge-nj-hero.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_old_bridge_nj_hero_city_skyline",
+      "label": "City Skyline",
+      "file_type": "concept",
+      "source_file": "public/old-bridge-nj-hero.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_pet_care_routine_hero_monthly_routine_calendar",
+      "label": "Monthly Routine Calendar",
+      "file_type": "image",
+      "source_file": "public/pet-care-routine-hero.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_pet_care_routine_hero_pet_care_products",
+      "label": "Pet Care Products",
+      "file_type": "image",
+      "source_file": "public/pet-care-routine-hero.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_pet_care_routine_hero_pet_care_app_reminder",
+      "label": "Pet Care App Reminder",
+      "file_type": "image",
+      "source_file": "public/pet-care-routine-hero.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_pet_care_routine_hero_dog",
+      "label": "Dog",
+      "file_type": "image",
+      "source_file": "public/pet-care-routine-hero.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_pet_prevention_hero_image",
+      "label": "Pet Prevention Hero Image",
+      "file_type": "image",
+      "source_file": "public/pet-prevention-hero.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_pet_prevention_hero_preventative_care",
+      "label": "Pet Preventative Care",
+      "file_type": "concept",
+      "source_file": "public/pet-prevention-hero.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_pet_prevention_hero_medication_schedule",
+      "label": "Pet Medication Scheduling",
+      "file_type": "concept",
+      "source_file": "public/pet-prevention-hero.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_subject_icon_image",
+      "label": "Subject Icon Image",
+      "file_type": "image",
+      "source_file": "public/subject-icon.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_subject_icon_mascot",
+      "label": "Network Dog Mascot",
+      "file_type": "concept",
+      "source_file": "public/subject-icon.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "The image displays a dog's head in profile composed of glowing nodes and interconnecting lines, visually representing a neural network, constellation, or digital mesh. This suggests it serves as a technology, AI, or network-themed mascot."
+    },
+    {
+      "id": "public_vite_logo",
+      "label": "Vite Logo",
+      "file_type": "image",
+      "source_file": "public/vite.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "assets_react_logo",
+      "label": "React Logo",
+      "file_type": "image",
+      "source_file": "src/assets/react.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_app_app",
+      "target": "components_footer_footer",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/App.jsx"
+    },
+    {
+      "source": "src_app_app",
+      "target": "components_backtotopbutton_backtotopbutton",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/App.jsx"
+    },
+    {
+      "source": "components_airhelpbanner_airhelpbanner",
+      "target": "components_button_button",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/AirHelpBanner.jsx"
+    },
+    {
+      "source": "components_getyourguidewidget_getyourguidesection",
+      "target": "components_getyourguidewidget_getyourguidewidget",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/GetYourGuideWidget.jsx"
+    },
+    {
+      "source": "scripts_generate_blog_metadata_metadata",
+      "target": "public_blog_metadata_json",
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "scripts/generate-blog-metadata.js"
+    },
+    {
+      "source": "mcp_social_server_index_server",
+      "target": "mcp_social_server_index_post_to_twitter",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "mcp-social-server/index.js"
+    },
+    {
+      "source": "mcp_social_server_index_server",
+      "target": "mcp_social_server_index_post_to_linkedin",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "mcp-social-server/index.js"
+    },
+    {
+      "source": "api_test_mailchimp",
+      "target": "api_subscribe_mailchimp",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/api/test.php"
+    },
+    {
+      "source": "api_notify_zapier_generatetwittertext",
+      "target": "mcp_social_server_index_post_to_twitter",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "public/api/notify-zapier.php"
+    },
+    {
+      "source": "api_notify_zapier_generatelinkedinpost",
+      "target": "mcp_social_server_index_post_to_linkedin",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "public/api/notify-zapier.php"
+    },
+    {
+      "source": "components_navbar_navbar",
+      "target": "contexts_themecontext_usetheme",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/Navbar.jsx"
+    },
+    {
+      "source": "components_klookbanner_klookbanner",
+      "target": "components_klookwidget_klookwidget",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/components/KlookBanner.jsx"
+    },
+    {
+      "source": "config_affiliate_buildaffiliateurl",
+      "target": "config_affiliate_hotels_com_config",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/config/affiliate.js"
+    },
+    {
+      "source": "config_affiliate_buildaffiliateurl",
+      "target": "config_affiliate_travelpayouts_config",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/config/affiliate.js"
+    },
+    {
+      "source": "config_affiliate_gethotelaffiliatelink",
+      "target": "config_affiliate_hotels_com_config",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/config/affiliate.js"
+    },
+    {
+      "source": "config_affiliate_getflightaffiliatelink",
+      "target": "config_affiliate_buildaffiliateurl",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/config/affiliate.js"
+    },
+    {
+      "source": "contexts_themecontext_usetheme",
+      "target": "contexts_themecontext_themecontext",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/contexts/ThemeContext.jsx"
+    },
+    {
+      "source": "contexts_themecontext_themeprovider",
+      "target": "contexts_themecontext_themecontext",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/contexts/ThemeContext.jsx"
+    },
+    {
+      "source": "pages_about_about",
+      "target": "components_newslettersignup_newslettersignup",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/About.jsx"
+    },
+    {
+      "source": "pages_africadestinations_africadestinations",
+      "target": "components_newslettersignup_newslettersignup",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/AfricaDestinations.jsx"
+    },
+    {
+      "source": "pages_americasdestinations_americasdestinations",
+      "target": "components_newslettersignup_newslettersignup",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/AmericasDestinations.jsx"
+    },
+    {
+      "source": "pages_asiadestinations_asiadestinations",
+      "target": "components_newslettersignup_newslettersignup",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/AsiaDestinations.jsx"
+    },
+    {
+      "source": "pages_blog_blog",
+      "target": "components_newslettersignup_newslettersignup",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/Blog.jsx"
+    },
+    {
+      "source": "pages_blogpost_blogpost",
+      "target": "components_newslettersignup_newslettersignup",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/BlogPost.jsx"
+    },
+    {
+      "source": "pages_blogpost_blogpost",
+      "target": "config_affiliate_gethotelaffiliatelink",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/BlogPost.jsx"
+    },
+    {
+      "source": "pages_blogpost_blogpost",
+      "target": "config_affiliate_getflightaffiliatelink",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/BlogPost.jsx"
+    },
+    {
+      "source": "pages_deals_deals",
+      "target": "components_newslettersignup_newslettersignup",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/Deals.jsx"
+    },
+    {
+      "source": "pages_destinations_destinations",
+      "target": "components_newslettersignup_newslettersignup",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/Destinations.jsx"
+    },
+    {
+      "source": "pages_europedestinations_europedestinations",
+      "target": "components_newslettersignup_newslettersignup",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/EuropeDestinations.jsx"
+    },
+    {
+      "source": "pages_flights_flights",
+      "target": "components_searchbar_searchbar",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/Flights.jsx"
+    },
+    {
+      "source": "pages_flights_flights",
+      "target": "ui_button_button",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/Flights.jsx"
+    },
+    {
+      "source": "pages_home_home",
+      "target": "components_navbar_navbar",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/pages/Home.jsx",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "pages_home_home",
+      "target": "components_footer_footer",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/pages/Home.jsx",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "pages_hotels_hotels",
+      "target": "components_navbar_navbar",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/pages/Hotels.jsx",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "pages_hotels_hotels",
+      "target": "components_footer_footer",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/pages/Hotels.jsx",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "pages_klook_klook",
+      "target": "components_navbar_navbar",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/pages/Klook.jsx",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "pages_klook_klook",
+      "target": "components_footer_footer",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/pages/Klook.jsx",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "pages_lifestylepicks_lifestylepicks",
+      "target": "components_navbar_navbar",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/pages/LifestylePicks.jsx",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "pages_lifestylepicks_lifestylepicks",
+      "target": "components_footer_footer",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/pages/LifestylePicks.jsx",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "pages_media_media",
+      "target": "components_navbar_navbar",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/pages/Media.jsx",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "pages_media_media",
+      "target": "components_footer_footer",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/pages/Media.jsx",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "pages_newyearactivities_newyearactivities",
+      "target": "components_navbar_navbar",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/pages/NewYearActivities.jsx",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "pages_newyearactivities_newyearactivities",
+      "target": "components_footer_footer",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/pages/NewYearActivities.jsx",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "pages_newyearnyc_newyearnyc",
+      "target": "components_navbar_navbar",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/pages/NewYearNYC.jsx",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "pages_newyearnyc_newyearnyc",
+      "target": "components_footer_footer",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/pages/NewYearNYC.jsx",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "pages_oceaniadestinations_oceaniadestinations",
+      "target": "components_navbar_navbar",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/pages/OceaniaDestinations.jsx",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "pages_oceaniadestinations_oceaniadestinations",
+      "target": "components_footer_footer",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/pages/OceaniaDestinations.jsx",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "pages_privacypolicy_privacypolicy",
+      "target": "components_navbar_navbar",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/pages/PrivacyPolicy.jsx",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "pages_privacypolicy_privacypolicy",
+      "target": "components_footer_footer",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/pages/PrivacyPolicy.jsx",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "pages_termsofservice_termsofservice",
+      "target": "components_navbar_navbar",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/pages/TermsOfService.jsx",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "pages_termsofservice_termsofservice",
+      "target": "components_footer_footer",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/pages/TermsOfService.jsx",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "pages_workfromanywhere_workfromanywhere",
+      "target": "components_navbar_navbar",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/pages/WorkFromAnywhere.jsx",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "pages_workfromanywhere_workfromanywhere",
+      "target": "components_footer_footer",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/pages/WorkFromAnywhere.jsx",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "agents_agents",
+      "target": "agents_ai_agents",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "agents_ai_agents",
+      "target": "components_chatwidget_chatwidget",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "check_backend_deploy_check_backend_deploy",
+      "target": "check_backend_deploy_verification",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CHECK_BACKEND_DEPLOY.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "gubbu_migration_gubbu_migration",
+      "target": "gubbu_migration_gemini_migration",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "GUBBU_MIGRATION.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "pages_to_index_pages_to_index",
+      "target": "pages_to_index_google_search_console",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PAGES_TO_INDEX.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "readme_readme",
+      "target": "readme_travelpayouts_affiliate",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "voice_chat_guide_voice_chat_guide",
+      "target": "voice_chat_guide_web_speech_api",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "VOICE_CHAT_GUIDE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "voice_chat_guide_web_speech_api",
+      "target": "components_chatwidget_chatwidget",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "VOICE_CHAT_GUIDE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "voice_recognition_tips_voice_recognition_tips",
+      "target": "voice_recognition_tips_voice_autocorrect",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "VOICE_RECOGNITION_TIPS.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "voice_recognition_tips_voice_autocorrect",
+      "target": "components_chatwidget_chatwidget",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "VOICE_RECOGNITION_TIPS.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_api_routing_endpoints",
+      "target": "docs_affiliate_governance_rules",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/api-routing.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_chat_implementation_chatinterface",
+      "target": "docs_api_routing_endpoints",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/chat-implementation.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_gubbu_architecture_daas",
+      "target": "docs_project_info_gubbu",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "docs/gubbu-architecture.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_gubbu_architecture_orchestrator",
+      "target": "docs_gubbu_architecture_rag",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/gubbu-architecture.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_gubbu_architecture_orchestrator",
+      "target": "docs_api_routing_endpoints",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/gubbu-architecture.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_gubbu_architecture_orchestrator",
+      "target": "docs_affiliate_governance_rules",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/gubbu-architecture.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_post_to_social_page",
+      "target": "docs_zapier_social_media_setup_webhook",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/post-to-social.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "setup_newsletter_popup_guide_popup",
+      "target": "setup_newsletter_multipage_summary_signup",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "docs/setup/NEWSLETTER_POPUP_GUIDE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "content_auschwitz_birkenau_visit_guide_article",
+      "target": "content_auschwitz_birkenau_visit_guide_auschwitz_birkenau",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/auschwitz-birkenau-visit-guide.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "content_barcelona_activities_guide_article",
+      "target": "content_barcelona_activities_guide_barcelona",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/barcelona-activities-guide.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "content_best_dog_food_brands_2026_article",
+      "target": "content_best_dog_food_brands_2026_dog_food",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/best-dog-food-brands-2026.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "content_best_time_visit_europe_article",
+      "target": "content_best_time_visit_europe_europe_travel",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/best-time-visit-europe.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "content_budapest_activities_guide_article",
+      "target": "content_budapest_activities_guide_budapest",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/budapest-activities-guide.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "content_dubai_desert_safari_guide_article",
+      "target": "content_dubai_desert_safari_guide_dubai",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/dubai-desert-safari-guide.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "content_westin_carlsbad_resort_spa_guide_article",
+      "target": "content_westin_carlsbad_resort_spa_guide_westin_carlsbad",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/westin-carlsbad-resort-spa-guide.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "content_westin_carlsbad_resort_spa_guide_article",
+      "target": "content_westin_carlsbad_resort_spa_guide_carlsbad",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/westin-carlsbad-resort-spa-guide.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "content_westin_carlsbad_resort_spa_guide_article",
+      "target": "content_westin_carlsbad_resort_spa_guide_san_diego",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/westin-carlsbad-resort-spa-guide.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "content_westin_carlsbad_resort_spa_guide_article",
+      "target": "content_westin_carlsbad_resort_spa_guide_legoland",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/content/westin-carlsbad-resort-spa-guide.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_dog_food_brands_hero_hero_image",
+      "target": "public_dog_food_brands_hero_golden_retriever",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/dog-food-brands-hero.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_dog_food_brands_hero_hero_image",
+      "target": "public_dog_food_brands_hero_terrier_mix",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/dog-food-brands-hero.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_dog_food_brands_hero_hero_image",
+      "target": "public_dog_food_brands_hero_brindle_dog",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/dog-food-brands-hero.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_dog_food_brands_hero_hero_image",
+      "target": "public_dog_food_brands_hero_premium_dog_food",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/dog-food-brands-hero.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_dog_food_brands_hero_hero_image",
+      "target": "public_dog_food_brands_hero_kitchen_setting",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/dog-food-brands-hero.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_dog_food_travel_hero_image",
+      "target": "public_dog_food_travel_hero_pet_travel",
+      "relation": "illustrates",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/dog-food-travel-hero.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_dog_food_travel_hero_image",
+      "target": "public_dog_food_travel_hero_remote_work",
+      "relation": "illustrates",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/dog-food-travel-hero.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_dog_food_blog_hero_1768093564720",
+      "target": "public_dog_food_blog_hero_1768093564720_premium_dog_food",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/dog_food_blog_hero_1768093564720.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_dog_food_blog_hero_1768093564720",
+      "target": "public_dog_food_blog_hero_1768093564720_golden_retriever",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/dog_food_blog_hero_1768093564720.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_dog_food_blog_hero_1768093564720",
+      "target": "public_dog_food_blog_hero_1768093564720_foreground_focus_pattern",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/dog_food_blog_hero_1768093564720.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_dogicon",
+      "target": "public_dogicon_network_art",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "public/dogicon.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_gubbu_complete_logo_image",
+      "target": "public_gubbu_complete_logo_brand",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/gubbu-complete-logo.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_gubbu_complete_logo_image",
+      "target": "public_gubbu_complete_logo_mascot",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/gubbu-complete-logo.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_gubbu_complete_logo_image",
+      "target": "public_gubbu_complete_logo_tagline",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/gubbu-complete-logo.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_gubbu_complete_logo_image",
+      "target": "public_gubbu_complete_logo_network_mesh_dog",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/gubbu-complete-logo.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_gubbu_final_logo_image",
+      "target": "public_gubbu_final_logo_polygonal_dog",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/gubbu-final-logo.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_gubbu_full_logo_logo",
+      "target": "public_gubbu_full_logo_mascot",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/gubbu-full-logo.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_gubbu_full_logo_logo",
+      "target": "public_gubbu_full_logo_brand_name",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/gubbu-full-logo.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_gubbu_full_logo_logo",
+      "target": "public_gubbu_full_logo_tagline",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/gubbu-full-logo.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_gubbu_hero_logo_logo",
+      "target": "public_gubbu_hero_logo_mascot",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/gubbu-hero-logo.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_gubbu_hero_logo_logo",
+      "target": "public_gubbu_hero_logo_brand",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/gubbu-hero-logo.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_gubbu_hero_logo_logo",
+      "target": "public_gubbu_hero_logo_tagline",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/gubbu-hero-logo.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_gubbu_hero_logo_mascot",
+      "target": "public_gubbu_hero_logo_brand",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "public/gubbu-hero-logo.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_gubbu_icon_mascot",
+      "target": "public_gubbu_icon_superhero_theme",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/gubbu-icon.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_gubbu_icon_image",
+      "target": "public_gubbu_icon_network_dog",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "public/gubbu-icon.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_gubbu_logo_combined_logo",
+      "target": "public_gubbu_logo_combined_mascot",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/gubbu-logo-combined.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_gubbu_logo_combined_logo",
+      "target": "public_gubbu_logo_combined_typography",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/gubbu-logo-combined.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_gubbu_logo_combined_mascot",
+      "target": "public_gubbu_logo_combined_tech_aesthetic",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/gubbu-logo-combined.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_gubbu_logo_cyan_mascot",
+      "target": "public_gubbu_logo_cyan",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/gubbu-logo-cyan.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_gubbu_logo_cyan_slogan",
+      "target": "public_gubbu_logo_cyan",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/gubbu-logo-cyan.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_gubbu_logo_cyan_paw_prints",
+      "target": "public_gubbu_logo_cyan",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/gubbu-logo-cyan.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_gubbu_logo_final_logo",
+      "target": "public_gubbu_logo_final_superherodog",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/gubbu-logo-final.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_gubbu_logo_final_logo",
+      "target": "public_gubbu_logo_final_brandname",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/gubbu-logo-final.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_gubbu_logo_final_logo",
+      "target": "public_gubbu_logo_final_tagline",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/gubbu-logo-final.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_gubbu_logo_tech_logo",
+      "target": "public_gubbu_logo_tech_mascot",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/gubbu-logo-tech.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_gubbu_logo_tech_logo",
+      "target": "public_gubbu_logo_tech_text",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/gubbu-logo-tech.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_gubbu_logo_tech_logo",
+      "target": "public_gubbu_logo_tech_subtitle",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/gubbu-logo-tech.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_gubbu_logo_tech_logo",
+      "target": "public_gubbu_logo_tech_circuit",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/gubbu-logo-tech.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_gubbu_logo_tech_logo",
+      "target": "public_gubbu_logo_tech_paws",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/gubbu-logo-tech.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_gubbu_logo_v2_logo",
+      "target": "public_gubbu_logo_v2_mascot",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/gubbu-logo-v2.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_gubbu_logo_v2_logo",
+      "target": "public_gubbu_logo_v2_brand_name",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/gubbu-logo-v2.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_gubbu_logo_v2_logo",
+      "target": "public_gubbu_logo_v2_slogan",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/gubbu-logo-v2.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_gubbu_logo_gubbu_logo",
+      "target": "public_gubbu_logo_superhero_dog",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/gubbu-logo.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_gubbu_logo_gubbu_logo",
+      "target": "public_gubbu_logo_travel_companion",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/gubbu-logo.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_gubbu_logo_gubbu_logo",
+      "target": "public_gubbu_logo_geometric_dog_design",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/gubbu-logo.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_gubbu_new_logo_logo",
+      "target": "public_gubbu_new_logo_superdog_mascot",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/gubbu-new-logo.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_gubbu_new_logo_logo",
+      "target": "public_gubbu_new_logo_brand_text",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/gubbu-new-logo.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_gubbu_new_logo_logo",
+      "target": "public_gubbu_new_logo_paw_prints",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/gubbu-new-logo.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_gubbu_text_logo_image",
+      "target": "public_gubbu_text_logo_brand",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/gubbu-text-logo.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_gubbu_text_logo_image",
+      "target": "public_gubbu_text_logo_tagline",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/gubbu-text-logo.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_gubbu_text_logo_brand",
+      "target": "public_gubbu_text_logo_tagline",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "public/gubbu-text-logo.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_gubbu_text_logo_gubbu_logo",
+      "target": "public_gubbu_text_logo_geometric_dog_mascot",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/gubbu-text-logo.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_gubbu_text_logo_gubbu_logo",
+      "target": "public_gubbu_text_logo_network_mesh_design",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/gubbu-text-logo.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_hero_dog_food_busy_graphic",
+      "target": "public_hero_dog_food_busy_abstract_ui_card",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/hero-dog-food-busy.svg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_og_image_social_preview",
+      "target": "public_og_image_mascot",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/og-image.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_og_image_social_preview",
+      "target": "public_og_image_brand_name",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/og-image.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_og_image_social_preview",
+      "target": "public_og_image_tagline",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/og-image.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_og_image_brand_name",
+      "target": "public_og_image_tagline",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "public/og-image.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_old_bridge_nj_hero_image",
+      "target": "public_old_bridge_nj_hero_waterfront_boardwalk",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/old-bridge-nj-hero.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_old_bridge_nj_hero_image",
+      "target": "public_old_bridge_nj_hero_city_skyline",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/old-bridge-nj-hero.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_pet_care_routine_hero_pet_care_app_reminder",
+      "target": "public_pet_care_routine_hero_monthly_routine_calendar",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/pet-care-routine-hero.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_pet_care_routine_hero_pet_care_products",
+      "target": "public_pet_care_routine_hero_dog",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/pet-care-routine-hero.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_pet_prevention_hero_image",
+      "target": "public_pet_prevention_hero_preventative_care",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "public/pet-prevention-hero.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_pet_prevention_hero_image",
+      "target": "public_pet_prevention_hero_medication_schedule",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "public/pet-prevention-hero.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_subject_icon_image",
+      "target": "public_subject_icon_mascot",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/subject-icon.png",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "affiliate_widgets",
+      "label": "Affiliate Widgets",
+      "nodes": [
+        "components_airhelpwidget_airhelpwidget",
+        "components_aviasalesmapwidget_aviasalesmapwidget",
+        "components_aviasalespopularwidget_aviasalespopularwidget",
+        "components_aviasaleswidget_aviasaleswidget",
+        "components_getyourguidewidget_getyourguidewidget",
+        "components_kiwiwidget_kiwiwidget"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "src/components"
+    },
+    {
+      "id": "zapier_social_formatters",
+      "label": "Zapier Social Formatters",
+      "nodes": [
+        "api_notify_zapier_generateinstagramcaption",
+        "api_notify_zapier_generatetwittertext",
+        "api_notify_zapier_generatelinkedinpost",
+        "api_notify_zapier_generatefacebookpost",
+        "api_notify_zapier_generatepinterestdescription"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "public/api/notify-zapier.php"
+    },
+    {
+      "id": "destination_pages",
+      "label": "Destination Pages",
+      "nodes": [
+        "pages_africadestinations_africadestinations",
+        "pages_americasdestinations_americasdestinations",
+        "pages_asiadestinations_asiadestinations",
+        "pages_europedestinations_europedestinations"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/pages/AsiaDestinations.jsx"
+    },
+    {
+      "id": "newsletter_subscribers",
+      "label": "Newsletter Subscribers",
+      "nodes": [
+        "pages_about_about",
+        "pages_africadestinations_africadestinations",
+        "pages_americasdestinations_americasdestinations",
+        "pages_asiadestinations_asiadestinations",
+        "pages_blog_blog",
+        "pages_blogpost_blogpost",
+        "pages_deals_deals",
+        "pages_destinations_destinations",
+        "pages_europedestinations_europedestinations",
+        "components_newslettersignup_newslettersignup"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/components/NewsletterSignup.jsx"
+    },
+    {
+      "id": "page_components",
+      "label": "Page Components",
+      "nodes": [
+        "pages_home_home",
+        "pages_hotels_hotels",
+        "pages_klook_klook",
+        "pages_lifestylepicks_lifestylepicks",
+        "pages_media_media",
+        "pages_newyearactivities_newyearactivities",
+        "pages_newyearnyc_newyearnyc",
+        "pages_oceaniadestinations_oceaniadestinations",
+        "pages_privacypolicy_privacypolicy",
+        "pages_termsofservice_termsofservice",
+        "pages_workfromanywhere_workfromanywhere"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "src/pages/Home.jsx"
+    },
+    {
+      "id": "affiliate_system",
+      "label": "Affiliate Routing and Governance System",
+      "nodes": [
+        "docs_affiliate_governance_rules",
+        "docs_api_routing_endpoints",
+        "setup_travelpayouts_setup_integration"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "docs/gubbu-architecture.md"
+    },
+    {
+      "id": "public_dog_food_brands_hero_dogs_feeding_scene",
+      "label": "Dogs Feeding Scene",
+      "nodes": [
+        "public_dog_food_brands_hero_golden_retriever",
+        "public_dog_food_brands_hero_terrier_mix",
+        "public_dog_food_brands_hero_brindle_dog",
+        "public_dog_food_brands_hero_premium_dog_food"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/dog-food-brands-hero.png"
+    },
+    {
+      "id": "public_dog_food_blog_hero_1768093564720_hero_composition",
+      "label": "Hero Image Composition",
+      "nodes": [
+        "public_dog_food_blog_hero_1768093564720_premium_dog_food",
+        "public_dog_food_blog_hero_1768093564720_golden_retriever",
+        "public_dog_food_blog_hero_1768093564720_foreground_focus_pattern"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/dog_food_blog_hero_1768093564720.png"
+    },
+    {
+      "id": "public_gubbu_full_logo_brand_identity",
+      "label": "Gubbu Brand Identity Elements",
+      "nodes": [
+        "public_gubbu_full_logo_mascot",
+        "public_gubbu_full_logo_brand_name",
+        "public_gubbu_full_logo_tagline"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/gubbu-full-logo.jpg"
+    },
+    {
+      "id": "public_gubbu_logo_cyan_brand_elements",
+      "label": "Gubbu Brand Elements",
+      "nodes": [
+        "public_gubbu_logo_cyan_mascot",
+        "public_gubbu_logo_cyan_slogan",
+        "public_gubbu_logo_cyan_paw_prints",
+        "public_gubbu_logo_cyan"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/gubbu-logo-cyan.png"
+    },
+    {
+      "id": "public_gubbu_logo_tech_branding_elements",
+      "label": "Gubbu Tech Brand Elements",
+      "nodes": [
+        "public_gubbu_logo_tech_mascot",
+        "public_gubbu_logo_tech_text",
+        "public_gubbu_logo_tech_subtitle",
+        "public_gubbu_logo_tech_circuit",
+        "public_gubbu_logo_tech_paws"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/gubbu-logo-tech.png"
+    },
+    {
+      "id": "public_og_image_brand_identity",
+      "label": "Gubbu Brand Identity Elements",
+      "nodes": [
+        "public_og_image_mascot",
+        "public_og_image_brand_name",
+        "public_og_image_tagline"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/og-image.jpg"
+    },
+    {
+      "id": "public_pet_care_routine_hero_scene",
+      "label": "Pet Care Routine Scene",
+      "nodes": [
+        "public_pet_care_routine_hero_monthly_routine_calendar",
+        "public_pet_care_routine_hero_pet_care_products",
+        "public_pet_care_routine_hero_pet_care_app_reminder",
+        "public_pet_care_routine_hero_dog"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/pet-care-routine-hero.png"
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

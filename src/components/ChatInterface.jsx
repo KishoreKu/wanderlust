@@ -159,7 +159,7 @@ export function ChatInterface({ initialQuery = '', autoListen = false, onClose, 
     setIsLoading(true);
 
     try {
-      const apiUrl = import.meta.env.DEV ? '/api-proxy/chat' : 'https://api.gubbu.io/chat';
+      const apiUrl = import.meta.env.DEV ? '/api-proxy/chat' : 'https://gubbu-api.proudwater-f3417084.eastus2.azurecontainerapps.io/chat';
       const response = await fetch(apiUrl, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },

@@ -1,0 +1,257 @@
+{
+  "nodes": [
+    {
+      "id": "travel_blog_website_deploy_api_action",
+      "label": "Deploy API to cPanel GitHub Action",
+      "file_type": "code",
+      "source_file": "deploy-api.yml",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_project_info_gubbu",
+      "label": "Gubbu Project Overview",
+      "file_type": "concept",
+      "source_file": "docs/PROJECT_INFO.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_zapier_social_media_setup_webhook",
+      "label": "Zapier Social Media Webhook",
+      "file_type": "concept",
+      "source_file": "docs/ZAPIER_SOCIAL_MEDIA_SETUP.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_affiliate_governance_rules",
+      "label": "Affiliate Governance Rules",
+      "file_type": "rationale",
+      "source_file": "docs/affiliate-governance.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_api_routing_endpoints",
+      "label": "/go/* Canonical Endpoints",
+      "file_type": "concept",
+      "source_file": "docs/api-routing.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_chat_implementation_chatinterface",
+      "label": "ChatInterface Implementation",
+      "file_type": "concept",
+      "source_file": "docs/chat-implementation.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_gubbu_architecture_daas",
+      "label": "Decision-as-a-Service (DaaS)",
+      "file_type": "concept",
+      "source_file": "docs/gubbu-architecture.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_gubbu_architecture_orchestrator",
+      "label": "Orchestrator Agent",
+      "file_type": "concept",
+      "source_file": "docs/gubbu-architecture.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_gubbu_architecture_rag",
+      "label": "RAG Grounding Guardrails",
+      "file_type": "rationale",
+      "source_file": "docs/gubbu-architecture.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "setup_newsletter_multipage_summary_signup",
+      "label": "NewsletterSignup Component Specs",
+      "file_type": "concept",
+      "source_file": "docs/setup/NEWSLETTER_MULTIPAGE_SUMMARY.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "setup_newsletter_popup_guide_popup",
+      "label": "NewsletterPopup Component Specs",
+      "file_type": "concept",
+      "source_file": "docs/setup/NEWSLETTER_POPUP_GUIDE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "setup_travelpayouts_setup_integration",
+      "label": "Travelpayouts Integration",
+      "file_type": "concept",
+      "source_file": "docs/setup/TRAVELPAYOUTS_SETUP.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "travel_blog_website_index_page",
+      "label": "Main HTML Entry Point",
+      "file_type": "code",
+      "source_file": "index.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_post_to_social_page",
+      "label": "Post to Social Media UI",
+      "file_type": "code",
+      "source_file": "public/post-to-social.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "docs_api_routing_endpoints",
+      "target": "docs_affiliate_governance_rules",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/api-routing.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_chat_implementation_chatinterface",
+      "target": "docs_api_routing_endpoints",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/chat-implementation.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_gubbu_architecture_daas",
+      "target": "docs_project_info_gubbu",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "docs/gubbu-architecture.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_gubbu_architecture_orchestrator",
+      "target": "docs_gubbu_architecture_rag",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/gubbu-architecture.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_gubbu_architecture_orchestrator",
+      "target": "docs_api_routing_endpoints",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/gubbu-architecture.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_gubbu_architecture_orchestrator",
+      "target": "docs_affiliate_governance_rules",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/gubbu-architecture.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_post_to_social_page",
+      "target": "docs_zapier_social_media_setup_webhook",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/post-to-social.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "setup_newsletter_popup_guide_popup",
+      "target": "setup_newsletter_multipage_summary_signup",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "docs/setup/NEWSLETTER_POPUP_GUIDE.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "affiliate_system",
+      "label": "Affiliate Routing and Governance System",
+      "nodes": [
+        "docs_affiliate_governance_rules",
+        "docs_api_routing_endpoints",
+        "setup_travelpayouts_setup_integration"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "docs/gubbu-architecture.md"
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

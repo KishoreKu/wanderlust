@@ -1,0 +1,141 @@
+{
+  "nodes": [
+    {
+      "id": "public_gubbu_logo_tech_logo",
+      "label": "Gubbu Tech Logo",
+      "file_type": "image",
+      "source_file": "public/gubbu-logo-tech.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_gubbu_logo_tech_mascot",
+      "label": "Superhero Dog Mascot",
+      "file_type": "concept",
+      "source_file": "public/gubbu-logo-tech.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_gubbu_logo_tech_text",
+      "label": "Gubbu Logo Text",
+      "file_type": "concept",
+      "source_file": "public/gubbu-logo-tech.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_gubbu_logo_tech_subtitle",
+      "label": "Navigate the Modern World Subtitle",
+      "file_type": "concept",
+      "source_file": "public/gubbu-logo-tech.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_gubbu_logo_tech_circuit",
+      "label": "Circuit Board Background",
+      "file_type": "concept",
+      "source_file": "public/gubbu-logo-tech.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_gubbu_logo_tech_paws",
+      "label": "Polygonal Paw Prints",
+      "file_type": "concept",
+      "source_file": "public/gubbu-logo-tech.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "public_gubbu_logo_tech_logo",
+      "target": "public_gubbu_logo_tech_mascot",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/gubbu-logo-tech.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_gubbu_logo_tech_logo",
+      "target": "public_gubbu_logo_tech_text",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/gubbu-logo-tech.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_gubbu_logo_tech_logo",
+      "target": "public_gubbu_logo_tech_subtitle",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/gubbu-logo-tech.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_gubbu_logo_tech_logo",
+      "target": "public_gubbu_logo_tech_circuit",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/gubbu-logo-tech.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_gubbu_logo_tech_logo",
+      "target": "public_gubbu_logo_tech_paws",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/gubbu-logo-tech.png",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "public_gubbu_logo_tech_branding_elements",
+      "label": "Gubbu Tech Brand Elements",
+      "nodes": [
+        "public_gubbu_logo_tech_mascot",
+        "public_gubbu_logo_tech_text",
+        "public_gubbu_logo_tech_subtitle",
+        "public_gubbu_logo_tech_circuit",
+        "public_gubbu_logo_tech_paws"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/gubbu-logo-tech.png"
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

@@ -1,0 +1,93 @@
+{
+  "nodes": [
+    {
+      "id": "public_gubbu_hero_logo_logo",
+      "label": "Gubbu Hero Logo Image",
+      "file_type": "image",
+      "source_file": "public/gubbu-hero-logo.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_gubbu_hero_logo_mascot",
+      "label": "Superhero Dog Mascot",
+      "file_type": "concept",
+      "source_file": "public/gubbu-hero-logo.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_gubbu_hero_logo_brand",
+      "label": "Gubbu Brand",
+      "file_type": "concept",
+      "source_file": "public/gubbu-hero-logo.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_gubbu_hero_logo_tagline",
+      "label": "Navigate The Modern World (Tagline)",
+      "file_type": "concept",
+      "source_file": "public/gubbu-hero-logo.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "public_gubbu_hero_logo_logo",
+      "target": "public_gubbu_hero_logo_mascot",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/gubbu-hero-logo.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_gubbu_hero_logo_logo",
+      "target": "public_gubbu_hero_logo_brand",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/gubbu-hero-logo.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_gubbu_hero_logo_logo",
+      "target": "public_gubbu_hero_logo_tagline",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/gubbu-hero-logo.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_gubbu_hero_logo_mascot",
+      "target": "public_gubbu_hero_logo_brand",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "public/gubbu-hero-logo.jpg",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

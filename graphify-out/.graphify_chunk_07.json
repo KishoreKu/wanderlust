@@ -1,0 +1,62 @@
+{
+  "nodes": [
+    {
+      "id": "public_dog_food_travel_hero_image",
+      "label": "Dog Travel Remote Work Hero Image",
+      "file_type": "image",
+      "source_file": "public/dog-food-travel-hero.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_dog_food_travel_hero_pet_travel",
+      "label": "Pet Travel Concept",
+      "file_type": "concept",
+      "source_file": "public/dog-food-travel-hero.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_dog_food_travel_hero_remote_work",
+      "label": "Remote Work Concept",
+      "file_type": "concept",
+      "source_file": "public/dog-food-travel-hero.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "public_dog_food_travel_hero_image",
+      "target": "public_dog_food_travel_hero_pet_travel",
+      "relation": "illustrates",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/dog-food-travel-hero.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "public_dog_food_travel_hero_image",
+      "target": "public_dog_food_travel_hero_remote_work",
+      "relation": "illustrates",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/dog-food-travel-hero.png",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

@@ -1,0 +1,1 @@
+{"nodes": [{"id": "pages_deals_deals", "label": "Deals", "file_type": "code", "source_file": "src/pages/Deals.jsx"}], "edges": [{"source": "pages_deals_deals", "target": "components_newslettersignup_newslettersignup", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "src/pages/Deals.jsx"}], "hyperedges": []}

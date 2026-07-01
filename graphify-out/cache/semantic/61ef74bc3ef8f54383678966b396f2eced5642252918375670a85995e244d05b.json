@@ -1,0 +1,1 @@
+{"nodes": [{"id": "components_navbar_navbar", "label": "Navbar", "file_type": "code", "source_file": "src/components/Navbar.jsx"}], "edges": [{"source": "components_navbar_navbar", "target": "contexts_themecontext_usetheme", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "src/components/Navbar.jsx"}], "hyperedges": []}

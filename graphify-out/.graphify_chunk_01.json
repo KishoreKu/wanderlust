@@ -1,0 +1,329 @@
+{
+  "nodes": [
+    {
+      "id": "eslint_config_default",
+      "label": "eslint.config.js default",
+      "file_type": "code",
+      "source_file": "eslint.config.js"
+    },
+    {
+      "id": "firebase_config",
+      "label": "Firebase Config",
+      "file_type": "code",
+      "source_file": "firebase.json"
+    },
+    {
+      "id": "mcp_social_server_index_server",
+      "label": "Gubbu Social Manager Server",
+      "file_type": "code",
+      "source_file": "mcp-social-server/index.js"
+    },
+    {
+      "id": "mcp_social_server_index_post_to_twitter",
+      "label": "post_to_twitter",
+      "file_type": "code",
+      "source_file": "mcp-social-server/index.js"
+    },
+    {
+      "id": "mcp_social_server_index_post_to_linkedin",
+      "label": "post_to_linkedin",
+      "file_type": "code",
+      "source_file": "mcp-social-server/index.js"
+    },
+    {
+      "id": "mcp_social_server_index_main",
+      "label": "main",
+      "file_type": "code",
+      "source_file": "mcp-social-server/index.js"
+    },
+    {
+      "id": "mcp_social_server_package_mcp_social_server",
+      "label": "mcp-social-server package",
+      "file_type": "code",
+      "source_file": "mcp-social-server/package.json"
+    },
+    {
+      "id": "package_travel_blog_website",
+      "label": "travel-blog-website package",
+      "file_type": "code",
+      "source_file": "package.json"
+    },
+    {
+      "id": "postcss_config_default",
+      "label": "postcss.config.js default",
+      "file_type": "code",
+      "source_file": "postcss.config.js"
+    },
+    {
+      "id": "api_notify_zapier_generateinstagramcaption",
+      "label": "generateInstagramCaption",
+      "file_type": "code",
+      "source_file": "public/api/notify-zapier.php"
+    },
+    {
+      "id": "api_notify_zapier_generatetwittertext",
+      "label": "generateTwitterText",
+      "file_type": "code",
+      "source_file": "public/api/notify-zapier.php"
+    },
+    {
+      "id": "api_notify_zapier_generatelinkedinpost",
+      "label": "generateLinkedInPost",
+      "file_type": "code",
+      "source_file": "public/api/notify-zapier.php"
+    },
+    {
+      "id": "api_notify_zapier_generatefacebookpost",
+      "label": "generateFacebookPost",
+      "file_type": "code",
+      "source_file": "public/api/notify-zapier.php"
+    },
+    {
+      "id": "api_notify_zapier_generatepinterestdescription",
+      "label": "generatePinterestDescription",
+      "file_type": "code",
+      "source_file": "public/api/notify-zapier.php"
+    },
+    {
+      "id": "api_notify_zapier_zapierwebhookurl",
+      "label": "zapierWebhookUrl",
+      "file_type": "code",
+      "source_file": "public/api/notify-zapier.php"
+    },
+    {
+      "id": "api_subscribe_mailchimp",
+      "label": "Mailchimp Subscription Config",
+      "file_type": "code",
+      "source_file": "public/api/subscribe.php"
+    },
+    {
+      "id": "api_test_mailchimp",
+      "label": "Mailchimp Configuration Test",
+      "file_type": "code",
+      "source_file": "public/api/test.php"
+    },
+    {
+      "id": "public_blog_metadata_json",
+      "label": "Blog Metadata JSON",
+      "file_type": "document",
+      "source_file": "public/blog-metadata.json"
+    },
+    {
+      "id": "scripts_generate_blog_metadata_parsefrontmatter",
+      "label": "parseFrontmatter",
+      "file_type": "code",
+      "source_file": "scripts/generate-blog-metadata.js"
+    },
+    {
+      "id": "scripts_generate_blog_metadata_metadata",
+      "label": "metadata dictionary",
+      "file_type": "code",
+      "source_file": "scripts/generate-blog-metadata.js"
+    },
+    {
+      "id": "src_app_app",
+      "label": "App",
+      "file_type": "code",
+      "source_file": "src/App.jsx"
+    },
+    {
+      "id": "components_airhelpbanner_airhelpbanner",
+      "label": "AirHelpBanner",
+      "file_type": "code",
+      "source_file": "src/components/AirHelpBanner.jsx"
+    },
+    {
+      "id": "components_airhelpwidget_airhelpwidget",
+      "label": "AirHelpWidget",
+      "file_type": "code",
+      "source_file": "src/components/AirHelpWidget.jsx"
+    },
+    {
+      "id": "components_aviasalesmapwidget_aviasalesmapwidget",
+      "label": "AviasalesMapWidget",
+      "file_type": "code",
+      "source_file": "src/components/AviasalesMapWidget.jsx"
+    },
+    {
+      "id": "components_aviasalespopularwidget_aviasalespopularwidget",
+      "label": "AviasalesPopularWidget",
+      "file_type": "code",
+      "source_file": "src/components/AviasalesPopularWidget.jsx"
+    },
+    {
+      "id": "components_aviasaleswidget_aviasaleswidget",
+      "label": "AviasalesWidget",
+      "file_type": "code",
+      "source_file": "src/components/AviasalesWidget.jsx"
+    },
+    {
+      "id": "components_backtotopbutton_backtotopbutton",
+      "label": "BackToTopButton",
+      "file_type": "code",
+      "source_file": "src/components/BackToTopButton.jsx"
+    },
+    {
+      "id": "components_button_button",
+      "label": "Button",
+      "file_type": "code",
+      "source_file": "src/components/Button.jsx"
+    },
+    {
+      "id": "components_canonicaltag_canonicaltag",
+      "label": "CanonicalTag",
+      "file_type": "code",
+      "source_file": "src/components/CanonicalTag.jsx"
+    },
+    {
+      "id": "components_chatinterface_chatinterface",
+      "label": "ChatInterface",
+      "file_type": "code",
+      "source_file": "src/components/ChatInterface.jsx"
+    },
+    {
+      "id": "components_footer_footer",
+      "label": "Footer",
+      "file_type": "code",
+      "source_file": "src/components/Footer.jsx"
+    },
+    {
+      "id": "components_getyourguidewidget_getyourguidewidget",
+      "label": "GetYourGuideWidget",
+      "file_type": "code",
+      "source_file": "src/components/GetYourGuideWidget.jsx"
+    },
+    {
+      "id": "components_getyourguidewidget_getyourguidesection",
+      "label": "GetYourGuideSection",
+      "file_type": "code",
+      "source_file": "src/components/GetYourGuideWidget.jsx"
+    },
+    {
+      "id": "components_googleanalytics_googleanalytics",
+      "label": "GoogleAnalytics",
+      "file_type": "code",
+      "source_file": "src/components/GoogleAnalytics.jsx"
+    },
+    {
+      "id": "components_kiwiwidget_kiwiwidget",
+      "label": "KiwiWidget",
+      "file_type": "code",
+      "source_file": "src/components/KiwiWidget.jsx"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_app_app",
+      "target": "components_footer_footer",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/App.jsx"
+    },
+    {
+      "source": "src_app_app",
+      "target": "components_backtotopbutton_backtotopbutton",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/App.jsx"
+    },
+    {
+      "source": "components_airhelpbanner_airhelpbanner",
+      "target": "components_button_button",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/AirHelpBanner.jsx"
+    },
+    {
+      "source": "components_getyourguidewidget_getyourguidesection",
+      "target": "components_getyourguidewidget_getyourguidewidget",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/GetYourGuideWidget.jsx"
+    },
+    {
+      "source": "scripts_generate_blog_metadata_metadata",
+      "target": "public_blog_metadata_json",
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "scripts/generate-blog-metadata.js"
+    },
+    {
+      "source": "mcp_social_server_index_server",
+      "target": "mcp_social_server_index_post_to_twitter",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "mcp-social-server/index.js"
+    },
+    {
+      "source": "mcp_social_server_index_server",
+      "target": "mcp_social_server_index_post_to_linkedin",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "mcp-social-server/index.js"
+    },
+    {
+      "source": "api_test_mailchimp",
+      "target": "api_subscribe_mailchimp",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/api/test.php"
+    },
+    {
+      "source": "api_notify_zapier_generatetwittertext",
+      "target": "mcp_social_server_index_post_to_twitter",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "public/api/notify-zapier.php"
+    },
+    {
+      "source": "api_notify_zapier_generatelinkedinpost",
+      "target": "mcp_social_server_index_post_to_linkedin",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "public/api/notify-zapier.php"
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "affiliate_widgets",
+      "label": "Affiliate Widgets",
+      "nodes": [
+        "components_airhelpwidget_airhelpwidget",
+        "components_aviasalesmapwidget_aviasalesmapwidget",
+        "components_aviasalespopularwidget_aviasalespopularwidget",
+        "components_aviasaleswidget_aviasaleswidget",
+        "components_getyourguidewidget_getyourguidewidget",
+        "components_kiwiwidget_kiwiwidget"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "src/components"
+    },
+    {
+      "id": "zapier_social_formatters",
+      "label": "Zapier Social Formatters",
+      "nodes": [
+        "api_notify_zapier_generateinstagramcaption",
+        "api_notify_zapier_generatetwittertext",
+        "api_notify_zapier_generatelinkedinpost",
+        "api_notify_zapier_generatefacebookpost",
+        "api_notify_zapier_generatepinterestdescription"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "public/api/notify-zapier.php"
+    }
+  ]
+}

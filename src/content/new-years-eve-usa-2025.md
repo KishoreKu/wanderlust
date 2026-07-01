@@ -22,7 +22,7 @@ This guide breaks down some of the most popular and practical ways to celebrate 
 
 ## 🎯 Planning something similar? See what's happening near you.
 
-👉 [Explore New Year events & activities near you](https://gubbu-api-612568200950.us-central1.run.app/go/activities?src=blog_new_year_usa)
+👉 [Explore New Year events & activities near you](https://gubbu-api.proudwater-f3417084.eastus2.azurecontainerapps.io/go/activities?src=blog_new_year_usa)
 
 ---
 
@@ -48,7 +48,7 @@ Fireworks over the bay, waterfront dinners, and music-driven events are popular 
 
 ## 🎯 Want to see available New Year events in these cities?
 
-👉 [Browse New Year events & experiences](https://gubbu-api-612568200950.us-central1.run.app/go/activities?src=blog_new_year_usa)
+👉 [Browse New Year events & experiences](https://gubbu-api.proudwater-f3417084.eastus2.azurecontainerapps.io/go/activities?src=blog_new_year_usa)
 
 ---
 
@@ -79,7 +79,7 @@ These tend to sell out early, especially in cities like NYC, Miami, Los Angeles,
 
 ## 🎯 Looking for late-night or family-friendly options?
 
-👉 [Find New Year activities that fit your style](https://gubbu-api-612568200950.us-central1.run.app/go/activities?src=blog_new_year_usa)
+👉 [Find New Year activities that fit your style](https://gubbu-api.proudwater-f3417084.eastus2.azurecontainerapps.io/go/activities?src=blog_new_year_usa)
 
 ---
 
@@ -103,7 +103,7 @@ Whether you're planning a big night out, a family-friendly evening, or a simple 
 <div class="bg-gradient-to-r from-primary-50 to-primary-100 rounded-xl p-8 mb-6">
   <h3 class="text-2xl font-bold mb-4">🎆 Plan Your New Year's Eve Celebration</h3>
   <p class="text-gray-700 mb-6">Still deciding how to celebrate? Explore events, experiences, and activities happening near you — all in one place!</p>
-  <a href="https://gubbu-api-612568200950.us-central1.run.app/go/activities?src=blog_new_year_usa" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
+  <a href="https://gubbu-api.proudwater-f3417084.eastus2.azurecontainerapps.io/go/activities?src=blog_new_year_usa" target="_blank" rel="nofollow noopener" class="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors">
     👉 Explore New Year Events & Experiences
   </a>
 </div>

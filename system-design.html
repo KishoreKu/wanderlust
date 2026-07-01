@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gubbu.io System Architecture</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: rgba(30, 41, 59, 0.7);
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --accent-glow: rgba(56, 189, 248, 0.4);
+            --border: rgba(255, 255, 255, 0.1);
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-image: 
+                radial-gradient(circle at 15% 50%, rgba(56, 189, 248, 0.08), transparent 25%),
+                radial-gradient(circle at 85% 30%, rgba(139, 92, 246, 0.08), transparent 25%);
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #38bdf8, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        p.subtitle {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .card {
+            background: var(--card-bg);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 2rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px var(--accent-glow);
+            border-color: rgba(56, 189, 248, 0.3);
+        }
+        .card h2 {
+            font-size: 1.5rem;
+            margin-top: 0;
+            margin-bottom: 1rem;
+            color: var(--accent);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .card p {
+            color: var(--text-muted);
+            margin-bottom: 0;
+            font-size: 0.95rem;
+        }
+        .card ul {
+            margin-top: 1rem;
+            padding-left: 1.2rem;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+        .card li {
+            margin-bottom: 0.5rem;
+        }
+        .highlight {
+            color: #fff;
+            font-weight: 600;
+        }
+        
+        /* Specific Icons (Emojis for simplicity without external libs) */
+        .icon {
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Gubbu.io System Architecture</h1>
+            <p class="subtitle">Agentic AI System Design, Scalability, and Performance Optimizations</p>
+        </header>
+
+        <div class="grid">
+            <div class="card">
+                <h2><span class="icon">🤖</span> Agentic AI System Design</h2>
+                <p>We are actively transitioning Gubbu.io into a <span class="highlight">Decision-as-a-Service (DaaS)</span> platform using Agentic AI concepts.</p>
+                <ul>
+                    <li><strong>Current State:</strong> A single orchestrator agent using rules, RAG, and few-shot prompting with low temperature (deterministic).</li>
+                    <li><strong>Future Multi-Agent System:</strong> We are planning specialized agents: <em>Destination Advisor, WFA Advisor, Lifestyle Picks, and Booking Intent Classifier</em>.</li>
+                    <li><strong>Shared Infrastructure:</strong> All agents share the same routing, compliance rules, and observability layers.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2><span class="icon">📈</span> Scalability & High Availability</h2>
+                <p>The architecture is designed to handle high loads gracefully without bottlenecks.</p>
+                <ul>
+                    <li><strong>Stateless Backend:</strong> A lightweight Node.js API server acts purely as an orchestration/routing layer, allowing infinite horizontal scaling.</li>
+                    <li><strong>Frontend Caching:</strong> Vite-powered React app delivered via CDN (Firebase Hosting) ensures high availability globally.</li>
+                    <li><strong>No Direct Bookings:</strong> The system is non-transactional, offloading the heavy lifting of payments and real-time inventory to affiliate partners.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2><span class="icon">🔒</span> Security & Guardrails</h2>
+                <p>Security and hallucination prevention are built into the core AI interactions.</p>
+                <ul>
+                    <li><strong>Strict Prompting:</strong> System rules forbid external platform names, fabricated dates, or real-time pricing claims.</li>
+                    <li><strong>RAG Grounding:</strong> Only verified blog content from Supabase is used as context. Low similarity chunks (< 0.7) are discarded.</li>
+                    <li><strong>Controlled Endpoints:</strong> Affiliate links are securely generated on the backend via <code>/go/*</code> redirects, preventing client-side manipulation.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2><span class="icon">⚡</span> Performance Offloading</h2>
+                <p>Ensuring lightning-fast load times across the application.</p>
+                <ul>
+                    <li><strong>Build-Time Processing:</strong> Markdown files are parsed via <code>import.meta.glob</code> at build time, converting to HTML before deployment.</li>
+                    <li><strong>Client-Side Routing:</strong> React Router enables instant page transitions without full page reloads.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2><span class="icon">🗄️</span> Database Scaling & Optimization</h2>
+                <p>Optimized data retrieval leveraging vector search capabilities.</p>
+                <ul>
+                    <li><strong>Supabase pgvector:</strong> RAG embeddings (text-embedding-3-small, 768 dimensions) are stored and matched efficiently inside Postgres.</li>
+                    <li><strong>Asynchronous Logging:</strong> Click logging and observability metrics are fired asynchronously, never blocking user requests.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2><span class="icon">🌐</span> Traffic Distribution & Communication</h2>
+                <p>Clean separation of concerns for network requests.</p>
+                <ul>
+                    <li><strong>API-First Approach:</strong> The UI communicates seamlessly with <code>api.gubbu.io</code>.</li>
+                    <li><strong>Affiliate Router:</strong> A centralized routing layer dynamically resolves rules (based on Country, City, Priority) before issuing a 302 redirect to distribute traffic to the optimal partner.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

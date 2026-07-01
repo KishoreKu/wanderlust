@@ -1,0 +1,1067 @@
+{
+  "communities": {
+    "0": [
+      "package",
+      "package_dependencies",
+      "package_dependencies_clsx",
+      "package_dependencies_lucide_react",
+      "package_dependencies_react",
+      "package_dependencies_react_dom",
+      "package_dependencies_react_linkify",
+      "package_dependencies_react_markdown",
+      "package_dependencies_react_router_dom",
+      "package_dependencies_tailwind_merge",
+      "package_devdependencies",
+      "package_devdependencies_autoprefixer",
+      "package_devdependencies_eslint",
+      "package_devdependencies_eslint_js",
+      "package_devdependencies_eslint_plugin_react_hooks",
+      "package_devdependencies_eslint_plugin_react_refresh",
+      "package_devdependencies_globals",
+      "package_devdependencies_jsdom",
+      "package_devdependencies_postcss",
+      "package_devdependencies_tailwindcss",
+      "package_devdependencies_testing_library_jest_dom",
+      "package_devdependencies_testing_library_react",
+      "package_devdependencies_types_react",
+      "package_devdependencies_types_react_dom",
+      "package_devdependencies_vite",
+      "package_devdependencies_vitejs_plugin_react",
+      "package_devdependencies_vitest",
+      "package_engines",
+      "package_engines_node",
+      "package_engines_npm",
+      "package_name",
+      "package_private",
+      "package_scripts",
+      "package_scripts_build",
+      "package_scripts_dev",
+      "package_scripts_lint",
+      "package_scripts_lint_affiliates",
+      "package_scripts_postinstall",
+      "package_scripts_preview",
+      "package_scripts_test",
+      "package_scripts_test_run",
+      "package_type",
+      "package_version"
+    ],
+    "1": [
+      "public_blog_metadata",
+      "public_blog_metadata_auschwitz_birkenau_visit_guide",
+      "public_blog_metadata_auschwitz_birkenau_visit_guide_author",
+      "public_blog_metadata_auschwitz_birkenau_visit_guide_category",
+      "public_blog_metadata_auschwitz_birkenau_visit_guide_date",
+      "public_blog_metadata_auschwitz_birkenau_visit_guide_description",
+      "public_blog_metadata_auschwitz_birkenau_visit_guide_image",
+      "public_blog_metadata_auschwitz_birkenau_visit_guide_title",
+      "public_blog_metadata_best_dog_food_brands_2026",
+      "public_blog_metadata_best_dog_food_brands_2026_author",
+      "public_blog_metadata_best_dog_food_brands_2026_category",
+      "public_blog_metadata_best_dog_food_brands_2026_date",
+      "public_blog_metadata_best_dog_food_brands_2026_description",
+      "public_blog_metadata_best_dog_food_brands_2026_image",
+      "public_blog_metadata_best_dog_food_brands_2026_title",
+      "public_blog_metadata_best_dog_food_busy_traveling_pet_parents_2026",
+      "public_blog_metadata_best_dog_food_busy_traveling_pet_parents_2026_author",
+      "public_blog_metadata_best_dog_food_busy_traveling_pet_parents_2026_category",
+      "public_blog_metadata_best_dog_food_busy_traveling_pet_parents_2026_date",
+      "public_blog_metadata_best_dog_food_busy_traveling_pet_parents_2026_description",
+      "public_blog_metadata_best_dog_food_busy_traveling_pet_parents_2026_image",
+      "public_blog_metadata_best_dog_food_busy_traveling_pet_parents_2026_title",
+      "public_blog_metadata_best_time_visit_europe",
+      "public_blog_metadata_best_time_visit_europe_author",
+      "public_blog_metadata_best_time_visit_europe_category",
+      "public_blog_metadata_best_time_visit_europe_date",
+      "public_blog_metadata_best_time_visit_europe_description",
+      "public_blog_metadata_best_time_visit_europe_image",
+      "public_blog_metadata_best_time_visit_europe_title",
+      "public_blog_metadata_las_vegas_activities_guide",
+      "public_blog_metadata_las_vegas_activities_guide_author",
+      "public_blog_metadata_las_vegas_activities_guide_category",
+      "public_blog_metadata_las_vegas_activities_guide_date",
+      "public_blog_metadata_las_vegas_activities_guide_description",
+      "public_blog_metadata_las_vegas_activities_guide_image",
+      "public_blog_metadata_las_vegas_activities_guide_title",
+      "public_blog_metadata_rome_colosseum_tours_guide",
+      "public_blog_metadata_rome_colosseum_tours_guide_author",
+      "public_blog_metadata_rome_colosseum_tours_guide_category",
+      "public_blog_metadata_rome_colosseum_tours_guide_date",
+      "public_blog_metadata_rome_colosseum_tours_guide_description",
+      "public_blog_metadata_rome_colosseum_tours_guide_image",
+      "public_blog_metadata_rome_colosseum_tours_guide_title"
+    ],
+    "2": [
+      "components_backtotopbutton",
+      "components_backtotopbutton_backtotopbutton",
+      "components_canonicaltag",
+      "components_canonicaltag_canonicaltag",
+      "components_googleanalytics",
+      "components_googleanalytics_googleanalytics",
+      "components_newsletterpopup",
+      "components_newsletterpopup_newsletterpopup",
+      "components_scrolltotop",
+      "components_scrolltotop_scrolltotop",
+      "contexts_themecontext",
+      "contexts_themecontext_themecontext",
+      "contexts_themecontext_themeprovider",
+      "contexts_themecontext_usetheme",
+      "src_app",
+      "src_app_about",
+      "src_app_affiliatedisclosure",
+      "src_app_africadestinations",
+      "src_app_airhelp",
+      "src_app_americasdestinations",
+      "src_app_app",
+      "src_app_asiadestinations",
+      "src_app_blog",
+      "src_app_blogpost",
+      "src_app_contact",
+      "src_app_deals",
+      "src_app_destinations",
+      "src_app_europedestinations",
+      "src_app_flights",
+      "src_app_hotels",
+      "src_app_klook",
+      "src_app_lifestylepicks",
+      "src_app_media",
+      "src_app_newyearactivities",
+      "src_app_newyearnyc",
+      "src_app_oceaniadestinations",
+      "src_app_pagefallback",
+      "src_app_privacypolicy",
+      "src_app_termsofservice",
+      "src_app_workfromanywhere",
+      "src_main"
+    ],
+    "3": [
+      "components_airhelpbanner",
+      "components_airhelpbanner_airhelpbanner",
+      "components_airhelpwidget",
+      "components_airhelpwidget_airhelpwidget",
+      "components_button",
+      "components_button_button",
+      "components_getyourguidewidget",
+      "components_getyourguidewidget_getyourguidesection",
+      "components_getyourguidewidget_getyourguidewidget",
+      "components_klookbanner",
+      "components_newslettersignup",
+      "components_newslettersignup_newslettersignup",
+      "pages_about",
+      "pages_about_about",
+      "pages_africadestinations",
+      "pages_africadestinations_africadestinations",
+      "pages_airhelp",
+      "pages_airhelp_airhelp",
+      "pages_americasdestinations",
+      "pages_americasdestinations_americasdestinations",
+      "pages_asiadestinations",
+      "pages_asiadestinations_asiadestinations",
+      "pages_deals",
+      "pages_deals_deals",
+      "pages_destinations",
+      "pages_destinations_destinations",
+      "pages_europedestinations",
+      "pages_europedestinations_europedestinations",
+      "pages_flights",
+      "pages_hotels",
+      "pages_lifestylepicks",
+      "pages_newyearactivities",
+      "pages_oceaniadestinations",
+      "pages_workfromanywhere",
+      "utils_cn",
+      "utils_cn_cn"
+    ],
+    "4": [
+      "components_chatinterface",
+      "components_chatinterface_arrowright",
+      "components_chatinterface_chatinterface",
+      "components_chatinterface_messagebubble",
+      "components_chatinterface_suggestions",
+      "components_footer",
+      "components_footer_footer",
+      "components_klookbanner_klookbanner",
+      "components_klookwidget",
+      "components_klookwidget_klookwidget",
+      "components_navbar",
+      "components_navbar_navbar",
+      "components_navbar_test",
+      "components_snowfall",
+      "components_snowfall_snowfall",
+      "pages_home",
+      "pages_home_home",
+      "pages_hotels_hotels",
+      "pages_klook",
+      "pages_klook_klook",
+      "pages_lifestylepicks_lifestylepicks",
+      "pages_media",
+      "pages_media_media",
+      "pages_newyearactivities_newyearactivities",
+      "pages_newyearnyc",
+      "pages_newyearnyc_newyearnyc",
+      "pages_oceaniadestinations_oceaniadestinations",
+      "pages_privacypolicy",
+      "pages_privacypolicy_privacypolicy",
+      "pages_termsofservice",
+      "pages_termsofservice_termsofservice",
+      "pages_workfromanywhere_workfromanywhere"
+    ],
+    "5": [
+      "config_affiliate",
+      "config_affiliate_buildaffiliateurl",
+      "config_affiliate_getflightaffiliatelink",
+      "config_affiliate_gethotelaffiliatelink",
+      "config_affiliate_hotels_com_config",
+      "config_affiliate_travelpayouts_config",
+      "pages_blog",
+      "pages_blog_blog",
+      "pages_blogpost",
+      "pages_blogpost_blogpost",
+      "utils_blogloader",
+      "utils_blogloader_calculatereadtime",
+      "utils_blogloader_contentmodules",
+      "utils_blogloader_formatdate",
+      "utils_blogloader_getallblogposts",
+      "utils_blogloader_getallcategories",
+      "utils_blogloader_getblogpost",
+      "utils_blogloader_getdefaultimage",
+      "utils_blogloader_markdowntohtml",
+      "utils_blogloader_parsefrontmatter"
+    ],
+    "6": [
+      "mcp_social_server_package",
+      "mcp_social_server_package_author",
+      "mcp_social_server_package_dependencies",
+      "mcp_social_server_package_dependencies_axios",
+      "mcp_social_server_package_dependencies_dotenv",
+      "mcp_social_server_package_dependencies_modelcontextprotocol_sdk",
+      "mcp_social_server_package_dependencies_twitter_api_v2",
+      "mcp_social_server_package_dependencies_zod",
+      "mcp_social_server_package_description",
+      "mcp_social_server_package_keywords",
+      "mcp_social_server_package_license",
+      "mcp_social_server_package_main",
+      "mcp_social_server_package_name",
+      "mcp_social_server_package_scripts",
+      "mcp_social_server_package_scripts_test",
+      "mcp_social_server_package_type",
+      "mcp_social_server_package_version"
+    ],
+    "7": [
+      "api_notify_zapier",
+      "api_notify_zapier_generatefacebookpost",
+      "api_notify_zapier_generateinstagramcaption",
+      "api_notify_zapier_generatelinkedinpost",
+      "api_notify_zapier_generatepinterestdescription",
+      "api_notify_zapier_generatetwittertext",
+      "mcp_social_server_index",
+      "mcp_social_server_index_axios",
+      "mcp_social_server_index_calltoolrequestschema_listtoolsrequestschema",
+      "mcp_social_server_index_main",
+      "mcp_social_server_index_post_to_linkedin",
+      "mcp_social_server_index_post_to_twitter",
+      "mcp_social_server_index_server",
+      "mcp_social_server_index_stdioservertransport",
+      "mcp_social_server_index_twitterapi",
+      "mcp_social_server_index_z"
+    ],
+    "8": [
+      "public_blog_metadata_json",
+      "scripts_generate_blog_metadata",
+      "scripts_generate_blog_metadata_contentdir",
+      "scripts_generate_blog_metadata_dirname",
+      "scripts_generate_blog_metadata_filename",
+      "scripts_generate_blog_metadata_metadata",
+      "scripts_generate_blog_metadata_outputdir",
+      "scripts_generate_blog_metadata_outputfile",
+      "scripts_generate_blog_metadata_parsefrontmatter"
+    ],
+    "9": [
+      "public_blog_metadata_barcelona_activities_guide",
+      "public_blog_metadata_barcelona_activities_guide_author",
+      "public_blog_metadata_barcelona_activities_guide_category",
+      "public_blog_metadata_barcelona_activities_guide_date",
+      "public_blog_metadata_barcelona_activities_guide_description",
+      "public_blog_metadata_barcelona_activities_guide_image",
+      "public_blog_metadata_barcelona_activities_guide_title"
+    ],
+    "10": [
+      "public_blog_metadata_budapest_activities_guide",
+      "public_blog_metadata_budapest_activities_guide_author",
+      "public_blog_metadata_budapest_activities_guide_category",
+      "public_blog_metadata_budapest_activities_guide_date",
+      "public_blog_metadata_budapest_activities_guide_description",
+      "public_blog_metadata_budapest_activities_guide_image",
+      "public_blog_metadata_budapest_activities_guide_title"
+    ],
+    "11": [
+      "public_blog_metadata_budget_travel_tips_2024",
+      "public_blog_metadata_budget_travel_tips_2024_author",
+      "public_blog_metadata_budget_travel_tips_2024_category",
+      "public_blog_metadata_budget_travel_tips_2024_date",
+      "public_blog_metadata_budget_travel_tips_2024_description",
+      "public_blog_metadata_budget_travel_tips_2024_image",
+      "public_blog_metadata_budget_travel_tips_2024_title"
+    ],
+    "12": [
+      "public_blog_metadata_canada_pet_care_guide",
+      "public_blog_metadata_canada_pet_care_guide_author",
+      "public_blog_metadata_canada_pet_care_guide_category",
+      "public_blog_metadata_canada_pet_care_guide_date",
+      "public_blog_metadata_canada_pet_care_guide_description",
+      "public_blog_metadata_canada_pet_care_guide_image",
+      "public_blog_metadata_canada_pet_care_guide_title"
+    ],
+    "13": [
+      "public_blog_metadata_christmas_2025",
+      "public_blog_metadata_christmas_2025_author",
+      "public_blog_metadata_christmas_2025_category",
+      "public_blog_metadata_christmas_2025_date",
+      "public_blog_metadata_christmas_2025_description",
+      "public_blog_metadata_christmas_2025_image",
+      "public_blog_metadata_christmas_2025_title"
+    ],
+    "14": [
+      "public_blog_metadata_dubai_desert_safari_guide",
+      "public_blog_metadata_dubai_desert_safari_guide_author",
+      "public_blog_metadata_dubai_desert_safari_guide_category",
+      "public_blog_metadata_dubai_desert_safari_guide_date",
+      "public_blog_metadata_dubai_desert_safari_guide_description",
+      "public_blog_metadata_dubai_desert_safari_guide_image",
+      "public_blog_metadata_dubai_desert_safari_guide_title"
+    ],
+    "15": [
+      "public_blog_metadata_getyourguide_tours_activities",
+      "public_blog_metadata_getyourguide_tours_activities_author",
+      "public_blog_metadata_getyourguide_tours_activities_category",
+      "public_blog_metadata_getyourguide_tours_activities_date",
+      "public_blog_metadata_getyourguide_tours_activities_description",
+      "public_blog_metadata_getyourguide_tours_activities_image",
+      "public_blog_metadata_getyourguide_tours_activities_title"
+    ],
+    "16": [
+      "public_blog_metadata_istanbul_activities_guide",
+      "public_blog_metadata_istanbul_activities_guide_author",
+      "public_blog_metadata_istanbul_activities_guide_category",
+      "public_blog_metadata_istanbul_activities_guide_date",
+      "public_blog_metadata_istanbul_activities_guide_description",
+      "public_blog_metadata_istanbul_activities_guide_image",
+      "public_blog_metadata_istanbul_activities_guide_title"
+    ],
+    "17": [
+      "public_blog_metadata_marrakech_activities_guide",
+      "public_blog_metadata_marrakech_activities_guide_author",
+      "public_blog_metadata_marrakech_activities_guide_category",
+      "public_blog_metadata_marrakech_activities_guide_date",
+      "public_blog_metadata_marrakech_activities_guide_description",
+      "public_blog_metadata_marrakech_activities_guide_image",
+      "public_blog_metadata_marrakech_activities_guide_title"
+    ],
+    "18": [
+      "public_blog_metadata_new_years_eve_usa_2025",
+      "public_blog_metadata_new_years_eve_usa_2025_author",
+      "public_blog_metadata_new_years_eve_usa_2025_category",
+      "public_blog_metadata_new_years_eve_usa_2025_date",
+      "public_blog_metadata_new_years_eve_usa_2025_description",
+      "public_blog_metadata_new_years_eve_usa_2025_image",
+      "public_blog_metadata_new_years_eve_usa_2025_title"
+    ],
+    "19": [
+      "public_blog_metadata_pet_prevention_essentials_2026",
+      "public_blog_metadata_pet_prevention_essentials_2026_author",
+      "public_blog_metadata_pet_prevention_essentials_2026_category",
+      "public_blog_metadata_pet_prevention_essentials_2026_date",
+      "public_blog_metadata_pet_prevention_essentials_2026_description",
+      "public_blog_metadata_pet_prevention_essentials_2026_image",
+      "public_blog_metadata_pet_prevention_essentials_2026_title"
+    ],
+    "20": [
+      "public_blog_metadata_solo_travel_safety_guide",
+      "public_blog_metadata_solo_travel_safety_guide_author",
+      "public_blog_metadata_solo_travel_safety_guide_category",
+      "public_blog_metadata_solo_travel_safety_guide_date",
+      "public_blog_metadata_solo_travel_safety_guide_description",
+      "public_blog_metadata_solo_travel_safety_guide_image",
+      "public_blog_metadata_solo_travel_safety_guide_title"
+    ],
+    "21": [
+      "public_blog_metadata_southeast_asia_hidden_gems",
+      "public_blog_metadata_southeast_asia_hidden_gems_author",
+      "public_blog_metadata_southeast_asia_hidden_gems_category",
+      "public_blog_metadata_southeast_asia_hidden_gems_date",
+      "public_blog_metadata_southeast_asia_hidden_gems_description",
+      "public_blog_metadata_southeast_asia_hidden_gems_image",
+      "public_blog_metadata_southeast_asia_hidden_gems_title"
+    ],
+    "22": [
+      "public_blog_metadata_westin_carlsbad_resort_spa_guide",
+      "public_blog_metadata_westin_carlsbad_resort_spa_guide_author",
+      "public_blog_metadata_westin_carlsbad_resort_spa_guide_category",
+      "public_blog_metadata_westin_carlsbad_resort_spa_guide_date",
+      "public_blog_metadata_westin_carlsbad_resort_spa_guide_description",
+      "public_blog_metadata_westin_carlsbad_resort_spa_guide_image",
+      "public_blog_metadata_westin_carlsbad_resort_spa_guide_title"
+    ],
+    "23": [
+      "firebase",
+      "firebase_hosting",
+      "firebase_hosting_ignore",
+      "firebase_hosting_public",
+      "firebase_hosting_rewrites",
+      "firebase_hosting_target"
+    ],
+    "24": [
+      "public_dog_food_brands_hero_brindle_dog",
+      "public_dog_food_brands_hero_golden_retriever",
+      "public_dog_food_brands_hero_hero_image",
+      "public_dog_food_brands_hero_kitchen_setting",
+      "public_dog_food_brands_hero_premium_dog_food",
+      "public_dog_food_brands_hero_terrier_mix"
+    ],
+    "25": [
+      "public_gubbu_logo_tech_circuit",
+      "public_gubbu_logo_tech_logo",
+      "public_gubbu_logo_tech_mascot",
+      "public_gubbu_logo_tech_paws",
+      "public_gubbu_logo_tech_subtitle",
+      "public_gubbu_logo_tech_text"
+    ],
+    "26": [
+      "content_westin_carlsbad_resort_spa_guide_article",
+      "content_westin_carlsbad_resort_spa_guide_carlsbad",
+      "content_westin_carlsbad_resort_spa_guide_legoland",
+      "content_westin_carlsbad_resort_spa_guide_san_diego",
+      "content_westin_carlsbad_resort_spa_guide_westin_carlsbad"
+    ],
+    "27": [
+      "docs_affiliate_governance_rules",
+      "docs_api_routing_endpoints",
+      "docs_chat_implementation_chatinterface",
+      "docs_gubbu_architecture_orchestrator",
+      "docs_gubbu_architecture_rag"
+    ],
+    "28": [
+      "public_gubbu_complete_logo_brand",
+      "public_gubbu_complete_logo_image",
+      "public_gubbu_complete_logo_mascot",
+      "public_gubbu_complete_logo_network_mesh_dog",
+      "public_gubbu_complete_logo_tagline"
+    ],
+    "29": [
+      "components_searchbar",
+      "components_searchbar_searchbar",
+      "components_searchbar_staticpages",
+      "pages_flights_flights"
+    ],
+    "30": [
+      "public_dog_food_blog_hero_1768093564720",
+      "public_dog_food_blog_hero_1768093564720_foreground_focus_pattern",
+      "public_dog_food_blog_hero_1768093564720_golden_retriever",
+      "public_dog_food_blog_hero_1768093564720_premium_dog_food"
+    ],
+    "31": [
+      "public_gubbu_full_logo_brand_name",
+      "public_gubbu_full_logo_logo",
+      "public_gubbu_full_logo_mascot",
+      "public_gubbu_full_logo_tagline"
+    ],
+    "32": [
+      "public_gubbu_hero_logo_brand",
+      "public_gubbu_hero_logo_logo",
+      "public_gubbu_hero_logo_mascot",
+      "public_gubbu_hero_logo_tagline"
+    ],
+    "33": [
+      "public_gubbu_logo_combined_logo",
+      "public_gubbu_logo_combined_mascot",
+      "public_gubbu_logo_combined_tech_aesthetic",
+      "public_gubbu_logo_combined_typography"
+    ],
+    "34": [
+      "public_gubbu_logo_cyan",
+      "public_gubbu_logo_cyan_mascot",
+      "public_gubbu_logo_cyan_paw_prints",
+      "public_gubbu_logo_cyan_slogan"
+    ],
+    "35": [
+      "public_gubbu_logo_final_brandname",
+      "public_gubbu_logo_final_logo",
+      "public_gubbu_logo_final_superherodog",
+      "public_gubbu_logo_final_tagline"
+    ],
+    "36": [
+      "public_gubbu_logo_geometric_dog_design",
+      "public_gubbu_logo_gubbu_logo",
+      "public_gubbu_logo_superhero_dog",
+      "public_gubbu_logo_travel_companion"
+    ],
+    "37": [
+      "public_gubbu_logo_v2_brand_name",
+      "public_gubbu_logo_v2_logo",
+      "public_gubbu_logo_v2_mascot",
+      "public_gubbu_logo_v2_slogan"
+    ],
+    "38": [
+      "public_gubbu_new_logo_brand_text",
+      "public_gubbu_new_logo_logo",
+      "public_gubbu_new_logo_paw_prints",
+      "public_gubbu_new_logo_superdog_mascot"
+    ],
+    "39": [
+      "public_og_image_brand_name",
+      "public_og_image_mascot",
+      "public_og_image_social_preview",
+      "public_og_image_tagline"
+    ],
+    "40": [
+      "public_dog_food_travel_hero_image",
+      "public_dog_food_travel_hero_pet_travel",
+      "public_dog_food_travel_hero_remote_work"
+    ],
+    "41": [
+      "public_gubbu_text_logo_brand",
+      "public_gubbu_text_logo_image",
+      "public_gubbu_text_logo_tagline"
+    ],
+    "42": [
+      "public_gubbu_text_logo_geometric_dog_mascot",
+      "public_gubbu_text_logo_gubbu_logo",
+      "public_gubbu_text_logo_network_mesh_design"
+    ],
+    "43": [
+      "public_old_bridge_nj_hero_city_skyline",
+      "public_old_bridge_nj_hero_image",
+      "public_old_bridge_nj_hero_waterfront_boardwalk"
+    ],
+    "44": [
+      "public_pet_prevention_hero_image",
+      "public_pet_prevention_hero_medication_schedule",
+      "public_pet_prevention_hero_preventative_care"
+    ],
+    "45": [
+      "agents_agents",
+      "agents_ai_agents"
+    ],
+    "46": [
+      "api_subscribe_mailchimp",
+      "api_test_mailchimp"
+    ],
+    "47": [
+      "check_backend_deploy_check_backend_deploy",
+      "check_backend_deploy_verification"
+    ],
+    "48": [
+      "components_aviasalesmapwidget",
+      "components_aviasalesmapwidget_aviasalesmapwidget"
+    ],
+    "49": [
+      "components_aviasalespopularwidget",
+      "components_aviasalespopularwidget_aviasalespopularwidget"
+    ],
+    "50": [
+      "components_aviasaleswidget",
+      "components_aviasaleswidget_aviasaleswidget"
+    ],
+    "51": [
+      "components_kiwiwidget",
+      "components_kiwiwidget_kiwiwidget"
+    ],
+    "52": [
+      "content_auschwitz_birkenau_visit_guide_article",
+      "content_auschwitz_birkenau_visit_guide_auschwitz_birkenau"
+    ],
+    "53": [
+      "content_barcelona_activities_guide_article",
+      "content_barcelona_activities_guide_barcelona"
+    ],
+    "54": [
+      "content_best_dog_food_brands_2026_article",
+      "content_best_dog_food_brands_2026_dog_food"
+    ],
+    "55": [
+      "content_best_time_visit_europe_article",
+      "content_best_time_visit_europe_europe_travel"
+    ],
+    "56": [
+      "content_budapest_activities_guide_article",
+      "content_budapest_activities_guide_budapest"
+    ],
+    "57": [
+      "content_dubai_desert_safari_guide_article",
+      "content_dubai_desert_safari_guide_dubai"
+    ],
+    "58": [
+      "docs_gubbu_architecture_daas",
+      "docs_project_info_gubbu"
+    ],
+    "59": [
+      "docs_zapier_social_media_setup_webhook",
+      "public_post_to_social_page"
+    ],
+    "60": [
+      "gubbu_migration_gemini_migration",
+      "gubbu_migration_gubbu_migration"
+    ],
+    "61": [
+      "pages_affiliatedisclosure",
+      "pages_affiliatedisclosure_affiliatedisclosure"
+    ],
+    "62": [
+      "pages_contact",
+      "pages_contact_contact"
+    ],
+    "63": [
+      "pages_to_index_google_search_console",
+      "pages_to_index_pages_to_index"
+    ],
+    "64": [
+      "public_dogicon",
+      "public_dogicon_network_art"
+    ],
+    "65": [
+      "public_gubbu_final_logo_image",
+      "public_gubbu_final_logo_polygonal_dog"
+    ],
+    "66": [
+      "public_gubbu_icon_image",
+      "public_gubbu_icon_network_dog"
+    ],
+    "67": [
+      "public_gubbu_icon_mascot",
+      "public_gubbu_icon_superhero_theme"
+    ],
+    "68": [
+      "public_hero_dog_food_busy_abstract_ui_card",
+      "public_hero_dog_food_busy_graphic"
+    ],
+    "69": [
+      "public_pet_care_routine_hero_dog",
+      "public_pet_care_routine_hero_pet_care_products"
+    ],
+    "70": [
+      "public_pet_care_routine_hero_monthly_routine_calendar",
+      "public_pet_care_routine_hero_pet_care_app_reminder"
+    ],
+    "71": [
+      "public_subject_icon_image",
+      "public_subject_icon_mascot"
+    ],
+    "72": [
+      "readme_readme",
+      "readme_travelpayouts_affiliate"
+    ],
+    "73": [
+      "setup_newsletter_multipage_summary_signup",
+      "setup_newsletter_popup_guide_popup"
+    ],
+    "74": [
+      "update_api_url",
+      "users_kishorekumar_cascadeprojects_travel_blog_website_update_api_url_sh__entry"
+    ],
+    "75": [
+      "vite_config",
+      "vite_config_manualchunks"
+    ],
+    "76": [
+      "voice_chat_guide_voice_chat_guide",
+      "voice_chat_guide_web_speech_api"
+    ],
+    "77": [
+      "voice_recognition_tips_voice_autocorrect",
+      "voice_recognition_tips_voice_recognition_tips"
+    ],
+    "78": [
+      "api_notify_zapier_zapierwebhookurl"
+    ],
+    "79": [
+      "api_subscribe"
+    ],
+    "80": [
+      "api_test"
+    ],
+    "81": [
+      "assets_react_logo"
+    ],
+    "82": [
+      "content_best_dog_food_busy_traveling_pet_parents_2026_article"
+    ],
+    "83": [
+      "content_budget_travel_tips_2024_article"
+    ],
+    "84": [
+      "content_canada_pet_care_guide_article"
+    ],
+    "85": [
+      "content_christmas_2025_article"
+    ],
+    "86": [
+      "content_getyourguide_tours_activities_article"
+    ],
+    "87": [
+      "content_istanbul_activities_guide_article"
+    ],
+    "88": [
+      "content_las_vegas_activities_guide_article"
+    ],
+    "89": [
+      "content_marrakech_activities_guide_article"
+    ],
+    "90": [
+      "content_new_years_eve_usa_2025_article"
+    ],
+    "91": [
+      "content_old_bridge_new_jersey_events_places_guide_article"
+    ],
+    "92": [
+      "content_pet_prevention_essentials_2026_article"
+    ],
+    "93": [
+      "content_rome_colosseum_tours_guide_article"
+    ],
+    "94": [
+      "content_solo_travel_safety_guide_article"
+    ],
+    "95": [
+      "content_southeast_asia_hidden_gems_article"
+    ],
+    "96": [
+      "eslint_config"
+    ],
+    "97": [
+      "eslint_config_default"
+    ],
+    "98": [
+      "firebase_config"
+    ],
+    "99": [
+      "mcp_social_server_package_mcp_social_server"
+    ],
+    "100": [
+      "package_travel_blog_website"
+    ],
+    "101": [
+      "postcss_config"
+    ],
+    "102": [
+      "postcss_config_default"
+    ],
+    "103": [
+      "public_hero_dog_food_brands"
+    ],
+    "104": [
+      "public_hero_pet_care_essentials_svg"
+    ],
+    "105": [
+      "public_hero_pet_prevention_hero_pet_prevention"
+    ],
+    "106": [
+      "public_robots_rules"
+    ],
+    "107": [
+      "public_vite_logo"
+    ],
+    "108": [
+      "setup_travelpayouts_setup_integration"
+    ],
+    "109": [
+      "src_setuptests"
+    ],
+    "110": [
+      "src_setuptests_setuptests"
+    ],
+    "111": [
+      "tailwind_config"
+    ],
+    "112": [
+      "tailwind_config_tailwind_config"
+    ],
+    "113": [
+      "travel_blog_website_deploy_api_action"
+    ],
+    "114": [
+      "travel_blog_website_index_page"
+    ],
+    "115": [
+      "update_api_url_script"
+    ],
+    "116": [
+      "utils_blogloader_getpostsbycategory"
+    ],
+    "117": [
+      "utils_blogloader_getrelatedposts"
+    ],
+    "118": [
+      "vite_config_vite_config"
+    ],
+    "119": [
+      "workflows_deploy_firebase_deploy_firebase"
+    ]
+  },
+  "cohesion": {
+    "0": 0.046511627906976744,
+    "1": 0.046511627906976744,
+    "2": 0.06341463414634146,
+    "3": 0.12857142857142856,
+    "4": 0.0907258064516129,
+    "5": 0.18947368421052632,
+    "6": 0.11764705882352941,
+    "7": 0.13333333333333333,
+    "8": 0.2222222222222222,
+    "9": 0.2857142857142857,
+    "10": 0.2857142857142857,
+    "11": 0.2857142857142857,
+    "12": 0.2857142857142857,
+    "13": 0.2857142857142857,
+    "14": 0.2857142857142857,
+    "15": 0.2857142857142857,
+    "16": 0.2857142857142857,
+    "17": 0.2857142857142857,
+    "18": 0.2857142857142857,
+    "19": 0.2857142857142857,
+    "20": 0.2857142857142857,
+    "21": 0.2857142857142857,
+    "22": 0.2857142857142857,
+    "23": 0.3333333333333333,
+    "24": 0.3333333333333333,
+    "25": 0.3333333333333333,
+    "26": 0.4,
+    "27": 0.5,
+    "28": 0.4,
+    "29": 0.5,
+    "30": 0.5,
+    "31": 0.5,
+    "32": 0.6666666666666666,
+    "33": 0.5,
+    "34": 0.5,
+    "35": 0.5,
+    "36": 0.5,
+    "37": 0.5,
+    "38": 0.5,
+    "39": 0.6666666666666666,
+    "40": 0.6666666666666666,
+    "41": 1.0,
+    "42": 0.6666666666666666,
+    "43": 0.6666666666666666,
+    "44": 0.6666666666666666,
+    "45": 1.0,
+    "46": 1.0,
+    "47": 1.0,
+    "48": 1.0,
+    "49": 1.0,
+    "50": 1.0,
+    "51": 1.0,
+    "52": 1.0,
+    "53": 1.0,
+    "54": 1.0,
+    "55": 1.0,
+    "56": 1.0,
+    "57": 1.0,
+    "58": 1.0,
+    "59": 1.0,
+    "60": 1.0,
+    "61": 1.0,
+    "62": 1.0,
+    "63": 1.0,
+    "64": 1.0,
+    "65": 1.0,
+    "66": 1.0,
+    "67": 1.0,
+    "68": 1.0,
+    "69": 1.0,
+    "70": 1.0,
+    "71": 1.0,
+    "72": 1.0,
+    "73": 1.0,
+    "74": 1.0,
+    "75": 1.0,
+    "76": 1.0,
+    "77": 1.0,
+    "78": 1.0,
+    "79": 1.0,
+    "80": 1.0,
+    "81": 1.0,
+    "82": 1.0,
+    "83": 1.0,
+    "84": 1.0,
+    "85": 1.0,
+    "86": 1.0,
+    "87": 1.0,
+    "88": 1.0,
+    "89": 1.0,
+    "90": 1.0,
+    "91": 1.0,
+    "92": 1.0,
+    "93": 1.0,
+    "94": 1.0,
+    "95": 1.0,
+    "96": 1.0,
+    "97": 1.0,
+    "98": 1.0,
+    "99": 1.0,
+    "100": 1.0,
+    "101": 1.0,
+    "102": 1.0,
+    "103": 1.0,
+    "104": 1.0,
+    "105": 1.0,
+    "106": 1.0,
+    "107": 1.0,
+    "108": 1.0,
+    "109": 1.0,
+    "110": 1.0,
+    "111": 1.0,
+    "112": 1.0,
+    "113": 1.0,
+    "114": 1.0,
+    "115": 1.0,
+    "116": 1.0,
+    "117": 1.0,
+    "118": 1.0,
+    "119": 1.0
+  },
+  "gods": [
+    {
+      "id": "components_button_button",
+      "label": "Button()",
+      "degree": 24
+    },
+    {
+      "id": "components_newslettersignup_newslettersignup",
+      "label": "NewsletterSignup()",
+      "degree": 17
+    },
+    {
+      "id": "components_navbar_navbar",
+      "label": "Navbar()",
+      "degree": 15
+    },
+    {
+      "id": "components_footer_footer",
+      "label": "Footer()",
+      "degree": 14
+    },
+    {
+      "id": "package_scripts",
+      "label": "scripts",
+      "degree": 9
+    },
+    {
+      "id": "utils_blogloader_getblogpost",
+      "label": "getBlogPost()",
+      "degree": 8
+    },
+    {
+      "id": "public_blog_metadata_auschwitz_birkenau_visit_guide",
+      "label": "auschwitz-birkenau-visit-guide",
+      "degree": 7
+    },
+    {
+      "id": "public_blog_metadata_barcelona_activities_guide",
+      "label": "barcelona-activities-guide",
+      "degree": 7
+    },
+    {
+      "id": "public_blog_metadata_best_dog_food_brands_2026",
+      "label": "best-dog-food-brands-2026",
+      "degree": 7
+    },
+    {
+      "id": "public_blog_metadata_best_dog_food_busy_traveling_pet_parents_2026",
+      "label": "best-dog-food-busy-traveling-pet-parents-2026",
+      "degree": 7
+    }
+  ],
+  "surprises": [
+    {
+      "source": "generateTwitterText()",
+      "target": "post_to_twitter",
+      "source_files": [
+        "public/api/notify-zapier.php",
+        "mcp-social-server/index.js"
+      ],
+      "confidence": "INFERRED",
+      "relation": "semantically_similar_to",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; semantically similar concepts with no structural link"
+    },
+    {
+      "source": "generateLinkedInPost()",
+      "target": "post_to_linkedin",
+      "source_files": [
+        "public/api/notify-zapier.php",
+        "mcp-social-server/index.js"
+      ],
+      "confidence": "INFERRED",
+      "relation": "semantically_similar_to",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; semantically similar concepts with no structural link"
+    },
+    {
+      "source": "metadata",
+      "target": "Blog Metadata JSON",
+      "source_files": [
+        "scripts/generate-blog-metadata.js",
+        "public/blog-metadata.json"
+      ],
+      "confidence": "INFERRED",
+      "relation": "shares_data_with",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories"
+    },
+    {
+      "source": "KlookBanner()",
+      "target": "KlookWidget()",
+      "source_files": [
+        "src/components/KlookBanner.jsx",
+        "src/components/KlookWidget.jsx"
+      ],
+      "confidence": "INFERRED",
+      "relation": "semantically_similar_to",
+      "why": "inferred connection - not explicitly stated in source; semantically similar concepts with no structural link"
+    },
+    {
+      "source": "Blog()",
+      "target": "NewsletterSignup()",
+      "source_files": [
+        "src/pages/Blog.jsx",
+        "src/components/NewsletterSignup.jsx"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "bridges separate communities; peripheral node `Blog()` unexpectedly reaches hub `NewsletterSignup()`"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `Button()` connect `Community 3` to `Community 2`, `Community 4`, `Community 5`?",
+      "why": "High betweenness centrality (0.012) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `Navbar()` connect `Community 4` to `Community 2`?",
+      "why": "High betweenness centrality (0.006) - this node is a cross-community bridge."
+    },
+    {
+      "type": "verify_inferred",
+      "question": "Are the 11 inferred relationships involving `Navbar()` (e.g. with `Home()` and `Hotels()`) actually correct?",
+      "why": "`Navbar()` has 11 INFERRED edges - model-reasoned connections that need verification."
+    },
+    {
+      "type": "verify_inferred",
+      "question": "Are the 11 inferred relationships involving `Footer()` (e.g. with `Home()` and `Hotels()`) actually correct?",
+      "why": "`Footer()` has 11 INFERRED edges - model-reasoned connections that need verification."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `target`, `public`, `ignore` to the rest of the system?",
+      "why": "345 weakly-connected nodes found - possible documentation gaps or missing edges."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 0` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.046511627906976744 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 1` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.046511627906976744 - nodes in this community are weakly interconnected."
+    }
+  ]
+}

@@ -1,0 +1,741 @@
+{
+  "nodes": [
+    {
+      "id": "pages_home_home",
+      "label": "Home",
+      "file_type": "code",
+      "source_file": "src/pages/Home.jsx",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "pages_hotels_hotels",
+      "label": "Hotels",
+      "file_type": "code",
+      "source_file": "src/pages/Hotels.jsx",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "pages_klook_klook",
+      "label": "Klook",
+      "file_type": "code",
+      "source_file": "src/pages/Klook.jsx",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "pages_lifestylepicks_lifestylepicks",
+      "label": "Lifestyle Picks",
+      "file_type": "code",
+      "source_file": "src/pages/LifestylePicks.jsx",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "pages_media_media",
+      "label": "Media",
+      "file_type": "code",
+      "source_file": "src/pages/Media.jsx",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "pages_newyearactivities_newyearactivities",
+      "label": "New Year Activities",
+      "file_type": "code",
+      "source_file": "src/pages/NewYearActivities.jsx",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "pages_newyearnyc_newyearnyc",
+      "label": "New Year NYC",
+      "file_type": "code",
+      "source_file": "src/pages/NewYearNYC.jsx",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "pages_oceaniadestinations_oceaniadestinations",
+      "label": "Oceania Destinations",
+      "file_type": "code",
+      "source_file": "src/pages/OceaniaDestinations.jsx",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "pages_privacypolicy_privacypolicy",
+      "label": "Privacy Policy",
+      "file_type": "code",
+      "source_file": "src/pages/PrivacyPolicy.jsx",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "pages_termsofservice_termsofservice",
+      "label": "Terms Of Service",
+      "file_type": "code",
+      "source_file": "src/pages/TermsOfService.jsx",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "pages_workfromanywhere_workfromanywhere",
+      "label": "Work From Anywhere",
+      "file_type": "code",
+      "source_file": "src/pages/WorkFromAnywhere.jsx",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "src_setuptests_setuptests",
+      "label": "Setup Tests",
+      "file_type": "code",
+      "source_file": "src/setupTests.js",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "utils_blogloader_getallblogposts",
+      "label": "getAllBlogPosts",
+      "file_type": "code",
+      "source_file": "src/utils/blogLoader.js",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "utils_blogloader_getblogpost",
+      "label": "getBlogPost",
+      "file_type": "code",
+      "source_file": "src/utils/blogLoader.js",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "utils_blogloader_getrelatedposts",
+      "label": "getRelatedPosts",
+      "file_type": "code",
+      "source_file": "src/utils/blogLoader.js",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "utils_blogloader_getpostsbycategory",
+      "label": "getPostsByCategory",
+      "file_type": "code",
+      "source_file": "src/utils/blogLoader.js",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "utils_cn_cn",
+      "label": "cn",
+      "file_type": "code",
+      "source_file": "src/utils/cn.js",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "tailwind_config_tailwind_config",
+      "label": "Tailwind Config",
+      "file_type": "code",
+      "source_file": "tailwind.config.js",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "vite_config_vite_config",
+      "label": "Vite Config",
+      "file_type": "code",
+      "source_file": "vite.config.js",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "update_api_url_script",
+      "label": "Update API URL Script",
+      "file_type": "code",
+      "source_file": "update-api-url.sh",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "workflows_deploy_firebase_deploy_firebase",
+      "label": "Deploy Firebase Workflow",
+      "file_type": "code",
+      "source_file": ".github/workflows/deploy-firebase.yml",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "agents_agents",
+      "label": "AGENTS.md",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "agents_ai_agents",
+      "label": "AI Agents System",
+      "file_type": "concept",
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Gubbu employs AI Agents using the Gemini model to assist users."
+    },
+    {
+      "id": "check_backend_deploy_check_backend_deploy",
+      "label": "CHECK_BACKEND_DEPLOY.md",
+      "file_type": "document",
+      "source_file": "CHECK_BACKEND_DEPLOY.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "check_backend_deploy_verification",
+      "label": "Backend Deploy Verification",
+      "file_type": "concept",
+      "source_file": "CHECK_BACKEND_DEPLOY.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "gubbu_migration_gubbu_migration",
+      "label": "GUBBU_MIGRATION.md",
+      "file_type": "document",
+      "source_file": "GUBBU_MIGRATION.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "gubbu_migration_gemini_migration",
+      "label": "Gemini Migration",
+      "file_type": "concept",
+      "source_file": "GUBBU_MIGRATION.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "The Gubbu project has been migrated from OpenAI to Google Gemini. Chat Model: gemini-2.0-flash, Embedding Model: text-embedding-004."
+    },
+    {
+      "id": "pages_to_index_pages_to_index",
+      "label": "PAGES_TO_INDEX.md",
+      "file_type": "document",
+      "source_file": "PAGES_TO_INDEX.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "pages_to_index_google_search_console",
+      "label": "Google Search Console Indexing",
+      "file_type": "concept",
+      "source_file": "PAGES_TO_INDEX.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "readme_readme",
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "readme_travelpayouts_affiliate",
+      "label": "Travelpayouts Affiliate Integration",
+      "file_type": "concept",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Integrated with Travelpayouts to automatically track affiliate commissions for hotel and flight bookings."
+    },
+    {
+      "id": "voice_chat_guide_voice_chat_guide",
+      "label": "VOICE_CHAT_GUIDE.md",
+      "file_type": "document",
+      "source_file": "VOICE_CHAT_GUIDE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "voice_chat_guide_web_speech_api",
+      "label": "Web Speech API Voice Implementation",
+      "file_type": "concept",
+      "source_file": "VOICE_CHAT_GUIDE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Uses the browser's built-in Web Speech API for voice interactions to avoid external service costs and enable offline functionality."
+    },
+    {
+      "id": "voice_recognition_tips_voice_recognition_tips",
+      "label": "VOICE_RECOGNITION_TIPS.md",
+      "file_type": "document",
+      "source_file": "VOICE_RECOGNITION_TIPS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "voice_recognition_tips_voice_autocorrect",
+      "label": "Voice Recognition Autocorrect",
+      "file_type": "concept",
+      "source_file": "VOICE_RECOGNITION_TIPS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Since 'Gubbu' is an unknown word to speech recognition, it often hears 'Google' or 'goo boo'. An auto-correct function replaces these variations with 'Gubbu' before sending."
+    }
+  ],
+  "edges": [
+    {
+      "source": "pages_home_home",
+      "target": "components_navbar_navbar",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/pages/Home.jsx",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "pages_home_home",
+      "target": "components_footer_footer",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/pages/Home.jsx",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "pages_hotels_hotels",
+      "target": "components_navbar_navbar",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/pages/Hotels.jsx",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "pages_hotels_hotels",
+      "target": "components_footer_footer",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/pages/Hotels.jsx",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "pages_klook_klook",
+      "target": "components_navbar_navbar",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/pages/Klook.jsx",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "pages_klook_klook",
+      "target": "components_footer_footer",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/pages/Klook.jsx",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "pages_lifestylepicks_lifestylepicks",
+      "target": "components_navbar_navbar",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/pages/LifestylePicks.jsx",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "pages_lifestylepicks_lifestylepicks",
+      "target": "components_footer_footer",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/pages/LifestylePicks.jsx",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "pages_media_media",
+      "target": "components_navbar_navbar",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/pages/Media.jsx",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "pages_media_media",
+      "target": "components_footer_footer",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/pages/Media.jsx",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "pages_newyearactivities_newyearactivities",
+      "target": "components_navbar_navbar",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/pages/NewYearActivities.jsx",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "pages_newyearactivities_newyearactivities",
+      "target": "components_footer_footer",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/pages/NewYearActivities.jsx",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "pages_newyearnyc_newyearnyc",
+      "target": "components_navbar_navbar",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/pages/NewYearNYC.jsx",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "pages_newyearnyc_newyearnyc",
+      "target": "components_footer_footer",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/pages/NewYearNYC.jsx",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "pages_oceaniadestinations_oceaniadestinations",
+      "target": "components_navbar_navbar",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/pages/OceaniaDestinations.jsx",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "pages_oceaniadestinations_oceaniadestinations",
+      "target": "components_footer_footer",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/pages/OceaniaDestinations.jsx",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "pages_privacypolicy_privacypolicy",
+      "target": "components_navbar_navbar",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/pages/PrivacyPolicy.jsx",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "pages_privacypolicy_privacypolicy",
+      "target": "components_footer_footer",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/pages/PrivacyPolicy.jsx",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "pages_termsofservice_termsofservice",
+      "target": "components_navbar_navbar",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/pages/TermsOfService.jsx",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "pages_termsofservice_termsofservice",
+      "target": "components_footer_footer",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/pages/TermsOfService.jsx",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "pages_workfromanywhere_workfromanywhere",
+      "target": "components_navbar_navbar",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/pages/WorkFromAnywhere.jsx",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "pages_workfromanywhere_workfromanywhere",
+      "target": "components_footer_footer",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/pages/WorkFromAnywhere.jsx",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "agents_agents",
+      "target": "agents_ai_agents",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "agents_ai_agents",
+      "target": "components_chatwidget_chatwidget",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "check_backend_deploy_check_backend_deploy",
+      "target": "check_backend_deploy_verification",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CHECK_BACKEND_DEPLOY.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "gubbu_migration_gubbu_migration",
+      "target": "gubbu_migration_gemini_migration",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "GUBBU_MIGRATION.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "pages_to_index_pages_to_index",
+      "target": "pages_to_index_google_search_console",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PAGES_TO_INDEX.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "readme_readme",
+      "target": "readme_travelpayouts_affiliate",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "voice_chat_guide_voice_chat_guide",
+      "target": "voice_chat_guide_web_speech_api",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "VOICE_CHAT_GUIDE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "voice_chat_guide_web_speech_api",
+      "target": "components_chatwidget_chatwidget",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "VOICE_CHAT_GUIDE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "voice_recognition_tips_voice_recognition_tips",
+      "target": "voice_recognition_tips_voice_autocorrect",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "VOICE_RECOGNITION_TIPS.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "voice_recognition_tips_voice_autocorrect",
+      "target": "components_chatwidget_chatwidget",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "VOICE_RECOGNITION_TIPS.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "page_components",
+      "label": "Page Components",
+      "nodes": [
+        "pages_home_home",
+        "pages_hotels_hotels",
+        "pages_klook_klook",
+        "pages_lifestylepicks_lifestylepicks",
+        "pages_media_media",
+        "pages_newyearactivities_newyearactivities",
+        "pages_newyearnyc_newyearnyc",
+        "pages_oceaniadestinations_oceaniadestinations",
+        "pages_privacypolicy_privacypolicy",
+        "pages_termsofservice_termsofservice",
+        "pages_workfromanywhere_workfromanywhere"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "src/pages/Home.jsx"
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

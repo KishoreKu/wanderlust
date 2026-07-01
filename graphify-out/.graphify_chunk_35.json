@@ -1,0 +1,42 @@
+{
+  "nodes": [
+    {
+      "id": "public_subject_icon_image",
+      "label": "Subject Icon Image",
+      "file_type": "image",
+      "source_file": "public/subject-icon.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "public_subject_icon_mascot",
+      "label": "Network Dog Mascot",
+      "file_type": "concept",
+      "source_file": "public/subject-icon.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "The image displays a dog's head in profile composed of glowing nodes and interconnecting lines, visually representing a neural network, constellation, or digital mesh. This suggests it serves as a technology, AI, or network-themed mascot."
+    }
+  ],
+  "edges": [
+    {
+      "source": "public_subject_icon_image",
+      "target": "public_subject_icon_mascot",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/subject-icon.png",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}
