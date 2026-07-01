@@ -22,7 +22,7 @@ jobs:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
 
       - name: Build and Deploy Container App
-        uses: azure/containerapps-deploy-action@v1
+        uses: azure/container-apps-deploy-action@v1
         with:
           appSourcePath: ${{ github.workspace }}/backend
           acrName: 'ca7893dc9fe5acr'
