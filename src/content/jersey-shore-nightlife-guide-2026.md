@@ -83,9 +83,9 @@ At the top of the Shore, Sea Bright is where the nightlife exhales.
 
 Here's the thing about every bar on this list: they're all a completely different experience at 40% full versus 95% full. The difference between a great night and an hour-long line is usually just *timing* — and until recently, you couldn't know without showing up.
 
-That's changing. We've been testing **[Barometer](https://gubbu-api.proudwater-f3417084.eastus2.azurecontainerapps.io/go/barometer?src=blog_jersey_shore_nightlife)**, a free web app that shows **live crowd meters for Shore bars** — real-time "how packed is it" percentages for the towns in this guide, active happy hours, tonight's DJ and live music lineups, and a boardwalk **surge map** that forecasts crowds a few hours out ("go now" vs. "wait 2 hours").
+That's changing. We've been testing **[Barometer](https://api.gubbu.io/go/barometer?src=blog_jersey_shore_nightlife)**, a free web app that shows **live crowd meters for Shore bars** — real-time "how packed is it" percentages for the towns in this guide, active happy hours, tonight's DJ and live music lineups, and a boardwalk **surge map** that forecasts crowds a few hours out ("go now" vs. "wait 2 hours").
 
-It's crowd-powered — people at the bar tap "I'm here" and everyone else's meters update live — which means it gets more accurate exactly when you need it most: peak summer weekends. Pull it up before you leave the house, [check what's happening in Belmar or Asbury tonight](https://gubbu-api.proudwater-f3417084.eastus2.azurecontainerapps.io/go/barometer?src=blog_jersey_shore_nightlife), and skip the guessing.
+It's crowd-powered — people at the bar tap "I'm here" and everyone else's meters update live — which means it gets more accurate exactly when you need it most: peak summer weekends. Pull it up before you leave the house, [check what's happening in Belmar or Asbury tonight](https://api.gubbu.io/go/barometer?src=blog_jersey_shore_nightlife), and skip the guessing.
 
 ---
 
@@ -98,7 +98,7 @@ For pure party volume: Belmar (D'Jais, Bar A). For live music: Asbury Park (Ston
 Anywhere from free (Martell's, Sawmill, Donovan's Reef) to $20–30 (D'Jais on peak nights, Stone Pony show nights). Weeknights are often free everywhere.
 
 **When do Jersey Shore bars get crowded?**
-Weekend nights hit peak between 10 PM and midnight. Lines form after 10. Happy hours (typically 3–7 PM) are the value window — and tools like [Barometer](https://gubbu-api.proudwater-f3417084.eastus2.azurecontainerapps.io/go/barometer?src=blog_jersey_shore_nightlife) can tell you the live picture before you commit.
+Weekend nights hit peak between 10 PM and midnight. Lines form after 10. Happy hours (typically 3–7 PM) are the value window — and tools like [Barometer](https://api.gubbu.io/go/barometer?src=blog_jersey_shore_nightlife) can tell you the live picture before you commit.
 
 **Do Jersey Shore bars have dress codes?**
 The bigger Monmouth County spots (Belmar/Asbury) generally do — no flip-flops, no tank tops for men. Boardwalk bars in Point Pleasant and Seaside are come-as-you-are.
