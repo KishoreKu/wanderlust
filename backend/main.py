@@ -574,6 +574,25 @@ async def go_activities(
     
     return RedirectResponse(url=target, status_code=302)
 
+# Barometer — our own Jersey Shore nightlife app (cross-promotion, not an affiliate).
+# When the custom domain lands, update BAROMETER_URL and every old link keeps working.
+BAROMETER_URL = os.getenv("BAROMETER_URL", "https://jolly-water-041ebac0f.7.azurestaticapps.net")
+
+@app.get("/go/barometer")
+async def go_barometer(request: Request, src: str = "unknown"):
+    """Redirect to Barometer with click logging"""
+    await log_click({
+        "user_agent": request.headers.get("user-agent", ""),
+        "ip": get_client_ip(request),
+        "source": src,
+        "channel": "web",
+        "type": "barometer",
+        "affiliate": "internal",
+        "to_query": None,
+        "meta": {"path": str(request.url)}
+    })
+    return RedirectResponse(url=BAROMETER_URL, status_code=302)
+
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=PORT)
