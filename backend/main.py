@@ -576,7 +576,7 @@ async def go_activities(
 
 # Barometer — our own Jersey Shore nightlife app (cross-promotion, not an affiliate).
 # When the custom domain lands, update BAROMETER_URL and every old link keeps working.
-BAROMETER_URL = os.getenv("BAROMETER_URL", "https://jolly-water-041ebac0f.7.azurestaticapps.net")
+BAROMETER_URL = os.getenv("BAROMETER_URL", "https://barometerapp.com")
 
 @app.get("/go/barometer")
 async def go_barometer(request: Request, src: str = "unknown"):
