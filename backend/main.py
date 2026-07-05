@@ -343,6 +343,16 @@ def build_affiliate_url(type_: str, affiliate: str, params: Dict) -> Optional[st
     return urlunparse((parsed.scheme, parsed.netloc, parsed.path, parsed.params, new_query, parsed.fragment))
 
 # Routes
+@app.get("/")
+async def root():
+    """Friendly root — the API's front door"""
+    return {
+        "service": "gubbu-api",
+        "status": "ok",
+        "docs": "/docs",
+        "endpoints": ["/health", "/chat", "/go/flights", "/go/hotels", "/go/activities", "/go/barometer"],
+    }
+
 @app.get("/health")
 async def health_check():
     """Health check endpoint"""
