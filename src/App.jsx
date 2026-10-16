@@ -1,5 +1,5 @@
 import { Suspense, lazy } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { ThemeProvider } from './contexts/ThemeContext';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
@@ -8,6 +8,7 @@ import { NewsletterPopup } from './components/NewsletterPopup';
 import { CanonicalTag } from './components/CanonicalTag';
 import { ScrollToTop } from './components/ScrollToTop';
 import { BackToTopButton } from './components/BackToTopButton';
+import { Assistant } from './pages/Assistant';
 import { Home } from './pages/Home';
 const Blog = lazy(() => import('./pages/Blog').then((module) => ({ default: module.Blog })));
 const BlogPost = lazy(() => import('./pages/BlogPost').then((module) => ({ default: module.BlogPost })));
@@ -41,6 +42,11 @@ function PageFallback() {
   );
 }
 
+function SiteChrome({ children }) {
+  const { pathname } = useLocation();
+  return pathname === '/' || pathname === '/app' ? null : children;
+}
+
 function App() {
   return (
     <ThemeProvider>
@@ -49,11 +55,13 @@ function App() {
         <GoogleAnalytics />
         <CanonicalTag />
         <div className="flex flex-col min-h-screen">
-          <Navbar />
+          <SiteChrome><Navbar /></SiteChrome>
           <main className="flex-grow">
             <Suspense fallback={<PageFallback />}>
               <Routes>
-                <Route path="/" element={<Home />} />
+                <Route path="/" element={<Assistant />} />
+                <Route path="/app" element={<Assistant />} />
+                <Route path="/travel" element={<Home />} />
                 <Route path="/blog" element={<Blog />} />
                 <Route path="/blog/:id" element={<BlogPost />} />
                 <Route path="/destinations" element={<Destinations />} />
@@ -80,9 +88,9 @@ function App() {
               </Routes>
             </Suspense>
           </main>
-          <Footer />
+          <SiteChrome><Footer />
           <BackToTopButton />
-          <NewsletterPopup />
+          <NewsletterPopup /></SiteChrome>
         </div>
       </Router>
     </ThemeProvider>
